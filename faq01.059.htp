@@ -1,12 +1,72 @@
 Title: 1.59. T30 2366-97G with Debian SID
-Last-Changed-Date: Mon Dec  8 10:11:50 2003
+Last-Changed-Date: Thu Dec 11 11:00:19 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
+Last-Changed-Remote-Address: 128.214.9.73
 
 Porn:
 http://db.cs.helsinki.fi/~hendry/gallery/view_album.php?set_albumName=comp
+
+lspci:
+
+ 00:00.0 Host bridge: Intel Corp. 82845 845 (Brookdale) Chipset Host Bridge (rev 04)
+ 00:01.0 PCI bridge: Intel Corp. 82845 845 (Brookdale) Chipset AGP Bridge (rev 04)
+ 00:1d.0 USB Controller: Intel Corp. 82801CA/CAM USB (Hub #1) (rev 02)
+ 00:1d.1 USB Controller: Intel Corp. 82801CA/CAM USB (Hub #2) (rev 02)
+ 00:1d.2 USB Controller: Intel Corp. 82801CA/CAM USB (Hub #3) (rev 02)
+ 00:1e.0 PCI bridge: Intel Corp. 82801BAM/CAM PCI Bridge (rev 42)
+ 00:1f.0 ISA bridge: Intel Corp. 82801CAM ISA Bridge (LPC) (rev 02)
+ 00:1f.1 IDE interface: Intel Corp. 82801CAM IDE U100 (rev 02)
+ 00:1f.3 SMBus: Intel Corp. 82801CA/CAM SMBus Controller (rev 02)
+ 00:1f.5 Multimedia audio controller: Intel Corp. 82801CA/CAM AC'97 Audio Controller (rev 02)
+ 00:1f.6 Modem: Intel Corp. 82801CA/CAM AC'97 Modem Controller (rev 02)
+ 01:00.0 VGA compatible controller: ATI Technologies Inc Radeon Mobility M7 LW [Radeon Mobility 7500]
+ 02:00.0 CardBus bridge: Texas Instruments PCI1250 PC card Cardbus Controller (rev 01)
+ 02:00.1 CardBus bridge: Texas Instruments PCI1250 PC card Cardbus Controller (rev 01)
+ 02:02.0 Network controller: Harris Semiconductor Prism 2.5 Wavelan chipset (rev 01)
+ 02:08.0 Ethernet controller: Intel Corp. 82801CAM (ICH3) PRO/100 VE (LOM) Ethernet Controller (rev 42)
+
+
+From my 2.4.22 686 setup:
+ scrooge-15:~$ lsmod
+ Module                  Size  Used by    Not tainted
+ af_packet              13672   1 (autoclean)
+ input                   3648   0 (autoclean)
+ rfcomm                 32192   0 (autoclean)
+ l2cap                  16880   1 (autoclean) [rfcomm]
+ bluez                  32292   1 (autoclean) [rfcomm l2cap]
+ apm                    10060   2 (autoclean)
+ snd                    30340   0
+ orinoco_pci             3332   1
+ orinoco                35636   0 [orinoco_pci] 
+ hermes                  5988   0 [orinoco_pci orinoco]
+ ide-scsi               10448   0
+ scsi_mod               95296   1 [ide-scsi]
+ i810_rng                2656   0 (unused)
+ i810_audio             24476   0 (unused)
+ ac97_codec             13684   0 [i810_audio]
+ soundcore               3940   2 [snd i810_audio]
+ i810-tco                3252   0 (unused)
+ e100                   49224   1
+ agpgart                41976   0 (unused)
+ lp                      7168   0 (autoclean)
+ parport                26728   0 (autoclean) [lp]
+ rtc                     6792   0 (autoclean)
+ ide-disk               16832   2 (autoclean)
+ ext3                   65316   1 (autoclean)
+ jbd                    42760   1 (autoclean) [ext3]
+ ide-detect             10832   0 (autoclean)
+ piix                    8392   1 (autoclean)
+ ide-core               99064   2 (autoclean) [ide-scsi ide-disk ide-detect piix]
+ unix                   15500  31 (autoclean)
+ vesafb                  9992  63 (autoclean)
+ fbcon-cfb16             4168   0 (autoclean) [vesafb]
+ fbcon-cfb32             3816   0 (autoclean) [vesafb]
+ fbcon-cfb8              3560   0 (autoclean) [vesafb]
+ fbcon-cfb24             4456   0 (autoclean) [vesafb]
+
+
 
 I used the beta debian installer:
 http://www.debian.org/devel/debian-installer/
@@ -57,10 +117,12 @@ Input
 
 I will put my XF86Config-4 up sometimes as soon as I get viewcvs working for subversion. Or just mail me.
 
-Mouse is annoying!! Twiddle is what I use most, and it works in 2.4, but not in 2.6. My advice is use a window manager like Ion http://modeemi.cs.tut.fi/~tuomov/ion/ and avoid using it at all.
+Mouse is annoying!! Twiddle is what I use most, and it works in 2.4, but not in 2.6. My advice is use a window manager like Ion http://modeemi.cs.tut.fi/~tuomov/ion/ and avoid using it at all. Also disable the navpad, in order to get the twiddle with the middle mouse button working.
 
 Numeric keypad is not working. I would like to get that working for Quake. ;)
 
 Other T30 pages for tips
 
 http://www.loria.fr/~stuber/t30/debian-ibm-t30-2366-085.html
+
+http://www.biplane.com.au/~kauer/miscellaneous/ibmt30-notes.html
