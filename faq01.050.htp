@@ -1,0 +1,11 @@
+Title: 1.50. NAT
+Last-Changed-Date: Tue Sep 16 12:33:03 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 62.78.149.199
+
+if you just want to have internet on the internal machines, do this:
+
+ iptables -t nat -F
+ iptables -t nat -A POSTROUTING -o eth0 -s 192.168.0.0/24 -j MASQUERADE
