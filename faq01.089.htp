@@ -1,11 +1,11 @@
 Title: 1.89. Name the interface
-Last-Changed-Date: Sat May 29 20:57:30 2004
+Last-Changed-Date: Mon Jun  7 16:41:52 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
+Last-Changed-Remote-Address: 128.214.48.17
 
-nameif I think only works on newer 2.6 kernels
+You might want to ensure nameif is on your system beforehand:
 
  hendry@scrooge-15:/etc/network$ cat interfaces
  auto lo eth0
