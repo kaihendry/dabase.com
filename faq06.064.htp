@@ -1,5 +1,5 @@
 Title: 6.64. Running nevow/twistd on a vhost
-Last-Changed-Date: Mon Apr 12 12:46:26 2004
+Last-Changed-Date: Mon Apr 12 13:24:37 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -7,8 +7,7 @@ Last-Changed-Remote-Address: 128.214.48.17
 
 Reference:
 
-http://twisted.sourceforge.net/TwistedDocs-1.2.0rc2/howto/using-twistedweb.html
-
+http://twistedmatrix.com/documents/current/howto/using-twistedweb
 
 Add the vhost to your DNS server...
  hendry@bilbo:/etc/maradns$ egrep nevow dabase
