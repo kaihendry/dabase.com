@@ -1,5 +1,5 @@
 Title: 1.58. Subversion CVS
-Last-Changed-Date: Thu Dec  4 17:10:30 2003
+Last-Changed-Date: Thu Dec  4 17:16:41 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -15,4 +15,4 @@ Equates to:
 
 Installing in $HOME? 
 
-./configure --prefix=$HOME/svn && make clean && make && make install
+./configure --prefix=$HOME/svn && make clean && make && make install && export PATH=$PATH:/home/hendry/svn/bin
