@@ -1,12 +1,19 @@
 Title: 6.30. Template
-Last-Changed-Date: Sun Mar 30 16:43:40 2003
+Last-Changed-Date: Thu Jul  3 11:50:08 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.4.186
+Last-Changed-Remote-Address: 128.214.48.14
 
 I generally need these two lines when I begin writing a script:
 
  #!/usr/bin/env python2                                                                                                                                                    
                                                                                                                                                                                                                                                                                                                                                                                                                                 
  if __name__ == '__main__':
+
+
+IF the #! does not work, your file is probably encoded in a DOS format!
+Fix it in vim with:
+ :set notextmode^MZZ
+
+(Thanks to Wari that out to me)
