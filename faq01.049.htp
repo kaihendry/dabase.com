@@ -1,9 +1,9 @@
 Title: 1.49. Kernel modules (2.4) after copying a linux partition into a different machine
-Last-Changed-Date: Mon Aug 18 00:01:03 2003
+Last-Changed-Date: Mon Aug 18 13:28:10 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.10.70
+Last-Changed-Remote-Address: 128.214.48.14
 
 The kernel doesn't automagically find any devices. They must all be specified either on the command line, 
 or as what typically happens by loading specific modules.
@@ -67,4 +67,9 @@ RH specific (as this file does not exist on my system):
 
  (I got the "eepro100" from the eth driver info from /etc/sysconfig/hwconf)
 
-I hope this helps...
+
+Jamie Kitson (who solved this particular by himself. I didn't. He did. He asked for me to make that clear) adds:
+
+ I think you should mention that the problem only arose because I had told
+ kudzu to ignore the changes, and it did detect the h/w changes, and would
+ have updated modules.conf for me if I had let it.
