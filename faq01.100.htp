@@ -1,0 +1,18 @@
+Title: 1.100. Bashing carefully
+Last-Changed-Date: Fri Jun 25 21:51:05 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+Must be careful 
+
+
+ -x 
+
+
+
+ -e
+
+
+ set -e
