@@ -1,5 +1,5 @@
 Title: 6.2. Inserting values into HTML output
-Last-Changed-Date: Wed Dec 18 17:28:20 2002
+Last-Changed-Date: Wed Dec 18 17:29:19 2002
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -7,3 +7,6 @@ Last-Changed-Remote-Address: 195.92.67.68
 
 use
  print '<body bgcolor="%s">' % color
+
+This just works like printf in C. %s is a placeholder for a string and
+on the right of the '%' is the variable who's value is substituted.
