@@ -1,11 +1,13 @@
 Title: 4.13. Mozilla and Subversion
-Last-Changed-Date: Sun Dec 14 22:18:18 2003
+Last-Changed-Date: Sun Dec 14 22:19:33 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 217.30.176.161
 
 I use several machines. I have put my .mozilla in subversion so I can check it out and commit changes on any of the machines I use.
+
+In plain english when I move between machines my bookmarks are the same.
 
 I found the following files to meet my needs:
 
