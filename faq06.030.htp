@@ -1,9 +1,9 @@
 Title: 6.30. Template
-Last-Changed-Date: Thu Jul  3 11:59:13 2003
+Last-Changed-Date: Thu Jul  3 22:27:45 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 80.221.8.16
 
 I generally need these two lines when I begin writing a script:
 
@@ -14,6 +14,10 @@ I generally need these two lines when I begin writing a script:
 
 IF the #! does not work, your file is probably encoded in a DOS format!
 Fix it in vim with:
- :set notextmode^MZZ
+
+
+ :se ff=unix  
+ 
+ 
 
 (Thanks to Wari for pointing that out to me)
