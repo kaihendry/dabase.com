@@ -1,9 +1,9 @@
 Title: 6.14. Adding lists
-Last-Changed-Date: Tue Feb  4 08:48:02 2003
+Last-Changed-Date: Sun Oct 26 14:11:03 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 62.78.149.199
 
 import operator
  >>> list1 = [1,0]
@@ -23,4 +23,6 @@ Another comment from the very helpful #python, is:
  08:40 < deltab_> Numeric.add(list1, list2)
  08:43 < tarook> get pynumeric
 
-(Yes, the time is right!)
+ 14:02 < hendry> How would I combine/append ['hi', 'there'] and ['!', '.'] to ['hi!', 'there.'] ?
+ 14:03 < Jerub> hendry: map(operator.add, l1, l2)
+ 14:03 < moshez> hendry: [x+y for (x,y) in zip(l1, l2)]
