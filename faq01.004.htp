@@ -1,5 +1,5 @@
 Title: 1.4. Screen - enhancing the power of the console
-Last-Changed-Date: Sat Jun 26 12:46:10 2004
+Last-Changed-Date: Sat Jun 26 12:57:33 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -28,6 +28,10 @@ ssh myreliableremoteshell -t screen -R
 </pre>
 
 
-<p>ctrl+a "</p>
-
 </html>
+
+ ctrl+a " window list
+
+FAQ: 
+
+http://www4.informatik.uni-erlangen.de/~jnweiger/screen-faq.html
