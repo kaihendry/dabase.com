@@ -1,5 +1,5 @@
 Title: 1.101. Using the Ion window manager notes
-Last-Changed-Date: Sat Jun 26 11:56:00 2004
+Last-Changed-Date: Sat Jun 26 11:56:43 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -49,6 +49,15 @@ I tried stuff ~/xinitrc, but it didn't work for some reason.
 
 Now when I log in, firefox is loaded. I don't have to waste 10 seconds of my life everytime I log in!!
 
+See my configs here: http://svn.natalian.org/home/.ion2/
+
+Shortcuts refcard:
+ alt+s split
+ alt+k s vsplit
+ alt+ left or right cursors pgup/pgdown between workspaces(WS)
+ alt+tab toggle between frame in WS
+
+
 TODO:
 
 How to name and show name WS
@@ -60,12 +69,3 @@ Copy pwd from menu?
 Understand WS - Frame - Window - Dock
 
 +append WS screenshot
-
-
-See my configs here: http://svn.natalian.org/home/.ion2/
-
-Shortcuts refcard:
- alt+s split
- alt+k s vsplit
- alt+ left or right cursors pgup/pgdown between workspaces(WS)
- alt+tab toggle between frame in WS
