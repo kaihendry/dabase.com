@@ -1,0 +1,14 @@
+Title: 1.64. lsof
+Last-Changed-Date: Sun Dec  7 23:39:05 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 213.243.180.11
+
+List of all open files
+ lsof
+
+List open internet connections
+ lsof -i
+
+Cool...
