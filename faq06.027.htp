@@ -1,19 +1,34 @@
-Title: 6.27. Returning a line in a file by line number
-Last-Changed-Date: Wed Mar 19 21:32:09 2003
+Title: 6.27. Returning first word on a line in a file by line number example
+Last-Changed-Date: Wed Mar 19 22:20:01 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 80.221.8.135
 
-I learnt how useful 'raise' is. Use it !
+Note raise! Very useful.
 
- def getline(file, lineno):                                                                                                                                                
-        """                                                                                                                                                               
-        Line number one is the first line                                                                                                                                 
-                                                                                                                                                                          
-        """                                                                                                                                                               
-        try:                                                                                                                                                              
-                output = file.readlines()[lineno-1]                                                                                                                       
-                return output                                                                                                                                             
-        except:                                                                                                                                                           
+
+ #!/usr/bin/env python2                                                                                                                                                    
+                                                                                                                                               
+ def getlineword(filelist, lineno):
+        """
+        Line number one is the first line
+
+
+        Returns first word on the line.
+
+        """
+        try:
+                return filelist[lineno-1].split()[0]
+        except:
                 raise
+
+ if __name__ == '__main__':
+        """
+        Does a head
+        """
+        file = open('../file_list')
+        filelist = file.readlines()
+        for i in range(1,11):
+                print 'Line no: %s\tEntry: %s' % (i,   getlineword(filelist, i))
+        file.close()
