@@ -1,13 +1,18 @@
 Title: 1.58. Subversion CVS
-Last-Changed-Date: Sun Nov 30 22:42:45 2003
+Last-Changed-Date: Thu Dec  4 17:10:30 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
+Last-Changed-Remote-Address: 128.214.48.14
 
-Some notes
+http://subversion.tigris.org/project_faq.html
 
  export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
-
-
+Equates to:
  svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/svn
+
+
+
+Installing in $HOME? 
+
+./configure --prefix=$HOME/svn && make clean && make && make install
