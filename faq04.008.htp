@@ -1,5 +1,5 @@
 Title: 4.8. Unicode UTF-8
-Last-Changed-Date: Thu Oct 23 13:56:45 2003
+Last-Changed-Date: Thu Oct 23 14:28:49 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -7,7 +7,7 @@ Last-Changed-Remote-Address: 62.78.149.199
 
 Most Apache webservers are configured to negotiate content-type as latin-1.
 
-Your perfectly form XHTML with UTF-8 will get a error like:
+Your perfectly formed XHTML with UTF-8 will get a error like:
 
  Character Encoding mismatch! 
  The character encoding specified in the HTTP header (iso-8859-1) is different from the value in the XML declaration (utf-8). 
