@@ -1,0 +1,12 @@
+Title: 1.1. Testing
+Last-Changed-Date: Sun Oct 13 16:05:31 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.7.18
+
+If you accidently deselect a bunch of critical packages, and end up practically removing your entire system the you need to quit dselect with a ctrl-C or using ....
+
+Now, if you are really silly, you quit normally then you need to refer to an old backups of your package lists, like so:
+
+diff /var/lib/dpkg/status dpkg.status.0
