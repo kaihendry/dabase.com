@@ -1,5 +1,5 @@
 Title: 4.25. Apache 2 Vhost
-Last-Changed-Date: Thu Jul 15 23:40:54 2004
+Last-Changed-Date: Fri Jul 23 18:13:43 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -41,3 +41,10 @@ Our own little subdomain DNS server for local testing:
  127.0.0.1       fortune.localhost
  127.0.0.1       test.localhost
  ::1     ip6-localhost ip6-loopback
+
+
+Further info:
+
+http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/
+
+http://svn.natalian.org/debian/configuration/bilbo/
