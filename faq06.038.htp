@@ -1,9 +1,16 @@
 Title: 6.38. Sorting dictionaries (code example)
-Last-Changed-Date: Tue Apr 22 13:43:44 2003
+Last-Changed-Date: Tue Jun 17 13:33:41 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 128.214.48.14
+
+Something I use:
+                        b = j.cos.items()
+                        b.sort(lambda a, b: cmp(b[1],a[1])) # sort by value. [0] would be the key
+                        b = b[:50] # get top fifty values
+                        j.cos = dict(b)
+
 
 Really badly highlighted with:
  source-highlight -spython -fxhtml sort.py
