@@ -1,9 +1,9 @@
-Title: 1.8. KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2 "root dirt" guide
-Last-Changed-Date: Sat Jan 18 16:37:17 2003
+Title: 1.8. KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2
+Last-Changed-Date: Thu Feb 13 11:24:57 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.12.125
+Last-Changed-Remote-Address: 80.221.11.30
 
 I would prefer not to do it this way. I have to figure out hotplug.
 Beware of the dc2xx driver, you need to remove it for it all to work!
