@@ -1,5 +1,5 @@
 Title: 6.58. List sorting (DSU?)
-Last-Changed-Date: Sun Nov 16 12:59:17 2003
+Last-Changed-Date: Sun Nov 16 13:22:54 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -15,6 +15,13 @@ Last-Changed-Remote-Address: 62.78.149.199
  sort(...)
 
     L.sort(cmpfunc=None) -- stable sort *IN PLACE*; cmpfunc(x, y) -> -1, 0, 1
+
+Docs are little skimp of details, like:
+
+ 13:19 < h4ngedm4n> cmp(x,y) -1: x<y 0:x=y 1:x>y iirc
+ 13:19 < Moof> 0 is equal, -1 means x is smaller than y, 1 means x is larger than y
+
+Alternatively:
 
   < moshez> dotz: please don't give silly answers
   < moshez> hendry: use a schwartzian transform
