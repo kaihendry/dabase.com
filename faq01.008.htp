@@ -1,16 +1,21 @@
-Title: 1.8. KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2 root dirt guide
-Last-Changed-Date: Thu Nov  7 12:26:36 2002
+Title: 1.8. KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2 "root dirt" guide
+Last-Changed-Date: Sun Nov 10 16:35:51 2002
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 80.221.2.95
 
+I would prefer not to do it this way. I have to figure out hotplug.
+Beware of the dc2xx driver, you need to remove it for it all to work.
+
+<html>
+<pre>
 Script started on Thu Nov  7 09:15:34 2002
 bilbo:~# dmesg | tail
 PPP Deflate Compression module registered
 parport0: PC-style at 0x378 [PCSPP,TRISTATE]
 lp0: using parport0 (polling).
-Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+Installing knfsd (copyright (C) 1996 okir@onad.swb.de).
 spurious 8259A interrupt: IRQ7.
 hub.c: USB new device connect on bus1/2, assigned device number 3
 usb.c: USB device 3 (vend/prod 0x40a/0x132) is not claimed by any active driver.
@@ -64,4 +69,7 @@ bilbo:~/wednesday# cd ..
 bilbo:~# chown -R hendry wednesday/
 bilbo:~# mv wednesday/ ~hendry/
 mv: cannot overwrite directory `/home/hendry/wednesday'
-bilbo:~# mv wednesday/ ~hendry/5.JPG' from folder '/DCIM/100K3400'...
+bilbo:~# mv wednesday/ ~hendry/
+
+</pre>
+</html>
