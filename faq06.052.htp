@@ -1,0 +1,49 @@
+Title: 6.52. Traversing minidom's tree (Parsing XML to text)
+Last-Changed-Date: Wed Jul  2 09:19:53 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+<html>
+<pre>
+"""
+Traverses the minidom tree and prints out the text nodes.
+
+"""
+from StringIO import StringIO
+import xml.dom.minidom as dom
+import sys
+
+def xmltotxt(node, indentationLevel=0):
+    print indentationLevel * ' ' + 'TAG:' + node.tagName
+    #print node.firstChild.data
+
+    for child in node.childNodes:
+        if child.nodeType == child.TEXT_NODE:
+            print child.data
+        if child.nodeType == dom.Node.ELEMENT_NODE:
+            xmltotxt(child, indentationLevel+4)
+
+
+if __name__ == '__main__':
+
+    # My XML was missing a doctype reference which the parser needs...
+    dtd = '/home/hendry/inex/inex-1.4/dtd/xmlarticle.dtd'
+    front = '<?xml version="1.0" encoding="ISO-8859-1"?>\n<!DOCTYPE article SYSTEM "%s">\n' % dtd
+
+    file = open(sys.argv[1])
+
+    # ... and is added to the front of the article
+    article = front + file.read()
+
+    file.close()
+
+    doc = dom.parse(StringIO(article))
+
+    xmltotxt(doc.documentElement)
+
+
+
+</pre>
+</html>
