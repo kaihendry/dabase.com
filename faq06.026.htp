@@ -1,0 +1,10 @@
+Title: 6.26. Counting lines in a file
+Last-Changed-Date: Wed Mar 19 21:04:28 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.8.135
+
+This should do it:
+
+ print 'Line count: %s' % len(open(file).readlines())

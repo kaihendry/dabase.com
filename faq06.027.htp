@@ -1,0 +1,19 @@
+Title: 6.27. Returning a line in a file by line number
+Last-Changed-Date: Wed Mar 19 21:32:09 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.8.135
+
+I learnt how useful 'raise' is. Use it !
+
+ def getline(file, lineno):                                                                                                                                                
+        """                                                                                                                                                               
+        Line number one is the first line                                                                                                                                 
+                                                                                                                                                                          
+        """                                                                                                                                                               
+        try:                                                                                                                                                              
+                output = file.readlines()[lineno-1]                                                                                                                       
+                return output                                                                                                                                             
+        except:                                                                                                                                                           
+                raise
