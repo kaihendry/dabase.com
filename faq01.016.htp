@@ -1,0 +1,11 @@
+Title: 1.16. netstat -napt
+Last-Changed-Date: Sat Dec 28 18:57:06 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 195.92.67.68
+
+Use:
+ netstat -napt
+
+To see what is listening and who (and from where) is connected.
