@@ -1,0 +1,16 @@
+Title: 1.38. Closing bugs
+Last-Changed-Date: Wed Jul 16 18:36:27 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 129.240.72.99
+
+sudo apt-get build-dep packaganame
+
+apt-get install devscripts
+
+debuild -uc -us
+
+'-' before shell command well make it return a non-error even in the command fails. Or:
+shell-command || true
+does the jon, and is more readable.
