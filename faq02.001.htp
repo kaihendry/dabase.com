@@ -1,0 +1,96 @@
+Title: 2.1. My censored .muttrc
+Last-Changed-Date: Sun Oct 13 16:31:57 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.7.18
+
+<html>
+<pre>
+# $Id$
+
+set alias_file=~/Mail/mutt.addressbook
+# File to search for aliases in
+source  ~/Mail/mutt.addressbook
+
+# signature
+folder-hook .    set signature=~/Mail/signature
+
+# If I wanted a direct connection to IMAP server
+# But I use fetchmail
+# set imap_force_ssl=yes
+# set folder={hendry@mail.cs.helsinki.fi/ssl}
+# set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
+
+set realname="Kai Hendry"
+set from="Kai Hendry &lt;hendry@cs.helsinki.fi&gt;"
+set hostname="cs.helsinki.fi"
+my_hdr From: Kai Hendry &lt;hendry@cs.helsinki.fi&gt;
+my_hdr Reply-To: Kai Hendry &lt;hendry@cs.helsinki.fi&gt;
+
+set beep_new                    # beep if new mail comes in
+set editor=vim
+set ispell="aspell -e -c"
+
+#set allow_8bit
+#set charset=iso-8859-15
+
+set mbox=~/Mail/"inbox-`date +%m-%Y`" # location of inbox
+set spoolfile=~/Mail/inbox      # default mailbox
+set postponed=~/Mail/postponed  # location of postponed messages
+set record="=sent-mail-`date +%m-%Y`" #Archive mail
+
+color status    white           blue
+color index     brightwhite     black   ~N
+color indicator black           white
+color index     yellow          black   .*@cs.helsinki.fi
+unlists *      # remove old entries first
+lists `cd ~/Mail && echo *`
+unsubscribe *
+subscribe `cd ~/Mail/lists && echo *`
+mailboxes !
+mailboxes `for file in ~/Mail/lists/*; do echo -n "+lists/$(basename $file) "; done`
+
+set ascii_chars
+
+set menu_scroll        # scroll on last line of menu
+unset suspend
+set smart_wrap
+set wrap_search
+
+# When viewing next page of info, retain last line of previous page
+set pager_context=5
+
+# Works a bit like a "preview" screen;
+# you can see the pager and 5 lines of the index at the same time
+set pager_index_lines=5
+
+set pgp_replysign     # always sign reply to signed message
+set pgp_replyencrypt  # always encrypt reply to encrypted message
+
+macro pager J "!gpg --keyserver wwwkeys.eu.pgp.net --recv-key " "Get PGP Key"
+macro pager K "!gpg --lsign-key " "Sign PGP Key"
+
+macro index  i      "c!\n" "Go to Inbox"
+macro pager  i      "c!\n" "Go to Inbox"
+
+ignore Envelope-to
+
+#set autoedit           # start editor without asking for to, subject,...
+set auto_tag           # if something is tagged, run commands on tagged msgs.
+set fast_reply         # do not ask for to, subject,... when replying
+set mh_purge           # remove messages marked as deleted from MH folders.
+
+
+set index_format="%4C %Z %[!%d/%m] %-17.17F (%3l) %s"
+set pager_format="%S [%C] %n (%l) %s"
+set folder_format="%F %d %8s %N %f"
+
+auto_view text/html
+# Need this if using cygwin
+#set sendmail = "/usr/sbin/ssmtp.exe"
+
+send-hook   . my_hdr X-GPG-Fingerprint: 5A9F A10D 621C 7D24 4624 90F0 ACCB 71F0 A000 D5CC
+send-hook   . my_hdr X-GPG-Key: 1024D/A000D5CC
+
+</pre></html>
