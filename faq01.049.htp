@@ -1,5 +1,5 @@
 Title: 1.49. Kernel modules (2.4) after copying a linux partition into a different machine
-Last-Changed-Date: Mon Aug 18 13:28:38 2003
+Last-Changed-Date: Mon Aug 18 13:47:11 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -14,7 +14,7 @@ Now how does the kernel know what to load? It looks at the file:
 
  /etc/modules
 
-This file list modules which are loaded at boot time.
+This file lists modules which are loaded at boot time.
 
  hendry@bilbo:~$ cat /etc/modules
  # /etc/modules: kernel modules to load at boot time.
