@@ -1,0 +1,16 @@
+Title: 1.112. Ion the window manager resizing the frame
+Last-Changed-Date: Wed Jul 21 22:56:33 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+alt+r for resize the cols and width.
+
+Holding alt and using mousing gives pixel X positioing address.
+
+Look at the bindings and the docs.
+
+80 cols is optimum
+
+72 is where you supposed to wrap
