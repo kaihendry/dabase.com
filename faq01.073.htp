@@ -1,5 +1,5 @@
 Title: 1.73. Subversion gotchas
-Last-Changed-Date: Tue Apr  6 13:07:07 2004
+Last-Changed-Date: Sun Apr 11 19:44:54 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -28,3 +28,8 @@ http://svnbook.red-bean.com/svnbook/ch06s05.html
  hendry@bilbo:~$ sudo chown -R :svn public; chmod -R g+rwx public; chmod g+s public/db/
  hendry@bilbo:~$ egrep svn /etc/group
  svn:x:1008:www-data,hendry
+
+
+
+Watch it!
+ watch tree -pg repo/
