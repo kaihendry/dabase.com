@@ -1,9 +1,9 @@
 Title: 1.28. Bash tips
-Last-Changed-Date: Sat Aug 14 10:47:07 2004
+Last-Changed-Date: Thu Sep 16 20:00:24 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
+Last-Changed-Remote-Address: 213.78.73.124
 
 This is to convert all my voice wavs to the compressed speex format:
 
@@ -23,3 +23,5 @@ And also:
 Remove a word: CTRL+w
 
 http://www.wylug.org.uk/talks/2003/07/bash_tips.html
+
+http://www.quong.com/shellin20/
