@@ -1,0 +1,10 @@
+Title: 7.7. Outputting buffer as HTML
+Last-Changed-Date: Mon Jul  7 22:04:45 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.8.204
+
+Show VIM syntax hightlighted code to the WWW!
+
+ :so $VIMRUNTIME/syntax/2html.vim
