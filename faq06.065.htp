@@ -1,0 +1,30 @@
+Title: 6.65. Copy a list !
+Last-Changed-Date: Sat Apr 17 15:52:20 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+I make this mistake all to often:
+
+
+ 15:37 < hendry> I feel stupid asking this. How do I remove items from a list while traversing it? http://nevow.dabase.com/2
+ 15:37 < hendry> I could append indexes to another list and remove it later... but, isn't there quicker way?
+ 15:38 < bdash> hendry: iterate over a copy of the list
+ 15:38 < bdash> hendry: for i in l[:]:  would do that for you
+ 15:40 < hendry> bdash: so it does
+ 15:41 < hendry> bdash: [:] # stange syntax... i tried, copy = l and for i in copy and didn't work. trying to understand .. hmmm
+ 15:41 < jml> hendry: it's the splicing syntax.
+ 15:41 < bdash> hendry: what it does is slice the list
+ 15:42 < bdash> hendry: it just happens to be a slice that contains the entire list
+ 15:42 < jml> slice. yeah
+ 15:42 < bdash> hendry: that it copies the list is almost a side-effect
+ 15:42 < bdash> hendry: a documented, intentional, side-effect mind you
+ 15:43 < hendry> bdash: but this "copy" doesn't work http://nevow.dabase.com/4
+ 15:44 < bdash> hendry: that's because copy isn't actually a copy
+ 15:44 < bdash> hendry: "copy" is just another name for the same list
+ 15:45 < bdash> hendry: http://starship.python.net/crew/mwh/hacks/objectthink.html explains the difference very clearly
+ 15:45 < hendry> so if I want to make copy, I need to use this splice syntax ?
+ 15:46 < bdash> hendry: it might be easier to understand if you do list(l) to make a copy
+ 15:49 < hendry> bdash: thanks for your time
+ 15:50 < bdash> hendry: any time :-)
