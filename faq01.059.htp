@@ -1,9 +1,9 @@
 Title: 1.59. T30
-Last-Changed-Date: Wed Dec  3 13:16:05 2003
+Last-Changed-Date: Thu Dec  4 00:27:06 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 213.243.180.11
 
 Very annoying X dening permission to users by default. Fix is:
 
@@ -12,3 +12,19 @@ Very annoying X dening permission to users by default. Fix is:
 Then how the hell do I get ion running? Nothing in the docs. In the end I was told:
 
  update-alternative --config x-window-manager
+
+
+Checking terminal column and width environment:
+
+ resize
+
+Check resolution of root window:
+
+ xwininfo -root
+
+location focus in any browser:
+
+ ctrl+l 
+
+checking x errors in 
+ .xsession-errors
