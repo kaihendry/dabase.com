@@ -1,0 +1,24 @@
+Title: 1.87. SMTP via SSH
+Last-Changed-Date: Wed May 26 11:41:54 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+SMTP is often blocked at ISPs to prevent spammers.
+
+
+ On Fri, May 21, 2004 at 10:52:29AM +0300, Kai Hendry wrote:
+ > I am at this conference and the blasted SMTP port is blocked !
+
+ about this way.
+
+ cat /usr/lib/sendmail
+ #!/bin/sh
+ ssh melkinkari.cs.helsinki.fi /usr/lib/sendmail "$@"
+
+ do note that this is a very dirty trick to do on a multiuser system,
+ and it requires you to have the ssh authorized_keys authentication
+ worked out.
+
+        Aki
