@@ -1,9 +1,9 @@
 Title: 1.4. Screen - enhancing the power of the console
-Last-Changed-Date: Mon Oct 14 21:00:36 2002
+Last-Changed-Date: Sat Jun 26 12:46:10 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.14.81
+Last-Changed-Remote-Address: 217.30.176.161
 
 <html>
 <p>Screen is a very very cool console enhancement, which allows you to create
@@ -26,5 +26,8 @@ ssh myreliableremoteshell -t screen -R
 23:05 < Robot101> 'screen -x' lets you attatch to the same screen more than once
 23:06 < Robot101> I use it for helping people remotely, so they can see what I'm doing or vice versa
 </pre>
+
+
+<p>ctrl+a "</p>
 
 </html>
