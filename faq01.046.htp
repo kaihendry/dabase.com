@@ -1,9 +1,9 @@
 Title: 1.46. Imagemagick
-Last-Changed-Date: Wed Aug 13 11:54:08 2003
+Last-Changed-Date: Sat Jun 26 11:40:53 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 217.30.176.161
 
 Are set of image manipulation tools, which work mainly within the console ! :)
 
@@ -20,3 +20,8 @@ I typically use it to change some files from one format to another:
  hendry@bogrund-14:~/mail-attachments$
 
 Remove echo for it to run...
+
+
+Here is cool tip to append all the images into one file.
+
+ convert 6600-opera-1.jpg 6600-opera-2.jpg 6600-opera-3.jpg +append all.jpg
