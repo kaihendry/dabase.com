@@ -1,0 +1,12 @@
+Title: 6.15. Setting/initializing a list of certain length
+Last-Changed-Date: Tue Feb  4 09:03:53 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+Another tip from deltab_ from #python.
+
+ >>> l = [0] * 5
+ >>> l
+ [0, 0, 0, 0, 0]
