@@ -1,0 +1,27 @@
+Title: 6.23. Joining a list.
+Last-Changed-Date: Fri Feb 28 11:31:34 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+I think the join syntax is slightly strange:
+
+ >>> list = ['cow','dog','cat']
+ >>> print list.join()
+ Traceback (most recent call last):
+   File "<stdin>", line 1, in ?
+ AttributeError: 'list' object has no attribute 'join'
+ >>> print join.list()
+ Traceback (most recent call last):
+   File "<stdin>", line 1, in ?
+ NameError: name 'join' is not defined
+ >>> print ''.join.list
+ Traceback (most recent call last):
+   File "<stdin>", line 1, in ?
+ AttributeError: 'builtin_function_or_method' object has no attribute  'list'
+ >>> print ''.join(list)
+ cowdogcat
+ >>> print ' '.join(list)
+ cow dog cat
+ >>>
