@@ -1,0 +1,11 @@
+Title: 1.105. C binary information
+Last-Changed-Date: Sun Jul  4 15:23:10 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+Finding out about binaries and shared libraries:
+
+
+ objdump -p /lib/libc.so.6
