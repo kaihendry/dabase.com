@@ -1,0 +1,16 @@
+Title: 1.89. Name the interface
+Last-Changed-Date: Sat May 29 20:57:30 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+nameif I think only works on newer 2.6 kernels
+
+ hendry@scrooge-15:/etc/network$ cat interfaces
+ auto lo eth0
+ iface lo inet loopback
+
+ # should be the intel e100
+ iface eth0 inet dhcp
+    pre-up nameif eth0 00:09:6B:D0:A0:61
