@@ -1,15 +1,14 @@
 Title: 8.2. Use Memtest86 and badblocks to test a computer
-Last-Changed-Date: Thu Apr  3 18:42:41 2003
+Last-Changed-Date: Wed Jul 16 21:28:29 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.7.217
+Last-Changed-Remote-Address: 129.240.72.99
 
 What I use to test if a machine *works*, is use Memtest86. Run for a few hours and see what it comes up with. If it comes up clean, then its usuable. Else send it back.
 
 Make a temporary floppy disk for the purpose of testing.
 
-The "badblocks" util is great for  testing hard disks and "memtest86"                                                                                                     
+The "badblocks" & "smartmontools" utilities are great for testing hard disks and "memtest86"                                                                                                     
 effective at testing memory. The former is included with many distributions                                                                                               
-(/sbin/badblocks) while the latter is available with some disaster recovery                                                                                               
-kits or from "http://www.memtest86.com/"
+while the latter is available with some disaster recovery                                                                                                kits or from http://www.memtest86.com/
