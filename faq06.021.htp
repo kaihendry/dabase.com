@@ -1,5 +1,5 @@
 Title: 6.21. Using sub re groups as arguments in functions
-Last-Changed-Date: Fri Feb 21 14:52:59 2003
+Last-Changed-Date: Fri Feb 21 14:53:35 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -10,7 +10,7 @@ http://www.python.org/doc/current/lib/node99.html#l2h-726
 
 Especially about "dashrepl(matchobj)".
 
-Sub is definately one of those most useful ways to emply regualar expressions. The dashrepl method described lets you play around with group matches as arguments. Very very useful.
+Sub is definately one of those most useful ways to employ regular expressions. The dashrepl method described lets you play around with group matches as arguments. Very very useful.
 
 For example:
         result = re.sub(r'\[(' +
