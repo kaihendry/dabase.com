@@ -1,14 +1,17 @@
 Title: 1.20. Debian Iptable Firewall
-Last-Changed-Date: Sun Mar  2 21:36:16 2003
+Last-Changed-Date: Sat Mar 29 14:29:24 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.4.137
+Last-Changed-Remote-Address: 80.221.15.82
 
 This post is very helpful: 
 http://www.dclug.org.uk/archive-May02-Nov02/msg01597.html
 
 You may need to need FLUSH i.e. clear what configuration you have (iptables -L to see) with iptables -F I recall, before you begin. You can just drop off the internet if you afraid at this point and reconnect when you are happy with the iptables -L listing.
+
+Create the 'block chain':
+ iptables -N block
 
 Make sure that your connections work:
  iptables -A block -m state --state ESTABLISHED,RELATED -j ACCEPT
