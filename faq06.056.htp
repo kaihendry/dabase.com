@@ -1,5 +1,5 @@
 Title: 6.56. Unique elements from a list
-Last-Changed-Date: Sun Nov 16 11:29:40 2003
+Last-Changed-Date: Sun Nov 16 12:46:12 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -16,6 +16,5 @@ Otherwise:
         d = {}                                                                                                                                                            
         for x in list:                                                                                                                                                    
             d[x] = 1                                                                                                                                                      
-            subset = d.keys()                                                                                                                                             
-            subset.sort()                                                                                                                                                 
+        subset = d.keys()                                                                                                                                                 
         return subset
