@@ -1,0 +1,10 @@
+Title: 1.28. Bash tips
+Last-Changed-Date: Sun May 11 19:41:26 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.5.147
+
+This is to convert all my voice wavs to the compressed speex format:
+
+ for i in `ls *.wav`; do speexenc $i `basename $i .wav`.spx; echo $i compressed...; done
