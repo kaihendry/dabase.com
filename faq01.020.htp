@@ -1,9 +1,9 @@
 Title: 1.20. Debian Iptable Firewall
-Last-Changed-Date: Sat Mar 29 14:29:24 2003
+Last-Changed-Date: Tue Sep 23 09:06:20 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.15.82
+Last-Changed-Remote-Address: 62.78.149.199
 
 This post is very helpful: 
 http://www.dclug.org.uk/archive-May02-Nov02/msg01597.html
@@ -61,3 +61,30 @@ Here is what my iptables -L listing looks like currently:
  DROP       all  --  anywhere             anywhere
 
 2234 is for soulseek.
+
+
+The iptables init.d script is no longer. So here is how I configured my firewall in /etc/network/interfaces:
+
+ iface lo inet loopback
+
+ auto eth0
+ iface eth0 inet dhcp
+        pre-up echo 1 > /proc/sys/net/ipv4/ip_forward
+        pre-up iptables -t nat -A POSTROUTING -o $IFACE -j MASQUERADE
+        pre-up iptables -N block
+        pre-up iptables -A block -m state --state ESTABLISHED,RELATED -j ACCEPT
+        pre-up iptables -A block -m state --state NEW -i ! eth0 -j ACCEPT
+        pre-up iptables -A block -j DROP
+        pre-up iptables -A INPUT -j block
+        pre-up iptables -A FORWARD -j block
+        pre-up iptables -I block -i eth0 -p tcp --dport 22 -j ACCEPT
+        pre-up iptables -I block -i eth0 -p tcp --dport 80 -j ACCEPT
+
+ auto eth1
+ iface eth1 inet static
+        address 192.168.0.1
+        netmask 255.255.255.0
+
+
+Please note my Internet connection is via eth0 now, not ppp0! The eth1 is for serving my NAT. See:
+http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=show&file=faq01.050.htp
