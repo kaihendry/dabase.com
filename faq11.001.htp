@@ -1,0 +1,17 @@
+Title: 11.1. Barplot
+Last-Changed-Date: Wed Mar 17 17:37:20 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+On weight data from :
+
+http://www.cs.helsinki.fi/u/hendry/work/stats1/Sheet.csv
+or:
+http://www.cs.helsinki.fi/u/hendry/work/stats1/R.tar
+
+ brk <- c(40,50,60,70,80,90,100)
+ barplot(t(table(cut(zz$x9, brk, right=F))))
+
+http://bayes.math.montana.edu/Rweb/Rweb.general.html
