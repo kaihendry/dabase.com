@@ -1,0 +1,12 @@
+Title: 1.14. Reading news
+Last-Changed-Date: Wed Dec 18 02:48:32 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 195.92.67.67
+
+slrn seems to be the killer app for this.
+
+what really annoyed me was when I was reading a post, and I hit ESC to get supposingly to article listing, would instead take me back to the newsgroup listing.
+
+the key wasn't q,Q either, it was h. Take note.
