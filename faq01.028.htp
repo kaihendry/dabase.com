@@ -1,10 +1,20 @@
 Title: 1.28. Bash tips
-Last-Changed-Date: Sun May 11 19:41:26 2003
+Last-Changed-Date: Sat Oct  4 13:51:44 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.5.147
+Last-Changed-Remote-Address: 62.78.149.199
 
 This is to convert all my voice wavs to the compressed speex format:
 
  for i in `ls *.wav`; do speexenc $i `basename $i .wav`.spx; echo $i compressed...; done
+
+Finding BASH version:
+
+ set | grep BASH_VERSION
+
+System wide settings go here:
+ /etc/bash.bashrc
+
+And also:
+ /etc/profile
