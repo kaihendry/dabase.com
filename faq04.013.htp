@@ -1,0 +1,29 @@
+Title: 4.13. Mozilla and Subversion
+Last-Changed-Date: Sun Dec 14 22:18:18 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+I use several machines. I have put my .mozilla in subversion so I can check it out and commit changes on any of the machines I use.
+
+I found the following files to meet my needs:
+
+
+ bilbo:~$ rm -rf .mozilla/
+ bilbo:~$ svn update
+ A  .mozilla
+ A  .mozilla/default
+ A  .mozilla/default/ack41g03.slt
+ A  .mozilla/default/ack41g03.slt/70572827.s
+ A  .mozilla/default/ack41g03.slt/cookies.txt
+ A  .mozilla/default/ack41g03.slt/prefs.js
+ A  .mozilla/default/ack41g03.slt/70706990.w
+ A  .mozilla/default/ack41g03.slt/bookmarks.html
+ A  .mozilla/appreg
+
+Most of the information about the files can be found here:
+http://www.mozilla.org/start/1.4/faq/profile.html#backup
+
+
+I find you need to also have the binary file .mozilla/appreg in there otherwise it asks to convert the profile and hence lose everything. It looks like it contains info about the bizarre SALT directory.
