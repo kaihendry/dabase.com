@@ -1,5 +1,5 @@
 Title: 1.101. Using the Ion window manager notes
-Last-Changed-Date: Sat Jun 26 11:49:44 2004
+Last-Changed-Date: Sat Jun 26 11:53:39 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -40,6 +40,15 @@ Then selecting my running browser, where it will the
 
  WM_CLASS(STRING) = "Gecko", "Firefox-bin"
 
+Then I made an ~/.xsession with:
+ /usr/bin/mozilla-firefox &
+ x-terminal-emulator -e screen &
+ exec x-window-manager
+
+I tried stuff ~/xinitrc, but it didn't work for some reason.
+
+Now when I log in, firefox is loaded. I don't have to waste 10 seconds of my life everytime I log in!!
+
 TODO:
 
 How to name and show name WS
@@ -53,7 +62,7 @@ Understand WS - Frame - Window - Dock
 +append WS screenshot
 
 
-http://svn.natalian.org/home/.ion2/
+See my configs here: http://svn.natalian.org/home/.ion2/
 
 Shortcuts refcard:
  alt+s split
