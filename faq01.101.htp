@@ -1,5 +1,5 @@
 Title: 1.101. Using the Ion window manager notes
-Last-Changed-Date: Sat Jun 26 11:39:02 2004
+Last-Changed-Date: Sat Jun 26 11:44:25 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -42,10 +42,12 @@ Then selecting my running browser, where it will the
 
 TODO:
 
-How to name WS
+How to name and show name WS
 
 Get UXTERM to start nicely
 
 Copy pwd from menu?
 
 Understand WS - Frame - Window - Dock
+
++append WS screenshot
