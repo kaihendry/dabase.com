@@ -1,10 +1,15 @@
 Title: 2.1. My censored .muttrc
-Last-Changed-Date: Sat Dec 21 02:49:38 2002
+Last-Changed-Date: Mon Jun  7 16:50:06 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.68
+Last-Changed-Remote-Address: 128.214.48.17
 
 Please consult : 
 
-http://www.cs.helsinki.fi/u/hendry/content/muttrc.show
+http://svn.natalian.org/home/.muttrc
+
+And my offline muttrc executed with : alias mutto='mutt -F ~/.muttorc'
+in the .bashrc
+
+http://svn.natalian.org/home/.muttorc
