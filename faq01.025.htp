@@ -1,5 +1,5 @@
 Title: 1.25. using gnu tar reference
-Last-Changed-Date: Tue Apr 29 14:28:07 2003
+Last-Changed-Date: Tue Apr 29 14:34:38 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -25,4 +25,4 @@ Lets tar up a folder, without CVS dir:
 And more:
  hendry@bilbo:~$ tar --exclude=CVS --exclude=*.pdf --exclude=*.vim --exclude=*.pyc -cf datastructuresproject.tar datastructuresproject/
  hendry@bilbo:~$ ls datastructuresproject/
-common.py  common.pyc  CVS  efficient.py  efficient.pyc  match.py  match.pyc  naive.py  p333-aho-corasick.pdf  Session.vim  test.py  text  timings.py  trans.py  trans.pyc
+ common.py  common.pyc  CVS  efficient.py  efficient.pyc  match.py  match.pyc  naive.py  p333-aho-corasick.pdf  Session.vim  test.py  text  timings.py  trans.py  trans.pyc
