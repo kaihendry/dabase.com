@@ -1,0 +1,17 @@
+Title: 1.40. You are working on a foreign language machine ?
+Last-Changed-Date: Wed Jul 16 21:46:20 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 129.240.72.99
+
+Get this?
+
+ hendry@tjener:~$ ls -al daasd
+ ls: daasd: Ingen slik fil eller filkatalog
+
+
+English... :)
+
+
+ unset LANG
