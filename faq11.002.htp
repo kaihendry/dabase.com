@@ -1,0 +1,12 @@
+Title: 11.2. Histogram
+Last-Changed-Date: Thu Mar 18 13:27:24 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+Use exact class limits.
+
+3 Class example:
+
+ hist(zz$x8, break=c(150.5, 165.5, 180.5, 195.5)

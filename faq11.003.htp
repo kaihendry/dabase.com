@@ -1,0 +1,10 @@
+Title: 11.3. Sorting a table
+Last-Changed-Date: Thu Mar 18 13:34:15 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+This is good for figuring out the mode and median I think:
+
+ tapply(zz$x5, zz$x10, sort)
