@@ -1,5 +1,5 @@
 Title: 7.10. Cleaning whitespace
-Last-Changed-Date: Sat Oct 25 14:56:30 2003
+Last-Changed-Date: Sat Oct 25 15:01:03 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -9,5 +9,8 @@ Deleting whitespace around the cursor:
 
  diw
 
+Or the regexp:
+
+ :%s/\s*$//
 
 http://vi-improved.com/
