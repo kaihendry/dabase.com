@@ -1,0 +1,70 @@
+Title: 1.49. Kernel modules (2.4) after copying a linux partition into a different machine
+Last-Changed-Date: Mon Aug 18 00:01:03 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.10.70
+
+The kernel doesn't automagically find any devices. They must all be specified either on the command line, 
+or as what typically happens by loading specific modules.
+
+They could be compiled into the kernel. But that should not be the case. You should be using standard "stock" kernels.
+
+Now how does the kernel know what to load? It looks at the file:
+
+ /etc/modules
+
+This file list modules which are loaded at boot time.
+
+ hendry@bilbo:~$ cat /etc/modules
+ # /etc/modules: kernel modules to load at boot time.
+ #
+ # This file should contain the names of kernel modules that are
+ # to be loaded at boot time, one per line.  Comments begin with
+ # a #, and everything on the line after them are ignored.
+ via-rhine
+ hid
+ busmouse
+ nvram
+ agpgart
+ emu10k1
+ ext3
+ mousedev
+ keybdev
+ via82cxxx_audio
+ cpuid
+ ide-scsi
+ sr_mod
+ sg
+ loop
+ apm
+ 8139too
+ uhci
+
+These get setup by base-config when installing Debian(possibly? installer?). Anyway, if you copying a Debian partition onto another machine, then this probably needs checking as the other machine will undoubtedly have different hardware.
+
+Now:
+
+ /etc/modules.conf
+
+Is a definition for what modules that get loaded by an alias trigger or something. I am not sure about this myself, so I need to update this.
+This file is pretty important. You should manage this file with update-modules and some other tools.
+
+Looking here solved a problem for a friend of mine(Jamie), who had a problem with his network cards:
+
+ I edited /etc/modules.conf from                                                                                                                                         
+                                                                                                                                                                        
+ alias eth0 8139too                                                                                                                                                      
+ alias eth1 8139too                                                                                                                                                      
+ alias eth2 8139too                                                                                                                                                      
+                                                                                                                                                                        
+ to                                                                                                                                                                      
+                                                                                                                                                                        
+ alias eth0 eepro100                                                                                                                                                     
+ alias eth1 eepro100                                                                                                                                                     
+                                                                                                                                                                        
+RH specific (as this file does not exist on my system):
+
+ (I got the "eepro100" from the eth driver info from /etc/sysconfig/hwconf)
+
+I hope this helps...
