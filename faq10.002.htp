@@ -1,9 +1,9 @@
 Title: 10.2. Roman enumeration
-Last-Changed-Date: Tue Jul  1 13:02:00 2003
+Last-Changed-Date: Fri Aug  1 11:47:23 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 128.214.10.138
 
 http://www.tex.ac.uk/tex-archive/macros/latex/required/tools/enumerate.dtx
 
@@ -22,3 +22,6 @@ Check the URL for the options. For some nice roman numerals I use  the token '[i
 
 Screenie:
 http://www.cs.helsinki.fi/u/hendry/pictures/screenshot/latex/roman-num.png
+
+Notes on indentation:
+http://tinyurl.com/ipnx
