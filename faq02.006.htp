@@ -1,0 +1,8 @@
+Title: 2.6. Saving messages in IMAP
+Last-Changed-Date: Sat Dec 21 03:42:14 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 195.92.67.68
+
+As far as I can tell, you MANUALLY have to his s to move your messages from your spool (typically your INBOX) to your mbox.
