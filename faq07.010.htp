@@ -1,0 +1,13 @@
+Title: 7.10. Cleaning whitespace
+Last-Changed-Date: Sat Oct 25 14:56:30 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 62.78.149.199
+
+Deleting whitespace around the cursor:
+
+ diw
+
+
+http://vi-improved.com/
