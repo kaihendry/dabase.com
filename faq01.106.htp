@@ -1,0 +1,78 @@
+Title: 1.106. Hard link vs Soft link
+Last-Changed-Date: Tue Jul  6 11:56:55 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+<html>
+
+You can't have hard links between file systems.
+You can't have hard links on directories.
+
+If a hard link target is deleted, it still exists as the hard link.
+If a soft link target is deleted, it dangles.
+
+<pre>
+bilbo$ cd /tmp
+bilbo$ mkdir test
+bilbo$ cd test
+bilbo$ ll
+total 20
+drwxrwxr-x    2 hendry   hendry       4096 2004-07-06 11:43 .
+drwxrwxrwt   17 root     root        16384 2004-07-06 11:43 ..
+bilbo$ touch file
+bilbo$ ls -i
+ 816039 file
+bilbo$ ln -s file symbol
+bilbo$ ln file hard
+bilbo$ ls -il
+total 0
+ 816039 -rw-rw-r--    2 hendry   hendry          0 2004-07-06 11:43 file
+ 816039 -rw-rw-r--    2 hendry   hendry          0 2004-07-06 11:43 hard
+ 816040 lrwxrwxrwx    1 hendry   hendry          4 2004-07-06 11:43 symbol -> file
+bilbo$ echo test >> file
+bilbo$ ll
+total 28
+drwxrwxr-x    2 hendry   hendry       4096 2004-07-06 11:43 .
+drwxrwxrwt   17 root     root        16384 2004-07-06 11:43 ..
+-rw-rw-r--    2 hendry   hendry          5 2004-07-06 11:45 file
+-rw-rw-r--    2 hendry   hendry          5 2004-07-06 11:45 hard
+lrwxrwxrwx    1 hendry   hendry          4 2004-07-06 11:43 symbol -> file
+
+bilbo$ echo test >> file
+bilbo$ ll
+total 28
+drwxrwxr-x    2 hendry   hendry       4096 2004-07-06 11:43 .
+drwxrwxrwt   17 root     root        16384 2004-07-06 11:43 ..
+-rw-rw-r--    <span style="color: yellow;">2</span> hendry   hendry          5 2004-07-06 11:45 file
+-rw-rw-r--    2 hendry   hendry          5 2004-07-06 11:45 hard
+lrwxrwxrwx    1 hendry   hendry          4 2004-07-06 11:43 symbol -> file
+</pre>
+
+Notice the <span style="color: yellow;">2</span> which shows how many references to the Inode.
+
+<pre>
+bilbo$ rm hard
+bilbo$ ll
+total 24
+drwxrwxr-x    2 hendry   hendry       4096 2004-07-06 11:46 .
+drwxrwxrwt   17 root     root        16384 2004-07-06 11:43 ..
+-rw-rw-r--    1 hendry   hendry          5 2004-07-06 11:45 file
+lrwxrwxrwx    1 hendry   hendry          4 2004-07-06 11:43 symbol -> file
+bilbo$ rm file
+bilbo$ ll
+total 20
+drwxrwxr-x    2 hendry   hendry       4096 2004-07-06 11:47 .
+drwxrwxrwt   17 root     root        16384 2004-07-06 11:43 ..
+lrwxrwxrwx    1 hendry   hendry          4 2004-07-06 11:43 symbol -> file
+bilbo$ cat symbol
+cat: symbol: No such file or directory
+bilbo$
+</pre>
+
+Only case I can think where a hard link would be useful, is where you want to make sure the file isn't accidently deleted. All hard links must go before the file goes to bit heaven.
+
+Summary: Use soft link
+
+</html>
