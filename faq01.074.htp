@@ -1,18 +1,24 @@
 Title: 1.74. NFS and Subversion
-Last-Changed-Date: Thu Jan  8 21:56:44 2004
+Last-Changed-Date: Thu Jan  8 22:36:00 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 217.30.176.161
 
-They do not mix!
+!They do not mix!
+
+http://www.sleepycat.com/docs/ref/env/remote.html
+
+http://subversion.tigris.org/project_faq.html#nfs
+
+
+You can't just do a cp -r with the repo, because you'll get an inconsistent database. Use hotcopy.
 
  svnadmin hotcopy /path/to/nfs/share/repo /local/normal/fs/mount/repo
 
-You can't just do a cp -r with the repo, because you'll get an inconsistent database. Use hotcopy.
 
 If you did a cp -r or a tar or something, use svnadmin recover to fix up the repo.
 
 Then once you have found a new "NFS share"-free home for the repo, your working dirs need to switch their URL to the new repo, using:
 
- svn switch
+ svn switch --relocate
