@@ -1,0 +1,9 @@
+Title: 1.82. Viewing a subversion dump file
+Last-Changed-Date: Sun Apr  4 15:12:00 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+from lord-helmchen on #svn
+ egrep '^Node-path: ' repos.dump
