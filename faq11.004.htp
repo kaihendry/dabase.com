@@ -1,0 +1,32 @@
+Title: 11.4. Pipe
+Last-Changed-Date: Tue Mar 23 15:14:55 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+stdin and out. baby baby !
+
+
+ hendry@bogrund-17:/tmp/Rweb1.03/CGIFiles$ /opt/R-1.7.0/bin/R --vanilla < testinput.txt > testoutput.txt
+ hendry@bogrund-17:/tmp/Rweb1.03/CGIFiles$ cat testoutput.txt
+
+ R : Copyright 2003, The R Development Core Team
+ Version 1.7.0  (2003-04-16)
+
+ R is free software and comes with ABSOLUTELY NO WARRANTY.
+ You are welcome to redistribute it under certain conditions.
+ Type `license()' or `licence()' for distribution details.
+
+ R is a collaborative project with many contributors.
+ Type `contributors()' for more information.
+
+ Type `demo()' for some demos, `help()' for on-line help, or
+ `help.start()' for a HTML browser interface to help.
+ Type `q()' to quit R.
+
+ > 2+2
+ [1] 4
+ >
+ hendry@bogrund-17:/tmp/Rweb1.03/CGIFiles$ cat testinput.txt
+ 2+2
