@@ -1,0 +1,17 @@
+Title: 6.53. Installing libraries into your $HOME
+Last-Changed-Date: Sat Aug  2 21:43:49 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.0.45
+
+Sometimes you don't have root, or worse, no debian packages. =)
+
+ hendry@melkinpaasi:~/buildbot/buildbot-0.3.4$ python2.2 ./setup.py install --prefix=$HOME
+
+Results in:
+
+ copying build/lib/buildbot/clients/gtkPanes.py -> /home/fs/hendry/lib/python2.2/site-packages/buildbot/clients
+ byte-compiling /home/fs/hendry/lib/python2.2/site-packages/buildbot/pbutil.py to pbutil.pyc
+
+So distutils installs yourlibs conveniently in your $HOME/lib/python2.2/site-packages/yourlibs
