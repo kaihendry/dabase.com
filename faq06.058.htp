@@ -1,5 +1,5 @@
 Title: 6.58. List sorting (DSU?)
-Last-Changed-Date: Sun Nov 16 13:22:54 2003
+Last-Changed-Date: Sun Nov 16 13:27:41 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -30,3 +30,33 @@ Alternatively:
   < moshez> l.sort()
   
   < moshez> l = [x[1] for x in l]
+
+My code sample:
+
+
+ class Listsort:                                                                                                                                                           
+    def unique(self, list):                                                                                                                                               
+        """ Return (sorted) unique elements """                                                                                                                           
+        d = {}                                                                                                                                                            
+        for x in list:                                                                                                                                                    
+            d[x] = 1                                                                                                                                                      
+        subset = d.keys()                                                                                                                                                 
+        subset.sort(self.bigstrings)                                                                                                                                      
+        return subset                                                                                                                                                     
+                                                                                                                                                                          
+    def bigstrings(self, x, y):                                                                                                                                           
+        """ comparison function to return largest string """                                                                                                              
+                                                                                                                                                                          
+        if len(x) < len(y):                                                                                                                                               
+            return 1                                                                                                                                                      
+                                                                                                                                                                          
+        if len(x) > len(y):                                                                                                                                               
+            return -1                                                                                                                                                     
+                                                                                                                                                                          
+        if len(x) == len(y):                                                                                                                                              
+            return 0                                                                                                                                                      
+                                                                                                                                                                          
+ if __name__ == '__main__':                                                                                                                                                
+    x = Listsort()                                                                                                                                                        
+    l = ['cows', 'apples', 'it', 'bureaucracy']                                                                                                                           
+    print x.unique(l)
