@@ -1,5 +1,5 @@
 Title: 1.113. What does a symlink point to? (symbolic links)
-Last-Changed-Date: Wed Aug  4 12:05:34 2004
+Last-Changed-Date: Wed Aug  4 12:21:40 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -7,3 +7,8 @@ Last-Changed-Remote-Address: 128.214.166.29
 
 Use
  readlink
+
+And use
+ cp --remove-destination
+
+To remove symlinks
