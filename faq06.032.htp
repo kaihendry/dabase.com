@@ -1,0 +1,12 @@
+Title: 6.32. Iterating through two (equal) lists
+Last-Changed-Date: Tue Apr  8 14:03:53 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+Must find the docs about this "zip":
+
+ >>> for i,j in zip(list1, list2):
+ ...     print i
+ ...     print j
