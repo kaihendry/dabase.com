@@ -1,14 +1,14 @@
 Title: 1.19. Basename (removing filename extensions in BASH)
-Last-Changed-Date: Sat Feb 15 18:27:25 2003
+Last-Changed-Date: Sat Feb 15 18:28:04 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 80.221.8.233
 
-18:11 < hendry> How do I cut off the extension typically in bash again ?
-18:17 < tale> What extension?
-18:17 < tale> Do you mean basename?
-18:17 < mur> skipping: README.WRI              `shrink' method not supported
-18:17 < mur> why doesnt unzip work?
-18:20 < hendry> h basename
-18:20 < hendry> thanks tale
+Basename. Always forget that sucker.
+
+
+ 18:11 < hendry> How do I cut off the extension typically in bash again ?
+ 18:17 < tale> What extension?
+ 18:17 < tale> Do you mean basename?
+ 18:20 < hendry> thanks tale
