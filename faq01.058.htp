@@ -1,9 +1,9 @@
 Title: 1.58. Subversion CVS
-Last-Changed-Date: Thu Dec  4 17:38:42 2003
+Last-Changed-Date: Thu Dec  4 20:12:00 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 213.243.180.11
 
 http://subversion.tigris.org/project_faq.html
 
@@ -24,3 +24,9 @@ You need Berkeley DB probably:
 As for subversion:
 
  ./configure --prefix=$HOME/svn --with-berkeley-db=/home/hendry/svn && make clean && make && make install && export PATH=$PATH:/home/hendry/svn/bin
+
+For crazy CS dept guys:
+
+ /tmp/db-4.0.14/dist$ make clean && ./configure --prefix=/home/fs/hendry/svn && make && make install
+
+ hendry@bogrund-14:/tmp/subversion-0.33.1$ cd /tmp/subversion-0.33.1; ./configure --prefix=/home/fs/hendry/svn --with-berkeley-db=/home/fs/hendry/svn && make clean && make && make install && export PATH=$PATH:/home/fs/hendry/svn/bin
