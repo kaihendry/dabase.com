@@ -1,11 +1,13 @@
 Title: 4.25. Apache 2 Vhost
-Last-Changed-Date: Thu Jul 15 23:34:16 2004
+Last-Changed-Date: Thu Jul 15 23:40:54 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 217.30.176.161
 
-Reference: http://httpd.apache.org/docs-2.0/mod/mod_vhost_alias.html
+Apache1.3 Ref: http://httpd.apache.org/docs/mod/mod_vhost_alias.html
+
+Apache2 Ref: http://httpd.apache.org/docs-2.0/mod/mod_vhost_alias.html
 
 Is vhost enabled?
 
