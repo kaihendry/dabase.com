@@ -1,0 +1,27 @@
+Title: 6.36. String contains - Python2.3
+Last-Changed-Date: Mon Apr 14 09:38:49 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.4.95
+
+Note this DOES NOT WORK in older versions of Python such as 2.2
+
+ hendry@bilbo:~/datastructuresproject$ python2.3
+ Python 2.3a2+ (#2, Mar 21 2003, 22:13:05) 
+ [GCC 3.2.3 20030316 (Debian prerelease)] on linux2
+ Type "help", "copyright", "credits" or "license" for more information.
+ >>> string = 'hello'
+ >>> if 'll' in string:
+ ...     print string
+ ... 
+ hello
+
+In older versions I have used:
+
+        def contained(self, pattern, x):                                                                                                                                  
+                print "Pattern: %s, x: %s" % (pattern, x)                                                                                                                 
+                if(x.count(pattern) > 0):                                                                                                                                 
+                        return 1                                                                                                                                          
+                else:                                                                                                                                                     
+                        return 0
