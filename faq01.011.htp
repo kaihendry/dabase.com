@@ -1,0 +1,31 @@
+Title: 1.11. Writing CDs
+Last-Changed-Date: Sun Nov 24 12:22:23 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.7.112
+
+I never ever remember this. So here I am recording the information about burning CDs with :
+
+<pre>
+mkisofs -o /tmp/backup.iso .
+cdrecord -scanbus
+cdrecord -v speed=12 dev=0,0,0 -data /tmp/backup.iso
+</pre>
+
+I back up my mail every so often. I generally keep my mail. My last backup of mail was 50 megs, compressed! GULP.
+
+<pre>
+tar cvf backup.tar Mail/
+bzip2 backup.tar
+</pre>
+
+Encrypting my mail:
+<pre>
+gpg -e -r hendry backup.tar.bz2
+</pre>
+
+To decrypt, word of advice, do not use gpg -d, just use:
+<pre>
+gpg backup.tar.bz2.gpg
+</pre>
