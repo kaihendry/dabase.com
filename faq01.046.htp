@@ -1,0 +1,22 @@
+Title: 1.46. Imagemagick
+Last-Changed-Date: Wed Aug 13 11:54:08 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+Are set of image manipulation tools, which work mainly within the console ! :)
+
+I typically use it to change some files from one format to another:
+
+ hendry@bogrund-14:~/mail-attachments$ for i in `ls`; do echo convert $i `basename $i png`eps; done
+ convert GUIreference.png GUIreference.eps
+ convert JTreereference.png JTreereference.eps
+ convert Overviewofsubsystems.png Overviewofsubsystems.eps
+ convert Selectorreference.png Selectorreference.eps
+ convert Selectorsequence.png Selectorsequence.eps
+ convert gui_to_fileio.png gui_to_fileio.eps
+ convert gui_to_selector.png gui_to_selector.eps
+ hendry@bogrund-14:~/mail-attachments$
+
+Remove echo for it to run...
