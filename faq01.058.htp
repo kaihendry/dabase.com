@@ -1,5 +1,5 @@
 Title: 1.58. Subversion CVS
-Last-Changed-Date: Thu Dec  4 17:16:41 2003
+Last-Changed-Date: Thu Dec  4 17:35:46 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -14,5 +14,13 @@ Equates to:
 
 
 Installing in $HOME? 
+
+You need Berkeley DB probably:
+
+ 
+ cd /tmp; wget http://www.sleepycat.com/update/snapshot/db-4.0.14.tar.gz
+ /tmp/db-4.0.14/dist$ ./configure --prefix=$HOME/svn && make && make install
+
+As for subversion:
 
 ./configure --prefix=$HOME/svn && make clean && make && make install && export PATH=$PATH:/home/hendry/svn/bin
