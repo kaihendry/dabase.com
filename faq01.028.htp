@@ -1,9 +1,9 @@
 Title: 1.28. Bash tips
-Last-Changed-Date: Sat Oct  4 13:51:44 2003
+Last-Changed-Date: Fri Feb 13 12:22:31 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 62.78.149.199
+Last-Changed-Remote-Address: 128.214.48.17
 
 This is to convert all my voice wavs to the compressed speex format:
 
@@ -18,3 +18,6 @@ System wide settings go here:
 
 And also:
  /etc/profile
+
+
+Remove a word: CTRL+w
