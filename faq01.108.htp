@@ -1,0 +1,14 @@
+Title: 1.108. bash prompt
+Last-Changed-Date: Fri Jul  9 13:41:11 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+Know this:
+
+ # is root
+ $ for user
+
+man bash
+/PROMPTING
