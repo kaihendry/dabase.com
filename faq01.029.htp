@@ -1,0 +1,9 @@
+Title: 1.29. Howto tar up dot files and dirs
+Last-Changed-Date: Tue May 13 22:07:22 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.9.41
+
+from 'dondelelcaro' on #debian:
+ tar -zcvf dotfiles.tar.gz .??*
