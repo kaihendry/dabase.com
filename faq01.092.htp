@@ -1,0 +1,16 @@
+Title: 1.92. Roll back to previous package !
+Last-Changed-Date: Sun Jun  6 18:14:42 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 212.226.143.253
+
+Somethings broke?
+
+ cd /var/cache/apt/archives
+
+And install the older or previous package version.
+
+I did this to get a bad postfix upgrade working. Unfortunately it corrupted my new version's mailq.
+
+Oh well
