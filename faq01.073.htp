@@ -1,10 +1,16 @@
 Title: 1.73. Subversion gotchas
-Last-Changed-Date: Thu Jan  8 11:52:59 2004
+Last-Changed-Date: Thu Jan  8 22:45:03 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.9.73
+Last-Changed-Remote-Address: 217.30.176.161
 
 If you accidently add some stuff, it can be quite painful to remove.
 
 http://subversion.tigris.org/project_faq.html#removal
+
+
+
+How does one remove unused log files?                                                                                                                                                                                                 
+                                                                                                                                                                                                                                        
+   $ svnadmin list-unused-dblogs | xargs rm
