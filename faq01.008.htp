@@ -1,75 +1,24 @@
 Title: 1.8. KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2 "root dirt" guide
-Last-Changed-Date: Sun Nov 10 16:35:51 2002
+Last-Changed-Date: Sat Jan 18 16:37:17 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.2.95
+Last-Changed-Remote-Address: 80.221.12.125
 
 I would prefer not to do it this way. I have to figure out hotplug.
-Beware of the dc2xx driver, you need to remove it for it all to work.
+Beware of the dc2xx driver, you need to remove it for it all to work!
 
-<html>
-<pre>
-Script started on Thu Nov  7 09:15:34 2002
-bilbo:~# dmesg | tail
-PPP Deflate Compression module registered
-parport0: PC-style at 0x378 [PCSPP,TRISTATE]
-lp0: using parport0 (polling).
-Installing knfsd (copyright (C) 1996 okir@onad.swb.de).
-spurious 8259A interrupt: IRQ7.
-hub.c: USB new device connect on bus1/2, assigned device number 3
-usb.c: USB device 3 (vend/prod 0x40a/0x132) is not claimed by any active driver.
-usb.c: registered new driver dc2xx
-dc2xx.c: USB Camera #0 connected, major/minor 180/80
-dc2xx.c: v1.0.0:USB Camera Driver for Kodak DC-2xx series cameras
-bilbo:~# lsmod | grep dc2
-dc2xx                   3232   0  (unused)
-usbcore                56384   1  [dc2xx usbmouse usb-uhci hid]
-bilbo:~# rmmod dc2xx
-bilbo:~# cd /proc/bus/
-bilbo:/proc/bus# ls
-i2c  pci  usb
-bilbo:/proc/bus# cd us
-bash: cd: us: No such file or directory
-bilbo:/proc/bus# cd uss
-bash: cd: uss: No such file or directory
-bilbo:/proc/bus# cd usb
-bilbo:/proc/bus/usb# ls
-001  002  003  devices  drivers
-bilbo:/proc/bus/usb# ls -al 003
-total 1
-dr-xr-xr-x    1 root     root            0 2002-11-07 09:12 .
-dr-xr-xr-x    1 root     root            0 2002-11-07 09:12 ..
--rw-r--r--    1 root     root           18 2002-11-07 09:12 001
-bilbo:/proc/bus/usb# cd
-bilbo:~# mkdir wednesday
-bilbo:~# cd wednesday/
-bilbo:~/wednesday# gphoto2 --port usb: -P
-Downloading 'DCP_471Saving file as DCP_4739.JPG
-Downloading 'DCP_4740.JPG' from folder '/DCIM/100K3400'...
-Saving file as DCP_4740.JPG
-Downloading 'DCP_4741.JPG' from folder '/DCIM/100K3400'...
-Saving file as DCP_4741.JPG
-Downloading 'AUTPRINT.MRK' from folder '/MISC'...
-Saving file as AUTPRINT.MRK
-Downloading 'CPOS    .TMP' from folder '/MISC'...
-*** Error ('Unsupported operation') ***                       \   0.0%
+ bilbo:~# lsmod | grep dc2
+ dc2xx                   3232   0  (unused)
+ usbcore                56384   1  [dc2xx usbmouse usb-uhci hid]
+ bilbo:~# rmmod dc2xx
 
-For debugging messages, please use the --debug option.
-Debugging messages may help finding a solution to your problem.
-If you intend to send any error or debug messages to the gphoto
-developer mailing list <gphoto-devel@gphoto.org>, please run
-gphoto2 as follows:
+Fix the permissions:
 
-    env LANG=C gphoto2 --debug --port "usb:" -P
+ bilbo:/proc/bus/usb/001# chmod -R 777 003
 
-Please make sure there is sufficient quoting around the arguments.
+Download them with gphoto2:
 
-bilbo:~/wednesday# cd ..
-bilbo:~# chown -R hendry wednesday/
-bilbo:~# mv wednesday/ ~hendry/
-mv: cannot overwrite directory `/home/hendry/wednesday'
-bilbo:~# mv wednesday/ ~hendry/
+ hendry@bilbo:/tmp$ gphoto2 --port usb: -P
 
-</pre>
-</html>
+Or visually I can suggest gtkam under gnome, or setting up the camera in KDE and using the strange url, camera:/ in Konq!
