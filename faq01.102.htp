@@ -1,0 +1,41 @@
+Title: 1.102. Managing a TODO list
+Last-Changed-Date: Sat Jun 26 12:03:46 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+In your .bashrc http://svn.natalian.org/home/.bashrc
+
+Define your todo.txt location with an export:
+ export todo=~/personal/todo.txt
+
+Add like so
+ $ cat >>$todo
+ make a guide
+ ctrl+d
+
+Depress yourself:
+
+ $ wc -l $todo
+ 9 /home/hendry/personal/todo.txt
+
+See all:
+
+ $ cat $todo
+ package
+ plan9
+ learn statistics, R?
+ apache-ssl
+ ion uxterm
+ debian directory layout
+ init and remount thing
+ acronym, not abbr
+ make a guide
+ $ 
+
+Of COURSE keep the whole thing under version control:
+
+ $ svn log $todo
+ r366 | hendry | 2004-06-26 11:57:55 +0300 (Sat, 26 Jun 2004) | 1 line
+ todo shower ;)
