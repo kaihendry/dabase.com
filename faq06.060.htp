@@ -1,0 +1,10 @@
+Title: 6.60. Printing attributes of a class
+Last-Changed-Date: Sun Jan 25 15:17:53 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+I should have known this:
+
+ print self.__dict__
