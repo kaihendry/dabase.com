@@ -1,0 +1,24 @@
+Title: 4.15. update-alternatives x-www-browser
+Last-Changed-Date: Tue Feb 24 20:17:53 2004
+Last-Changed-Author: KaiHendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+hendry@scrooge-15:~$ sudo update-alternatives --verbose --config x-www-browser
+
+Password:
+
+There are 2 alternatives which provide `x-www-browser'.
+
+  Selection    Alternative
+-----------------------------------------------
+*+    1        /usr/bin/mozilla
+      2        /usr/bin/MozillaFirebird
+
+Press enter to keep the default[*], or type selection number: 2
+Using `/usr/bin/MozillaFirebird' to provide `x-www-browser'.
+Checking available versions of x-www-browser, updating links in /etc/alternatives ...
+(You may modify the symlinks there yourself if desired - see `man ln'.)
+Automatic updates of /etc/alternatives/x-www-browser are disabled, leaving it alone.
+To return to automatic updates use `update-alternatives --auto x-www-browser'.
