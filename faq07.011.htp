@@ -1,0 +1,21 @@
+Title: 7.11. Editing two files
+Last-Changed-Date: Wed Oct 29 12:41:38 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+I usually 
+ CTRL+w N 
+
+to create a new window. and then:
+ :edit otherfile
+
+I use CTRL+w w to switch windows. 
+Also 
+ ctrl+w _ or = to 
+resize the window to max and equal partioning.
+
+My friend uses 
+ :split otherfile
+Which turns the first two steps into one.
