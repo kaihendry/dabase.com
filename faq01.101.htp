@@ -1,5 +1,5 @@
 Title: 1.101. Using the Ion window manager notes
-Last-Changed-Date: Sat Jun 26 11:53:39 2004
+Last-Changed-Date: Sat Jun 26 11:56:00 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -36,7 +36,7 @@ I got the class and instance settings by running in a nearby frame from uxterm (
 
  $ xprop WM_CLASS
 
-Then selecting my running browser, where it will the
+Then selecting my running browser, where it will spit out these important values = instance, class variables for use in Ion's winprop.
 
  WM_CLASS(STRING) = "Gecko", "Firefox-bin"
 
