@@ -1,5 +1,5 @@
-Title: 1.117. How do I update grub?
-Last-Changed-Date: Sat Sep 18 21:25:17 2004
+Title: 1.117. How do I update grub menu.lst on kernel-image install ?
+Last-Changed-Date: Sat Sep 18 21:32:43 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -7,3 +7,5 @@ Last-Changed-Remote-Address: 213.78.90.49
 
 Make this run after kernel-image install?
  update-grub
+
+Older installs need to configure the hook.
