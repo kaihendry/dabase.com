@@ -1,0 +1,10 @@
+Title: 1.76. Version of package ?
+Last-Changed-Date: Fri Jan 23 15:02:18 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+Finding package version information:
+
+ hendry@bilbo:~$ dpkg -s maradns
