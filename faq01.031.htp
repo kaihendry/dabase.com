@@ -1,9 +1,9 @@
 Title: 1.31. Using IRSSI
-Last-Changed-Date: Thu May 29 19:20:01 2003
-Last-Changed-Author: Kai Hendry
+Last-Changed-Date: Sun Jan 18 21:18:13 2004
+Last-Changed-Author: KaiHendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 217.30.176.161
 
 I always forget this one:
 
@@ -16,3 +16,6 @@ http://irssi.org/?page=docs&doc=faq
 
  17:17 < hendry> Can I log a conversation that has already taken place? I can see it in my buffer?
  17:17 < [Ward]>  /lastlog -file
+
+
+If you use ION, you can select the hidden windows with Esc-n
