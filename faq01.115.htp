@@ -1,0 +1,20 @@
+Title: 1.115. What was the return code of the last command?
+Last-Changed-Date: Tue Aug 10 19:15:10 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+Use:
+
+ echo $?
+
+Example:
+
+ bilbo$ df -h
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/hda1              19G  3.6G   14G  21% /
+ tmpfs                 253M     0  253M   0% /dev/shm
+ /dev/hda3              92G   35G   53G  40% /home
+ bilbo$ echo $?
+ 0
