@@ -1,5 +1,5 @@
 Title: 6.2. Inserting values into HTML output
-Last-Changed-Date: Wed Dec 18 17:32:39 2002
+Last-Changed-Date: Wed Dec 18 17:33:02 2002
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -11,5 +11,5 @@ use
 This just works like printf in C. %s is a placeholder for a string and
 on the right of the '%' is the variable who's value is substituted.
 
-http://groups.google.com/groups?q=Outputting+strings+in+html&hl=en&lr=&ie=UTF-8&oe=UTF-8&selm=mailman.1038943265.6652.python-list%40python.org&rnum=1">
+http://groups.google.com/groups?q=Outputting+strings+in+html&hl=en&lr=&ie=UTF-8&oe=UTF-8&selm=mailman.1038943265.6652.python-list%40python.org&rnum=1
 And how about using a dictionary/hash?
