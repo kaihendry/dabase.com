@@ -1,5 +1,5 @@
 Title: 7.10. Cleaning whitespace
-Last-Changed-Date: Sat Oct 25 15:04:21 2003
+Last-Changed-Date: Thu Nov  6 21:30:15 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -13,3 +13,6 @@ Or the regexp:
 
 Or this::
  %s/ \+$//
+
+Converting EVIL tabs to spaces
+ :retab
