@@ -1,9 +1,9 @@
 Title: 4.1. How to make web pages properly
-Last-Changed-Date: Tue Oct 29 08:56:28 2002
+Last-Changed-Date: Tue Oct 28 13:29:01 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.7.37
+Last-Changed-Remote-Address: 128.214.48.14
 
 <html>
 So you want to learn how to make a webpage?
@@ -19,4 +19,10 @@ for holding information, and CSS to decorate it.</p>
 	<li><a href="http://www.cs.helsinki.fi/u/hendry/simpstyle.css">A basic CSS to file to peer at</a></li>
 </ul>
 
+<blockquote>
+Accessibility is not just about blind people. It's about a growing set of devices with <a href="http://dictionary.reference.com/search?q=esoteric">esoteric</a> characteristics. Don't turn your readers away!
+</blockquote>
+<p>Quote from
+<a href="http://ln.hixie.ch">Ian Hickson</a>
+</p>
 </html>
