@@ -1,0 +1,15 @@
+Title: 1.34. how can a setup the default keymap for console??
+Last-Changed-Date: Sat Jun 21 13:33:03 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.8.208
+
+This link has most of the info:
+http://www.debian.org/doc/manuals/debian-euro-support/ch-configure.en.html
+
+Quick solution:
+ loadkeys gb
+
+System:
+ dpkg-reconfigure locales

@@ -1,0 +1,34 @@
+Title: 1.35. (kernel module) keeps on loading at boot time and I don't know how to remove it...
+Last-Changed-Date: Sat Jun 21 13:40:43 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.8.208
+
+The tool you should use to remove and add modules is:
+
+ modconf
+
+But sometimes this does not work. Esp. for dependancies and what have you. :)
+
+Try re-run 
+ update-modules 
+after editing.
+
+
+
+Last resort is to look at the offending kernel module with:
+
+ tail -n50 /var/log/messages
+
+And search for it's entry in /etc/modutils. Try:
+
+ egrep modulename /etc/modutils/*
+
+Once you located the file, comment the line out.
+
+My example:
+ hendry@bilbo:~$ egrep bttv /etc/modutils/*
+ /etc/modutils/actions:post-install bttv insmod tuner
+ /etc/modutils/actions:post-remove bttv rmmod tuner
+ /etc/modutils/aliases:alias char-major-81       bttv
