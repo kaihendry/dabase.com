@@ -1,0 +1,17 @@
+Title: 4.25. Apache 2 Vhost
+Last-Changed-Date: Thu Jul 15 23:23:14 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+Is 
+
+scrooge-15$ ls /etc/apache2/mods-enabled/ | grep vhost
+vhost_alias.load
+
+
+UseCanonicalName Off                                                                                                                                                          
+VirtualDocumentRoot /web/%0                                                                                                                                                   
+LogFormat "%V %h %l %u %t \"%r\" %>s %b" vhost_common                                                                                                                         
+CustomLog /var/log/apache2/access_log vhost_common
