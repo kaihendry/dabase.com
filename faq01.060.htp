@@ -1,5 +1,5 @@
 Title: 1.60. SVN homedir
-Last-Changed-Date: Fri Dec  5 14:25:10 2003
+Last-Changed-Date: Fri Dec  5 15:28:55 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -7,9 +7,8 @@ Last-Changed-Remote-Address: 128.214.9.73
 
 svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
 
-13:38 < hendry> hendry@scrooge-15:~$ svn ps svn:externals "mail 
-                svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" .
-13:38 < hendry> property 'svn:externals' set on '
+ $ svn propget svn:externals .
+
 
 13:38 < hendry> hendry@scrooge-15:~$ svn proplist
 13:38 < hendry> Properties on '':
@@ -17,6 +16,6 @@ svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
 13:38 < hendry> hendry@scrooge-15:~$
 13:39 < apw>  svn propget svn:externals .
 13:39 -!- bob2 [rob@egads.ertius.org] has quit [Client Quit]
-13:39 < hendry> hendry@scrooge-15:~$ svn propget svn:externals .
+13:39 < hendry> hendry@scrooge-15:~hendry@scrooge-15:~$ svn propedit svn:externals .
 13:39 < hendry> mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
 13:39 < hendry> hmm that looks good
