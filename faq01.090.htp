@@ -1,0 +1,16 @@
+Title: 1.90. Brazilian guys in Portugal
+Last-Changed-Date: Sun May 30 15:46:19 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+From Alastair McKinstry
+
+For the "Brazilian guy in Portugal" case referred to before,                          
+this is where LC_* come in; you would set                                             
+ LC_MESSAGES=pt_BR                                                                     
+ LANG=pt_BR                                                                            
+to get Brazilian dialect of Portuguese, and everything else                           
+ LC_MONETARY=pt                                                                        
+etc.
