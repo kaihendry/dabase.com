@@ -1,0 +1,59 @@
+Title: 1.22. CVS importing
+Last-Changed-Date: Sun Apr 13 12:24:12 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.0.224
+
+I never remember how to do this, and I always do something STUPID like:
+
+ hendry@bogrund-14:~$ cvs import datastructuresproject/ vendor_1_0 rev_1_0
+ L datastructuresproject//.inputrc
+ L datastructuresproject//.DCOPserver_bogrund-14
+ L datastructuresproject//.muttrc
+ L datastructuresproject//.vimrc
+ L datastructuresproject//.kde/tmp-bogrund-14
+ L datastructuresproject//.kde/socket-bogrund-14
+ cvs [import aborted]: received interrupt signal
+ Killed by signal 2.
+ cvs [import aborted]: received broken pipe signal
+ hendry@bogrund-14:~$ 
+
+
+
+Read http://www.tldp.org/HOWTO/CVS-RCS-HOWTO-3.html
+
+Change directory is a must (MANDATORY)
+ bash$ cd $HOME/somedir/anotherdir/directory/my_source_code_dir
+
+Must give vendor tag and revision tag
+ cvs import somedir/anotherdir/directory/my_source_code_dir vendor_1_0 rev_1_0
+
+
+Not to forget:
+ export CVSEDITOR=vim
+
+And MY (NOT YOURS) CVSROOT:
+ export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
+
+Now on my home machine, I can develop:
+
+ hendry@bilbo:~$ cvs co datastructuresproject
+ cvs server: Updating datastructuresproject
+ U datastructuresproject/match.py
+ U datastructuresproject/naive.py
+ U datastructuresproject/trans.py
+ hendry@bilbo:~$ cd datastructuresproject/
+ hendry@bilbo:~/datastructuresproject$ ll
+ total 752K
+ drwxr-sr-x    3 hendry   hendry       4.0K 2003-04-13 12:19 .
+ drwxr-sr-x  148 hendry   hendry       8.0K 2003-04-13 11:45 ..
+ drwxr-sr-x    2 hendry   hendry       4.0K 2003-04-13 12:19 CVS
+ -rwxr-xr-x    1 hendry   hendry       1.2K 2003-04-13 12:16 match.py
+ -rwxr-xr-x    1 hendry   hendry        569 2003-04-13 12:16 naive.py
+ -rw-r--r--    1 hendry   hendry        127 2003-04-13 12:16 trans.py
+ hendry@bilbo:~/datastructuresproject$ 
+
+CVS should take care of any conflicts and help me syncing my source between my school and home computer.
+
+Basically I can now work from home and from school without any major hassles like editing older versions of the source, or overwriting some code!
