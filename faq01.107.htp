@@ -1,0 +1,22 @@
+Title: 1.107. ps aux truncated output?
+Last-Changed-Date: Tue Jul  6 15:37:53 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+Funny.
+
+
+
+
+ 15:32 < hendry> If I run ps aux
+ 15:32 < hendry> some of the commands I am running get truncated in the output
+ 15:32 < hendry> How do I wrap it
+ 15:32 < hendry> Or make sure I can still see them
+ 15:32 < hendry> I thought screen would manage it
+ 15:32 < hendry> But it can't seem to
+ 15:34 < Tv> ps auxwwwwwwwwwwwwwwwwwwwww
+ 15:35 < hendry> ps aux --width 1000
+ 15:36 < hendry> Tv: oooh
+ 15:36 < hendry> it works actually
