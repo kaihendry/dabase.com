@@ -1,0 +1,13 @@
+Title: 1.43. Checking packages
+Last-Changed-Date: Wed Jul 23 13:59:49 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 193.136.128.7
+
+Checking your package is a good idea:
+
+
+ hendry@sam:~/mypackage2$ lintian python-lupy_0.1-1_i386.changes | lintian-info                       
+                                                                                                     
+another helpful tool is called "linda"
