@@ -1,9 +1,9 @@
 Title: 4.1. How to make web pages properly
-Last-Changed-Date: Mon Oct 14 20:40:15 2002
+Last-Changed-Date: Tue Oct 29 08:56:28 2002
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.14.81
+Last-Changed-Remote-Address: 80.221.7.37
 
 <html>
 So you want to learn how to make a webpage?
@@ -15,8 +15,8 @@ for holding information, and CSS to decorate it.</p>
 	<li><a href="http://www.w3.org/MarkUp/Guide/">HTML primer</a></li>
 
 	<li><a href="http://www.w3.org/MarkUp/Guide/Style">CSS primer</a></li>
-	<li><a href="work/example.shtml.txt">Typical XHTML template</a></li>
-	<li><a href="simpstyle.css">A basic CSS to file to peer at</a></li>
+	<li><a href="http://www.cs.helsinki.fi/u/hendry/work/example.shtml.txt">Typical XHTML template</a></li>
+	<li><a href="http://www.cs.helsinki.fi/u/hendry/simpstyle.css">A basic CSS to file to peer at</a></li>
 </ul>
 
 </html>
