@@ -1,0 +1,16 @@
+Title: 1.2. Installing debian
+Last-Changed-Date: Sun Oct 13 16:16:45 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.7.18
+
+A pleasant way of installing debian is by putting a friend's hard drive in your machine and using debootstrap described in :
+
+http://www.debian.org/releases/stable/i386/ch-preparing.en.html#s-linux-upgrade
+
+An operation like : 
+/usr/sbin/debootstrap --arch i386 woody /mnt/debinst
+http://ftp.fi.debian.org/debian
+
+It just cool... :) No need for downloading .isos etc. Perfect if the friend's machine does not have a floppy/cd drive too.
