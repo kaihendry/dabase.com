@@ -1,5 +1,5 @@
 Title: 6.56. Unique elements from a list
-Last-Changed-Date: Sun Nov 16 11:27:32 2003
+Last-Changed-Date: Sun Nov 16 11:29:40 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -10,8 +10,12 @@ There is a couple of new ways with 2.3:
 http://tinyurl.com/v72w
 
 Otherwise:
- d = {}
- for x in list:
-    d[x] = 1
- unique = d.keys()
- unique.sort()
+
+
+    def unique(self, list):                                                                                                                                               
+        d = {}                                                                                                                                                            
+        for x in list:                                                                                                                                                    
+            d[x] = 1                                                                                                                                                      
+            subset = d.keys()                                                                                                                                             
+            subset.sort()                                                                                                                                                 
+        return subset
