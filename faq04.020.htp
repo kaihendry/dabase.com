@@ -1,5 +1,5 @@
 Title: 4.20. SVG sucks
-Last-Changed-Date: Wed Jun 30 11:08:38 2004
+Last-Changed-Date: Wed Jun 30 11:31:22 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -14,3 +14,6 @@ http://www.w3.org/TR/2003/WD-webarch-20031209/#pci
 
 Who wants this? Mobile phone operators and graphics designers.
 http://www.westciv.com/style_master/house/good_oil/not_paper/
+
+
+It conflicts with CSS.
