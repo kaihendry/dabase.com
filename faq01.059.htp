@@ -1,5 +1,5 @@
 Title: 1.59. T30
-Last-Changed-Date: Sun Dec  7 21:32:59 2003
+Last-Changed-Date: Sun Dec  7 22:29:12 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -17,7 +17,6 @@ Then how the hell do I get ion running? Nothing in the docs. In the end I was to
 
  update-alternative --config x-window-manager
 
-
 Checking terminal column and width environment:
 
  resize
@@ -26,9 +25,22 @@ Check resolution of root window:
 
  xwininfo -root
 
-location focus in any browser:
+Location focus in any browser:
 
  ctrl+l 
 
-checking x errors in 
- .xsession-errors
+Check x errors in:
+ ~/.xsession-errors
+
+
+Network
+ e100
+
+Sound
+ snd-inte8x0
+
+Microphone
+ ?
+
+Video 
+ ati
