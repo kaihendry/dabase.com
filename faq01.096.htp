@@ -1,0 +1,16 @@
+Title: 1.96. SSH port forwarding
+Last-Changed-Date: Mon Jun 21 16:31:31 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+My home machine is behind a firewall. But I still want to connect to it.
+
+I have a server dabase.com on the internet.
+
+I run this command on my home machine.
+
+ ssh -R 8000:localhost:22 dabase.com
+
+Now I ssh to dabase.com and then ssh again to localhost:8000 to get to my home machine.
