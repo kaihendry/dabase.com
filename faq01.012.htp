@@ -1,8 +1,10 @@
-Title: 1.12. test
-Last-Changed-Date: Mon Dec  2 12:40:25 2002
+Title: 1.12. route add default gw
+Last-Changed-Date: Thu Dec 12 20:40:12 2002
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.8.196
+Last-Changed-Remote-Address: 80.221.8.93
 
-test
+root@dogbert:~# /sbin/route add default gw 192.168.0.77 dev eth1
+
+I can never remember route's syntax. Here I am adding the internal ip of my machine as the gateway of a guest machine using eth1.
