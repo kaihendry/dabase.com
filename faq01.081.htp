@@ -1,5 +1,5 @@
 Title: 1.81. Grepping
-Last-Changed-Date: Sat May 29 18:23:12 2004
+Last-Changed-Date: Sat May 29 18:23:28 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -8,4 +8,4 @@ Last-Changed-Remote-Address: 217.30.176.161
 For a negative search:
  egrep -v
 
-Also known as invert&#8208;match
+Also known as invert-match
