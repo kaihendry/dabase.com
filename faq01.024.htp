@@ -1,5 +1,5 @@
 Title: 1.24. Finding additional information about a package not installed
-Last-Changed-Date: Fri Apr 18 13:25:54 2003
+Last-Changed-Date: Fri Apr 18 13:28:03 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -14,7 +14,7 @@ apt-cache show
  Priority: optional
  Section: gnome
  Installed-Size: 540
- Maintainer: Ross Burton <ross@burtonini.com>
+ Maintainer: Ross Burton <ross@xxx.com>
  Architecture: all
  Version: 0.18.1-2
  Depends: python (>= 2.2), python (<< 2.3), python-adns (>= 1.0.0-4),  python-egenix-mxdatetime, python-bsddb3 (>= 3.3.0-5.1), python-xml,  python-gtk2 (>= 1.19.13-3), python-glade2 (>= 1.19.13-3), python-gnome2  (>= 1.19.13-3)
