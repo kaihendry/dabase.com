@@ -1,9 +1,11 @@
 Title: 1.60. SVN homedir
-Last-Changed-Date: Sat Dec  6 13:50:59 2003
+Last-Changed-Date: Sat Dec  6 15:25:52 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 213.243.180.11
+
+http://svnbook.red-bean.com/book.html
 
 Arrangement so far:
 
@@ -28,7 +30,7 @@ This is how you create them:
  $ svn propedit svn:externals .
  $ svn propget svn:externals .
 
-I am ignoring the dotfiles:
+I am ignoring the dotfiles(I hope):
   $ svn propget svn:ignore .
  .*
 
