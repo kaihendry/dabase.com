@@ -1,12 +1,13 @@
 Title: 1.45. Finding about your display
-Last-Changed-Date: Mon Aug 11 12:09:07 2003
+Last-Changed-Date: Sat Nov  1 16:31:07 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 62.78.149.199
 
 What resolution am I running?
  xdpyinfo
 
 Do I have hardware acceleration?
  glxinfo
+ xvinfo
