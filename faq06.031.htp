@@ -1,0 +1,20 @@
+Title: 6.31. Setting list values
+Last-Changed-Date: Tue Apr  8 11:59:25 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+How to set a list value in a for loop.
+
+ >>> list = range(5)
+ >>> list
+ [0, 1, 2, 3, 4]
+ >>> for i in list:
+ ...     i = i + 1
+ ...
+ >>> list
+ [0, 1, 2, 3, 4]
+
+
+We desired [1, 2, 3, 4, 5]
