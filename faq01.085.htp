@@ -1,5 +1,5 @@
 Title: 1.85. AWK BASH STUFF
-Last-Changed-Date: Tue Apr 13 15:28:47 2004
+Last-Changed-Date: Mon Jun  7 12:37:23 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -9,3 +9,11 @@ Every now and then, some shows me something I should know :
 
  (du -a | awk '{print }' | grep '\.JPG' | xargs jhead)
  for i in `du -a | awk '{print $2}' | grep '\.JPG'`; do cp $i ~/kodak; done
+
+
+First field:
+ apt-cache search mp3 | awk '{print $1}'
+
+
+Last field:
+ apt-cache search mp3 | awk '{print $NF}'
