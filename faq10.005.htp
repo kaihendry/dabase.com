@@ -1,0 +1,12 @@
+Title: 10.5. Latin1 Characters
+Last-Changed-Date: Wed Dec 10 17:26:12 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.9.73
+
+You know! Like цед
+
+Type them in normally into the tex file, make sure this package line is declared:
+
+ \usepackage[T1]{fontenc}
