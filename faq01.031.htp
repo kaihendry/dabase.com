@@ -1,5 +1,5 @@
-Title: 1.31. Stopping reconnects in IRSSI
-Last-Changed-Date: Thu May 29 18:32:08 2003
+Title: 1.31. Using IRSSI
+Last-Changed-Date: Thu May 29 19:20:01 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -13,3 +13,6 @@ I always forget this one:
 And it is in the FAQ of course: 
 
 http://irssi.org/?page=docs&doc=faq
+
+ 17:17 < hendry> Can I log a conversation that has already taken place? I can see it in my buffer?
+ 17:17 < [Ward]>  /lastlog -file
