@@ -1,0 +1,24 @@
+Title: 1.51. Check out some multimedia
+Last-Changed-Date: Fri Sep 26 21:59:34 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 62.78.149.199
+
+Well, tonight I was wondering how to play a .wav file from the command line.
+
+There is sox of course:
+
+ sox chat1.wav -t ossdsp -w -s /dev/dsp
+
+Nasty...
+
+Then part on #debian-fi pointed me out:
+
+ see
+
+Which from the manpage:
+ 
+ run-mailcap, see, edit, compose, print - execute programs via entries in the mailcap file
+
+Very cool...
