@@ -1,0 +1,10 @@
+Title: 7.5. How do I configure VIM to resume editing where I was last editing in a file, saved and quit?
+Last-Changed-Date: Sun Apr 27 22:15:58 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.4.136
+
+IRC is actually pretty great. From #vim:
+ 22:09 < hendry> How do I configure VIM to resume editing where I was last editing in a file, saved and quit?
+ 22:10 < LeChef> :mksession iirc
