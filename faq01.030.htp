@@ -1,12 +1,28 @@
-Title: 1.30. Debug tips
-Last-Changed-Date: Tue May 20 14:10:40 2003
+Title: 1.30. Grub Vga Framebuffer
+Last-Changed-Date: Sat Nov 15 10:29:45 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 62.78.149.199
 
-Tips for development.
+Vga Framebuffer settings. From:
+/usr/share/doc/kernel-doc-2.4.22/Documentation/svga.txt.gz
 
-14:07 < hendry> Can I make a python program drop into it's own interpreter, instead of bash when a program fails?
- 14:07 < hendry> I don't want to lose these large objects if some command fails
- 14:07 < Rafterman> python -i
+Still doesn't explain "0x305". 
+
+ default=0                                                                                                                                                                 
+ timeout=5                                                                                                                                                                 
+ splashimage=(hd0,0)/boot/grub/splash/za-flag.xpm.gz                                                                                                                       
+                                                                                                                                                                          
+ title  Debian Linux 2.4.22                                                                                                                                                
+ root   (hd0,0)                                                                                                                                                            
+ kernel /boot/vmlinuz-2.4.22-1-k7 root=/dev/hda1 mem=nopentium hdc=ide-scsi vga=0x305                                                                                      
+ initrd /boot/initrd.img-2.4.22-1-k7                                                                                                                                       
+                                                                                                                                                                          
+ title Memtest86                                                                                                                                                           
+ root   (hd0,0)                                                                                                                                                            
+ kernel /boot/memtest86.bin                                                                                                                                                
+                                                                                                                                                                          
+ title Windows XP                                                                                                                                                         
+ rootnoverify (hd0,2)                                                                                                                                                     
+ chainloader +1
