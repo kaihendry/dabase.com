@@ -1,8 +1,10 @@
 Title: 1.54. Backing up
-Last-Changed-Date: Mon Nov 10 19:36:18 2003
+Last-Changed-Date: Wed Jun  9 09:17:29 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 62.78.149.199
+Last-Changed-Remote-Address: 217.30.176.161
 
 http://www.mikerubel.org/computers/rsync_snapshots/
+
+ rsync -essh -rtpvz
