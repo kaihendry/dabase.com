@@ -1,0 +1,16 @@
+Title: 6.50. Zip
+Last-Changed-Date: Mon Jun 16 16:27:48 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+This:
+
+http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=show&file=faq06.048.htp
+
+Also uses zip
+
+ 16:23 < hendry> What is it called when you iterate through two iteratable objects at the same time? I want to do something like : for i, j in list1, list2: # but it does not work
+ 16:24 < mg> hendry: zip()
+ 16:25 < mg> So ... for i, j in zip(list1, list2)
