@@ -1,0 +1,15 @@
+Title: 6.63. Running other programs
+Last-Changed-Date: Tue Mar 23 11:26:30 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+From http://www.aaronsw.com/weblog/001189#comments
+
+
+ import os
+ def markdown(text):
+    i, o = os.popen2("perl Markdown.pl") # let the Perl code take it
+    i.write(text); i.close()
+    return o.read()
