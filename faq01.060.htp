@@ -1,22 +1,38 @@
 Title: 1.60. SVN homedir
-Last-Changed-Date: Fri Dec  5 15:29:42 2003
+Last-Changed-Date: Sat Dec  6 13:50:59 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.9.73
+Last-Changed-Remote-Address: 213.243.180.11
 
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
+Arrangement so far:
+
+ hendry@bilbo:~$ svn ls svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo
+ debian/
+ home/
+ mail/
+ personal/
+ school/
+
+In a new clean $HOME:
+ svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
+
+home has some svn:externals definitions
+ 
+ $ svn propget svn:externals .
+ mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
+ personal svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/personal
+
+This is how you create them:
 
  $ svn propedit svn:externals .
  $ svn propget svn:externals .
 
+I am ignoring the dotfiles:
+  $ svn propget svn:ignore .
+ .*
 
-13:38 < hendry> hendry@scrooge-15:~$ svn proplist
-13:38 < hendry> Properties on '':
-13:38 < hendry>   svn:externals
-13:38 < hendry> hendry@scrooge-15:~$
-13:39 < apw>  svn propget svn:externals .
-13:39 -!- bob2 [rob@egads.ertius.org] has quit [Client Quit]
-13:39 < hendry> hendry@scrooge-15:~hendry@scrooge-15:~$ svn propedit svn:externals .
-13:39 < hendry> mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-13:39 < hendry> hmm that looks good
+As I got sick of looking at the mess of them with a svn status. And that was after spending 4 hours deleting most of them.
+
+Property listings:
+ $ svn proplist
