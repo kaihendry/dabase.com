@@ -1,0 +1,11 @@
+Title: 1.111. H4X0ring a d3b14n b0x3n
+Last-Changed-Date: Tue Jul 20 19:28:21 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+init=/bin/sh
+
+
+ mount -o rw, remount /
