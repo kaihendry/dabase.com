@@ -1,38 +1,16 @@
-Title: 6.54. Unicode
-Last-Changed-Date: Sun Oct 12 17:54:53 2003
+Title: 6.54. Reading input / user interaction
+Last-Changed-Date: Sun Oct 26 21:48:36 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 62.78.149.199
 
-A re-occuring problem I have had with computers is encodings.  As an English
-speaker I have not need anything except ASCII, but all the same it is annoying
-when some text do not look right.
+Input
 
-So on my system I have changed some things. My bash locale is now
-
- hendry@bilbo:/tmp$ printenv | grep -i utf
- LC_ALL=en_GB.UTF-8
- LANG=en_GB.UTF-8
- LC_CTYPE=en_GB.UTF-8
-
-I've added a couple of lines to my editor config .vimrc
-
- set encoding=utf-8
- set fileencoding=utf-8
-
-And my mailer mutt config .muttrc
-
- set charset="utf-8"
-
-In Gnome's preferred applications(under desktop preferences -> advanced) for
-Terminal I've put
-
- -u8 -fn -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
-
-As xterm's custom terminal exec flag. So Unicode should render properly.
-
-So far so good. Although stange artifacts like rounded brackets appear on my
-terminal which usually takes a refresh(ctrl+l) to flush out. 
-
-http://www.joelonsoftware.com/articles/Unicode.html
+ >>> print input.__doc__
+ input([prompt]) -> value
+ Equivalent to eval(raw_input(prompt)).
+ >>> test = input()
+ ['hi'] 
+ >>> test
+ ['hi']
