@@ -1,5 +1,5 @@
 Title: 1.101. Using the Ion window manager notes
-Last-Changed-Date: Sat Jun 26 11:44:25 2004
+Last-Changed-Date: Sat Jun 26 11:49:44 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -51,3 +51,12 @@ Copy pwd from menu?
 Understand WS - Frame - Window - Dock
 
 +append WS screenshot
+
+
+http://svn.natalian.org/home/.ion2/
+
+Shortcuts refcard:
+ alt+s split
+ alt+k s vsplit
+ alt+ left or right cursors pgup/pgdown between workspaces(WS)
+ alt+tab toggle between frame in WS
