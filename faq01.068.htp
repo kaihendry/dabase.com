@@ -1,0 +1,13 @@
+Title: 1.68. /etc/enviroment Proxy configuration
+Last-Changed-Date: Tue Dec  9 12:26:35 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.9.73
+
+With SkoleLinux put in proxy settings in :
+
+ /etc/environment
+
+ http_proxy=http...
+ ftp_proxy=http...
