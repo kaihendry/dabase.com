@@ -1,0 +1,10 @@
+Title: 1.95. Spaces in filename?
+Last-Changed-Date: Thu Jun 17 14:03:09 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+Get rid of them.
+
+ rename 's/\s/-/g' *.jpg
