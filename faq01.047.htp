@@ -1,9 +1,16 @@
-Title: 1.47. Time in New York?
-Last-Changed-Date: Mon Aug 18 00:10:06 2003
+Title: 1.47. Time in New York? Tokyo?
+Last-Changed-Date: Fri Jul  2 14:50:10 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.10.70
+Last-Changed-Remote-Address: 128.214.48.17
 
 Get time/date in the New York timezone (EST) like so:
  TZ=EST date
+
+Time in Tokyo?
+
+Look it up:
+http://twiki.org/cgi-bin/xtra/tzdate
+
+Ah, JST! Japanese Standard Time I presume.
