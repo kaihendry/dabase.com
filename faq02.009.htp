@@ -1,0 +1,19 @@
+Title: 2.9. Merging maildirs
+Last-Changed-Date: Mon Jul 28 00:47:45 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.8.230
+
+I tend to use several machines. But I want all my mail somewhere so I can search it with mairix for example.
+
+On my laptop I have sent-mail-07-2003/ maildir. I also have the same maildir on my home machine bilbo, however with different mails.
+
+I want to merge those two folders at some point, without overwriting or losing mails.
+
+After copying sent-mail-07-2003/ from my laptop across to bilbo's /tmp, I proceeded to:
+
+ cd /tmp
+ cp -R --preserve --reply=no sent-mail-07-2003 ~/Mail/sent-mail/
+
+And it seems to work.=)
