@@ -1,5 +1,5 @@
 Title: 6.21. Using sub re groups as arguments in functions
-Last-Changed-Date: Fri Feb 21 14:53:35 2003
+Last-Changed-Date: Fri Feb 21 14:54:24 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -30,5 +30,5 @@ But of course it would never work, due to bad syntax. This is the correct syntax
 
 and in thumb.py :
  def thumburl(matchobj):
-     print matchobj.group(1)
-     thumbgen(matchobj.group(1))
+     print matchobj.group(0) # print all groups
+     thumbgen(matchobj.group(2)) # use that second group
