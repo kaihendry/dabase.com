@@ -1,0 +1,16 @@
+Title: 6.35. How would one read line (x) from a file?
+Last-Changed-Date: Sun Apr 13 00:38:19 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 80.221.9.217
+
+Another IRC adventure:
+
+ 00:33 < hendry> exarkun: readlines()[lineno] perhaps?
+ 00:33 < ivan> for small files
+ 00:33 < ivan> you can use a lot less memory with xreadlines and a counter
+ 00:33 < deltab> linecache
+ 00:34 < ivan> hurray
+ 00:34 < hendry> deltab: linecache?
+ 00:34 < ivan> http://www.python.org/doc/current/lib/module-linecache.html
