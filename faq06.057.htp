@@ -1,0 +1,11 @@
+Title: 6.57. Type checking or Object type comparisons
+Last-Changed-Date: Sun Nov 16 12:55:07 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 62.78.149.199
+
+http://www.python.org/peps/pep-0008.html
+
+        No:  if type(obj) is type(1):
+        Yes: if isinstance(obj, int):

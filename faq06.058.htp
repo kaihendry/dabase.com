@@ -1,0 +1,25 @@
+Title: 6.58. List sorting (DSU?)
+Last-Changed-Date: Sun Nov 16 12:59:17 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 62.78.149.199
+
+< hendry> A list of strings I guess is sorted alphabetically with a .sort(). Is there a similar shortcut to sort the list by size of the string?
+  < dotz> hendry: help(list.sort)
+  < dotz> hendry: note the cmpfunc argument.
+
+ >>> help(list.sort)
+ Help on method_descriptor:
+
+ sort(...)
+
+    L.sort(cmpfunc=None) -- stable sort *IN PLACE*; cmpfunc(x, y) -> -1, 0, 1
+
+  < moshez> dotz: please don't give silly answers
+  < moshez> hendry: use a schwartzian transform
+  
+  < moshez> l = [(len(s),s) for s in l]
+  < moshez> l.sort()
+  
+  < moshez> l = [x[1] for x in l]
