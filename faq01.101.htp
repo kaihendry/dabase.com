@@ -1,5 +1,5 @@
 Title: 1.101. Using the Ion window manager notes
-Last-Changed-Date: Sat Jun 26 11:56:43 2004
+Last-Changed-Date: Sat Jun 26 12:14:23 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -45,7 +45,7 @@ Then I made an ~/.xsession with:
  x-terminal-emulator -e screen &
  exec x-window-manager
 
-I tried stuff ~/xinitrc, but it didn't work for some reason.
+I tried stuff ~/xinitrc(what about ~/.xclients ??), but it didn't work for some reason.
 
 Now when I log in, firefox is loaded. I don't have to waste 10 seconds of my life everytime I log in!!
 
