@@ -1,5 +1,5 @@
 Title: 1.80. Reading a man page
-Last-Changed-Date: Fri Feb 13 12:21:28 2004
+Last-Changed-Date: Fri Feb 13 12:25:48 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -8,3 +8,6 @@ Last-Changed-Remote-Address: 128.214.48.17
 Good when delving in the sources:
 
  nroff -man amanpage.3
+
+Search for something, try:
+ man -k foobar
