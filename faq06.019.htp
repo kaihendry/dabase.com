@@ -1,0 +1,15 @@
+Title: 6.19. PYTHONPATH in script
+Last-Changed-Date: Fri Feb 21 14:43:28 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+Want to load a module in your $HOME dir somewhere?
+
+ try:
+         import Image # http://www.pythonware.com/products/pil/
+ except:
+         import sys # Adjust path for module
+         sys.path.insert(0 , "/home/hendry/Image/Imaging-1.1.3/build/lib.linux-i686-2.2")
+         import Image
