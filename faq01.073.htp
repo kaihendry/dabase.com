@@ -1,9 +1,9 @@
 Title: 1.73. Subversion gotchas
-Last-Changed-Date: Sun Jan 25 12:38:40 2004
-Last-Changed-Author: KaiHendry
+Last-Changed-Date: Tue Apr  6 13:07:07 2004
+Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
+Last-Changed-Remote-Address: 128.214.48.17
 
 If you accidently add some stuff, it can be quite painful to remove.
 
@@ -20,3 +20,11 @@ How does one remove unused log files?
 Subversion using Berkely DB which sucks, as it can't be used on a NFS.
 
 It also requires WRITE permissions just to read it!
+
+Trying to get ssh access and viewcvs working ?
+
+READ:
+http://svnbook.red-bean.com/svnbook/ch06s05.html
+ hendry@bilbo:~$ sudo chown -R :svn public; chmod -R g+rwx public; chmod g+s public/db/
+ hendry@bilbo:~$ egrep svn /etc/group
+ svn:x:1008:www-data,hendry
