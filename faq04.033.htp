@@ -1,0 +1,21 @@
+Title: 4.33. Webstats
+Last-Changed-Date: Mon Sep 27 13:20:33 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 213.78.175.54
+
+Analog and Rmagic configuration:
+
+http://svn.natalian.org/debian/configuration/analog/
+
+http://stats.dabase.com/
+
+Run in cron:
+ 0 1 * * * /home/hendry/debian/configuration/analog/computestats.sh
+
+Don't forget http://stats.dabase.com/robots.txt to avoid referal spam.
+
+OR do it with bash like so:
+
+ egrep portfolio pictures.natalian.org-access_log | awk '{print $1}' | uniq | xargs -n 1 host
