@@ -1,9 +1,9 @@
-Title: 1.47. Time in Newyork?
-Last-Changed-Date: Wed Aug 13 14:45:30 2003
+Title: 1.47. Time in New York?
+Last-Changed-Date: Mon Aug 18 00:10:06 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
+Last-Changed-Remote-Address: 80.221.10.70
 
 Get time/date in the New York timezone (EST) like so:
  TZ=EST date
