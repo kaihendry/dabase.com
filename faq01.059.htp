@@ -1,5 +1,5 @@
 Title: 1.59. T30
-Last-Changed-Date: Sun Dec  7 22:29:12 2003
+Last-Changed-Date: Sun Dec  7 22:39:18 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -15,7 +15,7 @@ Very denying X dening permission to users by default. Fix is:
 
 Then how the hell do I get ion running? Nothing in the docs. In the end I was told:
 
- update-alternative --config x-window-manager
+ update-alternatives --config x-window-manager
 
 Checking terminal column and width environment:
 
