@@ -1,9 +1,13 @@
 Title: 4.31. Grepping a URL
-Last-Changed-Date: Sun Aug 22 21:42:33 2004
+Last-Changed-Date: Sun Aug 22 21:45:54 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 217.30.176.161
 
 This is sweet bash:
- wget -O - http://gd.tuwien.ac.at/linux/knoppix/packages.txt | grep sub
+
+ bilbo$ wget -q -O - http://gd.tuwien.ac.at/linux/knoppix/packages.txt | grep sub
+ ii  autotools-dev            20040312.1               Update   infrastructure for config.{guess,sub} files
+ ii  libtext-wrapi18n-perl    0.06-1                   internationalized substitute of Text::Wrap
+ bilbo$
