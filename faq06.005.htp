@@ -1,0 +1,16 @@
+Title: 6.5. Search and replace
+Last-Changed-Date: Fri Dec 20 21:31:26 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 195.92.67.76
+
+I always forget %s
+
+From vimtutor:
+
+  4. To substitute new for the first old on a line type    :s/old/new
+     To substitute new for all 'old's on a line type       :s/old/new/g
+     To substitute phrases between two line #'s type       :#,#s/old/new/g
+     To substitute all occurrences in the file type        :%s/old/new/g
+     To ask for confirmation each time add 'c'             :%s/old/new/gc
