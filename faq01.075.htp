@@ -1,0 +1,9 @@
+Title: 1.75. Getting rid of .svn
+Last-Changed-Date: Sun Jan 11 23:59:19 2004
+Last-Changed-Author: KaiHendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+From darix
+ find -type d -name "\.svn" -exec rm "{}" \;
