@@ -1,0 +1,11 @@
+Title: 1.118. Configuring POSTFIX with your ISP's smtp
+Last-Changed-Date: Mon Feb 21 14:19:11 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 202.52.200.134
+
+Ha ha, EZ:
+
+ 13:58 < snowblink> hendry: sudo postconf -e relayhost=yourispsmtpserver
+ 13:58 < snowblink> hendry: then sudo /etc/init.d/postfix restart
