@@ -1,0 +1,14 @@
+Title: 1.67. Installing Xfree86 4.3 SID
+Last-Changed-Date: Mon Dec  8 09:49:00 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 213.243.180.11
+
+Very denying X dening permission to users by default. Fix is:
+
+ from memory, xwrapper is change the first line in /etc/X11/Xwrapper.config to have "allowed_users=console" instead of "allowed_users=rootonly", or dpkg-reconfigure xserver-common
+
+Then how the hell do I get ion running? Nothing in the docs. In the end I was told:
+
+ update-alternatives --config x-window-manager
