@@ -1,10 +1,12 @@
 Title: 7.13. Literal Char
-Last-Changed-Date: Sun Dec  7 18:05:00 2003
+Last-Changed-Date: Thu Apr 15 09:54:14 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
+Last-Changed-Remote-Address: 217.30.176.161
 
-C-v C-h
+IN INSERT MODE !
+
+ C-v C-h
 
 for ^H
