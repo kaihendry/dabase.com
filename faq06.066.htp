@@ -1,0 +1,57 @@
+Title: 6.66. Refactoring perl ;) STDIN STDOUT Example
+Last-Changed-Date: Sat Apr 24 21:06:58 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+Ok that's perl:
+ #while (<>) {if(!/^\S+: |^[% \n]|^\*./) {print;}}                                                                                                                                                                                       
+                                                                                                                                                                                                                                        
+I think it does run faster than python:
+
+ hendry@scrooge-15:/tmp/acronym$ time perl vera.pl < vera.1 > /dev/null
+
+ real    0m0.023s
+ user    0m0.019s
+ sys     0m0.002s
+ hendry@scrooge-15:/tmp/acronym$ time perl vera.pl < vera.1 > /dev/null
+
+ real    0m0.022s
+ user    0m0.020s
+ sys     0m0.001s
+ hendry@scrooge-15:/tmp/acronym$ time perl vera.pl < vera.1 > /dev/null
+
+ real    0m0.022s
+ user    0m0.020s
+ sys     0m0.001s
+ hendry@scrooge-15:/tmp/acronym$ time python vera.py < vera.1 > /dev/null
+
+ real    0m0.051s
+ user    0m0.039s
+ sys     0m0.011s
+ hendry@scrooge-15:/tmp/acronym$ time python vera.py < vera.1 > /dev/null
+
+ real    0m0.051s
+ user    0m0.040s
+ sys     0m0.009s
+ hendry@scrooge-15:/tmp/acronym$ time python vera.py < vera.1 > /dev/null
+
+ real    0m0.050s
+ user    0m0.036s
+ sys     0m0.013s
+
+Here is the python version:
+
+ import sys                                                                                                                                                                                                                              
+ import re                                                                                                                                                                                                                               
+ if 0:                                                                                                                                                                                                                                   
+     for line in sys.stdin.readlines():                                                                                                                                                                                                  
+         if not re.search('^\S+: |^[% \n]|^\*.', line):                                                                                                                                                                                  
+             sys.stdout.write(line)                                                                                                                                                                                                      
+                                                                                                                                                                                                                                        
+# OK a one liner then:
+
+ [sys.stdout.write(line) for line in sys.stdin.readlines() if not re.search('^\S+: |^[% \n]|^\*.', line)]
+
+It's much easier to read than perl IMHO.
