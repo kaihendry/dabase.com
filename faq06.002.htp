@@ -1,0 +1,9 @@
+Title: 6.2. Inserting values into HTML output
+Last-Changed-Date: Wed Dec 18 17:28:20 2002
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 195.92.67.68
+
+use
+ print '<body bgcolor="%s">' % color
