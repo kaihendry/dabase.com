@@ -1,0 +1,9 @@
+Title: 4.31. Grepping a URL
+Last-Changed-Date: Sun Aug 22 21:42:33 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 217.30.176.161
+
+This is sweet bash:
+ wget -O - http://gd.tuwien.ac.at/linux/knoppix/packages.txt | grep sub
