@@ -1,10 +1,14 @@
 Title: 6.5. Normalizing whitespace
-Last-Changed-Date: Sat Dec 21 02:36:10 2002
+Last-Changed-Date: Sun Jun 27 09:40:48 2004
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.68
+Last-Changed-Remote-Address: 217.30.176.161
 
 From somewhere in Mark Pilgrim's highly recommended http://diveintopython.org FREE book.
 
  " ".join(s.split())
+
+The-fixer
+
+ map(lambda s : re.sub('\s+',' ',s), crex.match(s).groups())
