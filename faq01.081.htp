@@ -1,0 +1,9 @@
+Title: 1.81. Grepping
+Last-Changed-Date: Fri Feb 13 12:24:18 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+For a negative search:
+ egrep -v

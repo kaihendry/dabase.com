@@ -1,0 +1,9 @@
+Title: 7.14. Byte code!
+Last-Changed-Date: Fri Feb 13 12:23:36 2004
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.17
+
+Launch:
+ vim -b
