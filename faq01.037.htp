@@ -1,0 +1,21 @@
+Title: 1.37. Taking screenshots
+Last-Changed-Date: Mon Jun 23 15:48:03 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+Screenshots are great to show people !
+
+ 15:33 <@Kai> what is that console program to grab screen shots again ?
+ 15:33 <@Shevek> xwd? cat?
+ 15:35 <@Kai> Shevek: Hmmmm, it is part of the imagemagick suite
+ 15:35 <@Kai> Shevek: import!
+
+
+Take a screenshot of the entire screen, and resize it down to 640x480 and call it
+myscreen.jpg
+
+ hendry@bogrund-14:/tmp$ import -window root -geometry 640x480! myscree.jpg
+
+800x600 may be better :)
