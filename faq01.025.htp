@@ -1,0 +1,17 @@
+Title: 1.25. using gnu tar reference
+Last-Changed-Date: Tue Apr 29 14:13:18 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+List files in archive:
+ tar -t whatishere.tar
+
+does not work. it just hangs there until you ctrl-c it. great. SO what works?
+
+ tar -t --file=whatishere.tar
+
+or:
+
+ tar --list --file=whatishere.tar
