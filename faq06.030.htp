@@ -1,5 +1,5 @@
 Title: 6.30. Template
-Last-Changed-Date: Thu Jul  3 11:50:08 2003
+Last-Changed-Date: Thu Jul  3 11:59:13 2003
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@cs.helsinki.fi
 Last-Changed-Remote-Host: 
@@ -16,4 +16,4 @@ IF the #! does not work, your file is probably encoded in a DOS format!
 Fix it in vim with:
  :set notextmode^MZZ
 
-(Thanks to Wari that out to me)
+(Thanks to Wari for pointing that out to me)
