@@ -1,0 +1,11 @@
+Title: 6.43. Infrequently asked questions
+Last-Changed-Date: Thu May 29 18:31:25 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+From reading this:
+http://www.norvig.com/python-iaq.html
+
+I discovered the Set data type and Norvig's .python startup file

@@ -1,0 +1,11 @@
+Title: 1.31. Stopping reconnects in IRSSI
+Last-Changed-Date: Thu May 29 18:28:50 2003
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 128.214.48.14
+
+I always forget this one
+
+ 16:26 < hendry> FAQ: How do I stop reconnects?
+ 16:26 < hoxu> hendry, /rmreconns?
