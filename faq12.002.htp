@@ -1,0 +1,10 @@
+Title: 12.2. Installing from CDs using the console
+Last-Changed-Date: Tue May 24 07:52:57 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+You could always copy the CD's to a central directory/repo and change /etc/sysconfig/rhn/sources to refer to that local directory and then you can use the up2date tool
+
+There is also the --aid option with Rpm
