@@ -1,0 +1,8 @@
+Title: 1.124. mkdir -p not mkdirs
+Last-Changed-Date: Fri Jun 17 06:26:01 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+To create a hierachy use mkdir -p
