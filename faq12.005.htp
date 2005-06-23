@@ -1,5 +1,5 @@
 Title: 12.5. Firewall
-Last-Changed-Date: Fri Jun 17 05:24:29 2005
+Last-Changed-Date: Thu Jun 23 07:49:12 2005
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -10,3 +10,14 @@ With iptables. There is a couple of ways to do iptables. Inserting or appending 
  up2date --install system-config-securitylevel
  system-config-securitylevel
  service iptables status
+
+Edit the :
+
+/etc/sysconfig/iptables
+
+When comfortable.
+
+E.g.
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp -s 61.9.136.168 --dport 1521 -j ACCEPT
+
+Allows access only to my IP for the Oracle port 1521.
