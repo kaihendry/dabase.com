@@ -1,5 +1,5 @@
 Title: 1.128. Viewing a firewall
-Last-Changed-Date: Wed Jul  6 04:09:11 2005
+Last-Changed-Date: Wed Jul  6 04:24:21 2005
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -7,35 +7,19 @@ Last-Changed-Remote-Address: 61.9.136.168
 
 Check it out!
  sudo iptables -vnxL
-<html>
-<pre>
-[hendry@server sysconfig]$ sudo iptables -vnxL
-Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
-    pkts      bytes target     prot opt in     out     source               destination
-    9972   815617 RH-Firewall-1-INPUT  all  --  *      *       0.0.0.0/0            0.0.0.0/0
 
-Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
-    pkts      bytes target     prot opt in     out     source               destination
-       0        0 RH-Firewall-1-INPUT  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+With line numbers !
 
-Chain OUTPUT (policy ACCEPT 3407 packets, 460512 bytes)
-    pkts      bytes target     prot opt in     out     source               destination
+ iptables -vnxL --line-numbers
 
-Chain RH-Firewall-1-INPUT (2 references)
-    pkts      bytes target     prot opt in     out     source               destination
-    3162   405460 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0
-       3      224 ACCEPT     icmp --  *      *       0.0.0.0/0            0.0.0.0/0           icmp type 255
-       0        0 ACCEPT     esp  --  *      *       0.0.0.0/0            0.0.0.0/0
-       0        0 ACCEPT     ah   --  *      *       0.0.0.0/0            0.0.0.0/0
-       0        0 ACCEPT     udp  --  *      *       0.0.0.0/0            224.0.0.251         udp dpt:5353
-       0        0 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0           udp dpt:631
-     157    10993 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED
-      12      720 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           state NEW tcp dpt:443
-       0        0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           state NEW tcp dpt:10001
-       2      120 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           state NEW tcp dpt:1521
-       3      180 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           state NEW tcp dpt:22
-       4      240 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           state NEW tcp dpt:80
-    6629   397680 REJECT     all  --  *      *       0.0.0.0/0            0.0.0.0/0           reject-with icmp-host-prohibited
-[hendry@server sysconfig]$
-</pre>
-</html>
+For:
+
+ iptables -I 
+
+Inserts!
+
+Cool!
+
+Yeah!
+
+Yahoo!
