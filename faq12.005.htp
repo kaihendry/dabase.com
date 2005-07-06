@@ -1,11 +1,19 @@
 Title: 12.5. Firewall
-Last-Changed-Date: Thu Jun 23 07:49:12 2005
+Last-Changed-Date: Wed Jul  6 04:15:27 2005
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
 Last-Changed-Remote-Address: 61.9.136.168
 
-With iptables. There is a couple of ways to do iptables. Inserting or appending is the two categories. If you made mistakes you can be locked out the system. So I am playing dumb and using Red Hat's GUI:
+With iptables. There is a couple of ways to do iptables. Inserting or appending is the two categories. 
+
+If you made mistakes you can be locked out the system. 
+
+THOUGH:
+
+ -A RH-Firewall-1-INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT before any DROP/REJECT rules, you'll be fine
+
+Play dumb and use Red Hat's GUI if you are a newbie:
 
  up2date --install system-config-securitylevel
  system-config-securitylevel
@@ -21,3 +29,35 @@ E.g.
 -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp -s 61.9.136.168 --dport 1521 -j ACCEPT
 
 Allows access only to my IP for the Oracle port 1521.
+
+
+<html>
+<pre>
+[hendry@server sysconfig]$ sudo cat iptables
+# Firewall configuration written by system-config-securitylevel
+# Manual customization of this file is not recommended.
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:RH-Firewall-1-INPUT - [0:0]
+-A INPUT -j RH-Firewall-1-INPUT
+-A FORWARD -j RH-Firewall-1-INPUT
+-A RH-Firewall-1-INPUT -i lo -j ACCEPT
+-A RH-Firewall-1-INPUT -p icmp --icmp-type any -j ACCEPT
+-A RH-Firewall-1-INPUT -p 50 -j ACCEPT
+-A RH-Firewall-1-INPUT -p 51 -j ACCEPT
+-A RH-Firewall-1-INPUT -p udp --dport 5353 -d 224.0.0.251 -j ACCEPT
+-A RH-Firewall-1-INPUT -p udp -m udp --dport 631 -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 10001 -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 1521 -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+-A RH-Firewall-1-INPUT -j REJECT --reject-with icmp-host-prohibited
+COMMIT
+</pre>
+</html>
+
+TEST YOUR FIREWALL! netcat and nmap
