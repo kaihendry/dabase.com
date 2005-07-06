@@ -1,5 +1,5 @@
 Title: 12.5. Firewall
-Last-Changed-Date: Wed Jul  6 04:17:10 2005
+Last-Changed-Date: Wed Jul  6 04:17:50 2005
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -69,3 +69,7 @@ TEST YOUR FIREWALL! netcat and nmap
 In RH to restart the service:
 
  sudo service iptables restart
+
+
+And check:
+ iptables -vnxL
