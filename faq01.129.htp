@@ -1,0 +1,12 @@
+Title: 1.129. how do I filter output for just stderr messages?
+Last-Changed-Date: Sat Jul  9 01:00:05 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 220.253.8.39
+
+frodo$ sh setup.sh ~/we > /dev/null
+ PIK003: /home/hendry/we/dcp_9593.jpg has an error in the EXIF.
+ PIK003: /home/hendry/we/dcp_9600.jpg has an error in the EXIF.
+ PIK003: /home/hendry/we/dcp_9621.jpg has an error in the EXIF.
+ PIK003: /home/hendry/we/dcp_9626.jpg has an error in the EXIF.
