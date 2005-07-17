@@ -1,0 +1,9 @@
+Title: 1.130. Installing something in tmp or your homedir or something
+Last-Changed-Date: Sun Jul 17 04:04:14 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 220.253.32.88
+
+The magic prefix in the configure stage:
+ --prefix=/tmp/something

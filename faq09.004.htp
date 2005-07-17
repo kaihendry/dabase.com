@@ -1,0 +1,24 @@
+Title: 9.4. cvs release in Subversion?
+Last-Changed-Date: Sun Jul 17 04:13:56 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 220.253.32.88
+
+Anything you can live without?
+
+ frodo$ svn st projects/
+ ?      projects/svn-commit.tmp
+ ?      projects/pik/tests/we
+ ?      projects/shopping-list/x33.html
+ ?      projects/shopping-list/x141.html
+ ?      projects/shopping-list/x16.html
+ ?      projects/shopping-list/resume.ps
+ ?      projects/shopping-list/x117.html
+ ?      projects/shopping-list/resume.pdf
+ ?      projects/shopping-list/resume.rtf
+ ?      projects/shopping-list/index.html
+ ?      projects/shopping-list/resume.txt
+
+Ok then, bye!
+ frodo$ rm -rf projects/
