@@ -1,128 +1,31 @@
-Title: 1.59. T30 2366-97G with Debian SID
-Last-Changed-Date: Thu Dec 11 11:00:19 2003
+Title: 1.59. T30 2366-PM1 with Debian SID
+Last-Changed-Date: Tue Jul 26 01:06:01 2005
 Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.9.73
+Last-Changed-Remote-Address: 61.9.136.168
 
-Porn:
-http://db.cs.helsinki.fi/~hendry/gallery/view_album.php?set_albumName=comp
+See:
 
-lspci:
+http://www.thinkwiki.org/wiki/Category:T30
 
- 00:00.0 Host bridge: Intel Corp. 82845 845 (Brookdale) Chipset Host Bridge (rev 04)
- 00:01.0 PCI bridge: Intel Corp. 82845 845 (Brookdale) Chipset AGP Bridge (rev 04)
- 00:1d.0 USB Controller: Intel Corp. 82801CA/CAM USB (Hub #1) (rev 02)
- 00:1d.1 USB Controller: Intel Corp. 82801CA/CAM USB (Hub #2) (rev 02)
- 00:1d.2 USB Controller: Intel Corp. 82801CA/CAM USB (Hub #3) (rev 02)
- 00:1e.0 PCI bridge: Intel Corp. 82801BAM/CAM PCI Bridge (rev 42)
- 00:1f.0 ISA bridge: Intel Corp. 82801CAM ISA Bridge (LPC) (rev 02)
- 00:1f.1 IDE interface: Intel Corp. 82801CAM IDE U100 (rev 02)
- 00:1f.3 SMBus: Intel Corp. 82801CA/CAM SMBus Controller (rev 02)
- 00:1f.5 Multimedia audio controller: Intel Corp. 82801CA/CAM AC'97 Audio Controller (rev 02)
- 00:1f.6 Modem: Intel Corp. 82801CA/CAM AC'97 Modem Controller (rev 02)
- 01:00.0 VGA compatible controller: ATI Technologies Inc Radeon Mobility M7 LW [Radeon Mobility 7500]
- 02:00.0 CardBus bridge: Texas Instruments PCI1250 PC card Cardbus Controller (rev 01)
- 02:00.1 CardBus bridge: Texas Instruments PCI1250 PC card Cardbus Controller (rev 01)
- 02:02.0 Network controller: Harris Semiconductor Prism 2.5 Wavelan chipset (rev 01)
- 02:08.0 Ethernet controller: Intel Corp. 82801CAM (ICH3) PRO/100 VE (LOM) Ethernet Controller (rev 42)
+and
+
+http://trac.natalian.org/browser/debian/configuration/t30/
+
+If you have a specific question try debian-laptop.
+
+http://lists.debian.org/debian-laptop/
+
+I hate compiling my own kernels and always opt for Debian stock kernels.
 
 
-From my 2.4.22 686 setup:
- scrooge-15:~$ lsmod
- Module                  Size  Used by    Not tainted
- af_packet              13672   1 (autoclean)
- input                   3648   0 (autoclean)
- rfcomm                 32192   0 (autoclean)
- l2cap                  16880   1 (autoclean) [rfcomm]
- bluez                  32292   1 (autoclean) [rfcomm l2cap]
- apm                    10060   2 (autoclean)
- snd                    30340   0
- orinoco_pci             3332   1
- orinoco                35636   0 [orinoco_pci] 
- hermes                  5988   0 [orinoco_pci orinoco]
- ide-scsi               10448   0
- scsi_mod               95296   1 [ide-scsi]
- i810_rng                2656   0 (unused)
- i810_audio             24476   0 (unused)
- ac97_codec             13684   0 [i810_audio]
- soundcore               3940   2 [snd i810_audio]
- i810-tco                3252   0 (unused)
- e100                   49224   1
- agpgart                41976   0 (unused)
- lp                      7168   0 (autoclean)
- parport                26728   0 (autoclean) [lp]
- rtc                     6792   0 (autoclean)
- ide-disk               16832   2 (autoclean)
- ext3                   65316   1 (autoclean)
- jbd                    42760   1 (autoclean) [ext3]
- ide-detect             10832   0 (autoclean)
- piix                    8392   1 (autoclean)
- ide-core               99064   2 (autoclean) [ide-scsi ide-disk ide-detect piix]
- unix                   15500  31 (autoclean)
- vesafb                  9992  63 (autoclean)
- fbcon-cfb16             4168   0 (autoclean) [vesafb]
- fbcon-cfb32             3816   0 (autoclean) [vesafb]
- fbcon-cfb8              3560   0 (autoclean) [vesafb]
- fbcon-cfb24             4456   0 (autoclean) [vesafb]
+I have got everything working except :
 
+Hibernate/suspend which I don't really need.
 
+A T30 with a new full battery can only expect to get about 2 hours of life. Pretty lame. Still useful in a UPS capacity.
 
-I used the beta debian installer:
-http://www.debian.org/devel/debian-installer/
+I have not bothered to configure the power button to shutdown the machine.
 
-The partitioning stuff is a little odd. I will put the information about it, when I have found an optimum solution for the 60Gig hard drive in here.
-
-
-Network
- e100 for the the ethernet
- orinoco_pci for the wireless card
-
-I installed laptop-net package. Although I think /etc/network/interfaces is versatile enough to load in and out the above modules manually.
-
-Sound
-
-This one was a little frustrating to get working. Make sure alsa-base and stuff is installed.
-Then go into aumix and make sure everything is very high. Also hit your TP volume + key a couple of times.
-
- snd-intel8x0 is the driver
-
-Microphone works, test it with sox and speex packages:
- sox -r 16000 -c 1 -w -s -t ossdsp /dev/dsp -t raw - | speexenc -w - test.spx
-
-Video 
-
- ati
-No glx acceleration yet. Need new Radeon drivers from http://dri.sourceforge.net/
-
- vga=834 
-
-works well with vesafb in 2.4. Not working for some reason yet in my 2.6 setup.
-
-Infrared/Bluetooth
-
-I can't imagine using this, so they are disabled.
-
-Power/APM/ACPI/Battery
-
-Debian's stock 2.4.22 (with the older APM I think) has Suspend to RAM working. 
-
-My 2.6.0-test9 package does not suspend working at all. It would be nice if it worked, but it is nice not to have it suspend when I close the lid when it's jacked into the power socket.
-
-The battery degrades quicky. Check /proc/acpi/battery/BAT0/info when you have ACPI setup. After only a couple of months it's 89% of design capacity at FULL charge!
-
-Hibernate (Suspend to Disk) is is not configured yet.
-
-Input
-
-I will put my XF86Config-4 up sometimes as soon as I get viewcvs working for subversion. Or just mail me.
-
-Mouse is annoying!! Twiddle is what I use most, and it works in 2.4, but not in 2.6. My advice is use a window manager like Ion http://modeemi.cs.tut.fi/~tuomov/ion/ and avoid using it at all. Also disable the navpad, in order to get the twiddle with the middle mouse button working.
-
-Numeric keypad is not working. I would like to get that working for Quake. ;)
-
-Other T30 pages for tips
-
-http://www.loria.fr/~stuber/t30/debian-ibm-t30-2366-085.html
-
-http://www.biplane.com.au/~kauer/miscellaneous/ibmt30-notes.html
+The CISCO wireless card is a bit dissapointing. Doesn't seem to be as good as an ORINOCO silver lucent type card.
