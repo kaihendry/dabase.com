@@ -1,0 +1,24 @@
+Title: 13.3. Testing VARs
+Last-Changed-Date: Tue Jul 26 03:50:51 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+I've noticed in some shell scripts these sorts of tests:
+
+ if [ x$SSH_AUTH_SOCK != x ]; then
+
+So if $SSH_AUTH_SOCK isn't set, it won't enter the if.
+
+In Bash there are other ways to test a var exists:
+
+ [ ${SSH_AUTH_SOCK:+set} ] 
+
+or
+
+ [[ $SSH_AUTH_SOCK ]]
+
+Though these account for WHITESPACE they do not work in every shell.
+
+Thanks to twkm on #bash for taking the time to explain this to me.
