@@ -1,0 +1,26 @@
+Title: 9.7. Building Subversion in your $HOME
+Last-Changed-Date: Thu Aug 11 01:10:25 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+Download the source code from:
+
+http://subversion.tigris.org/project_packages.html#source-release 
+
+and expand the tar ball. 
+
+ ./configure --prefix $HOME/opt --without-berkeley-db  --with-zlib --with-ssl
+
+ make
+ make install
+
+
+In your .bashrc
+
+    # For subversion
+    if [ -d $HOME/opt/bin/ ]; then
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/opt/lib
+        export PATH=$PATH:$HOME/opt/bin/
+    fi
