@@ -1,32 +1,12 @@
-Title: 1.58. Subversion CVS
-Last-Changed-Date: Thu Dec  4 20:12:00 2003
+Title: 1.58. Subversion CVS ROOT
+Last-Changed-Date: Thu Aug 11 01:05:24 2005
 Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
+Last-Changed-Remote-Address: 61.9.136.168
 
 http://subversion.tigris.org/project_faq.html
 
  export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
 Equates to:
  svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/svn
-
-
-
-Installing in $HOME? 
-
-You need Berkeley DB probably:
-
- 
- cd /tmp; wget http://www.sleepycat.com/update/snapshot/db-4.0.14.tar.gz
- /tmp/db-4.0.14/dist$ ./configure --prefix=$HOME/svn && make && make install
-
-As for subversion:
-
- ./configure --prefix=$HOME/svn --with-berkeley-db=/home/hendry/svn && make clean && make && make install && export PATH=$PATH:/home/hendry/svn/bin
-
-For crazy CS dept guys:
-
- /tmp/db-4.0.14/dist$ make clean && ./configure --prefix=/home/fs/hendry/svn && make && make install
-
- hendry@bogrund-14:/tmp/subversion-0.33.1$ cd /tmp/subversion-0.33.1; ./configure --prefix=/home/fs/hendry/svn --with-berkeley-db=/home/fs/hendry/svn && make clean && make && make install && export PATH=$PATH:/home/fs/hendry/svn/bin
