@@ -1,0 +1,12 @@
+Title: 1.133. Sendmail mail when back online
+Last-Changed-Date: Thu Oct 13 15:44:53 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+Run:
+
+ sendmail -q
+
+and pray
