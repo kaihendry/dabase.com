@@ -1,0 +1,20 @@
+Title: 1.134. Version numbers
+Last-Changed-Date: Wed Oct 26 15:57:51 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+They can be widely different:
+
+ libzipios++0 0.1.5.9+cvs.2004.02.07-3.2
+
+ vim 1:6.4-001+2
+
+ ion3 20051023-1
+
+ phpmyadmin 4:2.6.4-pl3-1
+
+ 0.6.42.1 (NMU)
+
+http://people.debian.org/~terpstra/message/20051018.233714.165c38a3.en.html
