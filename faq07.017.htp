@@ -1,0 +1,12 @@
+Title: 7.17. New lines in VIM
+Last-Changed-Date: Tue Nov 22 16:38:15 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+A newline in Vim is \r. Does that make any sense??
+
+Replace funny line endings with a newline. Remember to CTRL+v, CTRL+m to get a ^M.
+
+ :%s/^M/\r/g
