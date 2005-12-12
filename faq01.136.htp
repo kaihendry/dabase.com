@@ -1,0 +1,44 @@
+Title: 1.136. Linux Ghost
+Last-Changed-Date: Sun Dec 11 21:06:59 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+Brent Wallis recommends:
+
+http://www.partimage.org
+
+Tim Connors says:
+
+ ddrescue
+
+from Brad Hubbard:
+
+ sfdisk -l /dev/hda|sfdisk /dev/hdb
+
+Will copy your partitions from /dev/hda to /dev/hdb . In my experience
+this will work if hdb is bigger but not if it is smaller :-)
+
+
+Bill Farrow uses:
+
+At work I use sfdisk to read & write the partion tables. and then a
+combination of dd, netcat, and gzip to transfer the image over the network
+to a server. Example:
+
+ server> nc -l -p 3000 > hda.sfdisk
+ client> sfdisk -d /dev/hda | nc server_name 3000
+
+ server> nc -l -p 3000 > hda.mbr
+ client> dd bs=512 count=1 /dev/hda | nc server_name 3000
+
+ server> nc -l -p 3000 > hda1.img.gz
+ client> dd bs=1k if=/dev/hda1 | gzip -c -9 | nc server_name 3000
+
+Then I use "Roll Your Own Linux Rescue or Setup CD" to create a stand alone bootable linux CDROM that automatically dumps the cloned image along with partition and master boot record onto the target machine.  The image is gzip'ed up on the bootable CDROM.  So if a service tech needs to completely reinstall a machine in the field, they only need one CDROM. Takes all of about 4 minutes to install the OS and then finally boot the new machine.
+
+There are a few tricks to minimise the size of the gzip'ed image, and the partition and file system is set up to automatically expand to fill the remaining space on the drive.
+
+Roll Your Own Linux
+http://www.phenix.bnl.gov/~purschke/RescueCD/
