@@ -1,5 +1,5 @@
 Title: 1.136. Linux Ghost
-Last-Changed-Date: Sun Dec 11 21:06:59 2005
+Last-Changed-Date: Mon Dec 12 17:42:38 2005
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -42,3 +42,14 @@ There are a few tricks to minimise the size of the gzip'ed image, and the partit
 
 Roll Your Own Linux
 http://www.phenix.bnl.gov/~purschke/RescueCD/
+
+
+Steve Kemp adds:
+
+ dd
+ rsync
+ ghost
+ g4u - ghost for unix (based on netbsd from memory)
+ systemimager
+
+Systemimager looks hopeful. Could not find any "ghost" stuff packaged.
