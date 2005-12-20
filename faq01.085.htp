@@ -1,9 +1,9 @@
 Title: 1.85. AWK BASH STUFF
-Last-Changed-Date: Mon Jun  7 12:37:23 2004
+Last-Changed-Date: Mon Dec 19 19:13:45 2005
 Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
+Last-Changed-Remote-Address: 61.9.136.168
 
 Every now and then, some shows me something I should know :
 
@@ -17,3 +17,9 @@ First field:
 
 Last field:
  apt-cache search mp3 | awk '{print $NF}'
+
+Everything except first column:
+ awk '{ for (i=2; i<=NF; i++) printf "%s ", $i; printf "\n"; }'
+
+
+http://hcs.harvard.edu/~dholland/computers/awk.html
