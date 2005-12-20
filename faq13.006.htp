@@ -1,0 +1,10 @@
+Title: 13.6. split
+Last-Changed-Date: Mon Dec 19 18:19:00 2005
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+How do I split "2003-03-15      184929" into $DATE and $NUM?
+
+ sysfault$ set -- ${var}; DATE=$1 NUM=$2; echo $NUM
