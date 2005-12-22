@@ -1,9 +1,9 @@
 Title: 4.31. Grepping a URL
-Last-Changed-Date: Sun Aug 22 21:45:54 2004
+Last-Changed-Date: Wed Dec 21 16:14:37 2005
 Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
+Last-Changed-Remote-Address: 61.9.136.168
 
 This is sweet bash:
 
@@ -11,3 +11,8 @@ This is sweet bash:
  ii  autotools-dev            20040312.1               Update   infrastructure for config.{guess,sub} files
  ii  libtext-wrapi18n-perl    0.06-1                   internationalized substitute of Text::Wrap
  bilbo$
+
+
+Ah sweet.
+
+http://souptonuts.sourceforge.net/how_to_linux_and_open_source.htm
