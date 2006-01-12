@@ -1,0 +1,12 @@
+Title: 13.8. Backspace
+Last-Changed-Date: Thu Jan 12 15:23:19 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 61.9.136.168
+
+CTRL+V CTRL+H
+
+A bit like VIM.
+
+Quite good in combo with valgrind, strip and doing some stack bashing.
