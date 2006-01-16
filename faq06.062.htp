@@ -1,5 +1,5 @@
 Title: 6.62. Parsing HTML with REs
-Last-Changed-Date: Mon Jan 16 15:26:53 2006
+Last-Changed-Date: Mon Jan 16 15:40:57 2006
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -21,5 +21,13 @@ My repo has better stuff:
  12:47 < moshez> don't do stupid crap
  12:47 < moshez> like, say, parsing HTML with REs
 
+
+Update:
+
+ 10:35 <Pythy> re.search("(?si)<body>([^>]*)</body>", '<BoDy>ab\ncd\nef</bOdY>').group(1) #==> 'ab\ncd\nef'  # for the case where no `>' will appear between
+              the <tags>.
+
+
+Should be using:
 
 http://www.crummy.com/software/BeautifulSoup/
