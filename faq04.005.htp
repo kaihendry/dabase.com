@@ -1,5 +1,5 @@
 Title: 4.5. Encode your email address to protect yourself from spam bots
-Last-Changed-Date: Mon Jan 16 15:32:08 2006
+Last-Changed-Date: Mon Jan 16 15:39:08 2006
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -12,7 +12,7 @@ http://www.wbwip.com/wbw/emailencoder.html
 
  >>> import array
  >>> s = 'hendry@iki'
- >>> print '&#%i;'*len(s) % tuple(array.array('B',s))
+ >>> print '&#%03i;'*len(s) % tuple(array.array('B',s))
  &#104;&#101;&#110;&#100;&#114;&#121;&#64;&#105;&#107;&#105;
 
 Thanks to Pythy aka "The Fixer" on #python on Freenode
