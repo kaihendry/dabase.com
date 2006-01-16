@@ -1,5 +1,5 @@
 Title: 6.62. Parsing HTML with REs
-Last-Changed-Date: Mon Jan 16 15:40:57 2006
+Last-Changed-Date: Mon Jan 16 15:41:57 2006
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -26,6 +26,9 @@ Update:
 
  10:35 <Pythy> re.search("(?si)<body>([^>]*)</body>", '<BoDy>ab\ncd\nef</bOdY>').group(1) #==> 'ab\ncd\nef'  # for the case where no `>' will appear between
               the <tags>.
+ 10:38 <Pythy> (If a `<' might appear, a more involved rex could be used.  Handling nesting delimiters is trickier still, as additional code is needed to
+              track the depth.  But, as was noted, for a robust solution, a parser is the way to go.)
+
 
 
 Should be using:
