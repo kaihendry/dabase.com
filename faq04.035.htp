@@ -1,0 +1,17 @@
+Title: 4.35. Rails, Debian and gem
+Last-Changed-Date: Sat Jan 21 00:47:10 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 220.253.111.164
+
+Gem's default directory for gem installations is wrong:
+
+    --install-dir /usr/lib/ruby/gems/1.8
+
+This is better:
+
+ frodo$ sudo gem install -i /usr/local/lib/site_ruby/1.8/rubygems/ login_generator
+
+
+gems gems
