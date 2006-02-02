@@ -1,0 +1,15 @@
+Title: 13.9. Viewing certain pictures
+Last-Changed-Date: Wed Feb  1 18:45:52 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 221.143.162.11
+
+You need bash version 3 or greater:
+
+ frodo$ echo ${BASH_VERSION[@]}
+ 3.1.5(1)-release
+
+View the picture range from 2600 to 2650:
+
+ frodo$ feh img_{2600..2650}.jpg
