@@ -1,0 +1,41 @@
+Title: 2.15. Debugging mutt
+Last-Changed-Date: Wed Feb 15 17:23:29 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 221.143.162.18
+
+Subscribe to mutt-dev:
+
+ http://www.mutt.org/mail-lists.html
+
+Get sources:
+
+ cvs -q -d:pserver:anonymous@dev.mutt.org:/cvsroots co mutt
+
+You will need those openssl libraries in your search path.
+
+ apt-get build-dep mutt
+
+In source directory:
+ 
+ ./prepare --enable-imap --with-ssl
+
+
+Build with a make:
+
+ make
+
+Enable cores
+
+ ulimit -c unlimited
+
+Once the core dumps. Check it out with gdb:
+
+ gdb ./mutt core
+
+To see where things went wrong, run:
+
+ backtrace
+
+And copy and paste somewhere.
