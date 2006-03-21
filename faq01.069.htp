@@ -1,9 +1,9 @@
 Title: 1.69. Patching a debian package
-Last-Changed-Date: Sat Feb  7 11:53:14 2004
-Last-Changed-Author: KaiHendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Date: Mon Mar 20 18:32:58 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
+Last-Changed-Remote-Address: 222.106.128.34
 
 If I want to make a patch for a debian package:
 
@@ -19,4 +19,9 @@ You should submit the patch via the BTS using reportbug esp. when the fix addres
 
 And then applying the sodding thing:
 
- cd suitable-directory; patch --dry-run --silent -pX < patchfile # X is a suitable number to remove elements from the pathnames in the patch file
+ cd suitable-directory; patch --dry-run --silent -pX < patchfile # X is a suitable number to remove elements from the pathnames in the patch file.
+
+
+Example:
+
+ sam$ patch -p0 < /home/hendry/Mail/mail-attachments/maradns_1.2.03.3-1.1.diff
