@@ -1,0 +1,12 @@
+Title: 1.138. FHS
+Last-Changed-Date: Thu Apr  6 17:44:05 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 222.106.128.34
+
+The Unix hierachy. Bit silly IMO, but oh well, you get used to it.
+
+http://www.pathname.com/fhs/
+
+ man hier
