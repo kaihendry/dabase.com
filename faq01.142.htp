@@ -1,0 +1,12 @@
+Title: 1.142. Time in Ubuntu
+Last-Changed-Date: Wed May 17 01:24:11 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 125.131.161.43
+
+This should be set by something like:
+
+ /etc/network/if-up.d/ntpdate 
+
+When your network interface comes up.
