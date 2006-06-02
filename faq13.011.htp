@@ -1,0 +1,9 @@
+Title: 13.11. Testing a file exists
+Last-Changed-Date: Fri Jun  2 06:24:40 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 222.106.128.78
+
+Something like this:
+ [[ -e $1 ]] && echo $1 exists || echo $1 does not exist
