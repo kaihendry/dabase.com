@@ -1,0 +1,11 @@
+Title: 13.12. find and copy
+Last-Changed-Date: Sun Jun  4 06:51:56 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 222.106.128.78
+
+xargs isn't the solution.
+
+Try the strangely formatted -exec option like:
+ frodo$ find /media/mp3/ -name *.avi -type f -exec cp '{}' /home/hendry/videos/jutta/ \;
