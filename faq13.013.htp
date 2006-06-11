@@ -1,0 +1,13 @@
+Title: 13.13. Case insentitive basename
+Last-Changed-Date: Sat Jun 10 21:27:59 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 222.106.128.78
+
+Better than basename:
+
+ file=mvi_0288.avi; echo ${file%.*}
+ mvi_0288
+
+Used here: http://trac.natalian.org/browser/projects/static/up.sh
