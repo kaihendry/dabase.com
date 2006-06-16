@@ -1,0 +1,19 @@
+Title: 9.11. Finding .svn
+Last-Changed-Date: Thu Jun 15 19:31:33 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 125.131.161.40
+
+Grep is practical:
+
+ find . -type f | fgrep -v /.svn/
+ find .|grep -v .svn
+
+Though it can be done entirely in find:
+
+ find . -type f -a ! -path '*/.svn/*'
+
+Nuking .svn directories might work like so:
+
+ find . -name .svn -type d -exec rm -rf {} \;
