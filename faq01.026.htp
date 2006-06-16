@@ -1,11 +1,16 @@
 Title: 1.26. crontab job
-Last-Changed-Date: Tue Apr 29 23:55:14 2003
+Last-Changed-Date: Thu Jun 15 19:50:56 2006
 Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.14.188
+Last-Changed-Remote-Address: 125.131.161.40
 
-From http://www.faoileag.de/stuff/howto.html#cron
+Read:
+
+ man 5 crontab
+
+
+Additionally from http://www.faoileag.de/stuff/howto.html#cron
 
 How to start a cron job
 The cron daemon consults so-called crontabs for jobs to execute (and when to execute them). These crontabs are ordinary textfiles, however you should always use the appropriate tool (crontab) to manipulate them.
