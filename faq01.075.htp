@@ -1,9 +1,12 @@
 Title: 1.75. Getting rid of .svn
-Last-Changed-Date: Sun Jan 11 23:59:19 2004
-Last-Changed-Author: KaiHendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Date: Sun Jun 25 19:03:33 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
+Last-Changed-Remote-Address: 125.131.161.40
 
 From darix
  find -type d -name "\.svn" -exec rm "{}" \;
+
+Showing all except .svn
+ find . -name .svn -prune -o -type f -print0
