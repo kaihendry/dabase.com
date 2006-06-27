@@ -1,5 +1,5 @@
 Title: 1.75. Getting rid of .svn
-Last-Changed-Date: Sun Jun 25 19:03:33 2006
+Last-Changed-Date: Mon Jun 26 17:52:58 2006
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -10,3 +10,5 @@ From darix
 
 Showing all except .svn
  find . -name .svn -prune -o -type f -print0
+
+Oops, DUPED: http://faq.dabase.com/faqw.py?req=show&file=faq09.011.htp
