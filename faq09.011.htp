@@ -1,5 +1,5 @@
 Title: 9.11. Finding .svn
-Last-Changed-Date: Thu Jun 15 19:31:33 2006
+Last-Changed-Date: Mon Jun 26 17:52:32 2006
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -17,3 +17,5 @@ Though it can be done entirely in find:
 Nuking .svn directories might work like so:
 
  find . -name .svn -type d -exec rm -rf {} \;
+
+Oops DUPED: http://faq.dabase.com/faqw.py?req=show&file=faq01.075.htp
