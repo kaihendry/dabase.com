@@ -1,5 +1,5 @@
 Title: 9.11. Finding .svn
-Last-Changed-Date: Mon Jun 26 17:53:48 2006
+Last-Changed-Date: Mon Jun 26 17:54:45 2006
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -21,5 +21,5 @@ Nuking .svn directories might work like so:
 Oops DUPED: http://faq.dabase.com/faqw.py?req=show&file=faq01.075.htp
 
 
-Btw, don't forget to use the command:
+Btw, don't forget about the command:
  svn export
