@@ -1,0 +1,20 @@
+Title: 1.144. BIN-NMU
+Last-Changed-Date: Wed Jun 28 01:06:07 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 125.131.161.40
+
+When a library changes, the packages the depend on it often need to be recompiled. Hence the bin-nmu.
+Though this automagic goodness for Release Managers is a fairly recent innovation.
+
+ 16:01 < hendry> i don't quite understand
+ 16:01 < hendry> how can it just be a change to the changelog
+ 16:02 < hendry> is this just to hack, because Katie won't retrieve same source upgrades
+ 16:03 < pabs> no, its just so that the version is higher in the new .deb
+ 16:05 < pabs> example changelog entry: http://paste.debian.net/8186
+ 16:08 < pabs> and katie is no longer named katie
+ 16:09 < pabs> you can find a list of binNMUed packages with aptitude search '~V\+b[0-9]+$'
+ 16:12 < pabs> basically it is a way for the release managers to simply recompile packages when that is
+              nessecary. like if a library moves to a new soname, the packages depending on it can be binNMUed
+ 16:48 < adsb-work> Technically it's a recompile with no source changes, hence a binary NMU
