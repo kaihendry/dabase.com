@@ -1,0 +1,11 @@
+Title: 1.145. Setting timezone in Debian
+Last-Changed-Date: Thu Jul 20 18:07:28 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 222.106.128.198
+
+For setting time in a new country.
+
+Use:
+ tzconfig
