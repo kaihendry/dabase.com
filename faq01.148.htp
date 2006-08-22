@@ -1,0 +1,20 @@
+Title: 1.148. Removing something from the runlevels
+Last-Changed-Date: Tue Aug 22 10:10:59 2006
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 87.113.89.97
+
+Damn Apache didn't remove very well.
+
+ sam$ sudo update-rc.d -f apache remove 
+ Removing any system startup links for /etc/init.d/apache ...
+   /etc/rc0.d/K91apache
+   /etc/rc1.d/K91apache
+   /etc/rc2.d/S91apache
+   /etc/rc3.d/S91apache
+   /etc/rc4.d/S91apache
+   /etc/rc5.d/S91apache
+   /etc/rc6.d/K91apache
+ sam$ ls -1 /etc/rc2.d/ | grep apache
+ S91apache2
