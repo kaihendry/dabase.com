@@ -1,9 +1,9 @@
 Title: 6.56. Unique elements from a list
-Last-Changed-Date: Sun Nov 16 12:46:12 2003
+Last-Changed-Date: Wed Jan 31 06:47:14 2007
 Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 62.78.149.199
+Last-Changed-Remote-Address: 87.112.86.103
 
 There is a couple of new ways with 2.3:
 
@@ -18,3 +18,9 @@ Otherwise:
             d[x] = 1                                                                                                                                                      
         subset = d.keys()                                                                                                                                                 
         return subset
+
+
+Or list comp:
+ [x for x in data if data.count(x) == 1] 
+
+Or with sets.
