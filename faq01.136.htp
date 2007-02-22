@@ -1,9 +1,17 @@
 Title: 1.136. Linux Ghost
-Last-Changed-Date: Mon Dec 12 17:42:38 2005
+Last-Changed-Date: Thu Feb 22 11:17:58 2007
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
+Last-Changed-Remote-Address: 87.113.5.52
+
+Best list:
+ apt-cache search "\bdd\b"
+
+sdd promises to be like dd though with a progress bar!
+
+
+OLD STUFF FOLLOWS:
 
 Brent Wallis recommends:
 
