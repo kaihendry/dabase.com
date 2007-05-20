@@ -1,9 +1,9 @@
 Title: 1.45. Finding about your display
-Last-Changed-Date: Mon Dec  8 09:48:15 2003
+Last-Changed-Date: Sun May 20 09:05:11 2007
 Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
+Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
+Last-Changed-Remote-Address: 91.84.53.136
 
 What resolution am I running?
  xdpyinfo
@@ -22,3 +22,6 @@ Checking terminal column and width environment:
 Check resolution of root window:
 
  xwininfo -root
+
+Checking if DPMS is enabled et al:
+ xset -display :0.0 -q
