@@ -1,0 +1,21 @@
+Title: 5.35. RAID sucks
+Last-Changed-Date: Wed May 23 01:22:36 2007
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 91.84.53.136
+
+From http://www.gllug.org.uk/index.php?/archives/35-Mailing-Lists-are-broken.html
+
+ As the server uses hardware RAID we cannot simply swap the disks into a different box and replacing the PSU etc is likely to take about a week. 
+
+
+From experience in a datacentre, RAID mounts fail. Esp. DELL.
+
+RAID batteries fail.
+
+A lot of RAID hardware is proprietary and buggy.
+
+Software RAID is often worse.
+
+Rebuilding configurations with broken RAID setups can be really hard.
