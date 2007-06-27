@@ -1,5 +1,5 @@
 Title: 1.152. Virtualisation with OpenVZ
-Last-Changed-Date: Wed Jun 27 09:47:54 2007
+Last-Changed-Date: Wed Jun 27 13:00:41 2007
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -60,3 +60,10 @@ sudo iptables -t nat -A PREROUTING -p tcp -d 72.249.20.194 --dport 80
 -i eth0 -j DNAT --to-destination 192.168.2.66:80
 
 It works well!
+
+
+Increasing disk space and memory allocation:
+
+ sudo vzctl set 100 --diskspace 10G --save
+ sudo vzctl set 100 --vmguarpages $((256 * 256)) --save                                                           
+ sudo vzctl set 100 --privvmpages $((256 * 1024)) --save
