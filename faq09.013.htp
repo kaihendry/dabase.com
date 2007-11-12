@@ -1,0 +1,12 @@
+Title: 9.13. Howto send a PATCH
+Last-Changed-Date: Mon Nov 12 13:08:03 2007
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 86.139.75.79
+
+Clone the master. Make the change, commit.
+
+ git-format-patch "HEAD^"
+
+ git-send-email 0001-
