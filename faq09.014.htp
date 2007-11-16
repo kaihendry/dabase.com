@@ -1,0 +1,11 @@
+Title: 9.14. Unpatch a patch
+Last-Changed-Date: Fri Nov 16 04:26:36 2007
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 90.152.10.135
+
+Unpatch in GNU talk is reverse.
+
+
+ patch -R
