@@ -1,5 +1,5 @@
 Title: 1.154. Screencasting, YouTube-y tips
-Last-Changed-Date: Sun Dec  2 06:58:26 2007
+Last-Changed-Date: Sun Dec  2 07:05:26 2007
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -19,6 +19,7 @@ To playback:
 
  aplay recording.wav
 
+Troubleshoot with alsamixer and perhaps Skype to check your mic settings. You shouldn't require mic boost btw.
 
 For video, record to oggtheora. Encode to OGG using ffmpeg2theora. An upload script example:
 http://svn.natalian.org/projects/static/up.sh
