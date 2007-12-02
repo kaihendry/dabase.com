@@ -1,0 +1,23 @@
+Title: 1.154. Screencasting, YouTube-y tips
+Last-Changed-Date: Sun Dec  2 06:31:56 2007
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 86.139.75.79
+
+Record voice to WAV, then encode to MP3
+
+http://www.togaware.com/linux/survivor/Command_Line.html
+
+ sound-recorder -P recording.wav
+
+
+For video, record to oggtheora. Encode to OGG using ffmpeg2theora. See:
+http://svn.natalian.org/projects/static/up.sh
+
+For an upload script.
+
+
+To record a screencast, see:
+
+ recordmydesktop
