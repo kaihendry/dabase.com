@@ -1,5 +1,5 @@
 Title: 1.154. Screencasting, YouTube-y tips
-Last-Changed-Date: Sun Dec  2 06:31:56 2007
+Last-Changed-Date: Sun Dec  2 06:43:40 2007
 Last-Changed-Author: Kai Hendry
 Last-Changed-Email: hendry@iki.fi
 Last-Changed-Remote-Host: 
@@ -11,11 +11,13 @@ http://www.togaware.com/linux/survivor/Command_Line.html
 
  sound-recorder -P recording.wav
 
+To playback:
 
-For video, record to oggtheora. Encode to OGG using ffmpeg2theora. See:
+ aplay recording.wav
+
+
+For video, record to oggtheora. Encode to OGG using ffmpeg2theora. An upload script example:
 http://svn.natalian.org/projects/static/up.sh
-
-For an upload script.
 
 
 To record a screencast, see:
