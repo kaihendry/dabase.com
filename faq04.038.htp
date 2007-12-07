@@ -1,0 +1,20 @@
+Title: 4.38. Disable caching in Apache2
+Last-Changed-Date: Fri Dec  7 05:12:38 2007
+Last-Changed-Author: Kai Hendry
+Last-Changed-Email: hendry@iki.fi
+Last-Changed-Remote-Host: 
+Last-Changed-Remote-Address: 90.152.10.135
+
+You need to enable the mod_headers extension:
+http://httpd.apache.org/docs/2.2/mod/mod_headers.html
+
+
+On a Debian system:
+
+    sudo a2enmod headers
+
+Throw this into a .htaccess
+
+    Header set Expires "Thu, 19 Nov 1981 08:52:00 GM"
+    Header set Cache-Control "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+    Header set Pragma "no-cache"
