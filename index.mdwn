@@ -1,1 +1,1 @@
-[[pages="link(e/*)"]]
+[[pagespec="link(e/*)"]]
