@@ -1,5 +1,7 @@
 #Testing pagespec
 
-[[pagespec="link(e/*)"]]
+[[if test="enabled(orphans)" then="""
+Here's a list of orphaned pages on this wiki:
 
-[[pagespec="creation_year(2007)"]]
+[[orphans pages="e/*"]]
+"""]]
