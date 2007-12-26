@@ -1,4 +1,4 @@
-Title: 6.46. Am I running PyXML?
+[[meta title="Am I running PyXML?"]]
 If this works, you have it:
  hendry@bilbo:~$ python2
  Python 2.2.3 (#1, Jun  4 2003, 02:54:59)

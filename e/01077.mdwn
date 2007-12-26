@@ -1,4 +1,4 @@
-Title: 1.77. 2.6 CD Burning
+[[meta title="2.6 CD Burning"]]
 How I burn movies:
  modprobe ide-cd
  hendry@scrooge-15:~/movie$ mkhybrid -o /tmp/foo.iso -r -J Dirty_Dancing_DVDrip_XVID_westerrecords.avi

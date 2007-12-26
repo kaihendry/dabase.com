@@ -1,3 +1,3 @@
-Title: 1.126. Mplayer
+[[meta title="Mplayer"]]
 See:
  ftp://ftp.nerim.net/debian-marillat/index.html

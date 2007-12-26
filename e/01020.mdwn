@@ -1,4 +1,4 @@
-Title: 1.20. Debian Iptable Firewall
+[[meta title="Debian Iptable Firewall"]]
 This post is very helpful:
 http://www.dclug.org.uk/archive-May02-Nov02/msg01597.html
 You may need to need FLUSH i.e. clear what configuration you have (iptables -L to see) with iptables -F I recall, before you begin. You can just drop off the internet if you afraid at this point and reconnect when you are happy with the iptables -L listing.

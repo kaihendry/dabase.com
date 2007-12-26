@@ -1,4 +1,4 @@
-Title: 1.131. Re-mastering a CD
+[[meta title="Re-mastering a CD"]]
 Get your LiveCD from http://www.livecd.net/
 Lets start:
  sudo mount -o loop -t iso9660 livekiosk.iso /mnt/live

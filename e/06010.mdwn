@@ -1,2 +1,2 @@
-Title: 6.10. Quick reference
+[[meta title="Quick reference"]]
 http://www.brunningonline.net/simon/python/PQR.html

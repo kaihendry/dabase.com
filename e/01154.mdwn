@@ -1,4 +1,4 @@
-Title: 1.154. Screencasting, YouTube-y tips
+[[meta title="Screencasting, YouTube-y tips"]]
 Record voice to WAV, then encode to MP3
 http://www.togaware.com/linux/survivor/Command_Line.html
  sound-recorder -P recording.wav

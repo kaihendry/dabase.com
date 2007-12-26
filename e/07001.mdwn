@@ -1,4 +1,4 @@
-Title: 7.1. Search and replace
+[[meta title="Search and replace"]]
 I always forget %s
 From vimtutor:
   4. To substitute new for the first old on a line type    :s/old/new

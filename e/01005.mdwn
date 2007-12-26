@@ -1,4 +1,4 @@
-Title: 1.5. Mozilla crashing on news.bbc.co.uk ??
+[[meta title="Mozilla crashing on news.bbc.co.uk ??"]]
 Edit -> Preferences -> Advanced -> Disable Java
 BBC TAKE OFF JAVA.
 TAKE OFF REAL WANK WHILE YOU ARE AT IT!

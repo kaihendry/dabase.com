@@ -1,4 +1,4 @@
-Title: 1.25. using gnu tar reference
+[[meta title="using gnu tar reference"]]
 List files in archive:
  tar -t whatishere.tar
 does not work. it just hangs there until you ctrl-c it. great. SO what works?

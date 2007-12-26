@@ -1,4 +1,4 @@
-Title: 1.38. Closing bugs
+[[meta title="Closing bugs"]]
 Some tips I've collected...
  export EMAIL="your@email.org"
 

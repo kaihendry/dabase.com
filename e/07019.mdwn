@@ -1,4 +1,4 @@
-Title: 7.19. Spanish
+[[meta title="Spanish"]]
 Quite facil
  apt-get install vim-spellfiles-es
 and

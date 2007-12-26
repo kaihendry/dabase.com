@@ -1,4 +1,4 @@
-Title: 1.13. Passwordless logins with SSH
+[[meta title="Passwordless logins with SSH"]]
 If you routinely need to login to several machines, as I do, you will find this tip useful to automate the process. Thanks to Robot101 again!
  ssh-keygen -t dsa
 In the previous version of my tip, I did not set a passphrase. Robot101 notes this is generally unwise and that it is better to put a passphrase on, and use ssh-agent. I believe him.

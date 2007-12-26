@@ -1,4 +1,4 @@
-Title: 1.146. Realplayer
+[[meta title="Realplayer"]]
 Realplayer with CC proxy.
 Then icecast server.
 ices2 ices-alsa.xml

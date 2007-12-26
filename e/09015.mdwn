@@ -1,4 +1,4 @@
-Title: 9.15. Cherry pick a change in SVN
+[[meta title="Cherry pick a change in SVN"]]
 i've had to roll back to 446, though I want to cherry pick a changeset in from 449. How do I get those diffs and patch my rolled back 446 typically?
     svn diff -r448:449 > ~/global.patch
     patch -p0 < ~/global.patch

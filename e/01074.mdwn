@@ -1,4 +1,4 @@
-Title: 1.74. NFS and Subversion
+[[meta title="NFS and Subversion"]]
 !They do not mix!
 HOWTO TEST FSFS
  tar zxf subversion-1.2.1.tar.gz

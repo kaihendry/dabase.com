@@ -1,2 +1,2 @@
-Title: 6.69. Debugging trick
+[[meta title="Debugging trick"]]
 http://www.oreillynet.com/pub/wlg/5204

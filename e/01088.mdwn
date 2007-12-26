@@ -1,4 +1,4 @@
-Title: 1.88. dhclient requesting without physical connection
+[[meta title="dhclient requesting without physical connection"]]
 apt-cache show ifplugd
  20:44 < hendry> Is it a bug if dhclient does requests when there is no physical connection ?
  20:44 < Tv> dhclient is too stupid to understand anything else

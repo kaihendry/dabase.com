@@ -1,4 +1,4 @@
-Title: 1.152. Virtualisation with OpenVZ
+[[meta title="Virtualisation with OpenVZ"]]
 I do not recommend OpenVZ user vserver instead!
 http://linux-vserver.org/Welcome_to_Linux-VServer.org
 You need the openvz patched kernel:

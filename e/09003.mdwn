@@ -1,4 +1,4 @@
-Title: 9.3. SVK notes
+[[meta title="SVK notes"]]
 Here's a good overview:
 http://perlcabal.org/~autrijus/svk-overview.png
  svk mirror http://code.djangoproject.com/svn/django/trunk/ //django/trunk

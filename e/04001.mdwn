@@ -1,4 +1,4 @@
-Title: 4.1. How to make web pages properly
+[[meta title="How to make web pages properly"]]
 <html>
 So you want to learn how to make a webpage?
 <p>Do not code html for browsers, code to standards. I recommend using XHTML

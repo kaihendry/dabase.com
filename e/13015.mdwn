@@ -1,4 +1,4 @@
-Title: 13.15. Deleting french movies with spaces
+[[meta title="Deleting french movies with spaces"]]
 This doesn't work:
  $ find . -name "*FR*" | xargs rm
 Strange filenames and spaces cause it to b0rk.

@@ -1,4 +1,4 @@
-Title: 2.17. Exim4 Etch Configuration
+[[meta title="Exim4 Etch Configuration"]]
 99.56% of systems should be configured this way. mail.dabase.com is my SMTP relay. Put your user/pass in
  /etc/exim4/passwd.client
 The magic:

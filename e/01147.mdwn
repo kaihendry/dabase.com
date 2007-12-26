@@ -1,4 +1,4 @@
-Title: 1.147. Packages from experimental
+[[meta title="Packages from experimental"]]
 http://wiki.debian.org/DebianExperimental?highlight=%28experimental%29
 I needed this to my glx going:
  sam$ sudo apt-get install libgl1-mesa-{dri,glx}/experimental mesa-common-dev/experimental libgl1-mesa-dev/experimental

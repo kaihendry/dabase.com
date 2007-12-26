@@ -1,2 +1,2 @@
-Title: 1.66. whois dig
+[[meta title="whois dig"]]
 For checking domain info.

@@ -1,4 +1,4 @@
-Title: 2.1. My censored .muttrc
+[[meta title="My censored .muttrc"]]
 Please consult :
 http://svn.natalian.org/home/.muttrc
 And my offline muttrc executed with : alias mutto='mutt -F ~/.muttorc'

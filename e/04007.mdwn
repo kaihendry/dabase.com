@@ -1,2 +1,2 @@
-Title: 4.7. Bad News
+[[meta title="Bad News"]]
 http://www.zeldman.com/daily/0603a.shtml#goredbylonghorn

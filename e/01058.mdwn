@@ -1,4 +1,4 @@
-Title: 1.58. Subversion CVS ROOT
+[[meta title="Subversion CVS ROOT"]]
 http://subversion.tigris.org/project_faq.html
  export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
 Equates to:

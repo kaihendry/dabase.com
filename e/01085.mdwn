@@ -1,4 +1,4 @@
-Title: 1.85. AWK BASH STUFF
+[[meta title="AWK BASH STUFF"]]
 Every now and then, some shows me something I should know :
  (du -a | awk '{print }' | grep '\.JPG' | xargs jhead)
  for i in `du -a | awk '{print $2}' | grep '\.JPG'`; do cp $i ~/kodak; done

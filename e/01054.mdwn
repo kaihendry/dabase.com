@@ -1,4 +1,4 @@
-Title: 1.54. Backing up
+[[meta title="Backing up"]]
 http://www.mikerubel.org/computers/rsync_snapshots/
  rsync -essh -rtpvz
 More elaborate for my pictures:

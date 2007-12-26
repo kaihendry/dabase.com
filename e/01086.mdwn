@@ -1,4 +1,4 @@
-Title: 1.86. Diffstat
+[[meta title="Diffstat"]]
 COOL
  hendry@scrooge-15:~/Mail/mail-attachments$ diff -uNr sprng2.0-orig/ sprng2.0 |diffstat
  EXAMPLES/Makefile~         |  195 ------

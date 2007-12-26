@@ -1,4 +1,4 @@
-Title: 1.135. Preparing a new upstream source release
+[[meta title="Preparing a new upstream source release"]]
 Goto a clean directory
 Get new
  wget http://maradns.org/download/maradns-1.0.35.tar.gz

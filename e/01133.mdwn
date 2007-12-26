@@ -1,4 +1,4 @@
-Title: 1.133. Sendmail mail when back online
+[[meta title="Sendmail mail when back online"]]
 Run:
  sendmail -q
 and pray

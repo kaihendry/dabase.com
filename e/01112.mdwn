@@ -1,4 +1,4 @@
-Title: 1.112. Ion the window manager resizing the frame
+[[meta title="Ion the window manager resizing the frame"]]
 alt+r for resize the cols and width.
 Holding alt and using mousing gives pixel X positioing address.
 Look at the bindings and the docs.

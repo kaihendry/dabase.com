@@ -1,4 +1,4 @@
-Title: 1.32. Duplex printing - use mpage
+[[meta title="Duplex printing - use mpage"]]
 My favourite option:
  mpage -t -2 -Pprintername your.ps
  hendry@bogrund-14:~$ mpage -t -Pps8 agiledev.ps

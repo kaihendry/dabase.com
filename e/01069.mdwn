@@ -1,4 +1,4 @@
-Title: 1.69. Patching a debian package
+[[meta title="Patching a debian package"]]
 If I want to make a patch for a debian package:
  cd /tmp/; apt-get source package; cp -r package-1.1/ package-1.1.orig/
 and then fix file(s) in package-1.1/ directory

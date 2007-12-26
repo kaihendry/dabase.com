@@ -1,4 +1,4 @@
-Title: 9.10. Accidental deletion
+[[meta title="Accidental deletion"]]
 Say you accidentally deleted and commited something in changeset or rev 1852.
 You probably want to something like this:
  svn merge -r 1852:1851 .

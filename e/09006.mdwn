@@ -1,4 +1,4 @@
-Title: 9.6. Revert a change in CVS
+[[meta title="Revert a change in CVS"]]
 Taken from http://elib.cs.berkeley.edu/admin/cvs/cvsrevert.html
  % cvs log test
  < figure out which revision you want from the log >

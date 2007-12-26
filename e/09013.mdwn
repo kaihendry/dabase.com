@@ -1,4 +1,4 @@
-Title: 9.13. Howto send a PATCH
+[[meta title="Howto send a PATCH"]]
 Clone the master. Make the change, commit.
  git-format-patch "HEAD^"
  git-send-email 0001-

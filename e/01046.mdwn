@@ -1,4 +1,4 @@
-Title: 1.46. Imagemagick
+[[meta title="Imagemagick"]]
 Are set of image manipulation tools, which work mainly within the console ! :)
 I typically use it to change some files from one format to another:
  hendry@bogrund-14:~/mail-attachments$ for i in `ls`; do echo convert $i `basename $i png`eps; done

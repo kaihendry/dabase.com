@@ -1,4 +1,4 @@
-Title: 1.108. bash prompt
+[[meta title="bash prompt"]]
 Know this:
  # is root
  $ for user

@@ -1,4 +1,4 @@
-Title: 1.109. Unpacking source
+[[meta title="Unpacking source"]]
 3 ways. All quite ugly:
  16:45 < hendry> bilbo$ ls
  16:45 < hendry> flyspray_0.9.5-1.diff.gz  flyspray_0.9.5.orig.tar.gz

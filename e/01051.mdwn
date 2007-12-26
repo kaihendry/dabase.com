@@ -1,4 +1,4 @@
-Title: 1.51. Check out some multimedia
+[[meta title="Check out some multimedia"]]
 Well, tonight I was wondering how to play a .wav file from the command line.
 There is sox of course:
  sox chat1.wav -t ossdsp -w -s /dev/dsp

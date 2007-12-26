@@ -1,4 +1,4 @@
-Title: 11.2. Histogram
+[[meta title="Histogram"]]
 Use exact class limits.
 3 Class example:
  hist(zz$x8, break=c(150.5, 165.5, 180.5, 195.5)

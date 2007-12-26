@@ -1,3 +1,3 @@
-Title: 6.12. Class customization
+[[meta title="Class customization"]]
 Wheee!!
 http://www.python.org/doc/current/ref/customization.html

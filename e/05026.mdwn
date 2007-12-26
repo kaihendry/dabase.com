@@ -1,2 +1,2 @@
-Title: 5.26. Writing letters
+[[meta title="Writing letters"]]
 http://www.imperialviolet.org/mpletters.html

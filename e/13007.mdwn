@@ -1,4 +1,4 @@
-Title: 13.7. Count to ten
+[[meta title="Count to ten"]]
 Counting:
  debian$ sh toten.sh
  0

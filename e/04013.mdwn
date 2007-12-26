@@ -1,4 +1,4 @@
-Title: 4.13. Mozilla and Subversion
+[[meta title="Mozilla and Subversion"]]
 UPDATE: I know just use del.icio.us !
 http://del.icio.us/hendry
 I use several machines. I have put my .mozilla in subversion so I can check it out and commit changes on any of the machines I use.

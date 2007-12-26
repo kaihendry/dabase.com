@@ -1,4 +1,4 @@
-Title: 1.39. Using diff
+[[meta title="Using diff"]]
 I have been using diff ! :)
  diff -N -r -u bins-1.1.21 bins-1.1.21.bug/ > bins.patch
 N esp. if your patch includes new files

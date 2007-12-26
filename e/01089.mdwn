@@ -1,4 +1,4 @@
-Title: 1.89. Name the interface
+[[meta title="Name the interface"]]
 You might want to ensure nameif is on your system beforehand:
  hendry@scrooge-15:/etc/network$ cat interfaces
  auto lo eth0

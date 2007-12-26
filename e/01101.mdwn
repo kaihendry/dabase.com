@@ -1,4 +1,4 @@
-Title: 1.101. Using the Ion window manager notes
+[[meta title="Using the Ion window manager notes"]]
 Copy in the files from /etc/X11/ion2 to your homedir:
  $ tree .ion2/
  .ion2/

@@ -1,4 +1,4 @@
-Title: 1.49. Kernel modules (2.4) after copying a linux partition into a different machine
+[[meta title="Kernel modules (2.4) after copying a linux partition into a different machine"]]
 The kernel doesn't automagically find any devices. They must all be specified either on the command line,
 or as what typically happens by loading specific modules.
 They could be compiled into the kernel. But that should not be the case. You should be using standard "stock" kernels.

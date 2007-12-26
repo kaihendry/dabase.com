@@ -1,4 +1,4 @@
-Title: 1.120. maildrop: Unable to open mailbox.
+[[meta title="maildrop: Unable to open mailbox."]]
 Use:
  maildirmake
 Debug maildrop and your mailfilter with a command like:

@@ -1,4 +1,4 @@
-Title: 7.15. Searching and Replacing
+[[meta title="Searching and Replacing"]]
 All lines
  :%s
 The the line you are editing:

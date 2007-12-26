@@ -1,4 +1,4 @@
-Title: 13.13. Case insentitive basename
+[[meta title="Case insentitive basename"]]
 Better than basename:
  file=mvi_0288.avi; echo ${file%.*}
  mvi_0288

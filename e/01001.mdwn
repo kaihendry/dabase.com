@@ -1,4 +1,4 @@
-Title: 1.1. Fixing a package listing after a screw up with dselect
+[[meta title="Fixing a package listing after a screw up with dselect"]]
 If you accidently deselect a bunch of critical packages, and end up practically removing your entire system, you need to quit dselect with a ctrl-C or using Esc, X or maybe even R. NOT Q LIKE I STUPIDLY DID.
 Now, if you made the mistake, you need to compare with your (automated) backups:
 diff /var/lib/dpkg/status /var/backups/dpkg.status.0

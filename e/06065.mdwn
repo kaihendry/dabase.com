@@ -1,4 +1,4 @@
-Title: 6.65. Copy a list !
+[[meta title="Copy a list !"]]
 I make this mistake all to often:
  15:37 < hendry> I feel stupid asking this. How do I remove items from a list while traversing it? http://nevow.dabase.com/2
  15:37 < hendry> I could append indexes to another list and remove it later... but, isn't there quicker way?

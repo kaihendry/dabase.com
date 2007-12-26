@@ -1,4 +1,4 @@
-Title: 4.5. Encode your email address to protect yourself from spam bots
+[[meta title="Encode your email address to protect yourself from spam bots"]]
 This is what I use. I hate mailto: so I don't bother with the fancier ones...
 http://www.wbwip.com/wbw/emailencoder.html
  debian$ python

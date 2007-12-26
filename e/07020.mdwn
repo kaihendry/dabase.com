@@ -1,4 +1,4 @@
-Title: 7.20. Make development cycles in C/C++
+[[meta title="Make development cycles in C/C++"]]
 Write a Makefile. Call it with:
  :make
 Then view your compilation results with

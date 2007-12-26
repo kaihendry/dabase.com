@@ -1,4 +1,4 @@
-Title: 6.48. Parsing strings into dicts
+[[meta title="Parsing strings into dicts"]]
 what is the best way of turning string = 'a 1 b 3 c 4\n' into a mapping type with a, b, c as their keys?
  >>> x = 'a 1 b 2 c 3 d 4'
  >>> z = iter(x.split())

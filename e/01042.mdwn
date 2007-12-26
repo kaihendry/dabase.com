@@ -1,4 +1,4 @@
-Title: 1.42. Getting your IP from a DHCP server
+[[meta title="Getting your IP from a DHCP server"]]
 This is a manual approach:
  sudo dhclient eth0
 ifup shell scripts should be a better approach...

@@ -1,4 +1,4 @@
-Title: 1.19. Basename (removing filename extensions in BASH)
+[[meta title="Basename (removing filename extensions in BASH)"]]
 Basename. Always forget that sucker.
  18:11 < hendry> How do I cut off the extension typically in bash again ?
  18:17 < tale> What extension?

@@ -1,4 +1,4 @@
-Title: 6.35. How would one read line (x) from a file?
+[[meta title="How would one read line (x) from a file?"]]
 Another IRC adventure:
  00:33 < hendry> exarkun: readlines()[lineno] perhaps?
  00:33 < ivan> for small files

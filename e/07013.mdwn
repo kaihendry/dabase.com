@@ -1,4 +1,4 @@
-Title: 7.13. Literal Char
+[[meta title="Literal Char"]]
 IN INSERT MODE !
  C-v C-h
 for ^H

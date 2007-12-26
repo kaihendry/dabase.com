@@ -1,4 +1,4 @@
-Title: 5.7. Powerpoint SUCKS
+[[meta title="Powerpoint SUCKS"]]
 I have seen countless poor presentations. What do they generally have in common?
 Microsoft Powerpoint "powering" them.
 http://www.tbray.org/ongoing/When/200x/2003/12/15/PPt-Keynote

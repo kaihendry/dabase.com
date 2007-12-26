@@ -1,4 +1,4 @@
-Title: 6.23. Joining a list of strings, or ints
+[[meta title="Joining a list of strings, or ints"]]
 I think the join syntax is slightly strange:
  >>> list = ['cow','dog','cat']
  >>> print list.join()

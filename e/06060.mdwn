@@ -1,3 +1,3 @@
-Title: 6.60. Printing attributes of a class
+[[meta title="Printing attributes of a class"]]
 I should have known this:
  print self.__dict__

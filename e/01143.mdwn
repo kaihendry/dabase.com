@@ -1,4 +1,4 @@
-Title: 1.143. Sane SUDO configuration
+[[meta title="Sane SUDO configuration"]]
 To edit
  sudo visudo
 Saves you making a nasty mistake and then being unable to use your system!

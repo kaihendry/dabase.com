@@ -1,4 +1,4 @@
-Title: 6.30. Template
+[[meta title="Template"]]
 I generally need these two lines when I begin writing a script:
  #!/usr/bin/env python2
 

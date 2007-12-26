@@ -1,4 +1,4 @@
-Title: 1.30. Grub Vga Framebuffer
+[[meta title="Grub Vga Framebuffer"]]
 Vga Framebuffer settings. From:
 /usr/share/doc/kernel-doc-2.4.22/Documentation/svga.txt.gz
 Still doesn't explain "0x305".

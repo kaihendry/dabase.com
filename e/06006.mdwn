@@ -1,4 +1,4 @@
-Title: 6.6. importing modules
+[[meta title="importing modules"]]
 <html>
 <pre>
 class Bag:

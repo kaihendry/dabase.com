@@ -1,4 +1,4 @@
-Title: 6.21. Using sub re groups as arguments in functions
+[[meta title="Using sub re groups as arguments in functions"]]
 Read this carefully:
 http://www.python.org/doc/current/lib/node99.html#l2h-726
 Especially about "dashrepl(matchobj)".

@@ -1,4 +1,4 @@
-Title: 1.71. Ping broadcast
+[[meta title="Ping broadcast"]]
 Debugging networking
  scrooge-15:~$ /sbin/ifconfig
  eth0      Link encap:Ethernet  HWaddr 00:09:6B:D0:A0:61

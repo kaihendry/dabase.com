@@ -1,4 +1,4 @@
-Title: 5.13. Free software in Education / Schools
+[[meta title="Free software in Education / Schools"]]
 http://fsfeurope.org/projects/education/argumentation.en.html
 http://www.schoolforge.net/
 http://casestudy.seul.org/

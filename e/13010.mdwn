@@ -1,4 +1,4 @@
-Title: 13.10. Checking a variable is set
+[[meta title="Checking a variable is set"]]
 Common:
  [[ $FILES ]] || echo "No files!"; break
 More correct:

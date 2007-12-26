@@ -1,3 +1,3 @@
-Title: 13.5. Turning off option parsing
+[[meta title="Turning off option parsing"]]
 With a -- :
  for i in `dpkg -L php5-dev`; do egrep -- "--with" $i; done

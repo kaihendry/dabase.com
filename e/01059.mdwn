@@ -1,4 +1,4 @@
-Title: 1.59. T30 2366-PM1 with Debian SID
+[[meta title="T30 2366-PM1 with Debian SID"]]
 See:
 http://www.thinkwiki.org/wiki/Category:T30
 and

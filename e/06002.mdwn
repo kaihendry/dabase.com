@@ -1,4 +1,4 @@
-Title: 6.2. Inserting values into HTML output
+[[meta title="Inserting values into HTML output"]]
 use
  print '<body bgcolor="%s">' % color
 This just works like printf in C. %s is a placeholder for a string and

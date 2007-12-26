@@ -1,2 +1,2 @@
-Title: 6.11. Mapping Types = dict
+[[meta title="Mapping Types = dict"]]
 http://www.python.org/doc/current/lib/typesmapping.html

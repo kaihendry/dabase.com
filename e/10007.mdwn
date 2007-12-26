@@ -1,4 +1,4 @@
-Title: 10.7. Biblography tips
+[[meta title="Biblography tips"]]
 Usually your school or research organization gives you a .bst file to work with. e.g. tktl.bst
 This has the styles you need to work with in some sort of functional bibtex language.
 I was looking for something to give attribution or cite material like W3C specs on the web. THANKFULLY there was something in tktl.bst that does it, as the latex defaults I don't think cut it.

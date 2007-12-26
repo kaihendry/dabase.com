@@ -1,4 +1,4 @@
-Title: 6.51. Ordered list union
+[[meta title="Ordered list union"]]
 <html>
 <pre>
 list1 = [1,2,3,4,5,6]

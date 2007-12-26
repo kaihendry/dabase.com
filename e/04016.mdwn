@@ -1,4 +1,4 @@
-Title: 4.16. Accessibility = disability
+[[meta title="Accessibility = disability"]]
 And thinking about "accessibility" for awhile, I have to the conclusion
 that it should narrowed down to people who are specifically disabled (in
 the legal sense) and require special need/considerations. It should not be a catchall term.

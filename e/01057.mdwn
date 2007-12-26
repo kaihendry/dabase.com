@@ -1,4 +1,4 @@
-Title: 1.57. Debugging core dumps
+[[meta title="Debugging core dumps"]]
 http://bytesex.org/gdb.html
 Enable core dumps:
  ulimit -c unlimited

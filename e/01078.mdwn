@@ -1,4 +1,4 @@
-Title: 1.78. hdparm
+[[meta title="hdparm"]]
 http://packages.debian.org/cgi-bin/search_packages.pl?keywords=hdparm&searchon=names&subword=1&case=insensitive&version=all&release=all
 You want DMA and 32bit on to get reasonable performance.
  hendry@scrooge-15:~$ sudo hdparm /dev/hda

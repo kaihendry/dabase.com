@@ -1,4 +1,4 @@
-Title: 7.18. vim7
+[[meta title="vim7"]]
 Some notes about the new features that interest me.
 http://www.flickr.com/photos/tags/vim7
 Open in tabs:

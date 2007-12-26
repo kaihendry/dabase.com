@@ -1,4 +1,4 @@
-Title: 1.138. FHS
+[[meta title="FHS"]]
 The Unix hierachy. Bit silly IMO, but oh well, you get used to it.
 http://www.pathname.com/fhs/
  man hier

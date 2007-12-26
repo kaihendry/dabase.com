@@ -1,4 +1,4 @@
-Title: 1.132. Installing java
+[[meta title="Installing java"]]
 Debian's java-package is excellent.
  sudo apt-get install java-package
 Read the docs:

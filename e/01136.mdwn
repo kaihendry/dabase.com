@@ -1,4 +1,4 @@
-Title: 1.136. Linux Ghost
+[[meta title="Linux Ghost"]]
 Best list:
  apt-cache search "\bdd\b"
 sdd promises to be like dd though with a progress bar!

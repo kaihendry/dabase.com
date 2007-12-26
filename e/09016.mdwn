@@ -1,4 +1,4 @@
-Title: 9.16. I am on changes X and I want to roll back to X-1 for testing
+[[meta title="I am on changes X and I want to roll back to X-1 for testing"]]
 Roll back
     svn merge -r X:X-1 .
 In practice:

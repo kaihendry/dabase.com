@@ -1,4 +1,4 @@
-Title: 1.22. CVS importing
+[[meta title="CVS importing"]]
 I never remember how to do this, and I always do something STUPID like:
  hendry@bogrund-14:~$ cvs import datastructuresproject/ vendor_1_0 rev_1_0
  L datastructuresproject//.inputrc

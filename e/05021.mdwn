@@ -1,2 +1,2 @@
-Title: 5.21. Fire and Motion
+[[meta title="Fire and Motion"]]
 http://www.joelonsoftware.com/articles/fog0000000339.html

@@ -1,4 +1,4 @@
-Title: 1.17. Backgrounding a process
+[[meta title="Backgrounding a process"]]
 Say you run a process to check its Stdout debug messages, or you just forget to put the ampersand in after its name, this is how I do about backgrounding it.
  hendry@bilbo:~$ straw
  (straw:4967): Gtk-WARNING **: Unable to locate theme engine in module_path: "bluecurve",

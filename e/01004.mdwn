@@ -1,4 +1,4 @@
-Title: 1.4. Screen - enhancing the power of the console
+[[meta title="Screen - enhancing the power of the console"]]
 <html>
 <p>Screen is a very very cool console enhancement, which allows you to create
 new windows, flip between them and best of all detach and reattach all of them!

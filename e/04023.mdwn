@@ -1,4 +1,4 @@
-Title: 4.23. Some soup sir?
+[[meta title="Some soup sir?"]]
 Ian is a genius.
 http://hixie.ch/advocacy/xhtml
 15:49 <@draq> Hixie: do you have a test somewhere to see if my Nokia UA is parsing as XML or as SGML?

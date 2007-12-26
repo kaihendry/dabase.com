@@ -1,4 +1,4 @@
-Title: 1.149. Getting the linux boot arguments
+[[meta title="Getting the linux boot arguments"]]
 See how the computer booted
  cat monty$ cat /proc/cmdline
  root=/dev/hda1 ro

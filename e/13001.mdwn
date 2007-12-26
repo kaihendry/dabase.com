@@ -1,4 +1,4 @@
-Title: 13.1. Removing characters
+[[meta title="Removing characters"]]
 There are different ways of doing it:
  # removing fullstop
  DOMAIN="blah.com"

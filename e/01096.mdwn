@@ -1,4 +1,4 @@
-Title: 1.96. SSH port forwarding
+[[meta title="SSH port forwarding"]]
 My home machine is behind a firewall. But I still want to connect to it.
 I have a server dabase.com on the internet.
 I run this command on my home machine.

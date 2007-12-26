@@ -1,4 +1,4 @@
-Title: 1.35. (kernel module) keeps on loading at boot time and I don't know how to remove it...
+[[meta title="(kernel module) keeps on loading at boot time and I don't know how to remove it..."]]
 The tool you should use to remove and add modules is:
  modconf
 What it does, is simply add a line to:

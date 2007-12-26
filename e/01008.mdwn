@@ -1,4 +1,4 @@
-Title: 1.8. KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2
+[[meta title="KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2"]]
 I would prefer not to do it this way. I have to figure out hotplug.
 Beware of the dc2xx driver, you need to remove it for it all to work!
  bilbo:~# lsmod | grep dc2

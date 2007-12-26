@@ -1,4 +1,4 @@
-Title: 6.56. Unique elements from a list
+[[meta title="Unique elements from a list"]]
 There is a couple of new ways with 2.3:
 http://tinyurl.com/v72w
 Otherwise:

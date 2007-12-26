@@ -1,4 +1,4 @@
-Title: 1.105. C binary information
+[[meta title="C binary information"]]
 Finding out about binaries and shared libraries:
  objdump -p /lib/libc.so.6
  readelf -a libcfont.so

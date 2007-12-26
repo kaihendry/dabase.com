@@ -1,4 +1,4 @@
-Title: 1.9. Makefile for docbook2 tools
+[[meta title="Makefile for docbook2 tools"]]
 all: rtf html ps pdf txt
 rtf: resume.xml
         docbook2rtf resume.xml

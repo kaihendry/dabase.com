@@ -1,4 +1,4 @@
-Title: 1.79. Exim 4 Catchall
+[[meta title="Exim 4 Catchall"]]
 Add another file in the router directory for catchall to work.
  hendry@bilbo:/etc/exim4/conf.d/router$ cat 950_exim4-config_catchall
  catch_all:

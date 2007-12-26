@@ -1,3 +1,3 @@
-Title: 7.7. Outputting buffer as HTML
+[[meta title="Outputting buffer as HTML"]]
 Show VIM syntax hightlighted code to the WWW!
  :so $VIMRUNTIME/syntax/2html.vim

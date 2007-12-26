@@ -1,4 +1,4 @@
-Title: 1.18. Majordomo How to remove a user
+[[meta title="Majordomo How to remove a user"]]
 http://www.swcp.com/swcp-web/kb/kb-view.php?106
 approve password unsubscribe list-name someones@email.com
 Or in bash:

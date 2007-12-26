@@ -1,4 +1,4 @@
-Title: 1.14. Reading news
+[[meta title="Reading news"]]
 slrn seems to be the killer app for this.
 what really annoyed me was when I was reading a post, and I hit ESC to get supposingly to article listing, would instead take me back to the newsgroup listing.
 the key wasn't q,Q either, it was h. Take note.

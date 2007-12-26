@@ -1,4 +1,4 @@
-Title: 1.11. Writing CDs (Backing up your Mail)
+[[meta title="Writing CDs (Backing up your Mail)"]]
 I never ever remember this. So here I am recording the information about burning CDs with :
  mkisofs -o /tmp/backup.iso .
  cdrecord -scanbus

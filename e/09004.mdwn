@@ -1,4 +1,4 @@
-Title: 9.4. cvs release in Subversion?
+[[meta title="cvs release in Subversion?"]]
 Anything you can live without?
  frodo$ svn st projects/
  ?      projects/svn-commit.tmp

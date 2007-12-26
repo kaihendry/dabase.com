@@ -1,4 +1,4 @@
-Title: 4.37. Disable an extension in Iceweasel/Firefox
+[[meta title="Disable an extension in Iceweasel/Firefox"]]
 Use safe mode.
 http://kb.mozillazine.org/Safe_Mode_(Firefox)
 Edit the RDF:Description

@@ -1,3 +1,3 @@
-Title: 1.61. dos2unix
+[[meta title="dos2unix"]]
 Me: Is there a tool dh tool to convert files from dos to unix? upstream source of what I may package is in dos format...
 Part: dos2unix in sysutils

@@ -1,4 +1,4 @@
-Title: 1.110. Use XDM
+[[meta title="Use XDM"]]
 Just comment stuff in and out as needed:
  scrooge-15$ cat .xsession
  #startkde

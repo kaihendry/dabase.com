@@ -1,4 +1,4 @@
-Title: 6.14. Adding lists
+[[meta title="Adding lists"]]
 import operator
  >>> list1 = [1,0]
  >>> list2 = [1,2]

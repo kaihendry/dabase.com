@@ -1,4 +1,4 @@
-Title: 1.80. Reading a man page
+[[meta title="Reading a man page"]]
 Good when delving in the sources:
  nroff -man amanpage.3
 Search for something, try:

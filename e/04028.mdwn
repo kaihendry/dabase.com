@@ -1,4 +1,4 @@
-Title: 4.28. Wordpress password mysql
+[[meta title="Wordpress password mysql"]]
 Python is your friend:
  bilbo:498$ python
  Python 2.3.4 (#2, Jul  5 2004, 09:15:05)

@@ -1,2 +1,2 @@
-Title: 6.4. Regular Expressions
+[[meta title="Regular Expressions"]]
 http://db.cs.helsinki.fi/~hendry/python/re.cgi

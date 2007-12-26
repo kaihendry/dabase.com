@@ -1,2 +1,2 @@
-Title: 6.41. Bayes
+[[meta title="Bayes"]]
 http://www.divmod.org/Reverend/index.html

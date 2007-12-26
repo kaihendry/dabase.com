@@ -1,4 +1,4 @@
-Title: 6.25. Constructing and then Printing/Writing a simple XML file with dom
+[[meta title="Constructing and then Printing/Writing a simple XML file with dom"]]
 Here is a simple XML snippet:
  <?xml version="1.0" ?>
  <div class="test">

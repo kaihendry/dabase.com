@@ -1,4 +1,4 @@
-Title: 3.1. Getting started
+[[meta title="Getting started"]]
 <html>
 <p> It is a pretty good idea to understand that whole public/private encryption
 concept before you start to think about using pgp or gpg.  I remember using PGP

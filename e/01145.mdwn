@@ -1,4 +1,4 @@
-Title: 1.145. Setting timezone in Debian
+[[meta title="Setting timezone in Debian"]]
 For setting time in a new country.
  x61:~% sudo dpkg-reconfigure tzdata
  Current default timezone: 'Europe/London'

@@ -1,4 +1,4 @@
-Title: 7.3. Latex
+[[meta title="Latex"]]
 Vim with latex support scripts are here:
 http://vim-latex.sourceforge.net/
 Somethings I still need to figure out myself, however it looks promising.

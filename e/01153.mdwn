@@ -1,4 +1,4 @@
-Title: 1.153. LVM2
+[[meta title="LVM2"]]
 Getting to know you
     argo$ sudo pvdisplay
       --- Physical volume ---

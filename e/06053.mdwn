@@ -1,4 +1,4 @@
-Title: 6.53. Installing libraries into your $HOME
+[[meta title="Installing libraries into your $HOME"]]
 Sometimes you don't have root, or worse, no debian packages. =)
  hendry@melkinpaasi:~/buildbot/buildbot-0.3.4$ python2.2 ./setup.py install --prefix=$HOME
 Results in:

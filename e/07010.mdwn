@@ -1,4 +1,4 @@
-Title: 7.10. Cleaning whitespace
+[[meta title="Cleaning whitespace"]]
 Deleting whitespace around the cursor:
  diw
 Or the regexp:

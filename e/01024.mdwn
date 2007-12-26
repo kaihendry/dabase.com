@@ -1,4 +1,4 @@
-Title: 1.24. Finding additional information about a package not installed
+[[meta title="Finding additional information about a package not installed"]]
 apt-cache show
  hendry@bilbo:~$ apt-cache search straw
  straw - A GNOME RSS (weblog) aggregator

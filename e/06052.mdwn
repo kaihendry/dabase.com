@@ -1,4 +1,4 @@
-Title: 6.52. Traversing minidom's tree (Parsing XML to text)
+[[meta title="Traversing minidom's tree (Parsing XML to text)"]]
 <html>
 <pre>
 """

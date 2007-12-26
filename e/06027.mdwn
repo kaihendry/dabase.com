@@ -1,4 +1,4 @@
-Title: 6.27. Returning first word on a line in a file by line number example
+[[meta title="Returning first word on a line in a file by line number example"]]
 Note raise! Very useful.
  #!/usr/bin/env python2
 

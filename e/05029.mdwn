@@ -1,3 +1,3 @@
-Title: 5.29. Selling free software
+[[meta title="Selling free software"]]
 The way I found to make money from unlimited cheap/free distribution of perfect copies was to go with the flow rather than fighting it. Encourage the world to distribute your work to every person on earth; then every person on earth becomes your potential customer. Build a commercial relationship with people who depend on your work; they won't care if the rest of the world can have it, as long as they get your attention so it meets THEIR needs. Charge people for the act of creation BEFORE you create it (the same way concert tickets work); then you don't have to limit where the created work goes AFTERWARD. For a fee, alleviate the troubles that come from too much information, too poorly understood, too poorly coordinated, too poorly documented: provide rapid, correct answers to customer questions.
 http://grep.law.harvard.edu/features/04/08/18/112237.shtml

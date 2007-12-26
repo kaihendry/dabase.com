@@ -1,4 +1,4 @@
-Title: 9.11. Finding .svn
+[[meta title="Finding .svn"]]
 Grep is practical:
  find . -type f | fgrep -v /.svn/
  find .|grep -v .svn

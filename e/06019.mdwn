@@ -1,4 +1,4 @@
-Title: 6.19. PYTHONPATH in script
+[[meta title="PYTHONPATH in script"]]
 Want to load a module in your $HOME dir somewhere?
  try:
          import Image # http://www.pythonware.com/products/pil/

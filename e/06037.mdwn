@@ -1,4 +1,4 @@
-Title: 6.37. str vs. repr
+[[meta title="repr"]]
 Watch out when printing floats:
  13:07 < hendry> print (0.0424, 0.0343) # prints (0.0424, 0.034299999999999997), why not: (0.0424, 0.0343) ?
  13:07 < Erwin> hendry: because there is no such floating point number as 0.0343

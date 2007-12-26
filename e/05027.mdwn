@@ -1,3 +1,3 @@
-Title: 5.27. Quotes
+[[meta title="Quotes"]]
 Beauty is the ultimate defence against complexity.” Dr Ritchie's
 http://economist.com/science/tq/displayStory.cfm?story_id=2724348

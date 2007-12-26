@@ -1,4 +1,4 @@
-Title: 1.34. how can a setup the default keymap for console??
+[[meta title="how can a setup the default keymap for console??"]]
 This link has most of the info:
 http://www.debian.org/doc/manuals/users-guide/ch-ctsystem.en.html#s-ctkm
 http://www.debian.org/doc/manuals/debian-euro-support/ch-configure.en.html

@@ -1,4 +1,4 @@
-Title: 1.63. Exim 4 SMTP Auth
+[[meta title="Exim 4 SMTP Auth"]]
 Well, I configured Exim 3:
 http://db.cs.helsinki.fi/~hendry/log/pyblosxom.cgi/email/sslsmtp.html
 First the output:

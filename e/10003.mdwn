@@ -1,4 +1,4 @@
-Title: 10.3. TODO list
+[[meta title="TODO list"]]
 Using:
  \usepackage{amsfonts}
  \usepackage{enumerate}

@@ -1,4 +1,4 @@
-Title: 1.91. etc with Subversion
+[[meta title="etc with Subversion"]]
 http://subversion.tigris.org/servlets/ReadMsg?list=users&msgId=279955
 http://subversion.tigris.org/servlets/ReadMsg?list=users&msgId=280254
 This is hard !

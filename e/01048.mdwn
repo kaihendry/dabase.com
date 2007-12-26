@@ -1,4 +1,4 @@
-Title: 1.48. Bits and Bytes
+[[meta title="Bits and Bytes"]]
 BIT = Binary digIT
 Byte = 8 bits
  0 = 00000000

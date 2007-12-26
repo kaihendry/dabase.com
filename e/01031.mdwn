@@ -1,4 +1,4 @@
-Title: 1.31. Using IRSSI
+[[meta title="Using IRSSI"]]
 I always forget this one:
  16:26 < hendry> FAQ: How do I stop reconnects?
  16:26 < hoxu> hendry, /rmreconns?

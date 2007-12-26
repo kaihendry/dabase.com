@@ -1,4 +1,4 @@
-[[meta title="Recording console sessions"]]
+[[meta title="Recording console sessions"]]"]]
 
 Want to show someone your work? Use script. It annoyingly has all your errors and frantic backspaces, however I at least find it beneficial.
 script mywork

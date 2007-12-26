@@ -1,2 +1,2 @@
-Title: 1.121. date fun
+[[meta title="date fun"]]
 date -d 'now + 2 hours'

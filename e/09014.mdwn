@@ -1,3 +1,3 @@
-Title: 9.14. Unpatch a patch
+[[meta title="Unpatch a patch"]]
 Unpatch in GNU talk is reverse.
  patch -R

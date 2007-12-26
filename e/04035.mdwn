@@ -1,4 +1,4 @@
-Title: 4.35. Rails, Debian and gem
+[[meta title="Rails, Debian and gem"]]
 Gem's default directory for gem installations is wrong:
     --install-dir /usr/lib/ruby/gems/1.8
 This is better:

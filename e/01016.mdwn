@@ -1,4 +1,4 @@
-Title: 1.16. netstat -napt (Who's connected to me?)
+[[meta title="netstat -napt (Who's connected to me?)"]]
 Use:
  netstat -napt
 To see what is listening and who (and from where) is connected.

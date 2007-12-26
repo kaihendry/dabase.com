@@ -1,4 +1,4 @@
-Title: 1.7. TCP Port listings
+[[meta title="TCP Port listings"]]
 Are kept in /etc/services  !
 Want to find out which ports are used by sftp?
 grep sftp /etc/services

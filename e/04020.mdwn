@@ -1,4 +1,4 @@
-Title: 4.20. SVG sucks
+[[meta title="SVG sucks"]]
 http://dbaron.org/log/2004-06#e20040609a
 It combines content and style. That flies in the face of a key web principle!
 http://www.w3.org/TR/2003/WD-webarch-20031209/#pci

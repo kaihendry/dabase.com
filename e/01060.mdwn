@@ -1,4 +1,4 @@
-Title: 1.60. SVN homedir
+[[meta title="SVN homedir"]]
 http://svnbook.red-bean.com/book.html
 Arrangement so far:
  hendry@bilbo:~$ svn ls svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo

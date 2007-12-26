@@ -1,4 +1,4 @@
-Title: 4.8. Unicode UTF-8
+[[meta title="Unicode UTF-8"]]
 Most Apache webservers are configured to negotiate content-type as latin-1.
 Your perfectly formed XHTML with UTF-8 will get a error like:
  Character Encoding mismatch!

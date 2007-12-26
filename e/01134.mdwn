@@ -1,4 +1,4 @@
-Title: 1.134. Version numbers
+[[meta title="Version numbers"]]
 They can be widely different:
  libzipios++0 0.1.5.9+cvs.2004.02.07-3.2
  vim 1:6.4-001+2

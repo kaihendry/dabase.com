@@ -1,4 +1,4 @@
-Title: 1.45. Finding about your display
+[[meta title="Finding about your display"]]
 What resolution am I running?
  xdpyinfo
 Do I have hardware acceleration?

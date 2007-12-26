@@ -1,4 +1,4 @@
-Title: 1.144. BIN-NMU
+[[meta title="BIN-NMU"]]
 When a library changes, the packages the depend on it often need to be recompiled. Hence the bin-nmu.
 Though this automagic goodness for Release Managers is a fairly recent innovation.
  16:01 < hendry> i don't quite understand

@@ -1,4 +1,4 @@
-Title: 4.31. Grepping a URL
+[[meta title="Grepping a URL"]]
 This is sweet bash:
  bilbo$ wget -q -O - http://gd.tuwien.ac.at/linux/knoppix/packages.txt | grep sub
  ii  autotools-dev            20040312.1               Update   infrastructure for config.{guess,sub} files

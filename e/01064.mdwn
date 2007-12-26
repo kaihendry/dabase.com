@@ -1,4 +1,4 @@
-Title: 1.64. lsof
+[[meta title="lsof"]]
 List of all open files
  lsof
 List open internet connections
