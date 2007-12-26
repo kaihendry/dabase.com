@@ -5,4 +5,4 @@
 
 There are [[pagecount pages="e/*"]] tips.
 
-[[inline pages="e/*" archive="yes" rss="no" atom="no" timeformat=""]]
+[[inline pages="e/*" archive="yes" rss="no" atom="no" timeformat="%F"]]
