@@ -5,6 +5,30 @@
 
 There are [[pagecount pages="e/*"]] tips.
 
-# mutt - my Email client
 
+1: "Debian System General - the Universal Operating System"
+[[inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+2: "mutt - my Email client"
 [[inline pages="e/02*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+3: "GPG - Gnu Privacy Guard, to sign and encrypt"
+[[inline pages="e/03*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+4: "The Web"
+[[inline pages="e/04*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+5: "Arguments"
+[[inline pages="e/05*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+6: "Python"
+[[inline pages="e/06*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+7: "VIM"
+[[inline pages="e/07*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+8: "Hardware"
+[[inline pages="e/08*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+9: "Source Control SCM"
+[[inline pages="e/09*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+10: "Latex"
+[[inline pages="e/10*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+11: "R"
+[[inline pages="e/11*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+12: "Red Hat"
+[[inline pages="e/12*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+13: "Bash"
+[[inline pages="e/13*" archive="yes" rss="no" atom="no" timeformat="%F"]]
