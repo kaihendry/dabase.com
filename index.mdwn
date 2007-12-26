@@ -1,35 +1,46 @@
 [[meta title="Hendry's tips and tricks"]]
 
+[[toc ]]
 [Importing faq.dabase.com into ikiwiki](http://faq.dabase.com/)
 
 There are [[pagecount pages="e/*"]] tips.
 
-[[toc ]]
 
-
-## Debian System General - the Universal Operating System
+# Debian System General - the Universal Operating System
 [[inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## mutt - my Email client
+
+# mutt - my Email client
 [[inline pages="e/02*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## GPG - Gnu Privacy Guard, to sign and encrypt
+
+# GPG - Gnu Privacy Guard, to sign and encrypt
 [[inline pages="e/03*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## The Web
+
+# The Web
 [[inline pages="e/04*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## Arguments
+
+# Arguments
 [[inline pages="e/05*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## Python
+
+# Python
 [[inline pages="e/06*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## VIM - my editor of choice
+
+# VIM - my editor of choice
 [[inline pages="e/07*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## Hardware
+
+# Hardware
 [[inline pages="e/08*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## Source Control SCM
+
+# Source Control SCM
 [[inline pages="e/09*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## Latex
+
+# Latex
 [[inline pages="e/10*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## [R](http://www.r-project.org/)
+
+# [R](http://www.r-project.org/)
 [[inline pages="e/11*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## Red Hat
+
+# Red Hat
 [[inline pages="e/12*" archive="yes" rss="no" atom="no" timeformat="%F"]]
-## Bash and shell
+
+# Bash and shell
 [[inline pages="e/13*" archive="yes" rss="no" atom="no" timeformat="%F"]]
