@@ -2,4 +2,4 @@
 
 [[pagespec="link(e/*)"]]
 
-[[creation_year(2007)]]
+[[pagespec="creation_year(2007)"]]
