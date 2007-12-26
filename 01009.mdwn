@@ -1,26 +1,14 @@
 Title: 1.9. Makefile for docbook2 tools
-Last-Changed-Date: Sat Nov  9 10:27:31 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.15.161
-
 all: rtf html ps pdf txt
-
 rtf: resume.xml
         docbook2rtf resume.xml
-
 html: resume.xml
         docbook2html resume.xml
-
 ps: resume.xml
         docbook2ps resume.xml
-
 pdf: resume.xml
         docbook2pdf resume.xml
-
 txt: resume.xml
         docbook2txt resume.xml
-
 clean :
         rm -f resume.ps resume.pdf resume.txt resume.rtf *.html

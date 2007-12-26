@@ -1,40 +1,19 @@
 Title: 12.5. Firewall
-Last-Changed-Date: Wed Jul  6 04:17:50 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
-With iptables. There is a couple of ways to do iptables. Inserting or appending is the two categories. 
-
-If you made mistakes you can be locked out the system. 
-
+With iptables. There is a couple of ways to do iptables. Inserting or appending is the two categories.
+If you made mistakes you can be locked out the system.
 THOUGH:
-
- -A RH-Firewall-1-INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT 
-
+ -A RH-Firewall-1-INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 before any DROP/REJECT rules, you'll be fine
-
-
-
 Play dumb and use Red Hat's GUI if you are a newbie:
-
  up2date --install system-config-securitylevel
  system-config-securitylevel
  service iptables status
-
 Edit the :
-
 /etc/sysconfig/iptables
-
 When you're comfortable.
-
 E.g.
 -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp -s 61.9.136.168 --dport 1521 -j ACCEPT
-
 Allows access only to my IP for the Oracle port 1521.
-
-
 <html>
 <pre>
 [hendry@server sysconfig]$ sudo cat iptables
@@ -63,13 +42,8 @@ Allows access only to my IP for the Oracle port 1521.
 COMMIT
 </pre>
 </html>
-
 TEST YOUR FIREWALL! netcat and nmap
-
 In RH to restart the service:
-
  sudo service iptables restart
-
-
 And check:
  iptables -vnxL

@@ -1,9 +1,3 @@
 Title: 1.37. Taking screenshots
-Last-Changed-Date: Mon Jul  7 22:06:13 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.8.204
-
 Screenshots are great to show people !
 I recommend scrot or gimp. They have time delay features which work.

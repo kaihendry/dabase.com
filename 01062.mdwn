@@ -1,12 +1,4 @@
 Title: 1.62. What package does this file belong to ?
-Last-Changed-Date: Sat Dec  6 10:41:27 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
-
 Here is one way:
-
  hendry@sam:/usr/lib/python2.2/site-packages$ dpkg -S optparse.py
-
 But that utility dlocate is faster.

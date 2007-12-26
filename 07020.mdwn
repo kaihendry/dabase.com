@@ -1,16 +1,6 @@
 Title: 7.20. Make development cycles in C/C++
-Last-Changed-Date: Wed Dec 19 03:13:20 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 90.152.10.135
-
 Write a Makefile. Call it with:
-
  :make
-
 Then view your compilation results with
-
  :cope
-
 From this window you can select the error from something that's related to vim's quicklist. Awesome eh?

@@ -1,11 +1,3 @@
 Title: 1.141. Standards versions diff
-Last-Changed-Date: Tue May  9 01:54:54 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 125.131.161.43
-
 See:
-
-
  /usr/share/doc/debian-policy/upgrading-checklist.txt.gz

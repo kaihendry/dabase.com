@@ -1,18 +1,9 @@
 Title: 7.10. Cleaning whitespace
-Last-Changed-Date: Thu Nov  6 21:30:15 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 62.78.149.199
-
 Deleting whitespace around the cursor:
  diw
-
 Or the regexp:
  :%s/\s*$//
-
 Or this::
  %s/ \+$//
-
 Converting EVIL tabs to spaces
  :retab

@@ -1,10 +1,3 @@
 Title: 5.16. Certification bodies
-Last-Changed-Date: Tue Dec  2 10:00:55 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Rackets
-
 http://www.iso.ch/iso/en/iso9000-14000/pdf/survey10thcycle.pdf

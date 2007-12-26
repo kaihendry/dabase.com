@@ -1,33 +1,19 @@
 Title: 6.21. Using sub re groups as arguments in functions
-Last-Changed-Date: Fri Feb 21 14:54:24 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Read this carefully:
 http://www.python.org/doc/current/lib/node99.html#l2h-726
-
 Especially about "dashrepl(matchobj)".
-
 Sub is definately one of those most useful ways to employ regular expressions. The dashrepl method described lets you play around with group matches as arguments. Very very useful.
-
 For example:
         result = re.sub(r'\[(' +
                  fileurlpattern + '|' +
                  mailurlpattern + '|' +
                  newsurlpattern + ')\ (.+?)\]',
                  r'<a href="\1">\2</a>', result)
-
 Focusing on last line.
-
 I wanted to use \2 as an argument in a function, like so:
-
  r'<a href="\1">thumbgen(\2)</a>', result)
-
 But of course it would never work, due to bad syntax. This is the correct syntax:
  thumb.thumburl, result)
-
 and in thumb.py :
  def thumburl(matchobj):
      print matchobj.group(0) # print all groups

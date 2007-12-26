@@ -1,17 +1,7 @@
 Title: 1.116. SVN ID AUTHOR DATE information
-Last-Changed-Date: Wed Sep 21 06:17:17 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 http://svnbook.red-bean.com/svnbook/book.html#svn-ch-7-sect-2.4
-
 This stuff is such a pain in subversion.
-
  svn propset svn:keywords "Id" jarj.py
  vim jarj.py
-
 Add $Id$ somewhere.
-
  svn commit -m "keyword added"

@@ -1,11 +1,4 @@
 Title: 6.20. Umask, permissions in newly created files
-Last-Changed-Date: Fri Feb 21 14:44:59 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Umask is a god send on my very precautionary setup of my University:
-
  import os
  os.umask(022) # created files are readable by all

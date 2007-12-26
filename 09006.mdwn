@@ -1,12 +1,5 @@
 Title: 9.6. Revert a change in CVS
-Last-Changed-Date: Thu Jul 21 00:31:34 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 Taken from http://elib.cs.berkeley.edu/admin/cvs/cvsrevert.html
-
  % cvs log test
  < figure out which revision you want from the log >
  % cvs update -r 1.2 test

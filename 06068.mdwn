@@ -1,8 +1,2 @@
 Title: 6.68. Parsing tag soup
-Last-Changed-Date: Wed Jun 30 11:49:20 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 http://www.crummy.com/software/BeautifulSoup/

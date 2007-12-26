@@ -1,14 +1,5 @@
 Title: 13.14. Getting port numbers out of /etc/service
-Last-Changed-Date: Wed Jun 21 23:17:19 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 125.131.161.40
-
 There is usually a couple of ways:
-
  15:14 < hendry> gnychis: tail /etc/services | awk '{print $2}' | awk -F / '{print $1}'
  15:18 < m4n> gnychis: while read line; do line="${line%/*}"; echo "${line##* }"; done < yourfile
-
-
 Though the second one is a bashism.

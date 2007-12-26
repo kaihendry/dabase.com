@@ -1,12 +1,4 @@
 Title: 6.22. Organizing libs for your project
-Last-Changed-Date: Mon Feb 24 14:10:35 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 13:51 < hendry> if I copy a bunch of .py to 'libs/', how do import them for usage? I would expect import libs/toolbox
-
-
  13:54 < dash> if so, put an empty __init__.py file in it
  13:54 < dash> and you can "import libs.toolbox"

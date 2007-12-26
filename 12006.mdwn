@@ -1,13 +1,6 @@
 Title: 12.6. User limits
-Last-Changed-Date: Fri Jun 17 05:56:31 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 From:
 http://www.puschitz.com/InstallingOracle10g.shtml
-
  [root@rhas-test install]# ulimit -a
  core file size          (blocks, -c) 0
  data seg size           (kbytes, -d) unlimited
@@ -23,6 +16,5 @@ http://www.puschitz.com/InstallingOracle10g.shtml
  max user processes              (-u) 4096
  virtual memory          (kbytes, -v) unlimited
  file locks                      (-x) unlimited
-
 To change these settings you need to look at:
 /etc/security/limits.conf

@@ -1,10 +1,3 @@
 Title: 1.99. Runlevels.
-Last-Changed-Date: Fri Jun 25 21:49:52 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 invoke-rc.d - executes System&#8208;V style init script actions
-
 update-rc.d - install and remove System&#8208;V style init script links

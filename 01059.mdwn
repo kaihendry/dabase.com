@@ -1,32 +1,14 @@
 Title: 1.59. T30 2366-PM1 with Debian SID
-Last-Changed-Date: Mon Aug  1 07:09:37 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 See:
-
 http://www.thinkwiki.org/wiki/Category:T30
-
 and
-
 http://trac.natalian.org/browser/debian/configuration/t30/
-
 If you have a specific question try debian-laptop.
-
 http://lists.debian.org/debian-laptop/
-
 I hate compiling my own kernels and always opt for Debian stock kernels.
-
-
 I have got everything working except :
-
 Hibernate/suspend which I don't really need.
-
 A T30 with a new full battery can only expect to get about 2 hours of life. Pretty lame. Still useful in a UPS capacity.
-
 I have not bothered to configure the power button to shutdown the machine.
-
 The CISCO wireless card is a bit dissapointing. I can't it to work! :(
 http://wlan.dabase.com/

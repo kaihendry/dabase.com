@@ -1,22 +1,7 @@
 Title: 9.12. Tracking another branch of a project with GIT
-Last-Changed-Date: Wed Oct 31 02:41:21 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 90.152.10.135
-
 Ok, go into your live-initramfs clone and:
-
-
     git remote add otavio git://git.debian.org/git/users/otavio/live-initramfs.git
-
-
     git remote update
-
     git checkout -b otavio-master otavio/master
-
-
-later: 
-
-
+later:
     git checkout otavio-master ; git rebase otavio/master

@@ -1,12 +1,5 @@
 Title: 1.88. dhclient requesting without physical connection
-Last-Changed-Date: Sat May 29 20:56:27 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 apt-cache show ifplugd
-
  20:44 < hendry> Is it a bug if dhclient does requests when there is no physical connection ?
  20:44 < Tv> dhclient is too stupid to understand anything else
  20:45 < Tv> use ifplugd to down the interface when it's not connected

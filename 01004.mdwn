@@ -1,10 +1,4 @@
 Title: 1.4. Screen - enhancing the power of the console
-Last-Changed-Date: Sat Jun 26 12:57:33 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 <html>
 <p>Screen is a very very cool console enhancement, which allows you to create
 new windows, flip between them and best of all detach and reattach all of them!
@@ -16,22 +10,15 @@ screen -R reattach to a session. Screen is a lifesaver if a program does not
 background well or you have a dodgy net connection, and it works very well with <a
 href="http://www.irssi.org">irssi.</a> Hmmm, lets revise the earlier tip
 to:</p>
-
 <pre>
 ssh myreliableremoteshell -t screen -R
 </pre>
-
 <pre>
 23:05 < Robot101> another handy tip for screen
 23:05 < Robot101> 'screen -x' lets you attatch to the same screen more than once
 23:06 < Robot101> I use it for helping people remotely, so they can see what I'm doing or vice versa
 </pre>
-
-
 </html>
-
  ctrl+a " window list
-
-FAQ: 
-
+FAQ:
 http://www4.informatik.uni-erlangen.de/~jnweiger/screen-faq.html

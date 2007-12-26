@@ -1,10 +1,4 @@
 Title: 6.6. importing modules
-Last-Changed-Date: Sat Dec 21 15:28:02 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.67
-
 <html>
 <pre>
 class Bag:
@@ -14,13 +8,10 @@ class Bag:
                 self.data.append(x)
         def howmuch(self):
                 return self.data
-
-
 import Bag
 x = Bag.Bag()
 Bag.Bag.Howmuch(x)
 x.Howmuch()
-
 from Bag import *
 x = Bag()
 Bad.Howmuch(x)

@@ -1,14 +1,5 @@
 Title: 8.1. Floppy disks should have a WARNING on them
-Last-Changed-Date: Sat Dec 21 02:20:39 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.68
-
 Floppy disk media, those 1.44 meg diskettes should carry a warning for all those noobs.
-
 THEY DO NOT HOLD DATA RELIABLY.
-
 Do not store essays, or anything on them for that matter if you can possibly help it. They corrupt very easily, not just be elements such as weather, but by MR TIME himself !
-
 So there! I WARNED YOU!

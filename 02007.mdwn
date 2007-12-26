@@ -1,12 +1,4 @@
 Title: 2.7. Edit messages properly
-Last-Changed-Date: Fri Mar 21 10:54:03 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
-Sven has a page to encourage good editing practices here: 
-
+Sven has a page to encourage good editing practices here:
 http://learn.to/edit_messages/
-
 That is one of my many many pet hates. Bad editing. Learn how to do it properly, it is such an essential skill, such as learning to read and *write*, however in the domain of the Internet.

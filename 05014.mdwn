@@ -1,8 +1,2 @@
 Title: 5.14. Free markets
-Last-Changed-Date: Tue Nov 11 15:25:08 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 http://www.tbray.org/ongoing/Biz

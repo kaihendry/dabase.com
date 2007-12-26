@@ -1,16 +1,9 @@
 Title: 6.54. Reading input / user interaction
-Last-Changed-Date: Sun Oct 26 21:48:36 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 62.78.149.199
-
 Input
-
  >>> print input.__doc__
  input([prompt]) -> value
  Equivalent to eval(raw_input(prompt)).
  >>> test = input()
- ['hi'] 
+ ['hi']
  >>> test
  ['hi']

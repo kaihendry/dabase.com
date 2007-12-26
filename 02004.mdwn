@@ -1,9 +1,3 @@
 Title: 2.4. Vim text width
-Last-Changed-Date: Fri Dec 20 21:28:37 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.76
-
 for mail:
  set tw=72

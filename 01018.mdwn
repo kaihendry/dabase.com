@@ -1,15 +1,5 @@
 Title: 1.18. Majordomo How to remove a user
-Last-Changed-Date: Mon Oct  6 11:18:04 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 http://www.swcp.com/swcp-web/kb/kb-view.php?106
-
 approve password unsubscribe list-name someones@email.com
-
-
 Or in bash:
-
  echo approve astronuts subscribe debating-society bill@hotmail.com | mail majordomo@helsinki.fi

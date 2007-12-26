@@ -1,20 +1,9 @@
 Title: 4.13. Mozilla and Subversion
-Last-Changed-Date: Thu Aug 11 01:01:55 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 UPDATE: I know just use del.icio.us !
 http://del.icio.us/hendry
-
 I use several machines. I have put my .mozilla in subversion so I can check it out and commit changes on any of the machines I use.
-
 In plain english when I move between machines my bookmarks are the same.
-
 I found the following files to meet my needs:
-
-
  bilbo:~$ rm -rf .mozilla/
  bilbo:~$ svn update
  A  .mozilla
@@ -26,9 +15,6 @@ I found the following files to meet my needs:
  A  .mozilla/default/ack41g03.slt/70706990.w
  A  .mozilla/default/ack41g03.slt/bookmarks.html
  A  .mozilla/appreg
-
 Most of the information about the files can be found here:
 http://www.mozilla.org/start/1.4/faq/profile.html#backup
-
-
 I find you need to also have the binary file .mozilla/appreg in there otherwise it asks to convert the profile and hence lose everything. It looks like it contains info about the bizarre SALT directory.

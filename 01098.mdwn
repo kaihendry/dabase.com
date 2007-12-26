@@ -1,10 +1,3 @@
 Title: 1.98. date time for file name
-Last-Changed-Date: Thu Jun 24 14:22:43 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 I forget OK?
-
  mv minimo.png minimo`date +%Y-%m-%d`.png

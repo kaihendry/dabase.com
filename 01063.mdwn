@@ -1,26 +1,12 @@
 Title: 1.63. Exim 4 SMTP Auth
-Last-Changed-Date: Sat Dec  6 20:46:45 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 Well, I configured Exim 3:
-
 http://db.cs.helsinki.fi/~hendry/log/pyblosxom.cgi/email/sslsmtp.html
-
 First the output:
-
  $ screen tail -f /var/log/exim4/mainlog
-
 Go off and carefull read:
-
  vim /usr/share/doc/exim4-base/README.SMTP-AUTH
-
 If you get syntax errors, there is most likely something wrong with:
-
  vim /etc/exim4/update-exim4.conf.conf
-
  dc_eximconfig_configtype='satellite'
  dc_other_hostnames=''
  dc_local_interfaces='127.0.0.1'
@@ -31,6 +17,4 @@ If you get syntax errors, there is most likely something wrong with:
  dc_smarthost='mail.cs.helsinki.fi'
  dc_never_users='# never_users = root'
  CFILEMODE='644'
-
-
 Here is what mine's looks like. I had readhost incorrectly set a made up domain.

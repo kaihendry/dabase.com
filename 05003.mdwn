@@ -1,12 +1,4 @@
 Title: 5.3. Leadership
-Last-Changed-Date: Thu Apr  3 21:50:16 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.7.217
-
 Good leaders delegate.
-
-They encourage, and do not criticize. 
-
+They encourage, and do not criticize.
 Identify mistakes and offer advice.

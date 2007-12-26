@@ -1,9 +1,3 @@
 Title: 1.41. How to "unfuck" your terminal/console
-Last-Changed-Date: Wed Jul 16 23:21:59 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 193.156.250.2
-
 Try:
  reset

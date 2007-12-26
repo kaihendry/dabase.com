@@ -1,10 +1,3 @@
 Title: 1.97. Cat redirects
-Last-Changed-Date: Mon Jun 21 16:32:36 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 Like notepad :)
-
  hendry@bogrund-17:~$ ssh anyrhine@melkinkari.cs.helsinki.fi 'cat >xyzzy'

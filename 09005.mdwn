@@ -1,16 +1,6 @@
 Title: 9.5. Checking mirrors in SVK
-Last-Changed-Date: Sun Jul 17 10:03:53 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 220.253.32.88
-
 I had a residue of an old mirror that I deleted:
-
 http://pastebin.com/314788
-
 svk pg svm:mirror //
-
 Just edit this out:
-
 svk pe svm:mirror //

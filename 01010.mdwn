@@ -1,16 +1,6 @@
 Title: 1.10. Recording console sessions
-Last-Changed-Date: Mon Jun  7 16:44:02 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 Want to show someone your work? Use script. It annoyingly has all your errors and frantic backspaces, however I at least find it beneficial.
-
 script mywork
 and ctrl-d or exit stops it recording.
-
 history is another command I run very often, try it.
-
-
 You can also harcopy sessions with `screen`.

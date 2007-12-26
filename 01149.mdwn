@@ -1,11 +1,4 @@
 Title: 1.149. Getting the linux boot arguments
-Last-Changed-Date: Fri Mar 16 13:20:42 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 91.84.53.136
-
 See how the computer booted
-
- cat monty$ cat /proc/cmdline 
+ cat monty$ cat /proc/cmdline
  root=/dev/hda1 ro

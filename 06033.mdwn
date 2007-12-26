@@ -1,12 +1,5 @@
 Title: 6.33. How do I determine whether a string is of letter characters or digits?
-Last-Changed-Date: Fri Apr 11 16:53:04 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Via #python
-
  16:50 < hendry> How do I determine whether a string is of letter  character or digits?
  16:50 < deltab> s.isdigit()
  16:51 < deltab> and s.isalpha()

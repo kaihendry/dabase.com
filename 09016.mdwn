@@ -1,14 +1,5 @@
 Title: 9.16. I am on changes X and I want to roll back to X-1 for testing
-Last-Changed-Date: Fri Nov 16 04:30:23 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 90.152.10.135
-
 Roll back
-
     svn merge -r X:X-1 .
-
 In practice:
-
     svn merge -r 444:443 .

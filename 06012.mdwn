@@ -1,12 +1,3 @@
 Title: 6.12. Class customization
-Last-Changed-Date: Wed Jan 22 15:16:18 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Wheee!!
-
-
-
 http://www.python.org/doc/current/ref/customization.html

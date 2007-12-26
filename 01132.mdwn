@@ -1,26 +1,11 @@
 Title: 1.132. Installing java
-Last-Changed-Date: Fri Sep 23 02:18:01 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 Debian's java-package is excellent.
-
  sudo apt-get install java-package
-
 Read the docs:
-
  vim /usr/share/doc/java-package/README.Debian
-
 I went for the IBM sdk. They want you to register. Use bugmenot.com in this case.
-
-
  frodo$ make-jpkg IBMJava2-SDK-142.tgz
-
  frodo$ sudo dpkg -i ibm-j2sdk1.4_1.4.2_i386.deb
-
-
  frodo$ java -version
  java version "1.4.2"
  Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2)

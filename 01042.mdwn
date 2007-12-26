@@ -1,12 +1,4 @@
 Title: 1.42. Getting your IP from a DHCP server
-Last-Changed-Date: Wed Jul 23 13:58:28 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 193.136.128.7
-
 This is a manual approach:
-
  sudo dhclient eth0
-
 ifup shell scripts should be a better approach...

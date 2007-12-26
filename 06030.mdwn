@@ -1,23 +1,11 @@
 Title: 6.30. Template
-Last-Changed-Date: Thu Jul  3 22:27:45 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.8.16
-
 I generally need these two lines when I begin writing a script:
+ #!/usr/bin/env python2
 
- #!/usr/bin/env python2                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                                
  if __name__ == '__main__':
-
-
 IF the #! does not work, your file is probably encoded in a DOS format!
 Fix it in vim with:
+ :se ff=unix
 
-
- :se ff=unix  
- 
- 
 
 (Thanks to Wari for pointing that out to me)

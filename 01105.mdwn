@@ -1,15 +1,5 @@
 Title: 1.105. C binary information
-Last-Changed-Date: Tue Jul  6 12:27:33 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 Finding out about binaries and shared libraries:
-
-
  objdump -p /lib/libc.so.6
-
  readelf -a libcfont.so
-
 This is almost as cool as strace.

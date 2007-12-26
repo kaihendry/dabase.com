@@ -1,10 +1,3 @@
 Title: 1.140. diffing diffs
-Last-Changed-Date: Wed Apr 19 18:50:28 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 222.106.128.78
-
 So after making changes to your packages, see the changes like so:
-
  sam$ interdiff -z wordpress_2.0.2-1.diff.gz wordpress_2.0.2-2.diff.gz > interdiff

@@ -1,27 +1,15 @@
 Title: 7.18. vim7
-Last-Changed-Date: Thu May 18 19:22:29 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 125.131.161.43
-
 Some notes about the new features that interest me.
 http://www.flickr.com/photos/tags/vim7
-
 Open in tabs:
  vim -p filename1 filname2
  :tabe filename
-
 To move between tabs:
  gt
-
-
 Omnicompletion whilst programming:
  CTRL-X CTRL-O
-
 Spell checking:
  :setlocal spell spelllang=en_gb
-
-Highlighted words are probably incorrect. 
+Highlighted words are probably incorrect.
  ]s - move to next spelling error
  z= - spelling suggestion

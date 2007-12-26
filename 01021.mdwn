@@ -1,15 +1,6 @@
 Title: 1.21. Use 'sudo', not 'su'
-Last-Changed-Date: Wed Mar 19 21:07:41 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.8.135
-
 On many previous occassions, I would show people how to upgrade their debians boxes. First I would su to root. This is not good practice. Use sudo instead, and use your user password.
-
-Example: 
+Example:
  sudo dselect update
-
 Update package listings, and then upgrade :)
-
  sudo apt-get -u dist-upgrade

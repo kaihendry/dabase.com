@@ -1,27 +1,17 @@
 Title: 7.6. Python
-Last-Changed-Date: Sun Apr 27 22:44:18 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.4.136
-
 Firstly:
- apt-get install vim-python 
+ apt-get install vim-python
 for Vi IMproved, with python scripting support
-
 hello.py:
- import vim                                                                                                                                                                
- count = 0                                                                                                                                                                 
- for b in vim.buffers:                                                                                                                                                     
-         print "Length of buffer %s: %s" % (count, len(b))                                                                                                                 
-         count = count + 1                                                                                                                                                 
+ import vim
+ count = 0
+ for b in vim.buffers:
+         print "Length of buffer %s: %s" % (count, len(b))
+         count = count + 1
  vim.command("help python")
-
 In vim:
  :pyfile hello.py
-
 Or you could just run command after command, like:
  :python import vim
-
-Er, check the docs 
+Er, check the docs
  :help python

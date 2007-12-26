@@ -1,8 +1,2 @@
 Title: 6.4. Regular Expressions
-Last-Changed-Date: Wed Dec 18 18:43:07 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.75
-
 http://db.cs.helsinki.fi/~hendry/python/re.cgi

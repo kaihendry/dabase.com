@@ -1,11 +1,4 @@
 Title: 9.9. SVK: Missing file
-Last-Changed-Date: Mon Oct 10 23:35:02 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 Don't know why it went missing in the first place...
-
  '!' item is missing (removed by non-svK command) or incomplete
  svk revert --recursive

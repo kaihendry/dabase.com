@@ -1,12 +1,5 @@
 Title: 4.24. An XHTML or a XHTML ?
-Last-Changed-Date: Wed Jul  7 16:44:13 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 Is it, an XHTML, or a XHTML ?
-
  16:12 <@Hixie> an
  16:12 <@Hixie> imho
  16:13 <@draq> :)

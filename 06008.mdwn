@@ -1,11 +1,4 @@
 Title: 6.8. for i in range(len(li)): BAD
-Last-Changed-Date: Sat Dec 21 16:19:18 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.75
-
 for i in li:
     print i
-
 GOOD

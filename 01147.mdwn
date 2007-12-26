@@ -1,13 +1,4 @@
 Title: 1.147. Packages from experimental
-Last-Changed-Date: Sat Aug  5 03:07:18 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 87.113.25.133
-
 http://wiki.debian.org/DebianExperimental?highlight=%28experimental%29
-
 I needed this to my glx going:
-
-
  sam$ sudo apt-get install libgl1-mesa-{dri,glx}/experimental mesa-common-dev/experimental libgl1-mesa-dev/experimental

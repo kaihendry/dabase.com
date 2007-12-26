@@ -1,15 +1,7 @@
 Title: 10.3. TODO list
-Last-Changed-Date: Tue Aug  5 14:13:47 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Using:
  \usepackage{amsfonts}
  \usepackage{enumerate}
-
 And the command:
  \begin{enumerate}[$\Box$]
-
 And you have a todo list!

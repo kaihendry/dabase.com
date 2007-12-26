@@ -1,36 +1,17 @@
 Title: 12.4. SELinux
-Last-Changed-Date: Wed May 25 23:39:53 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 How to turn SELinux off:
  setenforce 0
-
 Permanently disable selinux via /etc/sysconfig/selinux file
-
 OR (much harder)
-
 make sure your webpages/directories have the correct selinux objects assigned for the httpd process
-
 Urm, we have users and groups I gripe. Why SELinux? The answer:
-
 selinux = mandatory access control (role based)
-
 non-selinux = discretionary access control, see
-
 http://fedora.redhat.com/docs/selinux-faq-fc3/
-
 SElinux provides an additional security environment (various hooks into the kernel and services), permissions (rwxsst) are still all recognised and supported with selinux enabled.
-
-
 You can think of SELinux as application sandboxes.
 SELinux allows a administrator to set policies in a centralised way user/group methods are user based while SELinux is administrator enforced.
-
 Setting up SELinux contexts is not really hard.
 You can setfiles and chcon to do it easily.
 http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/selinux-guide/
-
-
 Thanks very much to dcsrhat and mether from #rhel on Freenode !!

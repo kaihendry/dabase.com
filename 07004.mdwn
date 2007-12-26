@@ -1,9 +1,3 @@
 Title: 7.4. FAQ
-Last-Changed-Date: Sun Apr 27 22:14:04 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.4.136
-
 The online FAQ should be here:
 http://vimdoc.sourceforge.net/cgi-bin/vimfaq2html3.pl

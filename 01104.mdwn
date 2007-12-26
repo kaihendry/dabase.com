@@ -1,10 +1,4 @@
 Title: 1.104. Pinning
-Last-Changed-Date: Thu Jul  1 22:27:54 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 [1] You should really add testing to your /etc/apt/sources.list and give it
 a default 'pin' of -1 so that it would never install from it -- unless you
 ask for it explicitly.  Then say 'apt-get -t testing install r-base' and it

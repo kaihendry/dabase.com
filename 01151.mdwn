@@ -1,25 +1,13 @@
 Title: 1.151. Iceweasel DD search bookmarks
-Last-Changed-Date: Thu Jun 14 10:04:08 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 129.215.255.139
-
 Get the most from your browser by adding this URL:
  http://bugs.debian.org/%s
-
 With the keyword:
  db
-
 Then type these shortcuts in your search bar...
-
  db don@debian.org --- bugs associated with maintainer
  db from:don@debian.org --- bugs submitted by email
  db 40000 --- pull up bug report for #40000
-
 More useful URLs:
-
  http://bugs.debian.org/bugscan/ --- tracking RC bugs
-
  http://packages.qa.debian.org/%s pqa maradns
  http://qa.debian.org/developer.php?login=%s po hendry@iki.fi

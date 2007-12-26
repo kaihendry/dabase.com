@@ -1,12 +1,5 @@
 Title: 1.114. Library usage
-Last-Changed-Date: Tue Aug 10 19:12:27 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 So what does a binary depend on? Use ldd:
-
  bilbo$ ldd /bin/ls
                 librt.so.1 => /lib/tls/librt.so.1 (0x4001f000)
         libacl.so.1 => /lib/libacl.so.1 (0x40025000)
@@ -14,9 +7,7 @@ So what does a binary depend on? Use ldd:
         libpthread.so.0 => /lib/tls/libpthread.so.0 (0x40168000)
         /lib/ld-linux.so.2 => /lib/ld-linux.so.2 (0x40000000)
         libattr.so.1 => /lib/libattr.so.1 (0x40177000)
-
 So how are they used? Use ltrace (not base):
-
 <html>
 <pre>
 bilbo$ ltrace /bin/ls

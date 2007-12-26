@@ -1,24 +1,12 @@
 Title: 1.48. Bits and Bytes
-Last-Changed-Date: Sun Aug 17 20:50:34 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.10.70
-
 BIT = Binary digIT
-
 Byte = 8 bits
-
  0 = 00000000
  1 = 00000001
  ...
  254 = 11111110
  255 = 11111111
-
 2 bytes = 16 bits
-
 4 bytes = 32 bits
-
 8 bytes = 64bits
-
 http://computer.howstuffworks.com/bytes.htm

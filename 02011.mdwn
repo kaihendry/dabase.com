@@ -1,21 +1,10 @@
 Title: 2.11. Searching mail
-Last-Changed-Date: Fri Oct 17 17:08:28 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Limit the list of displayed e-mails in a mail folder to those with a "string" in their body:
-
  l ~b "string"
-
 BUT it does involve having all the mails. So if you use a remote IMAP, not such a good idea.
-
 IDEALY your IMAP server should implement SEARCH.
 See page 37 of:
 http://www.ietf.org/rfc/rfc2060.txt
-
 For my mail that I dump to my fs ~/Mail, I use :
 http://www.rrbcurnow.freeuk.com/mairix/
-
 To index and search them.

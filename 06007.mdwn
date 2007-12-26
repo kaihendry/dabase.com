@@ -1,12 +1,4 @@
 Title: 6.7. Return, do not print
-Last-Changed-Date: Sat Dec 21 15:29:38 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.67
-
 Common mistake with people like me who can't program properly.
-
 return results
-
 do not print shit all the time.

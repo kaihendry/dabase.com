@@ -1,8 +1,2 @@
 Title: 6.13. None is null in python
-Last-Changed-Date: Wed Jan 29 18:17:11 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Just a note to myself.

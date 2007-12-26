@@ -1,16 +1,7 @@
 Title: 9.13. Howto send a PATCH
-Last-Changed-Date: Mon Nov 12 13:23:16 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 86.139.75.79
-
 Clone the master. Make the change, commit.
-
  git-format-patch "HEAD^"
-
  git-send-email 0001-
-
 Caveat: 'format-patch' doesn't handle revision range expressions
 in normal manner.  if you provide a _single_ revision, it is the
 same as if you appended ".."

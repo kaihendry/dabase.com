@@ -1,18 +1,7 @@
 Title: 7.19. Spanish
-Last-Changed-Date: Tue Oct 10 15:16:27 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 201.250.6.100
-
 Quite facil
-
  apt-get install vim-spellfiles-es
-
 and
-
  :set spelllang=es
-
 Here is an extra resource for banging the characters out:
-
  http://www.samiam.org/typing.spanish.characters.html

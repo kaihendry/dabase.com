@@ -1,11 +1,3 @@
 Title: 6.44. Fiddling with PYTHONPATH in bash
-Last-Changed-Date: Fri Jun  6 15:11:35 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Nightmare :)
-
-
  hendry@bogrund-14:~/lupy/Lupy-0.1.5.1a/lupy$ export PYTHONPATH=$PYTHONPATH:/home/hendry/lupy/Lupy-0.1.5.1a/

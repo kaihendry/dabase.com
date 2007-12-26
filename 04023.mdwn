@@ -1,24 +1,10 @@
 Title: 4.23. Some soup sir?
-Last-Changed-Date: Wed Jul  7 15:57:15 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 Ian is a genius.
-
 http://hixie.ch/advocacy/xhtml
-
 15:49 <@draq> Hixie: do you have a test somewhere to see if my Nokia UA is parsing as XML or as SGML?
-
 15:49 <@draq> Or I can just make my own
-
 15:49 <@Hixie> http://www.hixie.ch/tests/adhoc/xhtml/mime-type/001
-
 15:50 <@draq> excellent
-
 15:50 <@Hixie> also http://www.hixie.ch/tests/adhoc/xhtml/001.xhtml
-
 15:51 <@Hixie> and http://www.hixie.ch/tests/adhoc/xhtml/001.xml
-
 15:51 <@Hixie> and http://www.hixie.ch/tests/adhoc/xhtml/002.html

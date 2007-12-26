@@ -1,12 +1,5 @@
 Title: 6.46. Am I running PyXML?
-Last-Changed-Date: Thu Jun 12 16:02:25 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 If this works, you have it:
-
  hendry@bilbo:~$ python2
  Python 2.2.3 (#1, Jun  4 2003, 02:54:59)
  [GCC 3.3 (Debian)] on linux2

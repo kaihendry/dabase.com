@@ -1,12 +1,5 @@
 Title: 9.1. Diff to head of trunk
-Last-Changed-Date: Mon Jun 27 07:54:49 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 From:
 http://groups.google.com.au/group/gnu.cvs.help/browse_thread/thread/38ca2ce29a0cffe9/a4098eb7ef8fd255?q=diff+branch&rnum=9#a4098eb7ef8fd255
-
 Whilst in the branch:
  cvs diff -u -r1 deploy.sh | less

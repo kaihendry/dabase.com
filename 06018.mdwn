@@ -1,14 +1,6 @@
 Title: 6.18. Try use cPickle, it is faster
-Last-Changed-Date: Fri Feb 21 14:42:04 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Upto a 1000 times faster according to docs:
 http://www.python.org/doc/current/lib/module-cPickle.html
-
-
  try:
          import cPickle as pickle # Try use cPickle because it is faster
  except:

@@ -1,19 +1,9 @@
 Title: 6.17. r+ (appending) and pickle do not mix!
-Last-Changed-Date: Fri Feb 21 14:39:50 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Beware!
-
 If you open a file with r+:
  f=open('/tmp/pickletest', 'r+')
-
 and then load from it:
  dict = pickle.load(f)
-
 and then write to it:
  pickle.dump(dict, f)
-
 You will have two pickles in that file, and only the last pickle will have what you want. Hence appending and pickling DO NOT MIX !!

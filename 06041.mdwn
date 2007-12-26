@@ -1,8 +1,2 @@
 Title: 6.41. Bayes
-Last-Changed-Date: Mon May 26 23:38:39 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.8.116
-
 http://www.divmod.org/Reverend/index.html

@@ -1,8 +1,2 @@
 Title: 1.121. date fun
-Last-Changed-Date: Mon May 16 06:26:20 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 date -d 'now + 2 hours'

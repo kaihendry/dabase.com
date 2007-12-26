@@ -1,35 +1,20 @@
 Title: 1.53. Unicode
-Last-Changed-Date: Fri May 27 01:11:41 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 A re-occuring problem I have had with computers is encodings.  As an English speaker I have not need anything except ASCII, but all the same it is annoying when I can't read some Korean spam.
-
 So on my system I have changed some things:
  sudo dpkg-reconfigure locales
-
 My bash locale is now"
  hendry@bilbo:/tmp$ printenv | grep -i utf
  LC_ALL=en_GB.UTF-8
  LANG=en_GB.UTF-8
  LC_CTYPE=en_GB.UTF-8
-
 I've added a couple of lines to my editor config .vimrc
  set encoding=utf-8
  set fileencoding=utf-8
-
 And my mailer mutt (mutt-utf8 package in Debian!) config .muttrc
  set charset="utf-8"
-
 In Gnome's preferred applications(under desktop preferences -> advanced) for Terminal I've put uxterm.
-
 Update: Don't use Gnome. Use something like Ion instead, and setup the terminal emulator system wide, like so:
-
  sudo update-alternatives --config x-terminal-emulator
-
-
 http://www.joelonsoftware.com/articles/Unicode.html
 http://www.cl.cam.ac.uk/~mgk25/unicode.html
 http://eyegene.ophthy.med.umich.edu/unicode/

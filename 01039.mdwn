@@ -1,21 +1,7 @@
 Title: 1.39. Using diff
-Last-Changed-Date: Wed Jul 16 21:09:22 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 129.240.72.99
-
 I have been using diff ! :)
-
  diff -N -r -u bins-1.1.21 bins-1.1.21.bug/ > bins.patch
-
 N esp. if your patch includes new files
-
 r for recursive
-
 u for human readable
-
-
-
-
 Have a look at the patch to be sure of order. Plus signs (+) should be the changes you want.

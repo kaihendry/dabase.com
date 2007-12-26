@@ -1,12 +1,4 @@
 Title: 1.7. TCP Port listings
-Last-Changed-Date: Tue Nov  5 16:13:19 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Are kept in /etc/services  !
-
 Want to find out which ports are used by sftp?
-
 grep sftp /etc/services

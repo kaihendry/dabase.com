@@ -1,8 +1,2 @@
 Title: 4.30. Licensing
-Last-Changed-Date: Mon Aug 16 17:49:21 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 http://lists.debian.org/debian-legal/2004/08/msg00011.html

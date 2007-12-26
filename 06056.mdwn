@@ -1,26 +1,13 @@
 Title: 6.56. Unique elements from a list
-Last-Changed-Date: Wed Jan 31 06:47:14 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 87.112.86.103
-
 There is a couple of new ways with 2.3:
-
 http://tinyurl.com/v72w
-
 Otherwise:
-
-
-    def unique(self, list):                                                                                                                                               
-        d = {}                                                                                                                                                            
-        for x in list:                                                                                                                                                    
-            d[x] = 1                                                                                                                                                      
-        subset = d.keys()                                                                                                                                                 
+    def unique(self, list):
+        d = {}
+        for x in list:
+            d[x] = 1
+        subset = d.keys()
         return subset
-
-
 Or list comp:
- [x for x in data if data.count(x) == 1] 
-
+ [x for x in data if data.count(x) == 1]
 Or with sets.

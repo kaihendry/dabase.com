@@ -1,12 +1,5 @@
 Title: 6.31. Setting list values
-Last-Changed-Date: Tue Apr  8 12:03:58 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 How to set a list value in a for loop.
-
  >>> list = range(5)
  >>> list
  [0, 1, 2, 3, 4]
@@ -15,11 +8,7 @@ How to set a list value in a for loop.
  ...
  >>> list
  [0, 1, 2, 3, 4]
-
-
 We desired [1, 2, 3, 4, 5]
-
 A list comprehension:
-
  >>> [i + 1 for i in list]
  [1, 2, 3, 4, 5]

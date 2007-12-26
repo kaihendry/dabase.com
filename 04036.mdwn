@@ -1,13 +1,4 @@
 Title: 4.36. Copy, Paste, Cut
-Last-Changed-Date: Wed Mar 15 00:28:44 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 219.252.91.94
-
 http://www.tbray.org/ongoing/When/200x/2006/03/09/Etech-Good-Pitches
-
-
 Found this part interesting:
-
  < is like “copy”, | like “cut”, and > like “paste”

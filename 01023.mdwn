@@ -1,9 +1,3 @@
 Title: 1.23. Official Debian Tips
-Last-Changed-Date: Sun Apr 13 23:22:20 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.12.253
-
 Quite a few good ones. Found it while trying to setup a backup regime:
 http://www.debian.org/doc/manuals/reference/ch-tips.en.html

@@ -1,12 +1,5 @@
 Title: 6.23. Joining a list of strings, or ints
-Last-Changed-Date: Fri Feb 28 11:56:27 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 I think the join syntax is slightly strange:
-
  >>> list = ['cow','dog','cat']
  >>> print list.join()
  Traceback (most recent call last):
@@ -25,18 +18,12 @@ I think the join syntax is slightly strange:
  >>> print ' '.join(list)
  cow dog cat
  >>>
-
 Ok if you try join a list of ints:
-
  >>> ' '.join([12,34,56,78])
  Traceback (most recent call last):
    File "<stdin>", line 1, in ?
  TypeError: sequence item 0: expected string, int found
-
 It will not work. What you need is to convert each int into a str. Nasty, I know :
-
  >>> ' '.join(map(str,([12,34,56,78])))
  '12 34 56 78'
-
-
 Thanks to #python, in partic. dash

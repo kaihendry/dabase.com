@@ -1,16 +1,7 @@
 Title: 2.10. Reading attachments (God forbid)
-Last-Changed-Date: Fri Sep 26 22:24:06 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 62.78.149.199
-
 For reading .pdf attachments in the background this link is useful:
 http://www.spocom.com/users/gjohnson/mutt/#pdf
-
- application/pdf;                $HOME/mutt_bgrun acroread %s; test=sh -c 'test $DISPLAY'                                                                                 
+ application/pdf;                $HOME/mutt_bgrun acroread %s; test=sh -c 'test $DISPLAY'
  application/pdf;                pdftotext %s -; copiousoutput
-
 You need this program:
-
 http://www.spocom.com/users/gjohnson/mutt/mutt_bgrun

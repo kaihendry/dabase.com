@@ -1,18 +1,9 @@
 Title: 12.7. Silly security with TCP wrappers hosts.allow
-Last-Changed-Date: Wed Jul  6 05:30:48 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 I'm not a racist. ;)
-
  [root@server ~]# cat /etc/hosts.allow
  sshd: *.au
  [root@server ~]# cat /etc/hosts.deny
  sshd: ALL
  [root@server ~]#
-
 Somewhat related to:
-
 http://natalian.org/archives/2005/06/28/ssh-attacks/

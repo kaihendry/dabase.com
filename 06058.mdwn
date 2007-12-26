@@ -1,62 +1,46 @@
 Title: 6.58. List sorting (DSU?)
-Last-Changed-Date: Sun Nov 16 13:27:41 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 62.78.149.199
-
 < hendry> A list of strings I guess is sorted alphabetically with a .sort(). Is there a similar shortcut to sort the list by size of the string?
   < dotz> hendry: help(list.sort)
   < dotz> hendry: note the cmpfunc argument.
-
  >>> help(list.sort)
  Help on method_descriptor:
-
  sort(...)
-
     L.sort(cmpfunc=None) -- stable sort *IN PLACE*; cmpfunc(x, y) -> -1, 0, 1
-
 Docs are little skimp of details, like:
-
  13:19 < h4ngedm4n> cmp(x,y) -1: x<y 0:x=y 1:x>y iirc
  13:19 < Moof> 0 is equal, -1 means x is smaller than y, 1 means x is larger than y
-
 Alternatively:
-
   < moshez> dotz: please don't give silly answers
   < moshez> hendry: use a schwartzian transform
-  
+
   < moshez> l = [(len(s),s) for s in l]
   < moshez> l.sort()
-  
+
   < moshez> l = [x[1] for x in l]
-
 My code sample:
+ class Listsort:
+    def unique(self, list):
+        """ Return (sorted) unique elements """
+        d = {}
+        for x in list:
+            d[x] = 1
+        subset = d.keys()
+        subset.sort(self.bigstrings)
+        return subset
 
+    def bigstrings(self, x, y):
+        """ comparison function to return largest string """
 
- class Listsort:                                                                                                                                                           
-    def unique(self, list):                                                                                                                                               
-        """ Return (sorted) unique elements """                                                                                                                           
-        d = {}                                                                                                                                                            
-        for x in list:                                                                                                                                                    
-            d[x] = 1                                                                                                                                                      
-        subset = d.keys()                                                                                                                                                 
-        subset.sort(self.bigstrings)                                                                                                                                      
-        return subset                                                                                                                                                     
-                                                                                                                                                                          
-    def bigstrings(self, x, y):                                                                                                                                           
-        """ comparison function to return largest string """                                                                                                              
-                                                                                                                                                                          
-        if len(x) < len(y):                                                                                                                                               
-            return 1                                                                                                                                                      
-                                                                                                                                                                          
-        if len(x) > len(y):                                                                                                                                               
-            return -1                                                                                                                                                     
-                                                                                                                                                                          
-        if len(x) == len(y):                                                                                                                                              
-            return 0                                                                                                                                                      
-                                                                                                                                                                          
- if __name__ == '__main__':                                                                                                                                                
-    x = Listsort()                                                                                                                                                        
-    l = ['cows', 'apples', 'it', 'bureaucracy']                                                                                                                           
+        if len(x) < len(y):
+            return 1
+
+        if len(x) > len(y):
+            return -1
+
+        if len(x) == len(y):
+            return 0
+
+ if __name__ == '__main__':
+    x = Listsort()
+    l = ['cows', 'apples', 'it', 'bureaucracy']
     print x.unique(l)

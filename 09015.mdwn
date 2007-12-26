@@ -1,11 +1,4 @@
 Title: 9.15. Cherry pick a change in SVN
-Last-Changed-Date: Fri Nov 16 04:28:26 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 90.152.10.135
-
 i've had to roll back to 446, though I want to cherry pick a changeset in from 449. How do I get those diffs and patch my rolled back 446 typically?
-
     svn diff -r448:449 > ~/global.patch
     patch -p0 < ~/global.patch

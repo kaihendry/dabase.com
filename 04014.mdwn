@@ -1,8 +1,2 @@
 Title: 4.14. PDF
-Last-Changed-Date: Tue Jan  6 16:07:39 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 Install the package plugger in debian !

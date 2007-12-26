@@ -1,12 +1,5 @@
 Title: 13.1. Removing characters
-Last-Changed-Date: Thu Jul 14 05:49:41 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 There are different ways of doing it:
-
  # removing fullstop
  DOMAIN="blah.com"
  echo $DOMAIN

@@ -1,17 +1,6 @@
 Title: 1.146. Realplayer
-Last-Changed-Date: Sat Jul 22 08:20:07 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 222.106.128.198
-
 Realplayer with CC proxy.
-
 Then icecast server.
-
 ices2 ices-alsa.xml
-
-
 And aumix to choose the main output device as input!
-
 http://natalian.org/archives/2006/06/15/bbc-radio-5-live/

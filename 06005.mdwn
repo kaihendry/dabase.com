@@ -1,16 +1,7 @@
 Title: 6.5. Normalizing whitespace
-Last-Changed-Date: Mon Jan 16 15:46:17 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 From somewhere in Mark Pilgrim's highly recommended http://diveintopython.org FREE book.
-
  " ".join(s.split())
-
 Update:
-
  10:39 <Pythy>    map(lambda s : re.sub('\s+',' ',s), crex.match(s).groups())
  10:39 <Pythy> was for a more complex case than simply squeezing-down spans of whitespace.
  10:40 <Pythy> s = '  \t  AAA   \r\n  BBB  ';  s =  re.sub('\s+',' ',s.strip());   s #==> 'AAA BBB'

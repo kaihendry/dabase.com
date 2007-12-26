@@ -1,12 +1,4 @@
 Title: 9.10. Accidental deletion
-Last-Changed-Date: Fri Jan 20 22:58:53 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 220.253.111.164
-
 Say you accidentally deleted and commited something in changeset or rev 1852.
-
 You probably want to something like this:
-
  svn merge -r 1852:1851 .

@@ -1,12 +1,4 @@
 Title: 13.4. Bash YES/NO prompt interaction
-Last-Changed-Date: Mon Oct  3 05:06:38 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 Tip here I've used:
-
 http://quong.best.vwh.net/shellin20/
-
 Search for "Yes-no question"

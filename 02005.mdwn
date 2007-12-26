@@ -1,17 +1,9 @@
 Title: 2.5. c shortcuts
-Last-Changed-Date: Sat Dec 21 03:39:33 2002
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 195.92.67.68
-
 Section 4.7 of mutt manual:
   4.7.  Mailbox Shortcuts
-
     There are a number of built in shortcuts which refer to specific
     mailboxes.  These shortcuts can be used anywhere you are prompted
     for a file or mailbox path.
-
     *  ! -- refers to your ``$spool'' (incoming) mailbox
     *  > -- refers to your ``$mbox'' file
     *  < -- refers to your ``$record'' file

@@ -1,8 +1,2 @@
 Title: 1.65. initrd
-Last-Changed-Date: Mon Dec  8 00:58:09 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
-
 If you are not using initrd, then make sure to compile in your hard drive and FS kernel options!

@@ -1,14 +1,5 @@
 Title: 4.37. Disable an extension in Iceweasel/Firefox
-Last-Changed-Date: Fri Feb 23 08:49:52 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 87.113.5.52
-
 Use safe mode.
-
 http://kb.mozillazine.org/Safe_Mode_(Firefox)
-
-Edit the RDF:Description 
-
+Edit the RDF:Description
 And add carefully NS1:userDisabled="true"

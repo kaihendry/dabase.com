@@ -1,18 +1,7 @@
 Title: 7.2. The book
-Last-Changed-Date: Sat Oct 25 15:02:04 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 62.78.149.199
-
 I do not recommend the book titled Vim by Steve Qualline.
-
 http://www.amazon.co.uk/exec/obidos/ASIN/0735710015/qid=1042892898/sr=2-1/ref=sr_2_3_1/202-6392752-4602207
-
 Read it online:
-
 http://www.newriders.com/books/opl/ebooks/0735710015.html
-
 Linkage
-
 http://vi-improved.com/

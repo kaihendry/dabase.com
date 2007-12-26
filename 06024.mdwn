@@ -1,27 +1,13 @@
 Title: 6.24. Parsing XML for the text/cdata between a particular start/end tag
-Last-Changed-Date: Thu Mar 13 17:34:09 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Here is a code snippet whereby, it would load up the file object into memory, and get the text between a tag. For example a tag such as:
-
  <school>University of Helsinki</school>
-
 contained in a example file /tmp/myinfo.xml
-
 I would now run make use of the snippet like:
-
  file_object = open('/tmp/myinfo.xml')
  print parse(file_object, 'school')
  file_object.close()
-
-
 The snippet:
-
  from xml.dom import minidom
-
  def parse(infile, tag):
         output = ''
         xmldoc = minidom.parse(infile)
@@ -32,16 +18,9 @@ The snippet:
                 for node in childNodes:
                         output += node.data
         return output + '\n'
-
 Notice I iterated through "grab", as in XML the earlier piece of xml could have be written like:
-
  <school>
- University 
-
-
-
-
-
-                of 
+ University
+                of
  Helsinki
                              </school>

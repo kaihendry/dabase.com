@@ -1,17 +1,9 @@
 Title: 1.87. SMTP via SSH
-Last-Changed-Date: Tue Jul  5 09:14:24 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 SMTP is often blocked at ISPs to prevent spammers.
-
 Use mutt and a shell script with this tip:
 http://faq.dabase.com/faqw.py?req=show&file=faq01.013.htp
-
- frodo$ cat server.soltecsoftware.com.au-sendmail 
+ frodo$ cat server.soltecsoftware.com.au-sendmail
  #!/bin/sh
  ssh server.soltecsoftware.com.au /usr/sbin/sendmail "$@"
- frodo$ egrep sendmail .muttrc 
+ frodo$ egrep sendmail .muttrc
  set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"

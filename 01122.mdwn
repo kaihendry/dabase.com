@@ -1,29 +1,13 @@
 Title: 1.122. Cloning a Debian machine
-Last-Changed-Date: Thu Jun  2 06:56:37 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 On the machine you want to clone:
  dpkg --get-selections > selections.txt
-
 On the destination machine:
  dpkg --set-selections < selections.txt
  aptitude
-
 Some rsync commands to follow:
-
  debian:~# rsync -essh -rtpvz / root@192.168.0.141:/
-
 ARGH! NOOOO. Does not work. Tries to do DUMB things like copy /proc and ./mnt
-
  debian:~# rsync -essh -rtpvz /etc root@192.168.0.141:/etc
-
 Doesn't work for some reason...
-
-
-
 http://natalian.org/archives/2005/06/01/virtual-sarge-to-real-life-sarge/
-
 http://lists.debian.org/debian-user/2003/11/msg00118.html

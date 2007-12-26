@@ -1,11 +1,4 @@
 Title: 1.16. netstat -napt (Who's connected to me?)
-Last-Changed-Date: Sat Jan 18 14:27:39 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.12.125
-
 Use:
  netstat -napt
-
 To see what is listening and who (and from where) is connected.

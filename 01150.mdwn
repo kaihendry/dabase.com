@@ -1,19 +1,10 @@
 Title: 1.150. hdparm
-Last-Changed-Date: Mon Jun 11 13:15:15 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 129.215.255.137
-
 Your system should always make sure you have DMA installed, except in this case: http://www.thinkwiki.org/wiki/Problems_with_SATA_and_Linux#No_DMA_on_system_hard_disk
-
 I've discovered that my internal hard drive (hda) is as fast as my external USB2 hard drive(sda).
-
  monty$ sudo hdparm -Tt /dev/hda
  /dev/hda:
  Timing cached reads:   858 MB in  2.00 seconds = 428.54 MB/sec
  Timing buffered disk reads:   56 MB in  3.07 seconds =  18.27 MB/sec
-
  monty$ sudo hdparm -Tt /dev/sda
  /dev/sda:
  Timing cached reads:   1040 MB in  2.00 seconds = 520.12 MB/sec

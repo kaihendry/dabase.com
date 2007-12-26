@@ -1,12 +1,5 @@
 Title: 6.62. Parsing HTML with REs
-Last-Changed-Date: Mon Jan 16 15:41:57 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 My repo has better stuff:
-
  12:18 < hendry> Could anyone shed some light on a regex problem I have here? http://rafb.net/paste/results/U1015016.html
  12:22 < deltab> hendry: it doesn't work for all the arpagraphs
  12:22 < deltab> ^paragraphs
@@ -20,17 +13,10 @@ My repo has better stuff:
  12:36 < The-Fixer> you can ignore case also: re.search("(?si)<body>(.*?)</body>", '<BODY>ab\ncd\nef</body>').group(1) #==> 'ab\ncd\nef'
  12:47 < moshez> don't do stupid crap
  12:47 < moshez> like, say, parsing HTML with REs
-
-
 Update:
-
  10:35 <Pythy> re.search("(?si)<body>([^>]*)</body>", '<BoDy>ab\ncd\nef</bOdY>').group(1) #==> 'ab\ncd\nef'  # for the case where no `>' will appear between
               the <tags>.
  10:38 <Pythy> (If a `<' might appear, a more involved rex could be used.  Handling nesting delimiters is trickier still, as additional code is needed to
               track the depth.  But, as was noted, for a robust solution, a parser is the way to go.)
-
-
-
 Should be using:
-
 http://www.crummy.com/software/BeautifulSoup/

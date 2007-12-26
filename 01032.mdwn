@@ -1,14 +1,6 @@
 Title: 1.32. Duplex printing - use mpage
-Last-Changed-Date: Tue Jun 10 12:24:50 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 My favourite option:
-
  mpage -t -2 -Pprintername your.ps
-
  hendry@bogrund-14:~$ mpage -t -Pps8 agiledev.ps
  hendry@bogrund-14:~$ lpq -Pps8
  net-ps8 is ready and printing
@@ -17,14 +9,12 @@ My favourite option:
  hendry@bogrund-14:~$ mpage --help
  mpage: unknown option --
  mpage - print multiple pages on postscript, version 2.5.1pre2 March 1998
-
  mpage [-1248acEfHlkoOrRStvxX] [-b papersize] [-Btextboxmargin]
        [-C [encodingfile]] [-da|p] [-D dateformat] [-F fontname]
        [-h header] [-I indent] [-j pagespec] [-L lines]
        [-msheetmargin] [-Mpagemargin] [-p[prprog]] [-P[printer]]
        [-s tabstop] [-W width] [-X [header]] [-z printcmd] [-Z quearg]
        [file...]]
-
  -1, -2, -4, -8  Pages per sheet (4)    -D strftime format for date specs
  -da Force ascii input format           -dp Force postscript input format
  -a Toggle across/updown layout (u)     -l Toggle portrait/landscape (p)
@@ -51,6 +41,5 @@ My favourite option:
     -j 1-10 does first 10 sheets, -j 1%2 prints odd ones, -j 2%2 even ones.
  -t Toggle printing both sides of the paper (Duplex mode, off)
  -T Toggle tumble of every second pages when printing in duplex mode (off)
-
 (c) 1993-1998 Marcel Mol, marcel@mesa.nl (MESA Consulting)
 hendry@bogrund-14:~$

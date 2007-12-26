@@ -1,29 +1,22 @@
 Title: 6.67. Passwords
-Last-Changed-Date: Sun Apr 25 13:08:19 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
-Storing passwords securely? 
-
+Storing passwords securely?
  import md5
- from getpass import getpass                                                                                                                                                                                                             
-                                                                                                                                                                                                                                        
- password = 'test'                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                        
- md5password = md5.new(password).digest()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                        
- while 1:                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                        
-    # echos input                                                                                                                                                                                                                       
-    #input = raw_input("Password:\n")                                                                                                                                                                                                   
-                                                                                                                                                                                                                                        
-    # this doesn't ! :)                                                                                                                                                                                                                 
-    input = getpass()                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                        
-    if md5password == md5.new(input).digest():                                                                                                                                                                                          
-        print "Correct password!"                                                                                                                                                                                                       
-        break                                                                                                                                                                                                                           
-    else:                                                                                                                                                                                                                               
+ from getpass import getpass
+
+ password = 'test'
+
+ md5password = md5.new(password).digest()
+
+ while 1:
+
+    # echos input
+    #input = raw_input("Password:\n")
+
+    # this doesn't ! :)
+    input = getpass()
+
+    if md5password == md5.new(input).digest():
+        print "Correct password!"
+        break
+    else:
         print "Incorrect password sunshine! Try again"

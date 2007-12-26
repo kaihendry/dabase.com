@@ -1,18 +1,6 @@
 Title: 1.70. Better than apt-cache search
-Last-Changed-Date: Mon Jan  5 22:01:30 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
-Finding package information: 
-
+Finding package information:
  grep-dctrl
-
-
 And aliases:
-
  grep-status
-
-
  grep-availible

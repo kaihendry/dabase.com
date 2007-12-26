@@ -1,12 +1,5 @@
 Title: 6.55. Dropping into the interpreter after an ERROR to debug
-Last-Changed-Date: Wed Nov 12 12:24:50 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 Useful one
-
  14:07 < hendry> Can I make a python program drop into it's own interpreter, instead of bash when a program fails?
  14:07 < hendry> I don't want to lose these large objects if some command fails
  14:07 < Rafterman> python -i

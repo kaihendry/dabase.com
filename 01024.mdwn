@@ -1,12 +1,5 @@
 Title: 1.24. Finding additional information about a package not installed
-Last-Changed-Date: Fri Apr 18 13:28:03 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.7.125
-
 apt-cache show
-
  hendry@bilbo:~$ apt-cache search straw
  straw - A GNOME RSS (weblog) aggregator
  hendry@bilbo:~$ apt-cache show straw
@@ -24,5 +17,5 @@ apt-cache show
  Description: A GNOME RSS (weblog) aggregator
   Straw is a GNOME 2 RSS aggregator. RSS is used by news sites and
   personal blogs such as Slashdot, Kuro5hin, and Manila UserLand.
- 
+
  hendry@bilbo:~$

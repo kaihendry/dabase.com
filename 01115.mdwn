@@ -1,16 +1,7 @@
 Title: 1.115. What was the return code of the last command?
-Last-Changed-Date: Tue Aug 10 19:15:10 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 Use:
-
  echo $?
-
 Example:
-
  bilbo$ df -h
  Filesystem            Size  Used Avail Use% Mounted on
  /dev/hda1              19G  3.6G   14G  21% /

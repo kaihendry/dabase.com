@@ -1,13 +1,5 @@
 Title: 1.44. Anti-aliased fonts
-Last-Changed-Date: Fri Aug  1 09:45:08 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.10.138
-
 This is a helpful guide:
 http://mumford1.dyndns.org/~bs7452/linuxhelp/aa_fonts.html
-
 At one point I emulated RH's desktop on my Debian machine. Nimbus Sans font et al.
-
 Now I use Bitstream's Sans font.

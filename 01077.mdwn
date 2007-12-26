@@ -1,14 +1,7 @@
 Title: 1.77. 2.6 CD Burning
-Last-Changed-Date: Sun Jan 25 12:21:26 2004
-Last-Changed-Author: KaiHendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 How I burn movies:
-
  modprobe ide-cd
- hendry@scrooge-15:~/movie$ mkhybrid -o /tmp/foo.iso -r -J Dirty_Dancing_DVDrip_XVID_westerrecords.avi 
+ hendry@scrooge-15:~/movie$ mkhybrid -o /tmp/foo.iso -r -J Dirty_Dancing_DVDrip_XVID_westerrecords.avi
  cdrecord -scanbus dev=ATAPI:
  cdrecord -prcap
  cdrecord -v speed=24 driveropts=burnfree dev=ATAPI:0,0 /tmp/foo.iso

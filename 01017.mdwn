@@ -1,32 +1,15 @@
 Title: 1.17. Backgrounding a process
-Last-Changed-Date: Sat Jan 18 14:22:46 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.12.125
-
 Say you run a process to check its Stdout debug messages, or you just forget to put the ampersand in after its name, this is how I do about backgrounding it.
-
  hendry@bilbo:~$ straw
  (straw:4967): Gtk-WARNING **: Unable to locate theme engine in module_path: "bluecurve",
-
  (straw:4967): GLib-GObject-WARNING **:    gobject.c:946:g_object_get_valist(): object class `GnomeProgram' has no property named `default-icon'
-
  (straw:4967): Gtk-WARNING **: gtkwidget.c:2710: widget `GnomeApp' has no activatable signal "delete_event" without arguments
-
 Now hit CTRL+z
-
  [1]+  Stopped                 straw
- hendry@bilbo:~$ 
-
+ hendry@bilbo:~$
 bg for actually backgrounding the process
-
  hendry@bilbo:~$ bg
  [1]+ straw &
-
 And finally:
-
  hendry@bilbo:~$ disown
-
-
 In order to make sure the process survives if I decide to kill the xterm it was launched in!

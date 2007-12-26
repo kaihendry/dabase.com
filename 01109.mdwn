@@ -1,32 +1,14 @@
 Title: 1.109. Unpacking source
-Last-Changed-Date: Fri Jul  9 19:02:22 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 3 ways. All quite ugly:
-
-
  16:45 < hendry> bilbo$ ls
  16:45 < hendry> flyspray_0.9.5-1.diff.gz  flyspray_0.9.5.orig.tar.gz
-
  tar zxvf
-
  cd
-
  gunzip -c ../flyspray_0.9.5-1.diff.gz | patch -p1
-
-
-
-
 dpkg-source, but then you also need the fucking .dsc:
-
  wget http://amaretto.inria.fr:8080/~mc/flyspray/flyspray_0.9.5-1.dsc
  dpkg-source -x flyspray_0.9.5-1.dsc
-
 And then uupdate. Sweet jesus.
-
  18:57 < Viiru> hendry: You need both the upstream tarball (modified to be like a debian orig.tar.gz) and the debianized version unpacked. Then run uupdate in the debianized
                sourcedir like uupdate ../newupstream.tar.gz and the magic should happen.
  18:57 < Viiru> But since I'm drunk, I wont make any guarantees.

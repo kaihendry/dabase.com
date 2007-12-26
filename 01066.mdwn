@@ -1,8 +1,2 @@
 Title: 1.66. whois dig
-Last-Changed-Date: Mon Dec  8 01:26:14 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
-
 For checking domain info.

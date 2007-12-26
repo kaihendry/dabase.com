@@ -1,12 +1,5 @@
 Title: 1.110. Use XDM
-Last-Changed-Date: Mon Jul 12 00:45:40 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 Just comment stuff in and out as needed:
-
  scrooge-15$ cat .xsession
  #startkde
  /usr/bin/mozilla-firefox &

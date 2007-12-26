@@ -1,63 +1,34 @@
 Title: 1.136. Linux Ghost
-Last-Changed-Date: Thu Feb 22 11:17:58 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 87.113.5.52
-
 Best list:
  apt-cache search "\bdd\b"
-
 sdd promises to be like dd though with a progress bar!
-
-
 OLD STUFF FOLLOWS:
-
 Brent Wallis recommends:
-
 http://www.partimage.org
-
 Tim Connors says:
-
  ddrescue
-
 from Brad Hubbard:
-
  sfdisk -l /dev/hda|sfdisk /dev/hdb
-
 Will copy your partitions from /dev/hda to /dev/hdb . In my experience
 this will work if hdb is bigger but not if it is smaller :-)
-
-
 Bill Farrow uses:
-
 At work I use sfdisk to read & write the partion tables. and then a
 combination of dd, netcat, and gzip to transfer the image over the network
 to a server. Example:
-
  server> nc -l -p 3000 > hda.sfdisk
  client> sfdisk -d /dev/hda | nc server_name 3000
-
  server> nc -l -p 3000 > hda.mbr
  client> dd bs=512 count=1 /dev/hda | nc server_name 3000
-
  server> nc -l -p 3000 > hda1.img.gz
  client> dd bs=1k if=/dev/hda1 | gzip -c -9 | nc server_name 3000
-
 Then I use "Roll Your Own Linux Rescue or Setup CD" to create a stand alone bootable linux CDROM that automatically dumps the cloned image along with partition and master boot record onto the target machine.  The image is gzip'ed up on the bootable CDROM.  So if a service tech needs to completely reinstall a machine in the field, they only need one CDROM. Takes all of about 4 minutes to install the OS and then finally boot the new machine.
-
 There are a few tricks to minimise the size of the gzip'ed image, and the partition and file system is set up to automatically expand to fill the remaining space on the drive.
-
 Roll Your Own Linux
 http://www.phenix.bnl.gov/~purschke/RescueCD/
-
-
 Steve Kemp adds:
-
  dd
  rsync
  ghost
  g4u - ghost for unix (based on netbsd from memory)
  systemimager
-
 Systemimager looks hopeful. Could not find any "ghost" stuff packaged.

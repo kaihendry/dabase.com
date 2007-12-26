@@ -1,10 +1,3 @@
 Title: 6.45. Fixing tabs? Use reindent.py
-Last-Changed-Date: Thu Jun 12 15:49:39 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 There is a couple of tab fixing program out there. I have chosen:
-
  /usr/share/doc/python2.3/examples/Tools/scripts/reindent.py

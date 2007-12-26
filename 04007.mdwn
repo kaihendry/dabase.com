@@ -1,8 +1,2 @@
 Title: 4.7. Bad News
-Last-Changed-Date: Sat Jun 14 13:31:50 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.9.65
-
 http://www.zeldman.com/daily/0603a.shtml#goredbylonghorn

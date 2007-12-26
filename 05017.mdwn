@@ -1,16 +1,7 @@
 Title: 5.17. Python as a teaching language
-Last-Changed-Date: Sat Dec  6 13:02:52 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
-
 http://mail.python.org/pipermail/edu-sig/2001-March/001045.html
-
 Compare:
-
 Java: http://www.ibiblio.org/obp/thinkCS/java/english/
 Python: http://www.ibiblio.org/obp/thinkCSpy/
-
 EDU-SIG: Python in Education
 http://www.python.org/sigs/edu-sig/

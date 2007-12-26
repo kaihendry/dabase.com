@@ -1,19 +1,9 @@
 Title: 6.16. Unitesting (simple example)
-Last-Changed-Date: Tue Apr  1 14:28:24 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.14
-
 A small unit test example I constructed from Mark Pilgrim's Roman test, however with that classic square. Can you think of something simpler?
-
 Unit testing:
 http://www.cs.helsinki.fi/u/hendry/work/python/squaretest.py
-
 What it is testing:
 http://www.cs.helsinki.fi/u/hendry/work/python/square.py
-
 Good docs:
 http://pyunit.sourceforge.net/pyunit.html#USING
-
 Methods needs to begin with test... to run as a unittest !!!!

@@ -1,16 +1,6 @@
 Title: 1.92. Roll back to previous package ! DOWNGRADING
-Last-Changed-Date: Mon Jun  7 16:40:33 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 Somethings broke?
-
  cd /var/cache/apt/archives
-
 And install the older or previous package version.
-
 I did this to get a bad postfix upgrade working. Unfortunately it corrupted my new version's mailq.
-
 Oh well

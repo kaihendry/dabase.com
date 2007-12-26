@@ -1,23 +1,11 @@
 Title: 6.40. VIM settings for proper style
-Last-Changed-Date: Wed May  7 21:12:09 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.12.211
-
 Details are here:
 http://www.python.org/peps/pep-0008.html
-
 :set expandtabs
 :set shiftwidth=4
-
 Ctrl-V(Tab) if you need a real tab
-
 Or CTRL-I and CTRL-D for spaces instead of a tab
-
 Try out << and >> too.
-
 Automatic completion: CTRL-P
-
 Trim blanks:
 :%s/\s+$//

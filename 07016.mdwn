@@ -1,22 +1,11 @@
 Title: 7.16. Commenting certain lines
-Last-Changed-Date: Mon May 31 10:53:17 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 An example with latex
-
  a kitchen wall in the near future \cite{tld}.
  \nomenclature{Mobile}{Small wireless computing device}
  \nomenclature{PDA}{Personal Digital Assitants}
-
  :%s/^\\nomenclature/%\\nomenclature/c
-
  a kitchen wall in the near future \cite{tld}.
  %\nomenclature{Mobile}{Small wireless computing device}
  %\nomenclature{PDA}{Personal Digital Assitants}
-
  :%s/^%\\nomenclature/\\nomenclature/c
-
 Gets back.

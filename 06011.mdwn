@@ -1,8 +1,2 @@
 Title: 6.11. Mapping Types = dict
-Last-Changed-Date: Sun Jan 19 14:17:27 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.11.101
-
 http://www.python.org/doc/current/lib/typesmapping.html

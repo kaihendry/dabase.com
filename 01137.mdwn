@@ -1,14 +1,5 @@
 Title: 1.137. chroot
-Last-Changed-Date: Sun Jan 15 14:51:26 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 After chrooting into a Debian install (/mnt/hd)  and network isn't working, you probably need to:
-
 Exit out of the chroot, 'mount -o bind /proc /mnt/hd/proc'
-
 And probably the same with /sys
-
 Thanks to StevenK on #debian-devel

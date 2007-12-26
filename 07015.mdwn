@@ -1,18 +1,8 @@
 Title: 7.15. Searching and Replacing
-Last-Changed-Date: Thu Apr 15 09:42:59 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 All lines
  :%s
-
 The the line you are editing:
  :s
-
 Options :
-
  g - all occurances
-
  c - confirm replacements

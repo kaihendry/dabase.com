@@ -1,12 +1,5 @@
 Title: 1.153. LVM2
-Last-Changed-Date: Wed Jun 27 13:43:00 2007
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 91.84.62.62
-
 Getting to know you
-
     argo$ sudo pvdisplay
       --- Physical volume ---
       PV Name               /dev/sdb1
@@ -18,7 +11,6 @@ Getting to know you
       Free PE               90203
       Allocated PE          5184
       PV UUID               4FPMIu-FLpl-C56S-S1Pu-0BNs-HJwv-G0j2OO
-
     argo$ sudo vgdisplay
       --- Volume group ---
       VG Name               xenspace
@@ -40,7 +32,6 @@ Getting to know you
       Alloc PE / Size       5184 / 20.25 GB
       Free  PE / Size       90203 / 352.36 GB
       VG UUID               9GGCFn-YM5t-124X-M40i-GMRz-34m1-kixRt0
-
     argo$ sudo lvdisplay
       --- Logical volume ---
       LV Name                /dev/xenspace/asa.nipl.net-disk
@@ -55,7 +46,6 @@ Getting to know you
       Allocation             inherit
       Read ahead sectors     0
       Block device           253:0
-
       --- Logical volume ---
       LV Name                /dev/xenspace/asa.nipl.net-swap
       VG Name                xenspace
@@ -69,7 +59,6 @@ Getting to know you
       Allocation             inherit
       Read ahead sectors     0
       Block device           253:1
-
     argo$ sudo lvscan
       ACTIVE            '/dev/xenspace/asa.nipl.net-disk' [20.00 GB] inherit
       ACTIVE            '/dev/xenspace/asa.nipl.net-swap' [256.00 MB] inherit

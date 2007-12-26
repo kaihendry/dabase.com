@@ -1,18 +1,11 @@
 Title: 6.59. Recursive file tree add thing
-Last-Changed-Date: Sat Dec 20 14:09:07 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 Looks something like:
-
  #!/usr/bin/env python2
- 
+
  import re
  import os
  import sys
- 
+
  def add_dir(dir):
     filenames = os.listdir(dir)
     filenames.sort()
@@ -24,12 +17,9 @@ Looks something like:
         if os.path.isdir(pathname):
             subdirs.append(pathname)
     map(add_dir, subdirs)
-
-
  def VALID_PICTURE(name):
     if re.search("\.(png|jpg)$", name, re.I):
         return 1
-
  if __name__ == '__main__':
      patharg = sys.argv[1]
      print "Adding", patharg

@@ -1,11 +1,4 @@
 Title: 5.32. Lesscode!
-Last-Changed-Date: Mon Aug  1 07:17:01 2005
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 61.9.136.168
-
 This is FAR TOO LONG:
-
- frodo$ wc -l /usr/src/linux-source-2.6.12/drivers/net/wireless/airo.c 
+ frodo$ wc -l /usr/src/linux-source-2.6.12/drivers/net/wireless/airo.c
  7725 /usr/src/linux-source-2.6.12/drivers/net/wireless/airo.c

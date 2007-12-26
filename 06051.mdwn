@@ -1,46 +1,38 @@
 Title: 6.51. Ordered list union
-Last-Changed-Date: Tue Jul  1 23:42:27 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.8.238
-
 <html>
 <pre>
+list1 = [1,2,3,4,5,6]
+list2 = [1,2,3,3,5,6]
+list3 = [5,6,7]
+list4 = ['cow', 'rabbit']
+list5 = ['rabbit', 'mushroom']
+list6 = ['mushroom', 'rabbit']
+list7 = None
 
-list1 = [1,2,3,4,5,6]                                                                                                                                                   
-list2 = [1,2,3,3,5,6]                                                                                                                                                   
-list3 = [5,6,7]                                                                                                                                                         
-list4 = ['cow', 'rabbit']                                                                                                                                               
-list5 = ['rabbit', 'mushroom']                                                                                                                                          
-list6 = ['mushroom', 'rabbit']                                                                                                                                          
-list7 = None                                                                                                                                                            
-                                                                                                                                                                        
-def union(seq1,seq2):                                                                                                                                                   
-    """ Get rid of duplicates in a list, and keeps *order* """                                                                                                          
-    d = []                                                                                                                                                              
-    if not seq1:                                                                                                                                                        
-        return seq2                                                                                                                                                     
-    if not seq2:                                                                                                                                                        
-        return seq1                                                                                                                                                     
-    for x in seq1:                                                                                                                                                      
-        if x not in d:                                                                                                                                                  
-            d.append(x)                                                                                                                                                 
-    for x in seq2:                                                                                                                                                      
-        if x not in d:                                                                                                                                                  
-            d.append(x)                                                                                                                                                 
-                                                                                                                                                                        
-    return d                                                                                                                                                            
-                                                                                                                                                                        
-if __name__ == '__main__':                                                                                                                                              
-    print union(list1, list2)                                                                                                                                           
-    print union(list1, list3)                                                                                                                                           
-    print union(list4, list5)                                                                                                                                           
-    print union(list4, list6)                                                                                                                                           
-    print union(list7, list6)                                                                                                                                           
+def union(seq1,seq2):
+    """ Get rid of duplicates in a list, and keeps *order* """
+    d = []
+    if not seq1:
+        return seq2
+    if not seq2:
+        return seq1
+    for x in seq1:
+        if x not in d:
+            d.append(x)
+    for x in seq2:
+        if x not in d:
+            d.append(x)
+
+    return d
+
+if __name__ == '__main__':
+    print union(list1, list2)
+    print union(list1, list3)
+    print union(list4, list5)
+    print union(list4, list6)
+    print union(list7, list6)
     print union(list6, list7)
 </pre>
-
 <pre>
 [1, 2, 3, 4, 5, 6]
 [1, 2, 3, 4, 5, 6, 7]
@@ -49,5 +41,4 @@ if __name__ == '__main__':
 ['mushroom', 'rabbit']
 ['mushroom', 'rabbit']
 </pre>
-
 </html>

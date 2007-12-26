@@ -1,18 +1,8 @@
 Title: 4.3. Addressbook standard
-Last-Changed-Date: Thu Feb  6 22:06:37 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 80.221.12.11
-
 Did you know there is an addressbook standard?
-
 I didn't know either !
-
 Well there is:
 rfc2798 or InetOrgPerson
-
 Try:
 http://www.faqs.org/rfcs/rfc2798.html
-
 So now you know. Now that would have helped me deciding what entries to have in my PIM db project all those years ago.

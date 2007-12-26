@@ -1,14 +1,5 @@
 Title: 13.10. Checking a variable is set
-Last-Changed-Date: Thu Mar 30 18:53:42 2006
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@iki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 222.106.128.34
-
 Common:
-
  [[ $FILES ]] || echo "No files!"; break
-
 More correct:
-
  [[ ${var+set} ]] && echo set || echo unset

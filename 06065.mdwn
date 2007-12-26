@@ -1,13 +1,5 @@
 Title: 6.65. Copy a list !
-Last-Changed-Date: Sat Apr 17 15:52:20 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 217.30.176.161
-
 I make this mistake all to often:
-
-
  15:37 < hendry> I feel stupid asking this. How do I remove items from a list while traversing it? http://nevow.dabase.com/2
  15:37 < hendry> I could append indexes to another list and remove it later... but, isn't there quicker way?
  15:38 < bdash> hendry: iterate over a copy of the list

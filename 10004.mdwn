@@ -1,10 +1,3 @@
 Title: 10.4. Online resources
-Last-Changed-Date: Sun Dec  7 18:36:22 2003
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 213.243.180.11
-
 http://ubista.ubi.pt/~dfis-wg/sgml/tex/lc5/tableofcontents2_1.html
-
 http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/teTeX/latex/latex2e-html/ltx-2.html

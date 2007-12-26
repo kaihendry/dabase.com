@@ -1,15 +1,5 @@
 Title: 1.107. ps aux truncated output?
-Last-Changed-Date: Tue Jul  6 15:37:53 2004
-Last-Changed-Author: Kai Hendry
-Last-Changed-Email: hendry@cs.helsinki.fi
-Last-Changed-Remote-Host: 
-Last-Changed-Remote-Address: 128.214.48.17
-
 Funny.
-
-
-
-
  15:32 < hendry> If I run ps aux
  15:32 < hendry> some of the commands I am running get truncated in the output
  15:32 < hendry> How do I wrap it
