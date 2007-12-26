@@ -1,12 +1,15 @@
 [[meta title="Hendry's tips and tricks"]]
 
 [[toc ]]
+
+
+
 [Importing faq.dabase.com into ikiwiki](http://faq.dabase.com/)
 
 There are [[pagecount pages="e/*"]] tips.
 
 
-# Debian System General - the Universal Operating System
+# Debian
 [[inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 # mutt - my Email client
