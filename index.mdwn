@@ -8,11 +8,13 @@ There are [[pagecount pages="e/*"]] tips.
 [Importing faq.dabase.com into ikiwiki](http://faq.dabase.com/)
 
 
-
 ## Debian
 
 
 ## Debian
+
+
+## Why doesn't this work?
 [[inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## mutt - my Email client
