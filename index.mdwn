@@ -1,10 +1,10 @@
 # Hendry's tips and tricks
 
-
 [Importing faq.dabase.com into ikiwiki](http://faq.dabase.com/)
 
 There are [[pagecount pages="e/*"]] tips.
 
+[[toc ]]
 
 ## 1: "Debian System General - the Universal Operating System"
 [[inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
