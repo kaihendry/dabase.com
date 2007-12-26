@@ -5,6 +5,8 @@
 
 There are [[pagecount pages="e/*"]] tips.
 
+[[inline pages="e/*" archive=yes rss=no]]
+
 [[if test="enabled(orphans)" then="""
 Here's a list of orphaned pages on this wiki:
 
