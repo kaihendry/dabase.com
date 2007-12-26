@@ -5,4 +5,6 @@
 
 There are [[pagecount pages="e/*"]] tips.
 
-[[inline pages="e/*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+# mutt - my Email client
+
+[[inline pages="e/02*" archive="yes" rss="no" atom="no" timeformat="%F"]]
