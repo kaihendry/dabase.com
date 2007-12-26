@@ -1,4 +1,5 @@
 [[meta title="Hendry's tips and tricks"]]
+[[toc ]]
 
 ## Debian
 [[inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
