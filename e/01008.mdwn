@@ -1,14 +1,4 @@
 [[meta title="KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2"]]
-I would prefer not to do it this way. I have to figure out hotplug.
-Beware of the dc2xx driver, you need to remove it for it all to work!
- bilbo:~# lsmod | grep dc2
- dc2xx                   3232   0  (unused)
- usbcore                56384   1  [dc2xx usbmouse usb-uhci hid]
- bilbo:~# rmmod dc2xx
-Fix the permissions:
- bilbo:/proc/bus/usb/001# chmod -R 777 003
-Download them with gphoto2:
- hendry@bilbo:/tmp$ gphoto2 --port usb: -P
-Or visually I can suggest gtkam under gnome, or setting up the camera in KDE and using the strange url, camera:/ in Konq!
-In one line:
- sudo rmmod dc2xx; cd /proc/bus/usb/001; sudo chmod -R 777 003; cd /tmp; gphoto2 --port usb: -P
+
+Use a compact flash reader, instead of using the camera's broken native
+import/export interface.

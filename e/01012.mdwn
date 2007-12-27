@@ -1,3 +1,6 @@
 [[meta title="route add default gw"]]
-root@dogbert:~# /sbin/route add default gw 192.168.0.77 dev eth1
-I can never remember route's syntax. Here I am adding the internal ip of my machine as the gateway of a guest machine using eth1.
+
+    root@dogbert:~# /sbin/route add default gw 192.168.0.77 dev eth1
+
+I can never remember route's oddball syntax. Here I am adding the internal IP
+of my machine as the gateway of a guest machine using eth1 named interface.

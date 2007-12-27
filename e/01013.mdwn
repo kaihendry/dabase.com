@@ -1,21 +1,13 @@
 [[meta title="Passwordless logins with SSH"]]
+
 If you routinely need to login to several machines, as I do, you will find this tip useful to automate the process. Thanks to Robot101 again!
- ssh-keygen -t dsa
+
+    ssh-keygen
+
 In the previous version of my tip, I did not set a passphrase. Robot101 notes this is generally unwise and that it is better to put a passphrase on, and use ssh-agent. I believe him.
- hendry@praze:~$ ssh-keygen -p
- Enter file in which the key is (/home/hendry/.ssh/id_rsa):  /home/hendry/.ssh/id_dsa
- Key has comment '/home/hendry/.ssh/id_dsa'
- Enter new passphrase (empty for no passphrase):
- Enter same passphrase again:
- Your identification has been saved with the new passphrase.
-In debian, ssh-agent should be already running when you run an X session.
- eval `ssh-agent`
-ssh-add prompts your for the passphrase which it will remember for the session.
- hendry@praze:~$ ssh-add
- Enter passphrase for /home/hendry/.ssh/id_dsa:
- Identity added: /home/hendry/.ssh/id_dsa (/home/hendry/.ssh/id_dsa)
-Finally the command to copy your id to your various shells, such as mine at dabase.com could well be yourmachine.co.uk!
- ssh-copy-id -i .ssh/id_dsa.pub dabase.com
-So now for example, if you want to login automagically and run a process use:
- ssh dabase.com -t theprocessyouwanttorun
+
+    ssh-keygen
+    ssh-copy-id dabase.com
+    ssh dabase.com -t theprocessyouwanttorun
+
 Another nifty switch is the -v switch for verbose output ssh (thats fun).

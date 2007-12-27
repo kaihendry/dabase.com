@@ -1,7 +1,16 @@
-[[meta title="Recording console sessions"]]"]]
+[[meta title="Recording console sessions"]]
 
-Want to show someone your work? Use script. It annoyingly has all your errors and frantic backspaces, however I at least find it beneficial.
+# Video
+Best way is to use the package [recordmydesktop](http://packages.qa.debian.org/r/recordmydesktop.html) and upload the video to YouTube or something!
+
+# Text
+
+Want to show someone your work? Try `script`. It annoyingly has all your errors
+and frantic backspaces, however I at least find it beneficial.
+
 script mywork
 and ctrl-d or exit stops it recording.
-history is another command I run very often, try it.
-You can also harcopy sessions with `screen`.
+
+History is another command I run very often, try it.
+
+You can also hardcopy sessions with `screen`.

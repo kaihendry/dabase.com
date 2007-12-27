@@ -1,6 +1,3 @@
 [[meta title="Basename (removing filename extensions in BASH)"]]
-Basename. Always forget that sucker.
- 18:11 < hendry> How do I cut off the extension typically in bash again ?
- 18:17 < tale> What extension?
- 18:17 < tale> Do you mean basename?
- 18:20 < hendry> thanks tale
+
+`basename`. Always forget that sucker.

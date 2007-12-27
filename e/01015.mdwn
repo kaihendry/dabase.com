@@ -1,20 +1,25 @@
 [[meta title="Compiling your own kernel (not recommended)"]]
+
+FIXME
+
 Use a package instead! But if you must, here is how :
- # apt-get install debhelper modutils kernel-package libncurses5-dev
- # apt-get install kernel-source-2.4.18   # use latest version
- # vi /etc/kernel-pkg.conf                # input my name and email
- $ cd /usr/src                            # build directory
- $ tar --bzip2 -xvf kernel-source-2.4.18.tar.bz2
- $ cd kernel-source-2.4.18                # if this is your kernel source
- # [OPTIONAL] if one wants to use modules from pcmcia-cs or no pcmcia
- $ cp /boot/config-2.4.18-386 .config     # get current config as  default
- $ make menuconfig                        # customize as one wishes
- $ make-kpkg clean                        # must run (per: man make-kpkg)
- $ fakeroot make-kpkg --append_to_version -486 --initrd \
-        --revision=rev.01 kernel_image \
-        modules_image # modules_image is for pcmcia-cs* etc.
- $ cd ..
- # dpkg -i kernel-image*.deb pcmcia-cs*.deb # install
+
+     # apt-get install debhelper modutils kernel-package libncurses5-dev
+     # apt-get install kernel-source-2.4.18   # use latest version
+     # vi /etc/kernel-pkg.conf                # input my name and email
+     $ cd /usr/src                            # build directory
+     $ tar --bzip2 -xvf kernel-source-2.4.18.tar.bz2
+     $ cd kernel-source-2.4.18                # if this is your kernel source
+     # [OPTIONAL] if one wants to use modules from pcmcia-cs or no pcmcia
+     $ cp /boot/config-2.4.18-386 .config     # get current config as  default
+     $ make menuconfig                        # customize as one wishes
+     $ make-kpkg clean                        # must run (per: man make-kpkg)
+     $ fakeroot make-kpkg --append_to_version -486 --initrd \
+            --revision=rev.01 kernel_image \
+            modules_image # modules_image is for pcmcia-cs* etc.
+     $ cd ..
+     # dpkg -i kernel-image*.deb pcmcia-cs*.deb # install
+
 Just verify the symlinks for /vmlinuz and /imitrd.img and the .old
 versions of them and remember to rerun lilo if you change them!
 HTH
