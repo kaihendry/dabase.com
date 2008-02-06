@@ -1,54 +1,11 @@
 [[meta title="Debian Iptable Firewall"]]
-This post is very helpful:
-http://www.dclug.org.uk/archive-May02-Nov02/msg01597.html
-You may need to need FLUSH i.e. clear what configuration you have (iptables -L to see) with iptables -F I recall, before you begin. You can just drop off the internet if you afraid at this point and reconnect when you are happy with the iptables -L listing.
-Create the 'block chain':
- iptables -N block
-Make sure that your connections work:
- iptables -A block -m state --state ESTABLISHED,RELATED -j ACCEPT
-Everything not through ppp0 (i.e. LAN) is accepted and not filtered
- iptables -A block -m state --state NEW -i ! ppp0 -j ACCEPT
-Else block block block !!! :)
- iptables -A block -j DROP
- iptables -A INPUT -j block
- iptables -A FORWARD -j block
-See what your setup it now.
- iptables -L
-Ok, lets accept SSH. :)
- iptables -I block -i ppp0 -p tcp --dport 22 -j ACCEPT
- iptables -L
-Lets save it so when we reboot it should get re-configured.
- /etc/init.d/iptables save_active
-If I want to add a rule, say to let people connect to my web server:
- iptables -I block -i ppp0 -p tcp --dport 80 -j ACCEPT
 
-Here is what my iptables -L listing looks like currently:
- bilbo:/home/hendry# iptables -L
- Chain INPUT (policy ACCEPT)
- target     prot opt source               destination
- block      all  --  anywhere             anywhere
+The iptables init.d script is no longer. So here is how I configured my
+firewall in /etc/network/interfaces:
 
- Chain FORWARD (policy ACCEPT)
- target     prot opt source               destination
- block      all  --  anywhere             anywhere
-
- Chain OUTPUT (policy ACCEPT)
- target     prot opt source               destination
-
- Chain block (2 references)
- target     prot opt source               destination
- ACCEPT     tcp  --  anywhere             anywhere           tcp dpt:www
- ACCEPT     tcp  --  anywhere             anywhere           tcp dpt:ircd
- ACCEPT     tcp  --  anywhere             anywhere           tcp dpt:2234
- ACCEPT     tcp  --  anywhere             anywhere           tcp dpt:ssh
- ACCEPT     all  --  anywhere             anywhere           state  RELATED,ESTABLISHED
- ACCEPT     all  --  anywhere             anywhere           state NEW
- DROP       all  --  anywhere             anywhere
-2234 is for soulseek.
-The iptables init.d script is no longer. So here is how I configured my firewall in /etc/network/interfaces:
- iface lo inet loopback
- auto eth0
- iface eth0 inet dhcp
+    iface lo inet loopback
+    auto eth0
+    iface eth0 inet dhcp
         pre-up echo 1 > /proc/sys/net/ipv4/ip_forward
         pre-up iptables -t nat -A POSTROUTING -o $IFACE -j MASQUERADE
         pre-up iptables -N block
@@ -59,9 +16,3 @@ The iptables init.d script is no longer. So here is how I configured my firewall
         pre-up iptables -A FORWARD -j block
         pre-up iptables -I block -i eth0 -p tcp --dport 22 -j ACCEPT
         pre-up iptables -I block -i eth0 -p tcp --dport 80 -j ACCEPT
- auto eth1
- iface eth1 inet static
-        address 192.168.0.1
-        netmask 255.255.255.0
-Please note my Internet connection is via eth0 now, not ppp0! The eth1 is for serving my NAT. See:
-http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=show&file=faq01.050.htp

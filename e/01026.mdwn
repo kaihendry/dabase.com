@@ -1,23 +1,12 @@
 [[meta title="crontab job"]]
 Read:
- man 5 crontab
+
+    man 5 crontab
+
 For the aliases. Example:
- perry$ crontab -l
- # m h  dom mon dow   command
- @daily /home/hendry/projects/svn/backup-repo.sh
+
+    perry$ crontab -l
+    # m h  dom mon dow   command
+    @daily /home/hendry/projects/svn/backup-repo.sh
+
 Additionally from http://www.faoileag.de/stuff/howto.html#cron
-How to start a cron job
-The cron daemon consults so-called crontabs for jobs to execute (and when to execute them). These crontabs are ordinary textfiles, however you should always use the appropriate tool (crontab) to manipulate them.
-To have a look at your crontab execute crontab -l. If a crontab exists then it's contents is listed, otherwise "no crontab for <username>" will be displayed.
-To add or delete an entry in your crontab, use crontab -e. Which editor is used can be customized, but usually it's vi.
-You add or delete entries by adding or deleting the appropriate line in the crontab (every entry takes exactly one line).
-Each line consists of six columns which are seperated by blanks. The sixth (rightmost) column tells cron which command/file to execute (always use the full path here), while the other five columns tell cron when to execute it.
-The columns (1 stands for the leftmost column, counting to the right) have the following meaning and take the values in brackets:
-   1. Minute (0 - 59)
-   2. Hour (0 - 23)
-   3. Day of month (1 - 31)
-   4. Month (1 - 12)
-   5. Day of the week (0 - 6, 0 representing sunday, 6 saturday)
-In each of these five columns an asterisk ("*") stands for "every". Example: "15 4 * * * /home/joe/backup.sh" would mean that everyday at 4:15 in the morning the script backup.sh in joe's home directory would be executed (assuming, of course, that the script is executable).
-If you want to specify a group of times, then concatenate the individual values, seperated by commas (Example: "00,15,30,45" - in the first column this would read as "every quarter of an hour on the quarter of the hour").
-If you want to specify a range of times, you can use the minus (Example: "1-5" in the fifth column would read as "every workday").

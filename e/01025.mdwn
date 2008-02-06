@@ -1,24 +1,40 @@
 [[meta title="using gnu tar reference"]]
+
 List files in archive:
- tar -t whatishere.tar
+
+    tar -t whatishere.tar
+
 does not work. it just hangs there until you ctrl-c it. great. SO what works?
- tar -t --file=whatishere.tar
+
+    tar -t --file=whatishere.tar
 or:
- tar --list --file=whatishere.tar
+
+    tar --list --file=whatishere.tar
+
 Lets tar up a folder, without CVS dir:
- tar --exclude=CVS -cf test.tar datastructuresproject/
+
+    tar --exclude=CVS -cf test.tar datastructuresproject/
 And more:
- hendry@bilbo:~$ tar --exclude=CVS --exclude=*.pdf --exclude=*.vim --exclude=*.pyc -cf datastructuresproject.tar datastructuresproject/
- hendry@bilbo:~$ ls datastructuresproject/
+
+    hendry@bilbo:~$ tar --exclude=CVS --exclude=*.pdf --exclude=*.vim --exclude=*.pyc -cf datastructuresproject.tar datastructuresproject/
+    hendry@bilbo:~$ ls datastructuresproject/
  common.py  common.pyc  CVS  efficient.py  efficient.pyc  match.py  match.pyc  naive.py  p333-aho-corasick.pdf  Session.vim  test.py  text  timings.py  trans.py  trans.pyc
+
 To extract:
- tar xvf thefile.tar
+
+    tar xvf thefile.tar
+
 One file:
- tar -z --extract --file=control.tar.gz ./control
+
+    tar -z --extract --file=control.tar.gz ./control
+
 Redirection seems to work:
- tar zxv < control.tar.gz ./control
+
+    tar zxv < control.tar.gz ./control
+
 A listing
- hendry@bilbo:/tmp/scratch$ tar zvt < control.tar.gz
- drwxr-xr-x root/root         0 2004-05-30 18:30:10 ./
- -rw-r--r-- root/root     12059 2004-05-30 18:30:10 ./md5sums
- -rw-r--r-- root/root       840 2004-05-30 18:30:10 ./control
+
+    hendry@bilbo:/tmp/scratch$ tar zvt < control.tar.gz
+    drwxr-xr-x root/root         0 2004-05-30 18:30:10 ./
+    -rw-r--r-- root/root     12059 2004-05-30 18:30:10 ./md5sums
+    -rw-r--r-- root/root       840 2004-05-30 18:30:10 ./control

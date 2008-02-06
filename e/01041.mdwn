@@ -1,3 +1,5 @@
 [[meta title="How to "unfuck" your terminal/console"]]
+
 Try:
- reset
+
+    reset

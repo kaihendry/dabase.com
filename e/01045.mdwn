@@ -1,14 +1,15 @@
 [[meta title="Finding about your display"]]
+
 What resolution am I running?
- xdpyinfo
+    xdpyinfo
 Do I have hardware acceleration?
- glxinfo
- xvinfo
+    glxinfo
+    xvinfo
 Check x errors in:
- ~/.xsession-errors
+    ~/.xsession-errors
 Checking terminal column and width environment:
- resize
+    resize
 Check resolution of root window:
- xwininfo -root
+    xwininfo -root
 Checking if DPMS is enabled et al:
- xset -display :0.0 -q
+    xset -display :0.0 -q

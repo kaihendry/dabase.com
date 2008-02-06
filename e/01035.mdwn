@@ -1,17 +1,5 @@
-[[meta title="(kernel module) keeps on loading at boot time and I don't know how to remove it..."]]
-The tool you should use to remove and add modules is:
- modconf
-What it does, is simply add a line to:
- /etc/modules
-But sometimes modconf does not work. Try re-run:
- update-modules
-after editing.
- tail -n50 /var/log/messages
-And search for it's entry in /etc/modules /etc/modutils. Try:
- egrep modulename /etc/modutils/*
-Once you located the file, comment the line out.
-My example:
- hendry@bilbo:~$ egrep bttv /etc/modutils/*
- /etc/modutils/actions:post-install bttv insmod tuner
- /etc/modutils/actions:post-remove bttv rmmod tuner
- /etc/modutils/aliases:alias char-major-81       bttv
+[[meta title="(kernel module) keeps on loading at boot time and I don't know how to blacklist it"]]
+
+# blacklist
+
+TODO

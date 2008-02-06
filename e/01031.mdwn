@@ -1,9 +1,14 @@
 [[meta title="Using IRSSI"]]
 I always forget this one:
- 16:26 < hendry> FAQ: How do I stop reconnects?
- 16:26 < hoxu> hendry, /rmreconns?
+
+    16:26 < hendry> FAQ: How do I stop reconnects?
+    16:26 < hoxu> hendry, /rmreconns?
+
 And it is in the FAQ of course:
+
 http://irssi.org/?page=docs&doc=faq
- 17:17 < hendry> Can I log a conversation that has already taken place? I can see it in my buffer?
- 17:17 < [Ward]>  /lastlog -file
+
+    17:17 < hendry> Can I log a conversation that has already taken place? I can see it in my buffer?
+    17:17 < [Ward]>  /lastlog -file
+
 If you use ION, you can select the hidden windows with Esc-n

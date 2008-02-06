@@ -1,13 +1,15 @@
 [[meta title="Keeping track of changes in unstable"]]
+
 If you want to use unstable you should install apt-listchanges then you
 can received what's changed in the latest upgrade like :
 fontconfig (2.2.0-2) unstable; urgency=low
 
-  * The "Society For Creative Anachronism Seizes Control Of Russia"
+    * The "Society For Creative Anachronism Seizes Control Of Russia"
     release.
-  * debian/control:
+    * debian/control:
     - Recommend ttf-bitstream-vera, since it is the default fallback font
       now.  Plus it does look pretty nice.  (Closes: #190675).
     - Suggest: ttf-freefont, my favorite font.
+
 From :
 http://lists.debian.org/debian-gtk-gnome/2003/debian-gtk-gnome-200305/msg00082.html

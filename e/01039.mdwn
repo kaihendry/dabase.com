@@ -1,7 +1,12 @@
-[[meta title="Using diff"]]
+[[meta title="Basically using diff"]]
+
 I have been using diff ! :)
- diff -N -r -u bins-1.1.21 bins-1.1.21.bug/ > bins.patch
+
+    diff -N -r -u bins-1.1.21 bins-1.1.21.bug/ > bins.patch
+
 N esp. if your patch includes new files
 r for recursive
 u for human readable
-Have a look at the patch to be sure of order. Plus signs (+) should be the changes you want.
+
+Have a look at the patch to be sure of order. Plus signs (+) should be the
+changes you want.

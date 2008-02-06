@@ -1,3 +1,4 @@
 [[meta title="Taking screenshots"]]
 Screenshots are great to show people !
-I recommend scrot or gimp. They have time delay features which work.
+
+I recommend `scrot`. Time delay features which work.

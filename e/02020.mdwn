@@ -1,0 +1,20 @@
+Download and extract the Firefox distribution somewhere like $HOME/ff3/firefox. Now we need to tell Debian where it is:
+
+    x61:~/ff3/firefox% sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser ~/ff3/firefox/firefox 50
+
+And now we need to set `x-www-browser` to our new configuration option.
+
+    x61:~/ff3/firefox% sudo update-alternatives --config x-www-browser
+
+    There are 2 alternatives which provide `x-www-browser'.
+
+      Selection    Alternative
+    -----------------------------------------------
+    *+        1    /usr/bin/iceweasel
+              2    /home/hendry/ff3/firefox/firefox
+
+    Press enter to keep the default[*], or type selection number: 2
+    Using '/home/hendry/ff3/firefox/firefox' to provide 'x-www-browser'.
+
+
+Now run `x-www-browser` and happy browsing.

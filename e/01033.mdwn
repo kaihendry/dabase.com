@@ -1,3 +1,5 @@
 [[meta title="What type of file is it?"]]
+
 Hint:
- file whattypeoffileisthisiwonder.ext
+
+    file whattypeoffileisthisiwonder.ext

@@ -1,6 +1,10 @@
 [[meta title="You are working on a foreign language machine ?"]]
+
 Get this?
- hendry@tjener:~$ ls -al daasd
- ls: daasd: Ingen slik fil eller filkatalog
-English... :)
- unset LANG
+
+    hendry@tjener:~$ ls -al daasd
+    ls: daasd: Ingen slik fil eller filkatalog
+
+English please... :)
+
+    unset LANG
