@@ -1,3 +1,5 @@
+[[meta title="Configuring Firefox as the default Web browser"]]
+
 Download and extract the Firefox distribution somewhere like $HOME/ff3/firefox. Now we need to tell Debian where it is:
 
     x61:~/ff3/firefox% sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser ~/ff3/firefox/firefox 50
