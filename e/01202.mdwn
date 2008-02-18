@@ -1,0 +1,45 @@
+[[meta title="Configuring a directory with encryption using LVM"]]
+
+I created the logical volume from the volume group 'x61'.
+
+    sudo lvcreate -n crypt -L 12.27GB x61
+
+This will prompt you for a password. Don't forget it!
+
+    sudo cryptsetup create crypt /dev/x61/crypt
+
+    x61:~% sudo cryptsetup status crypt
+    /dev/mapper/crypt is active:
+      cipher:  aes-cbc-plain
+      keysize: 256 bits
+      device:  /dev/dm-4
+      offset:  0 sectors
+      size:    25739264 sectors
+      mode:    read/write
+
+Create the ext3 filesystem:
+
+    sudo mke2fs -j -O dir_index,filetype,sparse_super /dev/mapper/crypt
+
+Setup the disk to be unlocked
+
+    x61:~% cat /etc/crypttab 
+    # <target name> <source device>         <key file>      <options>
+    crypt /dev/x61/crypt
+
+An fstab line to mount it
+
+    x61:~% grep crypt /etc/fstab 
+    /dev/mapper/crypt /home/hendry/crypt2 ext3    defaults        0       2
+
+So here is what I have:
+
+    x61:~% sudo lvscan
+      ACTIVE            '/dev/x61/root' [16.68 GB] inherit
+      ACTIVE            '/dev/x61/swap_1' [2.59 GB] inherit
+      ACTIVE            '/dev/x61/home' [80.00 GB] inherit
+      ACTIVE            '/dev/x61/crypt' [12.27 GB] inheri
+
+    x61:~% sudo pvscan
+      PV /dev/sda5   VG x61   lvm2 [111.55 GB / 4.00 MB free]
+      Total: 1 [111.55 GB] / in use: 1 [111.55 GB] / in no VG: 0 [0   ]
