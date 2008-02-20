@@ -1,6 +1,7 @@
 [[meta title="What does a symlink point to? (symbolic links)"]]
+
 Use
- readlink
+    readlink
 And use
- cp --remove-destination
+    cp --remove-destination
 To remove symlinks

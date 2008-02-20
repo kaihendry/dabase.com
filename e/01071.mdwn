@@ -1,29 +1,31 @@
 [[meta title="Ping broadcast"]]
+
 Debugging networking
- scrooge-15:~$ /sbin/ifconfig
- eth0      Link encap:Ethernet  HWaddr 00:09:6B:D0:A0:61
-          inet addr:192.168.1.35  Bcast:192.168.1.255  Mask:255.255.255.0
-          inet6 addr: fe80::209:6bff:fed0:a061/64 Scope:Link
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:312682 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:281795 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000
-          RX bytes:286154450 (272.8 MiB)  TX bytes:189081567 (180.3 MiB)
-          Interrupt:11 Base address:0x8000 Memory:d0200000-d0200038
- lo        Link encap:Local Loopback
-          inet addr:127.0.0.1  Mask:255.0.0.0
-          inet6 addr: ::1/128 Scope:Host
-          UP LOOPBACK RUNNING  MTU:16436  Metric:1
-          RX packets:2054 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:2054 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:0
-          RX bytes:145955 (142.5 KiB)  TX bytes:145955 (142.5 KiB)
- scrooge-15:~$ ping 192.168.1.255
- Do you want to ping broadcast? Then -b
- scrooge-15:~$ ping -b 192.168.1.255
- WARNING: pinging broadcast address
- PING 192.168.1.255 (192.168.1.255) 56(84) bytes of data.
- 64 bytes from 192.168.1.35: icmp_seq=1 ttl=0 time=0.048 ms
- 64 bytes from 192.168.1.38: icmp_seq=1 ttl=64 time=0.198 ms (DUP!)
- 64 bytes from 192.168.1.35: icmp_seq=2 ttl=0 time=0.029 ms
- 64 bytes from 192.168.1.38: icmp_seq=2 ttl=64 time=0.135 ms (DUP!)
+
+     scrooge-15:~$ /sbin/ifconfig
+     eth0      Link encap:Ethernet  HWaddr 00:09:6B:D0:A0:61
+              inet addr:192.168.1.35  Bcast:192.168.1.255  Mask:255.255.255.0
+              inet6 addr: fe80::209:6bff:fed0:a061/64 Scope:Link
+              UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+              RX packets:312682 errors:0 dropped:0 overruns:0 frame:0
+              TX packets:281795 errors:0 dropped:0 overruns:0 carrier:0
+              collisions:0 txqueuelen:1000
+              RX bytes:286154450 (272.8 MiB)  TX bytes:189081567 (180.3 MiB)
+              Interrupt:11 Base address:0x8000 Memory:d0200000-d0200038
+     lo        Link encap:Local Loopback
+              inet addr:127.0.0.1  Mask:255.0.0.0
+              inet6 addr: ::1/128 Scope:Host
+              UP LOOPBACK RUNNING  MTU:16436  Metric:1
+              RX packets:2054 errors:0 dropped:0 overruns:0 frame:0
+              TX packets:2054 errors:0 dropped:0 overruns:0 carrier:0
+              collisions:0 txqueuelen:0
+              RX bytes:145955 (142.5 KiB)  TX bytes:145955 (142.5 KiB)
+     scrooge-15:~$ ping 192.168.1.255
+     Do you want to ping broadcast? Then -b
+     scrooge-15:~$ ping -b 192.168.1.255
+     WARNING: pinging broadcast address
+     PING 192.168.1.255 (192.168.1.255) 56(84) bytes of data.
+     64 bytes from 192.168.1.35: icmp_seq=1 ttl=0 time=0.048 ms
+     64 bytes from 192.168.1.38: icmp_seq=1 ttl=64 time=0.198 ms (DUP!)
+     64 bytes from 192.168.1.35: icmp_seq=2 ttl=0 time=0.029 ms
+     64 bytes from 192.168.1.38: icmp_seq=2 ttl=64 time=0.135 ms (DUP!)

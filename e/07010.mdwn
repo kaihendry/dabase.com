@@ -1,9 +1,17 @@
 [[meta title="Cleaning whitespace"]]
+
 Deleting whitespace around the cursor:
- diw
+
+    diw
+
 Or the regexp:
- :%s/\s*$//
+
+    :%s/\s*$//
+
 Or this::
- %s/ \+$//
+
+    %s/ \+$//
+
 Converting EVIL tabs to spaces
- :retab
+
+    :retab
