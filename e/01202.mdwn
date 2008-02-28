@@ -1,5 +1,7 @@
 [[meta title="Configuring a directory with encryption using LVM"]]
 
+This approach is also known as **encryption over LVM**.
+
 I created the logical volume from the volume group 'x61'.
 
     sudo lvcreate -n crypt -L 12.27GB x61
@@ -43,7 +45,7 @@ So here is what I have my disk & LVM finally setup as:
       ACTIVE            '/dev/x61/root' [16.68 GB] inherit
       ACTIVE            '/dev/x61/swap_1' [2.59 GB] inherit
       ACTIVE            '/dev/x61/home' [80.00 GB] inherit
-      ACTIVE            '/dev/x61/crypt' [12.27 GB] inheri
+      ACTIVE            '/dev/x61/crypt' [12.27 GB] inherit
 
     x61:~% sudo pvscan
       PV /dev/sda5   VG x61   lvm2 [111.55 GB / 4.00 MB free]
