@@ -1,0 +1,77 @@
+[[meta title="Configuring an external USB drive with LVM"]]
+
+	Seagate Freeagent Desktop 500GB External Hard drive 7200RPM 8MB USB2.0
+
+Plug it in:
+
+	scsi 3:0:0:0: Direct-Access     Seagate  FreeAgentDesktop 100F PQ: 0 ANSI: 4
+	sd 3:0:0:0: [sdb] 976773168 512-byte hardware sectors (500108 MB)
+	sd 3:0:0:0: [sdb] Write Protect is off
+	sd 3:0:0:0: [sdb] Mode Sense: 1c 00 00 00
+	sd 3:0:0:0: [sdb] Assuming drive cache: write through
+	sd 3:0:0:0: [sdb] 976773168 512-byte hardware sectors (500108 MB)
+	sd 3:0:0:0: [sdb] Write Protect is off
+	sd 3:0:0:0: [sdb] Mode Sense: 1c 00 00 00
+	sd 3:0:0:0: [sdb] Assuming drive cache: write through
+	 sdb: sdb1
+	sd 3:0:0:0: [sdb] Attached SCSI disk
+
+In my case it's sdb. You need to be super careful and USE THE RIGHT DISK!
+
+Prime the disk:
+
+	x61:~% sudo pvcreate /dev/sdb
+	  Device /dev/sdb not found (or ignored by filtering).
+	x61:~% sudo pvcreate /dev/sdb1
+	  Physical volume "/dev/sdb1" successfully created
+
+Should show up now:
+
+	x61:~% sudo pvscan
+	  PV /dev/sda5   VG x61   lvm2 [111.55 GB / 4.00 MB free]
+	  PV /dev/sdb1            lvm2 [465.76 GB]
+	  Total: 2 [577.31 GB] / in use: 1 [111.55 GB] / in no VG: 1 [465.76 GB]
+
+Now we need a Volume Group:
+
+	x61:~% sudo vgcreate seagate /dev/sdb1
+	  Volume group "seagate" successfully created
+	x61:~% sudo vgscan
+	  Reading all physical volumes.  This may take a while...
+	  Found volume group "seagate" using metadata type lvm2
+	  Found volume group "x61" using metadata type lvm2
+
+Ok, lets create the Logical Volume:
+
+	x61:~% sudo lvcreate -l 100%FREE -next3 seagate
+	  Logical volume "ext3" created
+	x61:~% sudo lvscan
+	  ACTIVE            '/dev/seagate/ext3' [465.76 GB] inherit
+	  ACTIVE            '/dev/x61/root' [16.68 GB] inherit
+	  ACTIVE            '/dev/x61/swap_1' [2.59 GB] inherit
+	  ACTIVE            '/dev/x61/home' [80.00 GB] inherit
+	  ACTIVE            '/dev/x61/crypt' [12.27 GB] inherit
+
+Ok, now lets create an ext3 partition on there:
+
+	x61:~% sudo mkfs.ext3 /dev/seagate/ext3
+	mke2fs 1.40.6 (09-Feb-2008)
+	Warning: 256-byte inodes not usable on older systems
+	Filesystem label=
+	OS type: Linux
+	Block size=4096 (log=2)
+	Fragment size=4096 (log=2)
+	30531584 inodes, 122095616 blocks
+	6104780 blocks (5.00%) reserved for the super user
+	First data block=0
+	Maximum filesystem blocks=0
+	3727 block groups
+	32768 blocks per group, 32768 fragments per group
+	8192 inodes per group
+	Superblock backups stored on blocks: 
+			32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+			4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968, 
+			102400000
+
+	Writing inode tables:   48/3727
+
