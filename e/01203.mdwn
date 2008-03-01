@@ -2,6 +2,8 @@
 
 	Seagate Freeagent Desktop 500GB External Hard drive 7200RPM 8MB USB2.0
 
+For 69GBP from Amazon.co.uk. So that's about 15 pence for Gigabyte. Quite good value!
+
 Plug it in:
 
 	scsi 3:0:0:0: Direct-Access     Seagate  FreeAgentDesktop 100F PQ: 0 ANSI: 4
@@ -93,3 +95,38 @@ Ok, lets test it out:
 	drwx------ 2 root root  16K 2008-02-28 16:41 lost+found/
 
 SO 500G becomes about 435G....
+
+
+So putting into my slug, I found I needed to make it ACTIVE by:
+
+	slug:~% sudo lvscan
+	  inactive          '/dev/seagate/ext3' [465.76 GB] inherit
+	slug:~% sudo lvchange -a y /dev/seagate/ext3
+	slug:~% sudo lvscan
+	  ACTIVE            '/dev/seagate/ext3' [465.76 GB] inherit
+
+Ok lets share this guy:
+
+	slug:~% egrep seagate /etc/exports
+	/media/seagate 192.168.1.*(insecure,rw,async,no_root_squash,no_subtree_check,nohide)
+	slug:~% egrep seagate /etc/fstab
+	/dev/seagate/ext3 /media/seagate auto   rw,user,auto  0       0
+
+Problems, bugs, I wish this didn't happen:
+
+	sd 1:0:0:0: Device not ready: <6>: Current: sense key=0x2
+		ASC=0x4 ASCQ=0x2
+	end_request: I/O error, dev sdb, sector 12807
+	Buffer I/O error on device dm-0, logical block 1545
+	lost page write due to I/O error on dm-0
+	sd 1:0:0:0: Device not ready: <6>: Current: sense key=0x2
+		ASC=0x4 ASCQ=0x2
+	end_request: I/O error, dev sdb, sector 12807
+	Buffer I/O error on device dm-0, logical block 1545
+	lost page write due to I/O error on dm-0
+	sd 1:0:0:0: Device not ready: <6>: Current: sense key=0x2
+
+I have noticed when initially mounting and using the device, you can see these
+scary messages. The OS can decide to remount the device as readonly and then
+you'll know things are going wrong. To rectifiy the situation I simply unmount
+and mount the disk again and watch the logs with `tail -f /var/log/messages`.
