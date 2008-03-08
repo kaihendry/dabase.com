@@ -130,3 +130,5 @@ I have noticed when initially mounting and using the device, you can see these
 scary messages. The OS can decide to remount the device as readonly and then
 you'll know things are going wrong. To rectifiy the situation I simply unmount
 and mount the disk again and watch the logs with `tail -f /var/log/messages`.
+
+Ok, I found the [fix for external Seagate USB hard drives](http://www.nslu2-linux.org/wiki/FAQ/DealWithAutoSpinDownOnSeagateFreeAgent)!
