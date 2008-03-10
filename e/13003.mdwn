@@ -1,10 +1,19 @@
 [[meta title="Testing VARs"]]
+
 I've noticed in some shell scripts these sorts of tests:
- if [ x$SSH_AUTH_SOCK != x ]; then
+
+	if [ x$SSH_AUTH_SOCK != x ]; then
+
 So if $SSH_AUTH_SOCK isn't set, it won't enter the if.
+
 In Bash there are other ways to test a var exists:
- [ ${SSH_AUTH_SOCK:+set} ]
+
+	[ ${SSH_AUTH_SOCK:+set} ]
+
 or
- [[ $SSH_AUTH_SOCK ]]
+
+	[[ $SSH_AUTH_SOCK ]]
+
 Though these account for WHITESPACE they do not work in every shell.
+
 Thanks to twkm on #bash for taking the time to explain this to me.

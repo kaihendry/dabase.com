@@ -1,5 +1,8 @@
 [[meta title="Case insentitive basename"]]
+
 Better than basename:
- file=mvi_0288.avi; echo ${file%.*}
- mvi_0288
+
+	file=mvi_0288.avi; echo ${file%.*}
+	mvi_0288
+
 Used here: http://trac.natalian.org/browser/projects/static/up.sh
