@@ -1,32 +1,37 @@
 [[meta title="NAT with dhcp"]]
-I assume Internet is connected on eth0
-And your internet network on eth1
-Install dhcp3-server. Make it listen on eth1
-edit /etc/dhcp3/dhcpd.conf:
- # The ddns-updates-style parameter controls whether or not the server will
- # attempt to do a DNS update when a lease is confirmed. We default to the
- # behavior of the version 2 packages ('none', since DHCP v2 didn't
- # have support for DDNS.)
- ddns-update-style none;
+
+I assume Internet is connected on eth0 and your internet network on eth1
+
+Install dhcp3-server. Make it listen on eth1. Edit /etc/dhcp3/dhcpd.conf:
+
+	# The ddns-updates-style parameter controls whether or not the server will
+	# attempt to do a DNS update when a lease is confirmed. We default to the
+	# behavior of the version 2 packages ('none', since DHCP v2 didn't
+	# have support for DDNS.)
+	ddns-update-style none;
+
 Filling in the DNS manually seems the only way it works. Ripped out /etc/resolv.conf of the gateway.
- # option definitions common to all supported networks...
- option domain-name "pp.htv.fi";
- option domain-name-servers 213.243.153.171, 213.243.153.172;
 
- default-lease-time 600;
- max-lease-time 7200;
+	# option definitions common to all supported networks...
+	option domain-name "pp.htv.fi";
+	option domain-name-servers 213.243.153.171, 213.243.153.172;
 
- # If this DHCP server is the official DHCP server for the local
- # network, the authoritative directive should be uncommented.
- authoritative;
- # Use this to send dhcp log messages to a different log file (you also
- # have to hack syslog.conf to complete the redirection).
- log-facility local7;
+	default-lease-time 600;
+	max-lease-time 7200;
 
- subnet 192.168.0.0 netmask 255.255.255.0 {
-   option routers 192.168.0.1;
-    range 192.168.0.10 192.168.0.20;
- }
-And iptables:
- iptables -t nat -F
- iptables -t nat -A POSTROUTING -o eth0 -s 192.168.0.0/24 -j MASQUERADE
+	# If this DHCP server is the official DHCP server for the local
+	# network, the authoritative directive should be uncommented.
+	authoritative;
+	# Use this to send dhcp log messages to a different log file (you also
+	# have to hack syslog.conf to complete the redirection).
+	log-facility local7;
+
+	subnet 192.168.0.0 netmask 255.255.255.0 {
+	option routers 192.168.0.1;
+	range 192.168.0.10 192.168.0.20;
+	}
+
+And finally `iptables`:
+
+	iptables -t nat -F
+	iptables -t nat -A POSTROUTING -o eth0 -s 192.168.0.0/24 -j MASQUERADE
