@@ -1,3 +1,5 @@
 [[meta title="Sorting a table"]]
+
 This is good for figuring out the mode and median I think:
- tapply(zz$x5, zz$x10, sort)
+
+	tapply(zz$x5, zz$x10, sort)
