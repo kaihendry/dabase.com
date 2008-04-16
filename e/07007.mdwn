@@ -1,3 +1,7 @@
-[[meta title="Outputting buffer as HTML"]]
-Show VIM syntax hightlighted code to the WWW!
- :so $VIMRUNTIME/syntax/2html.vim
+[[meta title="Outputting VIM buffer as HTML"]]
+
+	:TOhtml
+
+And of course the help in vim tells you much more:
+
+	:help TOhtml
