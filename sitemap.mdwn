@@ -1,0 +1,4 @@
+[[map pages="* and !*/discussion and !recentchanges
+and !ikiwiki/* and !blog/*/* and !templates/* and !tips/* and !plugins/*
+and !sandbox/* and !todo/* and !users/*
+and !*.css and !*.ico and !*.png and !*.svgz and !*.gif"]]
