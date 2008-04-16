@@ -1,0 +1,16 @@
+[[meta title="Running a second X server"]]
+
+Running another X server is good for testing
+[dwm](http://git.debian.org/?p=users/kai-guest/dwm/.git).
+
+[CTRL]+[ALT]+F6 to switch to a console. Log in and run:
+
+	startx -- :1
+
+To start you second X server.
+
+[CTRL]+[ALT]+F8 to switch to the second X server.
+
+[CTRL]+[ALT]+F7 to switch to the first X server.
+
+To kill either X server, [CTRL]+[ALT]+[DELETE]
