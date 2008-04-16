@@ -1,7 +1,15 @@
 [[meta title="Outputting VIM buffer as HTML"]]
 
+This tip applies for escaping those pesky &lt;&gt; angled brackets.
+
+TOhtml is not a built in, it's a plugin:
+
+	:let html_use_css = 1
 	:TOhtml
 
 And of course the help in vim tells you much more:
 
 	:help TOhtml
+
+
+Thanks to #vim on Freenode for the tip.
