@@ -1,6 +1,8 @@
 [[meta title="Reverting with Subversion"]]
-Bit trickier than meets the eye.
- 09:53 < hendry> I want to revert to a copy from say r1234? How do I do that?
-http://svnbook.red-bean.com/en/1.1/ch04s04.html#svn-ch-4-sect-4.2 is not what I want.
- 09:53 < hendry> svn update -r1234; svn commit # doesn't work
- 09:53 < pfn> svn merge -r HEAD:1234 ; svn commit
+
+Bit trickier than meets the eye:
+
+	09:53 < hendry> I want to revert to a copy from say r1234? How do I do that?
+	http://svnbook.red-bean.com/en/1.1/ch04s04.html#svn-ch-4-sect-4.2 is not what I want.
+	09:53 < hendry> svn update -r1234; svn commit # doesn't work
+	09:53 < pfn> svn merge -r HEAD:1234 ; svn commit
