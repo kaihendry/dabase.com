@@ -9,7 +9,7 @@
 <!-- Google CSE Search Box Ends -->
 
 ## User contributed
-[[inline actions=yes pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[inline actions=yes pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F" rootpage="u"]]
 
 ## Debian
 [[inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
