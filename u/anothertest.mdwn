@@ -1,0 +1,18 @@
+# Howto make a voice recording in Debian
+
+I did this for the [stackoverflow podcast](http://www.stackoverflow.com/).
+
+Ensure your sound devices are setup with `alsamixer -V capture`.
+
+Record with `arecord -vv -fdat stackoverflow.wav`.
+
+Playback like `aplay stackoverflow.wav`
+
+Encode to MP3 with `lame stackoverflow.wav` from [[Debian_Multimedia|e/01126]]. Or with the better free codec [OGG](http://en.wikipedia.org/wiki/Ogg) with `oggenc stackoverflow.wav`.
+
+You'll want to do this to save space:
+
+x61:~% ll stackoverflow.*
+-rw-r--r-- 1 hendry hendry 1.6M 2008-04-19 18:18 stackoverflow.ogg
+-rw-r--r-- 1 hendry hendry  25M 2008-04-19 17:58 stackoverflow.wav
+-rw-r--r-- 1 hendry hendry 2.1M 2008-04-19 18:13 stackoverflow.wav.mp3
