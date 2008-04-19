@@ -8,10 +8,8 @@
 </form>
 <!-- Google CSE Search Box Ends -->
 
-[[inline actions=yes rootpage="u/"]]
-
 ## User contributed
-[[inline pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[inline actions=yes pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## Debian
 [[inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
