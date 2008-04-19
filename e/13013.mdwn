@@ -2,16 +2,26 @@
 
 Better than basename:
 
+
 	file=mvi_0288.avi; echo ${file%.*}
+
 	mvi_0288
 
 Lets do extensions too:
 
+
 	#!/bin/bash
+
 	for i in $@
+
 	do
+
 	EXT=${i##*.}
+
 	if [ $EXT = 'iso' ] || [ $EXT = 'img' ]; then
+
 			md5sum $i > $i.MD5SUM
+
 	fi
+
 	done

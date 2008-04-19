@@ -1,3 +1,4 @@
 [[meta title="Installing something in tmp or your homedir or something"]]
 The magic prefix in the configure stage:
+
 	--prefix=/tmp/something

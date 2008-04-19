@@ -1,3 +1,4 @@
 [[meta title="Spaces in filename?"]]
 Get rid of them.
+
 	rename 's/\s/-/g' *.jpg

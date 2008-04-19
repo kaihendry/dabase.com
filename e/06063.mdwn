@@ -1,6 +1,8 @@
 [[meta title="Running other programs"]]
 From http://www.aaronsw.com/weblog/001189#comments
+
 	import os
+
 	def markdown(text):
     i, o = os.popen2("perl Markdown.pl") # let the Perl code take it
     i.write(text); i.close()

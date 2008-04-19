@@ -1,4 +1,5 @@
 [[meta title="Sendmail mail when back online"]]
 Run:
+
 	sendmail -q
 and pray

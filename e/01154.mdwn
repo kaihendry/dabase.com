@@ -1,10 +1,13 @@
 [[meta title="Screencasting, YouTube-y tips"]]
 Record voice to WAV, then encode to MP3
 http://www.togaware.com/linux/survivor/Command_Line.html
+
 	sound-recorder -P recording.wav
 or perhaps:
+
 	arecord -d 10 -f cd -t wav foobar.wav
 To playback:
+
 	aplay recording.wav
 Troubleshoot with alsamixer and perhaps Skype to check your mic settings. You shouldn't require mic boost btw.
 You probably want to look at debian multimedia:
@@ -14,5 +17,6 @@ To encode WAV to MP3, use lame from the debian-multimedia repositry.
 For video, record to oggtheora. Encode to OGG using ffmpeg2theora. An upload script example:
 http://svn.natalian.org/projects/static/up.sh
 To record a screencast, see:
+
 	recordmydesktop
 For OGG playback, mplayer.

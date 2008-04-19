@@ -1,6 +1,8 @@
 [[meta title=".mailcap"]]
 #text/html                      ; lynx -dump -force_html %s             ; copiousoutput
+
 	text/html                       ; w3m -T text/html -dump '%s'           ; copiousoutput; description="HTML Text";
+
 	text/plain                      ; cat %s                                ; copiousoutput
 Look here too:
 http://www.cs.helsinki.fi/u/hendry/content/mailcap.show

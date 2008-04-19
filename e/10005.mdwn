@@ -1,4 +1,5 @@
 [[meta title="Latin1 Characters"]]
 You know! Like цед
 Type them in normally into the tex file, make sure this package line is declared:
+
 	\usepackage[T1]{fontenc}

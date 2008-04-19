@@ -1,10 +1,15 @@
 [[meta title="Bits and Bytes"]]
 BIT = Binary digIT
 Byte = 8 bits
+
 	0 = 00000000
+
 	1 = 00000001
+
 	...
+
 	254 = 11111110
+
 	255 = 11111111
 2 bytes = 16 bits
 4 bytes = 32 bits

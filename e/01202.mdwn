@@ -25,18 +25,25 @@ Create the ext3 filesystem:
 
 Setup the crypttab to tell the system how to unlock the disk
 
+
 	x61:~% cat /etc/crypttab
+
 	# <target name> <source device>         <key file>      <options>
+
 	crypt /dev/x61/crypt none checkargs=ext2,noauto
 
 An fstab line to mount it
 
+
 	x61:~% grep crypt /etc/fstab
+
 	/dev/mapper/crypt /home/hendry/crypt ext3    defaults,noauto,user        0       0
 
 SO to start using my special encrypted folder, I now have to run:
 
+
 	sudo cryptdisks_start crypt
+
 	mount /home/hendry/crypt
 
 So here is what I have my disk & LVM finally setup as:

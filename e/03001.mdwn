@@ -14,8 +14,11 @@ gpg --gen-key
 tip for creating passwords was told to me by another friend named <a
 href="http://www.fysh.org/~athan/">Athan</a>. Basically he says:</p>
 <ol>
+
 	<li>Think of a phrase e.g. the fox jumped over the fence</li>
+
 	<li>Take the first or second letter of the phrase to make a word e.g. (with 2nd letter) houvhe</li>
+
 	<li>Throw some funny chars in there like ! and 31337(eleet or elite) transition chars like o to 0 and e to 3.</li>
 </ol>
 <p>With your gpg or pgp (they are the same to me) passphrase, it really needs

@@ -1,3 +1,4 @@
 [[meta title="Cat redirects"]]
 Like notepad :)
+
 	hendry@bogrund-17:~$ ssh anyrhine@melkinkari.cs.helsinki.fi 'cat >xyzzy'

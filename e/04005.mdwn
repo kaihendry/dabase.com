@@ -1,12 +1,21 @@
 [[meta title="Encode your email address to protect yourself from spam bots"]]
 This is what I use. I hate mailto: so I don't bother with the fancier ones...
 http://www.wbwip.com/wbw/emailencoder.html
+
 	debian$ python
+
 	Python 2.3.5 (#2, Sep  4 2005, 22:01:42)
+
 	[GCC 3.3.5 (Debian 1:3.3.5-13)] on linux2
+
 	Type "help", "copyright", "credits" or "license" for more information.
+
 	>>> import array
+
 	>>> s = 'hendry@example.com'
+
 	>>> print '&#%03i;'*len(s) % tuple(array.array('B',s))
+
 	&#104;&#101;&#110;&#100;&#114;&#121;&#064;&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#046;&#099;&#111;&#109;
+
 	>>>

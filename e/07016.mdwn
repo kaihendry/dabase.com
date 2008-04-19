@@ -1,11 +1,19 @@
 [[meta title="Commenting certain lines"]]
 An example with latex
+
 	a kitchen wall in the near future \cite{tld}.
+
 	\nomenclature{Mobile}{Small wireless computing device}
+
 	\nomenclature{PDA}{Personal Digital Assitants}
+
 	:%s/^\\nomenclature/%\\nomenclature/c
+
 	a kitchen wall in the near future \cite{tld}.
+
 	%\nomenclature{Mobile}{Small wireless computing device}
+
 	%\nomenclature{PDA}{Personal Digital Assitants}
+
 	:%s/^%\\nomenclature/\\nomenclature/c
 Gets back.

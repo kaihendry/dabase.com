@@ -9,8 +9,12 @@ It also requires WRITE permissions just to read it!
 Trying to get ssh access and viewcvs working ?
 READ:
 http://svnbook.red-bean.com/svnbook/ch06s05.html
+
 	hendry@bilbo:~$ sudo chown -R :svn public; chmod -R g+rwx public; chmod g+s public/db/
+
 	hendry@bilbo:~$ egrep svn /etc/group
+
 	svn:x:1008:www-data,hendry
 Watch it!
+
 	watch tree -pg repo/

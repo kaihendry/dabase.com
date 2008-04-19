@@ -1,9 +1,15 @@
 [[meta title="Normalizing whitespace"]]
 From somewhere in Mark Pilgrim's highly recommended http://diveintopython.org FREE book.
+
 	" ".join(s.split())
 Update:
+
 	10:39 <Pythy>    map(lambda s : re.sub('\s+',' ',s), crex.match(s).groups())
+
 	10:39 <Pythy> was for a more complex case than simply squeezing-down spans of whitespace.
+
 	10:40 <Pythy> s = '  \t  AAA   \r\n  BBB  ';  s =  re.sub('\s+',' ',s.strip());   s #==> 'AAA BBB'
+
 	10:41 <Pythy> is all you need to do what s = ' '.join(s.split()) does.
+
 	10:42 <Pythy> the additional map() and .match() was to only apply this to specific extracts.

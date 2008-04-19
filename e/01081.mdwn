@@ -1,4 +1,5 @@
 [[meta title="Grepping"]]
 For a negative search:
+
 	egrep -v
 Also known as invert-match

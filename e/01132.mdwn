@@ -1,12 +1,20 @@
 [[meta title="Installing java"]]
 Debian's java-package is excellent.
+
 	sudo apt-get install java-package
 Read the docs:
+
 	vim /usr/share/doc/java-package/README.Debian
 I went for the IBM sdk. They want you to register. Use bugmenot.com in this case.
+
 	frodo$ make-jpkg IBMJava2-SDK-142.tgz
+
 	frodo$ sudo dpkg -i ibm-j2sdk1.4_1.4.2_i386.deb
+
 	frodo$ java -version
+
 	java version "1.4.2"
+
 	Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2)
+
 	Classic VM (build 1.4.2, J2RE 1.4.2 IBM build cxia32142-20050609 (JIT  enabled: jitc))

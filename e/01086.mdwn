@@ -2,22 +2,39 @@
 
 For a summary of the changes in a diff:
 
+
 	hendry@scrooge-15:~/Mail/mail-attachments$ diff -uNr sprng2.0-orig/ sprng2.0 |diffstat
+
 	EXAMPLES/Makefile~         |  195 ------
+
 	EXAMPLES/gen_types_menu.h  |   10
+
 	EXAMPLES/genf_types_menu.h |   10
+
 	EXAMPLES/sprngD            |binary
+
 	Makefile                   |    6
+
 	SRC/make.GENERIC           |    8
+
 	SRC/pmlcg/Makefile         |    2
+
 	SRC/pmlcg/longlong.h       |  406 ++++++------
+
 	SRC/pmlcg/longlong.h~      | 1451 ---------------------------------------------
+
 	SRC/pmlcg/pmlcg.c          |    6
+
 	SRC/pmlcg/pmlcg.c~         |  797 ------------------------
+
 	SRC/sprng/Makefile         |    2
+
 	cleanup.sh                 |    6
+
 	lib/libsprngtest.a         |binary
+
 	make.CHOICES               |    4
+
 	15 files changed, 214 insertions(+), 2689 deletions(-)
 
 

@@ -2,21 +2,30 @@
 I do not recommend OpenVZ user vserver instead!
 http://linux-vserver.org/Welcome_to_Linux-VServer.org
 You need the openvz patched kernel:
+
 	deb http://download.openvz.org/debian etch main
 See what resources the Virtual Environment (VE) is using:
+
 	sudo vzcalc -v 100
 What VEs are currently running?
+
 	sudo vzlist
 Start the machine:
+
 	sudo vzctl start 100
 Stop the machine:
+
 	sudo vzctl stop 100
 Get inside:
 
+
 	sudo vzctl enter 100
 Create a machine called simon:
+
 	sudo debootstrap --arch i386 etch /var/lib/vz/private/100 http://ftp.us.debian.org/debian
+
 	sudo vzctl set 100 --applyconfig vps.basic --save
+
 	sudo vzctl set 100 --ipadd 192.168.2.66 --nameserver 72.29.96.250 --hostname simon --save
 More on networking:
 The guide was:
@@ -36,6 +45,9 @@ sudo iptables -t nat -A PREROUTING -p tcp -d 72.249.20.194 --dport 80
 -i eth0 -j DNAT --to-destination 192.168.2.66:80
 It works well!
 Increasing disk space and memory allocation:
+
 	sudo vzctl set 100 --diskspace 10G --save
+
 	sudo vzctl set 100 --vmguarpages $((256 * 256)) --save
+
 	sudo vzctl set 100 --privvmpages $((256 * 1024)) --save

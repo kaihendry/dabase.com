@@ -3,19 +3,27 @@
 Goto a clean directory
 Get new
 
+
 	wget http://maradns.org/download/maradns-1.0.35.tar.gz
 Call it the right name
+
 	mv maradns-1.0.35.tar.gz maradns_1.0.35.orig.tar.gz
 Get old 1.0.24
+
 	apt-get source maradns
 Extract and patch(debianize) new source
+
 	cd maradns-1.0.34/
+
 	uupdate ../maradns_1.0.35.orig.tar.gz
 Check it out:
+
 	cd ../maradns-1.0.35
 Edit the changelog if desired.
 Build
+
 	debuild -us -uc
 Run lintian on .changes
 Upload to repo
+
 	dput -u local maradns_1.0.35-1_i386.changes

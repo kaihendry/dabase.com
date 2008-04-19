@@ -1,6 +1,8 @@
 [[meta title="Not using readlines (save memory)"]]
 Regarding file.readlines(). It doesn't create a huge list in memory does it?
+
 	13:06 < sjj> yeah, it does.
+
 	13:06 < sjj> just use, 'for line in file: ...'
 use fileinput with bufsize=32768
 http://www.python.org/doc/current/lib/module-fileinput.html

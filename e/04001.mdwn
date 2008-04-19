@@ -4,9 +4,13 @@ So you want to learn how to make a webpage?
 <p>Do not code html for browsers, code to standards. I recommend using XHTML
 for holding information, and CSS to decorate it.</p>
 <ul>
+
 	<li><a href="http://www.w3.org/MarkUp/Guide/">HTML primer</a></li>
+
 	<li><a href="http://www.w3.org/MarkUp/Guide/Style">CSS primer</a></li>
+
 	<li><a href="http://www.cs.helsinki.fi/u/hendry/work/example.shtml.txt">Typical XHTML template</a></li>
+
 	<li><a href="http://www.cs.helsinki.fi/u/hendry/simpstyle.css">A basic CSS to file to peer at</a></li>
 </ul>
 <blockquote>

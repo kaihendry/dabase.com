@@ -1,4 +1,5 @@
 [[meta title="Time in Ubuntu"]]
 This should be set by something like:
+
 	/etc/network/if-up.d/ntpdate
 When your network interface comes up.

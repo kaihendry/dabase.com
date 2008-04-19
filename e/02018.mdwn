@@ -1,3 +1,4 @@
 [[meta title="Mark all mail read"]]
 Pried this off #mutt on Freenode
+
 	;WN

@@ -1,5 +1,6 @@
 [[meta title="SELinux"]]
 How to turn SELinux off:
+
 	setenforce 0
 Permanently disable selinux via /etc/sysconfig/selinux file
 OR (much harder)

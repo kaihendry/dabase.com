@@ -1,3 +1,4 @@
 [[meta title="date time for file name"]]
 I forget OK?
+
 	mv minimo.png minimo`date +%Y-%m-%d`.png

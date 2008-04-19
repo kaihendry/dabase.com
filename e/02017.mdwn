@@ -1,17 +1,31 @@
 [[meta title="Exim4 Etch Configuration"]]
 99.56% of systems should be configured this way. mail.dabase.com is my SMTP relay. Put your user/pass in
+
 	/etc/exim4/passwd.client
 The magic:
+
 	sam$ cat /etc/exim4/update-exim4.conf.conf | grep -v ^#
+
 	dc_eximconfig_configtype='satellite'
+
 	dc_other_hostnames=''
+
 	dc_local_interfaces=''
+
 	dc_readhost='dabase.com'
+
 	dc_relay_domains=''
+
 	dc_minimaldns='false'
+
 	dc_relay_nets=''
+
 	dc_smarthost='mail.dabase.com'
+
 	CFILEMODE='644'
+
 	dc_use_split_config='false'
+
 	dc_hide_mailname='true'
+
 	dc_mailname_in_oh='true'

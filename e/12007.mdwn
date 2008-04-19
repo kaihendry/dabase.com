@@ -1,9 +1,14 @@
 [[meta title="Silly security with TCP wrappers hosts.allow"]]
 I'm not a racist. ;)
+
 	[root@server ~]# cat /etc/hosts.allow
+
 	sshd: *.au
+
 	[root@server ~]# cat /etc/hosts.deny
+
 	sshd: ALL
+
 	[root@server ~]#
 Somewhat related to:
 http://natalian.org/archives/2005/06/28/ssh-attacks/

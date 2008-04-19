@@ -1,14 +1,26 @@
 [[meta title="repr"]]
 Watch out when printing floats:
+
 	13:07 < hendry> print (0.0424, 0.0343) # prints (0.0424, 0.034299999999999997), why not: (0.0424, 0.0343) ?
+
 	13:07 < Erwin> hendry: because there is no such floating point number as 0.0343
+
 	13:07 < Erwin> python used to round when printing at random times but does not do that anymore.
+
 	13:07 < hendry> print (0.0343) is ok though??
+
 	13:08 < hendry> bit inconsistent seemingly
+
 	13:08 < Erwin> when you print a single value,with print, it uses str which rounds
+
 	13:08 < Erwin> when you print a tuple or a list with str, each item is repr'ed
+
 	13:09 < Erwin> >>> print (0.0343,)
+
 	13:09 < Erwin> (0.034299999999999997,)
+
 	13:09 < Erwin> this makes a tuple
+
 	13:09 < hendry> Thanks Erwin
+
 	13:09 < hendry> You made that clear.

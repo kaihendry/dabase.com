@@ -1,17 +1,30 @@
 [[meta title="Adding lists"]]
 import operator
+
 	>>> list1 = [1,0]
+
 	>>> list2 = [1,2]
+
 	>>> list3 = list1 + list2
+
 	>>> list3
+
 	[1, 0, 1, 2]
 Ok, that is one way, here is another:
+
 	>>> list3 = map(operator.add, list1,list2)
+
 	>>> list3
+
 	[2, 2]
 Another comment from the very helpful #python, is:
+
 	08:40 < deltab_> Numeric.add(list1, list2)
+
 	08:43 < tarook> get pynumeric
+
 	14:02 < hendry> How would I combine/append ['hi', 'there'] and ['!', '.'] to ['hi!', 'there.'] ?
+
 	14:03 < Jerub> hendry: map(operator.add, l1, l2)
+
 	14:03 < moshez> hendry: [x+y for (x,y) in zip(l1, l2)]

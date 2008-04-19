@@ -2,4 +2,5 @@
 
 Pretty shoddy, but this might work:
 
+
 	$value = preg_replace('/\x{FEFF}/', '', $value);

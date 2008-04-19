@@ -1,11 +1,16 @@
 [[meta title="Passwords"]]
 Storing passwords securely?
+
 	import md5
+
 	from getpass import getpass
+
 
 	password = 'test'
 
+
 	md5password = md5.new(password).digest()
+
 
 	while 1:
 

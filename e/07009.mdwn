@@ -1,3 +1,4 @@
 [[meta title="Wordcount"]]
 Find amount of words in a buffer:
+
 	:!wc -w %

@@ -1,6 +1,9 @@
 [[meta title="Viewing certain pictures"]]
 You need bash version 3 or greater:
+
 	frodo$ echo ${BASH_VERSION[@]}
+
 	3.1.5(1)-release
 View the picture range from 2600 to 2650:
+
 	frodo$ feh img_{2600..2650}.jpg

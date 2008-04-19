@@ -1,10 +1,13 @@
 [[meta title="Template"]]
 I generally need these two lines when I begin writing a script:
+
 	#!/usr/bin/env python2
+
 
 	if __name__ == '__main__':
 IF the #! does not work, your file is probably encoded in a DOS format!
 Fix it in vim with:
+
 	:se ff=unix
 
 

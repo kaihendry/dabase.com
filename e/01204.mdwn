@@ -5,6 +5,7 @@ Running another X server is good for testing
 
 [CTRL]+[ALT]+F6 to switch to a console. Log in and run:
 
+
 	startx -- :1
 
 To start you second X server.

@@ -2,11 +2,15 @@
 With iptables. There is a couple of ways to do iptables. Inserting or appending is the two categories.
 If you made mistakes you can be locked out the system.
 THOUGH:
+
 	-A RH-Firewall-1-INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 before any DROP/REJECT rules, you'll be fine
 Play dumb and use Red Hat's GUI if you are a newbie:
+
 	up2date --install system-config-securitylevel
+
 	system-config-securitylevel
+
 	service iptables status
 Edit the :
 /etc/sysconfig/iptables
@@ -44,6 +48,8 @@ COMMIT
 </html>
 TEST YOUR FIREWALL! netcat and nmap
 In RH to restart the service:
+
 	sudo service iptables restart
 And check:
+
 	iptables -vnxL

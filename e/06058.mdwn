@@ -2,12 +2,17 @@
 < hendry> A list of strings I guess is sorted alphabetically with a .sort(). Is there a similar shortcut to sort the list by size of the string?
   < dotz> hendry: help(list.sort)
   < dotz> hendry: note the cmpfunc argument.
+
 	>>> help(list.sort)
+
 	Help on method_descriptor:
+
 	sort(...)
     L.sort(cmpfunc=None) -- stable sort *IN PLACE*; cmpfunc(x, y) -> -1, 0, 1
 Docs are little skimp of details, like:
+
 	13:19 < h4ngedm4n> cmp(x,y) -1: x<y 0:x=y 1:x>y iirc
+
 	13:19 < Moof> 0 is equal, -1 means x is smaller than y, 1 means x is larger than y
 Alternatively:
   < moshez> dotz: please don't give silly answers
@@ -18,6 +23,7 @@ Alternatively:
 
   < moshez> l = [x[1] for x in l]
 My code sample:
+
 	class Listsort:
     def unique(self, list):
         """ Return (sorted) unique elements """
@@ -39,6 +45,7 @@ My code sample:
 
         if len(x) == len(y):
             return 0
+
 
 	if __name__ == '__main__':
     x = Listsort()

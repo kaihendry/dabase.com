@@ -1,3 +1,4 @@
 [[meta title="Counting lines in a file"]]
 This should do it:
+
 	print 'Line count: %s' % len(open(file).readlines())

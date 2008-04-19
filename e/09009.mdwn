@@ -1,4 +1,6 @@
 [[meta title="SVK: Missing file"]]
 Don't know why it went missing in the first place...
+
 	'!' item is missing (removed by non-svK command) or incomplete
+
 	svk revert --recursive

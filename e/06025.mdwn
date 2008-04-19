@@ -1,29 +1,50 @@
 [[meta title="Constructing and then Printing/Writing a simple XML file with dom"]]
 Here is a simple XML snippet:
+
 	<?xml version="1.0" ?>
+
 	<div class="test">
         <h1>
                 Hello World
         </h1>
+
 	</div>
 Now, here is a very simple example of how I would go about constructing it using python's minidom in 2.2.
+
 	#!/usr/bin/env python2
+
 	import xml.dom.minidom
+
 	file_object = open("/tmp/test.xml", "w")
+
 	newdoc = xml.dom.minidom.Document()
+
 	div = newdoc.createElement("div")
+
 	div.setAttribute('class', 'test')
+
 	newdoc.appendChild(div)
+
 	h1 = newdoc.createElement("h1")
+
 	headertext = newdoc.createTextNode('Hello World')
+
 	h1.appendChild(headertext)
+
 	div.appendChild(h1)
+
 	# Show it on screen
+
 	print newdoc.toprettyxml()
+
 	newdoc.writexml(file_object)
+
 	file_object.close()
 The written XML is not pretty mind:
+
 	hendry@bogrund-14:/tmp$ cat test.xml
+
 	<?xml version="1.0" ?>
+
 	<div class="test"><h1>Hello World</h1></div>hendry@bogrund-14:/tmp$
 Advice: When creating text nodes it wants strings, not integers etc. You will get strange error messages when you do not pass it strings, which might cost you time debugging.

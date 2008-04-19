@@ -1,8 +1,12 @@
 [[meta title="Searching and Replacing"]]
 All lines
+
 	:%s
 The the line you are editing:
+
 	:s
 Options :
+
 	g - all occurances
+
 	c - confirm replacements

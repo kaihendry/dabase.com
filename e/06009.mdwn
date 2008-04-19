@@ -2,5 +2,6 @@
 for k,v in os.environ.items():
        print "%s=%s" % (k,v)
 Preferred method.
+
 	print "\n".join(["%s=%s" % (k,v) for k,v in os.environ.items()])
 However, this is faster. Just one print. Ho hummm...

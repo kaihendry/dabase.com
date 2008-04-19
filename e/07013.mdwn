@@ -1,7 +1,9 @@
 [[meta title="Literal Char"]]
 IN INSERT MODE !
+
 	C-v C-h
 for ^H
+
 	C-v TAB
 for ^I
 This is a must for Makefiles...

@@ -2,5 +2,6 @@
 Gem's default directory for gem installations is wrong:
     --install-dir /usr/lib/ruby/gems/1.8
 This is better:
+
 	frodo$ sudo gem install -i /usr/local/lib/site_ruby/1.8/rubygems/ login_generator
 gems gems

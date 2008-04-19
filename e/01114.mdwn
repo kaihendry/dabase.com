@@ -1,5 +1,6 @@
 [[meta title="Library usage"]]
 So what does a binary depend on? Use ldd:
+
 	bilbo$ ldd /bin/ls
                 librt.so.1 => /lib/tls/librt.so.1 (0x4001f000)
         libacl.so.1 => /lib/libacl.so.1 (0x40025000)

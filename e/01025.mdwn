@@ -18,6 +18,7 @@ And more:
 
     hendry@bilbo:~$ tar --exclude=CVS --exclude=*.pdf --exclude=*.vim --exclude=*.pyc -cf datastructuresproject.tar datastructuresproject/
     hendry@bilbo:~$ ls datastructuresproject/
+
 	common.py  common.pyc  CVS  efficient.py  efficient.pyc  match.py  match.pyc  naive.py  p333-aho-corasick.pdf  Session.vim  test.py  text  timings.py  trans.py  trans.pyc
 
 To extract:

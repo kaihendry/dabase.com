@@ -1,3 +1,4 @@
 [[meta title="Fiddling with PYTHONPATH in bash"]]
 Nightmare :)
+
 	hendry@bogrund-14:~/lupy/Lupy-0.1.5.1a/lupy$ export PYTHONPATH=$PYTHONPATH:/home/hendry/lupy/Lupy-0.1.5.1a/

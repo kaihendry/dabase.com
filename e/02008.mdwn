@@ -1,3 +1,4 @@
 [[meta title="Trick for subscribing to a mailing list"]]
 Cool huh ?
+
 	echo subscribe | mail debian-fi-request@lists.anon.com

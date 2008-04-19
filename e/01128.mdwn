@@ -1,9 +1,12 @@
 [[meta title="Viewing a firewall"]]
 Check it out!
+
 	sudo iptables -vnxL
 With line numbers !
+
 	iptables -vnxL --line-numbers
 For:
+
 	iptables -I
 Inserts!
 Cool!

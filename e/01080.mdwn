@@ -1,7 +1,9 @@
 [[meta title="Reading a man page"]]
 Good when delving in the sources:
+
 	nroff -man amanpage.3
 Search for something, try:
+
 	man -k foobar
 1. command line
 2. system calls
