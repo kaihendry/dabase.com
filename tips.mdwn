@@ -5,7 +5,7 @@
 <form action="http://www.google.com/cse" id="cse-search-box">
   <input type="hidden" name="cx" value="012996381534923695250:e3cymw51mgs" />
   <input style="font-size: 2em;" type="text" name="q" size="25" />
-  <input style="font-size: 2em;" type="submit" name="sa" value="Search amongst Kai's tips" />
+  <input style="font-size: 2em;" type="submit" name="sa" value="Search amongst the tips" />
 </form>
 <!-- Google CSE Search Box Ends -->
 

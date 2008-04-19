@@ -6,7 +6,7 @@ Ensure your sound devices are setup with `alsamixer -V capture`.
 
 Record with `arecord -vv -fdat stackoverflow.wav`.
 
-Ensure the WAV file is less than 90 seconds with `wavinfo stackoverflow.wav` from [wavbreaker](http://packages.qa.debian.org/w/wavbreaker.html) or good old sox with `sox stackoverflow.wav -e stat`.
+Ensure the WAV file is less than 90 seconds with good old [sox](http://packages.qa.debian.org/s/sox.html) with `sox stackoverflow.wav -e stat`.
 
 Playback like `aplay stackoverflow.wav`
 
