@@ -9,7 +9,7 @@
 </form>
 <!-- Google CSE Search Box Ends -->
 
-## User contributed
+## Please contribute a tip
 [[inline actions=yes pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F" rootpage="u"]]
 
 ## Debian
