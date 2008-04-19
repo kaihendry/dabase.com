@@ -1,4 +1,4 @@
 [[meta title="how do I call a function in my class?"]]
 My lazy living is indebted to #python
- 14:10 < hendry> how do you call a function in my class? like self.%s() % func ??
- 14:11 < deltab> getattr(self, func)()
+	14:10 < hendry> how do you call a function in my class? like self.%s() % func ??
+	14:11 < deltab> getattr(self, func)()

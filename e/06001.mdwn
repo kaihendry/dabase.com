@@ -1,16 +1,16 @@
 [[meta title="StripoGram - use strings"]]
 Kai Hendry wrote:
- >>>>f = open('/home/hendry/lookup.html', 'r+')
- >>>>f
- >>>
- ><open file '/home/hendry/lookup.html', mode 'r+' at 0x81bbfb0>
- >
- >>>>html = f.readlines()
- >>>>html
+	>>>>f = open('/home/hendry/lookup.html', 'r+')
+	>>>>f
+	>>>
+	><open file '/home/hendry/lookup.html', mode 'r+' at 0x81bbfb0>
+	>
+	>>>>html = f.readlines()
+	>>>>html
 html is a list of lines here. It needs to be a string.
 try:
- html = f.read()
- mylumpofcoolcleancollectedhtml = html2safehtml(html,valid_tags=('b', 'a',
- 'i', 'br', 'p'))
+	html = f.read()
+	mylumpofcoolcleancollectedhtml = html2safehtml(html,valid_tags=('b', 'a',
+	'i', 'br', 'p'))
 cheers,
 Chris

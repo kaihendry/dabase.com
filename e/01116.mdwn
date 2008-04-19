@@ -1,7 +1,7 @@
 [[meta title="SVN ID AUTHOR DATE information"]]
 http://svnbook.red-bean.com/svnbook/book.html#svn-ch-7-sect-2.4
 This stuff is such a pain in subversion.
- svn propset svn:keywords "Id" jarj.py
- vim jarj.py
+	svn propset svn:keywords "Id" jarj.py
+	vim jarj.py
 Add $Id$ somewhere.
- svn commit -m "keyword added"
+	svn commit -m "keyword added"

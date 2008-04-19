@@ -1,3 +1,3 @@
 [[meta title="Getting rid of frozen messages"]]
 Stupid fecking frozen messages. Can you re-send them!? I haven't figured out to. So I'll just delete them:
- sam$ sudo /usr/sbin/exim -bpu | fgrep "*** fro" | awk '{print $3}' | xargs sudo /usr/sbin/exim -Mrm
+	sam$ sudo /usr/sbin/exim -bpu | fgrep "*** fro" | awk '{print $3}' | xargs sudo /usr/sbin/exim -Mrm

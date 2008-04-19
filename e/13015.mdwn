@@ -1,6 +1,6 @@
 [[meta title="Deleting french movies with spaces"]]
 This doesn't work:
- $ find . -name "*FR*" | xargs rm
+	$ find . -name "*FR*" | xargs rm
 Strange filenames and spaces cause it to b0rk.
 This does:
- $ find . -name "*FR*" -print0|xargs -0 rm
+	$ find . -name "*FR*" -print0|xargs -0 rm

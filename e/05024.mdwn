@@ -2,8 +2,8 @@
 I won't use Gmail. I use mutt. :)
 But for my sister it may be quite a useful interface.
 Her /home/jutta/.forward looks like:
- jutta
- jhendry@gmail.com
+	jutta
+	jhendry@gmail.com
 Here is the email I wrote:
 People send mail to jutta@prazefarm.co.uk
 

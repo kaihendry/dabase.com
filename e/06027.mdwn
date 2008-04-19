@@ -1,9 +1,9 @@
 [[meta title="Returning first word on a line in a file by line number example"]]
 
 Note raise! Very useful.
- #!/usr/bin/env python2
+	#!/usr/bin/env python2
 
- def getlineword(filelist, lineno):
+	def getlineword(filelist, lineno):
         """
         Line number one is the first line
         Returns first word on the line.
@@ -12,7 +12,7 @@ Note raise! Very useful.
                 return filelist[lineno-1].split()[0]
         except:
                 raise
- if __name__ == '__main__':
+	if __name__ == '__main__':
         """
         Does a head
         """

@@ -1,7 +1,7 @@
 [[meta title="Installing libraries into your $HOME"]]
 Sometimes you don't have root, or worse, no debian packages. =)
- hendry@melkinpaasi:~/buildbot/buildbot-0.3.4$ python2.2 ./setup.py install --prefix=$HOME
+	hendry@melkinpaasi:~/buildbot/buildbot-0.3.4$ python2.2 ./setup.py install --prefix=$HOME
 Results in:
- copying build/lib/buildbot/clients/gtkPanes.py -> /home/fs/hendry/lib/python2.2/site-packages/buildbot/clients
- byte-compiling /home/fs/hendry/lib/python2.2/site-packages/buildbot/pbutil.py to pbutil.pyc
+	copying build/lib/buildbot/clients/gtkPanes.py -> /home/fs/hendry/lib/python2.2/site-packages/buildbot/clients
+	byte-compiling /home/fs/hendry/lib/python2.2/site-packages/buildbot/pbutil.py to pbutil.pyc
 So distutils installs yourlibs conveniently in your $HOME/lib/python2.2/site-packages/yourlibs

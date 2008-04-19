@@ -1,3 +1,3 @@
 [[meta title="Standards versions diff"]]
 See:
- /usr/share/doc/debian-policy/upgrading-checklist.txt.gz
+	/usr/share/doc/debian-policy/upgrading-checklist.txt.gz

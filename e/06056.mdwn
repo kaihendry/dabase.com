@@ -9,5 +9,5 @@ Otherwise:
         subset = d.keys()
         return subset
 Or list comp:
- [x for x in data if data.count(x) == 1]
+	[x for x in data if data.count(x) == 1]
 Or with sets.

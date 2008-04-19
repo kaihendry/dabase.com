@@ -1,14 +1,14 @@
 [[meta title="Parsing XML for the text/cdata between a particular start/end tag"]]
 Here is a code snippet whereby, it would load up the file object into memory, and get the text between a tag. For example a tag such as:
- <school>University of Helsinki</school>
+	<school>University of Helsinki</school>
 contained in a example file /tmp/myinfo.xml
 I would now run make use of the snippet like:
- file_object = open('/tmp/myinfo.xml')
- print parse(file_object, 'school')
- file_object.close()
+	file_object = open('/tmp/myinfo.xml')
+	print parse(file_object, 'school')
+	file_object.close()
 The snippet:
- from xml.dom import minidom
- def parse(infile, tag):
+	from xml.dom import minidom
+	def parse(infile, tag):
         output = ''
         xmldoc = minidom.parse(infile)
         grab = xmldoc.getElementsByTagName(tag)
@@ -19,8 +19,8 @@ The snippet:
                         output += node.data
         return output + '\n'
 Notice I iterated through "grab", as in XML the earlier piece of xml could have be written like:
- <school>
- University
+	<school>
+	University
                 of
- Helsinki
+	Helsinki
                              </school>

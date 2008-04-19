@@ -1,5 +1,5 @@
 [[meta title="Forwarding mail to another account"]]
 Edit:
- sudo vim /etc/aliases
+	sudo vim /etc/aliases
 User 'test' wants mail forwarded to home address, test@example.com. Add line:
- test: test,test@example.com
+	test: test,test@example.com

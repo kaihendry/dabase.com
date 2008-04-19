@@ -1,6 +1,6 @@
 [[meta title="Searching mail"]]
 Limit the list of displayed e-mails in a mail folder to those with a "string" in their body:
- l ~b "string"
+	l ~b "string"
 BUT it does involve having all the mails. So if you use a remote IMAP, not such a good idea.
 IDEALY your IMAP server should implement SEARCH.
 See page 37 of:

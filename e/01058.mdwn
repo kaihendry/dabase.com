@@ -1,5 +1,5 @@
 [[meta title="Subversion CVS ROOT"]]
 http://subversion.tigris.org/project_faq.html
- export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
+	export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
 Equates to:
- svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/svn
+	svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/svn

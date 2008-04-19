@@ -1,8 +1,8 @@
 [[meta title="TODO list"]]
 
 Using:
- \usepackage{amsfonts}
- \usepackage{enumerate}
+	\usepackage{amsfonts}
+	\usepackage{enumerate}
 And the command:
- \begin{enumerate}[$\Box$]
+	\begin{enumerate}[$\Box$]
 And you have a todo list!

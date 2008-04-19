@@ -1,3 +1,3 @@
 [[meta title="Re-logging in (for taking on new permission settings)"]]
 This is useful for taking on new permission settings :
- hendry@bogrund-17:~$ exec su - $USER
+	hendry@bogrund-17:~$ exec su - $USER

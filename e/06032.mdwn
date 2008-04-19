@@ -1,5 +1,5 @@
 [[meta title="Iterating through two (equal) lists"]]
 Must find the docs about this "zip":
- >>> for i,j in zip(list1, list2):
- ...     print i
- ...     print j
+	>>> for i,j in zip(list1, list2):
+	...     print i
+	...     print j

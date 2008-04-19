@@ -1,6 +1,6 @@
 [[meta title="Roll back to previous package ! DOWNGRADING"]]
 Somethings broke?
- cd /var/cache/apt/archives
+	cd /var/cache/apt/archives
 And install the older or previous package version.
 I did this to get a bad postfix upgrade working. Unfortunately it corrupted my new version's mailq.
 Oh well

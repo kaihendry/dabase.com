@@ -3,7 +3,7 @@ http://fsfeurope.org/projects/education/argumentation.en.html
 http://www.schoolforge.net/
 http://casestudy.seul.org/
 http://linuxlab.org.za/
- * Teachers encourage kids to steal
- * Kids are stimulated by access to information
- * culture of learning and the sharing of knowledge
- * fosters a culture of collaboration in our information society
+	* Teachers encourage kids to steal
+	* Kids are stimulated by access to information
+	* culture of learning and the sharing of knowledge
+	* fosters a culture of collaboration in our information society

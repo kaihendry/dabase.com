@@ -1,5 +1,5 @@
 [[meta title="Bashing carefully"]]
 Must be careful
- -x
- -e
- set -e
+	-x
+	-e
+	set -e

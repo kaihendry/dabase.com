@@ -1,5 +1,5 @@
 [[meta title="An XHTML or a XHTML ?"]]
 Is it, an XHTML, or a XHTML ?
- 16:12 <@Hixie> an
- 16:12 <@Hixie> imho
- 16:13 <@draq> :)
+	16:12 <@Hixie> an
+	16:12 <@Hixie> imho
+	16:13 <@draq> :)

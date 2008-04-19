@@ -2,14 +2,14 @@
 
 http://www.tex.ac.uk/tex-archive/macros/latex/required/tools/enumerate.dtx
 You need the package which is in the latex2e distro(I think):
- \usepackage{enumerate}
+	\usepackage{enumerate}
 Check the URL for the options. For some nice roman numerals I use  the token '[i.]':
- \begin{enumerate}[i.]
- \item The images have no embedded metadata.
- \item The researcher opens the images and imports the file.
- \item Then the researcher views the images with the imported annotation and
- can see if it fits any of the images.
- \end{enumerate}
+	\begin{enumerate}[i.]
+	\item The images have no embedded metadata.
+	\item The researcher opens the images and imports the file.
+	\item Then the researcher views the images with the imported annotation and
+	can see if it fits any of the images.
+	\end{enumerate}
 Screenie:
 http://www.cs.helsinki.fi/u/hendry/pictures/screenshot/latex/roman-num.png
 Notes on indentation:

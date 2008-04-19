@@ -1,3 +1,3 @@
 [[meta title="H4X0ring a d3b14n b0x3n"]]
 init=/bin/sh
- mount -o rw, remount /
+	mount -o rw, remount /

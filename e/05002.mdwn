@@ -1,6 +1,6 @@
 [[meta title="IP"]]
 I talk about this a lot, so I need to list some one line arguments, so I can remember them !
- -Cold war on knowledge
- +Increased investment in technology
- -Bad patents
- -Expensive legal process
+	-Cold war on knowledge
+	+Increased investment in technology
+	-Bad patents
+	-Expensive legal process

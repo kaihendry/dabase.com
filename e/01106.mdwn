@@ -14,14 +14,14 @@ drwxrwxr-x    2 hendry   hendry       4096 2004-07-06 11:43 .
 drwxrwxrwt   17 root     root        16384 2004-07-06 11:43 ..
 bilbo$ touch file
 bilbo$ ls -i
- 816039 file
+	816039 file
 bilbo$ ln -s file symbol
 bilbo$ ln file hard
 bilbo$ ls -il
 total 0
- 816039 -rw-rw-r--    2 hendry   hendry          0 2004-07-06 11:43 file
- 816039 -rw-rw-r--    2 hendry   hendry          0 2004-07-06 11:43 hard
- 816040 lrwxrwxrwx    1 hendry   hendry          4 2004-07-06 11:43 symbol -> file
+	816039 -rw-rw-r--    2 hendry   hendry          0 2004-07-06 11:43 file
+	816039 -rw-rw-r--    2 hendry   hendry          0 2004-07-06 11:43 hard
+	816040 lrwxrwxrwx    1 hendry   hendry          4 2004-07-06 11:43 symbol -> file
 bilbo$ echo test >> file
 bilbo$ ll
 total 28

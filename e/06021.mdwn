@@ -11,10 +11,10 @@ For example:
                  r'<a href="\1">\2</a>', result)
 Focusing on last line.
 I wanted to use \2 as an argument in a function, like so:
- r'<a href="\1">thumbgen(\2)</a>', result)
+	r'<a href="\1">thumbgen(\2)</a>', result)
 But of course it would never work, due to bad syntax. This is the correct syntax:
- thumb.thumburl, result)
+	thumb.thumburl, result)
 and in thumb.py :
- def thumburl(matchobj):
+	def thumburl(matchobj):
      print matchobj.group(0) # print all groups
      thumbgen(matchobj.group(2)) # use that second group

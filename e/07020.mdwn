@@ -1,6 +1,6 @@
 [[meta title="Make development cycles in C/C++"]]
 Write a Makefile. Call it with:
- :make
+	:make
 Then view your compilation results with
- :cope
+	:cope
 From this window you can select the error from something that's related to vim's quicklist. Awesome eh?

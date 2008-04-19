@@ -1,17 +1,17 @@
 [[meta title="Python"]]
 Firstly:
- apt-get install vim-python
+	apt-get install vim-python
 for Vi IMproved, with python scripting support
 hello.py:
- import vim
- count = 0
- for b in vim.buffers:
+	import vim
+	count = 0
+	for b in vim.buffers:
          print "Length of buffer %s: %s" % (count, len(b))
          count = count + 1
- vim.command("help python")
+	vim.command("help python")
 In vim:
- :pyfile hello.py
+	:pyfile hello.py
 Or you could just run command after command, like:
- :python import vim
+	:python import vim
 Er, check the docs
- :help python
+	:help python

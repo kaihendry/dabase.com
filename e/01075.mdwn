@@ -1,6 +1,6 @@
 [[meta title="Getting rid of .svn"]]
 From darix
- find -type d -name "\.svn" -exec rm "{}" \;
+	find -type d -name "\.svn" -exec rm "{}" \;
 Showing all except .svn
- find . -name .svn -prune -o -type f -print0
+	find . -name .svn -prune -o -type f -print0
 Oops, DUPED: http://faq.dabase.com/faqw.py?req=show&file=faq09.011.htp

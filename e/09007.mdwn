@@ -2,9 +2,9 @@
 Download the source code from:
 http://subversion.tigris.org/project_packages.html#source-release
 and expand the tar ball.
- ./configure --prefix $HOME/opt --without-berkeley-db  --with-zlib --with-ssl
- make
- make install
+	./configure --prefix $HOME/opt --without-berkeley-db  --with-zlib --with-ssl
+	make
+	make install
 In your .bashrc
     # For subversion
     if [ -d $HOME/opt/bin/ ]; then

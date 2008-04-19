@@ -1,11 +1,11 @@
 [[meta title="Exim 4 Catchall"]]
 Add another file in the router directory for catchall to work.
- hendry@bilbo:/etc/exim4/conf.d/router$ cat 950_exim4-config_catchall
- catch_all:
+	hendry@bilbo:/etc/exim4/conf.d/router$ cat 950_exim4-config_catchall
+	catch_all:
    debug_print = "R: catch_all for $local_part@$domain"
    driver = redirect
    data = ${lookup{*}lsearch{/etc/aliases}}
- hendry@bilbo:/etc/exim4/conf.d/router$ egrep hendry /etc/aliases
- root: hendry
- *: hendry
+	hendry@bilbo:/etc/exim4/conf.d/router$ egrep hendry /etc/aliases
+	root: hendry
+	*: hendry
 With other people. I have yet to figure out how to configure different aliases for different hosts, but I am not worried about that problem atm.

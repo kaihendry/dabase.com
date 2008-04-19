@@ -1,6 +1,6 @@
 [[meta title="lsof"]]
 List of all open files
- lsof
+	lsof
 List open internet connections
- lsof -i
+	lsof -i
 Cool...

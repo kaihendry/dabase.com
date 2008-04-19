@@ -1,7 +1,7 @@
 [[meta title="Debugging core dumps"]]
 http://bytesex.org/gdb.html
 Enable core dumps:
- ulimit -c unlimited
+	ulimit -c unlimited
 The next time some application (e.g. mutt) crashes with a segfault you'll see that the message "Segmentation fault" changed to "Segmentation fault (core dumped)" and you'll find a file named "core".
 the run gdb with the example executable mutt like:
- gdb mutt core
+	gdb mutt core

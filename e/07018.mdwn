@@ -2,14 +2,14 @@
 Some notes about the new features that interest me.
 http://www.flickr.com/photos/tags/vim7
 Open in tabs:
- vim -p filename1 filname2
- :tabe filename
+	vim -p filename1 filname2
+	:tabe filename
 To move between tabs:
- gt
+	gt
 Omnicompletion whilst programming:
- CTRL-X CTRL-O
+	CTRL-X CTRL-O
 Spell checking:
- :setlocal spell spelllang=en_gb
+	:setlocal spell spelllang=en_gb
 Highlighted words are probably incorrect.
- ]s - move to next spelling error
- z= - spelling suggestion
+	]s - move to next spelling error
+	z= - spelling suggestion

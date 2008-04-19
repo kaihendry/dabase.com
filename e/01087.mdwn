@@ -2,8 +2,8 @@
 SMTP is often blocked at ISPs to prevent spammers.
 Use mutt and a shell script with this tip:
 http://faq.dabase.com/faqw.py?req=show&file=faq01.013.htp
- frodo$ cat server.soltecsoftware.com.au-sendmail
- #!/bin/sh
- ssh server.soltecsoftware.com.au /usr/sbin/sendmail "$@"
- frodo$ egrep sendmail .muttrc
- set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
+	frodo$ cat server.soltecsoftware.com.au-sendmail
+	#!/bin/sh
+	ssh server.soltecsoftware.com.au /usr/sbin/sendmail "$@"
+	frodo$ egrep sendmail .muttrc
+	set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"

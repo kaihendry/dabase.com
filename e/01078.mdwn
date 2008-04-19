@@ -1,8 +1,8 @@
 [[meta title="hdparm"]]
 http://packages.debian.org/cgi-bin/search_packages.pl?keywords=hdparm&searchon=names&subword=1&case=insensitive&version=all&release=all
 You want DMA and 32bit on to get reasonable performance.
- hendry@scrooge-15:~$ sudo hdparm /dev/hda
- /dev/hda:
+	hendry@scrooge-15:~$ sudo hdparm /dev/hda
+	/dev/hda:
   multcount    =  0 (off)
   IO_support   =  1 (32-bit)
   unmaskirq    =  1 (on)
@@ -12,14 +12,14 @@ You want DMA and 32bit on to get reasonable performance.
   readahead    = 256 (on)
   geometry     = 65535/16/63, sectors = 117210240, start = 0
 Debian SID has a configuration option:
- /etc/hdparm.conf
- /dev/hda {
+	/etc/hdparm.conf
+	/dev/hda {
          dma = on
          interrupt_unmask = on
          io32_support = 1
- }
- /dev/hdc {
+	}
+	/dev/hdc {
          dma = on
          interrupt_unmask = on
          io32_support = 1
- }
+	}

@@ -1,16 +1,16 @@
 [[meta title="Backing up"]]
 http://www.mikerubel.org/computers/rsync_snapshots/
- rsync -essh -rtpvz
+	rsync -essh -rtpvz
 More elaborate for my pictures:
- bible$ rsync -essh -artpv --progress pictures dabase.com:
- Password:
- building file list ...
- 5334 files to consider
- pictures/
- pictures/ant/
- pictures/ant/1001.jpg
+	bible$ rsync -essh -artpv --progress pictures dabase.com:
+	Password:
+	building file list ...
+	5334 files to consider
+	pictures/
+	pictures/ant/
+	pictures/ant/1001.jpg
        689231 100%   63.39kB/s    0:00:10  (1, 0.1% of 5334)
- pictures/ant/1002.jpg
+	pictures/ant/1002.jpg
        295060 100%   51.02kB/s    0:00:05  (2, 0.1% of 5334)
- pictures/ant/1003.jpg
+	pictures/ant/1003.jpg
         98304  32%   91.00kB/s    0:00:02

@@ -1,8 +1,8 @@
 [[meta title="Removing characters"]]
 There are different ways of doing it:
- # removing fullstop
- DOMAIN="blah.com"
- echo $DOMAIN
- echo $DOMAIN | sed 's,\.,,'
- echo $DOMAIN | tr -d .
- echo ${DOMAIN//./}
+	# removing fullstop
+	DOMAIN="blah.com"
+	echo $DOMAIN
+	echo $DOMAIN | sed 's,\.,,'
+	echo $DOMAIN | tr -d .
+	echo ${DOMAIN//./}

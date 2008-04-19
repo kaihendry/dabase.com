@@ -1,5 +1,5 @@
 [[meta title="/etc/enviroment Proxy configuration"]]
 With SkoleLinux put in proxy settings in :
- /etc/environment
- http_proxy=www-cache.cs.Helsinki.FI:3128
- ftp_proxy=www-cache.cs.Helsinki.FI:3128
+	/etc/environment
+	http_proxy=www-cache.cs.Helsinki.FI:3128
+	ftp_proxy=www-cache.cs.Helsinki.FI:3128

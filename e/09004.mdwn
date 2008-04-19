@@ -1,16 +1,16 @@
 [[meta title="cvs release in Subversion?"]]
 Anything you can live without?
- frodo$ svn st projects/
- ?      projects/svn-commit.tmp
- ?      projects/pik/tests/we
- ?      projects/shopping-list/x33.html
- ?      projects/shopping-list/x141.html
- ?      projects/shopping-list/x16.html
- ?      projects/shopping-list/resume.ps
- ?      projects/shopping-list/x117.html
- ?      projects/shopping-list/resume.pdf
- ?      projects/shopping-list/resume.rtf
- ?      projects/shopping-list/index.html
- ?      projects/shopping-list/resume.txt
+	frodo$ svn st projects/
+	?      projects/svn-commit.tmp
+	?      projects/pik/tests/we
+	?      projects/shopping-list/x33.html
+	?      projects/shopping-list/x141.html
+	?      projects/shopping-list/x16.html
+	?      projects/shopping-list/resume.ps
+	?      projects/shopping-list/x117.html
+	?      projects/shopping-list/resume.pdf
+	?      projects/shopping-list/resume.rtf
+	?      projects/shopping-list/index.html
+	?      projects/shopping-list/resume.txt
 Ok then, bye!
- frodo$ rm -rf projects/
+	frodo$ rm -rf projects/

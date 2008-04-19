@@ -1,20 +1,20 @@
 [[meta title="User limits"]]
 From:
 http://www.puschitz.com/InstallingOracle10g.shtml
- [root@rhas-test install]# ulimit -a
- core file size          (blocks, -c) 0
- data seg size           (kbytes, -d) unlimited
- file size               (blocks, -f) unlimited
- pending signals                 (-i) 1024
- max locked memory       (kbytes, -l) 32
- max memory size         (kbytes, -m) unlimited
- open files                      (-n) 1024
- pipe size            (512 bytes, -p) 8
- POSIX message queues     (bytes, -q) 819200
- stack size              (kbytes, -s) 10240
- cpu time               (seconds, -t) unlimited
- max user processes              (-u) 4096
- virtual memory          (kbytes, -v) unlimited
- file locks                      (-x) unlimited
+	[root@rhas-test install]# ulimit -a
+	core file size          (blocks, -c) 0
+	data seg size           (kbytes, -d) unlimited
+	file size               (blocks, -f) unlimited
+	pending signals                 (-i) 1024
+	max locked memory       (kbytes, -l) 32
+	max memory size         (kbytes, -m) unlimited
+	open files                      (-n) 1024
+	pipe size            (512 bytes, -p) 8
+	POSIX message queues     (bytes, -q) 819200
+	stack size              (kbytes, -s) 10240
+	cpu time               (seconds, -t) unlimited
+	max user processes              (-u) 4096
+	virtual memory          (kbytes, -v) unlimited
+	file locks                      (-x) unlimited
 To change these settings you need to look at:
 /etc/security/limits.conf

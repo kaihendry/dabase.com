@@ -1,19 +1,19 @@
 [[meta title="Debugging mutt"]]
 Subscribe to mutt-dev:
- http://www.mutt.org/mail-lists.html
+	http://www.mutt.org/mail-lists.html
 Get sources:
- cvs -q -d:pserver:anonymous@dev.mutt.org:/cvsroots co mutt
+	cvs -q -d:pserver:anonymous@dev.mutt.org:/cvsroots co mutt
 You will need those openssl libraries in your search path.
- apt-get build-dep mutt
+	apt-get build-dep mutt
 In source directory:
 
- ./prepare --enable-imap --with-ssl
+	./prepare --enable-imap --with-ssl
 Build with a make:
- make
+	make
 Enable cores
- ulimit -c unlimited
+	ulimit -c unlimited
 Once the core dumps. Check it out with gdb:
- gdb ./mutt core
+	gdb ./mutt core
 To see where things went wrong, run:
- backtrace
+	backtrace
 And copy and paste somewhere.

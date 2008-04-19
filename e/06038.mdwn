@@ -5,7 +5,7 @@ Something I use:
                         b = b[:50] # get top fifty values
                         j.cos = dict(b)
 Really badly highlighted with:
- source-highlight -spython -fxhtml sort.py
+	source-highlight -spython -fxhtml sort.py
 Try use the Basic style sheet?
 <html>
 <pre>

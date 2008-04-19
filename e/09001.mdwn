@@ -2,4 +2,4 @@
 From:
 http://groups.google.com.au/group/gnu.cvs.help/browse_thread/thread/38ca2ce29a0cffe9/a4098eb7ef8fd255?q=diff+branch&rnum=9#a4098eb7ef8fd255
 Whilst in the branch:
- cvs diff -u -r1 deploy.sh | less
+	cvs diff -u -r1 deploy.sh | less

@@ -1,6 +1,6 @@
 [[meta title="SELinux"]]
 How to turn SELinux off:
- setenforce 0
+	setenforce 0
 Permanently disable selinux via /etc/sysconfig/selinux file
 OR (much harder)
 make sure your webpages/directories have the correct selinux objects assigned for the httpd process
