@@ -1,15 +1,21 @@
 [[meta title="SVN homedir"]]
+
 http://svnbook.red-bean.com/book.html
+
 Arrangement so far:
+
 	hendry@bilbo:~$ svn ls svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo
 	debian/
 	home/
 	mail/
 	personal/
 	school/
+
 In a new clean $HOME:
+
 	svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-home has some svn:externals definitions
+
+Home has some svn:externals definitions
 
 	$ svn propget svn:externals .
 	mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
@@ -20,6 +26,9 @@ This is how you create them:
 I am ignoring the dotfiles(I hope):
   $ svn propget svn:ignore .
 	.*
+
 As I got sick of looking at the mess of them with a svn status. And that was after spending 4 hours deleting most of them.
+
 Property listings:
+
 	$ svn proplist
