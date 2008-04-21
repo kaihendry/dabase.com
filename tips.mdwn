@@ -9,7 +9,7 @@
 </form>
 <!-- Google CSE Search Box Ends -->
 
-## Please contribute a tip
+## Please contribute a tip or a snappy howto
 [[inline actions=yes pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F" rootpage="u"]]
 
 ## Debian
