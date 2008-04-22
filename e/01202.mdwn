@@ -1,5 +1,9 @@
 [[meta title="Configuring a directory with encryption using LVM"]]
 
+**UPDATE**: I have suffered some sort of corruption with this approach. As a
+result I do not recommend the instructions below. I encourage you to look into
+more solid loopback encryption techniques.
+
 This approach is also known as **encryption over LVM**.
 
 I created the logical volume from the volume group 'x61'.
