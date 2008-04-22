@@ -1,0 +1,8 @@
+[[meta title="Killing a process by name"]]
+
+Instead of using `ps aux | grep firefox` and finding the process ID to `kill
+-9`, you could just use:
+
+	pkill -9 firefox
+
+Of course, this approach can be too agressive. ;)
