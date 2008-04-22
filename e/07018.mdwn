@@ -1,22 +1,19 @@
-[[meta title="vim7"]]
-Some notes about the new features that interest me.
-http://www.flickr.com/photos/tags/vim7
-Open in tabs:
+[[meta title="vim7's spelling features"]]
 
-	vim -p filename1 filname2
-
-	:tabe filename
-To move between tabs:
-
-	gt
-Omnicompletion whilst programming:
-
-	CTRL-X CTRL-O
-Spell checking:
+Spell checking with british English dictionary:
 
 	:setlocal spell spelllang=en_gb
+
+A convienance bind:
+
+	map <F8> :setlocal spell spelllang=en_gb<CR>
+
 Highlighted words are probably incorrect.
 
-	]s - move to next spelling error
+* `]s` move to next spelling error
+* `z=`  spelling suggestion
+* `1z=` correct to most likely correction (same as `z=` and hitting 1)
 
-	z= - spelling suggestion
+Bind to backspace for your .vimrc:
+
+	noremap <BS>, <ESC>:set spell<CR>$[s1z=:set nospell<CR>

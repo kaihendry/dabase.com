@@ -1,4 +1,5 @@
 [[meta title="Inserting UNICODE"]]
 
+`ga` to see code under cursor.
 
 	:he utf-8-typing
