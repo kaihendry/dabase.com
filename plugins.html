@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Plug-Ins Check</TITLE>
+</HEAD>
+<BODY>
+<H1>JavaScript Plug-Ins Check</H1>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide script from incompatible browsers
+var i,n
+n = navigator.plugins.length
+document.writeln("<HR>")
+document.writeln("This Web browser has " + n + " plug-ins installed:<P>")
+for (i=0;i<n;i++)
+   document.writeln(navigator.plugins[i].name + "<BR>")
+document.writeln("<HR>")
+<!-- -->
+</SCRIPT>
+</BODY>
+</HTML>
