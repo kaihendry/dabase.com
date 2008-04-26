@@ -1,0 +1,9 @@
+[[meta title="/dev/dsp: Device or resource busy"]]
+
+	/dev/dsp: Device or resource busy
+
+`sudo apt-get install alsa-oss` and run the ALSA OSS wrapper like so:
+
+	x61:~/quake3% aoss ./quake3.x86
+
+Unfortunately it can be a bit buggy. :(
