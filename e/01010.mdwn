@@ -2,18 +2,23 @@
 
 # Video
 
-Best way is to use the package
+Coolest way is to use the package
 [recordmydesktop](http://packages.qa.debian.org/r/recordmydesktop.html) and
 upload the video to YouTube or something!
+
+Since my desktop is quite large, you might instead record a window:
+
+	recordmydesktop --follow-mouse -width 256 -height 256
 
 # Text
 
 Want to show someone your work? Try `script`. It annoyingly has all your errors
 and frantic backspaces, however I at least find it beneficial.
 
-script mywork
+	script mywork
+
 and ctrl-d or exit stops it recording.
 
 History is another command I run very often, try it.
 
-You can also hardcopy sessions with `screen`.
+You can also hardcopy and log sessions with `screen`.
