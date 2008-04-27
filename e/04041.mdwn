@@ -1,0 +1,41 @@
+[[meta title="Shell CGI"]]
+
+For simple scripts shell is pretty good. You have the permission problems to
+deal with. The Apache2 configuration with .htaccess is straight forward:
+
+	Options +ExecCGI
+	AddHandler cgi-script .cgi
+
+The important element to shell CGI scripts in to ensure you have "Content-Type:
+text/html" in there with a couple of carriage returns.
+
+	#!/bin/sh
+
+	title="Shell CGI"
+
+	cat <<END
+	Cache-Control: no-cache
+	Content-Type: text/html
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>$title</title>
+		</head>
+	<body>
+	<pre>
+	END
+
+	wget http://webconverger.com/flower100.png &> /dev/stdout || echo "Permission denied"
+
+	cat <<END
+	</pre>
+
+	<img src="flower100.png"/>
+
+	</body>
+	</html>
+	END
+
+`/dev/stderr` outputs to `/var/log/apache2/error.log` so you need redirect `wget` output to stdout as I do in this case.
