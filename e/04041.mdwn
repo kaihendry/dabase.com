@@ -28,12 +28,10 @@ text/html" in there with a couple of carriage returns.
 	END
 
 	wget http://webconverger.com/flower100.png &> /dev/stdout || echo "Permission denied"
+	env
 
 	cat <<END
 	</pre>
-
-	<img src="flower100.png"/>
-
 	</body>
 	</html>
 	END
