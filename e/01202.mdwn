@@ -1,10 +1,16 @@
 [[meta title="Configuring a directory with encryption using LVM"]]
 
-**UPDATE**: I have suffered some sort of corruption with this approach. As a
-result I do not recommend the instructions below. I encourage you to look into
-more solid loopback encryption techniques.
+**UPDATE**: [I have suffered some sort of corruption with this
+approach](http://lists.alioth.debian.org/pipermail/pkg-cryptsetup-devel/2008-April/001960.html).
+As a result I **do not recommend** the instructions below. I encourage you to
+look into more solid loopback encryption techniques.
 
-This approach is also known as **encryption over LVM**.
+Also please see [[e/01211]].
+
+-------------------
+
+
+This fallible approach is also known as **encryption over LVM**.
 
 I created the logical volume from the volume group 'x61'.
 
