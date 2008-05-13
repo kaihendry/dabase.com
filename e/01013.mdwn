@@ -11,3 +11,5 @@ In the previous version of my tip, I did not set a passphrase. Robot101 notes th
     ssh dabase.com -t theprocessyouwanttorun
 
 Another nifty switch is the -v switch for verbose output ssh (thats fun).
+
+[DSA 1571-1](http://lists.debian.org/debian-security-announce/2008/msg00152.html) means that if you are Debian and have a key in use earlier than 13 May 2008. You must **regenerate**.
