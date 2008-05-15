@@ -1,0 +1,5 @@
+[[meta title="javascript var scope"]]
+
+[Good explaination here](http://www.mredkj.com/tutorials/reference_js_intro.html#scope)
+
+Basically the variable becomes local only when you use **var** inside a function.
