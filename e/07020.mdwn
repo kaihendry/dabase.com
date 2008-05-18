@@ -15,3 +15,7 @@ Also try:
 	:clist
 
 I often mis-remember `cope` as `scope`.
+
+Also see:
+
+	:help quickfix
