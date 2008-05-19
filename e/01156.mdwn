@@ -1,0 +1,15 @@
+[[meta title="Terminus console font"]]
+
+Use the [terminus font](http://packages.qa.debian.org/x/xfonts-terminus.html).
+
+	sudo apt-get install xfonts-terminus
+
+For aliases, see:
+
+	vim /etc/X11/fonts/misc/xfonts-terminus.alias
+
+For a nice terminal with a big clear font for a presentation or talk:
+
+	uxterm -fn terminus-24
+
+Also see my [dot Xresources](http://git.webconverger.org/?p=home.git;a=blob;f=.Xresources)

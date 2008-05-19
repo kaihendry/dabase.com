@@ -1,0 +1,5 @@
+[[meta title="Disable screen blanking"]]
+
+Important whilst watching [iplayer](http://bbc.co.uk/iplayer)
+
+	xset s off
