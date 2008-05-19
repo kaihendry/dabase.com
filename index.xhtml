@@ -77,7 +77,8 @@
 
   body  = document.getElementsByTagName("body").item(0);
   h = document.createElement("h1");
-  h.text = window.navigator.userAgent;
+  ua = document.createTextNode(window.navigator.userAgent);
+  h.appendChild(ua);
   body.appendChild(h);
 
 </script>
