@@ -1,11 +1,13 @@
 [[meta title="Hendry's tips and tricks"]]
 
+<script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>
+
 
 <!-- Google CSE Search Box Begins  -->
 <form action="http://www.google.com/cse" id="cse-search-box">
   <input type="hidden" name="cx" value="012996381534923695250:e3cymw51mgs" />
   <input style="font-size: 2em;" type="text" name="q" size="25" />
-  <input style="font-size: 2em;" type="submit" name="sa" value="Search amongst the tips" />
+  <input style="font-size: 3em;" type="submit" name="sa" value="Search amongst the tips" />
 </form>
 <!-- Google CSE Search Box Ends -->
 
@@ -50,3 +52,5 @@
 
 ## Bash and shell
 [[inline pages="e/13*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+
+### All tips are in the public domain
