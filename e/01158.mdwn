@@ -1,0 +1,10 @@
+[[meta title="Finding out where the package comes from"]]
+
+	x61:~% apt-cache policy scratchbox2
+	scratchbox2:
+	  Installed: 1.99.0.24-1
+	  Candidate: 1.99.0.24-1
+	  Version table:
+	 *** 1.99.0.24-1 0
+			500 http://ftp.nl.debian.org unstable/main Packages
+			100 /var/lib/dpkg/status
