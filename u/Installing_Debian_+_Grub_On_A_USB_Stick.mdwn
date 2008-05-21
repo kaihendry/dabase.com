@@ -1,0 +1,20 @@
+(May also apply to USB drives.)
+
+## Pre-Ramble
+
+Apparently <a href="http://syslinux.zytor.com/wiki/index.php/The_SYSLINUX_Project">syslinux</a> is *the* boot loader to use with a USB stick. Unfortunately, as far as I am aware, that is not an option with any of the Debian installation media, Lilo and grub are, I have no idea about Lilo, but here's my installation guide using Grub.
+
+## Start As You Mean To Go On
+
+One of the issues of booting from USB sticks is that the identifiers are not guaranteed, eg, you have no guarantee which will turn up as sda, sdb, etc. Yes you can create udev rules, but as far as I am aware this is too late for the boot sequence. This is especially difficult when you bring Grub and the BIOS into the equation. Grub numbers drives as they appear to it, hdX, and the BIOS boot sequence may well effect this. The drive sequence is also effected by which USB port you plug your USB drives into. If you only have a CDROM and a USB stick this probably won't be an issue, but otherwise I would plug everything in as you mean to keep it and set up the BIOS boot order as you mean to keep it. Once you've done that you can try booting from something that will not interfere with this and will allow you to see what order Grub and linux see the disks)
+
+## Install Debian
+
+If you install Debian as normal you will probably get a Grub Error 18 (Selected cylinder exceeds maximum supported by BIOS) on rebooting, which means that the partition is outseide what the BIOS can handle. So install Debian as normal, but when the formatting stage comes up create a small (100meg\*) boot partition. If you reboot now you will probably get a Grub Error 15 (File not found) Once the installation has completed use some other installation, eg your laptop or a liveCD, to shrink the boot partition, 32megs was the smallest gparted would allow for me, and this was enough**.
+
+## SysLinux Plan
+
+If this had not worked my next plan was to install SysLinux on to the drive, shrink that created partition and install Debian and see how far I could get with that.
+
+\* I originally created an 8meg boot partition which did not leave enough space to configure the kernel.<br>
+** As of writing I have not investigated this fully. After getting Error 15 I forgot that I was meaning to shrink the boot partition and instead booted from a liveCD and re-installed Grub, then shrank the partition. I assume that shrinking the partition was the solution, but it may well have been the re-installation of Grub or both as far as I know.
