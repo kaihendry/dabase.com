@@ -17,7 +17,7 @@ If you install Debian as normal you will probably get a Grub Error 18 (Selected 
 
 ## Performance
 
-The performance seems a bit strange to me. The inital bootup sequence, initfs and uncompressing the kernel (?) are very slow, but after that it seems normal. Though currently it is a bit of a minimal install, lacking even networking.
+The performance seems a bit strange to me. The initial two bootup steps, initfs \(?) and uncompressing the kernel \(?) are very slow, but after that it seems normal. Though currently it is a bit of a minimal install, lacking even networking.
 
 ## SysLinux Plan
 
