@@ -12,9 +12,14 @@ One of the issues of booting from USB sticks is that the identifiers are not gua
 
 If you install Debian as normal you will probably get a Grub Error 18 (Selected cylinder exceeds maximum supported by BIOS) on rebooting, which means that the partition is outseide what the BIOS can handle. So install Debian as normal, but when the formatting stage comes up create a small (100meg\*) boot partition. If you reboot now you will probably get a Grub Error 15 (File not found) Once the installation has completed use some other installation, eg your laptop or a liveCD, to shrink the boot partition, 32megs was the smallest gparted would allow for me, and this was enough**.
 
+\* I originally created an 8meg boot partition which did not leave enough space to configure the kernel.<br>
+** As of writing I have not investigated this fully. After getting Error 15 I forgot that I was meaning to shrink the boot partition and instead booted from a liveCD and re-installed Grub, then shrank the partition. I assume that shrinking the partition was the solution, but it may well have been the re-installation of Grub or both as far as I know.
+
+## Performance
+
+The performance seems a bit strange to me. The inital bootup sequence, initfs and uncompressing the kernel (?) are very slow, but after that it seems normal. Though currently it is a bit of a minimal install, lacking even networking.
+
 ## SysLinux Plan
 
 If this had not worked my next plan was to install SysLinux on to the drive, shrink that created partition and install Debian and see how far I could get with that.
 
-\* I originally created an 8meg boot partition which did not leave enough space to configure the kernel.<br>
-** As of writing I have not investigated this fully. After getting Error 15 I forgot that I was meaning to shrink the boot partition and instead booted from a liveCD and re-installed Grub, then shrank the partition. I assume that shrinking the partition was the solution, but it may well have been the re-installation of Grub or both as far as I know.
