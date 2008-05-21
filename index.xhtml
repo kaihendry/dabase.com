@@ -5,16 +5,18 @@
 
 <style type="text/css">
 @media all and (max-device-width: 600px) {
-	body { background: yellow; } 
+	body { background: yellow; }
 }
 
-@media handheld {
+@media only handheld {
 	blockquote { background: green; }
 	form { display: none; }
 }
 
+@media not handheld {
 form { float: right; }
 input { font-size: 2em; }
+}
 
 </style>
 
