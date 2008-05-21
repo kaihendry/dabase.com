@@ -85,13 +85,11 @@
   body  = document.getElementsByTagName("body").item(0);
   h = document.createElement("h1");
   ua = document.createTextNode(window.navigator.userAgent);
+  width = document.createTextNode(window.screen.width);
   h.appendChild(ua);
+  h.appendChild(width);
   body.appendChild(h);
 
-</script>
-
-<script type='text/javascript'>
-		document.write("<p>Screen width: <em>" + window.screen.width  + "</em>.</p>");
 </script>
 
 
