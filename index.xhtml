@@ -83,12 +83,12 @@
 <script type="application/x-javascript">
 
   body  = document.getElementsByTagName("body").item(0);
-  h = document.createElement("h1");
+  pre = document.createElement("pre");
   ua = document.createTextNode(window.navigator.userAgent);
   width = document.createTextNode(window.screen.width);
-  h.appendChild(ua);
-  h.appendChild(width);
-  body.appendChild(h);
+  pre.appendChild(ua);
+  pre.appendChild(width);
+  body.appendChild(pre);
 
 </script>
 
