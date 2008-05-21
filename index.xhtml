@@ -7,6 +7,11 @@
 @media all and (max-device-width: 600px) {
 	body { background: yellow; } 
 }
+
+@media handheld {
+	li { color: pink; }
+}
+
 </style>
 
   </head>
@@ -85,9 +90,11 @@
   body  = document.getElementsByTagName("body").item(0);
   pre = document.createElement("pre");
   ua = document.createTextNode(window.navigator.userAgent + '\n');
-  width = document.createTextNode(window.screen.width + 'x' + window.screen.height);
+  hw = document.createTextNode('Screen size: ' + window.screen.width + 'x' + window.screen.height + '\n');
+  ahw = document.createTextNode('Availible screen size: ' + window.screen.availWidth + 'x' + window.screen.availHeight);
   pre.appendChild(ua);
-  pre.appendChild(width);
+  pre.appendChild(hw);
+  pre.appendChild(ahw);
   body.appendChild(pre);
 
 </script>
