@@ -85,7 +85,7 @@
   body  = document.getElementsByTagName("body").item(0);
   pre = document.createElement("pre");
   ua = document.createTextNode(window.navigator.userAgent + '\n');
-  width = document.createTextNode(window.screen.width);
+  width = document.createTextNode(window.screen.width + 'x' + window.screen.height);
   pre.appendChild(ua);
   pre.appendChild(width);
   body.appendChild(pre);
