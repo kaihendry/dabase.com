@@ -2,7 +2,7 @@ May also apply to USB drives. I did this on my EPIA M Nehemiah M10000.
 
 ## Pre-Ramble
 
-Apparently <a href="http://syslinux.zytor.com/wiki/index.php/The_SYSLINUX_Project">syslinux</a> is *the* boot loader to use with a USB stick. Unfortunately, as far as I am aware, that is not an option with any of the Debian installation media, Lilo and grub are, I have no idea about Lilo, but here's my installation guide using Grub.
+Apparently <a href="http://syslinux.zytor.com/wiki/index.php/The_SYSLINUX_Project">syslinux</a> is *the* boot loader to use with a USB stick. Unfortunately, as far as I am aware, that is not an option with any of the Debian installation media, Lilo and Grub are, I have no idea about Lilo, but here's my installation guide using Grub.
 
 ## Start As You Mean To Go On
 
