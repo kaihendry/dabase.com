@@ -1,0 +1,5 @@
+[[meta title="Mozex VIM textarea editing"]]
+
+In the mozex was the extension to do this.
+
+Currently the extension [It's all text!](https://addons.mozilla.org/en-US/firefox/addon/4125) is what you should use to hook browser form editing into VIM.
