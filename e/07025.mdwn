@@ -15,16 +15,16 @@ Ok, lets first lookup the character we want:
 	Category: So (Symbol, Other)
 	Bidi: ON (Other Neutrals)
 
-The important element is the U+262E part, which is the the Unicode **codepoint**.
+The important element is the U+262E part, which is the Unicode **codepoint**.
 
 Now into insert the PEACE SYMBOL, in INSERT MODE type:
 
 	[Ctrl]+[v], [u], [2], [6], [2], [E]
 
-If you can't see the inserted character, try gvim. Also try place the cursor over the character an use `ga` shortcut to examine the character underneath the cursor.
+If you can't see the inserted character, try `gvim`. Also try place the cursor over the character an use `ga` shortcut to examine the character underneath the cursor.
 
 `ga` might report something like:
 
 	<?> 9774, Hex 262e, Octal 23056
 
-See the **Hexideciaml** is the key to the codepoint.
+Understand the **Hexadecimal** is the key to the codepoint.
