@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Web Forms 2.0 - initializing fieldsets</title>
+</head>
+<body>
+<div class="margin"></div>
+<h1>Web Forms 2.0 - initializing fieldsets</h1>
+
+<script type="text/javascript">
+window.onload = init;
+
+function init()
+{
+  var out = document.getElementById("out");
+  out.value = total();
+}
+
+// invoked by onforminput on output element
+// works around row dependent field names
+function total()
+{
+  var rows = document.getElementById("items").rows;
+  var result = 0;
+
+  for (var i = 0; i < rows.length - 1; ++i)
+  {
+    var fields = rows[i].getElementsByTagName("INPUT");
+    var qty = fields[1].value;
+    var price = fields[2].value;
+    result += qty * price;
+  }
+
+  return "$" + result;
+}
+</script>
+
+<form name="form1" onsubmit="false">
+<fieldset>
+<legend>Repeating groups of fields</legend>
+<table>
+<thead>
+<tr>
+<td>Product Name</td>
+<td>Quantity</td>
+<td>Price Per Unit</td>
+</tr>
+</thead>
+<tbody id="items">
+<tr repeat="1">
+<td><input name="row1_item" type="text" title="product name" value="a"/></td>
+<td><input name="row1_quantity" type="number" title="number purchased" value="1"/></td>
+<td><input name="row1_unitprice" type="number" title="price per unit" value="10"/></td>
+</tr>
+
+<tr repeat="2">
+<td><input name="row2_item" type="text" title="product name" value="b"/></td>
+<td><input name="row2_quantity" type="number" title="number purchased" value="2"/></td>
+<td><input name="row2_unitprice" type="number" title="price per unit" value="3"/></td>
+</tr>
+
+<tr id="item" repeat="template" repeat-start="2">
+<td><input name="row[line]_item" type="text" title="product name"/></td>
+<td><input name="row[line]_quantity" type="number" title="number purchased" /></td>
+<td><input name="row[line]_unitprice" type="number" title="price per unit" /></td>
+</tr>
+</tbody>
+</table>
+</fieldset>
+
+<p>Total price: <output id="out" onforminput="value = total()">0</output></p>
+
+<button type="submit">Submit</button>
+<button type="add" template="item">Add Row</button>
+<button type="reset">Reset</button>
+</form>
+
+</body>
+</html>

@@ -1,8 +1,8 @@
 [[meta title="Inserting a Unicode character in VIM"]]
 
-Ok, lets first lookup the character we want:
+Ok, lets first lookup the character we want with [unicode](http://packages.qa.debian.org/u/unicode.html):
 
-	x61:~% [unicode](http://packages.qa.debian.org/u/unicode.html) -r peace
+	x61:~% unicode -r peace
 	U+262E PEACE SYMBOL
 	UTF-8: e2 98 ae  UTF-16BE: 262e  Decimal: &#9774;
 	☮
