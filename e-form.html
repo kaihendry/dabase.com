@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="margin"></div>
-<h1>Web Forms 2.0 - initializing fieldsets</h1>
+<h1>Web Forms 2.0 - Your daily Electricity cost</h1>
 
 <script type="text/javascript">
 window.onload = init;
@@ -22,54 +22,59 @@ function init()
 function total()
 {
   var rows = document.getElementById("items").rows;
+  var price = document.form1.price.value;
   var result = 0;
 
   for (var i = 0; i < rows.length - 1; ++i)
   {
     var fields = rows[i].getElementsByTagName("INPUT");
-    var qty = fields[1].value;
-    var price = fields[2].value;
-    result += qty * price;
+    var wattage = fields[1].value;
+    var time = fields[2].value;
+    result += wattage * time * price;
   }
 
-  return "$" + result;
+  return result;
 }
 </script>
 
 <form name="form1" onsubmit="false">
+
+<a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">Price per kiloWatt hour</a>:
+<input name="price" type="number" title="Price per kiloWatt hour" value="12.2"/>
+
 <fieldset>
-<legend>Repeating groups of fields</legend>
+<legend>List your appliances</legend>
 <table>
 <thead>
 <tr>
-<td>Product Name</td>
-<td>Quantity</td>
-<td>Price Per Unit</td>
+<td>Appliance</td>
+<td>Wattage</td>
+<td>Time (minutes)</td>
 </tr>
 </thead>
 <tbody id="items">
 <tr repeat="1">
-<td><input name="row1_item" type="text" title="product name" value="a"/></td>
-<td><input name="row1_quantity" type="number" title="number purchased" value="1"/></td>
-<td><input name="row1_unitprice" type="number" title="price per unit" value="10"/></td>
+<td><input name="row1_item" type="text" value="Spot light"/></td>
+<td><input name="row1_wattage" type="number" value="50"/></td>
+<td><input name="row1_minutes" type="number" value="1440"/></td>
 </tr>
 
 <tr repeat="2">
-<td><input name="row2_item" type="text" title="product name" value="b"/></td>
-<td><input name="row2_quantity" type="number" title="number purchased" value="2"/></td>
-<td><input name="row2_unitprice" type="number" title="price per unit" value="3"/></td>
+<td><input name="row2_item" type="text" value="Laptop"/></td>
+<td><input name="row2_wattage" type="number" value="20"/></td>
+<td><input name="row2_minutes" type="number" value="480"/></td>
 </tr>
 
 <tr id="item" repeat="template" repeat-start="2">
-<td><input name="row[line]_item" type="text" title="product name"/></td>
-<td><input name="row[line]_quantity" type="number" title="number purchased" /></td>
-<td><input name="row[line]_unitprice" type="number" title="price per unit" /></td>
+<td><input name="row[line]_item" type="text" /></td>
+<td><input name="row[line]_wattage" type="number" /></td>
+<td><input name="row[line]_minutes" type="number"/></td>
 </tr>
 </tbody>
 </table>
 </fieldset>
 
-<p>Total price: <output id="out" onforminput="value = total()">0</output></p>
+<p>Total price: <output id="out" onforminput="value = total()">0</output> per day</p>
 
 <button type="submit">Submit</button>
 <button type="add" template="item">Add Row</button>
