@@ -7,8 +7,10 @@
  <body>
   <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post" enctype="multipart/form-data">
 
-Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">Price per kiloWatt hour</a>:
-<input name="price" type="number" title="Price per kiloWatt hour" step="any" value="12.2"/>
+<p>
+Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">price per kiloWatt hour</a>:
+<input name="price" type="number" title="Price per kiloWatt hour" step="any" value="12.2"/> (cents/pence)
+</p>
 
 <fieldset>
 <legend>List your appliances</legend>
@@ -38,7 +40,7 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
     </tbody>
    </table>
 </fieldset>
-  <h2>Total cost per day: <output name="total" onforminput="value = document.getElementById('row').length">0</output></h2>
+  <h2>Total cost per day: <output name="total" onforminput="value = row">0</output></h2>
    <p>
     <button type="add" template="row">Add Row</button>
     <button type="submit">Submit</button>
@@ -49,10 +51,11 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
 <ul>
 <li>60 minutes in an hour</li>
 <li>480 minutes in 8 hours</li>
-<li>1440 minutes each day</li>
+<li>1440 minutes in each day</li>
 </ul>
 </p>
 
+Requires <a href="http://www.whatwg.org/specs/web-forms/current-work/">Web Form 2.0</a> support. e.g. <a href="http://www.opera.com/">Opera</a>
 
  </body>
 </html>
