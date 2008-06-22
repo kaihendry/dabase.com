@@ -8,7 +8,7 @@
  <body>
   <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post" enctype="multipart/form-data">
 
-<input name="price" type="number" title="Price per kiloWatt hour" value="12.2"/>
+<input name="price" type="number" title="Price per kiloWatt hour" step="any" value="12.2"/>
 
 <fieldset>
 <legend>List your appliances</legend>
@@ -31,7 +31,7 @@
       <td><input required="required" name="name_0" type="text" value="Spot light"></td>
       <td><input required="required" name="wattage_0" type="number" value="50"></td>
       <td><input required="required" name="minutes_0" type="number" value="1"></td>
-	  <td><output name="result" onforminput="value = quantity_0.value * wattage_0.value * minutes_0">0</output></td>
+	  <td><output name="result" onforminput="value = quantity_0.value * wattage_0.value * minutes_0.value * price.value">0</output></td>
       <td><button type="remove">Delete Row</button></td>
      </tr>
 
