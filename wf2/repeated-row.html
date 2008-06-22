@@ -14,24 +14,27 @@
 			<th>Appliance</th>
 			<th>Wattage</th>
 			<th>Time (minutes)</th>
+			<th>Cost</th>
 			<th></th>
      </tr>
     </thead>
     <tbody>
 
      <tr repeat="0">
-      <td><input name="quantity_0" type="number" value="1"></td>
-      <td><input name="name_0" type="text" value="Spot light"></td>
-      <td><input name="wattage_0" type="number" value="1"></td>
-      <td><input name="minutes_0" type="number" value="1"></td>
+      <td><input required="required" name="quantity_0" type="number" value="1"></td>
+      <td><input required="required" name="name_0" type="text" value="Spot light"></td>
+      <td><input required="required" name="wattage_0" type="number" value="50"></td>
+      <td><input required="required" name="minutes_0" type="number" value="1"></td>
+	  <td><output name="result" onforminput="value = quantity_0.value * wattage_0.value">0</output></td>
       <td><button type="remove">Delete Row</button></td>
      </tr>
 
      <tr repeat="template" id="row">
-      <td><input name="quantity_[row]" type="number" value="1"></td>
-      <td><input name="name_[row]" type="text" value="Spot light"></td>
-      <td><input name="wattage_[row]" type="number" value="1"></td>
-      <td><input name="minutes_[row]" type="number" value="1"></td>
+      <td><input required="required" name="quantity_[row]" type="number" value="1"></td>
+      <td><input required="required" name="name_[row]" type="text" value="Spot light"></td>
+      <td><input required="required" name="wattage_[row]" type="number" value="1"></td>
+      <td><input required="required" name="minutes_[row]" type="number" value="1"></td>
+	  <td><output name="result" onforminput="value = quantity_[row].value * wattage_[row].value">0</output></td>
       <td><button type="remove">Delete Row</button></td>
      </tr>
 
@@ -42,6 +45,16 @@
     <button type="submit">Submit</button>
    </p>
   </form>
+
+<p>There are:
+<ul>
+<li>60 minutes in an hour</li>
+<li>480 minutes in 8 hours</li>
+<li>1440 minutes each day</li>
+</ul>
+</p>
+
+
  </body>
 </html>
 
