@@ -3,6 +3,17 @@
  <head>
   <meta charset="utf-8" />
   <title>Web Forms 2.0 - Your daily Electricity cost</title>
+<script type="text/javascript">
+
+function total() {
+
+// row.rowIndex
+
+return 5;
+
+}
+
+</script>
  </head>
  <body>
   <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post" enctype="multipart/form-data">
@@ -40,7 +51,7 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
     </tbody>
    </table>
 </fieldset>
-  <h2>Total cost per day: <output name="total" onformchange="value = row.rowIndex">0</output></h2>
+  <h2>Total cost per day: <output name="total" onformchange="value = total()">0</output></h2>
    <p>
     <button type="add" template="row">Add Row</button>
     <button type="submit">Submit</button>
