@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Solar System</title>
+ </head>
+ <body>
+  <form>
+   <h1> Solar system </h1>
+   <p> <label> System Name: <input name="name"/> </label> </p>
+   <h2> Planets </h2>
+   <ol>
+    <li repeat="template" repeat-start="0" id="planets">
+     <label> Name: <input name="planet[planets].name" required="required"/> </label>
+     <h3> Moons </h3>
+     <ul>
+      <li repeat="template" repeat-start="0" id="planet[planets].moons">
+       <input name="planet[planets].moon[planet[planets].moons]"/>
+       <button type="remove">Delete Moon</button>
+      </li>
+     </ul>
+     <p><button type="add" template="planet[planets].moons">Add Moon</button></p>
+     <p><button type="remove">Delete Planet</button></p>
+    </li>
+   </ol>
+   <p><button type="add" template="planets">Add Planet</button></p>
+   <p><button type="submit">Submit</button></p>
+  </form>
+ </body>
+</html>
