@@ -3,7 +3,6 @@
  <head>
   <meta charset="utf-8" />
   <title>Web Forms 2.0 - Your daily Electricity cost</title>
-  <script type="text/javascript" src="webforms2.js"></script>
  </head>
  <body>
   <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post" enctype="multipart/form-data">
@@ -27,27 +26,19 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
     </thead>
     <tbody>
 
-     <tr repeat="0">
-      <td><input required="required" name="quantity_0" type="number" value="1"></td>
-      <td><input required="required" name="name_0" type="text" value="Spot light"></td>
-      <td><input required="required" name="wattage_0" type="number" value="50"></td>
-      <td><input required="required" name="minutes_0" type="number" value="1"></td>
-	  <td><output name="result" onforminput="value = (quantity_0.value * (wattage_0.value / 1000) * (minutes_0.value / 60)) * price.value">0</output></td>
-      <td><button type="remove">Delete Row</button></td>
-     </tr>
-
      <tr repeat="template" id="row">
       <td><input required="required" name="quantity_[row]" type="number" value="1"></td>
       <td><input required="required" name="name_[row]" type="text" value="Spot light"></td>
-      <td><input required="required" name="wattage_[row]" type="number" value="1"></td>
-      <td><input required="required" name="minutes_[row]" type="number" value="1"></td>
-	  <td><output name="result" onforminput="value = (quantity_[row].value * (wattage_[row].value / 1000) * (minutes_[row].value / 60)) * price.value">0</output></td>
+      <td><input required="required" name="wattage_[row]" type="number" value="50"></td>
+      <td><input required="required" min="0" max="1440" name="minutes_[row]" type="number" value="1"></td>
+	  <td><output name="result_[row]" onforminput="value = (quantity_[row].value * (wattage_[row].value / 1000) * (minutes_[row].value / 60)) * price.value">0</output></td>
       <td><button type="remove">Delete Row</button></td>
      </tr>
 
     </tbody>
    </table>
 </fieldset>
+  <h2>Total cost per day: <output name="total" onforminput="value = document.getElementById('row').length">0</output></h2>
    <p>
     <button type="add" template="row">Add Row</button>
     <button type="submit">Submit</button>
