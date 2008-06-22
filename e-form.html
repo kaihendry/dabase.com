@@ -46,34 +46,30 @@ function total()
 <table>
 <thead>
 <tr>
-<td>Quantity</td>
-<td>Appliance</td>
-<td>Wattage</td>
-<td>Time (minutes)</td>
+<th>Quantity</th>
+<th>Appliance</th>
+<th>Wattage</th>
+<th>Time (minutes)</th>
+<th></th>
 </tr>
 </thead>
 
-<tbody id="items">
+<tbody id="items"> 
 
-<tr id="order" repeat="template">
-      <td><input type="text" name="row[order].product" value=""></td>
-      <td><input type="text" name="row[order].quantity" value="1"></td>
-      <td><button type="remove">Remove This Row</button></td> 
+<tr repeat="0">
+<td><input name="row0_quantity" type="number" value="1"/></td>
+<td><input name="row0_item" type="text" value="Spot light"/></td>
+<td><input name="row0_wattage" type="number" value="50"/></td>
+<td><input name="row0_minutes" type="number" value="1440"/></td>
+<td><button type="remove">Delete Row</button></td>
 </tr>
 
-
-<tr repeat="1">
-<td><input name="row1_quantity" type="number" value="1"/></td>
-<td><input name="row1_item" type="text" value="Spot light"/></td>
-<td><input name="row1_wattage" type="number" value="50"/></td>
-<td><input name="row1_minutes" type="number" value="1440"/></td>
-</tr>
-
-<tr id="item" repeat="template" repeat-start="1">
+<tr id="line" repeat="template">
 <td><input name="row[line]_quantity" type="number" value="1"/></td>
 <td><input name="row[line]_item" type="text" /></td>
 <td><input name="row[line]_wattage" type="number" /></td>
 <td><input name="row[line]_minutes" type="number"/></td>
+<td><button type="remove">Delete Row</button></td>
 </tr>
 
 </tbody>
@@ -83,7 +79,7 @@ function total()
 <p>Total price: <output id="out" onforminput="value = total()">0</output> per day</p>
 
 <button type="submit">Submit</button>
-<button type="add" template="order">Add Row</button>
+<button type="add" template="line">Add Row</button>
 <button type="reset">Reset</button>
 </form>
 
