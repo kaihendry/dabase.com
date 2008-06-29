@@ -7,18 +7,14 @@
 <script type='text/javascript' src='webforms2.js'></script>
 
 <script type="text/javascript">
-
 function total() {
-
-// row.rowIndex
-
-return 5;
-
+alert(row.rowIndex);
+// Unsure how to add up outputs. Help.
 }
-
 </script>
- </head>
- <body>
+</head>
+<body>
+
   <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post" enctype="multipart/form-data">
 
 <p>
@@ -47,14 +43,16 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
       <td><input required="required" name="name_[row]" type="text" value="Spot light"></td>
       <td><input required="required" name="wattage_[row]" type="number" value="50"></td>
       <td><input required="required" min="0" max="1440" name="minutes_[row]" type="number" value="1"></td>
+
 	  <td><output name="result_[row]" onforminput="value = (quantity_[row].value * (wattage_[row].value / 1000) * (minutes_[row].value / 60)) * price.value">0</output></td>
+
       <td><button type="remove">Delete Row</button></td>
      </tr>
 
     </tbody>
    </table>
 </fieldset>
-  <h2>Total cost per day: <output name="total" onformchange="value = 23">0</output></h2>
+  <h2>Total cost per day: <output name="total" onformchange="value = total()">0</output></h2>
    <p>
     <button type="add" template="row">Add Row</button>
     <button type="submit">Submit</button>
@@ -62,15 +60,14 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
   </form>
 
 <p>There are:
+</p>
 <ul>
 <li>60 minutes in an hour</li>
 <li>480 minutes in 8 hours</li>
 <li>1440 minutes in each day</li>
 </ul>
-</p>
 
 Requires <a href="http://www.whatwg.org/specs/web-forms/current-work/">Web Form 2.0</a> support. e.g. <a href="http://www.opera.com/">Opera</a>
 
- </body>
+</body>
 </html>
-
