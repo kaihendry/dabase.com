@@ -1,0 +1,63 @@
+[[meta title="USB stick automount"]]
+
+No HAL and no D-BUS.
+
+After plugging in my USB stick and looking at `dmesg`, I know my system has
+assigned it the `/dev/sdb` device.
+
+	x61:~% dmesg | grep sdb
+	[27912.676790] sd 3:0:0:0: [sdb] 7888896 512-byte hardware sectors (4039 MB)
+	[27912.677681] sd 3:0:0:0: [sdb] Write Protect is off
+	[27912.677691] sd 3:0:0:0: [sdb] Mode Sense: 23 00 00 00
+	[27912.677697] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+	[27912.680314] sd 3:0:0:0: [sdb] 7888896 512-byte hardware sectors (4039 MB)
+	[27912.680911] sd 3:0:0:0: [sdb] Write Protect is off
+	[27912.680920] sd 3:0:0:0: [sdb] Mode Sense: 23 00 00 00
+	[27912.680926] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+	[27912.680933]  sdb: sdb1
+	[27912.872951] sd 3:0:0:0: [sdb] Attached SCSI removable disk
+
+Ok, lets find some extra information about it:
+
+	x61:~% udevinfo -n /dev/sdb -q all 
+	P: /block/sdb
+	N: sdb
+	S: disk/by-id/usb-Kingston_DataTraveler_2.0_2007062000000000591880AA-0:0
+	S: disk/by-path/pci-0000:00:1d.7-usb-0:2:1.0-scsi-0:0:0:0
+	E: ID_VENDOR=Kingston
+	E: ID_MODEL=DataTraveler_2.0
+	E: ID_REVISION=1.00
+	E: ID_SERIAL=Kingston_DataTraveler_2.0_2007062000000000591880AA-0:0
+	E: ID_SERIAL_SHORT=2007062000000000591880AA
+	E: ID_TYPE=disk
+	E: ID_INSTANCE=0:0
+	E: ID_BUS=usb
+	E: ID_PATH=pci-0000:00:1d.7-usb-0:2:1.0-scsi-0:0:0:0
+
+After Googling, [I need to](http://www.debianhelp.org/node/9937#comment-35234):
+
+1. Create a UDEV rule to symlink the device to /dev/usbstick
+* Set /etc/fstab
+* Add another UDEV rule to mount it
+
+	x61:~% sudo vim /etc/udev/udev.conf
+	x61:~% sudo udevcontrol reload_rules
+
+
+	ID_MODEL=DataTraveler_2.0
+	ID_REVISION=1.00
+	ID_SERIAL=Kingston_DataTraveler_2.0_2007062000000000591880AA-0:0
+	ID_SERIAL_SHORT=2007062000000000591880AA
+	ID_TYPE=disk
+	ID_INSTANCE=0:0
+	ID_BUS=usb
+	ID_PATH=pci-0000:00:1a.7-usb-0:3:1.0-scsi-0:0:0:0
+	ID_FS_USAGE=crypto
+	ID_FS_TYPE=crypto_LUKS
+	ID_FS_VERSION=
+	ID_FS_UUID=9703af38-e932-426e-98b5-48d9d45cb7be
+	ID_FS_UUID_ENC=9703af38-e932-426e-98b5-48d9d45cb7be
+	ID_FS_LABEL=
+	ID_FS_LABEL_ENC=
+	ID_FS_LABEL_SAFE=
+	DEVNAME=/dev/sdc1

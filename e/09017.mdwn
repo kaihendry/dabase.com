@@ -1,0 +1,15 @@
+[[meta title="Git CVS checkout of W3C cvsweb"]]
+
+Say you want to checkout the [mobile test suite](http://dev.w3.org/cvsweb/2008/mobile-test/) into a git repository.
+
+The authorative instructions are [here](http://dev.w3.org/cvsweb), though you could follow these:
+
+	CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs login
+
+Password is 'anonymous'.
+
+	x61:~/aplix/w3c% git-cvsimport -d :pserver:anonymous@dev.w3.org:/sources/public/ 2008/mobile-test
+	Initialized empty Git repository in /home/hendry/aplix/w3c/.git/
+	cvs rlog: Logging 2008/mobile-test
+	cvs rlog: Logging 2008/mobile-test/nored
+	x61:~/aplix/w3c% 
