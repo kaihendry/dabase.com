@@ -23,7 +23,7 @@
 
 <p>
 Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">price per kiloWatt hour</a>:
-<input name="price" type="number" title="Price per kiloWatt hour" step="any" value="12.2"/> (cents/pence)
+<input name="price" type="number" title="Price per kiloWatt hour" step="any" value="12.2"/> pence
 </p>
 
 <fieldset>
@@ -57,7 +57,7 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
    </table>
 </fieldset>
   <h2>Total cost per day: <output name="total" onformchange="value = calctotal()">0</output></h2>
-  <h2>Total cost per month: <output name="total" onformchange="value = calctotal() * 30">0</output></h2>
+  <h2>Total cost per month: <output name="total" onformchange="value = (calctotal() * 30) / 100">0</output> GBP</h2>
    <p>
     <button type="add" template="row">Add Row</button>
     <button type="submit">Submit</button>
