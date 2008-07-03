@@ -7,15 +7,19 @@
 <script type='text/javascript' src='webforms2.js'></script>
 
 <script type="text/javascript">
-function total() {
-alert(row.rowIndex);
-// Unsure how to add up outputs. Help.
-}
+	function calctotal() {
+	var total = 0;
+	var outputs = document.forms[0].getElementsByTagName('output');
+	for(var i = 0, output; output = outputs[i]; i++) {
+	Iif(output.name != 'total') total += parseFloat(output.value);
+	}
+	return total;
+	}
 </script>
 </head>
 <body>
 
-  <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post" enctype="multipart/form-data">
+<form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post">
 
 <p>
 Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">price per kiloWatt hour</a>:
@@ -52,7 +56,7 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
     </tbody>
    </table>
 </fieldset>
-  <h2>Total cost per day: <output name="total" onformchange="value = total()">0</output></h2>
+  <h2>Total cost per day: <output name="total" onformchange="value = calctotal()">0</output></h2>
    <p>
     <button type="add" template="row">Add Row</button>
     <button type="submit">Submit</button>
