@@ -13,3 +13,23 @@ Password is 'anonymous'.
 	cvs rlog: Logging 2008/mobile-test
 	cvs rlog: Logging 2008/mobile-test/nored
 	x61:~/aplix/w3c% 
+
+
+With my ssh 'khendry' login:
+
+	export CVS_RSH="ssh"
+	git-cvsimport -d khendry@dev.w3.org:/sources/public 2008/mobile-test
+
+
+For a normal CVS checkout (for `git-cvsexportcommit`):
+
+	cvs -d khendry@dev.w3.org:/sources/public checkout 2008/mobile-test
+	export CVSROOT=khendry@dev.w3.org:/sources/public
+	cd 2008/mobile-test
+	export GIT_DIR=/srv/www/wct.localdomain/wct/.git
+	git-cvsexportcommit -v 1deec9ed09888
+	cvs commit -F .msg 'cookie.js'
+
+You might experience a "too recent" message if you try update too soon.
+
+	x61:/srv/www/wct.localdomain/wct% git-cvsimport -v -d khendry@dev.w3.org:/sources/public 2008/mobile-test
