@@ -8,7 +8,7 @@
 </form>
 <!-- Google CSE Search Box Ends -->
 
-[[inline pages="e/*" description="dabase tips" feedonly="yes" timeformat="%F"]]
+[[inline pages="e/* and !e/new.sh" description="dabase tips" feedonly="yes" timeformat="%F"]]
 
 ## Please contribute a tip or a snappy howto
 [[inline actions=yes pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F" rootpage="u"]]
