@@ -10,6 +10,8 @@
 
 [[inline pages="e/* and !e/new.sh" description="Hendry's hints" feedonly="yes" timeformat="%F"]]
 
+<a href="http://fusion.google.com/add?source=atgs&feedurl=http%3A//dabase.com/tips/index.atom"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a>
+
 ## Please contribute a tip or a snappy howto
 [[inline actions=yes pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F" rootpage="u"]]
 
