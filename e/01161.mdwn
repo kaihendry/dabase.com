@@ -1,7 +1,7 @@
 [[meta title="sysctl modify kernel parameters"]]
 
-Test the options dropping them into `/etc/sysctl.conf`
+Test the options **before** dropping them into `/etc/sysctl.conf`
 
 	sudo sysctl -w vm.vdso_enabled=0 vm.mmap_min_addr=4096
 
-[Source](http://www.linuxuk.org/node/38#comment-16):
+[Source](http://www.linuxuk.org/node/38#comment-16)
