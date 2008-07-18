@@ -1,0 +1,14 @@
+[[meta title="Apache2 Vhost logging"]]
+
+After long last, the Debian package introduces:
+
+	nox:/etc/apache2% grep vhost apache2.conf
+	LogFormat "%v:%p %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" vhost_combined
+	CustomLog /var/log/apache2/other_vhosts_access.log vhost_combined
+
+But the el-cheapo virtual hosting `VirtualDocumentRoot /srv/www/%0` [setups do
+not have ServerNames
+setup](http://www.debian-administration.org/users/lee/weblog/12). So what you
+really need is:
+
+	LogFormat "%{Host}i:%p %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" vhost_combined
