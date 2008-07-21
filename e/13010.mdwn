@@ -2,6 +2,9 @@
 Common:
 
 	[[ $FILES ]] || echo "No files!"; break
+
 More correct:
 
 	[[ ${var+set} ]] && echo set || echo unset
+
+Actually using `test` is better.
