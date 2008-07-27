@@ -1,0 +1,8 @@
+[[meta title="Source line count"]]
+
+	wc -l **/*.[ch] | tail -1
+
+Or use [sloccount](http://packages.qa.debian.org/s/sloccount.html)
+
+
+[Sucking less](http://www.suckless.org/)

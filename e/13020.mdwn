@@ -1,0 +1,7 @@
+[[meta title="find tips"]]
+
+`find` must be one of those archaic unix commands. It takes years to master.
+
+	find /mnt/sd -type f -iname "*.thm" -o -iname "*.jpg"
+
+This commands finds files in `/mnt/sd` that have either the .thm or .jpg extension.

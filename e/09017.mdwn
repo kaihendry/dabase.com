@@ -57,3 +57,6 @@ A quicker push with a CVS checkout at '/tmp/w3c/2008/mobile-test':
 And finally check [W3C mobile-test CVSweb](http://dev.w3.org/cvsweb/2008/mobile-test/) if everything looks good.
 
 Still unsure how git merges back via `git-cvsimport`. Also unsure how this reflects in the remote [gitweb view of my local wct git repository](http://git.webvm.net/?p=wct).
+
+Just for my reference, just with CVS:
+	CVSROOT=khendry@dev.w3.org:/sources/public cvs co 2008/mobile-test
