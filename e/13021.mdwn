@@ -1,0 +1,3 @@
+[[meta title="Listing directory size"]]
+
+	du -sh /var/cache/*/
