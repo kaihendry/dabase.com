@@ -1,0 +1,5 @@
+[[meta title="Searching short variable names"]]
+
+[Jan Hudec](http://etbe.coker.com.au/2008/07/30/variable-names/#comment-15071) says:
+
+	/\<i\>

@@ -1,4 +1,4 @@
-
+grep -B 1 $1 ../tips.mdwn
 for i in `seq -w 500`
 do
 #echo -n $1$i.mdwn
