@@ -1,0 +1,11 @@
+[[meta title="Merging differences"]]
+
+
+	:help merge
+
+
+	do
+	dp
+
+
+VIMdiff is an amazing too for merging.
