@@ -21,9 +21,9 @@ Ugly !
 
 	[ `id -u` -ne 0 ] && echo "not root" && exit 1
 
-Using `test` is better, though still UGLY
+Using `test` is better, though still UGLY to string it along one line like that. And if you decide to do a else clause with ||, bugs can easily result.
 
-	test "x$WHOAMI" != "xroot" && echo "not root" && exit 1
+	test "x$(whoami)" != "xroot" && echo "not root" && exit 1
 
 Old original bourne shell did not know test prepending !
 
