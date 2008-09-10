@@ -30,14 +30,17 @@ Old original bourne shell did not know test prepending !
 		exit 1
 	fi
 
-Old bourne shells did not know semi-colons either
+Old bourne shells did not know semi-colons either. Be careful to keep
+whitespace on the inner area of the square brackets and notice we are using a
+string comparison without quoting.
 
 	if [ `id -u` -ne 0 ]; then
 		echo >&2 "not root"
 		exit 1
 	fi
 
-Old bourne shells did not know $() (subshell)
+Old bourne shells did not know $() subshell. Notice we are using numeric
+comparison with strings, which could lead to problems on certain shells.
 
 	if test "x$(whoami)" != "xroot" # in case whoami returns empty value
 	then
@@ -53,18 +56,26 @@ Easy to read POSIX shell, though missing quotes which is sadly needed always to 
 		exit 1
 	fi
 
-Old Bourne shell flavor
+Modern shell style with quotes and [no backticks](http://wooledge.org:8000/BashFAQ/082)
 
-	ID=`id -u` # id is _slightly_ better than whoami
-	if test "x$ID" != "x0"
+	if [ "$(id -u)" -ne "0" ] # string comparison is better in shell as argument lists are strings
 	then
 		echo >&2 "not root"
 		exit 1
 	fi
 
-Modern shell style with quotes and [no backticks](http://wooledge.org:8000/BashFAQ/082)
+Old Bourne POSIX shell flavor. **Safe, portable and compatible**
 
-	if [ "$(id -u)" -ne "0" ]
+	ID=`id -u` # id is _slightly_ better than whoami
+	if test "x$ID" -ne "x0"
+	then
+		echo >&2 "not root"
+		exit 1
+	fi
+
+Using test is a safer practice than using square brackets. We assume `id` returns **something**.
+
+	if test "$(id -u)" -ne "0"
 	then
 		echo >&2 "not root"
 		exit 1
