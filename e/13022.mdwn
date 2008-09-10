@@ -66,17 +66,18 @@ Modern shell style with quotes and [no backticks](http://wooledge.org:8000/BashF
 		exit 1
 	fi
 
-Old Bourne POSIX shell flavour. **Safe, portable and compatible** and a bit too verbose.
+Old Bourne POSIX shell flavour. **Safe, portable and compatible** and a bit too verbose for my liking.
 
-	ID=`id -u` # id is _slightly_ better than whoami
+	ID=`id -u` # id is _slightly_ better than whoami, though less readable imo
 	if test "x$ID" -ne "x0"
 	then
-		echo "not root" >&2
+		echo "not root" # you don't have to output to stderr if you don't want to
 		exit 1
 	fi
 
-Using `test` is a safer practice than using square brackets. Here I assume `id`
-returns **something**. On very crap & old unixes this could be a mistake.
+Using `test` is a better practice than using square brackets. Here I assume
+`id` returns **something**. In certain rare environments you cannot make this
+assumption!
 
 	if test "$(id -u)" -ne "0"
 	then
