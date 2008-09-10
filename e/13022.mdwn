@@ -1,6 +1,6 @@
 [[meta title="Testing for root"]]
 
-Do not use BASH
+Do not depend on BASH extensions!
 
 	#/bin/sh
 
@@ -20,14 +20,14 @@ Using test is better, though still UGLY
 
 	test "x$WHOAMI" != "xroot" && echo "not root" && echo exit 1
 
-Original bourne did not know test prepend !
+Original bourne did not know test prepending !
 
 	if ! test `id -u` = 0; then
 		echo "not root" > /dev/stderr # /dev/stderror is not portable!
 		echo exit 1
 	fi
 
-Original bourne did not know semi colons either
+Original bourne did not know semi-colons either
 
 	if [ `id -u` -ne 0 ]; then
 		echo >&2 "not root"
@@ -50,18 +50,18 @@ Easy to read POSIX shell, though missing quotes :(
 		echo exit 1
 	fi
 
-Safe programming style with quotes and no backticks
+Old Bourne shell flavor
 
-	if [ "$(id -u)" -ne "0" ]
+	ID=`id -u` # id is _slightly_ better than whoami
+	if test "x$ID" != "x0"
 	then
 		echo >&2 "not root"
 		echo exit 1
 	fi
 
-Old Bourne shell flavor
+Modern safe shell style with quotes and [no backticks](http://wooledge.org:8000/BashFAQ/082)
 
-	ID=`id -u` # id is _slightly_ better than whoami
-	if test "x$ID" != "x0"
+	if [ "$(id -u)" -ne "0" ]
 	then
 		echo >&2 "not root"
 		echo exit 1
