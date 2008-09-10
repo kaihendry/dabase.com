@@ -2,11 +2,12 @@
 
 In order of preference. **The last code snippet is best**.
 
-Do not depend on bloated BASH extensions!
+Do not depend on [bloated BASH](http://en.wikipedia.org/wiki/Bash) extensions!
+Use the [bourne shell](http://en.wikipedia.org/wiki/Bourne_shell) and lint/check with the `checkbashisms` tool from [Debian devscripts](http://packages.qa.debian.org/d/devscripts.html).
 
-	#/bin/sh
+	#!/bin/sh
 
-$USER could be forged with certain shells! Also dangerous with `su`
+`$USER` could be forged with certain shells! Also dangerous with `su`
 
 	if test "$USER" != "xroot"
 	then
@@ -18,25 +19,25 @@ Ugly !
 
 	[ `id -u` -ne 0 ] && echo "not root" && exit 1
 
-Using test is better, though still UGLY
+Using `test` is better, though still UGLY
 
 	test "x$WHOAMI" != "xroot" && echo "not root" && exit 1
 
-Original bourne did not know test prepending !
+Old original bourne shell did not know test prepending !
 
 	if ! test `id -u` = 0; then
 		echo "not root" > /dev/stderr # /dev/stderror is not portable!
 		exit 1
 	fi
 
-Original bourne did not know semi-colons either
+Old bourne shells did not know semi-colons either
 
 	if [ `id -u` -ne 0 ]; then
 		echo >&2 "not root"
 		exit 1
 	fi
 
-Original bourne did not know $() (subshell)
+Old bourne shells did not know $() (subshell)
 
 	if test "x$(whoami)" != "xroot" # in case whoami returns empty value
 	then
@@ -44,7 +45,7 @@ Original bourne did not know $() (subshell)
 		exit 1
 	fi
 
-Easy to read POSIX shell, though missing quotes :(
+Easy to read POSIX shell, though missing quotes which is sadly needed always to play safe :(
 
 	if test `id -u` != 0
 	then
@@ -61,7 +62,7 @@ Old Bourne shell flavor
 		exit 1
 	fi
 
-Modern safe shell style with quotes and [no backticks](http://wooledge.org:8000/BashFAQ/082)
+Modern shell style with quotes and [no backticks](http://wooledge.org:8000/BashFAQ/082)
 
 	if [ "$(id -u)" -ne "0" ]
 	then
