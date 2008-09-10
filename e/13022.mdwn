@@ -37,7 +37,7 @@ whitespace on the inner area of the square brackets and notice we are using a
 string comparison without quoting.
 
 	if [ `id -u` -ne 0 ]; then
-		echo >&2 "not root"
+		echo >&2 "not root" # this works, but is not as readable as appending the stderr
 		exit 1
 	fi
 
@@ -46,7 +46,7 @@ comparison with strings, which could lead to problems on certain shells.
 
 	if test "x$(whoami)" != "xroot" # in case whoami returns empty value
 	then
-		echo >&2 "not root"
+		echo "not root" >&2
 		exit 1
 	fi
 
@@ -54,7 +54,7 @@ Easy to read [POSIX](http://en.wikipedia.org/wiki/POSIX) shell, though missing q
 
 	if test `id -u` != 0
 	then
-		echo >&2 "not root"
+		echo "not root" >&2
 		exit 1
 	fi
 
@@ -62,24 +62,24 @@ Modern shell style with quotes and [no backticks](http://wooledge.org:8000/BashF
 
 	if [ "$(id -u)" -ne "0" ] # string comparison is better in shell as argument lists are strings
 	then
-		echo >&2 "not root"
+		echo "not root" >&2
 		exit 1
 	fi
 
-Old Bourne POSIX shell flavour. **Safe, portable and compatible**
+Old Bourne POSIX shell flavour. **Safe, portable and compatible** and a bit too verbose.
 
 	ID=`id -u` # id is _slightly_ better than whoami
 	if test "x$ID" -ne "x0"
 	then
-		echo >&2 "not root"
+		echo "not root" >&2
 		exit 1
 	fi
 
-Using test is a safer practice than using square brackets. Here I assume `id`
+Using `test` is a safer practice than using square brackets. Here I assume `id`
 returns **something**. On very crap & old unixes this could be a mistake.
 
 	if test "$(id -u)" -ne "0"
 	then
-		echo >&2 "not root"
+		echo "not root" >&2
 		exit 1
 	fi
