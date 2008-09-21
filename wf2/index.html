@@ -5,6 +5,11 @@
   <title>Web Forms 2.0 - Your daily Electricity cost</title>
 
 <script type="text/javascript">
+if (! window.opera)
+	{ alert("Web Forms 2 only works in the Opera browser currently"); 
+	  window.location.replace('http://www.opera.com/download/');
+	}
+
 	function calctotal() {
 	var total = 0;
 	var outputs = document.forms[0].getElementsByTagName('output');
