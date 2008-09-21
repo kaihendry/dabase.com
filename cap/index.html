@@ -3,6 +3,18 @@
  <head>
   <meta charset="utf-8" />
   <title>Break the cap</title>
+
+<style type="text/css">
+th {
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+background:#F9F6BA none repeat scroll 0 0;
+border:1px solid #C9C69A;
+}
+</style>
+
 </head>
 <body>
 
@@ -18,7 +30,7 @@
 <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post">
 
 <p>
-You cap in Gigabytes:
+You monthly cap in Gigabytes:
 <input name="cap" type="number" step="any" value="1"/>
 </p>
 
@@ -51,7 +63,9 @@ You cap in Gigabytes:
    </table>
 </fieldset>
 
-  <h2>You will blow your cap in about 1231 minutes</h2>
+  <h2>You will blow your cap in about: <output name="total" onformchange="value = kbps.value">0</output> minutes</h2>
+
+</form>
 
 </body>
 </html>
