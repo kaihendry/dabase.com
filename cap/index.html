@@ -63,8 +63,8 @@ You monthly cap in Gigabytes (GB):
    </table>
 </fieldset>
 
-<h2>You will blow your cap in about: <output name="total" onformchange="value = (1024*1024 / kBps.value) / 60">0</output> minutes</h2>
-<h2>You will blow your cap in about: <output name="total" onformchange="value = ((1024*1024 / kBps.value) / 60) / 60">0</output> hours</h2>
+<h2>You will blow your cap in about: <output name="total" onformchange="value = (cap.value * 1024*1024 / kBps.value) / 60">0</output> minutes</h2>
+<h2>You will blow your cap in about: <output name="total" onformchange="value = ((cap.value * 1024*1024 / kBps.value) / 60) / 60">0</output> hours</h2>
 
 </form>
 
