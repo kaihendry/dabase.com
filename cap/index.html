@@ -30,7 +30,7 @@ border:1px solid #C9C69A;
 <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post">
 
 <p>
-You monthly cap in Gigabytes:
+You monthly cap in Gigabytes (GB):
 <input name="cap" type="number" step="any" value="1"/>
 </p>
 
@@ -63,7 +63,8 @@ You monthly cap in Gigabytes:
    </table>
 </fieldset>
 
-  <h2>You will blow your cap in about: <output name="total" onformchange="value = kbps.value">0</output> minutes</h2>
+<h2>You will blow your cap in about: <output name="total" onformchange="value = (1024*1024 / kBps.value) / 60">0</output> minutes</h2>
+<h2>You will blow your cap in about: <output name="total" onformchange="value = ((1024*1024 / kBps.value) / 60) / 60">0</output> hours</h2>
 
 </form>
 
