@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Break the cap</title>
+</head>
+<body>
+
+<ul>
+
+<li><a href="http://en.wikipedia.org/wiki/List_of_device_bandwidths">List of device bandwidths</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Net_bit_rate">Bit rate</a></li>
+<li>8 bits in a byte, so 8 kilobits is 1 kilobyte</li>
+<li>1 Megabit a second is 128 kB/sec</li>
+<li>1 Gigabit a second is 131072 kB/sec</li>
+</ul>
+
+<form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post">
+
+<p>
+You cap in Gigabytes:
+<input name="cap" type="number" step="any" value="1"/>
+</p>
+
+<fieldset>
+<legend>Your speed</legend>
+
+   <table>
+    <thead>
+     <tr>
+
+			<th>kbit/sec (kbps or kbit/s) 10<sup>3</sup></th>
+			<th>kilobyte/sec (kB, KB, K or Kbyte or just kB/sec)</th>
+			<th>Megabit per second 10<sup>6</sup></th>
+			<th>Gigabit per second 10<sup>9</sup></th>
+
+     </tr>
+    </thead>
+    <tbody>
+
+     <tr>
+
+      <td><input name="kbps" type="number"></td>
+      <td><input name="kBps" type="number"></td>
+      <td><input name="Mbps" type="number"></td>
+      <td><input name="Gbps" type="number"></td>
+
+     </tr>
+
+    </tbody>
+   </table>
+</fieldset>
+
+  <h2>You will blow your cap in about 1231 minutes</h2>
+
+</body>
+</html>
