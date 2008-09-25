@@ -1,0 +1,7 @@
+[[meta title="Chrome, wine and Debian"]]
+
+Running Chrome unpleasantly through WINE. [Download the cxchromium
+port](http://www.codeweavers.com/services/ports/chromium/) from codeweavers and
+launch Chrome & WINE like so:
+
+	/opt/cxchromium/bin/wine --cx-app chrome --no-sandbox --in-process-plugins
