@@ -1,0 +1,10 @@
+[[meta title="How to find the Debian version of an installed package"]]
+
+Finding the package version in Debian isn't trivial. `dpkg -l bash` looks like
+crap.
+
+Best I've found is:
+
+	dpkg --status bash | egrep "^Version" | awk '{print $2}' | awk -F- '{ print $1 }
+
+You could grep `/var/lib/dpkg/available`, though I think it isn't very efficient.
