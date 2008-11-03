@@ -1,25 +1,20 @@
-[[meta title="Imagemagick"]]
-Are set of image manipulation tools, which work mainly within the console ! :)
+[[meta title="Image magic with imagemagick"]]
+
+Imagemagick is a set of image manipulation tools, which work from the shell.
+
 I typically use it to change some files from one format to another:
 
-	hendry@bogrund-14:~/mail-attachments$ for i in `ls`; do echo convert $i `basename $i png`eps; done
-
+	hendry@bogrund-14:~/mail-attachments$ for i in $(ls *.png); do echo convert $i $(basename $i png)eps; done
 	convert GUIreference.png GUIreference.eps
-
 	convert JTreereference.png JTreereference.eps
-
 	convert Overviewofsubsystems.png Overviewofsubsystems.eps
-
 	convert Selectorreference.png Selectorreference.eps
-
 	convert Selectorsequence.png Selectorsequence.eps
-
 	convert gui_to_fileio.png gui_to_fileio.eps
-
-	convert gui_to_selector.png gui_to_selector.eps
-
 	hendry@bogrund-14:~/mail-attachments$
+
 Remove echo for it to run...
-Here is cool tip to append all the images into one file.
+
+Here is cool tip to append / join all the images into one file with `convert`.
 
 	convert 6600-opera-1.jpg 6600-opera-2.jpg 6600-opera-3.jpg +append all.jpg
