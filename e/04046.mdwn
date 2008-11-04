@@ -5,7 +5,11 @@ DOM manipulation in Javascript sucks:
 	var h1 = document.getElementsByTagName("h1");
 	h1.item(0).childNodes.item(0).nodeValue = "Hello World";
 
-Using CSS selector style:
+or (thank to [Xiven](http://www.xiven.com/)):
+
+	document.getElementsByTagName("h1")[0].childNodes[0].nodeValue
+
+Using CSS selector style (better imo):
 
 	$('h1:first').text("Hello World");
 
@@ -13,4 +17,4 @@ or
 
 	$('h1:eq(0)').text("Hello World");
 
-One wonders why it isn't as easy as getElementsByTagName("h1")[0].("Hello World");
+One wonders why it isn't as easy as `getElementsByTagName("h1")[0].text("Hello World")`?
