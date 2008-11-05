@@ -1,0 +1,6 @@
+
+1. [T-mobile hotspots](http://www.t-mobile.co.uk/services/mobile-internet/hotspot/)
+* Contacts not being integrated to email
+* [T-mobile Account overview](https://www.t-mobile.co.uk/service/your-account/private/home/)
+* [How T-mobile screwed up the G1 launch](http://natalian.org/archives/2008/10/30/t-mobile-g1-uk-launch-fail/)
+* [First impressions of using the G1](http://natalian.org/archives/2008/11/01/android-apple-ketchup/)
