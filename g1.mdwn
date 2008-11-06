@@ -1,5 +1,12 @@
 [[meta title="Life with a T-mobile G1 in the UK"]]
 
+# Do not write Dalvik Android applications
+
+First I implore you not to write an [Android Application](http://code.google.com/android/). i.e. a Java dalvik .apk.
+
+Most developers require Geolocation and you can easily achieve [Geolocation in
+the Android browser](http://geo.webvm.net/). The Web is the future!
+
 1. [T-mobile hotspots](http://www.t-mobile.co.uk/services/mobile-internet/hotspot/) - can we use them?
 * [T-mobile Account overview](https://www.t-mobile.co.uk/service/your-account/private/home/)
 * [How T-mobile screwed up the G1 launch](http://natalian.org/archives/2008/10/30/t-mobile-g1-uk-launch-fail/)
@@ -9,9 +16,9 @@
 
 # Issues
 
-* SMS not being integrated to email
+* SMS not being integrated to email. Basically I want to forward SMSes as email. Would be nice to have an email address to foward to SMS.
 * [No intelligent customer service](http://flickr.com/photos/hendry/3005378966/)
-* No conference call
+* [No conference call](http://flickr.com/photos/hendry/3006708296/)
 
 # I HAZ ROOT
 
