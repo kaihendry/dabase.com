@@ -11,22 +11,7 @@
 
 * SMS not being integrated to email
 * [No intelligent customer service](http://flickr.com/photos/hendry/3005378966/)
-
-## AMD64 not being able to build Android
-
-	Linux hetty 2.6.26-1-amd64 #1 SMP Wed Sep 10 15:31:12 UTC 2008 x86_64 GNU/Linux
-
-	hetty:~/android% make
-	build/core/product_config.mk:229: WARNING: adding test OTA key
-	build/core/main.mk:177: implicitly installing apns-conf_sdk.xml
-	host Executable: acp (out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/acp)
-	/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.3.2/libstdc++.so when searching for -lstdc++
-	/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.3.2/libstdc++.a when searching for -lstdc++
-	/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.3.2/libstdc++.so when searching for -lstdc++
-	/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.3.2/libstdc++.a when searching for -lstdc++
-	/usr/bin/ld: cannot find -lstdc++
-	collect2: ld returned 1 exit status
-	make: *** [out/host/linux-x86/obj/EXECUTABLES/acp_intermediates/acp] Error 1
+* No conference call
 
 # I HAZ ROOT
 
