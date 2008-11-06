@@ -16,9 +16,12 @@ the Android browser](http://geo.webvm.net/). The Web is the future!
 
 # Issues
 
-* SMS not being integrated to email. Basically I want to forward SMSes as email. Would be nice to have an email address to foward to SMS.
+1. SMS not being integrated to email. Basically I want to forward SMSes as email. Would be nice to have an email address to foward to SMS.
 * [No intelligent customer service](http://flickr.com/photos/hendry/3005378966/)
-* [No conference call](http://flickr.com/photos/hendry/3006708296/)
+
+# Resolved issues
+
+1. [No conference call](http://flickr.com/photos/hendry/3006708296/)
 
 # I HAZ ROOT
 
