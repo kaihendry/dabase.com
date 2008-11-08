@@ -1,39 +1,8 @@
 [[meta title="Life with a T-mobile G1 in the UK"]]
 
-<!-- Start of Flickr Badge -->
-<style type="text/css">
-#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
-#flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
-#flickr_icon_td {padding:0 5px 0 0 !important;}
-.flickr_badge_image {text-align:center !important;}
-.flickr_badge_image img {border: 1px solid black !important;}
-#flickr_badge_uber_wrapper {width:150px;}
-#flickr_www {display:block; text-align:center; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
-#flickr_badge_uber_wrapper a:hover,
-#flickr_badge_uber_wrapper a:link,
-#flickr_badge_uber_wrapper a:active,
-#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
-#flickr_badge_wrapper {background-color:#ffffff;border: solid 1px #000000}
-#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
-</style>
-<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0"><tr><td><a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
-<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?show_name=1&count=3&display=latest&size=t&layout=v&source=user_tag&user=16105436%40N00&tag=android"></script>
-<tr>
-<td id="flickr_badge_source" valign="center" align="center">
-<table cellpadding="0" cellspacing="0" border="0"><tr>
-<td width="10" id="flickr_icon_td"><a href="http://www.flickr.com/photos/hendry/tags/android/"><img id="flickr_badge_icon" alt="Kai Hendry's items tagged with android" src="http://farm1.static.flickr.com/33/buddyicons/16105436@N00.jpg?1140058299#16105436@N00" align="left" width="48" height="48"></a></td>
-<td id="flickr_badge_source_txt"><nobr>More of</nobr> <a href="http://www.flickr.com/photos/hendry/tags/android/">Kai Hendry's stuff tagged with android</a></td>
-</tr></table>
-</td>
-</tr>
-</table>
-</td></tr></table>
-<!-- End of Flickr Badge -->
-
-
 # Do not write Dalvik Android applications
 
-First I implore you not to write an [Android Application](http://code.google.com/android/). i.e. a Java dalvik .apk.
+First I implore you not to write an [Android Application](http://code.google.com/android/). i.e. a [Java dalvik](http://en.wikipedia.org/wiki/Dalvik_virtual_machine) .apk.
 
 Most developers require Geolocation and you can easily achieve [Geolocation in
 the Android browser](http://geo.webvm.net/). The Web is the future!
