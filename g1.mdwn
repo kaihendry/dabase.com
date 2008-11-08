@@ -7,7 +7,6 @@ First I implore you not to write an [Android Application](http://code.google.com
 Most developers require Geolocation and you can easily achieve [Geolocation in
 the Android browser](http://geo.webvm.net/). The Web is the future!
 
-1. [T-mobile hotspots](http://www.t-mobile.co.uk/services/mobile-internet/hotspot/) - can we use them?
 * [T-mobile Account overview](https://www.t-mobile.co.uk/service/your-account/private/home/)
 * [How T-mobile screwed up the G1 launch](http://natalian.org/archives/2008/10/30/t-mobile-g1-uk-launch-fail/)
 * [First impressions of using the G1](http://natalian.org/archives/2008/11/01/android-apple-ketchup/)
@@ -18,10 +17,19 @@ the Android browser](http://geo.webvm.net/). The Web is the future!
 
 1. SMS not being integrated to email. Basically I want to forward SMSes as email. Would be nice to have an email address to foward to SMS.
 * [No intelligent customer service](http://flickr.com/photos/hendry/3005378966/)
+* [T-mobile hotspots](http://www.t-mobile.co.uk/services/mobile-internet/hotspot/) - can we use them at a preferential rate?
 
 # Resolved issues
 
 1. [No conference call](http://flickr.com/photos/hendry/3006708296/)
+
+# The headphone Jack
+
+HTC use a [proprietary
+ExtUSB](http://en.wikipedia.org/wiki/ExtUSB#Proprietary_connectors_and_formats)
+interface for audio. You can get a [Stereo Headset Adapter - HTC
+exUSB](http://www.clove.co.uk/viewProduct.aspx?product=09D7B5BC-39D9-42F9-BC15-78CD943917F6)
+for 8GBP. :/
 
 # I HAZ ROOT
 
