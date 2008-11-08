@@ -1,12 +1,12 @@
 @font-face {
-   font-family: Droid;
+   font-family: Andika;
    font-weight: normal;
    font-style: normal;
-   src: url("http://dragon.webvm.net/DroidSansFallback.ttf")
+   src: url("http://hetty.webconverger.com/AndBasR.ttf")
 }
 
 body {
-	font-family: Droid;
+	font-family: Andika;
 }
 
 ol {
