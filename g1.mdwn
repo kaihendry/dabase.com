@@ -1,7 +1,6 @@
 [[meta title="Life with a T-mobile G1 in the UK"]]
 
-1. [Subscribe to the RSS for updates](http://git.webconverger.org/?p=faq.git;a=rss;f=g1.mdwn)
-* [T-mobile Account overview](https://www.t-mobile.co.uk/service/your-account/private/home/)
+1. [T-mobile Account overview](https://www.t-mobile.co.uk/service/your-account/private/home/)
 * [How T-mobile screwed up the G1 launch](http://natalian.org/archives/2008/10/30/t-mobile-g1-uk-launch-fail/)
 * [First impressions of using the G1](http://natalian.org/archives/2008/11/01/android-apple-ketchup/)
 * [UK tariffs](http://www.mobileindustryreview.com/2008/11/g1_tariff_update.html)
@@ -175,3 +174,6 @@ for 8GBP. :/
 # Tinkerings at work
 
 * [Aplix page on Android](http://wiki.webvm.net/android/)
+
+<a href="http://git.webconverger.org/?p=faq.git;a=rss;f=g1.mdwn"><img src="http://static.natalian.org/2006-06-20/feed-icon-32x32.png" alt="RSS feed"/></a>
+
