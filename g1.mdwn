@@ -1,5 +1,7 @@
 [[meta title="Life with a T-mobile G1 in the UK"]]
 
+[Subscribe to the RSS for updates](http://git.webconverger.org/?p=faq.git;a=rss;f=g1.mdwn)
+
 # Do not write Dalvik Android applications
 
 First I implore you not to write an [Android Application](http://code.google.com/android/). i.e. a [Java dalvik](http://en.wikipedia.org/wiki/Dalvik_virtual_machine) .apk.
@@ -12,6 +14,12 @@ the Android browser](http://geo.webvm.net/). The Web is the future!
 * [First impressions of using the G1](http://natalian.org/archives/2008/11/01/android-apple-ketchup/)
 * [UK tariffs](http://www.mobileindustryreview.com/2008/11/g1_tariff_update.html)
 * [Hendry's Flickr Android stream](http://flickr.com/photos/hendry/tags/android/)
+
+# Android supports the @font-face src attribute
+
+My [style sheet](http://dabase.com/local.css) loads the [Andika
+font](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=Andika).
+Try this page in your Android browser!
 
 # Issues
 
