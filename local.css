@@ -1,0 +1,19 @@
+@font-face {
+   font-family: Droid;
+   font-weight: normal;
+   font-style: normal;
+   src: url("http://dragon.webvm.net/DroidSansFallback.ttf")
+}
+
+body {
+	font-family: Droid;
+}
+
+ol {
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+background:#F9F6BA none repeat scroll 0 0;
+border:1px solid #C9C69A;
+}
