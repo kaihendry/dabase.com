@@ -1,6 +1,11 @@
 [[meta title="Life with a T-mobile G1 in the UK"]]
 
-[Subscribe to the RSS for updates](http://git.webconverger.org/?p=faq.git;a=rss;f=g1.mdwn)
+1. [Subscribe to the RSS for updates](http://git.webconverger.org/?p=faq.git;a=rss;f=g1.mdwn)
+* [T-mobile Account overview](https://www.t-mobile.co.uk/service/your-account/private/home/)
+* [How T-mobile screwed up the G1 launch](http://natalian.org/archives/2008/10/30/t-mobile-g1-uk-launch-fail/)
+* [First impressions of using the G1](http://natalian.org/archives/2008/11/01/android-apple-ketchup/)
+* [UK tariffs](http://www.mobileindustryreview.com/2008/11/g1_tariff_update.html)
+* [Hendry's Flickr Android stream](http://flickr.com/photos/hendry/tags/android/)
 
 # Do not write Dalvik Android applications
 
@@ -8,12 +13,6 @@ First I implore you not to write an [Android Application](http://code.google.com
 
 Most developers require Geolocation and you can easily achieve [Geolocation in
 the Android browser](http://geo.webvm.net/). The Web is the future!
-
-* [T-mobile Account overview](https://www.t-mobile.co.uk/service/your-account/private/home/)
-* [How T-mobile screwed up the G1 launch](http://natalian.org/archives/2008/10/30/t-mobile-g1-uk-launch-fail/)
-* [First impressions of using the G1](http://natalian.org/archives/2008/11/01/android-apple-ketchup/)
-* [UK tariffs](http://www.mobileindustryreview.com/2008/11/g1_tariff_update.html)
-* [Hendry's Flickr Android stream](http://flickr.com/photos/hendry/tags/android/)
 
 # Android supports the @font-face src attribute
 
@@ -35,7 +34,7 @@ they do this to ensure they can not be held liable for any misinformation as it
 is difficult to record voice.
 
 The bad things are you'll get an autoresponder once sending the mail. And the
-follow up will more than likely be an essay with bad news from a **droid**.
+follow up will more than likely be an essay with bad news from a **'droid**.
 
 1. [Enquiry into hotspots](http://static.natalian.org/2008-11-08/tmobile1.txt)
 * [Enquiry into allowance whilst abroad](http://static.natalian.org/2008-11-08/tmobile2.txt)
@@ -44,7 +43,7 @@ follow up will more than likely be an essay with bad news from a **droid**.
 
 1. [No conference call](http://flickr.com/photos/hendry/3006708296/)
 
-# The headphone Jack
+# The proprietary headphone jack
 
 <a href="http://www.flickr.com/photos/hendry/3013612244/" title="Touch diamond versus G1 HTC headphones by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3146/3013612244_9e45bf8a69_m.jpg" width="240" height="180" alt="Touch diamond versus G1 HTC headphones" /></a>
 
