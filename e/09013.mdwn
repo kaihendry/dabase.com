@@ -1,8 +1,13 @@
-[[meta title="Howto send a PATCH"]]
+[[meta title="Howto send a PATCH from git"]]
 
 Clone the master. Make the change, commit.
 
     git-format-patch "HEAD^"
+
+or rather
+
+	git format-patch origin
+
     git-send-email 0001-
 
 Caveat: 'format-patch' doesn't handle revision range expressions

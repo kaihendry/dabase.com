@@ -35,7 +35,7 @@ is difficult to record voice.
 The bad things are you'll get an autoresponder once sending the mail. And the
 follow up will more than likely be an essay with bad news from a **'droid**.
 
-1. [Enquiry into hotspots](http://static.natalian.org/2008-11-08/tmobile1.txt)
+1. [Enquiry into hotspots](http://static.natalian.org/2008-11-08/tmobile1.txt) -- "Sadly, there are no discounts for this service at present."
 * [Enquiry into allowance whilst abroad](http://static.natalian.org/2008-11-08/tmobile2.txt)
 
 # Resolved issues
