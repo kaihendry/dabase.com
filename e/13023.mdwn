@@ -1,0 +1,24 @@
+[[meta title="Shell cat END"]]
+
+How not to do it:
+
+	essid="test"
+	key="blah"
+	cat << END
+	network={
+		ssid="$essid"
+		key_mgmt=WPA-PSK
+		psk="$key"
+	}
+	END > /tmp/bar.txt
+
+How to do it:
+
+	cat >/tmp/file.txt<<END
+
+	15:00 <sputnick> or "cat<<END > /tmp/file.txt
+	15:00 <sputnick> stuff
+	15:00 <sputnick> END
+	15:00 <sputnick> "
+
+Thanks #bash on Freenode :)
