@@ -23,6 +23,7 @@ Try this page in your Android browser!
 
 1. SMS not being integrated to email. Basically I want to forward SMSes as email. Would be nice to have an email address that fowards to SMS.
 * [No G1 on T-mobile's account page](http://flickr.com/photos/hendry/3005378966/)
+* [Funny bugs](http://blogs.zdnet.com/Burnette/?p=680), though when is T-mobile going to update my phone ??
 
 # T-mobile customer service
 
