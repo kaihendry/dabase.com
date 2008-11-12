@@ -12,13 +12,15 @@ How not to do it:
 	}
 	END > /tmp/bar.txt
 
-How to do it:
+How to do it as sudo:
 
-	cat >/tmp/file.txt<<END
+	sudo sh -c "cat<> /etc/wpa_supplicant/wpa_supplicant.conf
 
-	15:00 <sputnick> or "cat<<END > /tmp/file.txt
-	15:00 <sputnick> stuff
-	15:00 <sputnick> END
-	15:00 <sputnick> "
+	network={
+		ssid="$essid"
+		key_mgmt=WPA-PSK
+		psk="$key"
+	}
+	END"
 
 Thanks #bash on Freenode :)
