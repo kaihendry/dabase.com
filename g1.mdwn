@@ -30,7 +30,8 @@ Try this page in your Android browser!
 
 Gtalk chats are a great feature. But often I miss the chat and I can't figure
 out how the "Recent conversations archive" supposed to work. What's worse is
-that sometimes the chat does not seem to appear in Chats pane of Gmail!
+that sometimes I confuse chat with SMS and SMS does not seem to appear in Chats
+pane of Gmail!
 
 # T-mobile customer service
 
