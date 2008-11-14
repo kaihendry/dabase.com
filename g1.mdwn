@@ -21,6 +21,19 @@ My [style sheet](http://dabase.com/local.css) loads the [Andika
 font](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=Andika).
 Try this page in your Android browser!
 
+## What is @font-face ??
+
+It basically means you can dynamically use any font you want.
+
+A big problem or blessing if you like sane type faces, is there is
+only a few "Web fonts" that work everywhere.
+
+However new technology exists where you just download them on the fly,
+and Android supports this. So designers can rejoice that they can use
+type faces they want. Without using horrible techniques like making
+bitmap images of headings which can't work on mobiles as they can't
+scale.
+
 # Issues
 
 1. SMS not being integrated to email. Basically I want to forward SMSes as email. Would be nice to have an email address that fowards to SMS.
