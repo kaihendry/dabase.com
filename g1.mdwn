@@ -26,6 +26,10 @@ Try this page in your Android browser!
 * [Most exaggerated bug ever](http://blogs.zdnet.com/Burnette/?p=680), though when is T-mobile going to update my phone ??
 * Phone number in status not updated after number change
 
+Gtalk chats are a great feature. But often I miss the chat and I can't figure
+out how the "Recent conversations archive" supposed to work. What's worse is
+that sometimes the chat does not seem to appear in Chats pane of Gmail!
+
 # T-mobile customer service
 
 The good thing is that you can just email `CustomerServices@t-mobile.co.uk` and
