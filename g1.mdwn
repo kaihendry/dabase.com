@@ -48,7 +48,10 @@ pane of Gmail!
 
 # Poor Web integration
 
-You can thankfully add bookmarks to the home screen. What would be better is [widget support](http://wiki.webvm.net/widgets/).
+You can thankfully add bookmarks to the home screen. Your Web application can
+too with the [Gears shortcut
+API](http://code.google.com/apis/gears/samples/hello_world_shortcuts/hello_world_shortcuts.html).
+What would be better is [widget support](http://wiki.webvm.net/widgets/).
 
 Once opening a bookmark from the homescreen, Android launches a new window in
 Android Chrome Web browser. Unfortunately this really sucks as your can only
