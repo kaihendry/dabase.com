@@ -13,6 +13,14 @@ First I implore you not to write an [Android Application](http://code.google.com
 Most developers require Geolocation and you can easily achieve [Geolocation in
 the Android browser](http://geo.webvm.net/). The Web is the future!
 
+## Other reasons not to develop Dalvik applications
+
+* Google's Market has no upgrade mechanism. The Web has easy seamless upgrades
+by default. Why choose anything else than giving your users continuous
+improvement everyday?
+* The Web works on more devices and computers than Dalvik ever will. Why limit your application's audience?
+* Want to create bookmarks to your Web application from the homescreen? Use [Gears shortcut](http://code.google.com/apis/gears/samples/hello_world_shortcuts/hello_world_shortcuts.html) mechanism!
+
 # Android supports the @font-face src attribute
 
 <a href="http://www.flickr.com/photos/hendry/3014049284/" title="Android @font-face src by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3150/3014049284_34e79db7df_m.jpg" width="240" height="180" alt="Android @font-face src" /></a>
