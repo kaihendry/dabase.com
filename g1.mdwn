@@ -21,6 +21,14 @@ improvement everyday?
 * The Web works on more devices and computers than Dalvik ever will. Why limit your application's audience?
 * Want to create bookmarks to your Web application from the homescreen? Use [Gears shortcut](http://code.google.com/apis/gears/samples/hello_world_shortcuts/hello_world_shortcuts.html) mechanism!
 
+# Use cases
+
+Lets consider some use cases I want. :)
+
+## Sharing a snap on Flickr then making a tweet about it.
+
+## Having 100% reception, or rather... being able to tweet whilst not connected
+
 # Android supports the @font-face src attribute
 
 <a href="http://www.flickr.com/photos/hendry/3014049284/" title="Android @font-face src by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3150/3014049284_34e79db7df_m.jpg" width="240" height="180" alt="Android @font-face src" /></a>
