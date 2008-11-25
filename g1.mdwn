@@ -29,6 +29,8 @@ Lets consider some use cases I want. :)
 
 ## Having 100% reception, or rather... being able to tweet whilst not connected
 
+## A friend texts me from her new mobile number. How do I get that number from a SMS into my contact as a secondary number?
+
 # Android supports the @font-face src attribute
 
 <a href="http://www.flickr.com/photos/hendry/3014049284/" title="Android @font-face src by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3150/3014049284_34e79db7df_m.jpg" width="240" height="180" alt="Android @font-face src" /></a>
