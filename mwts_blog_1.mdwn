@@ -1,0 +1,57 @@
+What's measured improves.
+
+			- [Peter Drucker](http://en.wikipedia.org/wiki/Peter_Drucker)
+
+The mobile Web needs to improve. Tests like the WCT are designed to measure the
+Web interoperability of the mobile browser. The
+[Acid2](http://www.webstandards.org/files/acid2/test.html#top) &
+[Acid3](http://acid3.acidtests.org/) tests are similar metrics that do not
+focus on mobiles, like the MWT does.
+
+The [WCT manifesto](http://www.w3.org/2008/06/mobile-test/doc.html) details
+tests that the [MWTS group openly decided were
+important](http://lists.w3.org/Archives/Public/public-mwts/) for mobile
+browsers to support. Briefly:
+
+1. Useful CSS function for smaller screens
+* Good graphics support is the cornerstone of the Web
+* Compression saves money on typical mobile data plans
+* HTTPS has been a problem area on mobile browsers
+* So too have been cookies
+* Interesting to know if XHTML is supported for legacy applications
+* Good to have Web 2.0 AJAX applications working
+* **Scalable* Graphics are of special relevance to mobile screens
+* CSS media queries is how author should adapt content if they require
+* Inputmode tests for a form feature to enter number easily
+* Dynamic *scalable* graphics is also great to have
+* Test for typical problem area of IDNs
+* Testing for events
+* Canvas helps enables games on mobiles
+* Contenteditable allows in line editing, which might help content generation
+* Power CSS3 selectors allow flexibilty for style sheets
+
+Some of these tests might not be relevant any more and could be dropped. And
+likewise new tests can be added. We are open to suggestions!
+
+Notice how the test indicates with a green square if the test passes. Unlike
+the Acid tests, we hope to quickly demonstrate from a mobile browser the
+quality of the browser.  The tests have been ordered relatively in order of
+difficulty. However we believe it is fair to say in our experience, the more
+green squares the better.
+
+Unfortunately since many mobile browser Javascript engines are fairly limited
+we have not currently added a percentage counter like Acid3. However please
+feel free to measure how well your device does.
+
+For example my current mobile phone, the G1 "Mozilla/5.0 (Linux; U; Android
+1.0; en-gb; dream) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile
+Safari/523.12.2" gets 9/16 on version 1.42 of the test. Please ensure you have
+the UA string, version of the test alongside your score.
+
+I hope it improves like the new 2.2 firmware of the Iphone boasting 12/16.
+
+However there are many more mobiles that can't even reach the WCT in order
+measure how well it performs on the Web! So just by visiting the WCT you are on
+the right road to improving the Web.
+
+Share the score and together lets realise the mobile Web.
