@@ -1,0 +1,55 @@
+[[meta title="Types of working communication"]]
+
+# Mailing list
+
+Pros:
+
+* Minuted
+* Detailed
+* Scales
+
+Cons:
+
+* Difficult to grasp thread if using a poor client (common)
+* Difficult for some people to write and respond to emails (common with the older generation and decision makers)
+* Threads can just carry on and on ...
+
+# Face to Face meetings
+
+Pros:
+
+* High bandwidth
+* Often highly effective
+* Important for social connections
+* Often needs careful planning and agenda
+
+Cons:
+
+* Needs to be minuted
+* Very expensive in time and money
+* Important people can be missing
+* Teleconference bridges can sink a F2F meeting's effectiveness
+
+# Teleconferences
+
+Pros:
+
+* Can make quick decisions
+* Can mention sensitive items 'off record' to the group
+
+Cons:
+
+* Decisions can be too hastily
+* Does not scale
+
+# IRC
+
+Pros:
+
+* Always on
+* Often quick to get a response
+
+Cons:
+
+* Only geeks use the medium
+

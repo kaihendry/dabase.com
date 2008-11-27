@@ -15,7 +15,7 @@ the Android browser](http://geo.webvm.net/). The Web is the future!
 
 ## Other reasons not to develop Dalvik applications
 
-* Google's Market has no upgrade mechanism. The Web has easy seamless upgrades
+* Google's **Market has no upgrade** mechanism. The Web has easy seamless upgrades
 by default. Why choose anything else than giving your users continuous
 improvement everyday?
 * The Web works on more devices and computers than Dalvik ever will. Why limit your application's audience?
