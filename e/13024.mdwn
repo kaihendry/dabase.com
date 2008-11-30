@@ -1,0 +1,12 @@
+[[meta title="First character of a variable in shell"]]
+
+Bash Parameter Expansion is the expansion of a parameter: $foo, $1. You can use
+it to perform more complex operations: ${file%.mp3}, ${0##*/}. Remember you
+should almost *always* quote them: echo "$foo". See
+[http://wooledge.org:8000/BashFAQ/073](http://wooledge.org:8000/BashFAQ/073)
+
+	FOO="bar" && echo "${FOO:0:1}"
+
+The POSIX way (recommended) is to use **cut**:
+
+	echo bar | cut -c 1
