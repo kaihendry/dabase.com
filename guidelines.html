@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Guidelines for writing device independent tests</title>
+  <link href="http://www.w3.org/StyleSheets/TR/base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p><img alt="W3C" src="http://www.w3.org/Icons/WWW/w3c_home.gif" /></p>
+
+  <div class="head">
+    <h1 id="css2.1">Guidelines for writing device independent tests</h1>
+
+    <dl>
+      <dt>Editors:</dt>
+      <dd>Carmelo Montanez, National Institute of Standards and Technology</dd>
+    </dl><!--begin-include "../copyright.inc"-->
+
+    <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright">Copyright</a>
+    &copy; 2008 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>&reg;</sup>
+    (<a href="http://www.lcs.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+    <abbr title="European Research Consortium for Informatics and Mathematics"><a href=
+    "http://www.ercim.org/">ERCIM</a></abbr>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C
+    <a href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Legal_Disclaimer">liability</a>, <a href=
+    "http://www.w3.org/Consortium/Legal/ipr-notice-20000612#W3C_Trademarks">trademark</a>, <a href=
+    "http://www.w3.org/Consortium/Legal/copyright-documents-19990405">document use</a> rules apply.</p>
+    <!--end-include-->
+    <hr title="Separator for header" />
+  </div>
+
+  <h2 class="no-num no-toc" id="abstract">Abstract</h2>
+
+  <p>This is a supporting document for authors of tests in the Mobile Web Test Suites Working Group. It defines the key
+  properties for Mobile web tests. It proposes various guidelines for tests authors to follow when writing tests.</p>
+
+  <h2 class="no-num no-toc" id="status">Status of this document</h2>
+
+  <p>These guidelines were produced by members of the Mobile Web Test Suite working group which is part of the <a href=
+  "http://www.w3.org/Mobile/">Mobile Web Initiative</a> (see <a href="http://www.w3.org/Mobile/About">About</a>).</p>
+
+  <p>Comments on, and discussions of this document can be sent on the (<a href=
+  "http://lists.w3.org/Archives/Public/public-mwts/">archived</a>) public mailing list <a href=
+  "mailto:public-mwts@w3.org">public-mwts@w3.org</a> (see <a href="http://www.w3.org/Mail/Request">instructions</a>).
+  W3C Members can also send comments directly to the Mobile Web Test Suites working group.</p>
+
+  <p>These guidelines represent the current thinking of the working group and as such may be updated, replaced or
+  rendered obsolete by other W3C documents at any time. Its publication does not imply endorsement by the W3C
+  membership or the <a href="http://www.w3.org/2005/MWI/Tests/">Mobile Web Test Working Group.</a></p>
+
+  <p>Patent disclosures relevant to the Mobile Web Test Suites Working Group may be found on the Working Group's public
+  <a href="http://www.w3.org/2006/02/mwi-test-charter.html#Patent">patent disclosure page.</a></p>
+
+  <h2 class="no-num no-toc" id="contents">Table of contents</h2>
+
+  <ul class="toc">
+    <li><a href="#overview"><span class="secno">1.</span> Overview</a></li>
+
+    <li><a href="#guidelines"><span class="secno">2.</span> Guidelines</a></li>
+
+    <li><a href="#simplicity"><span class="secno">2.1.</span> Simplicity</a></li>
+
+    <li><a href="#deviceindependent"><span class="secno">2.2.</span> Device Independent</a></li>
+
+    <li><a href="#selfexplanatory"><span class="secno">2.3</span> Self Explanatory</a></li>
+    
+    <li><a href="#explanations"><span class="secno">2.4</span> Technical Explantions</a></li>    
+
+    <li><a href="#expectedresults"><span class="secno">2.5</span> Expected Results</a></li>   
+   
+    <li><a href="#short"><span class="secno">2.6</span> Short</a></li>
+
+    <li><a href="#scrollingpagination"><span class="secno">2.7</span> Scrolling and Pagination</a></li>
+
+    <li><a href="#validity"><span class="secno">2.8</span> Validity</a></li>
+
+    <li><a href="#errorconditions"><span class="secno">2.9</span> Error Conditions</a></li>
+
+    <li><a href="#linktospecs"><span class="secno">2.10</span> Link to Specifications</a></li>
+
+    <li><a href="#backgroundcoloring"><span class="secno">2.11</span> Background Coloring</a></li>
+
+    <li><a href="#greencolor"><span class="secno">2.12</span> Green Coloring as Part of Execution Results</a></li>
+
+    <li><a href="#redcolor"><span class="secno">2.13</span> Red Coloring as Part of Execution Results</a></li>
+
+    <li><a href="#yellowcolor"><span class="secno">2.14</span> Yellow Coloring as Part of Execution Results</a></li>
+
+    <li><a href="#encoding"><span class="secno">2.15</span> Encoding</a></li>
+
+    <li><a href="#specialfonts"><span class="secno">2.16</span> Special Fonts</a></li>
+
+    <li><a href="#longtests"><span class="secno">2.17</span> Long Tests</a></li>
+
+    <li><a href="#unobvious"><span class="secno">2.18</span> Unobvious Tests</a></li> 
+    
+    <li><a href="#navigationsystem"><span class="secno">2.19</span> Navigation System</a></li>
+    
+    <li><a href="#testharness"><span class="secno">2.20</span> Test Harness</a></li>
+
+    <li><a href="#namingconventions"><span class="secno">2.21</span> Naming Conventions</a></li>
+
+    <li><a href="#acknowledgements"><span class="secno">Acknowledgments</span></a></li>
+
+    <li><a href="#index"><span class="secno">Index</span></a></li>
+  </ul>
+
+  <h2 id="overview"><span class="secno">1.0</span> Overview</h2>This document provide a set of guidelines for writing
+  effective and comprehensive tests for Mobile devices. They should be followed as much as possible. These guidelines
+  are intended for writing mobile devices tests and should not be taken as general guidelines for non mobile devices tests.
+
+  <h2 id="guidelines"><span class="secno">2.0</span> Guidelines</h2>
+
+  <h3 id="simplicity"><span class="secno">2.1</span> Simplicity</h3>
+
+  <p>Tests should be simple and evaluate a specific feature of the specifications.</p>
+
+  <h3 id="deviceindependent"><span class="secno">2.2</span> Device Independent</h3>
+
+  <p>Tests should be in conformance to the specifications it is targeting. No test should be dependent on any device
+  and/or browser in particular.</p>
+
+  <h3 id="selfexplanatory"><span class="secno">2.3</span> Self Explanatory</h3>
+
+  <p>Test users should be able to run the tests without having a deep understanding of the specifications.</p>
+
+  <h3 id="explanations"><span class="secno">2.4</span> Technical Explantions</h3>
+
+  <p>Test cases should not provide a lot of technical explantions in teh text given the limited
+  screen space available.</p>  
+  
+  <h3 id="expectedresults"><span class="secno">2.5</span> Expected Results</h3>
+
+  <p>The tests should be self explanatory of what the expected results should be. Whenever alternate expected results
+  are possible, it should also be self explanatory.</p>
+
+  <h3 id="short"><span class="secno">2.6</span> Short</h3>
+
+  <p>Test should contain the minimum number of lines necessary to evaluate the feature.</p>
+
+  <h3 id="scrollingpagination"><span class="secno">2.7</span> Scrolling and Pagination</h3>
+
+  <p>Scrolling and pagination should be keep to a minimum unless the test is specifically addressing those
+  features.</p>
+
+  <h3 id="validity"><span class="secno">2.8</span> Validity</h3>
+
+  <p>Tests should be positive, that is conformant to the addressed specifications, unless they are specifically
+  designed to catch negative/error conditions.</p>
+
+  <h3 id="errorconditions"><span class="secno">2.9</span> Error Conditions</h3>
+
+  <p>Whenever a test is addressing an error condition, it should clearly indicate so.</p>
+
+  <h3 id="linktospecs"><span class="secno">2.10</span> Link to Specifications</h3>
+
+  <p>Whenever possible a test should contain a link back to the specific area of the specifications it is
+  evaluating.</p>
+
+  <h3 id="backgroundcoloring"><span class="secno">2.11</span> Background Coloring</h3>
+
+  <p>Whenever possible tests should not contain background colors as part of the test as some colors (such as red and
+  green) are usually used to indicate pass/failure.</p>
+
+  <h3 id="greencolor"><span class="secno">2.12</span> Green Coloring as Part of Execution Results</h3>
+
+  <p>Whenever possible execution results should use green coloring to indicate success.</p>
+
+  <h3 id="redcolor"><span class="secno">2.13</span> Red Coloring as Part of Execution Results</h3>
+
+  <p>Whenever possible execution results should use red coloring to indicate failure.</p>
+
+  <h3 id="yellowcolor"><span class="secno">2.14</span> Yellow Coloring as Part of Execution Results</h3>
+
+  <p>Whenever possible execution results should use yellow coloring to indicate uncertain results.</p>
+
+  <h3 id="encoding"><span class="secno">2.15</span> Encoding</h3>
+
+  <p>Tests should use UTF-8 or UTF-16 encoding as much as possible unless the feature under test is encoding.</p>
+
+  <h3 id="specialfonts"><span class="secno">2.16</span> Special Fonts</h3>
+
+  <p>Tests should be written as to avoid any special fonts unless the purpose of the test is to evaluate special
+  fonts.</p>
+
+  <h3 id="longtests"><span class="secno">2.17</span> Long Tests</h3>
+
+  <p>In general test should be short in nature. However For tests that must be long (e.g. scrolling tests), it is
+  important to make it clear that the filler text is not relevant, otherwise the tester may think he is missing
+  something and therefore waste time reading the filler text. Good text for use in these situations is, quite simply,
+  "This is filler text. This is filler text. This is filler text.". If it looks boring, it's working! </p>
+
+  <h3 id="unobvious"><span class="secno">2.18</span> Unobvious Tests</h3>
+
+  <p>Test writers should avoid test, whose purpose and expected results are not obvious. For instance a test for which
+  half of a sentence is normal text and the other half is half bold is not very obvious. Exception will be tests, whose
+  nature and purpose will require such combinations.</p> 
+
+  <h3 id="navigationsystem"><span class="secno">2.19</span> Navigation System</h3>
+
+  <p>Test writers should provide an easy, non-obstrusive navigation across test cases.</p> 
+  
+    <h3 id="testharness"><span class="secno">2.20</span> Test Harness</h3>
+
+  <p>Test writers should provide a test harness, that loads one test case at a time rather than many at once.</p> 
+   
+  <h3 id="namingconventions"><span class="secno">2.21</span> Naming conventions</h3>
+
+  <p>In general test writers should avoid cryptic test names. It is suggested that tests follow a test-topic-xxx.ext
+  where:</p>
+
+  <p> where:</p>
+
+  <ul>
+    <li>test-topic - text that identifies the feature under text</li>
+
+    <li>xxx - A three digit number sequence. May take the form 001.</li>
+
+    <li>ext - appropriate extension - such as ".html".</li>
+  </ul>
+
+</body>
+</html>
