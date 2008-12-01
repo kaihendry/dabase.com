@@ -21,7 +21,7 @@ Pros:
 * High bandwidth
 * Often highly effective
 * Important for social connections
-* Often needs careful planning and agenda
+* Often needs careful planning and agenda in order not to waste any time
 
 Cons:
 
@@ -36,11 +36,12 @@ Pros:
 
 * Can make quick decisions
 * Can mention sensitive items 'off record' to the group
+* Only reasonable backup for attending some F2F meetings, when lack of IRC back channel
 
 Cons:
 
-* Decisions can be too hastily
-* Does not scale
+* Decisions can be made too hastily
+* Does not scale (annoying delays and voice quality)
 
 # IRC
 
@@ -48,8 +49,8 @@ Pros:
 
 * Always on
 * Often quick to get a response
+* Scales
 
 Cons:
 
-* Only geeks use the medium
-
+* Only geeks use the medium :)

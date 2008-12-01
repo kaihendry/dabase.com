@@ -37,7 +37,7 @@ Be better if there was some API to copy to clipboard. Or just a better clipboard
 
 ## Having 100% reception, or rather... being able to tweet whilst not connected
 
-* Having no offline HTML5 support *sucks*! Gears theoretically should have
+Having no offline HTML5 support *sucks*! Gears theoretically should have
 support for this, but Android Google Reader Web application does not use this
 feature. WHY?
 
