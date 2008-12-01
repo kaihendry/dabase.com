@@ -27,9 +27,23 @@ Lets consider some use cases I want. :)
 
 ## Sharing a snap on Flickr then making a tweet about it.
 
+It's really tiresome to quickly to a URL... 
+
+1. Go to URL
+* _Long press_  on URL
+* Copy
+
+Be better if there was some API to copy to clipboard. Or just a better clipboard really.
+
 ## Having 100% reception, or rather... being able to tweet whilst not connected
 
+* Having no offline HTML5 support *sucks*! Gears theoretically should have
+support for this, but Android Google Reader Web application does not use this
+feature. WHY?
+
 ## A friend texts me from her new mobile number. How do I get that number from a SMS into my contact as a secondary number?
+
+You should be able to **long press** to copy and paste to do this. It's a bit clumsy. When you have the number in the dial screen you can actually press 'Menu' and select "Add to contacts".
 
 # Android supports the @font-face src attribute
 
