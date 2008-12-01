@@ -56,6 +56,7 @@ scale.
 
 1. SMS not being integrated to email. Basically I want to forward SMSes as email. Would be nice to have an email address that fowards to SMS.
 * [No G1 on T-mobile's account page](http://flickr.com/photos/hendry/3005378966/)
+* [Input type file](http://www.whatwg.org/specs/web-apps/current-work/multipage/forms.html#file-upload-state) is disabled/unimplemented
 * Phone number in status not updated after number change
 * [Android Issue list](http://b.android.com)
 
