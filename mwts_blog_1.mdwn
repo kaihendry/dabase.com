@@ -1,7 +1,6 @@
 [[meta title="What's measured improves"]]
-What's measured improves.
 
-			- [Peter Drucker](http://en.wikipedia.org/wiki/Peter_Drucker)
+What's measured improves. - [Peter Drucker](http://en.wikipedia.org/wiki/Peter_Drucker)
 
 The mobile Web needs to improve. Tests like the WCT are designed to measure the
 'Web compatibility' of the mobile browser. The
