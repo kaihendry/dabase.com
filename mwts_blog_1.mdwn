@@ -36,17 +36,19 @@ new tests can be added. We are open to suggestions!
 Notice how the test indicates with a green square if the test passes. Unlike
 the Acid2 test, we hope to demonstrate from a mobile browser the quality of the
 browser. It might pass some tests and fail some others. The tests have been
-ordered relatively in order of difficulty.  It is fair to say in our
-experience, the more green squares the better.
+ordered relatively in order of difficulty, though it is fair to say: the more
+green squares the better.
 
 Unfortunately since many mobile browser Javascript engines are fairly limited
 we have not currently added a percentage counter like Acid3. However please
-**count the squares*8 to see how well your device does.
+**count the squares** to see how well your device does.
 
-For example my current mobile phone, the G1 "Mozilla/5.0 (Linux; U; Android
-1.0; en-gb; dream) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile
-Safari/523.12.2" gets 9/16 on version 1.42 of the test. Please ensure you have
-the UA string, version of the test alongside your score.
+For example my current mobile phone, the:
+
+	Mozilla/5.0 (Linux; U; Android 1.0; en-gb; dream) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+
+T-mobile G1 scores 9/16 on version 1.42 of the test. Do ensure you have the UA
+string, version of the test alongside your score please.
 
 Unfortunately there are many more mobiles that can't even reach the WCT in
 order measure how well it performs on the Web! So just by visiting the WCT
