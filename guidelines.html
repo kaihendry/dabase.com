@@ -4,6 +4,9 @@
   <meta charset="utf-8" />
   <title>Guidelines for writing device independent tests</title>
   <link href="http://www.w3.org/StyleSheets/TR/base.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#hendry { border: thick dotted red; }
+</style>
 </head>
 
 <body>
@@ -115,38 +118,56 @@
 
   <p>Tests should be simple and evaluate a specific feature of the specifications.</p>
 
+  <p id="hendry">2.1. Easy to determine the result</p>
+
   <h3 id="deviceindependent"><span class="secno">2.2</span> Device Independent</h3>
 
   <p>Tests should be in conformance to the specifications it is targeting. No test should be dependent on any device
   and/or browser in particular.</p>
 
+  <p id="hendry">Same as <a href="http://www.w3.org/Style/CSS/Test/guidelines.html#xp">2.6. Cross-platform</a></p>
+
+  <p id="hendry">In practice no one to my knowledge does this?</p>
+
   <h3 id="selfexplanatory"><span class="secno">2.3</span> Self Explanatory</h3>
 
   <p>Test users should be able to run the tests without having a deep understanding of the specifications.</p>
 
-  <h3 id="explanations"><span class="secno">2.4</span> Technical Explantions</h3>
+  <p id="hendry">2.3. Self explanatory</p>
 
-  <p>Test cases should not provide a lot of technical explantions in teh text given the limited
-  screen space available.</p>  
+  <h3 id="explanations"><span class="secno">2.4</span> Technical Explanations</h3>
+
+  <p>Test cases should not provide a lot of technical explanations in the text given the limited
+  screen space available.</p>
+
+  <p id="hendry">A bit redundant compared to 2.3 Self Explanatory</p>
   
   <h3 id="expectedresults"><span class="secno">2.5</span> Expected Results</h3>
 
   <p>The tests should be self explanatory of what the expected results should be. Whenever alternate expected results
   are possible, it should also be self explanatory.</p>
 
+  <p id="hendry">A bit redundant compared to 2.3 Self Explanatory</p>
+
   <h3 id="short"><span class="secno">2.6</span> Short</h3>
 
   <p>Test should contain the minimum number of lines necessary to evaluate the feature.</p>
+
+  <p id="hendry">Corresponds to <a href="http://www.w3.org/Style/CSS/Test/guidelines.html#short">CSS 2.4. Short</a></p>
 
   <h3 id="scrollingpagination"><span class="secno">2.7</span> Scrolling and Pagination</h3>
 
   <p>Scrolling and pagination should be keep to a minimum unless the test is specifically addressing those
   features.</p>
 
+  <p id="hendry">This seems relevant to device independent testing, though in practice I don't see tests that make this mistake.</p>
+
   <h3 id="validity"><span class="secno">2.8</span> Validity</h3>
 
   <p>Tests should be positive, that is conformant to the addressed specifications, unless they are specifically
   designed to catch negative/error conditions.</p>
+
+  <p id="hendry">Same as <a href="http://www.w3.org/Style/CSS/Test/guidelines.html#valid">2.5. Valid</a>
 
   <h3 id="errorconditions"><span class="secno">2.9</span> Error Conditions</h3>
 
@@ -200,13 +221,13 @@
 
   <p>Test writers should provide an easy, non-obstrusive navigation across test cases.</p> 
 
-  <p><a href="">Hixie's manifest</a></p>
+  <p id="hendry">Suggested example: <a href="http://hixie.ch/tests/MANIFEST.2005-12-15">Hixie's manifest</a></p>
   
     <h3 id="testharness"><span class="secno">2.20</span> Test Harness</h3>
 
   <p>Test writers should provide a test harness, that loads one test case at a time rather than many at once.</p> 
 
-  <p><a href="http://www2.webkit.org/perf/sunspider-0.9/sunspider-driver.html">Example - Sunspider driver</a></p>
+  <p id="hendry"><a href="http://www2.webkit.org/perf/sunspider-0.9/sunspider-driver.html">Example - Sunspider driver</a></p>
    
   <h3 id="namingconventions"><span class="secno">2.21</span> Naming conventions</h3>
 
@@ -223,7 +244,7 @@
     <li>ext - appropriate extension - such as ".html".</li>
   </ul>
 
-<p><a href="http://www.w3.org/Style/CSS/Test/guidelines.html#filenames">3.7. Filenames reference</a></p>
+<p id="hendry"><a href="http://www.w3.org/Style/CSS/Test/guidelines.html#filenames">3.7. Filenames reference</a></p>
 
 <h1>References</h1>
 
