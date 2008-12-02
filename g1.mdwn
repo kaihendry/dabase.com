@@ -72,6 +72,9 @@ scale.
 * [No G1 on T-mobile's account page](http://flickr.com/photos/hendry/3005378966/)
 * [Input type file](http://www.whatwg.org/specs/web-apps/current-work/multipage/forms.html#file-upload-state) is disabled/unimplemented
 * Phone number in status not updated after number change
+* Internet does not work when you are using voice. URM!?
+* Can't use G1 as a modem
+* T-mobile's Web site is just so very poor. It's not Android friendly!
 * [Android Issue list](http://b.android.com)
 
 Gtalk chats are a great feature. But often I miss the chat and I can't figure
