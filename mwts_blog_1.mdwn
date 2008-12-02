@@ -1,3 +1,4 @@
+[[meta title="What's measured improves"]]
 What's measured improves.
 
 			- [Peter Drucker](http://en.wikipedia.org/wiki/Peter_Drucker)
@@ -28,30 +29,28 @@ browsers to support. Briefly:
 * Testing for events
 * Canvas helps enables games on mobiles
 * Contenteditable allows in line editing, which might help content generation
-* Powerful CSS3 selectors allow flexibilty for style sheets
+* Powerful CSS3 selectors allow flexibility for style sheets
 
-Some of these tests might not be relevant any more and could be dropped. And
-likewise new tests can be added. We are open to suggestions!
+Some tests might not be relevant any more that could be removed. And likewise
+new tests can be added. We are open to suggestions!
 
 Notice how the test indicates with a green square if the test passes. Unlike
-the Acid tests, we hope to quickly demonstrate from a mobile browser the
-quality of the browser.  The tests have been ordered relatively in order of
-difficulty. However we believe it is fair to say in our experience, the more
-green squares the better.
+the Acid2 test, we hope to demonstrate from a mobile browser the quality of the
+browser. It might pass some tests and fail some others. The tests have been
+ordered relatively in order of difficulty.  It is fair to say in our
+experience, the more green squares the better.
 
 Unfortunately since many mobile browser Javascript engines are fairly limited
 we have not currently added a percentage counter like Acid3. However please
-feel free to measure how well your device does.
+**count the squares*8 to see how well your device does.
 
 For example my current mobile phone, the G1 "Mozilla/5.0 (Linux; U; Android
 1.0; en-gb; dream) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile
-Safari/523.12.2" gets 9/16 on version 1.42 of the test. (Please ensure you have
-the UA string, version of the test alongside your score.)
+Safari/523.12.2" gets 9/16 on version 1.42 of the test. Please ensure you have
+the UA string, version of the test alongside your score.
 
-I hope it improves like the new 2.2 firmware of the Iphone boasting 12/16.
+Unfortunately there are many more mobiles that can't even reach the WCT in
+order measure how well it performs on the Web! So just by visiting the WCT
+`http://xrl.us/bmqox` you are on the right path to improving the Web.
 
-However there are many more mobiles that can't even reach the WCT in order
-measure how well it performs on the Web! So just by visiting the WCT
-`http://xrl.us/bmqox` you are on the right road to improving the Web.
-
-Share the score and together lets realise the mobile Web.
+Share the score, UA string and test version and together lets improve the mobile Web!
