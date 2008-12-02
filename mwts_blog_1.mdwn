@@ -4,10 +4,10 @@ What's measured improves.
 			- [Peter Drucker](http://en.wikipedia.org/wiki/Peter_Drucker)
 
 The mobile Web needs to improve. Tests like the WCT are designed to measure the
-Web interoperability of the mobile browser. The
+'Web compatibility' of the mobile browser. The
 [Acid2](http://www.webstandards.org/files/acid2/test.html#top) &
-[Acid3](http://acid3.acidtests.org/) tests are similar metrics that do not
-focus on mobiles, like the WCT does.
+[Acid3](http://acid3.acidtests.org/) tests offer similar metrics that do not
+aim to point out Web shortcomings on mobiles, like the WCT does.
 
 The [WCT manifesto](http://www.w3.org/2008/06/mobile-test/doc.html) details
 tests that the [MWTS group openly decided were
