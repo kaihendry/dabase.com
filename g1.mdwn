@@ -74,6 +74,7 @@ scale.
 * T-mobile's Web site is just so very poor. It's not Android friendly!
 * There must be a way of informing Gtalk users you are on the mobile!!
 * [Android Issue list](http://b.android.com)
+* T-mobile employing [Content Transformation](http://www.w3.org/TR/ct-guidelines/), put **Header set Cache-Control: no-transform** in your `.htaccess`
 
 Gtalk chats are a great feature. But often I miss the chat and I can't figure
 out how the "Recent conversations archive" supposed to work. What's worse is
