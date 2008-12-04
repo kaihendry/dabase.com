@@ -1,10 +1,15 @@
-[[meta title="Git CVS checkout of W3C cvsweb"]]
+[[meta title="Git CVS tutorial"]]
 
 Say you want to checkout the [mobile test suite](http://dev.w3.org/cvsweb/2008/mobile-test/) into a git repository.
 
-The authorative instructions are [here](http://dev.w3.org/cvsweb), though you could follow these:
+The [W3C authoritative instructions use CSV](http://dev.w3.org/cvsweb). That's
+good advice.  Lets be crazy and use Git instead.
 
-	CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs login
+* [git cvs in 5min](http://tsunanet.blogspot.com/2007/07/git-cvs-in-5min.html)
+
+Lets checkout anonymously first:
+
+CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs login
 
 Password is 'anonymous'.
 
@@ -12,14 +17,12 @@ Password is 'anonymous'.
 	Initialized empty Git repository in /home/hendry/aplix/w3c/.git/
 	cvs rlog: Logging 2008/mobile-test
 	cvs rlog: Logging 2008/mobile-test/nored
-	x61:~/aplix/w3c% 
+	x61:~/aplix/w3c%
 
-
-With my ssh 'khendry' login:
+With my W3C ssh 'khendry' login:
 
 	export CVS_RSH="ssh"
 	git-cvsimport -d khendry@dev.w3.org:/sources/public 2008/mobile-test
-
 
 For a normal CVS checkout (for `git-cvsexportcommit`):
 
@@ -56,7 +59,10 @@ A quicker push with a CVS checkout at '/tmp/w3c/2008/mobile-test':
 
 And finally check [W3C mobile-test CVSweb](http://dev.w3.org/cvsweb/2008/mobile-test/) if everything looks good.
 
-Still unsure how git merges back via `git-cvsimport`. Also unsure how this reflects in the remote [gitweb view of my local wct git repository](http://git.webvm.net/?p=wct).
+I'm still not entirely sure how git merges back via `git-cvsimport`. Also
+unsure how this reflects in the remote [gitweb view of my local wct git
+repository](http://git.webvm.net/?p=wct).
 
 Just for my reference, just with CVS:
+
 	CVSROOT=khendry@dev.w3.org:/sources/public cvs co 2008/mobile-test

@@ -151,7 +151,7 @@ for 8GBP. :/
 
 # G1 Bluetooth
 
-Very annoyingly I can't use bluetooth to get Internet for my Nokia N800 or N810 devices!
+[Very annoyingly I can't use bluetooth to get Internet](http://static.natalian.org/2008-12-04/g1-bluetooth-tmobile-uk.txt) for my Nokia N800 or N810 devices!
 
 	:r !sudo hcitool info 00:21:BA:74:4E:B7
 
