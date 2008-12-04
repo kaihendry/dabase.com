@@ -1,12 +1,15 @@
 [[meta title="Shell CGI"]]
 
-For simple scripts shell is pretty good. You have the permission problems to
-deal with. The Apache2 configuration with .htaccess is straight forward:
+For simple scripts shell is pretty good. It's the only choice if you plan on embedding Web application on a device. 
+
+The Apache2 configuration with .htaccess is straight forward:
 
 	Options +ExecCGI
 	AddHandler cgi-script .cgi
 
-The important element to shell CGI scripts in to ensure you have "Content-Type:
+However if you are embedding CGI, use a light httpd like [nostromo httpd](http://www.nazgul.ch/dev_nostromo.html).
+
+The important element with HTML shell CGI scripts in to ensure you have "Content-Type:
 text/html" in there with a couple of carriage returns.
 
 	#!/bin/sh
@@ -37,3 +40,5 @@ text/html" in there with a couple of carriage returns.
 	END
 
 `/dev/stderr` outputs to `/var/log/apache2/error.log` so you need redirect `wget` output to stdout as I do in this case.
+
+[More examples of CGI applications embedded on machines.](http://git.debian.org/?p=users/kai-guest/nostromo/.git;a=tree;f=webc;h=c8ddaf9a00125c8310e9aa2ad502bdc36c7650be;hb=refs/heads/webc)
