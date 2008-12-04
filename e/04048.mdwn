@@ -1,0 +1,6 @@
+[[meta title="ikiwiki mirror"]]
+
+[[!ping from="http://dabase.com" to="http://hetty.webconverger.com/ikiwiki.cgi?do=ping"]]
+
+
+Hope to this works!
