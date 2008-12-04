@@ -2,7 +2,7 @@
 
 Say you want to checkout the [mobile test suite](http://dev.w3.org/cvsweb/2008/mobile-test/) into a git repository.
 
-The [W3C authoritative instructions use CSV](http://dev.w3.org/cvsweb). That's
+The [W3C authoritative instructions use Concurrent Versions System](http://dev.w3.org/cvsweb). That's
 good advice.  Lets be crazy and use Git instead.
 
 * [git cvs in 5min](http://tsunanet.blogspot.com/2007/07/git-cvs-in-5min.html)
