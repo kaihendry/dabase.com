@@ -20,8 +20,9 @@ Pros:
 
 * High bandwidth
 * Often highly effective
-* Important for social connections
+* Important for deeper **social** connections
 * Often needs careful planning and agenda in order not to waste any time
+* Natural
 
 Cons:
 
@@ -42,6 +43,8 @@ Cons:
 
 * Decisions can be made too hastily
 * Does not scale (annoying delays and voice quality)
+* "I take silence as agreement"
+* Talking out of turn is awkward
 
 # IRC
 
@@ -54,3 +57,6 @@ Pros:
 Cons:
 
 * Only geeks use the medium :)
+* It is tricky to setup properly
+* Takes some experience to be used to the medium
+* Takes even more time to understand minute syntax and robot commands
