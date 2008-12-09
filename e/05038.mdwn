@@ -18,7 +18,7 @@ Cons:
 
 Pros:
 
-* High bandwidth
+* High bandwidth communication
 * Often highly effective
 * Important for deeper **social** connections
 * Often needs careful planning and agenda in order not to waste any time
@@ -31,6 +31,24 @@ Cons:
 * Important people can be missing
 * Teleconference bridges can sink a F2F meeting's effectiveness
 
+# Video conferences
+
+* [Halo](http://www.hp.com/halo/) - recommended
+* [Polycom](http://www.polycom.com/usa/en/products/telepresence_video/video_conference_systems/index.html)
+
+Pros:
+
+* Requires a very good Internet connection
+* Expensive
+* Convenient
+
+Cons:
+
+* People you need to talk to often do not have the compatible equipment
+* Some solutions are incredibly awkward
+* Does not scale
+* Complex
+
 # Teleconferences
 
 Pros:
@@ -38,13 +56,18 @@ Pros:
 * Can make quick decisions
 * Can mention sensitive items 'off record' to the group
 * Only reasonable backup for attending some F2F meetings, when lack of IRC back channel
+* Can be quite good quality and cheap with Skype
 
 Cons:
 
 * Decisions can be made too hastily
-* Does not scale (annoying delays and voice quality)
+* Does not scale (annoying delays)
+* Sound quality issues
 * "I take silence as agreement"
 * Talking out of turn is awkward
+* Can be expensive if no local dial-ins
+* No formal IP bridge for Skype for example
+* Quite hard to find a time to suit everybody
 
 # IRC
 
