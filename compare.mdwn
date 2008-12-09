@@ -7,4 +7,4 @@ I'm tracking **actual** (not theoretical)
 kB/sec (my favourite unit) of various technologies. I hope to plot the
 `compare.csv` and get a better understanding of digital media.
 
-* [slug](http://flickr.com/photos/hendry/703708705/)
+* [slug](http://flickr.com/photos/hendry/703708705/) with nfs
