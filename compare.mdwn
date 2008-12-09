@@ -2,6 +2,9 @@
 
 
 
-I'm [tracking](http://git.webconverger.org/?p=home.git;a=blob;f=.xsession)
-**actual** (not theoretical) throughput in kB/sec (my favourite unit) of various technologies. I hope
-to plot the `compare.csv` and get a better understanding of digital mediums.
+I'm tracking **actual** (not theoretical)
+[throughput](http://git.webconverger.org/?p=home.git;a=blob;f=.xsession) in
+kB/sec (my favourite unit) of various technologies. I hope to plot the
+`compare.csv` and get a better understanding of digital media.
+
+* [slug](http://flickr.com/photos/hendry/703708705/)
