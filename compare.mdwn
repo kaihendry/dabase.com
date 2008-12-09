@@ -2,7 +2,6 @@
 
 
 
-
 I'm [tracking](http://git.webconverger.org/?p=home.git;a=blob;f=.xsession)
-kB/sec throughput (my favourite unit) of various technologies. I hope to plot
-the `compare.csv` and get a better understanding of data flow.
+**actual** (not theoretical) throughput in kB/sec (my favourite unit) of various technologies. I hope
+to plot the `compare.csv` and get a better understanding of digital mediums.
