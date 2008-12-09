@@ -1,1 +1,1 @@
-[[!table class="medias" format=csv file="/compare.csv"]]
+[[!table class="medias" format=csv file="compare.csv"]]
