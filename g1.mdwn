@@ -23,7 +23,7 @@ Lets consider some use cases I want. :)
 
 ## Sharing a snap on Flickr then making a tweet about it.
 
-It's really tiresome to quickly to a URL... 
+It's really tiresome to quickly to a URL...
 
 1. Go to URL
 * _Long press_  on URL
@@ -65,23 +65,22 @@ scale.
 # G1 Annoyances
 
 1. SMS not being integrated to email. Basically I want to forward SMSes as email. Would be nice to have an email address that fowards to SMS.
-* [No G1 on T-mobile's account page](http://flickr.com/photos/hendry/3005378966/)
 * [Input type file](http://www.whatwg.org/specs/web-apps/current-work/multipage/forms.html#file-upload-state) is disabled/unimplemented
 * Phone number in status not updated after number change
-* Internet does not work when you are using voice. URM!?
-* Can't use G1 as a modem
+* 2G Internet does not work when you are using voice. URM!?
+* Can't use G1 as a modem.
 * Be good if it showed alarms on the clock face. The Alarm icon on the notification has no value after you've set a couple to manage you routine ...
-* T-mobile's Web site is just so very poor. It's not Android friendly!
-* There must be a way of informing Gtalk users you are on the mobile!!
+* There must be a way of quickly informing Gtalk users you are on the mobile!!
 * [Android Issue list](http://b.android.com)
 * [Piss off the developer](http://www.theregister.co.uk/2008/12/08/android_dev_edition/)
 * [Bluetooth HID does not work](http://flickr.com/photos/hendry/3101836805/)
-* T-mobile employing [Content Transformation](http://www.w3.org/TR/ct-guidelines/), put **Header set Cache-Control: no-transform** in your `.htaccess`
+* No Google Roadmap. Google develops Android browser stuff in private and then does an open code snapshot. If 3rd party businesses want to work with their platform, they need to know exactly when HTML5 features are going to be rolled out!
+* No Android market for Web applications such as [Geo](http://geo.webvm.net)
 
 Gtalk chats are a great feature. But often I miss the chat and I can't figure
 out how the "Recent conversations archive" supposed to work. What's worse is
-that sometimes I confuse chat with SMS and SMS does not seem to appear in Chats
-pane of Gmail!
+that sometimes I confuse 'Gtalk chat' with SMS, whereby SMS does not seem to
+appear in 'Gtalk chat' pane of Gmail!
 
 # Poor Web integration
 
@@ -96,7 +95,6 @@ have 6 windows open at one time. Since default actions open a new window, it's
 quite easy to hit this limit annoyingly again and again. The paradox is that
 you are somehow allowed to keep many multiple Dalvik applications open in the
 background, but not Web applications!!
-
 
 # T-mobile customer service
 
@@ -130,6 +128,7 @@ have received a response now after emailing again:
 ## Things that suck with T-mobile
 
 1. [No conference call](http://flickr.com/photos/hendry/3006708296/)
+* T-mobile employing [Content Transformation](http://www.w3.org/TR/ct-guidelines/), put **Header set Cache-Control: no-transform** in your `.htaccess`
 * Call waiting does not seem to work
 * Data reception at the University of Surrey SUCKS, even though they advertise on campus! WTF
 * [No special treatment for T hotspots](http://static.natalian.org/2008-11-08/tmobile1.txt) -- "Sadly, there are no discounts for this service at present."
