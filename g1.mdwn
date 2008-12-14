@@ -9,6 +9,10 @@ First I implore you not to write an [Android Application](http://code.google.com
 Most developers require Geolocation and you can easily achieve [Geolocation in
 the Android browser](http://geo.webvm.net/). The Web is the future!
 
+That been said, the best thing on the G1 is the comments on the Android market.
+That's an incredibly hilarious Dalvik application that's brought tears to my
+eyes!
+
 ## Other reasons not to develop Dalvik applications
 
 * Google's **Market has no upgrade** mechanism. The Web has easy seamless upgrades
