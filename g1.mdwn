@@ -78,7 +78,7 @@ scale.
 * [Android Issue list](http://b.android.com)
 * [Piss off the developer](http://www.theregister.co.uk/2008/12/08/android_dev_edition/)
 * [Bluetooth HID does not work](http://flickr.com/photos/hendry/3101836805/)
-* No Google **browser** [Roadmap](http://source.android.com/roadmap). Google develops Android browser stuff in private and then does an open code snapshot. If 3rd party businesses want to work with their platform, they need to know exactly when HTML5 features are going to be rolled out!
+* No Google **browser** [Roadmap](http://source.android.com/roadmap) [cupcake](http://source.android.com/roadmap/cupcake). Google develops Android browser stuff in private and then does an open code snapshot. If 3rd party businesses want to work with their platform, they need to know exactly when HTML5 features are going to be rolled out!
 * No Android market for Web applications such as [Geo](http://geo.webvm.net)
 
 Gtalk chats are a great feature. But often I miss the chat and I can't figure
