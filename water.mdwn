@@ -1,3 +1,5 @@
+[[meta title="Typical litres of water used each day"]]
+
 [[!table class="water" format=csv file="water.csv"]]
 
-Source: Three Valley's Water Bill - December 2008
+[Source](http://www.3valleys.co.uk/water_efficiency/): Three Valley's Water Bill - December 2008
