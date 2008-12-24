@@ -1,0 +1,33 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo 
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug eth0
+iface eth0 inet dhcp
+
+# The wireless network interface (dhcp)
+iface wlan0 inet dhcp
+    wpa-driver wext
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+#    wireless-essid w
+#
+#
+#mapping hotplug
+#        script grep
+#        map usb0
+
+#auto usb0
+#iface usb0 inet static
+#address 192.168.2.14
+#netmask 255.255.255.0
+#network 192.168.2.0
+#broadcast 192.168.2.255
+#up iptables -t nat -A POSTROUTING -o eth0 -s 192.168.2.15 -j MASQUERADE
+#up echo 1 > /proc/sys/net/ipv4/ip_forward
+#down iptables -t nat -D POSTROUTING -o eth0 -s 192.168.2.15 -j MASQUERADE
+#down echo 0 > /proc/sys/net/ipv4/ip_forward
+

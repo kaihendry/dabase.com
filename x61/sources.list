@@ -1,0 +1,36 @@
+deb http://ftp.nl.debian.org/debian/ unstable main contrib non-free
+deb-src http://ftp.nl.debian.org/debian/ unstable main contrib non-free
+
+#deb http://debian.virginmedia.com/ unstable main contrib non-free
+#deb-src http://debian.virginmedia.com/ unstable main contrib non-free
+
+#deb http://www.debian-multimedia.org sid main
+#deb http://kernel-archive.buildserver.net/debian-kernel trunk main
+
+deb http://www.debian-multimedia.org unstable main
+deb-src http://www.debian-multimedia.org unstable main
+
+#deb http://webconverger.com/debian/ stable/
+#deb-src http://webconverger.com/debian/ lenny/
+#deb-src http://hendry.iki.fi/debian/ stable/
+deb http://debian.webconverger.com/ lenny/
+
+# WebVM
+deb http://debian.webvm.net/ unstable/i386/
+
+deb http://live.debian.net/debian-snapshots/ ./
+
+#deb http://maemo-sdk.garage.maemo.org/download/repo/dists/alpha-2/host/ubuntu-gutsy binary-i386/
+#deb http://maemo-sdk.garage.maemo.org/download/host ubuntu-hardy free
+
+#deb http://scratchbox.org/debian/ apophis main
+deb http://scratchbox.org/debian stable main
+
+#deb http://wine.sourceforge.net/apt/ binary/
+
+deb http://deb.opera.com/opera sid non-free
+#deb http://deb.opera.com/opera lenny non-free
+
+#deb http://www.quakeforge.net/packages/debian unstable contrib non-free
+
+#deb http://ppa.launchpad.net/ipod-touch/ubuntu hardy main

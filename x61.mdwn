@@ -1,0 +1,639 @@
+# Debian Unstable on a Lenovo [Thinkpad X61](http://thinkwiki.org/wiki/Category:X61)
+
+by [Kai Hendry](http://hendry.iki.fi/) (any tips **please** get in touch)
+
+> Overall I think the X series is the best laptop to run Debian on, despite my following complaints =)
+
+<a href="http://www.flickr.com/photos/hendry/2125072622/" title="X61 Thinkpad by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2389/2125072622_72055f93f3_m.jpg" width="240" height="180" alt="X61 Thinkpad" /></a>
+
+* Type: 7675-4KU S/N LV-F6040 07/10 [Warranty](http://www-307.ibm.com/pc/support/site.wss/warrantyLookup.do?type=7675&serial=LV-F6040&warrantySubmit2.x=21&warrantySubmit2.y=10&country=897&iws=off&sitestyle=lenovo)
+* Product ID: 76754KU
+* Bios: 2.07 (7NETA7WW) [update](http://www-307.ibm.com/pc/support/site.wss/document.do?sitestyle=lenovo&lndocid=MIGR-67982)
+* [Lenovo Thinkpad X61 1300USD](http://www.newegg.com/Product/Product.aspx?Item=N82E16834146336)
+* Order total: 1579USD (includes Tax)
+* Maintenance manuals: [PDF](http://www-307.ibm.com/pc/support/site.wss/document.do?sitestyle=lenovo&lndocid=MIGR-62866) [Videos](http://lenovoblogs.com/connections/?p=17)
+* Extra: 8 cell battery 150USD
+
+# Some of my configuration files
+
+<ul>
+[[inline pages="hardware/x61/*" archive="yes" ss="no" atom="no" timeformat="%F"]]
+</ul>
+
+# Install
+
+## via USB
+
+<a href="http://www.flickr.com/photos/hendry/2817912921/" title="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=401832 by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3083/2817912921_58ebd4f5db_m.jpg" width="240" height="180" alt="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=401832" /></a>
+
+Unfortunately the new X61 with the [Debian installer from a USB
+stick](http://www.debian.org/releases/stable/i386/ch04s04.html.en) failed to
+work with the **Boot error** message. I did test the d-i USB stick with a
+friend's Compaq. On the Compaq the USB installer works, however further testing
+showed the USB stick does not work with my older X40 Thinkpad. So I suspect an
+[odd bug](http://bugs.debian.org/401832) with Debian install USB images with
+(my) Thinkpads.  USB sticks created with [Debian
+Live](http://debian-live.alioth.debian.org/) are fine with my Thinkpads.
+
+## via [Goodbye Microsoft](http://goodbye-microsoft.com/)
+
+So unfortunately I had to waste a few hours of my life installing the OEM
+pre-install of Microsoft Vista. Vista ran painfully slowly on 1G of RAM and
+there are tons of retarded 3rd party applications that I assume Lenovo put on
+there.  However once Vista booted, the win32 debian installer that is [Goodbye
+Microsoft](http://goodbye-microsoft.com/) works well. However you must run
+`cmd` as Administrator and [alter the boot
+timeout](http://msdn2.microsoft.com/en-us/library/ms791525.aspx), before trying
+to reboot into the Debian Installer. Otherwise you will not be able to choose
+the Debian installer and you'll reboot into Vista again!
+
+## Initial Debian install
+
+I installed etch and then immediately switched my
+[sources.list](http://svn.natalian.org/debian/configuration/x61/sources.list)
+to unstable. I started the install in the USA and finished in the UK, hence I
+needed the `sudo dpkg-reconfigure tzdata` command to setup the timezone.
+
+I think I did try LVM with Debian Etch installer, but it did not work. :/
+
+## via PXE (finally!)
+
+Painfully I re-installed my X61 to 686 (from amd64) with LVM using the very
+[latest Debian installer](http://www.debian.org/devel/debian-installer/). You
+might find this [network TFTP boot
+guide](http://wiki.debian.org/DebianLive/Howto/Creating_a_Test_environment)
+helpful. :)
+
+# Hardware Specifications
+
+## :r !lspci
+
+    00:00.0 Host bridge: Intel Corporation Mobile Memory Controller Hub (rev 0c)
+    00:02.0 VGA compatible controller: Intel Corporation Mobile Integrated Graphics Controller (rev 0c)
+    00:02.1 Display controller: Intel Corporation Mobile Integrated Graphics Controller (rev 0c)
+    00:19.0 Ethernet controller: Intel Corporation 82566MM Gigabit Network Connection (rev 03)
+    00:1a.0 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI #4 (rev 03)
+    00:1a.1 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI #5 (rev 03)
+    00:1a.7 USB Controller: Intel Corporation 82801H (ICH8 Family) USB2 EHCI #2 (rev 03)
+    00:1b.0 Audio device: Intel Corporation 82801H (ICH8 Family) HD Audio Controller (rev 03)
+    00:1c.0 PCI bridge: Intel Corporation 82801H (ICH8 Family) PCI Express Port 1 (rev 03)
+    00:1c.1 PCI bridge: Intel Corporation 82801H (ICH8 Family) PCI Express Port 2 (rev 03)
+    00:1d.0 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI #1 (rev 03)
+    00:1d.1 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI #2 (rev 03)
+    00:1d.7 USB Controller: Intel Corporation 82801H (ICH8 Family) USB2 EHCI #1 (rev 03)
+    00:1e.0 PCI bridge: Intel Corporation 82801 Mobile PCI Bridge (rev f3)
+    00:1f.0 ISA bridge: Intel Corporation Mobile LPC Interface Controller (rev 03)
+    00:1f.1 IDE interface: Intel Corporation Mobile IDE Controller (rev 03)
+    00:1f.2 SATA controller: Intel Corporation Mobile SATA AHCI Controller (rev 03)
+    00:1f.3 SMBus: Intel Corporation 82801H (ICH8 Family) SMBus Controller (rev 03)
+    03:00.0 Network controller: Intel Corporation PRO/Wireless 3945ABG Network Connection (rev 02)
+    05:00.0 CardBus bridge: Ricoh Co Ltd RL5c476 II (rev ba)
+    05:00.1 FireWire (IEEE 1394): Ricoh Co Ltd Unknown device 0832 (rev 04)
+    05:00.2 Generic system peripheral [0805]: Ricoh Co Ltd R5C822 SD/SDIO/MMC/MS/MSPro Host Adapter (rev 21)
+
+## Kernel configuration
+
+### :r !uname -a
+
+Linux x61 2.6.26-1-686 #1 SMP Thu Aug 28 12:00:54 UTC 2008 i686 GNU/Linux
+
+### :r !lsmod
+
+    Module                  Size  Used by
+    aes                    27744  1 
+    i915                   22592  2 
+    drm                    75668  3 i915
+    vmnet                  39316  13 
+    parport_pc             34020  0 
+    parport                34088  1 parport_pc
+    vmblock                14624  3 
+    vmmon                 931628  0 
+    rfcomm                 36344  0 
+    l2cap                  22496  5 rfcomm
+    bluetooth              50436  4 rfcomm,l2cap
+    ipv6                  242788  21 
+    acpi_cpufreq            9260  1 
+    cpufreq_powersave       1856  0 
+    cpufreq_userspace       4292  0 
+    cpufreq_stats           5184  0 
+    cpufreq_conservative     6952  0 
+    cpufreq_ondemand        8332  1 
+    freq_table              4544  3 acpi_cpufreq,cpufreq_stats,cpufreq_ondemand
+    fuse                   41876  1 
+    loop                   17092  0 
+    firewire_sbp2          14188  0 
+    tsdev                   8160  0 
+    arc4                    2048  2 
+    ecb                     3584  2 
+    blkcipher               6340  1 ecb
+    yenta_socket           24908  0 
+    rsrc_nonstatic         11904  1 yenta_socket
+    pcmcia_core            37076  2 yenta_socket,rsrc_nonstatic
+    battery                12296  0 
+    sdhci                  16972  0 
+    mmc_core               27620  1 sdhci
+    snd_hda_intel         259100  3 
+    ac                      5636  0 
+    snd_pcm                72132  2 snd_hda_intel
+    serio_raw               6724  0 
+    snd_timer              21156  2 snd_pcm
+    video                  18608  0 
+    output                  3840  1 video
+    button                  8336  0 
+    iwl3945                83656  0 
+    i2c_i801                9264  0 
+    i2c_core               23264  1 i2c_i801
+    firmware_class          9472  1 iwl3945
+    psmouse                36368  0 
+    intel_agp              23348  1 
+    mac80211              122020  1 iwl3945
+    agpgart                31624  3 drm,intel_agp
+    cfg80211                7336  1 mac80211
+    snd                    48356  7 snd_hda_intel,snd_pcm,snd_timer
+    soundcore               7584  1 snd
+    snd_page_alloc         10088  2 snd_hda_intel,snd_pcm
+    thinkpad_acpi          45596  0 
+    nvram                   8520  1 thinkpad_acpi
+    pcspkr                  3264  0 
+    evdev                   9472  6 
+    ext3                  121544  3 
+    jbd                    55368  1 ext3
+    mbcache                 8320  1 ext3
+    dm_mirror              21632  0 
+    dm_snapshot            16932  0 
+    dm_mod                 52640  9 dm_mirror,dm_snapshot
+    sd_mod                 27424  3 
+    piix                    8932  0 [permanent]
+    generic                 4804  0 [permanent]
+    ide_core              112484  2 piix,generic
+    firewire_ohci          16640  0 
+    firewire_core          39072  2 firewire_sbp2,firewire_ohci
+    crc_itu_t               2208  1 firewire_core
+    ahci                   22692  2 
+    e1000                 113696  0 
+    ehci_hcd               31372  0 
+    ata_generic             7588  0 
+    libata                113488  2 ahci,ata_generic
+    scsi_mod              136684  3 firewire_sbp2,sd_mod,libata
+    uhci_hcd               23056  0 
+    usbcore               130568  3 ehci_hcd,uhci_hcd
+    thermal                15580  0 
+    processor              34696  2 acpi_cpufreq,thermal
+    fan                     5092  0 
+
+## :r !cat /proc/cpuinfo
+
+`top` does not show them as two seperate processors. So I am wondering how the
+processing actually works. When I compile WebKit the `cc1plus` process only
+seems to take 30-odd percent of the CPU on `top`. I'm very confused.
+
+    processor	: 0
+    vendor_id	: GenuineIntel
+    cpu family	: 6
+    model		: 15
+    model name	: Intel(R) Core(TM)2 Duo CPU     T7300  @ 2.00GHz
+    stepping	: 10
+    cpu MHz		: 800.000
+    cache size	: 4096 KB
+    physical id	: 0
+    siblings	: 2
+    core id		: 0
+    cpu cores	: 2
+    fdiv_bug	: no
+    hlt_bug		: no
+    f00f_bug	: no
+    coma_bug	: no
+    fpu		: yes
+    fpu_exception	: yes
+    cpuid level	: 10
+    wp		: yes
+    flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc arch_perfmon pebs bts pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr lahf_lm ida
+    bogomips	: 3998.15
+    clflush size	: 64
+
+    processor	: 1
+    vendor_id	: GenuineIntel
+    cpu family	: 6
+    model		: 15
+    model name	: Intel(R) Core(TM)2 Duo CPU     T7300  @ 2.00GHz
+    stepping	: 10
+    cpu MHz		: 800.000
+    cache size	: 4096 KB
+    physical id	: 0
+    siblings	: 2
+    core id		: 1
+    cpu cores	: 2
+    fdiv_bug	: no
+    hlt_bug		: no
+    f00f_bug	: no
+    coma_bug	: no
+    fpu		: yes
+    fpu_exception	: yes
+    cpuid level	: 10
+    wp		: yes
+    flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc arch_perfmon pebs bts pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr lahf_lm ida
+    bogomips	: 3989.89
+    clflush size	: 64
+
+Speed stepping does seem to work. It seems to drop down to 800/2001 mhz in
+normal use.
+
+## :r !free -m
+
+Since the [X61 I bought from
+Newegg](http://www.newegg.com/Product/Product.aspx?Item=N82E16834146336) only
+had 1G of memory, I wanted **more**. Armed with the [memory information of the
+X61](http://thinkwiki.org/wiki/PC2-5300) I went to Frys in Palo Alto (thanks
+Paul from ACOA for the ride!) for the upgrade. I bought a single 2G RAM module
+and removed the two 512mb modules. Frys staff were kind enough to borrow me a
+small [philips screw driver](http://en.wikipedia.org/wiki/Henry_F._Phillips) for me to perform the upgrade then and there.
+
+                 total       used       free     shared    buffers     cached
+    Mem:          2006       1611        395          0         77       1170
+    -/+ buffers/cache:        364       1642
+    Swap:         2827          0       2827
+
+I didn't try, but I suspect another 2G module could bring the machine to 4G. I
+should also try putting in one of the 512mb modules I took out.
+
+I wish the thinkpad was sold with a RAM module socket for upgrades. I guess
+Lenovo save money by using 512mb modules for fulfilling orders.
+
+## SATA hard drive
+
+    x61:~% sudo hdparm -T /dev/sda
+
+    /dev/sda:
+     Timing cached reads:   5744 MB in  2.00 seconds = 2878.97 MB/sec
+    x61:~% sudo hdparm -t /dev/sda
+
+    /dev/sda:
+     Timing buffered disk reads:  112 MB in  3.05 seconds =  36.78 MB/sec
+
+# Problems and solutions
+
+## "Low Battery Alarm" fails
+
+<a href="http://www.flickr.com/photos/hendry/2869242637/" title="Beep when you're low by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3282/2869242637_bbd14b1a71_m.jpg" width="240" height="180" alt="Beep when you're low" /></a>
+
+Though:
+
+	x61:~% cat /proc/acpi/battery/BAT0/alarm
+	alarm:                   3604 mWh
+
+And the **[BIOS](http://flickr.com/photos/hendry/2869242637/) is correctly set**. There is no _audible alarm_ like that of my
+Thinkpad X40 that the battery is running low. I don't notice the visual battery
+indicator in the status bar. :(
+
+## Microphone capture doesn't work (solved)
+
+You need to setup the capture devices with `alsamixer -V capture`. See not notes on:
+
+<a href="http://www.flickr.com/photos/hendry/2315742635/" title="`alsamixer -V capture` by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3296/2315742635_313552427f_m.jpg" width="192" height="240" alt="`alsamixer -V capture`" /></a>
+
+Btw to configure sound output with the correct kernel modules, that's easy with:
+
+    x61:~% sudo alsaconf
+
+## After a day sound playback becomes unbearably choppy
+
+* [sample](http://static.natalian.org/2008-08-11/x61_snd.mp3)
+
+Using 2.6.26-1-686 and ALSA 1.0.16.
+
+This is really irritating.
+
+## SIM card slot mystery
+
+<a href="http://www.flickr.com/photos/hendry/2165963688/" title="Sim slot on a Thinkpad by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2060/2165963688_85d2f5806a_m.jpg" width="240" height="180" alt="Sim slot on a Thinkpad" /></a>
+
+Why the mystery? I want to know how to access my SIM card! Any ideas? Right now I am quite happy accessing Internet via bluetooth mind ... I don't want one SIM card for my Lenovo and another for my phone. That's going to probably be expensive...
+
+## X61 backlight does not work (solved)
+
+Use [`xbacklight`](http://www.lesswatts.org/tips/graphics.php) as of version 7.3 of X.org.
+
+	/usr/bin/xbacklight -set 100%
+
+I'm a little confused now how this relates to brightness. :)
+
+## Think keys don't work
+
+Keys like the volume buttons, brightness and suspend Fn keys don't work. There
+does seem to be some ongoing work on the [ibm-acpi-devel -- ibm-acpi Linux
+driver
+development](https://lists.sourceforge.net/lists/listinfo/ibm-acpi-devel).
+
+## X doesn't work with Intel (solved)
+
+[Intel Graphics Media Accelerator X3100](http://thinkwiki.org/wiki/Intel_Graphics_Media_Accelerator_X3100)
+
+Used VESA driver instead initially. Something to do with agpart missing.
+
+Later I tried the reconfiguring X again `sudo dpkg-reconfigure xserver-xorg` and the Intel driver decided to work.
+
+    Dec 21 00:54:32 x61 kernel: [drm] Initialized drm 1.1.0 20060810
+    Dec 21 00:54:32 x61 kernel: [drm] Initialized i915 1.6.0 20060119 on minor 0
+
+`glxgears` seems to run slow, but returns output like:
+
+    883 frames in 5.2 seconds = 169.373 FPS
+    840 frames in 5.2 seconds = 161.166 FPS
+    840 frames in 5.2 seconds = 160.245 FPS
+
+Bit odd?
+
+## Wireless does not work (semi-solved)
+
+I have this [03:00.0 Network controller [0280]: Intel Corporation PRO/Wireless 3945ABG Network Connection [8086:4227] (rev 02)](http://thinkwiki.org/wiki/Intel_PRO/Wireless_3945ABG_Mini-PCI_Express_Adapter)
+device. Annoyingly there are several ways to drive this device. I've gone for
+the most recent kernel and the
+[firmware-iwlwifi](http://packages.qa.debian.org/f/firmware-nonfree.html).
+[firmware-ipw3945](http://qa.debian.org/popcon.php?package=firmware-nonfree)
+seems to be more popular, though 'iwlwifi' seems to work for me:
+
+    x61:~% dmesg | grep 3945
+    iwl3945: Intel(R) PRO/Wireless 3945ABG/BG Network Connection driver for Linux, 0.1.15ks
+    iwl3945: Copyright(c) 2003-2007 Intel Corporation
+    iwl3945: Detected Intel PRO/Wireless 3945ABG Network Connection
+    iwl3945: Tunable channels: 11 802.11bg, 13 802.11a channels
+    wmaster0: Selected rate control algorithm 'iwl-3945-rs'
+
+`ifconfig -a` might show the wlan0 interface name screwed up (esp. if you
+upgraded from Debian etch to unstable). I used the fix in the [Debian Wiki's
+iwlwifi page](http://wiki.debian.org/iwlwifi) with the help of #debian-boot
+people.
+
+Currently it can join a [WPA](http://en.wikipedia.org/wiki/Wi-Fi_Protected_Access) secured network fine, but it can't join a very ordinary WEP secured network, with the error:
+
+    mismatch in privacy configuration and mixed-cell disabled - abort association
+
+* Ensure you have the [wpasupplicant](http://packages.qa.debian.org/w/wpasupplicant.html) package installed
+* [/etc/network/interfaces](http://svn.natalian.org/debian/configuration/x61/interfaces)
+* [/etc/wpa\_supplicant/wpa\_supplicant.conf](http://svn.natalian.org/debian/configuration/x61/wpa_supplicant.conf)
+* `sudo wpa_cli` to manage wireless networks
+
+The X61 wireless interface sadly seems rather inflexible like my X40. You have
+to **reboot** the machine to join a new network once you've associated with a
+network beforehand. In my experience this a typical problem with linux &
+wireless devices. I assume wireless devices are deliberately cripled by
+hardware vendors and their firmware to prevent 'hackers' from scanning wireless
+networks and breaking any radio laws.
+
+When things go well you'll see:
+
+    x61:~% sudo wpa_cli
+    wpa_cli v0.6.0
+    Copyright (c) 2004-2007, Jouni Malinen <j@w1.fi> and contributors
+
+    This program is free software. You can distribute it and/or modify it
+    under the terms of the GNU General Public License version 2.
+
+    Alternatively, this software may be distributed under the terms of the
+    BSD license. See README and COPYING for more details.
+
+
+    Selected interface 'wlan0'
+
+    Interactive mode
+
+    > status
+    bssid=00:90:d0:ef:34:7f
+    ssid=hendry.iki.fi
+    id=2
+    pairwise_cipher=CCMP
+    group_cipher=TKIP
+    key_mgmt=WPA2-PSK
+    wpa_state=COMPLETED
+    ip_address=192.168.1.65
+
+You probably need a reboot if you see:
+
+    > status
+    wpa_state=SCANNING
+
+The iwlwifi seems generally quite unstable. :(  I've heard of people removing
+the intel wireless and replacing it with a better [atheros](http://www.atheros.com/) based mini-pci
+device. Or perhaps resorting to the earlier driver ... :(
+
+### Sometimes it completely fails and requires a reboot
+
+    Monitor-Mwait will be used to enter C-3 state
+    wlan0: RX deauthentication from 00:1c:10:36:43:50 (reason=7)
+    wlan0: deauthenticated
+    wlan0: RX deauthentication from 00:1c:10:36:43:50 (reason=7)
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: RX deauthentication from 00:1c:10:36:43:50 (reason=7)
+    wlan0: RX deauthentication from 00:1c:10:36:43:50 (reason=7)
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: RX deauthentication from 00:1c:10:36:43:50 (reason=7)
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: RX deauthentication from 00:1c:10:36:43:50 (reason=7)
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: authentication with AP 00:1c:10:36:43:50 timed out
+    iwl3945: Microcode SW error detected.  Restarting 0x82000008.
+    iwl3945: Error Reply type 0x00000000 cmd REPLY_SCAN_CMD (0x80) seq 0x443B ser 0x00000000
+    iwl3945: Can't stop Rx DMA.
+    wlan0: failed to restore operationalchannel after scan
+    iwl3945: No space for Tx
+    iwl3945: Error sending REPLY_ADD_STA: iwl_enqueue_hcmd failed: -28
+    iwl3945: No space for Tx
+    iwl3945: Error sending REPLY_TX_PWR_TABLE_CMD: iwl_enqueue_hcmd failed: -28
+    wlan0: RX deauthentication from 00:1c:10:36:43:50 (reason=7)
+    iwl3945: REPLY_ADD_STA failed
+    wlan0: Initial auth_alg=0
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: Initial auth_alg=0
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: authenticate with AP 00:1c:10:36:43:50
+    wlan0: authentication with AP 00:1c:10:36:43:50 timed out
+    iwl3945: Microcode SW error detected.  Restarting 0x82000008.
+    iwl3945: Error Reply type 0x00000000 cmd REPLY_SCAN_CMD (0x80) seq 0x4419 ser 0x00000000
+    iwl3945: Can't stop Rx DMA.
+
+
+## Fan is always on (solved)
+
+> The fact of the matter is that the Thinkpad X61 **runs hot** (bad Lenovo design), so you'll probably
+need the fan even whilst the machine is idle or off mains. :(
+
+<a href="http://www.flickr.com/photos/hendry/2126792512/" title="Controlling fan noise by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2352/2126792512_7671b52476_m.jpg" width="240" height="180" alt="Controlling fan noise" /></a>
+
+From 2.6.23+ the kernel module 'thinkpad\_acpi' supersedes 'ibm\_acpi'.
+
+If you get "bash: echo: write error: Invalid argument" error message you are
+missing "experimental=1 fan_control=1" arguments on the thinkpad\_acpi modprobe.
+To properly configure this on a Debian system edit
+`/etc/modprobe.d/thinkpad_acpi.modprobe`.
+
+    x61:~% grep fan /etc/modprobe.d/thinkpad_acpi.modprobe
+    options thinkpad_acpi hotkey=enable,0xffffbf experimental=1 fan_control=1
+
+Since the Thinkpad embedded fan controller is a bit dumb ass, you unfortunately need to run your own [fan controller script.](http://www.thinkwiki.org/wiki/ACPI_fan_control_script)
+
+To monitor temperature I use [yacpi](http://packages.qa.debian.org/y/yacpi.html) and have a look [how I use yacpi with my window manager](http://svn.natalian.org/home/.xsession) ([screenshot](http://farm3.static.flickr.com/2352/2126792512_673714db8a_o.png)). Also I use [root-tail](http://packages.qa.debian.org/r/root-tail.html) to see what `tp-fancontrol` is doing by logging messages to my background.
+
+## Bluetooth for dialup Internet (life changing)
+
+<a href="http://www.flickr.com/photos/hendry/2291201762/"><img src="http://farm3.static.flickr.com/2336/2291201762_e2f6c012da_m.jpg" width="180" height="240" alt="(Bluetooth) Internet at Heathrow" /></a>
+
+Configured with the help of this [bluetooth dialup Internet
+guide](http://davesource.com/Solutions/20070520.T-Mobile-Nokia-E65-Ubuntu-Linux.html).
+
+Bluetooth is fantastic as it allows me to use dial up networking (DUN) of my [Nokia E65](http://natalian.org/archives/2007/05/15/nokia-e65-from-3/) to connect to the Internet with 3G. :)
+
+* [my three.co.uk peers config](http://static.natalian.org/2008-02-25/peers.tar) invoked by a `sudo pppd call gprs` (not the debian way with `pon` mind)
+
+## Suspend
+
+Radically reduce boot times by issuing `sudo s2ram -f -a 3` instead of `sudo
+halt`. Works great. Need to lock the screen with something like `slock`
+beforehand mind. Would be great to study if power is consumed.
+
+Btw in suspend you'll see the crescent moon symbol light.
+
+It seems to work 2 out of 3 times on my current 2.6.26 configuration... :/
+
+## SD card reader not working (solved)
+
+You need to [load the **mmc_block** and **sdhci** modules manually in
+/etc/modules](http://svn.natalian.org/debian/configuration/x61/modules) for
+some reason and also checkout my
+[fstab](http://svn.natalian.org/debian/configuration/x61/fstab) to see how I
+mount typically my camera's SD card on `/mnt/sd`.
+
+	x61:~% mount | grep mmc
+	/dev/mmcblk0p1 on /mnt/sd type vfat (rw,noexec,nosuid,nodev,user=hendry)
+	x61:~% df -h | grep mmc
+	/dev/mmcblk0p1        3.8G   32K  3.8G   1% /mnt/sd
+
+Good news! The X61 supports my new 4G [SDHC](http://en.wikipedia.org/wiki/Secure_Digital_card#SDHC) card:
+
+	Apr  9 14:19:49 x61 kernel: mmc0: new SDHC card at address e624
+
+And the SDHC card works in my "Canon IXUS 950 IS" camera.
+
+## Unplugged power consumption ~16W
+
+According to [powertop](http://www.lesswatts.org/projects/powertop/) **long
+term: 17.0W,/4.2h** on the biggest 8 cell battery. My X40 by comparison could
+run as low as 10W for extended periods, though its 8 cell battery is old.
+
+<a href="http://www.flickr.com/photos/hendry/2165962832/" title="Silly wireless switch by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2131/2165962832_e1d2f072e1_m.jpg" width="240" height="180" alt="Silly wireless switch" /></a>
+
+The wireless driver `iwl3945` seems to cause wakeups, though I am not even
+using it. Very dissapointing. The wifi switch is not very useful as it also
+switches off bluetooth. [When I am out and about I like to switch off wifi and
+just use bluetooth to access the Internet on trains for example.](http://flickr.com/photos/hendry/2278783255/)
+
+* [Ubuntu forum tips](http://ubuntuforums.org/showthread.php?t=645433)
+* [Intel tips](http://www.lesswatts.org/tips/)
+
+## Strange ACPI b0rks
+
+	[ 3474.642722] ACPI Exception (evregion-0420): AE_TIME, Returned by Handler for [EmbeddedControl] [20080321]
+	[ 3474.642747] ACPI Error (psparse-0530): Method parse/execution failed [\_SB_.PCI0.LPC_.EC__.BAT0._BST] (Node f703c8d8), AE_TIME
+	[ 3474.642906] ACPI Exception (battery-0360): AE_TIME, Evaluating _BST [20080321]
+
+## Scary IRQ messages (solved)
+
+<a href="http://www.flickr.com/photos/hendry/2276263687/" title="Bios update .... I'm scared by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2258/2276263687_ff5a4578e4_m.jpg" width="240" height="180" alt="Bios update .... I'm scared" /></a>
+
+I get this message on 2.6.23 or 2.6.24 kernels with Bios: 1.06 (7NET25WW)
+
+    Message from syslogd@x61 at Tue Jan 15 11:28:42 2008 ...
+    x61 kernel: Disabling IRQ #21
+
+From `dmesg`
+
+    irq 21: nobody cared (try booting with the "irqpoll" option)
+     [<c014e3b6>] __report_bad_irq+0x36/0x75
+     [<c014e5d0>] note_interrupt+0x1db/0x217
+     [<f885fa1e>] usb_hcd_irq+0x21/0x4e [usbcore]
+     [<c014dadd>] handle_IRQ_event+0x23/0x51
+     [<c014ed3d>] handle_fasteoi_irq+0x86/0xa6
+     [<c0106552>] do_IRQ+0x55/0x6f
+     [<c0127fa0>] irq_exit+0x53/0x6b
+     [<c0115d1b>] smp_apic_timer_interrupt+0x71/0x7d
+     [<c010487b>] common_interrupt+0x23/0x28
+     =======================
+    handlers:
+    [<f885f9fd>] (usb_hcd_irq+0x0/0x4e [usbcore])
+    Disabling IRQ #21
+
+This is a Lenovo problem that is fixed in their BIOS update as the changelog:
+
+    (Fix) Unexpected interrupts from the USB controller may occur. (BIOS)
+
+I created a [bootable USB stick using approach 4 from
+Thinkwiki](http://www.thinkwiki.org/wiki/BIOS_Upgrade/X_Series#Approach_4:_Alternative_method_to_the_above_.22alternative_method.22)
+and [Lenovo's ISO update for the
+X61](http://www-307.ibm.com/pc/support/site.wss/document.do?lndocid=MIGR-67983).
+
+I tried to `dd` my USB stick to an image file to share this upgrade resource.
+However `dd` creates an image 2G large which `bzip2` is unable to radically
+downsize for sharing. :(
+
+## Screen brightness
+
+<a href="http://www.flickr.com/photos/hendry/2200147798/" title="High brightness by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2223/2200147798_2d9bacbbd5_m.jpg" width="240" height="180" alt="High brightness" /></a>
+
+In the BIOS I've ramped up the brightness. I think this Lenovo option is a
+little silly. I wish they just fitted a decent LCD panel. Current thinkpad
+screens are dim and have poor viewing angles compared to competitors. :(
+
+## Other concerns
+
+Definitely areas of improvement are:
+
+* The top side of the lid **hole** [see note](http://www.flickr.com/photos/hendry/2125072622/) - reader informs me this is where bluetooth is installed
+* the ThinkVantage panel weakness - very tacky
+* Why the wireless switch and what about Fn+F5?
+* needless cardbus/pcmcia slot - who uses this?
+* remove the firewall port and add one more USB port (3 is an improvement from 2 of the X40)
+* Remove the Windows keys (waste of space) or perhaps remove the Fn key?
+* The mouse buttons are sadly not as solid as those on the X40 - the Thinkpad thankfully is the only laptop I can think of with a dedicated middle/third mouse button, which is very nice for X users.
+* stories of the keyboard scratching the screen (doesn't affect my model)
+* fingerprint reader. wtf actually uses this? remove it or make it more integrated with hardware (see not about hard drive encryption below)
+* the XGA screen is just terrible compared to almost any other laptop out there. Too dim and surely you could give us a SXGA option? Please?
+* The [new power standard](http://www.flickr.com/photos/ahui/1112918474/). What a feck up! Many companies such as [Google have setup their conference rooms with the old Thinkpad PSU style](http://www.flickr.com/photos/hendry/2062844429/). Since Lenovo has changed it, it has really pissed off people including myself. Lenovo's excuse is that Intels require more power. This is a laptop computer, laptops should be using LESS POWER, not more!
+
+### Lenovo's poor international warranty & customer service
+
+Since this Thinkpad X61 was bought in the states, it seems to only have a
+[warranty for the
+USA.](http://www-307.ibm.com/pc/support/site.wss/warrantyLookup.do?type=7675&serial=LV-F6040&warrantySubmit2.x=21&warrantySubmit2.y=10&country=897&iws=off&sitestyle=lenovo) :(
+
+This is poor because when I bought my previous Thinkpad X40 in Korea, I had
+world wide **onsite** warranty included. No extra charge. I used it whilst
+travelling and generally had some excellent IBM support people service my X41's
+laptop hard drive which crashed a couple of times ...
+
+Also when you buy an Apple Macbook in the states, you'll have warranty in the
+UK (ok, this can depend).
+
+**Worldwide warranty is professional and what IBM thinkpad owners expect.**
+
+Ricardo also writes in to say:
+
+	I have only the portuguese warranty, no international one, and, to my
+	disappointment, here you can't buy the extended care warranty, the one that
+	protects from spills and drops... Lenovo is really a bit worse than IBM.
+
+### Innovate ffs Lenovo
+
+Lenovo's innovation is very poor. A good feature that some good engineers could
+figure out is hardware encryption. So I don't have to mess about applying
+encryption as software for my hard drive partitions and suffer the overhead for
+doing so.
+
+UPDATE: <a
+href="http://www.thinkwiki.org/wiki/Full_Disk_Encryption_(FDE))">Full Disk
+Encryption</a> is the answer to my prayers. Thank you Lenovo. Now just make
+your computers cheaper now please. An EEEPC 1000 Atom based machine isn't far
+off an X61 and 1/5 of the price here in the UK!

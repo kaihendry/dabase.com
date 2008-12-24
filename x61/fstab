@@ -1,0 +1,15 @@
+# /etc/fstab: static file system information.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+proc            /proc           proc    defaults        0       0
+/dev/mapper/x61-root /               ext3    errors=remount-ro 0       1
+/dev/sda1       /boot           ext3    defaults        0       2
+/dev/mapper/x61-home /home           ext3    defaults        0       2
+/dev/mapper/crypt /home/hendry/crypt ext3    defaults,noauto,user        0       0
+/dev/mapper/x61-swap_1 none            swap    sw              0       0
+/dev/mmcblk0p1       /mnt/sd            auto    defaults,user,noauto              0       0
+192.168.1.5:/media/usb0 /mnt/slug   nfs    defaults,user,noauto              0       0
+192.168.1.5:/media/seagate /mnt/slug500   nfs    defaults,user,noauto              0       0
+#/dev/disk/by-label/KINGSTON /mnt/kingston auto defaults,user 0 0
+# /dev/mapper/sdb1 /mnt/kingston auto defaults,noauto,user 0 0
+/dev/sdc1 /mnt/beeg auto defaults,noauto,user 0 0
