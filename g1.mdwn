@@ -1,1 +1,1 @@
-[[inline pages="g1/*" description="User blogging of a UK G1" timeformat="%F" show="10" actions=no rss=yes]]
+[[inline pages="android/*" description="User blogging of a UK G1" timeformat="%F" show="10" actions=no rss=yes]]
