@@ -1,1 +1,3 @@
+[[meta title="Life with a G1"]]
+
 [[inline pages="android/*" description="User blogging of a UK G1" actions=no rss=yes]]
