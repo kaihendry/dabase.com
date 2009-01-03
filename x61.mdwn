@@ -17,7 +17,7 @@ by [Kai Hendry](http://hendry.iki.fi/) (any tips **please** get in touch)
 # Some of my configuration files
 
 <ul>
-[[inline pages="hardware/x61/*" archive="yes" ss="no" atom="no" timeformat="%F"]]
+[[!inline pages="hardware/x61/*" archive="yes" ss="no" atom="no" timeformat="%F"]]
 </ul>
 
 # Install
