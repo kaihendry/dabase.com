@@ -1,4 +1,4 @@
-[[meta title="Hendry's tips and tricks"]]
+[[!meta title="Hendry's tips and tricks"]]
 
 [[!inline pages="e/* and !e/new.sh" description="Hendry's hints" feedonly="yes" timeformat="%F"]]
 

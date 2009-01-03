@@ -1,4 +1,4 @@
-[[meta title="Typical litres of water used each day"]]
+[[!meta title="Typical litres of water used each day"]]
 
 [[!table class="water" format=csv file="water.csv"]]
 

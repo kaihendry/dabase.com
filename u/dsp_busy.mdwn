@@ -1,4 +1,4 @@
-[[meta title="/dev/dsp: Device or resource busy"]]
+[[!meta title="/dev/dsp: Device or resource busy"]]
 
 	/dev/dsp: Device or resource busy
 

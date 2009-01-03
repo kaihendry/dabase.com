@@ -1,4 +1,4 @@
-[[meta title="VIM tips"]]
+[[!meta title="VIM tips"]]
 
 <!-- Google CSE Search Box Begins  -->
 <form action="http://www.google.com/cse" id="cse-search-box">

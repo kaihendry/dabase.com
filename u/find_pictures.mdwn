@@ -1,3 +1,3 @@
-[[meta title="Find all pictures"]]
+[[!meta title="Find all pictures"]]
 
 Find all the pictures and show them on a page [example](http://webconverger.com/logos/showcase.txt).
