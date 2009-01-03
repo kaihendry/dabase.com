@@ -1,4 +1,4 @@
-[[meta title="Life with a T-mobile G1 in the UK"]]
+[[!meta title="Life with a T-mobile G1 in the UK"]]
 
 1. [T-mobile Account overview](https://www.t-mobile.co.uk/service/your-account/private/home/)
 
