@@ -1,4 +1,4 @@
-[[meta title="lsof"]]
+[[!meta title="lsof"]]
 List of all open files
 
 	lsof

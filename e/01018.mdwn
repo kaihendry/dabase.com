@@ -1,4 +1,4 @@
-[[meta title="Majordomo how to remove a user"]]
+[[!meta title="Majordomo how to remove a user"]]
 
 http://www.swcp.com/swcp-web/kb/kb-view.php?106
 

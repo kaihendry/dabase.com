@@ -1,4 +1,4 @@
-[[meta title="Configuring an external USB drive with LVM"]]
+[[!meta title="Configuring an external USB drive with LVM"]]
 
 
 	Seagate Freeagent Desktop 500GB External Hard drive 7200RPM 8MB USB2.0

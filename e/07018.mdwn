@@ -1,4 +1,4 @@
-[[meta title="vim7's spelling features"]]
+[[!meta title="vim7's spelling features"]]
 
 Spell checking with british English dictionary:
 

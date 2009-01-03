@@ -1,4 +1,4 @@
-[[meta title="Bash YES/NO prompt interaction"]]
+[[!meta title="Bash YES/NO prompt interaction"]]
 
 Tip here I've used:
 

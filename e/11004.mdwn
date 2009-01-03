@@ -1,4 +1,4 @@
-[[meta title="Pipe"]]
+[[!meta title="Pipe"]]
 stdin and out. baby baby !
 
 	hendry@bogrund-17:/tmp/Rweb1.03/CGIFiles$ /opt/R-1.7.0/bin/R --vanilla < testinput.txt > testoutput.txt

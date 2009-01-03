@@ -1,4 +1,4 @@
-[[meta title="Deleting french movies with spaces"]]
+[[!meta title="Deleting french movies with spaces"]]
 This doesn't work:
 
 	$ find . -name "*FR*" | xargs rm

@@ -1,4 +1,4 @@
-[[meta title="Inserting a Unicode character in VIM"]]
+[[!meta title="Inserting a Unicode character in VIM"]]
 
 Ok, lets first lookup the character we want with [unicode](http://packages.qa.debian.org/u/unicode.html):
 

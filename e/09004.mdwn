@@ -1,4 +1,4 @@
-[[meta title="cvs release in Subversion?"]]
+[[!meta title="cvs release in Subversion?"]]
 Anything you can live without?
 
 	frodo$ svn st projects/

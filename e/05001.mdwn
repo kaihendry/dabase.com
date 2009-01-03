@@ -1,4 +1,4 @@
-[[meta title="NO to the de-facto monopoly Microsoft"]]
+[[!meta title="NO to the de-facto monopoly Microsoft"]]
 Why do I not use Windows?
 * It is not free
 * The source code "recipe" is not availible, hence you do not know what it is exactly doing.

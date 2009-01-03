@@ -1,4 +1,4 @@
-[[meta title="find tips"]]
+[[!meta title="find tips"]]
 
 `find` must be one of those archaic unix commands. It takes years to master.
 

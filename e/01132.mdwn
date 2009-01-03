@@ -1,4 +1,4 @@
-[[meta title="Installing java"]]
+[[!meta title="Installing java"]]
 Debian's java-package is excellent.
 
 	sudo apt-get install java-package

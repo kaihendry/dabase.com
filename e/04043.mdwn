@@ -1,4 +1,4 @@
-[[meta title="javascript var scope"]]
+[[!meta title="javascript var scope"]]
 
 [Good explaination here](http://www.mredkj.com/tutorials/reference_js_intro.html#scope)
 

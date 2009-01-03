@@ -1,4 +1,4 @@
-[[meta title="Testing for root in POSIX shell"]]
+[[!meta title="Testing for root in POSIX shell"]]
 
 In order of preference. **The last code snippet is arguably the best**.
 

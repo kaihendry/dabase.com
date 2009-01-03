@@ -1,4 +1,4 @@
-[[meta title="Grabbing a file from a Subversion repositry"]]
+[[!meta title="Grabbing a file from a Subversion repositry"]]
 I needed to get a particular file out to compare it to a newer file. I needed more than diff as I needed to run groff over these files.
 
 	svn cat -r771  svn+ssh://hendry@bilbo/home/hendry/repo/debian/manpage/dovecot.8  > testing.8

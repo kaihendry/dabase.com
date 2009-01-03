@@ -1,4 +1,4 @@
-[[meta title="Checking mirrors in SVK"]]
+[[!meta title="Checking mirrors in SVK"]]
 I had a residue of an old mirror that I deleted:
 http://pastebin.com/314788
 svk pg svm:mirror //

@@ -1,4 +1,4 @@
-[[meta title="Use 'sudo', not 'su'"]]
+[[!meta title="Use 'sudo', not 'su'"]]
 
 On many previous occassions, I would show people how to upgrade their debians
 boxes. First I would su to root. This is not good practice. Use sudo instead,

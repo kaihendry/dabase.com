@@ -1,4 +1,4 @@
-[[meta title="Merging changes from your HEAD branch to your other branches"]]
+[[!meta title="Merging changes from your HEAD branch to your other branches"]]
 Carefully file by file.
 
 	cvs update -j HEAD deploy.sh

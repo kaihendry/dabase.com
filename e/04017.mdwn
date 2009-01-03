@@ -1,4 +1,4 @@
-[[meta title="WHAT"]]
+[[!meta title="WHAT"]]
 IE is stagnated indefinitely
 the idea is that we get market share _then_ break back compat. in the meantime, while they still have more than 10% or the market, we have to be compatible with them or nobody will pay us any attention. at least that's what it looks like based on the reaction xhtml, svg, etc, have had.
 This is done with an HTC. Or HTML COMPONENT. Which is a piece of javascript that can be referenced in the webpage for IE users to download.

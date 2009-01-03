@@ -1,4 +1,4 @@
-[[meta title="What does the .in suffix in postinst.in mean?"]]
+[[!meta title="What does the .in suffix in postinst.in mean?"]]
 
 	<pusling> it is just a way to mark that this file will somehow be processed into real file
 

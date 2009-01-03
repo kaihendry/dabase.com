@@ -1,4 +1,4 @@
-[[meta title="Editing two files"]]
+[[!meta title="Editing two files"]]
 I usually
 
 	CTRL+w N

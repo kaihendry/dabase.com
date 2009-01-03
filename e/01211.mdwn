@@ -1,4 +1,4 @@
-[[meta title="How to extend a LVM partition"]]
+[[!meta title="How to extend a LVM partition"]]
 
 Previously I setup an [[encrypted_LVM|01202]] partition which didn't work out.
 

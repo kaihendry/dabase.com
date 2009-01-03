@@ -1,4 +1,4 @@
-[[meta title="How to find the Debian version of an installed package"]]
+[[!meta title="How to find the Debian version of an installed package"]]
 
 Finding the package version in Debian isn't trivial. `dpkg -l bash` looks like
 crap.

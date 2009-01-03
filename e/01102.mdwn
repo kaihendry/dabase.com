@@ -1,4 +1,4 @@
-[[meta title="Managing a TODO list"]]
+[[!meta title="Managing a TODO list"]]
 In your .bashrc http://svn.natalian.org/home/.bashrc
 Define your todo.txt location with an export:
 

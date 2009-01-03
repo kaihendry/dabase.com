@@ -1,2 +1,2 @@
-[[meta title="Mozilla forms"]]
+[[!meta title="Mozilla forms"]]
 If you can not type in a Mozilla form, go off and gain window focus on something else and come back to it.

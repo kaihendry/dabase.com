@@ -1,4 +1,4 @@
-[[meta title="dhclient requesting without physical connection"]]
+[[!meta title="dhclient requesting without physical connection"]]
 apt-cache show ifplugd
 
 	20:44 < hendry> Is it a bug if dhclient does requests when there is no physical connection ?

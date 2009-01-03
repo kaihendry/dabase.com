@@ -1,4 +1,4 @@
-[[meta title="bash prompt"]]
+[[!meta title="bash prompt"]]
 Know this:
 
 	# is root

@@ -1,4 +1,4 @@
-[[meta title="Keeping track of changes in unstable"]]
+[[!meta title="Keeping track of changes in unstable"]]
 
 If you want to use unstable you should install apt-listchanges then you
 can received what's changed in the latest upgrade like :

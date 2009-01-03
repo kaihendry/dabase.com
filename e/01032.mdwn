@@ -1,4 +1,4 @@
-[[meta title="Duplex printing - use mpage"]]
+[[!meta title="Duplex printing - use mpage"]]
 
 My favourite option:
 

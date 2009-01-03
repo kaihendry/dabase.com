@@ -1,4 +1,4 @@
-[[meta title="Shell CGI"]]
+[[!meta title="Shell CGI"]]
 
 For simple scripts shell is pretty good. It's the only choice if you plan on embedding Web application on a device. 
 

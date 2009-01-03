@@ -1,4 +1,4 @@
-[[meta title="Configuring Firefox as the default Web browser"]]
+[[!meta title="Configuring Firefox as the default Web browser"]]
 
 Download and extract the Firefox distribution somewhere like $HOME/ff3/firefox. Now we need to tell Debian where it is:
 

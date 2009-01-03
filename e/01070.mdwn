@@ -1,4 +1,4 @@
-[[meta title="Better than apt-cache search"]]
+[[!meta title="Better than apt-cache search"]]
 Finding package information:
 
 	grep-dctrl

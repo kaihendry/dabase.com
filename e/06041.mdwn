@@ -1,2 +1,2 @@
-[[meta title="Bayes"]]
+[[!meta title="Bayes"]]
 http://www.divmod.org/Reverend/index.html

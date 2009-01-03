@@ -1,4 +1,4 @@
-[[meta title="Standards versions diff"]]
+[[!meta title="Standards versions diff"]]
 See:
 
 	/usr/share/doc/debian-policy/upgrading-checklist.txt.gz

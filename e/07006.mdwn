@@ -1,4 +1,4 @@
-[[meta title="Python"]]
+[[!meta title="Python"]]
 Firstly:
 
 	apt-get install vim-python

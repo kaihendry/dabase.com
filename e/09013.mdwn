@@ -1,4 +1,4 @@
-[[meta title="Howto send a PATCH from git"]]
+[[!meta title="Howto send a PATCH from git"]]
 
 Clone the master. Make the change, commit.
 

@@ -1,4 +1,4 @@
-[[meta title="Cleaning whitespace"]]
+[[!meta title="Cleaning whitespace"]]
 
 Deleting whitespace around the cursor:
 

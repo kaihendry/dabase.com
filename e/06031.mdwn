@@ -1,4 +1,4 @@
-[[meta title="Setting list values"]]
+[[!meta title="Setting list values"]]
 How to set a list value in a for loop.
 
 	>>> list = range(5)

@@ -1,4 +1,4 @@
-[[meta title="Undoing and bouncing between changes"]]
+[[!meta title="Undoing and bouncing between changes"]]
 
 	:help i_CTRL-G_u
 

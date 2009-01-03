@@ -1,4 +1,4 @@
-[[meta title="/etc/enviroment Proxy configuration"]]
+[[!meta title="/etc/enviroment Proxy configuration"]]
 With SkoleLinux put in proxy settings in :
 
 	/etc/environment

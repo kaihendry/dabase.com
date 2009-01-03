@@ -1,4 +1,4 @@
-[[meta title="Configuring a directory with encryption using LVM"]]
+[[!meta title="Configuring a directory with encryption using LVM"]]
 
 **UPDATE**: [I have suffered some sort of corruption with this
 approach](http://lists.alioth.debian.org/pipermail/pkg-cryptsetup-devel/2008-April/001960.html).

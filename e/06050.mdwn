@@ -1,4 +1,4 @@
-[[meta title="Zip"]]
+[[!meta title="Zip"]]
 This:
 http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=show&file=faq06.048.htp
 Also uses zip

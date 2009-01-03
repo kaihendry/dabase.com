@@ -1,4 +1,4 @@
-[[meta title="Roman enumeration"]]
+[[!meta title="Roman enumeration"]]
 
 http://www.tex.ac.uk/tex-archive/macros/latex/required/tools/enumerate.dtx
 You need the package which is in the latex2e distro(I think):

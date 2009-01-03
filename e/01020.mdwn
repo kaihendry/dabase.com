@@ -1,4 +1,4 @@
-[[meta title="Debian Iptable Firewall"]]
+[[!meta title="Debian Iptable Firewall"]]
 
 The iptables init.d script is no longer. So here is how I configured my
 firewall in /etc/network/interfaces:

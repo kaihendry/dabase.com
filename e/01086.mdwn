@@ -1,4 +1,4 @@
-[[meta title="Diffstat"]]
+[[!meta title="Diffstat"]]
 
 For a summary of the changes in a diff:
 

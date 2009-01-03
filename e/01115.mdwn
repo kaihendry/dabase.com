@@ -1,4 +1,4 @@
-[[meta title="What was the return code of the last command?"]]
+[[!meta title="What was the return code of the last command?"]]
 Use:
 
 	echo $?

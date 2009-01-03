@@ -1,4 +1,4 @@
-[[meta title="Preparing a new upstream source release"]]
+[[!meta title="Preparing a new upstream source release"]]
 
 Goto a clean directory
 Get new

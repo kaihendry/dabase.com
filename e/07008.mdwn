@@ -1,2 +1,2 @@
-[[meta title="XML"]]
+[[!meta title="XML"]]
 http://www.pinkjuice.com/howto/vimxml/

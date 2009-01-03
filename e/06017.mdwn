@@ -1,4 +1,4 @@
-[[meta title="r+ (appending) and pickle do not mix!"]]
+[[!meta title="r+ (appending) and pickle do not mix!"]]
 
 Beware!
 

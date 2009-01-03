@@ -1,4 +1,4 @@
-[[meta title="Urllib"]]
+[[!meta title="Urllib"]]
 import urllib
 
 	f = urllib.urlopen('http://www.cs.helsinki.fi/u/hendry/')

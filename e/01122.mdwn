@@ -1,4 +1,4 @@
-[[meta title="Cloning a Debian machine"]]
+[[!meta title="Cloning a Debian machine"]]
 On the machine you want to clone:
 
 	dpkg --get-selections > selections.txt

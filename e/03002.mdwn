@@ -1,4 +1,4 @@
-[[meta title="Make a revocation certificate, in case your key is jeopardized, like your forgot your passphrase :)"]]
+[[!meta title="Make a revocation certificate, in case your key is jeopardized, like your forgot your passphrase :)"]]
 <html>
 <pre>
 gpg -kvc

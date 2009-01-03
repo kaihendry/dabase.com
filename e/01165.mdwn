@@ -1,4 +1,4 @@
-[[meta title="How to rotate a video"]]
+[[!meta title="How to rotate a video"]]
 
 Make sure you have:
 

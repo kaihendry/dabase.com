@@ -1,4 +1,4 @@
-[[meta title="What package does this file belong to ?"]]
+[[!meta title="What package does this file belong to ?"]]
 Here is one way:
 
 	hendry@sam:/usr/lib/python2.2/site-packages$ dpkg -S optparse.py

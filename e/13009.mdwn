@@ -1,4 +1,4 @@
-[[meta title="Viewing certain pictures"]]
+[[!meta title="Viewing certain pictures"]]
 You need bash version 3 or greater:
 
 	frodo$ echo ${BASH_VERSION[@]}

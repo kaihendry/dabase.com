@@ -1,4 +1,4 @@
-[[meta title="Addressbook standard"]]
+[[!meta title="Addressbook standard"]]
 Did you know there is an addressbook standard?
 I didn't know either !
 Well there is:

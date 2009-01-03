@@ -1,4 +1,4 @@
-[[meta title="Library usage"]]
+[[!meta title="Library usage"]]
 So what does a binary depend on? Use ldd:
 
 	bilbo$ ldd /bin/ls

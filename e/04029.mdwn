@@ -1,3 +1,3 @@
-[[meta title="Unpractial Specs from the W3C"]]
+[[!meta title="Unpractial Specs from the W3C"]]
 Anne says it well:
 http://annevankesteren.nl/archives/2004/08/specifications

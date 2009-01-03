@@ -1,4 +1,4 @@
-[[meta title="VIM settings for proper style"]]
+[[!meta title="VIM settings for proper style"]]
 Details are here:
 http://www.python.org/peps/pep-0008.html
 :set expandtabs

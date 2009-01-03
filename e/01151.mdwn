@@ -1,4 +1,4 @@
-[[meta title="Iceweasel DD search keyword shorcut bookmarks"]]
+[[!meta title="Iceweasel DD search keyword shorcut bookmarks"]]
 Get the most from your browser by adding this URL:
 
 	http://bugs.debian.org/%s

@@ -1,2 +1,2 @@
-[[meta title="initrd"]]
+[[!meta title="initrd"]]
 If you are not using initrd, then make sure to compile in your hard drive and FS kernel options!

@@ -1,4 +1,4 @@
-[[meta title="diffing diffs"]]
+[[!meta title="diffing diffs"]]
 So after making changes to your packages, see the changes like so:
 
 	sam$ interdiff -z wordpress_2.0.2-1.diff.gz wordpress_2.0.2-2.diff.gz > interdiff

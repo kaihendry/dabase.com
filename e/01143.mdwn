@@ -1,4 +1,4 @@
-[[meta title="Sane SUDO configuration"]]
+[[!meta title="Sane SUDO configuration"]]
 
 To edit:
 

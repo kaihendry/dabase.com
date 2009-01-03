@@ -1,4 +1,4 @@
-[[meta title="Time in New York? Tokyo?"]]
+[[!meta title="Time in New York? Tokyo?"]]
 Get time/date in the New York timezone (EST) like so:
 
 	TZ=EST date

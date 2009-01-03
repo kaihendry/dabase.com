@@ -1,4 +1,4 @@
-[[meta title="Type checking or Object type comparisons"]]
+[[!meta title="Type checking or Object type comparisons"]]
 http://www.python.org/peps/pep-0008.html
         No:  if type(obj) is type(1):
         Yes: if isinstance(obj, int):

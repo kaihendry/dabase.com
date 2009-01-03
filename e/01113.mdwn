@@ -1,4 +1,4 @@
-[[meta title="What does a symlink point to? (symbolic links)"]]
+[[!meta title="What does a symlink point to? (symbolic links)"]]
 
 Use
     readlink

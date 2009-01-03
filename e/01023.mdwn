@@ -1,4 +1,4 @@
-[[meta title="Official Debian Tips"]]
+[[!meta title="Official Debian Tips"]]
 
 Quite a few good ones. Found it while trying to setup a backup regime:
 http://www.debian.org/doc/manuals/reference/ch-tips.en.html

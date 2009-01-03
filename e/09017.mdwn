@@ -1,4 +1,4 @@
-[[meta title="Git CVS tutorial"]]
+[[!meta title="Git CVS tutorial"]]
 
 Say you want to checkout the [mobile test suite](http://dev.w3.org/cvsweb/2008/mobile-test/) into a git repository.
 

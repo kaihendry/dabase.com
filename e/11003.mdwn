@@ -1,4 +1,4 @@
-[[meta title="Sorting a table"]]
+[[!meta title="Sorting a table"]]
 
 This is good for figuring out the mode and median I think:
 

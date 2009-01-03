@@ -1,4 +1,4 @@
-[[meta title="What is the command to change password?"]]
+[[!meta title="What is the command to change password?"]]
 Try this search with man pages:
 
 	apropos password

@@ -1,4 +1,4 @@
-[[meta title="Forwarding mail to another account"]]
+[[!meta title="Forwarding mail to another account"]]
 Edit:
 
 	sudo vim /etc/aliases

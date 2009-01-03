@@ -1,4 +1,4 @@
-[[meta title="Literal Char"]]
+[[!meta title="Literal Char"]]
 IN INSERT MODE !
 
 	C-v C-h

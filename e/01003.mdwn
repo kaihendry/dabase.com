@@ -1,4 +1,4 @@
-[[meta title="Showing friends and family GNU/Linux"]]
+[[!meta title="Showing friends and family GNU/Linux"]]
 
 Convincing people to make the switch is pretty damn difficult. However I can suggest you use a Live Linux filesystem distro such as:
 

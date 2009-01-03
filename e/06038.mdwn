@@ -1,4 +1,4 @@
-[[meta title="Sorting dictionaries (code example)"]]
+[[!meta title="Sorting dictionaries (code example)"]]
 Something I use:
                         b = j.cos.items()
                         b.sort(lambda a, b: cmp(b[1],a[1])) # sort by value. [0] would be the key

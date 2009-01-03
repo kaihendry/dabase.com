@@ -1,4 +1,4 @@
-[[meta title="Mozex VIM textarea editing"]]
+[[!meta title="Mozex VIM textarea editing"]]
 
 In the mozex was the extension to do this.
 

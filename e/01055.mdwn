@@ -1,2 +1,2 @@
-[[meta title="xkill - Killing a process"]]
+[[!meta title="xkill - Killing a process"]]
 CTRL+ALT+ESC

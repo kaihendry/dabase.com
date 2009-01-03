@@ -1,4 +1,4 @@
-[[meta title="tee"]]
+[[!meta title="tee"]]
 Useful for Jboss. As Jboss sucks at logging.
 In fact Jboss sucks at everything. Don't use it !
 

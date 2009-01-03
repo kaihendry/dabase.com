@@ -1,4 +1,4 @@
-[[meta title="StripoGram - use strings"]]
+[[!meta title="StripoGram - use strings"]]
 Kai Hendry wrote:
 
 	>>>>f = open('/home/hendry/lookup.html', 'r+')

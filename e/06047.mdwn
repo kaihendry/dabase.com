@@ -1,2 +1,2 @@
-[[meta title="Regex XML"]]
+[[!meta title="Regex XML"]]
 http://db.cs.helsinki.fi/~hendry/python/re.cgi?input=%3Ccow%3Ejeep%3C%2Fcow%3E&regex=%3Ccow%3E%28.*%3F%29%3C%2Fcow%3E

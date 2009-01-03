@@ -1,4 +1,4 @@
-[[meta title="Setting timezone in Debian"]]
+[[!meta title="Setting timezone in Debian"]]
 For setting time in a new country.
 
 	x61:~% sudo dpkg-reconfigure tzdata

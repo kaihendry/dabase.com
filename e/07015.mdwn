@@ -1,4 +1,4 @@
-[[meta title="Searching and Replacing"]]
+[[!meta title="Searching and Replacing"]]
 All lines
 
 	:%s

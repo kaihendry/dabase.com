@@ -1,4 +1,4 @@
-[[meta title="Hard link vs Soft link"]]
+[[!meta title="Hard link vs Soft link"]]
 <html>
 You can't have hard links between file systems.
 You can't have hard links on directories.

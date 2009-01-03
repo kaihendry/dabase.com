@@ -1,4 +1,4 @@
-[[meta title="Reading input / user interaction"]]
+[[!meta title="Reading input / user interaction"]]
 Input
 
 	>>> print input.__doc__

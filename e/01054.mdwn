@@ -1,4 +1,4 @@
-[[meta title="Backing up"]]
+[[!meta title="Backing up"]]
 http://www.mikerubel.org/computers/rsync_snapshots/
 
 	rsync -essh -rtpvz

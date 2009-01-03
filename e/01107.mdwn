@@ -1,4 +1,4 @@
-[[meta title="ps aux truncated output?"]]
+[[!meta title="ps aux truncated output?"]]
 Funny.
 
 	15:32 < hendry> If I run ps aux

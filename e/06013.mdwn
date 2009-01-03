@@ -1,2 +1,2 @@
-[[meta title="None is null in python"]]
+[[!meta title="None is null in python"]]
 Just a note to myself.

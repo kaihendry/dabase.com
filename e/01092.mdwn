@@ -1,4 +1,4 @@
-[[meta title="Roll back to previous package ! DOWNGRADING"]]
+[[!meta title="Roll back to previous package ! DOWNGRADING"]]
 Somethings broke?
 
 	cd /var/cache/apt/archives

@@ -1,3 +1,3 @@
-[[meta title="Getting rid of duplicates"]]
+[[!meta title="Getting rid of duplicates"]]
 > And then, a tool for deleting duplicates?
   delete-pattern ~=

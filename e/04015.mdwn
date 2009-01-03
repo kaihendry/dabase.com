@@ -1,4 +1,4 @@
-[[meta title="update-alternatives x-www-browser"]]
+[[!meta title="update-alternatives x-www-browser"]]
 hendry@scrooge-15:~$ sudo update-alternatives --verbose --config x-www-browser
 Password:
 There are 2 alternatives which provide `x-www-browser'.

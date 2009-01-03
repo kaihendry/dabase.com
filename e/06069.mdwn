@@ -1,2 +1,2 @@
-[[meta title="Debugging trick"]]
+[[!meta title="Debugging trick"]]
 http://www.oreillynet.com/pub/wlg/5204

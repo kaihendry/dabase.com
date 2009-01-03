@@ -1,4 +1,4 @@
-[[meta title="Getting your IP from a DHCP server"]]
+[[!meta title="Getting your IP from a DHCP server"]]
 
 This is a manual approach:
 

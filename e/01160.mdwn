@@ -1,4 +1,4 @@
-[[meta title="USB stick automount"]]
+[[!meta title="USB stick automount"]]
 
 No HAL and no D-BUS.
 

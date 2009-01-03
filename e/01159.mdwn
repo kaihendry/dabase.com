@@ -1,4 +1,4 @@
-[[meta title="Xsession"]]
+[[!meta title="Xsession"]]
 
 Disable Xsession in `/etc/X11/xinit/xinitrc`.
 

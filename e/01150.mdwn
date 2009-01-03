@@ -1,4 +1,4 @@
-[[meta title="hdparm"]]
+[[!meta title="hdparm"]]
 Your system should always make sure you have DMA installed, except in this case: http://www.thinkwiki.org/wiki/Problems_with_SATA_and_Linux#No_DMA_on_system_hard_disk
 I've discovered that my internal hard drive (hda) is as fast as my external USB2 hard drive(sda).
 

@@ -1,4 +1,4 @@
-[[meta title="Script Movies"]]
+[[!meta title="Script Movies"]]
 
 	script -t 2> timing
 

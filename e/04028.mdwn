@@ -1,4 +1,4 @@
-[[meta title="Wordpress password mysql"]]
+[[!meta title="Wordpress password mysql"]]
 Python is your friend:
 
 	bilbo:498$ python

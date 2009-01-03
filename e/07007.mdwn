@@ -1,4 +1,4 @@
-[[meta title="Outputting VIM buffer as HTML"]]
+[[!meta title="Outputting VIM buffer as HTML"]]
 
 This tip applies for escaping those pesky &lt;&gt; angled brackets.
 

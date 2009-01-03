@@ -1,4 +1,4 @@
-[[meta title="Accidental deletion"]]
+[[!meta title="Accidental deletion"]]
 Say you accidentally deleted and commited something in changeset or rev 1852.
 You probably want to something like this:
 

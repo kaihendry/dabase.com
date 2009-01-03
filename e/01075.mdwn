@@ -1,4 +1,4 @@
-[[meta title="Getting rid of .svn"]]
+[[!meta title="Getting rid of .svn"]]
 From darix
 
 	find -type d -name "\.svn" -exec rm "{}" \;

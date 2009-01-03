@@ -1,4 +1,4 @@
-[[meta title="Checking packages"]]
+[[!meta title="Checking packages"]]
 
 Checking your package is a good idea:
 

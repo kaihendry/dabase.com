@@ -1,2 +1,2 @@
-[[meta title="PDF"]]
+[[!meta title="PDF"]]
 Install the package plugger in debian !

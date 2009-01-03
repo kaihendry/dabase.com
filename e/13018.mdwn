@@ -1,4 +1,4 @@
-[[meta title="Sed in place editing"]]
+[[!meta title="Sed in place editing"]]
 
 Stupidly useful
 

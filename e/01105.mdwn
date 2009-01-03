@@ -1,4 +1,4 @@
-[[meta title="C binary information"]]
+[[!meta title="C binary information"]]
 Finding out about binaries and shared libraries:
 
 	objdump -p /lib/libc.so.6

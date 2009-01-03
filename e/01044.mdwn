@@ -1,4 +1,4 @@
-[[meta title="Anti-aliased fonts"]]
+[[!meta title="Anti-aliased fonts"]]
 
 This is a helpful guide:
 

@@ -1,4 +1,4 @@
-[[meta title="Inserting values into HTML output"]]
+[[!meta title="Inserting values into HTML output"]]
 use
 
 	print '<body bgcolor="%s">' % color

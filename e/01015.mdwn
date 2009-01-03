@@ -1,8 +1,6 @@
-[[meta title="Compiling your own kernel (not recommended)"]]
+[[!meta title="Compiling your own kernel (not recommended)"]]
 
-FIXME
-
-Use a package instead! But if you must, here is how :
+Use the kernel package instead! But if really you must, here is how:
 
      # apt-get install debhelper modutils kernel-package libncurses5-dev
      # apt-get install kernel-source-2.4.18   # use latest version
@@ -22,5 +20,3 @@ Use a package instead! But if you must, here is how :
 
 Just verify the symlinks for /vmlinuz and /imitrd.img and the .old
 versions of them and remember to rerun lilo if you change them!
-HTH
-~Mark McRitchie

@@ -1,4 +1,4 @@
-[[meta title="Disable caching in Apache2"]]
+[[!meta title="Disable caching in Apache2"]]
 You need to enable the mod_headers extension:
 http://httpd.apache.org/docs/2.2/mod/mod_headers.html
 On a Debian system:

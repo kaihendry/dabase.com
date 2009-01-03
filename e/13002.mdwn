@@ -1,4 +1,4 @@
-[[meta title="ISO8601 a file"]]
+[[!meta title="ISO8601 a file"]]
 Blah!
 
 	debian$ date --iso-8601=seconds -u -r /etc/passwd

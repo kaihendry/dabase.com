@@ -1,4 +1,4 @@
-[[meta title="Make development cycles in C/C++"]]
+[[!meta title="Make development cycles in C/C++"]]
 
 Write a Makefile. Call it with:
 

@@ -1,4 +1,4 @@
-[[meta title="Resizing LVM"]]
+[[!meta title="Resizing LVM"]]
 
 So what is your disk's capacity?
 

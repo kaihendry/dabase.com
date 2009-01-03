@@ -1,4 +1,4 @@
-[[meta title="What type of file is it?"]]
+[[!meta title="What type of file is it?"]]
 
 Hint:
 

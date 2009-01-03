@@ -1,4 +1,4 @@
-[[meta title="Chrome, wine and Debian"]]
+[[!meta title="Chrome, wine and Debian"]]
 
 Running Chrome unpleasantly through WINE. [Download the cxchromium
 port](http://www.codeweavers.com/services/ports/chromium/) from codeweavers and

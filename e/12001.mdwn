@@ -1,4 +1,4 @@
-[[meta title="CentOS"]]
+[[!meta title="CentOS"]]
 CentOS is the essentially same as Red Hat Enterprise server, as they rebuild from Red Hat's published sources.
 http://www.centos.org/
 It also has yum. A bit like apt. Nowhere as good. ;)

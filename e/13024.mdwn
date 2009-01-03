@@ -1,4 +1,4 @@
-[[meta title="First character of a variable in shell"]]
+[[!meta title="First character of a variable in shell"]]
 
 Bash Parameter Expansion is the expansion of a parameter: $foo, $1. You can use
 it to perform more complex operations: ${file%.mp3}, ${0##*/}. Remember you

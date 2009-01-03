@@ -1,4 +1,4 @@
-[[meta title="List sorting (DSU?)"]]
+[[!meta title="List sorting (DSU?)"]]
 < hendry> A list of strings I guess is sorted alphabetically with a .sort(). Is there a similar shortcut to sort the list by size of the string?
   < dotz> hendry: help(list.sort)
   < dotz> hendry: note the cmpfunc argument.

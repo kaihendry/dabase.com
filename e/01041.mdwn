@@ -1,4 +1,4 @@
-[[meta title="How to unfuck your terminal/console"]]
+[[!meta title="How to unfuck your terminal/console"]]
 
 Try:
 

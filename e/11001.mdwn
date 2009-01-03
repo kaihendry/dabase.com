@@ -1,4 +1,4 @@
-[[meta title="Barplot"]]
+[[!meta title="Barplot"]]
 On weight data from :
 http://www.cs.helsinki.fi/u/hendry/work/stats1/Sheet.csv
 or:

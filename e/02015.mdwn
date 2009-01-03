@@ -1,4 +1,4 @@
-[[meta title="Debugging mutt"]]
+[[!meta title="Debugging mutt"]]
 Subscribe to mutt-dev:
 
 	http://www.mutt.org/mail-lists.html

@@ -1,4 +1,4 @@
-[[meta title="Reverting with Subversion"]]
+[[!meta title="Reverting with Subversion"]]
 
 Bit trickier than meets the eye:
 

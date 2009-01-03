@@ -1,4 +1,4 @@
-[[meta title="Finding .svn"]]
+[[!meta title="Finding .svn"]]
 Grep is practical:
 
 	find . -type f | fgrep -v /.svn/

@@ -1,4 +1,4 @@
-[[meta title="Am I running PyXML?"]]
+[[!meta title="Am I running PyXML?"]]
 If this works, you have it:
 
 	hendry@bilbo:~$ python2

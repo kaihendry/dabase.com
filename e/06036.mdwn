@@ -1,4 +1,4 @@
-[[meta title="String contains - Python2.3"]]
+[[!meta title="String contains - Python2.3"]]
 Note this DOES NOT WORK in older versions of Python such as 2.2
 
 	hendry@bilbo:~/datastructuresproject$ python2.3

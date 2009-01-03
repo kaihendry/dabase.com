@@ -1,3 +1,3 @@
-[[meta title="Internet over powerlines"]]
+[[!meta title="Internet over powerlines"]]
 Causes too much interference
 http://slashdot.org/articles/04/06/30/069228.shtml?tid=126&tid=137&tid=215&tid=95

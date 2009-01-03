@@ -1,4 +1,4 @@
-[[meta title="SVK notes"]]
+[[!meta title="SVK notes"]]
 Here's a good overview:
 http://perlcabal.org/~autrijus/svk-overview.png
 

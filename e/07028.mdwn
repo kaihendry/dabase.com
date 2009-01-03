@@ -1,4 +1,4 @@
-[[meta title="Merging differences"]]
+[[!meta title="Merging differences"]]
 
 
 	:help merge

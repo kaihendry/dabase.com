@@ -1,4 +1,4 @@
-[[meta title="sysctl modify kernel parameters"]]
+[[!meta title="sysctl modify kernel parameters"]]
 
 Test the options **before** dropping them into `/etc/sysctl.conf`
 

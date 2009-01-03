@@ -1,4 +1,4 @@
-[[meta title="Finding out which repository the package comes from"]]
+[[!meta title="Finding out which repository the package comes from"]]
 
 	x61:~% apt-cache policy scratchbox2
 	scratchbox2:

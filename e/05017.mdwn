@@ -1,4 +1,4 @@
-[[meta title="Python as a teaching language"]]
+[[!meta title="Python as a teaching language"]]
 http://mail.python.org/pipermail/edu-sig/2001-March/001045.html
 Compare:
 Java: http://www.ibiblio.org/obp/thinkCS/java/english/

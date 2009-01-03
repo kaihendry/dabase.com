@@ -1,4 +1,4 @@
-[[meta title="vim7's tabs"]]
+[[!meta title="vim7's tabs"]]
 
 Open in tabs:
 

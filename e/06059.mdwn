@@ -1,4 +1,4 @@
-[[meta title="Recursive file tree add thing"]]
+[[!meta title="Recursive file tree add thing"]]
 
 Looks something like:
 

@@ -1,4 +1,4 @@
-[[meta title="Closing bugs"]]
+[[!meta title="Closing bugs"]]
 Some tips I've collected...
 
     export EMAIL="your@email.org"

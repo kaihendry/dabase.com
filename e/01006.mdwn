@@ -1,4 +1,4 @@
-[[meta title="Enscript"]]
+[[!meta title="Enscript"]]
 
 Pretty print your Java excercises for your tutorial class:
 

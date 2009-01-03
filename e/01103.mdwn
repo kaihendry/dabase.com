@@ -1,4 +1,4 @@
-[[meta title="Comparing files in directories"]]
+[[!meta title="Comparing files in directories"]]
 
 
 	19:10 < hendry> any suggestions of how I should compare two directories to

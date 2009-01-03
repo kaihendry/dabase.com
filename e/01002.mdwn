@@ -1,4 +1,4 @@
-[[meta title="Installing debian without CDs or boot floppies"]]
+[[!meta title="Installing debian without CDs or boot floppies"]]
 
 A pleasant way of installing debian is by putting a friend's hard drive in your machine and using debootstrap described in:
 

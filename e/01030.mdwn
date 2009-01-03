@@ -1,4 +1,4 @@
-[[meta title="Grub Vga Framebuffer"]]
+[[!meta title="Grub Vga Framebuffer"]]
 
 Vga Framebuffer settings. From:
 /usr/share/doc/kernel-doc-2.4.22/Documentation/svga.txt.gz

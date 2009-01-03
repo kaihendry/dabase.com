@@ -1,4 +1,4 @@
-[[meta title="Comparing modes of working communication"]]
+[[!meta title="Comparing modes of working communication"]]
 
 # Mailing list
 

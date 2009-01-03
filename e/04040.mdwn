@@ -1,4 +1,4 @@
-[[meta title="Unicode in PHP"]]
+[[!meta title="Unicode in PHP"]]
 
 Pretty shoddy, but this might work:
 

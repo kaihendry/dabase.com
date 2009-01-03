@@ -1,4 +1,4 @@
-[[meta title="Try use cPickle, it is faster"]]
+[[!meta title="Try use cPickle, it is faster"]]
 Upto a 1000 times faster according to docs:
 http://www.python.org/doc/current/lib/module-cPickle.html
 

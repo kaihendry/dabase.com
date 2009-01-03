@@ -1,4 +1,4 @@
-[[meta title="Using IRSSI"]]
+[[!meta title="Using IRSSI"]]
 I always forget this one:
 
     16:26 < hendry> FAQ: How do I stop reconnects?

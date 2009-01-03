@@ -1,4 +1,4 @@
-[[meta title="Byte code!"]]
+[[!meta title="Byte code!"]]
 Launch:
 
 	vim -b

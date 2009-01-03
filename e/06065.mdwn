@@ -1,4 +1,4 @@
-[[meta title="Copy a list !"]]
+[[!meta title="Copy a list !"]]
 I make this mistake all to often:
 
 	15:37 < hendry> I feel stupid asking this. How do I remove items from a list while traversing it? http://nevow.dabase.com/2

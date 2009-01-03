@@ -1,4 +1,4 @@
-[[meta title="Bits and Bytes"]]
+[[!meta title="Bits and Bytes"]]
 BIT = Binary digIT
 Byte = 8 bits
 

@@ -1,4 +1,4 @@
-[[meta title="Firewall"]]
+[[!meta title="Firewall"]]
 With iptables. There is a couple of ways to do iptables. Inserting or appending is the two categories.
 If you made mistakes you can be locked out the system.
 THOUGH:

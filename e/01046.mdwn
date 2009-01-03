@@ -1,4 +1,4 @@
-[[meta title="Image magic with imagemagick"]]
+[[!meta title="Image magic with imagemagick"]]
 
 Imagemagick is a set of image manipulation tools, which work from the shell.
 

@@ -14,7 +14,7 @@ for i in `seq -w 500`
 do
 if [ ! -e $1$i.mdwn ] ;then
 	echo $1$i.mdwn did not exist
-	echo '[[meta title="TITLE"]]' > $1$i.mdwn
+	echo '[[!meta title="TITLE"]]' > $1$i.mdwn
 	vim $1$i.mdwn
 	exit
 fi

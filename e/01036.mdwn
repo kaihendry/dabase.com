@@ -1,4 +1,4 @@
-[[meta title="CVS checking/viewing differences between versions after commit"]]
+[[!meta title="CVS checking/viewing differences between versions after commit"]]
 Lalala, here I go commiting a file:
 
 	hendry@bogrund-14:~/digimon/doc/RequirementsAnalysis$ cvs commit RequirementAnalysis.tex

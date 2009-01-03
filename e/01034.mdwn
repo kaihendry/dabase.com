@@ -1,4 +1,4 @@
-[[meta title="how can a setup the default keymap for console??"]]
+[[!meta title="how can a setup the default keymap for console??"]]
 
 This link has most of the info:
 

@@ -1,4 +1,4 @@
-[[meta title="Standards"]]
+[[!meta title="Standards"]]
 http://www.artima.com/weblogs/viewpost.jsp?thread=4892
 closed, proprietary, defacto standards example:
 http://techupdate.zdnet.com/techupdate/stories/main/0,14179,2861038,00.html

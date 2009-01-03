@@ -1,2 +1,2 @@
-[[meta title="Saving messages in IMAP"]]
+[[!meta title="Saving messages in IMAP"]]
 As far as I can tell, you MANUALLY have to his s to move your messages from your spool (typically your INBOX) to your mbox.

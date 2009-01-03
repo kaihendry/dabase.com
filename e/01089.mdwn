@@ -1,4 +1,4 @@
-[[meta title="Name the interface"]]
+[[!meta title="Name the interface"]]
 You might want to ensure nameif is on your system beforehand:
 
 	hendry@scrooge-15:/etc/network$ cat interfaces

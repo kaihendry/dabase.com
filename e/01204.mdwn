@@ -1,4 +1,4 @@
-[[meta title="Running a second X server"]]
+[[!meta title="Running a second X server"]]
 
 Running another X server is good for testing
 [dwm](http://git.debian.org/?p=users/kai-guest/dwm/.git).

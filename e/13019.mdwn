@@ -1,4 +1,4 @@
-[[meta title="Source line count"]]
+[[!meta title="Source line count"]]
 
 	wc -l **/*.[ch] | tail -1
 

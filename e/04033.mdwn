@@ -1,4 +1,4 @@
-[[meta title="Webstats"]]
+[[!meta title="Webstats"]]
 Analog and Rmagic configuration:
 http://svn.natalian.org/debian/configuration/analog/
 http://stats.dabase.com/

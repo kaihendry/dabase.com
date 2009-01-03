@@ -1,4 +1,4 @@
-[[meta title="Floppy disks should have a WARNING on them"]]
+[[!meta title="Floppy disks should have a WARNING on them"]]
 Floppy disk media, those 1.44 meg diskettes should carry a warning for all those noobs.
 THEY DO NOT HOLD DATA RELIABLY.
 Do not store essays, or anything on them for that matter if you can possibly help it. They corrupt very easily, not just be elements such as weather, but by MR TIME himself !

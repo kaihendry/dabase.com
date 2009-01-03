@@ -1,4 +1,4 @@
-[[meta title="c shortcuts"]]
+[[!meta title="c shortcuts"]]
 Section 4.7 of mutt manual:
   4.7.  Mailbox Shortcuts
     There are a number of built in shortcuts which refer to specific

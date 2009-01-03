@@ -1,4 +1,4 @@
-[[meta title="Gmail"]]
+[[!meta title="Gmail"]]
 I won't use Gmail. I use mutt. :)
 But for my sister it may be quite a useful interface.
 Her /home/jutta/.forward looks like:

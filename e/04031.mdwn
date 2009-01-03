@@ -1,4 +1,4 @@
-[[meta title="Grepping a URL"]]
+[[!meta title="Grepping a URL"]]
 This is sweet bash:
 
 	bilbo$ wget -q -O - http://gd.tuwien.ac.at/linux/knoppix/packages.txt | grep sub

@@ -1,4 +1,4 @@
-[[meta title="maildrop: Unable to open mailbox."]]
+[[!meta title="maildrop: Unable to open mailbox."]]
 Use:
 
 	maildirmake

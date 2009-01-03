@@ -1,4 +1,4 @@
-[[meta title="Reading attachments (God forbid)"]]
+[[!meta title="Reading attachments (God forbid)"]]
 For reading .pdf attachments in the background this link is useful:
 http://www.spocom.com/users/gjohnson/mutt/#pdf
 

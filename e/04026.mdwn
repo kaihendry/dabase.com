@@ -1,2 +1,2 @@
-[[meta title="Web applications with Mozilla"]]
+[[!meta title="Web applications with Mozilla"]]
 http://docs.mandragor.org/files/Misc/Mozilla_applications_en/

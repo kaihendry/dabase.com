@@ -1,4 +1,4 @@
-[[meta title="Printing your enviroment settings"]]
+[[!meta title="Printing your enviroment settings"]]
 for k,v in os.environ.items():
        print "%s=%s" % (k,v)
 Preferred method.

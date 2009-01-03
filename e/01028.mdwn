@@ -1,4 +1,4 @@
-[[meta title="Bash tips"]]
+[[!meta title="Bash tips"]]
 
 This is to convert all my voice wavs to the compressed speex format:
 

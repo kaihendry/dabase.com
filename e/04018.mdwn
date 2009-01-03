@@ -1,2 +1,2 @@
-[[meta title="HTML is the API"]]
+[[!meta title="HTML is the API"]]
 http://www.joelonsoftware.com/articles/APIWar.html

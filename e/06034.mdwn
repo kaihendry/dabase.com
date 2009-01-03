@@ -1,4 +1,4 @@
-[[meta title="Finding the key to a value"]]
+[[!meta title="Finding the key to a value"]]
 Use a list comprehension:
 
 	hit = [k for k,v in dict.items() if v==lookingfor]

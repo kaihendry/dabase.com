@@ -1,4 +1,4 @@
-[[meta title="Working on some packages from the Web"]]
+[[!meta title="Working on some packages from the Web"]]
 It will be a tar, a diff and dsc to work with.
 To explode them:
 dpkg-source -x foo.dsc

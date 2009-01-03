@@ -1,4 +1,4 @@
-[[meta title="Silly security with TCP wrappers hosts.allow"]]
+[[!meta title="Silly security with TCP wrappers hosts.allow"]]
 I'm not a racist. ;)
 
 	[root@server ~]# cat /etc/hosts.allow

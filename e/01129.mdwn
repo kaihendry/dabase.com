@@ -1,4 +1,4 @@
-[[meta title="how do I filter output for just stderr messages?"]]
+[[!meta title="how do I filter output for just stderr messages?"]]
 frodo$ sh setup.sh ~/we > /dev/null
 
 	PIK003: /home/hendry/we/dcp_9593.jpg has an error in the EXIF.

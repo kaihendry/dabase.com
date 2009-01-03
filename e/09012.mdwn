@@ -1,4 +1,4 @@
-[[meta title="Tracking another branch of a project with GIT"]]
+[[!meta title="Tracking another branch of a project with GIT"]]
 Ok, go into your live-initramfs clone and:
     git remote add otavio git://git.debian.org/git/users/otavio/live-initramfs.git
     git remote update

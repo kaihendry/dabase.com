@@ -1,4 +1,4 @@
-[[meta title="Git tips from work"]]
+[[!meta title="Git tips from work"]]
 
 [[toc ]]
 

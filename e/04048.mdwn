@@ -1,4 +1,4 @@
-[[meta title="ikiwiki mirror"]]
+[[!meta title="ikiwiki mirror"]]
 
 [[!ping from="http://dabase.com" to="http://mirror.dabase.com/ikiwiki.cgi?do=ping"]]
 

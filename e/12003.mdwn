@@ -1,4 +1,4 @@
-[[meta title="Listing files in an RPM"]]
+[[!meta title="Listing files in an RPM"]]
 Have to do it in query mode.
 
 	rpm -ql nameof.rpm

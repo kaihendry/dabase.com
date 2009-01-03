@@ -1,4 +1,4 @@
-[[meta title="Backspace"]]
+[[!meta title="Backspace"]]
 CTRL+V CTRL+H
 A bit like VIM.
 Quite good in combo with valgrind, strip and doing some stack bashing.

@@ -1,4 +1,4 @@
-[[meta title="Mozilla crashing on news.bbc.co.uk ??"]]
+[[!meta title="Mozilla crashing on news.bbc.co.uk ??"]]
 
     Edit -> Preferences -> Advanced -> Disable Java
 

@@ -1,4 +1,4 @@
-[[meta title="Escaping and quoting best practices for PHP"]]
+[[!meta title="Escaping and quoting best practices for PHP"]]
 
 [PHP best practices](http://talks.php.net/show/php-best-practices/26)
 

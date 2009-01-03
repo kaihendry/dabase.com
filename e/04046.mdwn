@@ -1,4 +1,4 @@
-[[meta title="Selecting the first H1"]]
+[[!meta title="Selecting the first H1"]]
 
 DOM manipulation in Javascript sucks:
 

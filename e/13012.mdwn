@@ -1,4 +1,4 @@
-[[meta title="find and copy"]]
+[[!meta title="find and copy"]]
 
 xargs isn't the solution.
 

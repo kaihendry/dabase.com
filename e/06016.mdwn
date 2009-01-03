@@ -1,4 +1,4 @@
-[[meta title="Unitesting (simple example)"]]
+[[!meta title="Unitesting (simple example)"]]
 A small unit test example I constructed from Mark Pilgrim's Roman test, however with that classic square. Can you think of something simpler?
 Unit testing:
 http://www.cs.helsinki.fi/u/hendry/work/python/squaretest.py

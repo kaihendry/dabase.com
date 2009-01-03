@@ -1,4 +1,4 @@
-[[meta title="Merging maildirs"]]
+[[!meta title="Merging maildirs"]]
 I tend to use several machines. But I want all my mail somewhere so I can search it with mairix for example.
 On my laptop I have sent-mail-07-2003/ maildir. I also have the same maildir on my home machine bilbo, however with different mails.
 I want to merge those two folders at some point, without overwriting or losing mails.

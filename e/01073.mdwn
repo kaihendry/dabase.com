@@ -1,4 +1,4 @@
-[[meta title="Subversion gotchas"]]
+[[!meta title="Subversion gotchas"]]
 If you accidently add some stuff, it can be quite painful to remove.
 http://subversion.tigris.org/project_faq.html#removal
 How does one remove unused log files?

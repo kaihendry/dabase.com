@@ -1,4 +1,4 @@
-[[meta title="Viewing a firewall"]]
+[[!meta title="Viewing a firewall"]]
 Check it out!
 
 	sudo iptables -vnxL

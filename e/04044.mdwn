@@ -1,4 +1,4 @@
-[[meta title="Apache2 Vhost logging"]]
+[[!meta title="Apache2 Vhost logging"]]
 
 After long last, the Debian package introduces:
 

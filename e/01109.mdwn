@@ -1,4 +1,4 @@
-[[meta title="Unpacking source"]]
+[[!meta title="Unpacking source"]]
 3 ways. All quite ugly:
 
 	16:45 < hendry> bilbo$ ls

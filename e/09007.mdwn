@@ -1,4 +1,4 @@
-[[meta title="Building Subversion in your $HOME"]]
+[[!meta title="Building Subversion in your $HOME"]]
 Download the source code from:
 http://subversion.tigris.org/project_packages.html#source-release
 and expand the tar ball.

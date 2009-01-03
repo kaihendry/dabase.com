@@ -1,4 +1,4 @@
-[[meta title="Histogram"]]
+[[!meta title="Histogram"]]
 Use exact class limits.
 3 Class example:
 

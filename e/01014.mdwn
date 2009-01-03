@@ -1,4 +1,4 @@
-[[meta title="Reading USENET news"]]
+[[!meta title="Reading USENET news"]]
 
 Just use the Web application [Google groups](http://groups.google.com/)
 

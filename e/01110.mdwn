@@ -1,4 +1,4 @@
-[[meta title="Use XDM"]]
+[[!meta title="Use XDM"]]
 Just comment stuff in and out as needed:
 
 	scrooge-15$ cat .xsession

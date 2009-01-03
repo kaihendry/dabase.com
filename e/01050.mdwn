@@ -1,4 +1,4 @@
-[[meta title="NAT with dhcp"]]
+[[!meta title="NAT with dhcp"]]
 
 I assume Internet is connected on eth0 and your internet network on eth1
 

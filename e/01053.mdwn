@@ -1,4 +1,4 @@
-[[meta title="Unicode"]]
+[[!meta title="Unicode"]]
 A re-occuring problem I have had with computers is encodings.  As an English speaker I have not need anything except ASCII, but all the same it is annoying when I can't read some Korean spam.
 
 So on my system I have changed some things:

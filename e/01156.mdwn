@@ -1,4 +1,4 @@
-[[meta title="Terminus console font"]]
+[[!meta title="Terminus console font"]]
 
 Use the [terminus font](http://packages.qa.debian.org/x/xfonts-terminus.html).
 

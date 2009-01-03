@@ -1,4 +1,4 @@
-[[meta title="Adding a column of floats"]]
+[[!meta title="Adding a column of floats"]]
 http://pastebin.ca/419397
 
 	awk '{ i+=$1 } END { print i }'

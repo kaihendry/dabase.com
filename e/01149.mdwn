@@ -1,4 +1,4 @@
-[[meta title="Getting the linux boot arguments"]]
+[[!meta title="Getting the linux boot arguments"]]
 See how the computer booted
 
 	cat monty$ cat /proc/cmdline

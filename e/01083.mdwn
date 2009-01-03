@@ -1,4 +1,4 @@
-[[meta title="Steps to setting a sub domain for a web service"]]
+[[!meta title="Steps to setting a sub domain for a web service"]]
 First you need to setup you subdomain with your domain name server:
 
 	hendry@bilbo:/etc/apache$ cat /etc/maradns/dabase

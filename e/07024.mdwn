@@ -1,4 +1,4 @@
-[[meta title="vim7's auto-completion features"]]
+[[!meta title="vim7's auto-completion features"]]
 
 Omnicompletion whilst programming:
 

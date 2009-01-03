@@ -1,4 +1,4 @@
-[[meta title="Why not HTML?"]]
+[[!meta title="Why not HTML?"]]
 http://lists.w3.org/Archives/Public/public-webapps-cdf-discuss/2004Jun/att-0004/2004jun02.html#topic17.3
 HTML isn't well suited for the wide variety of user interfaces that may be needed such as charts, maps, and groovy bits.
 TV Raman: What is appalling about this workshop is that we had 100 people in the room six years ago that HTML was dead and we started XHTML. If we ask again this again today, what will we be asking six years from now?

@@ -1,4 +1,4 @@
-[[meta title="How do I update grub menu.lst on kernel-image install ?"]]
+[[!meta title="How do I update grub menu.lst on kernel-image install ?"]]
 Make this run after kernel-image install?
 
 	update-grub

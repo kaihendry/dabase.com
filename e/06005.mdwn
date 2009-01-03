@@ -1,4 +1,4 @@
-[[meta title="Normalizing whitespace"]]
+[[!meta title="Normalizing whitespace"]]
 From somewhere in Mark Pilgrim's highly recommended http://diveintopython.org FREE book.
 
 	" ".join(s.split())

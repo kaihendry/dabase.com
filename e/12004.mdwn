@@ -1,4 +1,4 @@
-[[meta title="SELinux"]]
+[[!meta title="SELinux"]]
 How to turn SELinux off:
 
 	setenforce 0

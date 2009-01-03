@@ -1,4 +1,4 @@
-[[meta title="Fixing tabs? Use reindent.py"]]
+[[!meta title="Fixing tabs? Use reindent.py"]]
 There is a couple of tab fixing program out there. I have chosen:
 
 	/usr/share/doc/python2.3/examples/Tools/scripts/reindent.py
