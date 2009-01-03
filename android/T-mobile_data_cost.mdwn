@@ -1,9 +1,0 @@
-[[!meta title="Data roaming cost whilst using my UK G1 in Berlin"]]
-
-	wget -q http://static.natalian.org/2009-01-02/2008-tmobile-data.txt -O /dev/stdout | awk -F, '{sum += $5 } END { print sprintf("%.2f",sum) }'
-	10.89
-
-11GBP for 5 days? I didn't use data roaming nearly as much as I would in the UK. Android has no accountancy functionality. :(
-
-A mobile phone that would detail accurate data costs. Those are the sorts
-applications that provide tremendous value. Not stupid bar code scanner apps.
