@@ -1,0 +1,24 @@
+Mobile site - [m.twitter.com](http://m.twitter.com/login)
+Desktop site - [twitter.com](http://twitter.com)
+
+# Double authentication
+
+Navigating to m.twitter.com from twitter.com will require you to authenticate
+**again**. This is probably because they do not share the same cookie, do to different domains.
+
+# Cookie conundrum
+
+If you start on m.twitter.com then goto the desktop site. A cookie is set so
+that even if you are on m.twitter.com, you see the Desktop site. URL integrity
+is broken.
+
+# No images on the mobile site
+
+The mobile site is 4kb and has no images, except for mobile.gif.  ~200KB on the
+"Standard" Desktop site with all images. Once the images are cached, the
+typical payload is 15KB. The CSS is quite complex, though could be a bit more
+exciting on the mobile site.
+
+# The update form does not take full width
+
+So this makes the mobile version of the site unpleasant to use from the Desktop.
