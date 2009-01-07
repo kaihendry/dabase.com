@@ -99,3 +99,6 @@ know the correct identity of the domain.
 # Certificate fragmentaton
 
 Different devices. Different trusted roots. Complete nightmare.
+
+What's worse is that many devices like the Iphone and Android [[G1]] do not
+allow you to manage certificates. This could well be a super disaster.
