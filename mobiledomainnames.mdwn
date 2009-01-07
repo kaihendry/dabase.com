@@ -1,0 +1,38 @@
+# Title is redudant
+
+* HTML title's get buried in iframes and like it or not this is how a lot of mashups will work (sandboxing)
+* Titles often maintain identity. This is better done by URL domain names.
+* HTML titles should instead be a heading **h1**. This is very often the case already.
+
+# http:// is redundant
+
+URL links should not promote typing of http://.
+
+It's **seven** unneccessary characters which really harms the take up of the mobile Web.
+
+UA should check for HTTPS site first, before redirecting to http://
+
+# www. prefix is redundant
+
+Purists can use CNAMES.
+
+Typing these **four** extra characters harms the mobile Web!
+
+# Maintain URL integrity (including HTTPS!!!)
+
+Entering https://paypal.co.uk into a mobile Android browser should take you to
+a secure payment site.
+
+What happens currently is that Paypal UA sniffs the mobile UA and redirects you
+to an unsecured http://paypal.co.uk/m. Attackers can exploit this by
+overriding UA strings so that Web sites use insecure connections.
+
+# The HTTPS takes up room
+
+Use a gold bar like Firefox does already.
+
+# Fix dot com
+
+Far too many useful dotcom domains are squatted upon. This is rediculous and
+greedy. We need a bigger namespace, however without promoting fragmentation,
+like the device specific dotMobi TLD.
