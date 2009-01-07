@@ -3,7 +3,7 @@
 Entering https://paypal.co.uk into a mobile Android browser should take you to
 a secure payment site.
 
-What happens currently is that Paypal UA sniffs the mobile UA and redirects you
+What happens currently is that Paypal UA (Browser) sniffs the mobile UA and redirects you
 to an unsecured http://paypal.co.uk/m. Attackers can exploit this by
 overriding UA strings so that Web sites use insecure connections.
 
@@ -22,15 +22,20 @@ Hence a dangerous mess if someone goes to https://paypal.co.uk from any device.
 * Titles often maintain identity. This is better done by URL domain names.
 * HTML titles should instead be a heading **h1**. This is very often the case already.
 
+UAs should show the full URL at the top of the page. So people know where they
+are and can use this information to switch between devices. The URL can provide
+powerful input mechanisms. [Example](http://traintimes.org.uk/wok/wat)
+
 # http:// is redundant
 
 URL links should not promote typing of http://.
 
 It's **seven** unnecessary characters which really harms the take up of the mobile Web.
 
-UAs will take users to an unsecured http:// domain.
+UAs currently will take users to an unsecured http:// domain.
 
-UA should check for HTTPS site first, before redirecting to http://
+UA should check for HTTPS site first, before redirecting to http://, though no
+UAs unfortunately do this currently.
 
 # www. prefix is redundant
 
@@ -48,7 +53,8 @@ does already.
 
 Far too many useful dotcom domains are squatted upon. This is ridiculous and
 greedy. We need a bigger namespace, however without promoting fragmentation,
-like the device specific dotMobi TLD.
+like the device specific [dotMobi](http://en.wikipedia.org/wiki/Dotmobi)
+[TLD](http://en.wikipedia.org/wiki/Top_level_domain).
 
 If the domain is not in use, it should be thrown back into the pool.
 
