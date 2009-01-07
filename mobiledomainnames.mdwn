@@ -16,7 +16,7 @@ Some sites like paypal.co.uk only have a valid certificate for **www.paypal.co.u
 
 Hence a dangerous mess if someone goes to https://paypal.co.uk from any device.
 
-# Title is redudant
+# Title is redundant
 
 * HTML title's get buried in iframes and like it or not this is how a lot of mashups will work (sandboxing)
 * Titles often maintain identity. This is better done by URL domain names.
@@ -96,7 +96,7 @@ Though I don't think they should be backdated like the above examples.
 google.2010. People should keep in mind when a company was formed or founded to
 know the correct identity of the domain.
 
-# Certificate fragmentaton
+# Certificate fragmentation
 
 Different devices. Different trusted roots. Complete nightmare.
 
