@@ -7,6 +7,9 @@ What happens currently is that Paypal UA sniffs the mobile UA and redirects you
 to an unsecured http://paypal.co.uk/m. Attackers can exploit this by
 overriding UA strings so that Web sites use insecure connections.
 
+When you do log in to Paypal, it does redirect you again to HTTPS, though this
+is confusing. Maintain the **SSL protocol**.
+
 # Maintain wildcard HTTPS certificates
 
 Some sites like paypal.co.uk only have a valid certificate for **www.paypal.co.uk**.
@@ -37,7 +40,7 @@ Typing these **four** extra characters harms the mobile Web!
 
 # The HTTPS padlock takes up room
 
-I suggest using a gold bar like Firefox does already.
+I suggest using a gold or [green](http://www.flickr.com/photos/jamiekitson/3176790336/) bar like Firefox does already.
 
 # Fix dot com
 
@@ -57,7 +60,7 @@ bad.
 One can argue the mess with domain names is largely solved by **URL search**.
 
 Search is more usable than domain URLs, but people must know the risks and
-clearly be shown the URLs by UAs.
+clearly be shown the resulting URLs by UAs.
 
 Google is essentially an identity broker.
 
