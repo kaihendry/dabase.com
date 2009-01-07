@@ -51,3 +51,13 @@ Domain names need to become much shorter, to make them usable on the mobileWeb.
 
 Proper Unicode with IRNs will ease the situation, but it's still really really
 bad.
+
+# Search is dangerous form of identity
+
+Google is essentially an identity broker.
+
+Want to become the domain for when someone enters "Paypal" into the URL bar?
+Pay for Google for it and it could likely be the case.
+
+Search is more usable than domain URLs, but people must know the risks and
+clearly be shown the URLs by UAs.
