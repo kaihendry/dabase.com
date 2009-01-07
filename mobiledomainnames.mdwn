@@ -62,9 +62,10 @@ If the domain is not in use, it should be thrown back into the pool.
 
 Domain names need to become much shorter, to make them usable on the mobileWeb.
 
-Proper unicode with
-[IRIs](http://en.wikipedia.org/wiki/Internationalized_Resource_Identifier) will
-ease the situation, but it's still really really bad.
+Unicoded URLs with
+[IRIs](http://en.wikipedia.org/wiki/Internationalized_Resource_Identifier)
+might ease the situation, but it's still really really bad. Worryingly Unicode
+glyphs can confuse and allow for even more phishing attacks.
 
 # Search is a dangerous form of identity
 
@@ -91,3 +92,7 @@ Though I don't think they should be backdated like the above examples.
 .com should be mapped to .2009 and then next year, 2010, one could register
 google.2010. People should keep in mind when a company was formed or founded to
 know the correct identity of the domain.
+
+# Certificate fragmentaton
+
+Different devices. Different trusted roots. Complete nightmare.
