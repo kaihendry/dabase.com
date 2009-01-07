@@ -68,3 +68,17 @@ Google is essentially an identity broker.
 
 Want to become the domain for when someone enters "Paypal" into the URL bar?
 Pay Google for it and it could likely be the case.
+
+# Silly TLD suggestion of my own
+
+Have a TLD for every year. Effectively this is the site's founding year.
+
+* dabase.2000
+* google.1994
+* yahoo.1990
+
+Though I don't think they should be backdated like the above examples.
+
+.com should be mapped to .2009 and then next year, 2010, one could register
+google.2010. People should keep in mind when a company was formed or founded to
+know the correct identity of the domain.
