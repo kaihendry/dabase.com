@@ -51,6 +51,9 @@ I suggest using [colours](http://getacue.dabase.com/) like a gold or
 [green](http://www.flickr.com/photos/jamiekitson/3176790336/) bar like Firefox
 does already.
 
+However the padlock is well supported and understood. Probably just leave this
+one as it is.
+
 # Fix dot com
 
 Far too many useful dotcom domains are squatted upon. This is ridiculous and
