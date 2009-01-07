@@ -52,7 +52,7 @@ Domain names need to become much shorter, to make them usable on the mobileWeb.
 Proper Unicode with IRNs will ease the situation, but it's still really really
 bad.
 
-# Search is dangerous form of identity
+# Search is a dangerous form of identity
 
 One can argue the mess with domain names is largely solved by **URL search**.
 
