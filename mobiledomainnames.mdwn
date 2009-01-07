@@ -62,6 +62,4 @@ clearly be shown the URLs by UAs.
 Google is essentially an identity broker.
 
 Want to become the domain for when someone enters "Paypal" into the URL bar?
-Pay for Google for it and it could likely be the case.
-
-
+Pay Google for it and it could likely be the case.
