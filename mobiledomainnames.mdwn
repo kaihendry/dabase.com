@@ -57,8 +57,9 @@ one as it is.
 # Fix dot com
 
 Far too many useful dotcom domains are squatted upon. This is ridiculous and
-greedy. We need a bigger namespace, however without promoting fragmentation,
-like the device specific [dotMobi](http://en.wikipedia.org/wiki/Dotmobi)
+greedy. We need a bigger namespace (with shorter URLs), however without
+promoting fragmentation, like the uncool device specific
+[dotMobi](http://en.wikipedia.org/wiki/Dotmobi)
 [TLD](http://en.wikipedia.org/wiki/Top_level_domain).
 
 If the domain is not in use, it should be thrown back into the pool.
