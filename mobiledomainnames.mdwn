@@ -43,6 +43,8 @@ Purists can use CNAMES.
 
 Typing these **four** extra characters harms the mobile Web!
 
+Typing **google.com** into the URL bar will redirect the user to **www.google.com**. NO!
+
 # The HTTPS padlock takes up room
 
 I suggest using [colours](http://getacue.dabase.com/) like a gold or
