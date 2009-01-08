@@ -1,15 +1,34 @@
-[[!meta title="Finding about your display"]]
+[[!meta title="Finding about your Xorg display"]]
 
-What resolution am I running?
-    xdpyinfo
-Do I have hardware acceleration?
-    glxinfo
-    xvinfo
-Check x errors in:
+# What resolution am I running?
+
+	xdpyinfo | grep dimensions
+	xwininfo -root
+
+# Do I have hardware video acceleration in X?
+
+	glxinfo
+	xvinfo
+
+# Check X errors in
+
     ~/.xsession-errors
-Checking terminal column and width environment:
+
+# Checking terminal column and width environment
+
     resize
-Check resolution of root window:
-    xwininfo -root
-Checking if DPMS is enabled et al:
+
+# Checking if DPMS is enabled et al
+
     xset -display :0.0 -q
+
+# How should I set my resolution?
+
+	randr -s 1680x1050
+
+# How do I configure Xorg?
+
+Place settings in `/etc/X11/Xsession.d`
+
+	x61:~% cat /etc/X11/Xsession.d/55xvideomode
+	xrandr -s 1024x768
