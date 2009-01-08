@@ -23,3 +23,6 @@ The performance seems a bit strange to me. The initial two bootup steps, initfs 
 
 If this had not worked my next plan was to install SysLinux on to the drive, shrink that created partition and install Debian and see how far I could get with that.
 
+# Panthera sez
+
+the trick is to install grub in a loop device non-interactively
