@@ -1,13 +1,13 @@
 [[!meta title="SMTP via SSH"]]
+
 SMTP is often blocked at ISPs to prevent spammers.
 Use mutt and a shell script with this [[tip|e/01013]].
 
 	frodo$ cat server.soltecsoftware.com.au-sendmail
-
 	#!/bin/sh
-
 	ssh server.soltecsoftware.com.au /usr/sbin/sendmail "$@"
 
-	frodo$ egrep sendmail .muttrc
+Now configure mutt to use your own MTA hack:
 
+	frodo$ egrep sendmail .muttrc
 	set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
