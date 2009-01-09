@@ -1,7 +1,6 @@
 [[!meta title="SMTP via SSH"]]
 SMTP is often blocked at ISPs to prevent spammers.
-Use mutt and a shell script with this tip:
-http://faq.dabase.com/faqw.py?req=show&file=faq01.013.htp
+Use mutt and a shell script with this [[tip|e/01013]].
 
 	frodo$ cat server.soltecsoftware.com.au-sendmail
 
