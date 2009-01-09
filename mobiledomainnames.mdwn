@@ -104,7 +104,13 @@ Though I don't think they should be necessarily backdated like the above example
 
 .com should be mapped to .2009 and then next year, 2010, one could register
 google.2010. People should keep in mind when a company was formed or founded to
-know the correct identity of the domain.
+know the correct identity of the domain. Through use, I don't think it will
+that difficult to remember that Google's domain is google.1998 as opposed to
+google.2020. Some fool could register google.2020 in Bangkok in the year 2020,
+though who cares?
+
+If the google.2020 business is better at searching than the company behind
+google.1998, which shouldn't we use google.2020? :P
 
 # Certificate fragmentation
 
