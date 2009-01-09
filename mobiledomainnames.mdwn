@@ -81,7 +81,7 @@ glyphs can confuse and allow for even more phishing attacks.
 # Search is a dangerous form of identity
 
 One can argue the mess with domain names is largely solved by **URL search**.
-Submit in "Paypal" in the search bar and Google will redirect you to
+Submit "Paypal" in the search bar and Google will redirect you to
 "Paypal.co.uk" (if you live in the UK).
 
 Search is **more usable** than domain URLs, but people must be aware of the
