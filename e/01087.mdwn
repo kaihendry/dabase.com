@@ -7,7 +7,7 @@ Use mutt and a shell script with this [[tip|e/01013]].
 	#!/bin/sh
 	ssh server.soltecsoftware.com.au /usr/sbin/sendmail "$@"
 
-Now configure mutt to use your own MTA hack:
+Now configure [mutt MUA](http://www.mutt.org/) to use your own MTA hack:
 
 	frodo$ egrep sendmail .muttrc
 	set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
