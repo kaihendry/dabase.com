@@ -1,7 +1,6 @@
 This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
-test3
-
+test4
 ----
 
 Here's a paragraph.
