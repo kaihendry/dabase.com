@@ -1,0 +1,1 @@
+[[!ping from="http://dabase.com" to="http://mirror.dabase.com/ikiwiki.cgi?do=ping"]]
