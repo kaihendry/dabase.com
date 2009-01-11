@@ -23,3 +23,6 @@ git pulls from dabase.com and updates the content on
 
 
 [[!ping from="http://dabase.com" to="http://mirror.dabase.com/ikiwiki.cgi?do=ping"]]
+
+
+# Testing German mirror
