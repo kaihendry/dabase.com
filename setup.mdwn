@@ -20,3 +20,6 @@ The <a href="http://mirror.dabase.com/ikiwiki.cgi?do=ping">final ping URL on
 hetty</a> [configured with pingee](http://ikiwiki.info/plugins/pingee/) then
 git pulls from dabase.com and updates the content on
 [mirror.dabase.com](http://mirror.dabase.com).
+
+
+[[!ping from="http://dabase.com" to="http://mirror.dabase.com/ikiwiki.cgi?do=ping"]]
