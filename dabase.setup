@@ -153,7 +153,7 @@ use IkiWiki::Setup::Standard {
 	# allow atom feeds to be used?
 	#allowatom => 0,
 	# urls to ping (using XML-RPC) on feed update
-	pingurl => [qw{http://rpc.technorati.com/rpc/ping http://blogsearch.google.com/ping/RPC2 http://mirror.dabase.com/ikiwiki.cgi?do=ping}],
+	pingurl => [qw{http://rpc.technorati.com/rpc/ping http://blogsearch.google.com/ping/RPC2}],
 
 	# listdirectives plugin
 	# directory in srcdir that contains directive descriptions
