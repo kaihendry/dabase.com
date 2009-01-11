@@ -6,18 +6,17 @@
 
 # ikiwiki configurations
 
-* [[dabase.com|dabase.setup]]
+* [[dabase.com|dabase.setup]] - [git](http://git.webconverger.org/?p=faq.git)
 * [[dabase.hetty.setup]]
 
-# How it should work
+# How I imagine it should work
 
 You can only edit a page on [dabase.com](http://dabase.com). Once doing so the
 [pinger plugin](http://ikiwiki.info/plugins/pinger/) is configured to ping:
 
 	pingurl => [qw{http://rpc.technorati.com/rpc/ping http://blogsearch.google.com/ping/RPC2 http://mirror.dabase.com/ikiwiki.cgi?do=ping}],
 
-The final ping URL on hetty [configured with
-pingee](http://ikiwiki.info/plugins/pingee/) <a
-href="http://mirror.dabase.com/ikiwiki.cgi?do=ping">http://mirror.dabase.com/ikiwiki.cgi?do=ping</a>
-then git pulls from dabase.com and updates the content on
+The <a href="http://mirror.dabase.com/ikiwiki.cgi?do=ping">final ping URL on
+hetty</a> [configured with pingee](http://ikiwiki.info/plugins/pingee/) then
+git pulls from dabase.com and updates the content on
 [mirror.dabase.com](http://mirror.dabase.com).
