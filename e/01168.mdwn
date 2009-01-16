@@ -1,0 +1,6 @@
+[[!meta title="Suspend and LOCK!"]]
+
+	sudo s2ram -f -a 3 && slock
+
+When you leave your machine, do not just suspend it. Lock it too. This is
+especially important for people who use [truecrypt](http://www.truecrypt.org/).

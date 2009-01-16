@@ -1,47 +1,47 @@
 [[!meta title="Hendry's tips and tricks"]]
 
-[[!inline pages="e/* and !e/new.sh" description="Hendry's hints" feedonly="yes" timeformat="%F"]]
+[[!inline pages="e/* and !e/new.sh and !*/Discussion" description="Hendry's hints" feedonly="yes" timeformat="%F"]]
 
 ## Please contribute a tip or a snappy howto
-[[!inline actions=yes pages="u/*" archive="yes" rss="no" atom="no" timeformat="%F" rootpage="u"]]
+[[!inline actions=yes pages="u/* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F" rootpage="u"]]
 
 ## Debian
-[[!inline pages="e/01*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/01* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## mutt - my Email client
-[[!inline pages="e/02*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/02* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## GPG - Gnu Privacy Guard, to sign and encrypt
-[[!inline pages="e/03*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/03* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## The Web
-[[!inline pages="e/04*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/04* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## Arguments
-[[!inline pages="e/05*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/05* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## Python
-[[!inline pages="e/06*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/06* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## VIM - my editor of choice
-[[!inline pages="e/07*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/07* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## Hardware
-[[!inline pages="e/08*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/08* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## Source Control SCM
-[[!inline pages="e/09*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/09* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## Latex
-[[!inline pages="e/10*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/10* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## [R](http://www.r-project.org/)
-[[!inline pages="e/11*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/11* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## Red Hat
-[[!inline pages="e/12*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/12* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ## Bash and shell
-[[!inline pages="e/13*" archive="yes" rss="no" atom="no" timeformat="%F"]]
+[[!inline pages="e/13* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
 ### All tips are in the public domain

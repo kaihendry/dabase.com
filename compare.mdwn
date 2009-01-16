@@ -10,6 +10,6 @@ kB/sec (my favourite unit) of various technologies. I hope to plot the
 * [slug](http://flickr.com/photos/hendry/703708705/) with nfs
 * [T-mobile](http://www.flickr.com/photos/hendry/3119426128/)
 
-# Country side
+Notes about the [Internet in the Country side](http://webconverger.org/blog/entry/Cornish_Holiday_Internet/).
 
-[494/242](http://www.speedtest.net/result/378231414.png)
+Must look into [iperf](http://packages.qa.debian.org/i/iperf.html)
