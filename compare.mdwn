@@ -13,3 +13,12 @@ kB/sec (my favourite unit) of various technologies. I hope to plot the
 Notes about the [Internet in the Country side](http://webconverger.org/blog/entry/Cornish_Holiday_Internet/).
 
 Must look into [iperf](http://packages.qa.debian.org/i/iperf.html)
+
+# iperf
+
+Run on a server:
+
+	iperf -s -f K
+
+And connect to it with `iperf -c <host> -f K`
+

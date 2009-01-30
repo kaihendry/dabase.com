@@ -189,6 +189,10 @@ Notice the odd '--'
 
 	x61:~% git reset -- code/trunk/tests/html/logs/index.cgi
 
+or:
+
+	git rm --cached aplix/code/trunk/tests/html/602/index.html
+
 ##### Q: How do I wipe the history of a git repo ? (you probably don't want to do this!)
 ##### A:
 
