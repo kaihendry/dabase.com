@@ -1,0 +1,1 @@
+[[!inline pages="blog/* and !*/Discussion and !link(unfinished)" archive="yes" rss="no" quick="yes"]]
