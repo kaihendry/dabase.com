@@ -1,7 +1,7 @@
 
 For years I've promoted liquid, fluid, scalable Web designs.
 
-Those that use <a href="http://en.wikipedia.org/wiki/Em_(typography)">em</a>
+Designs that use <a href="http://en.wikipedia.org/wiki/Em_(typography)">em</a>
 instead of 12px in the style sheet. Those that used complicated floats, so that
 when you resize the font the page still "looks good".
 
