@@ -1,6 +1,6 @@
 [[!meta title="dabase"]]
 
-# Blog [[blog/archives]]
+# Kai Hendry's other blog [[blog/archives]]
 
 [[!inline pages="blog/* and !blog/*/*" show="2" actions=no rss=yes]]
 
