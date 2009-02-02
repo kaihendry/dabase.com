@@ -6,8 +6,8 @@
 
 # Latest [[tips]]
 
-[[!inline feedfile="tips/index.rss" pages="e/*" show="2" actions=no rss=yes]]
+[[!inline pages="e/*" show="2" actions=no rss=no]]
 
 # About the [[G1]]
 
-[[!inline feedfile="g1/index.rss" pages="android/* and !android/*/Discussion" description="Blogging UK G1 experiences" actions=no rss=yes show="2"]]
+[[!inline pages="android/* and !android/*/Discussion" description="Blogging UK G1 experiences" actions=no rss=no show="2"]]
