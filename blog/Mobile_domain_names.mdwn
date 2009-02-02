@@ -10,6 +10,15 @@ overriding UA strings so that Web sites use insecure connections.
 When you do log in to Paypal, it does redirect you again to HTTPS, though this
 is confusing. Maintain the [SSL protocol](http://en.wikipedia.org/wiki/Transport_Layer_Security).
 
+# Mobile content transformation (ct) can break security
+
+Content transformation proxies deployed on several mobile IP networks might
+[rewrite a HTTPS
+link](http://www.w3.org/TR/ct-guidelines/#sec-https-link-rewriting) and hence
+lose security.
+
+This is insane.
+
 # Maintain wildcard HTTPS certificates
 
 Some sites like paypal.co.uk only have a valid certificate for
