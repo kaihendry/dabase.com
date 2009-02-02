@@ -14,8 +14,9 @@ work offline.
 
 Next problem, [features or rather
 APIs](http://dev.w3.org/2006/waf/widgets/#the-feature-element). New APIs like
-that defined by Opera or BONDI are **volatile**. APIs will change dramatically
-and they will not necessarily remain backwards compatibility.
+that defined by Opera or BONDI (and later the W3C) are **volatile**. APIs will
+change dramatically and they will not necessarily remain backwards
+compatibility.
 
 What happens when you have a widget that depends on 3 APIs (e.g. file, geo,
 user interface for soft keys)? On a runtime where 1 of the APIs has been
