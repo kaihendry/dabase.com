@@ -2,7 +2,7 @@
 
 # Kai Hendry's other blog [[blog/archives]]
 
-[[!inline pages="blog/* and !blog/*/*" show="2" actions=no rss=yes]]
+[[!inline pages="blog/* and !blog/*/*" show="2" feedshow="5" actions=no rss=yes]]
 
 # Latest [[tips]]
 
