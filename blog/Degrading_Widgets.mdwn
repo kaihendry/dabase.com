@@ -29,7 +29,7 @@ undesirable user experience!
 
 Besides APIs, the [new security
 mechanisms](http://www.w3.org/TR/widgets-digsig/) for widgets will also be very
-likely to volatile.
+likely to be volatile and unstable.
 
 Therefore it will be likely that widgets (at least at first) will be tested and
 pinned to a particular **static** snapshot of a widget runtime.

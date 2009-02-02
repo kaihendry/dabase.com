@@ -6,7 +6,7 @@ Appears in the @handheld [mobile style sheet](http://www.bushidodesigns.net/blog
 
 I am wrong because:
 
-* You cannot expect the CSS to be parsed and layout understood before images are started to be downloaded
+* You cannot assume the CSS to be downloaded, parsed and layout understood before images are started to be downloaded
 * DHTML and other AJAXy special effects relies on display none to download the images in the background
 
 
@@ -23,10 +23,10 @@ Innovations could be, like the Opera Mini servers that transcode websites from
 HTML to OBML (Opera Binary Markup Language), which is a propertiary compressed
 format.
 
-I don't think the innovation lies on [Content
+I don't think the innovation lies with [Content
 Transformation](http://www.w3.org/TR/ct-landscape/). Technologies which fuck
-with posts and SSL and basically that do not tightly tie into browser logic is
-doomed to fail.
+with HTTP posts and SSL and basically technlogies that do not tightly tie into
+browser logic are doomed to fail.
 
 I personally would like to see a switch on my UA like a volume button that I
 could use to increase communication efficiency. For example if I knew I was in
