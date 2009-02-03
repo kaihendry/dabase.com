@@ -68,28 +68,28 @@
   <h3>Devices limitations</h3>
 
   <p>When designing device-independent test cases, it is important to take into account the following parameters that imply some limitations on some devices:</p>
-  <ul>
+  <ol>
     <li>Screen</li>
     <li>Memory available</li>
     <li>Network bandwidth, latency and cost</li>
     <li>CPU power</li>
     <li>Extensions capabilities</li>
-  </ul>
+  </ol>
 
   <p>For tests that require interaction (either for running the test or for submitting results), the following parameters are also likely to matter:</p>
-  <ul>
+  <ol>
     <li>Keyboard access and ease of use</li>
     <li>Pointing device access</li>
-  </ul>
+  </ol>
 
   <h3>Target devices</h3>
   <p>Trying to take into account all the possible constraints of all possible devices would make writing device-independent tests impossible.</p>
   <p>The first step towards writing device-independent test cases is thus to determine the range of devices on which the test cases would need or are likely to be run. To make that assessment:</p>
-  <ul>
+  <ol>
     <li>if the technology is already deployed, consider on what devices it is running</li>
     <li>if the technology can only be deployed on devices with a certain level of hardware characteristics, adapt the constraints in the guidelines below to that level</li>
     <li>if it is not possible to create a single test that will work well across devices, consider creating several versions of the test, or using server-based content adaptation to adapt it based on the requesting devices.</li>
-  </ul>
+  </ol>
 
   <p>In any case, it is always a good idea to document in the test suites what are the minimal expected requirements to run the tests, and possibly which test cases require a certain level of support.</p>
 
@@ -100,13 +100,13 @@
   <p>Screen size matters when designing visual test cases - e.g. where the tester needs to assess whether the rendering of a test cases matches a reference rendering.</p>
 
   <p>Across devices, the following screen parameters vary widely:</p>
-  <ul>
+  <ol>
     <li>screen resolution</li>
     <li>zooming capability, scrolling</li>
     <li>physical dimensions</li>
     <li>number of colors</li>
     <li>contrast</li>
-  </ul>
+  </ol>
 
   <p>In general, to avoid problems when running test across devices:</p>
   <ol class='guidelines'>
