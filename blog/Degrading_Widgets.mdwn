@@ -16,7 +16,14 @@ Next problem, [features or rather
 APIs](http://dev.w3.org/2006/waf/widgets/#the-feature-element). New APIs like
 that defined by Opera or BONDI (and later the W3C) are **volatile**. APIs will
 change dramatically and they will not necessarily remain backwards
-compatibility.
+compatible.
+
+The [Geolocation API](http://dev.w3.org/geo/api/) changed the position object
+late 2008. Since it's still not a mature standard, things like this can happen.
+To access the latitude value, changed from position.latitude to
+position.coords.latitude. [Gears](http://gears.google.com/) in practice now,
+implements both interfaces, which can confuse.
+
 
 What happens when you have a widget that depends on 3 APIs (e.g. file, geo,
 user interface for soft keys)? On a runtime where 1 of the APIs has been
@@ -24,7 +31,8 @@ updated? Think of the permutation explosion.
 
 The nature of Javascript extensions and [asynchronous
 APIs](http://dev.w3.org/geo/api/), make it very hard to degrade from situations
-where even a single API may not be functioning as expected.
+where even a single API may not be functioning as expected. Especially for Joe
+Average "Cut n' Paste" Web developer.
 
 Javascript engines typically halt in any case of an uncaught exception. A very
 undesirable user experience!
@@ -34,7 +42,8 @@ mechanisms](http://www.w3.org/TR/widgets-digsig/) for widgets will also be very
 likely to be volatile and unstable.
 
 Therefore it will be likely that widgets (at least at first) will be tested and
-pinned to a particular **static** snapshot of a widget runtime.
+pinned to a particular **static** snapshot of a widget runtime. As Web
+developers might simply too lazy to keep up to date.
 
 One solution is that widget runtimes _must_ make every effort possible to keep
 a widget [up to date](http://dev.w3.org/2006/waf/widgets/#the-update-element).
@@ -48,3 +57,6 @@ mobile device.
 Perhaps the end user can delegate the maintainership of the widgets on the
 device. For example in Debian I could switch my `sources.list` from unstable to
 stable since I want to use more stable software.
+
+The bottom line is that widgets must be maintained and updated with every
+advance of the Widget Run Time (WRT).
