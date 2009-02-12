@@ -114,7 +114,7 @@ Get it?
 
 Hey! That's more like it! You understand! Here is a real example of how a zip
 file of a book from [Project Gutenberg](http://www.gutenberg.org) is turned
-into a widget:
+into a widget with shell:
 
 	#!/bin/sh -e
 	[ $1 ]
@@ -123,15 +123,18 @@ into a widget:
 	rm -f $1-h.zip
 	cd $1-h
 
-[Index.html is the default start file](http://dev.w3.org/2006/waf/widgets/#start-file-and-default-start-files)
+[index.html is the default start file](http://dev.w3.org/2006/waf/widgets/#start-file-and-default-start-files).
 
 	mv $1-h.htm index.html
+
+The [content must be at the root of the folder](http://dev.w3.org/2006/waf/widgets/#root-of-the-widget).
+
 	zip -D -r ../$1.wgt *
 	cd ..
 	rm -rf $1-h
 
 Or you could just use the [widget books](http://gwgt.webvm.net/) interface I
-cooked up to **save** Gutenburg books as a widget. With that book/widget on
+cooked up to **save** Gutenberg books as a widget. With that book/widget on
 your device, you can read offline and share the widget with a friend who can't
 afford a pricey mobile Internet plan. Cool eh?
 
