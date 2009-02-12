@@ -30,8 +30,9 @@ Guys, widgets actually are simply **zip files**. You do not need that optional
 format](http://dev.w3.org/2006/waf/widgets/). You've probably created hundreds
 of widgets already, except they are called _Zip files_.
 
-Now with widgets under the W3C family of standards, this will drive browsers to
-support zip files, oh sorry... I mean widgets natively. Super convenient!
+Now with [widgets under the W3C family of
+standards](http://www.w3.org/TR/widgets/), this will drive browsers to support
+zip files, oh sorry... I mean widgets natively. Super convenient!
 
 # HEY! HTML5 has offline support so we don't need no stinkin' widgets
 
@@ -113,14 +114,16 @@ Hey! That's more like it! You understand! Here is a real example of how a zip
 file of a book from [Project Gutenberg](http://www.gutenberg.org) is turned
 into a widget:
 
-
 	#!/bin/sh -e
-	[ $1 ] || exit
+	[ $1 ]
 	wget http://www.gutenberg.org/files/$1/$1-h.zip
 	unzip $1-h.zip
 	rm -f $1-h.zip
 	cd $1-h
-	mv $1-h.htm index.html # [default start file](http://dev.w3.org/2006/waf/widgets/#start-file-and-default-start-files)
+
+[Index.html is the default start file](http://dev.w3.org/2006/waf/widgets/#start-file-and-default-start-files)
+
+	mv $1-h.htm index.html
 	zip -D -r ../$1.wgt *
 	cd ..
 	rm -rf $1-h
