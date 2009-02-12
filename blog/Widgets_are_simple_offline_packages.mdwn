@@ -50,7 +50,7 @@ So why aren't we using HTML5? This offline technology is:
 * currently difficult to implement for Web developers (synchronization is hard)
 
 Compare this to zipping up a Web page of your bus schedule. BOOM! You have an
-offline "Web application" 1.0 (aka the Widget). Was that hard? No. Will widgets
+"offline Web application 1.0" (aka the Widget). Was that hard? No. Will widgets
 be the end all of offline Web applications? Certainly not. Though they fill a
 gap.
 
