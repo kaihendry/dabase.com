@@ -4,7 +4,7 @@ I think there is a lot of confusion in the industry from what I heard last
 Tuesday at [Mobile Monday
 London](http://mobilemonday.org.uk/2009/01/february-2nd-event-changing-landscape.html).
 
-So let's start from the beginning. Remember **Save Page as**?
+So let's start from the beginning. Remember File->**Save Page as**?
 
 Notice how Firefox saves a "webpage.html" with the webpage_files/ directory and
 perhaps a style sheet? Notice how Opera saves a Web page as a single [mime
@@ -26,7 +26,8 @@ style sheet and the images!" Fine. Zips are great, though can browsers handle
 them consistently?
 
 Guys, widgets actually are simply **zip files**. You do not need that optional
-**config.xml**.  Widgets first and foremost are a [packaging
+[config.xml](http://dev.w3.org/2006/waf/widgets/#configuration-document).
+Widgets first and foremost are a [packaging
 format](http://dev.w3.org/2006/waf/widgets/). You've probably created hundreds
 of widgets already, except they are called _Zip files_.
 
@@ -51,7 +52,7 @@ So why aren't we using HTML5? This offline technology is:
 * currently difficult to implement for Web developers (synchronization is hard)
 
 Compare this to zipping up a Web page of your bus schedule. BOOM! You have an
-"offline Web application 1.0" (aka the Widget). Was that hard? No. Will widgets
+"offline Web application 1.0" (aka the W3C Widget). Was that hard? No. Will widgets
 be the end all of offline Web applications? Certainly not. Though they fill a
 gap.
 
