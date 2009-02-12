@@ -110,7 +110,7 @@ Simple.
 
 Get it?
 
-# Ok, fine... then can I have a widget of a book please
+# Ok, fine... then can I have a widget of a book please?
 
 Hey! That's more like it! You understand! Here is a real example of how a zip
 file of a book from [Project Gutenberg](http://www.gutenberg.org) is turned
