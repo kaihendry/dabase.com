@@ -93,8 +93,9 @@ Widget applications aren't Web applications. They aren't reliant on the back
 ends like Apache & PHP. Widgets are **not inherently connected**. They probably
 [[will_not_update_and_degrade|blog/Degrading_Widgets]] seamlessly like Web
 applications do at first. Those new [device APIs](http://bondi.omtp.org/apis/)
-aren't mature. And ... what happens is widgets are just SVG files? DUDE that
-isn't the Web is it? Or is it?
+aren't mature. And ... what happens if widgets are just
+[SVG](http://en.wikipedia.org/wiki/SVG) files? DUDE that isn't the Web is it?
+Or is it?
 
 Thinking of widgets as applications is hard. We are feeling our way here, to
 the connected Web application platform several years down the line.  So let's
