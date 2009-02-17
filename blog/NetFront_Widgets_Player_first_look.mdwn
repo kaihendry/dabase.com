@@ -59,7 +59,7 @@ often a `config.js`. The config.xml is extended with **xwidget**.
     </xwidget>
 
 
-* They seem to have additional requirement with screen sizes. I almost [thought](http://lists.w3.org/Archives/Public/public-webapps/2009JanMar/0089.html) this might be a problem a couple of weeks ago.
+* They seem to have additional requirement with screen sizes. I [think scalability](http://lists.w3.org/Archives/Public/public-webapps/2009JanMar/0089.html) might be a problem... esp. when you consider widgets are usually dependent on pixel perfect **canvas** support.
 * They should be using the [update element](http://dev.w3.org/2006/waf/widgets/#the-update-element) instead of this proprietary distributeurl attribute
 * Access should be using the [access element](http://dev.w3.org/2006/waf/widgets/#the-access-element) instead of the proprietary netaccess tag.
 
