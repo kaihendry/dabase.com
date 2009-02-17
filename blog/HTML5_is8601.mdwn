@@ -11,4 +11,4 @@ for example)
 
 Thanks to #whatwg guys for informing me. Again.
 
-* [Background HTML5 'time date' discussion on IRC](http://foobar.krijnhoetmer.nl/irc-logs/html-wg/20081202#l-100)
+* [Background HTML5 'time date' discussion on IRC](http://krijnhoetmer.nl/irc-logs/html-wg/20081202#l-100)
