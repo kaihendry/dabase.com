@@ -1,3 +1,5 @@
+# What are widgets?
+
 Time and time again, I hear people ask: "What are widgets?"
 
 I think there is a lot of confusion in the industry from what I heard last
@@ -81,27 +83,31 @@ signing](http://dev.w3.org/2006/waf/widgets-digsig/) and associating an access
 control policy for them. If something goes wrong, we can pull the plug and
 revoke the signature. Great, now we have a basis for a security model. Rock on!
 
-Once we know how these policies work with widgets, the big idea is that we can
-bring this "trialled by fire" technology to Web applications via [W3C
-participation](http://www.w3.org/2008/webapps/). So
-[BONDI](http://bondi.omtp.org/) is not just about widgets, they are looking to
-the future with Web applications.
+Once we know how these API control policies work with widgets, the big idea is
+that we can bring this "trialled by fire" technologies to Web applications via
+[W3C participation](http://www.w3.org/2008/webapps/). So
+[BONDI](http://bondi.omtp.org/) is not just about widget APIs, they are looking
+to the future with [Web applications](whatwg.org/html5).
 
-# So slow down
+So for the early adopters, yes you can write widgets using volatile [device
+APIs](http://bondi.omtp.org/apis/) right now, to get Geolocation, your
+addressbook, battery information, file access and much more!
 
-Widget applications aren't Web applications. They aren't reliant on the back
-ends like Apache & PHP. Widgets are **not inherently connected**. They probably
-[[will_not_update_and_degrade|blog/Degrading_Widgets]] seamlessly like Web
-applications do at first. Those new [device APIs](http://bondi.omtp.org/apis/)
-aren't mature. And ... what happens if widgets are just
-[SVG](http://en.wikipedia.org/wiki/SVG) files? DUDE that isn't the Web is it?
-Or is it?
+# So my widget is a Web application! (or not)
+
+Widget applications aren't exactly Web applications. They aren't reliant on the
+back ends like Apache & PHP. Widgets are **not inherently connected**. They
+probably [[will_not_update_and_degrade|blog/Degrading_Widgets]] seamlessly like
+Web applications do at first. Those new [device
+APIs](http://bondi.omtp.org/apis/) aren't mature. And ... what happens if
+widgets are just [SVG](http://en.wikipedia.org/wiki/SVG) files? DUDE that isn't
+the Web is it?  Or is it?
 
 Thinking of widgets as applications is hard. We are feeling our way here, to
-the connected Web application platform several years down the line.  So let's
-keep our expectations in check. Widgets will be useful and they won't be doing
-neccessarily anything new & exciting & **connected** at first. Though widgets
-will make sharing content offline a whole lot easier.
+the connected Web application platform (HTML5) several years down the line.  So
+let's keep our expectations in check. Widgets will be useful and they won't be
+doing neccessarily anything new & **connected** at first. Though widgets will
+make sharing content offline a whole lot easier.
 
 So when you are on the
 [Underground](http://en.wikipedia.org/wiki/London_underground) and you want to
