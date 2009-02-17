@@ -4,8 +4,10 @@ Why the HELL have [they](http://whatwg.org) gone and invented their own [datetim
 
 Several reasons:
 
-1. ISO8601 does not define how to handle invalid strings
+* [ISO8601](http://en.wikipedia.org/wiki/Iso8601) does not define how to handle invalid strings
 * ISO8601 has insane features likes comments
 * Backwards compatibility (existing Web content already uses whitespace instead of "T"
 for example)
 * ISO8601 actually allows three different forms for the date
+
+Thanks to #whatwg guys for informing me. Again.
