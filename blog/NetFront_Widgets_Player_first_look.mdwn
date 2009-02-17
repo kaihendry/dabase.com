@@ -24,7 +24,7 @@ seems to be the most W3C compliant Widget runtime atm.
 
 If any employees of Access (Disclaimer: <a
 href="http://hendry.iki.fi/cv/resume.html">I used to work for Access</a>) are
-reading my blog, I encourage you look at some [draft W3C widget test
+reading my (new) blog, I encourage you look at some [draft W3C widget test
 suite](http://wgt.webvm.net/qa/) cases I am working on.
 
 Otherwise I am impressed. [HTML5 canvas
@@ -49,10 +49,6 @@ often a `config.js`. The config.xml is extended with **xwidget**.
         <accessControl>
             <netaccess host="www.google.com"  port="80" />
             <netaccess host="maps.google.com" port="80" />
-            <netaccess host="mt0.google.com"  port="80" />
-            <netaccess host="mt1.google.com"  port="80" />
-            <netaccess host="mt2.google.com"  port="80" />
-            <netaccess host="mt3.google.com"  port="80" />
         </accessControl>
     <display type="VGA" width="300" height="90" />
     <display type="QVGA" width="180" height="60" />
@@ -61,11 +57,12 @@ often a `config.js`. The config.xml is extended with **xwidget**.
 
 * They seem to have additional requirement with screen sizes. I [think scalability](http://lists.w3.org/Archives/Public/public-webapps/2009JanMar/0089.html) might be a problem... esp. when you consider widgets are usually dependent on pixel perfect **canvas** support.
 * They should be using the [update element](http://dev.w3.org/2006/waf/widgets/#the-update-element) instead of this proprietary distributeurl attribute
-* Access should be using the [access element](http://dev.w3.org/2006/waf/widgets/#the-access-element) instead of the proprietary netaccess tag.
 
-I know the [BONDI Architecture and Security
-document](http://bondi.omtp.org/BWiki/BONDI%201.0%20Release%20Candidate.aspx)
-extend W3C widgets with a **bondi** namespace (not xwidget) and elements like:
+The proprietary netaccess tag, reflects the a similar issue in the [BONDI
+Architecture and Security
+document](http://bondi.omtp.org/BWiki/BONDI%201.0%20Release%20Candidate.aspx),
+which extends W3C widgets with a **bondi** namespace (not xwidget) and elements
+like:
 
 	<bondi>
 		<resources>
