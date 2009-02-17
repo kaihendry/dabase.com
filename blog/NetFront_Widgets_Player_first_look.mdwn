@@ -63,7 +63,7 @@ often a `config.js`. The config.xml is extended with **xwidget**.
 * They should be using the [update element](http://dev.w3.org/2006/waf/widgets/#the-update-element) instead of this proprietary distributeurl attribute
 * Access should be using the [access element](http://dev.w3.org/2006/waf/widgets/#the-access-element) instead of the proprietary netaccess tag.
 
-I know from the [BONDI Architecture and Security
+I know the [BONDI Architecture and Security
 document](http://bondi.omtp.org/BWiki/BONDI%201.0%20Release%20Candidate.aspx)
 extend W3C widgets with a **bondi** namespace (not xwidget) and elements like:
 
