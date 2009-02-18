@@ -90,8 +90,14 @@ that we can bring this "trialled by fire" technologies to Web applications via
 to the future with [Web applications](whatwg.org/html5).
 
 So for the early adopters, yes you can write widgets using volatile [device
-APIs](http://bondi.omtp.org/apis/) right now, to get Geolocation, your
-addressbook, battery information, file access and much more!
+APIs](http://bondi.omtp.org/apis/) right now, to get
+[Geolocation](http://dev.w3.org/geo/api/), your
+[addressbook](http://bondi.omtp.org/apis/namespaceorg_1_1omtp_1_1bondi_1_1pim_1_1contact.html),
+[battery
+information](http://bondi.omtp.org/apis/namespaceorg_1_1omtp_1_1bondi_1_1devicestatus.html),
+[file
+access](http://bondi.omtp.org/apis/namespaceorg_1_1omtp_1_1bondi_1_1filesystem.html)
+and much more!
 
 # So my widget is a Web application! (or not)
 
@@ -100,14 +106,17 @@ back ends like Apache & PHP. Widgets are **not inherently connected**. They
 probably [[will_not_update_and_degrade|blog/Degrading_Widgets]] seamlessly like
 Web applications do at first. Those new [device
 APIs](http://bondi.omtp.org/apis/) aren't mature. And ... what happens if
-widgets are just [SVG](http://en.wikipedia.org/wiki/SVG) files? DUDE that isn't
-the Web is it?  Or is it?
+widgets are just [SVG](http://en.wikipedia.org/wiki/SVG) files or [canvas
+elements](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html)?
+DUDE that isn't the Web is it?  Or is it?
 
 Thinking of widgets as applications is hard. We are feeling our way here, to
 the connected Web application platform (HTML5) several years down the line.  So
-let's keep our expectations in check. Widgets will be useful and they won't be
-doing neccessarily anything new & **connected** at first. Though widgets will
-make sharing content offline a whole lot easier.
+let's keep our expectations in check.
+
+Widgets will be useful and they won't neccessarily be doing anything new &
+**connected** at first. Though widgets will make sharing content offline a
+whole lot easier.
 
 So when you are on the
 [Underground](http://en.wikipedia.org/wiki/London_underground) and you want to
