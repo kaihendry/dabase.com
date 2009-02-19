@@ -5,7 +5,6 @@ Why the HELL have [they](http://whatwg.org) gone and invented their own [datetim
 Several reasons:
 
 * [ISO8601](http://en.wikipedia.org/wiki/Iso8601) does not define how to handle invalid strings
-* Backwards compatibility (existing Web content already uses whitespace instead of "T"
 for example)
 * ISO8601 actually allows three different forms for the date
 
