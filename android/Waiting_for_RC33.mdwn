@@ -17,12 +17,12 @@ T-mobile](http://support.t-mobile.co.uk/help-and-support/index?page=html&cat=CON
 and a  "tech" engineer from T-mobile called me, despite requesting T-mobile
 **email me** instead.
 
-He asked around and he says there is "no rollout in place" according to his
-supervisors he didn't know what I was talking about with RC33 and Firmware 1.1
+He asked around and he says there is "no rollout in place" and he didn't know
+what I was talking about with RC33 and Firmware 1.1.
 
 Furthermore he told me he personally hacked his. Unbelievably he was actually
 excitedly telling me I could downgrade to RC8 I mean... WTF is going on?
 
 Do Google UK have a contact in T-mobile UK? **Talk to each other**. Give the
 T-mobile engineers some information. They actually seem just as thirsty for
-knowledge from Google as I am.
+Android knowledge as I am.
