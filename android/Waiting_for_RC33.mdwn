@@ -26,3 +26,7 @@ excitedly telling me I could downgrade to RC8 I mean... WTF is going on?
 Do Google UK have a contact in T-mobile UK? **Talk to each other**. Give the
 T-mobile engineers some information. They actually seem just as thirsty for
 Android knowledge as I am.
+
+**UPDATE**:
+	wget --no-check-certificate https://android.clients.google.com/updates/signed-PLAT-RC33-from-RC30.f06aa9b3.zip
+	adb push signed-PLAT-RC33-from-RC30.f06aa9b3.zip /sdcard/update.zip
