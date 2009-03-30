@@ -41,7 +41,10 @@ margin-bottom:0.5em;
 
   <h2 class="no-num no-toc" id="abstract">Abstract</h2>
 
-<p>As Web technologies in a range of devices grows, it is important that tests writers develop test suites for these technologies that will work as well as possible across devices. This document offers guidance in the form of simple guidelines to follow to create device-independent tests.</p>
+<p>As support for Web technologies grows, it is important that tests writers
+develop test suites that will work as well as possible across devices. This
+document offers guidance in the form of simple guidelines to follow to create
+device-independent tests.</p>
 
 
   <h2 class="no-num no-toc" id="status">Status of this document</h2>
@@ -76,7 +79,8 @@ margin-bottom:0.5em;
 
   <h3>Devices limitations</h3>
 
-  <p>When designing device-independent test cases, it is important to take into account the following parameters that imply some limitations on some devices:</p>
+  <p>When designing device-independent test cases, it is important to acknowledge the limitations of most devices:</p>
+
   <ol>
     <li>Screen</li>
     <li>Memory available</li>
@@ -87,20 +91,9 @@ margin-bottom:0.5em;
 
   <p>For tests that require interaction (either for running the test or for submitting results), the following parameters are also likely to matter:</p>
   <ol>
-    <li>Keyboard access and ease of use</li>
-    <li>Pointing device access</li>
+    <li>Keyboard or pointing device access and ease of use</li>
+	<li>Human cost of correctly submitting the results</li>
   </ol>
-
-  <h3>Target devices</h3>
-  <p>Trying to take into account all the possible constraints of all possible devices would make writing device-independent tests impossible.</p>
-  <p>The first step towards writing device-independent test cases is thus to determine the range of devices on which the test cases would need or are likely to be run. To make that assessment:</p>
-  <ol>
-    <li>if the technology is already deployed, consider on what devices it is running</li>
-    <li>if the technology can only be deployed on devices with a certain level of hardware characteristics, adapt the constraints in the guidelines below to that level</li>
-    <li>if it is not possible to create a single test that will work well across devices, consider creating several versions of the test, or using server-based content adaptation to adapt it based on the requesting devices.</li>
-  </ol>
-
-  <p>In any case, it is always a good idea to document in the test suites what are the minimal expected requirements to run the tests, and possibly which test cases require a certain level of support.</p>
 
   <h2 id="guidelines">Guidelines</h2>
 
@@ -119,12 +112,11 @@ margin-bottom:0.5em;
 
   <p>In general, to avoid problems when running test across devices:</p>
   <ol class='guidelines'>
-    <li>Keep your tests as simple as possible. Do not include any visible meta data that might obfuscate or get in the way of the result. Stating prerequisites, pass conditions and test result is all that is needed.</li>
+    <li>Keep your tests as simple as possible. Do not include any visible information that might obfuscate or get in the way of the result. </li>
     <li>Avoid tests based on absolute dimensions, or provide several versions for different screen resolutions.</li>
     <li>Keep non-essential content off the top of the rendered content to avoid scrolling.</li>
     <li>Be as concise as possible in the test description to avoid scrolling.</li>
-    <li>When using colors to express the result of the test, convey the result also with text.</li>
-    <li>On color-based tests, use well-contrasted colors for parts that need to be distinguished.</li>
+    <li>When using colors to express the result of the test, consider conveying the result also with text.</li>
   </ol>
 
   <div class='figure'>
@@ -148,6 +140,8 @@ margin-bottom:0.5em;
     <li>Keep the number of data structure created dynamically (e.g. by scripts) to a minimum.</li>
   </ol>
 
+  <p>Less is more.</p>
+
   <h3>Network bandwidth, latency and cost</h3>
 
   <p>The characteristics of network access across devices vary greatly, in particular in terms of bandwidth available, the latency induced by network requests, and the cost of transfering content over the network.</p>
@@ -155,43 +149,33 @@ margin-bottom:0.5em;
   <p>To cater for test environments where network is slow or costly:</p>
   <ol class='guidelines'>
     <li>Keep the number of external resources loaded along with the test case to a minimum; prefer including the content (e.g. using internal style sheets instead of external ones) rather than loading it, except if it can be cached and re-used across test cases.</li>
-    <li>Keep the number of network requests originated from scripts to a minimum.</li>
+    <li>Keep the number of network requests originated from scripts to a minimum to speed up data transfer.</li>
     <li>Take care when triggering DOM operations that they will not require downloading DTDs.</li>
+	<li>Be aware that mobile networks are can be aggressively cached or transformed, therefore you might need to adjust orginator HTTP headers depending on the nature of your test.</li>
+	<li>Eliminate any white space in your tests.</li>
   </ol>
 
   <h3>CPU power</h3>
-  <p>CPU-intensive operations on mobile devices drain the battery, and are likely to be much slower than on larger hardware. As a result:</p>
+
+  <p>CPU-intensive operations on mobile devices can drain the battery, and are likely to be much slower than on larger hardware. As a result:</p>
+
   <ol class='guidelines'>
     <li>Avoid unneeded images processing operations, such as scaling up or down raster images.</li>
   </ol>
 
   <h3>Extension capabilities</h3>
+
   <p>Most mobile devices have limited capabilities when it comes to plugins, additional fonts, or software extensions in general. As a result:</p>
   <ol class="guidelines">
     <li>Avoid relying on effects based on specific fonts.</li>
     <li>Avoid tests that rely on a specific plugin to be installed.</li>
   </ol>
 
-  <h3>Keyboard access</h3>
+  <h3>Keyboard or pointing device access</h3>
   <p>Many mobile devices don't provide a full keyboard, and thus require several key press to enter a given character.</p>
   <ol class="guidelines">
-    <li>Don't require long text entries from the testers.</li>
-    <li>Provide helpers to reach the test suites using short URLs, 2D-barcodes, etc.</li>
-  </ol>
-
-
-  <h3>Pointing devices</h3>
-  <p>Many mobile devices don't provide a pointing device, making it difficult or impossible to activate specific portions of the rendered content.</p>
-
-  <ol class="guidelines">
-    <li>If possible, avoid making your tests dependent on any specific input device.</li>
-  </ol>
-
-  <h3>Prerequisites</h3>
-  <p>A number of tests <em>do</em> require specific features to be available for the test to work. These requirements could be specific input devices or device APIs, XmlHttpRequest, SVG or similar.</p>
-
-  <ol class="guidelines">
-    <li>If your test depends on any specific feature to be available on the tested device, you should explicitly state so before the pass condition.</li>
+	<li>Minimise interactive tests</li>
+	<li>Provide helpers to reach the test suites using short URLs, 2D-barcodes, etc.</li>
   </ol>
 
 <h2>References</h2>
