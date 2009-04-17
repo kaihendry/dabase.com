@@ -22,3 +22,7 @@ exciting on the mobile site.
 # The update form does not take full width
 
 So this makes the mobile version of the site unpleasant to use from the Desktop.
+
+# The 'older' link is tiny
+
+So it's hard to turn pages.
