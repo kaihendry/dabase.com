@@ -41,17 +41,22 @@ zip files, oh sorry... I mean widgets natively. Super convenient!
 
 HTML5 defines how [offline Web
 applications](http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html#offline)
-work! [Gears implement this](http://code.google.com/apis/gears/sample.html) and
-the lastest Iphone firmware does [client-side database
+work! [Gears had a stab at implementing
+this](http://code.google.com/apis/gears/sample.html) and the lastest Iphone
+firmware does [client-side database
 storage](http://webkit.org/blog/126/webkit-does-html5-client-side-database-storage/).
 I don't need a widget!
 
-So why aren't we using HTML5? This offline technology is:
+So why aren't we using HTML5? HTML5 offline technology features [Web
+storage](http://dev.w3.org/html5/webstorage/), which adds key/value and SQL
+persistent storage. And the [Application
+cache](http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html#appcache),
+defines a 'logical package' with a **manifest** which allows for the Web
+application to serve resources from the 'localhost' if you will.
 
 * immature, it's brand new folks (zip isn't)
-* it's not fully defined
-* [database storage](http://www.whatwg.org/specs/web-apps/current-work/multipage/structured-client-side-storage.html#sql) is not the same as [offline web applications](http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html#offline)
-* currently difficult to implement for Web developers (synchronization is hard)
+* it's not fully defined unlike Zip
+* difficult to implement for Web developers if you take syncing into account
 
 Compare this to zipping up a Web page of your bus schedule. BOOM! You have an
 "offline Web application 1.0" (aka the W3C Widget). Was that hard? No. Will widgets
