@@ -1,0 +1,131 @@
+Intro: Somehow as part of the [W3C Mobile Web Test Suites Working
+Group](http://www.w3.org/2005/MWI/Tests/) I'm leading tests of the Widget
+runtime, in which W3C compliant run times implement [Widgets 1.0: Packaging and
+Configuration](http://dev.w3.org/2006/waf/widgets/)
+
+# WGTQA
+
+To begin with I wrote individual tests by hand in a [wgtqa git
+repository](http://git.webvm.net/?p=wgtqa). My employer
+[Aplix](http://www.aplixcorp.com) supported the work as it would be useful to
+partake in compliance efforts for both BONDI RI and our own commercial [widget
+runtime offerings](http://webvm.net/).
+
+I made a couple of mistakes. They were mostly interactive tests and didn't make
+use of Javascript to automate them in several cases. For example:
+
+	5.7-startfile-pass1/
+	index.html:
+		<h1 style="background: green;">PASSED</h1>
+
+Firstly I tried to pin the name of the test on the section of the
+[specification](http://dev.w3.org/2006/waf/widgets/) it was testing.
+Unfortunately the numbering changed, so **5.7** had worse than no meaning. It
+became confusing and a huge pain to track to keep updated.
+
+**index.html** as you can see just has a simple **PASSED** rendering. Great for
+interactive tests, though useless for automation (very 90s). It should have
+been `testcase.result( true );` as we'll see later.
+
+## Testing Error conditions
+
+The next mistake was assuming a malformed config would halt processing. In
+reality a Widget runtime will ignore bogus values. I wrote several [negative
+tests for
+config.xml](http://git.webvm.net/?p=wgtqa;a=blob;f=wgt/7.1-wrong-namespace/config.xml),
+which wrongly assumed that if the index.html was seen, it would be a fat FAIL.
+i.e. the UA would halt and show the widget has been rejected.
+
+A better test would be check the _default values_ were set when a bad one was
+given. Unfortunately [Widget APIs](http://dev.w3.org/2006/waf/widgets-api/) is
+required to read back and test such values. This API is not available on any
+current widget runtime like BONDI or Opera AFAIK.
+
+So you can't really do negative tests.
+
+# WTF !
+
+The "Widget Testing Framework" (WTF) is a [PHP Zend](http://www.zend.com)
+powered contribution by [Opera](http://www.opera.com/), which basically deals
+with the earlier automation problem. WTF comes without any substantial
+tests, though Opera has stated they will share some of their tests.
+
+For example, lets look at a [test which tests the order in which index files
+are run](http://wtf.webvm.net/view//step8/order). So the test basically runs
+testpass.js on the first case and testfail.js on all the others:
+
+1. index.htm -- PASS
+1. index.html -- FAIL
+1. index.svg -- FAIL
+1. index.xhtml -- FAIL
+1. index.xht -- FAIL
+
+When the widget is [downloaded](http://wtf.webvm.net/download//step8/order) a
+testlib.js is included in the widget. This testlib.js reports the test result
+with the magic of AJAX to a **reporturi**. Unfortunately the backend service
+for this isn't provided yet by Opera, though it shouldn't be hard to recreate.
+
+So the framework builds the widget on the fly. Sooner or later, you'll realise
+this is good testing framework for is perfect for is mainly checking to see if
+the Javascript APIs e.g. [BONDI](http://bondi.webvm.net/apis/) for different
+features works correctly within a widget.
+
+Though not good for testing things like broken
+[zips](http://git.webvm.net/?p=wgtqa;a=tree;f=gen/5.1-compression-level;) and
+weirdo filenames and screwy encodings and such things, **before** a widget is
+actually running. So WTF is not a silver bullet.
+
+## Non-interactive interactive tests
+
+So, there are 3 types of tests:
+
+1. Automated -- yay!
+1. Visual
+1. Interactive -- boo!
+
+You do not want expensive, labour intensive, mind numbing interactive tests.
+
+Ok, **Visual tests**. Visual tests are using written as [interactive tests as
+first](http://wtf.webvm.net/view//image_media_support). The tester is basically
+looking out for some green blob and then to mark it off with a button.
+
+Opera has an übercool internal system called SPARTAN which hashes these values
+(those green blobs), so that these iterative (boo!) tests become automated
+(yay!) visual tests.
+
+# Open issues
+
+## `config.xml` validation
+
+We know what makes an invalid config.xml with [Widget RelaxNG
+schema](http://hasather.net/widgets/widgets.rnc). I've written a [widget
+validator](http://wgt.webvm.net/) which uses
+[rnv](http://www.davidashen.net/rnv.html).
+
+This is what a UA should do before running a widget, though how do you test a
+UA (widget runtime) is doing the same as:
+
+	rnv -q widget.rnc config.xml
+
+That's quite hard.
+
+## Pinning tests
+
+Anchor names seem more stable than section names, but still it seems a little
+hard to reference the part of the specification, the test is actually testing.
+_sigh_
+
+Alternatively, HTML5 uses an [annotation
+system](http://www.whatwg.org/specs/web-apps/current-work/multipage/status-documentation.html)
+for linking to tests from the specification.
+
+## Making the WTF properly opensourced with open SCM hosting etc. etc.
+
+The WTF is Opera specific and needs several changes.
+
+
+# Notes on different Widget times
+
+## Opera does not allow alert()
+
+
