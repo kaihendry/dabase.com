@@ -1,15 +1,15 @@
-Intro: Somehow as part of the [W3C Mobile Web Test Suites Working
-Group](http://www.w3.org/2005/MWI/Tests/) I'm leading tests of the Widget
+Intro: As part of the [W3C Mobile Web Test Suites Working
+Group](http://www.w3.org/2005/MWI/Tests/) I'm organising tests of the Widget
 runtime, in which W3C compliant run times implement [Widgets 1.0: Packaging and
 Configuration](http://dev.w3.org/2006/waf/widgets/)
 
 # WGTQA
 
-To begin with I wrote individual tests by hand in a [wgtqa git
+To begin with individual tests were written by hand in a [wgtqa git
 repository](http://git.webvm.net/?p=wgtqa). My employer
 [Aplix](http://www.aplixcorp.com) supported the work as it would be useful to
 partake in compliance efforts for both BONDI RI and our own commercial [widget
-runtime offerings](http://webvm.net/).
+runtime offerings](http://webvm.net).
 
 I made a couple of mistakes. They were mostly interactive tests and didn't make
 use of Javascript to automate them in several cases. For example:
@@ -24,8 +24,8 @@ Unfortunately the numbering changed, so **5.7** had worse than no meaning. It
 became confusing and a huge pain to track to keep updated.
 
 **index.html** as you can see just has a simple **PASSED** rendering. Great for
-interactive tests, though useless for automation (very 90s). It should have
-been `testcase.result( true );` as we'll see later.
+interactive tests, though useless for automation (very 90s). The "start file"
+should have been a simple Javascript call to indicate the test case passed.
 
 ## Testing Error conditions
 
@@ -33,15 +33,16 @@ The next mistake was assuming a malformed config would halt processing. In
 reality a Widget runtime will ignore bogus values. I wrote several [negative
 tests for
 config.xml](http://git.webvm.net/?p=wgtqa;a=blob;f=wgt/7.1-wrong-namespace/config.xml),
-which wrongly assumed that if the index.html was seen, it would be a fat FAIL.
+which wrongly assumed that if the index.html was seen, it would be a FAIL.
 i.e. the UA would halt and show the widget has been rejected.
 
 A better test would be check the _default values_ were set when a bad one was
-given. Unfortunately [Widget APIs](http://dev.w3.org/2006/waf/widgets-api/) is
+given. Unfortunately [Widget APIs](http://dev.w3.org/2006/waf/widgets-api/) are
 required to read back and test such values. This API is not available on any
 current widget runtime like BONDI or Opera AFAIK.
 
-So you can't really do negative tests.
+So you can't really do negative tests, instead you need to check default values
+instead.
 
 # WTF !
 
@@ -51,8 +52,10 @@ with the earlier automation problem. WTF comes without any substantial
 tests, though Opera has stated they will share some of their tests.
 
 For example, lets look at a [test which tests the order in which index files
-are run](http://wtf.webvm.net/view//step8/order). So the test basically runs
-testpass.js on the first case and testfail.js on all the others:
+are run](http://wtf.webvm.net/view//step8/order). So the start files are
+modified from the index template from `data/std_includes/index.html` which
+references testpass.js:`testcase.result(true);` on the first case and
+testfail.js:`testcase.result(false);` on all the others:
 
 1. index.htm -- PASS
 1. index.html -- FAIL
@@ -61,37 +64,48 @@ testpass.js on the first case and testfail.js on all the others:
 1. index.xht -- FAIL
 
 When the widget is [downloaded](http://wtf.webvm.net/download//step8/order) a
-testlib.js is included in the widget. This testlib.js reports the test result
-with the magic of AJAX to a **reporturi**. Unfortunately the backend service
-for this isn't provided yet by Opera, though it shouldn't be hard to recreate.
+testlib.js & style.css is also included in the widget. `testpass.js` executes
+the function implemented by testlib.js which reports the test result with the
+magic of AJAX to a configurable **reporturi**. Unfortunately the backend
+service for this isn't provided yet by Opera, though it shouldn't be hard to
+recreate.
 
 So the framework builds the widget on the fly. Sooner or later, you'll realise
-this is good testing framework for is perfect for is mainly checking to see if
-the Javascript APIs e.g. [BONDI](http://bondi.webvm.net/apis/) for different
+this is good testing framework for mainly checking to see if the Javascript
+APIs e.g. [BONDI](http://bondi.webvm.net/apis/) &
+[W3C](http://lists.w3.org/Archives/Public/public-device-apis/) for different
 features works correctly within a widget.
 
 Though not good for testing things like broken
 [zips](http://git.webvm.net/?p=wgtqa;a=tree;f=gen/5.1-compression-level;) and
-weirdo filenames and screwy encodings and such things, **before** a widget is
-actually running. So WTF is not a silver bullet.
+odd filenames and screwy encodings and such things, **before** a widget is
+actually running. So WTF is not a "silver bullet", a solution for all problems
+related to ensuring W3C Widget runtime conformance.
 
 ## Non-interactive interactive tests
 
-So, there are 3 types of tests:
+In terms of processing a test, there are 3 types:
 
-1. Automated -- yay!
+1. Automated
 1. Visual
-1. Interactive -- boo!
+1. Interactive
+
+Automated tests are best. You could run all you automated tests via a test
+harness (which you need to write) after every change to your Widget runtime for
+example. Hence this would become also known as a regression test suite.
+
+Visual tests are generally written as [interactive tests at
+first](http://wtf.webvm.net/view/image_media_support). The tester is basically
+looking out for some green blob and then to mark it off with a button control.
 
 You do not want expensive, labour intensive, mind numbing interactive tests.
-
-Ok, **Visual tests**. Visual tests are using written as [interactive tests as
-first](http://wtf.webvm.net/view//image_media_support). The tester is basically
-looking out for some green blob and then to mark it off with a button.
+Imagine for every test run after a source check in, having to mark whether you
+saw a green blob or not?
 
 Opera has an übercool internal system called SPARTAN which hashes these values
-(those green blobs), so that these iterative (boo!) tests become automated
-(yay!) visual tests.
+(those green blobs), so that these interactive (bad) tests can become like
+automated (good) visual tests. Since SPARTAN isn't public, 'visual tests' will
+remain 'interactive tests'.
 
 # Open issues
 
@@ -113,7 +127,6 @@ That's quite hard.
 
 Anchor names seem more stable than section names, but still it seems a little
 hard to reference the part of the specification, the test is actually testing.
-_sigh_
 
 Alternatively, HTML5 uses an [annotation
 system](http://www.whatwg.org/specs/web-apps/current-work/multipage/status-documentation.html)
@@ -121,11 +134,18 @@ for linking to tests from the specification.
 
 ## Making the WTF properly opensourced with open SCM hosting etc. etc.
 
-The WTF is Opera specific and needs several changes.
+The Widget Test Framework is Opera specific atm and needs several changes.
 
+My copy is (publicly available in Mercurial](http://wtf.webvm.net/hgweb.cgi).
 
-# Notes on different Widget times
+## Test harness
 
-## Opera does not allow alert()
+Something to run the tests and collect the tests results is needed.
 
+## Visual tests
 
+A system like SPARTAN is needed.
+
+# Notes on different Widget runtimes
+
+## Opera does not allow `alert()`
