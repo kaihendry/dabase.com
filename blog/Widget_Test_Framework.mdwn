@@ -1,7 +1,7 @@
 Intro: As part of the [W3C Mobile Web Test Suites Working
 Group](http://www.w3.org/2005/MWI/Tests/) I'm organising tests of the Widget
-runtime, in which W3C compliant run times implement [Widgets 1.0: Packaging and
-Configuration](http://dev.w3.org/2006/waf/widgets/)
+runtime, in which W3C compliant Widget run times implement [Widgets 1.0:
+Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/)
 
 # WGTQA
 
@@ -34,7 +34,8 @@ reality a Widget runtime will ignore bogus values. I wrote several [negative
 tests for
 config.xml](http://git.webvm.net/?p=wgtqa;a=blob;f=wgt/7.1-wrong-namespace/config.xml),
 which wrongly assumed that if the index.html was seen, it would be a FAIL.
-i.e. the UA would halt and show the widget has been rejected.
+Assuming the UA would halt and show the widget has been rejected instead, as a
+PASS.
 
 A better test would be check the _default values_ were set when a bad one was
 given. Unfortunately [Widget APIs](http://dev.w3.org/2006/waf/widgets-api/) are
