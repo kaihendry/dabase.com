@@ -144,10 +144,19 @@ My copy is [publicly available in Mercurial](http://wtf.webvm.net/hgweb.cgi).
 
 Something to run the tests and collect the tests results is needed.
 
+## WTF overrides
+
+need to be able to disable config.xml for default checking.
+
 ## Visual tests
 
 A system like SPARTAN is needed to make visual tests, less interactive.
 
 # Notes on different Widget runtimes
 
-## Opera does not allow `alert()`
+## Opera
+
+Does not allow `alert()`.
+
+Serving from *.opera.com will avoid security prompt. i.e. add `127.0.0.1 foo.opera.com` to /etc/hosts
+
