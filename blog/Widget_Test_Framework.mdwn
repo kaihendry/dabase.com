@@ -7,10 +7,10 @@ Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/)
 
 To begin with individual tests were written by hand in a [wgtqa git
 repository](http://git.webvm.net/?p=wgtqa). My employer
-[Aplix](http://www.aplixcorp.com) supported the work as it would be useful to
-partake in compliance efforts for both [BONDI](http://bondi.omtp.org) Widget
-runtime efforts and our own commercial [widget runtime
-offerings](http://webvm.net).
+[Aplix](http://www.aplixcorp.com) supported the work (~1 working day a week) as
+it would be useful to partake in compliance efforts for both
+[BONDI](http://bondi.omtp.org) Widget runtime efforts and our own commercial
+[widget runtime offerings](http://webvm.net).
 
 I made a couple of mistakes. They were mostly interactive tests and didn't make
 use of Javascript to automate them in several cases. For example:
