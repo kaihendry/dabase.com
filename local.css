@@ -6,14 +6,11 @@
 }
 
 body {
-	font-family: Andika;
+	font-family: Andika, sans-serif;
 }
 
 ol {
--moz-border-radius-bottomleft:5px;
--moz-border-radius-bottomright:5px;
--moz-border-radius-topleft:5px;
--moz-border-radius-topright:5px;
+border-radius: 0.5em;
 background:#F9F6BA none repeat scroll 0 0;
-border:1px solid #C9C69A;
+border: thin solid #C9C69A;
 }
