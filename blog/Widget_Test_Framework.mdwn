@@ -156,7 +156,8 @@ A system like SPARTAN is needed to make visual tests, less interactive.
 
 ## Opera
 
-Does not allow `alert()`.
+Does not allow `alert()`. [Workaround:](http://twitter.com/ppk/status/1784451212)
+
+	var alert = function (msg) { widget.showNotification(msg); }
 
 Serving from *.opera.com will avoid security prompt. i.e. add `127.0.0.1 foo.opera.com` to /etc/hosts
-
