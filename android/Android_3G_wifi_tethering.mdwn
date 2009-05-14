@@ -51,8 +51,8 @@ Orange nicely just requires 'orangeinternet' to hop on. They give Vodafone a
 run for their money from Guildford! Orange also don't seem to run content
 through any transformation on my test. So images look decent!
 
-<http://www.speedtest.net/result/473330924.png>
-http://www.speedtest.net/result/473331849.png
+[](http://www.speedtest.net/result/473330924.png)
+[test](http://www.speedtest.net/result/473331849.png)
 http://www.speedtest.net/result/473338841.png
 http://www.speedtest.net/result/473339432.png
 http://www.speedtest.net/result/473548630.png
