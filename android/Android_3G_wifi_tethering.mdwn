@@ -24,13 +24,13 @@ ifconfig tiwlan0`.
 
 I added to `/etc/network/interfaces`:
 
-	iface wlan0 inet static
-		wireless-essid G1mobile # configure this in 'Wifi tether' on your G1
-		wireless-mode ad-hoc
-		address 192.168.2.20
-		netmask 255.255.255.0
-		gateway 192.168.2.254
-		dns-nameservers 192.168.2.254 # you need to install [resolvconf](http://packages.qa.debian.org/r/resolvconf.html)
+    iface wlan0 inet static
+        wireless-essid G1mobile # configure this in 'Wifi tether' on your G1
+        wireless-mode ad-hoc
+        address 192.168.2.20
+        netmask 255.255.255.0
+        gateway 192.168.2.254
+        dns-nameservers 192.168.2.254 # you need to install [resolvconf](http://packages.qa.debian.org/r/resolvconf.html)
 
 And commented out the existing _wpasupplicant_ configuration. Next `sudo ifup wlan0` and you should be away.
 
@@ -38,9 +38,9 @@ And commented out the existing _wpasupplicant_ configuration. Next `sudo ifup wl
 
 I borrowed a Vodafone SIM card, but I couldn't get it working until I manually
 chose the Vodafone network and setup the APN with **wap** crap:
-	wap.vodafone.co.uk
-	user: wap
-	pass: wap
+    wap.vodafone.co.uk
+    user: wap
+    pass: wap
 
 T-mobile don't use the loaded legacy **wap** word, but their APN is confusingly
 called 'general.t-mobile.uk'.  User: 't-mobile', Pass: 'tm'. I need to
@@ -52,11 +52,11 @@ Orange nicely just requires 'orangeinternet' to hop on. They give Vodafone a
 run for their money from Guildford! Orange also don't seem to run content
 through any transformation on my test. So images look decent!
 
-[](http://www.speedtest.net/result/473330924.png)
-[test](http://www.speedtest.net/result/473331849.png)
-http://www.speedtest.net/result/473338841.png
-http://www.speedtest.net/result/473339432.png
-http://www.speedtest.net/result/473548630.png
+<img src="http://www.speedtest.net/result/473330924.png" />
+<img src="http://www.speedtest.net/result/473331849.png" />
+<img src="http://www.speedtest.net/result/473338841.png" />
+<img src="http://www.speedtest.net/result/473339432.png" />
+<img src="http://www.speedtest.net/result/473548630.png" />
 
 Just 12 months of poor T-mobile service to go of my 18 month contract... then
 PAYG for me! PAYG deals for mobile data are getting seriously reasonable of
