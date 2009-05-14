@@ -22,14 +22,15 @@ This is a bit tricky, as I couldn't seem to get a DHCP IP over ad-hoc mode. So
 here I set up everything manually, after inspecting the device with `adb shell
 ifconfig tiwlan0`.
 
-I added to `/etc/network/interfaces`
-iface wlan0 inet static
-	wireless-essid G1mobile # configure this in 'Wifi tether' on your G1
-	wireless-mode ad-hoc
-	address 192.168.2.20
-	netmask 255.255.255.0
-	gateway 192.168.2.254
-	dns-nameservers 192.168.2.254 # you need to install [resolvconf](http://packages.qa.debian.org/r/resolvconf.html)
+I added to `/etc/network/interfaces`:
+
+	iface wlan0 inet static
+		wireless-essid G1mobile # configure this in 'Wifi tether' on your G1
+		wireless-mode ad-hoc
+		address 192.168.2.20
+		netmask 255.255.255.0
+		gateway 192.168.2.254
+		dns-nameservers 192.168.2.254 # you need to install [resolvconf](http://packages.qa.debian.org/r/resolvconf.html)
 
 And commented out the existing _wpasupplicant_ configuration. Next `sudo ifup wlan0` and you should be away.
 
