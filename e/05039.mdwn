@@ -2,7 +2,7 @@
 
 Stuff security are trained to screen at Waterloo station.
 
-1. Firearms
+* Firearms
 * Airguns
 * Replica firearms
 * Any explosive device

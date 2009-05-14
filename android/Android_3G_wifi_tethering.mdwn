@@ -16,7 +16,7 @@ figure out how to create a USB based network. Anyway a Wireless access point
 physically tethered to a power source since the device sucks battery juice
 whilst tethering.
 
-# Networking Debian to the Android G1
+# Ad-hoc Wireless Networking Debian to the Android G1
 
 This is a bit tricky, as I couldn't seem to get a DHCP IP over ad-hoc mode. So
 here I set up everything manually, after inspecting the device with `adb shell
