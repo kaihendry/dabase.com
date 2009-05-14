@@ -50,7 +50,7 @@ looking images.
 
 Orange nicely just requires 'orangeinternet' to hop on. They give Vodafone a
 run for their money from Guildford! Orange also don't seem to run content
-through any transformation on my test. So images look decent!
+through any transformation on my test. So images look decent! Orange WINS!
 
 <img src="http://www.speedtest.net/result/473330924.png" />
 <img src="http://www.speedtest.net/result/473331849.png" />
@@ -60,8 +60,7 @@ through any transformation on my test. So images look decent!
 
 Just 12 months of poor T-mobile service to go of my 18 month contract... then
 PAYG for me! PAYG deals for mobile data are getting seriously reasonable of
-late. So much so, I might switch to a Vodafone SIM where I know T-mobile will
-suck.
+late. So much so, I might switch SIMs where I know T-mobile will suck.
 
 I'm not quite certain if the aforemnetioned APNs are
 [HSDPA](http://en.wikipedia.org/wiki/HSDPA). The 3G icon is present on Android
