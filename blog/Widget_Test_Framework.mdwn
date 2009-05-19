@@ -1,11 +1,11 @@
 Intro: As part of the [W3C Mobile Web Test Suites Working
-Group](http://www.w3.org/2005/MWI/Tests/) I'm organising tests of the Widget
-runtime, in which W3C compliant Widget run times implement [Widgets 1.0:
-Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/)
+Group](http://www.w3.org/2005/MWI/Tests/) I'm co-ordinating in tests of the
+Widget runtime, in which W3C compliant Widget run times implement [Widgets 1.0:
+Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/).
 
 # WGTQA
 
-To begin with individual tests were written by hand in a [wgtqa git
+To begin with individual tests were written by hand in a [WGTQA git
 repository](http://git.webvm.net/?p=wgtqa). My employer
 [Aplix](http://www.aplixcorp.com) supported the work (~1 working day a week) as
 it would be useful to partake in compliance efforts for both
@@ -102,16 +102,19 @@ Visual tests are generally written as [interactive tests at
 first](http://wtf.webvm.net/view/image_media_support). The tester is basically
 looking out for some green blob and then to mark it off with a button control.
 
-You do not want expensive, labour intensive, mind numbing interactive tests.
-Imagine for every test run after a source check in, having to mark whether you
-saw a green blob or not?
+You do not want expensive, labour intensive and mind numbing interactive tests.
+:) Imagine for every test run after a source check in, having to mark whether
+you saw a green blob or not?
 
 Opera has an übercool internal system called SPARTAN which hashes these values
 (those green blobs), so that these interactive (bad) tests can become like
 automated (good) visual tests. Since SPARTAN isn't public, 'visual tests' will
-remain 'interactive tests'.
+remain 'interactive tests' for the time being.
 
-# How a widget is build by WTF
+Therefore it's a good idea to concentrate on writing automated tests for the
+time being.
+
+# How a widget is built up by WTF
 
 The `widget.txt` is not just a description of the test. It also allows some easy feature switches in an INI format.
 
@@ -124,8 +127,8 @@ element](http://dev.w3.org/2006/waf/widgets/#the-feature-element).
 
 Most of a widget is built up. For example using [standard includes](http://wtf.webvm.net/hgweb.cgi/file/tip/data/std_includes/):
 
-	hendry@x61 tmp$ unzip true
-	Archive:  true
+	hendry@x61 tmp$ unzip true.wgt
+	Archive:  true.wgt
 	  inflating: index.html
 	  inflating: style.css
 	  inflating: config.xml
@@ -149,12 +152,13 @@ UA (widget runtime) is doing the same as:
 
 	rnv -q widget.rnc config.xml
 
-That's quite hard. Please contact me or mail the [public-mwts](http://lists.w3.org/Archives/Public/public-mwts/) is know better.
+Please contact me or mail the [public-mwts](http://lists.w3.org/Archives/Public/public-mwts/) if you have some ideas.
 
 ## Pinning tests
 
-Anchor names seem more stable than section names, but still it seems a little
-hard to reference the part of the specification, the test is actually testing.
+Anchor names seem to be more stable than section names, but still it seems a
+little hard to reference the part of the specification, the test is actually
+testing.
 
 Alternatively, HTML5 uses an [annotation
 system](http://www.whatwg.org/specs/web-apps/current-work/multipage/status-documentation.html)
