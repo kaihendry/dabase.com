@@ -50,5 +50,15 @@ you're charged at 'normal' rates. Whatever they are.
 # Roaming
 
 This weekend I'm going to France. What will any of these PAYG SIM cards cost to
-roam is anyone's guess. I used to three in Europe whilst travelling a year or
-two ago. I never received a bill. :)
+roam in France is anyone's guess. I've use H3G in Europe whilst travelling a
+year or two ago... I never received a bill. :) This makes me suspect their
+billing networks are up shit creek.
+
+# Difference between this and mobile broadband for laptops
+
+This 'mobile Internet' offered by these sorts of SIM cards seem to use APN configured to be:
+
+* Slower then the [dongles](http://en.wikipedia.org/wiki/Mobile_USB_modem) performance
+* Use a content transformation proxy with mangles images
+
+If you know better, please let [me](http://hendry.iki.fi/) know!
