@@ -1,0 +1,34 @@
+PAYG Internet charges are coming down. Though they are not as fast as
+[HSDPA](http://en.wikipedia.org/wiki/HSPDA) dongle products
+[seemingly](http://dabase.com/android/Android_3G_wifi_tethering/), they do
+potentially over great value.
+
+# Orange
+
+<http://www1.orange.co.uk/service_plans/payasyougo/extra_internet.html>
+
+* £1 bundle, for all day mobile access
+* £2.00 daily capped rate, so you never pay more than this a day
+* £5 for a week of anytime mobile internet access
+
+It's not clear if you have to register in advance for this service or not.
+
+It's not clear what the usage limit is.
+
+# Vodafone -- Pay as you browse - 25MB
+
+* <http://online.vodafone.co.uk/dispatch/Portal/appmanager/vodafone/wrp?_nfpb=true&_pageLabel=templateBlank&pageID=MI_0001>
+
+50p a day
+
+Subject to a 25MB daily data limit.
+
+# O2
+
+[Interesting mail how O2 blocks mobile Internet](http://pcwww.liv.ac.uk/~rbj/RBJ/usefulstuff/o2mobilewebpaygsetup.html)
+
+# Virgin mobile (uses T-mobile)
+
+<http://www.virginmobilepeople.com/30p/>
+
+30 pence per day.
