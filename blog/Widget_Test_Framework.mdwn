@@ -53,6 +53,8 @@ powered contribution by [Opera](http://www.opera.com/), which basically deals
 with the earlier automation problem. WTF comes without any substantial
 tests, though Opera has stated they will share some of their existing Widget tests.
 
+Robert Græsdal from Opera is working on WTF also just one day a week.
+
 For example, lets look at a [test which tests the order in which index files
 are run](http://wtf.webvm.net/view//step8/order). So the start files are
 modified from the index template from `data/std_includes/index.html` which
@@ -109,6 +111,30 @@ Opera has an übercool internal system called SPARTAN which hashes these values
 automated (good) visual tests. Since SPARTAN isn't public, 'visual tests' will
 remain 'interactive tests'.
 
+# How a widget is build by WTF
+
+The `widget.txt` is not just a description of the test. It also allows some easy feature switches in an INI format.
+
+For example setting `fileio=1` should enable `opera.io` by building an
+appropriate `config.xml` to enable that feature.
+
+The idea behind that, is that it's easier for tests to be maintained that way,
+than relying on the [feature
+element](http://dev.w3.org/2006/waf/widgets/#the-feature-element).
+
+Most of a widget is built up. For example using [standard includes](http://wtf.webvm.net/hgweb.cgi/file/tip/data/std_includes/):
+
+	hendry@x61 tmp$ unzip true
+	Archive:  true
+	  inflating: index.html
+	  inflating: style.css
+	  inflating: config.xml
+	  inflating: testlib.js
+	  inflating: widget.txt
+	  inflating: test.js
+
+So for a [basic true test](http://wtf.webvm.net/view//basic/true): index.html, style.css, testlib.js was included and config.xml was generated.
+
 # Open issues
 
 ## `config.xml` validation
@@ -138,15 +164,11 @@ for linking to tests from the specification.
 
 The Widget Test Framework is Opera specific atm and needs several changes.
 
-My copy is [publicly available in Mercurial](http://wtf.webvm.net/hgweb.cgi).
+My debug copy is [publicly available in Mercurial](http://wtf.webvm.net/hgweb.cgi).
 
 ## Test harness
 
 Something to run the tests and collect the tests results is needed.
-
-## WTF overrides
-
-need to be able to disable config.xml for default checking.
 
 ## Visual tests
 
