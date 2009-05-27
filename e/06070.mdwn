@@ -1,0 +1,13 @@
+[[!meta title="Parsing XML root attributes"]]
+
+Imagine you want to read the attribute **test=** from this fragment of XML called `test.xml`:
+
+	<widget test="foo">
+		<name>blah</name>
+	</widget>
+
+Using [lxml](http://packages.qa.debian.org/l/lxml.html), you need to run **getroot**.
+
+	import lxml.etree as etree
+	tree = etree.parse("test.xml")
+	print(tree.getroot().attrib['test'])
