@@ -2,7 +2,7 @@ After setting up [CUPS-PDF](http://webconverger.org/printing/) for testing
 [Webconverger](http://webconverger.com/), I realised I could print from various
 browsers and compare their postscript output.
 
-Once I had the PDF, I converted them to PNG and uploaded them to a [Web browser print out shootout set](http://www.flickr.com/photos/hendry/sets/72157619373242517/) 
+Once I had the PDF, I converted them to PNG and uploaded them to a [Web browser print out shootout set](http://www.flickr.com/photos/hendry/sets/72157619373242517/).
 
 	for i in *.pdf; do convert $i $(basename $i .pdf).png; done
 
