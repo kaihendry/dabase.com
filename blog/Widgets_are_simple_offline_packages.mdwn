@@ -47,21 +47,21 @@ firmware does [client-side database
 storage](http://webkit.org/blog/126/webkit-does-html5-client-side-database-storage/).
 I don't need a widget!
 
-So why aren't we using HTML5? HTML5 offline technology features [Web
-storage](http://dev.w3.org/html5/webstorage/), which adds key/value and SQL
-persistent storage. And the [Application
+So why aren't we using HTML5? HTML5 offline technology features the
+[Application
 cache](http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html#appcache),
-defines a 'logical package' with a **manifest** which allows for the Web
-application to serve resources from the 'localhost' if you will.
+defines a 'logical package' with a **manifest**. It's actually a great feature
+to give Web developers extra control of how browsers cache resources.
 
-* immature, it's brand new folks (zip isn't)
-* it's not fully defined unlike Zip
-* difficult to implement for Web developers if you take syncing into account
+However one could argue this new feature:
+
+* might be tricky for some browers to implement (whilst it's easy to slap on Zip support to PocketIE)
+* difficult to implement for Web developers since it's new
 
 Compare this to zipping up a Web page of your bus schedule. BOOM! You have an
-"offline Web application 1.0" (aka the W3C Widget). Was that hard? No. Will widgets
-be the end all of offline Web applications? Certainly not. Though they fill a
-gap.
+"offline Web application 1.0" (aka the W3C Widget). Was that hard? No. Will
+widgets be the end all of offline Web applications? Certainly not. Though they
+fill a gap.
 
 A gap that will exist as long as people do not have the latest software and
 aren't inherently connected. That I'm afraid might be a few years.
@@ -72,8 +72,8 @@ Well Google will push this as they need a way of slipping you advertisements.
 # WTF happened to my killer widget application then?
 
 Ok, ok, you're thinking what happened to the idea of a widget finding out your
-geolocation and then vibrating? You know, using all these [BONDI device
-APIs](http://bondi.omtp.org/apis/)! Widgets are awesome!
+[Geolocation](http://geo.webvm.net/) and then vibrating? You know, using all
+these [BONDI device APIs](http://bondi.omtp.org/1.0/)! Widgets are awesome!
 
 Ok let me let you onto a dirty little secret: **The Web's security model is
 completely broken**. The reason why all these APIs have not made it onto the
@@ -85,23 +85,24 @@ there is a way. That's widgets for you.
 
 Widgets are self-contained little balls of the Web. We can [secure widgets by
 signing](http://dev.w3.org/2006/waf/widgets-digsig/) and associating an access
-control policy for them. If something goes wrong, we can pull the plug and
-revoke the signature. Great, now we have a basis for a security model. Rock on!
+control policy for them. If something goes wrong with the policy, we can pull
+the plug and revoke the signature. Great, now we have a basis for a security
+model. Rock on!
 
 Once we know how these API control policies work with widgets, the big idea is
 that we can bring this "trialled by fire" technologies to Web applications via
 [W3C participation](http://www.w3.org/2008/webapps/). So
 [BONDI](http://bondi.omtp.org/) is not just about widget APIs, they are looking
-to the future with [Web applications](whatwg.org/html5).
+to the future with [Web applications](http://whatwg.org/html5).
 
-So for the early adopters, yes you can write widgets using volatile [device
-APIs](http://bondi.omtp.org/apis/) right now, to get
+So for the early adopters, yes you can write widgets using volatile [mobile device
+APIs](http://bondi.omtp.org/1.0/) right now, to get
 [Geolocation](http://dev.w3.org/geo/api/), your
-[addressbook](http://bondi.omtp.org/apis/namespaceorg_1_1omtp_1_1bondi_1_1pim_1_1contact.html),
+[addressbook](http://bondi.omtp.org/1.0/apis/contact.html),
 [battery
-information](http://bondi.omtp.org/apis/namespaceorg_1_1omtp_1_1bondi_1_1devicestatus.html),
+information](http://bondi.omtp.org/1.0/apis/devicestatus.html),
 [file
-access](http://bondi.omtp.org/apis/namespaceorg_1_1omtp_1_1bondi_1_1filesystem.html)
+access](http://bondi.omtp.org/1.0/apis/filesystem.html)
 and much more!
 
 # So my widget is a Web application! (or not)
@@ -162,3 +163,9 @@ Remember **widgets are just a simple offline encapsulation format** to begin
 with. Backup your files to a widget. Share a widget. Authenticate & trust a
 widget. Buy a widget. There are new opportunities, you just need to see them
 for what they are.
+
+# Update -- Widgets as a serialisation format for HTML Appcache?
+
+Hopefully widgets will use the [cache
+manifest](http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html#manifests)
+as a mechanism for updating.

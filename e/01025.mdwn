@@ -1,15 +1,8 @@
 [[!meta title="using gnu tar reference"]]
 
-List files in archive:
+List files in **tar** archive:
 
-    tar -t whatishere.tar
-
-does not work. it just hangs there until you ctrl-c it. great. SO what works?
-
-    tar -t --file=whatishere.tar
-or:
-
-    tar --list --file=whatishere.tar
+    tar tf whatishere.tar
 
 Lets tar up a folder, without CVS dir:
 
