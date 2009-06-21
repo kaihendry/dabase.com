@@ -166,6 +166,16 @@ for what they are.
 
 # Update -- Widgets as a serialisation format for HTML Appcache?
 
-Hopefully widgets will use the [cache
+Hopefully widgets will adopt the [cache
 manifest](http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html#manifests)
 as a mechanism for updating.
+
+So what does this mean? Imagine you had an HTML5 application installed on your
+mobile. It could be a simpler [todo list](http://static.webvm.net/appcache/)
+that you want to pass on to your partner or perhaps deploy to zillions of
+devices.
+
+The Appcached application could be exported into a Widget (a Zip file) and then
+bluetoothed or pre-installed into a ~/widgets directory. When the destination
+device loads the browser, the browser will have the application (and it's
+information contents) readily availble without connecting to the Internet!
