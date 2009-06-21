@@ -177,5 +177,5 @@ devices.
 
 The Appcached application could be exported into a Widget (a Zip file) and then
 bluetoothed or deployed into a ~/widgets directory. When the destination device
-boots the browser, the browser will have the application (and it's information
+boots the browser, the browser will have the application (and its information
 contents) readily availble without connecting to the Internet!
