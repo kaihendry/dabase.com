@@ -23,8 +23,9 @@ proprietary tool. Great, what a start!
 * It's non-trivial to edit content in a PDF. Indeed, PDFs are often designed to be static (for Archival). Though if information can't be maintained, one can argue it's dead.
 * Only accurate representations of stored content can be produced if you embed the font
 * Signing does not guarantee authenticity.
-* A document is of little use unless it's transcribed into text. Scan a STASI file into a PDF. Great, now what? Storing it as a PNG would be even better as people could at least view it easier.
+* A document is of little use unless it's transcribed into text. Scan a STASI file into a PDF. Great, now what? Storing it as a PNG would be even better as people would at least been able to view it easier.
 * [PDF has a poor accessibilty record](http://www.usability.com.au/resources/pdf.cfm)
+* Non-trivial to diff, track and compare PDF documents
 
 # Pros of HTML
 
