@@ -17,12 +17,14 @@ proprietary tool. Great, what a start!
 * The PDF viewer isn't nearly as pervasive as a Web browser. Is there a PDF viewer on your mobile? No, I thought not.
 * The PDF viewer is slower than a Web browser.
 * A PDF is many times larger than an HTML file. Imagine Wikipedia as a PDF/A file? That would be CRAZY.
+* Since the viewer and content are much larger than HTML counterparts, PDF/A demands a faster internet connection. Have a slow connection? You're out of luck!
 * PDF isn't part of the Web. It's non-trivial to get PDF content on the Web. People end up converting it into a PNG and that's a terrible loss of information.
 * It's non-trivial to index and parse out information from a PDF
 * It's non-trivial to edit content in a PDF. Indeed, PDFs are often designed to be static (for Archival). Though if information can't be maintained, one can argue it's dead.
 * Only accurate representations of stored content can be produced if you embed the font
 * Signing does not guarantee authenticity.
 * A document is of little use unless it's transcribed into text. Scan a STASI file into a PDF. Great, now what? Storing it as a PNG would be even better as people could at least view it easier.
+* [PDF has a poor accessibilty record](http://www.usability.com.au/resources/pdf.cfm)
 
 # Pros of HTML
 
@@ -35,7 +37,7 @@ proprietary tool. Great, what a start!
 * HTML is space efficient. PDF isn't.
 * HTML can include "marginalia" like comments and notes.
 * HTML has several ways of adding [metadata support](http://wiki.whatwg.org/wiki/Generic_Metadata_Mechanisms), though Google search generally does not rely on them for best results
-* HTML _can_ convey critical information. It's done so for ages.
+* HTML _can_ convey critical information. It's done so more effectively that PDF has ever done.
 * Need to package some HTML content? Use a [[widget|blog/Widgets_are_simple_offline_packages]]!
 * You can generate static snapshots of HTML to formats like [PDF](http://en.wikipedia.org/wiki/PDF/A), with tools like [Prince](http://princexml.com/). You can't do the reverse very easily!
 * HTML is already the primary medium for archival of information! Checkout the [waybackmachine](http://www.archive.org/web/web.php)
