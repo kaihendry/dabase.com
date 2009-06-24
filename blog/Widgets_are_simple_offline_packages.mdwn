@@ -27,7 +27,7 @@ Ok, you could 'get by' with a zip file. "Send me that zip file with document,
 style sheet and the images!" Fine. Zips are great, though can browsers handle
 them consistently?
 
-Guys, widgets actually are simply **zip files**. You do not need that optional
+Guys, widgets actually are simply **zip files**. You just need that
 [config.xml](http://dev.w3.org/2006/waf/widgets/#configuration-document).
 Widgets first and foremost are a [packaging
 format](http://dev.w3.org/2006/waf/widgets/). You've probably created hundreds
@@ -147,6 +147,7 @@ into a widget with shell:
 [index.html is the default start file](http://dev.w3.org/2006/waf/widgets/#start-file-and-default-start-files).
 
 	mv $1-h.htm index.html
+	echo '<widget xmlns="http://www.w3.org/ns/widgets"></widget>' > config.xml
 
 The [content must be at the root of the folder](http://dev.w3.org/2006/waf/widgets/#root-of-the-widget).
 
