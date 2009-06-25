@@ -4,15 +4,14 @@ Latest: Leonard Rosenthol has since posted a [followup on the discussion](http:/
 
 [PDFSAGE](http://twitter.com/pdfsage/status/2313664922) wondered what the cons
 are with PDF/A compared to simple HTML for **document archival**. The debate
-generally comes down to want you think a document is. If it's an A4 page for
-printing, you probably want PDF. If a document is an arbitary unit of
+generally comes down to what **you** think a document is. If it's an A4 page
+for printing, you probably want PDF. If a document is an arbitrary unit of
 information, I would suggest HTML.
 
 Lets start why the [PROS of
 PDF/A](https://share.acrobat.com/adc/adc.do?docid=1667083f-6cad-44d8-8c06-1a15f25090f4).
 You'll need Flash to view this PDF preview. Actually to do mostly anything with
 PDF, you need proprietary tools monopolised by [Adobe](http://en.wikipedia.org/wiki/Adobe_Systems).
-
 
 You can't just assume people have a PDF viewer installed. Hence [PDFSAGE shared
 his PDF document assuming I had Flash installed](http://bit.ly/66iJr). Another
@@ -27,11 +26,12 @@ proprietary tool. Great, what a start!
 * PDF isn't part of the Web. It's non-trivial to get PDF content on the Web. People end up converting it into a PNG and that's a terrible loss of information.
 * It's non-trivial to index and parse out information from a PDF
 * It's non-trivial to edit content in a PDF. Indeed, PDFs are often designed to be static (for Archival). Though if information can't be maintained, one can argue it's dead.
-* Only accurate representations of stored content can be produced if you embed the font
-* Signing does not guarantee authenticity.
+* Only accurate representations of stored content can be produced if you embed the font. Bloat!
 * A document is of little use unless it's transcribed into text. Scan a STASI file into a PDF. Great, now what? Storing it as a PNG would be even better as people would at least been able to view it easier.
-* [PDF has a poor accessibilty record](http://www.usability.com.au/resources/pdf.cfm)
+* [PDF has a poor accessibility record](http://www.usability.com.au/resources/pdf.cfm)
 * Non-trivial to diff, track and compare PDF documents
+* An open standard? That you need to [pay ISO](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=51502) 200GBP for?! Are there at least two interoperable implementations of PDF/A?
+* Probably only one **conforming** implementation (Guess who!). Is there a test suite?
 
 # Pros of HTML
 
@@ -45,13 +45,13 @@ proprietary tool. Great, what a start!
 * HTML can include "marginalia" like comments and notes.
 * HTML has several ways of adding [metadata support](http://wiki.whatwg.org/wiki/Generic_Metadata_Mechanisms), though Google search generally does not rely on them for best results
 * HTML _can_ convey critical information. It's done so more effectively that PDF has ever done.
-* Need to package some HTML content? Use a [[widget|blog/Widgets_are_simple_offline_packages]]!
+* Need to package some HTML content? (i.e. self-containment) Use a [[widget|blog/Widgets_are_simple_offline_packages]]!
 * You can generate static snapshots of HTML to formats like [PDF](http://en.wikipedia.org/wiki/PDF/A), with tools like [Prince](http://princexml.com/). You can't do the reverse very easily!
 * HTML is already the primary medium for archival of information! Checkout the [waybackmachine](http://www.archive.org/web/web.php)
-* Worried about data being tampered with? Mandate source control like [git](http://en.wikipedia.org/wiki/Git) where each document can be explicity tracked.
+* Worried about data being tampered with? Mandate source control like [git](http://en.wikipedia.org/wiki/Git) where each document can be explicitly tracked.
 
 # Cons of HTML
 
-* Can't be rendered consistently across devices or mediums -- HTML is not a static A4 print presentation format
+* Can't be rendered consistently across devices or mediums -- HTML is not a (static A4 print) presentation format
 * [[Printing|blog/Web_browser_printing_comparison]] is particularly tiresome, which is good news for trees ;)
 * It's living markup and it ideally needs to be maintained
