@@ -1,12 +1,18 @@
 [[!meta title="PDF/A versus HTML" ]]
 
+Latest: Leonard Rosenthol has since posted a [followup on the discussion](http://acroeng.adobe.com/leonardr/PDFA_vs_HTML.html).
+
 [PDFSAGE](http://twitter.com/pdfsage/status/2313664922) wondered what the cons
-are with PDF/A compared to simple HTML for **document archival**.
+are with PDF/A compared to simple HTML for **document archival**. The debate
+generally comes down to want you think a document is. If it's an A4 page for
+printing, you probably want PDF. If a document is an arbitary unit of
+information, I would suggest HTML.
 
 Lets start why the [PROS of
 PDF/A](https://share.acrobat.com/adc/adc.do?docid=1667083f-6cad-44d8-8c06-1a15f25090f4).
 You'll need Flash to view this PDF preview. Actually to do mostly anything with
 PDF, you need proprietary tools monopolised by [Adobe](http://en.wikipedia.org/wiki/Adobe_Systems).
+
 
 You can't just assume people have a PDF viewer installed. Hence [PDFSAGE shared
 his PDF document assuming I had Flash installed](http://bit.ly/66iJr). Another
