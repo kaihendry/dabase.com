@@ -1,0 +1,97 @@
+In order for a "Working Draft" specification to become a "Candidate
+Recommendation" here at the W3C, it is [likely to need a test
+suite](http://www.w3.org/2005/10/Process-20051014/tr.html#cfr).
+
+Since the [Widget P&C specification](http://dev.w3.org/2006/waf/widgets/) is of
+profound interest to many, we hope you too will be interested in helping
+realise its potential. A Widget test suite would help ensure compliant and
+interoperable Widget runtimes.
+
+The [W3C MWTS began working](http://www.w3.org/2005/MWI/Tests/history) on one
+in it's limited capacity from
+[2008-09](http://www.w3.org/2008/09/02-mwts-minutes.html). It was first hosted
+at a [git repository](http://git.webvm.net/?p=wgtqa), which was exported to a
+[W3C CVS](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/). Then an assumption
+that [Widget APIs](http://www.w3.org/TR/widgets-apis/) would be tested too, led
+to work on a [Widget Test
+Framework](http://www.w3.org/2005/MWI/Tests/blog/2009/05/19/wtf_tour)(WTF).
+However since [P&C](http://dev.w3.org/2006/waf/widgets/) doesn't depend on
+[A&E](http://dev.w3.org/2006/waf/widgets-api/), the WTF is less useful and
+hence we're going back to [basics](http://webkit.org/quality/testwriting.html).
+
+So lets walkthrough how you would go about writing a test. First you want to
+test an assertion. Preferably one that's absolute like a MUST assertion. So lets
+rip out all the [MUST assertions from the Widget P&C
+spec](http://www.w3.org/2005/08/online_xslt/xslt?filter=must&xslfile=http%3A%2F%2Fdev.w3.org%2F2006%2Fwaf%2Fwidgets%2Ftests%2FextractTestAssertions.xsl&xmlfile=http%3A%2F%2Fcgi.w3.org%2Fcgi-bin%2Ftidy-if%3FdocAddr%3Dhttp%253A%252F%252Fwww.w3.org%252FTR%252Fwidgets%252F)
+with the help of an [online XSLT
+service](http://www.w3.org/2005/08/online_xslt/).
+
+Now we need to choose an assertian for a new test. First we quickly check if
+there isn't an [existing test](http://git.webvm.net/?p=wgtqa;a=tree;f=suite)
+already. Lets focus on a test that will have a clear outcome, namely [Invalid
+Zip Archive](http://dev.w3.org/2006/waf/widgets/#invalid-zip-archive).
+
+	To conform to this specification, a Zip archive must contain one or more file entries and must not be an invalid Zip archive.
+
+Easy! I'll make an empty Zip. Hmm, can you with [Zip](http://packages.qa.debian.org/z/zip.html)?
+
+Ok, you could make an empty widget by only including directories! Now that would work with Zip. Lets get to work:
+
+	git clone git://git.webvm.net/wgtqa
+	cd wgtqa/wgt
+	mkdir -p 5.1-invalid-zip-onlydirs/only/dirs/is/an/invalid/widget
+	make
+	unzip -l 5.1-invalid-zip-onlydirs.wgt
+
+Boom, job done! Running `5.1-invalid-zip-onlydirs.wgt` with a widget runtime
+must trigger an **Invalid Zip archive**, otherwise it's not compliant.
+
+Ok, lets `git add 5.1-invalid-zip-onlydirs` and commit and send the patch to
+the [MWTS list](http://lists.w3.org/Archives/Public/public-mwts/). Oh no! You
+can't hold just directories in git source control.
+
+Now we need to work around this, by creating a build script to generate the widget. Ok, lets go to work:
+
+	cd gen
+
+Have a look at the `README`, `config.mk` and `Makefile`. Ok, lets name the test by creating the directory:
+
+	mkdir 5.1-invalid-zip-onlydirs-empty
+	cd 5.1-invalid-zip-onlydirs-empty
+
+Lets write a Makefile to generate the test.
+
+	include ../config.mk
+	all: clean invalid
+	invalid:
+		mkdir -p empty/invalid/widget
+		cd empty; zip -r ../$(NAME).wgt .
+	clean:
+		rm -rf *.wgt empty
+	.PHONY: invalid
+
+Ok, `make` generates a test widget. Inspect by `vim 5.1-invalid-zip-onlydirs-empty.wgt` with:
+	" Treat .wgt files as .zip files
+	au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
+
+In your .vimrc, should confirm the widget just contains folders. Bad widget.
+
+Lets commit the test to the cloned [wgtqa git repository](http://git.webvm.net/?p=wgtqa) and contribute it.
+
+	git add 5.1-invalid-zip-onlydirs-empty/Makefile
+	git status # should show you are staging the new Makefile
+	git commit # Give a good message by try referencing the relevant part of the P&C specifcation
+	git format-patch "HEAD^" # Generate a patch of that last change
+	git send-email --to=public-mwts@w3.org 0001-Invalid-Zip-case.patch # contribute test to the list
+
+_Apologies_ for those of you who aren't familiar with the Unix working set.
+Indeed this can be difficult to follow. Especially since such a "simple test"
+had to be generated.
+
+You could ignore this test framework and just contribute a widget package that
+tests an assertion to the [public-mwts
+list](http://lists.w3.org/Archives/Public/public-mwts/) and we would be very
+grateful! Many tests can be statically stored in source control in the [static
+wgt](http://git.webvm.net/?p=wgtqa;a=tree;f=wgt) directory.
+
+LICENSING?
