@@ -26,7 +26,7 @@ spec](http://www.w3.org/2005/08/online_xslt/xslt?filter=must&xslfile=http%3A%2F%
 with the help of an [online XSLT
 service](http://www.w3.org/2005/08/online_xslt/).
 
-Now we need to choose an assertian for a new test. First we quickly check if
+Now we need to choose an assertion for a new test. First we quickly check if
 there isn't an [existing test](http://git.webvm.net/?p=wgtqa;a=tree;f=suite)
 already. Lets focus on a test that will have a clear outcome, namely [Invalid
 Zip Archive](http://dev.w3.org/2006/waf/widgets/#invalid-zip-archive).
@@ -37,8 +37,8 @@ Easy! I'll make an empty Zip. Hmm, can you with [Zip](http://packages.qa.debian.
 
 Ok, you could make an empty widget by only including directories! Now that would work with Zip. Lets get to work:
 
-	git clone git://git.webvm.net/wgtqa
-	cd wgtqa/wgt
+	git clone git://git.webvm.net/wgtqa # Grab the Widget test sources
+	cd wgtqa/wgt # Static test directory
 	mkdir -p 5.1-invalid-zip-onlydirs/only/dirs/is/an/invalid/widget
 	make
 	unzip -l 5.1-invalid-zip-onlydirs.wgt
@@ -71,6 +71,7 @@ Lets write a Makefile to generate the test.
 	.PHONY: invalid
 
 Ok, `make` generates a test widget. Inspect by `vim 5.1-invalid-zip-onlydirs-empty.wgt` with:
+
 	" Treat .wgt files as .zip files
 	au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
 
@@ -80,18 +81,20 @@ Lets commit the test to the cloned [wgtqa git repository](http://git.webvm.net/?
 
 	git add 5.1-invalid-zip-onlydirs-empty/Makefile
 	git status # should show you are staging the new Makefile
-	git commit # Give a good message by try referencing the relevant part of the P&C specifcation
+	git commit # Give a good message by try referencing the relevant part of the P&C specification
 	git format-patch "HEAD^" # Generate a patch of that last change
 	git send-email --to=public-mwts@w3.org 0001-Invalid-Zip-case.patch # contribute test to the list
 
 _Apologies_ for those of you who aren't familiar with the Unix working set.
 Indeed this can be difficult to follow. Especially since such a "simple test"
-had to be generated.
+had to be generated. Generated tests are the advanced case.
 
 You could ignore this test framework and just contribute a widget package that
 tests an assertion to the [public-mwts
 list](http://lists.w3.org/Archives/Public/public-mwts/) and we would be very
-grateful! Many tests can be statically stored in source control in the [static
-wgt](http://git.webvm.net/?p=wgtqa;a=tree;f=wgt) directory.
+grateful.
 
-LICENSING?
+If your test is accepted, you should see it eventually show up in the [widget
+test suite](http://dev.w3.org/2006/waf/widgets/tests/suite/).
+
+TODO: LICENSING?
