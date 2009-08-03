@@ -4,8 +4,9 @@ So [what](http://www.jil.org/jil-forums/posts/list/42.page) are the differences 
 
 ## [JIL](http://www.jil.org/) -- Joint Innovation Lab
 
-It's unclear exactly when JIL begun, though this commercial joint venture begun
-with:
+It's unclear exactly when JIL begun, though this [commercial joint venture
+under Dutch law](http://www.jil.org/jil-forums/user/agreement.page) was founded
+by:
 
 * [China Mobile](http://en.wikipedia.org/wiki/China_Mobile)
 * [Vodafone](http://en.wikipedia.org/wiki/Vodafone)
@@ -17,14 +18,19 @@ operators](http://en.wikipedia.org/wiki/List_of_mobile_network_operators) from
 each territory.
 
 Can JIL scale to include other operators or members in respective territories?
+It's unclear.
 
-Notice there are no Web browser vendors seemingly involved.
+Notice there are no Web browser vendors involved in the venture.
 
 After looking at JIL, it seems they have adopted most elements of the [W3C
 widget P&C specification](http://dev.w3.org/2006/waf/widgets/) and extended it
 in some (minor) ways. However JIL has not contributed any specification
 material back to W3C
 [discussion](http://lists.w3.org/Archives/Public/public-webapps/).
+
+Collectively they aim to [launch a software applications
+store](http://www.reuters.com/article/technologyNews/idUSTRE54B1O320090512) to
+rival that of the Apple Itunes store.
 
 ## [BONDI](http://bondi.omtp.org) from the Open Mobile Terminal Platform
 
@@ -42,17 +48,15 @@ browser vendors, with a lot of mobile experience involved in BONDI.
 
 Nick Allot on OMTP's BONDI W3C positioning says it best:
 
-	I would like to conclude with a few words on the W3C relationship, and the
-	office view of how this is progressing. From the outset W3C has been the target
-	SDO (Standards Organisation) for the BONDI specs. Considerable time and effort
-	has been expended by both the office and the members on this relationship. To
-	date I think we can congratulate ourselves on two major successes. Firstly, we
-	have successfully contributed to the Widget P&C spec ensuring all the core
-	feature and requirements of BONDI have been adopted in the current
-	specification. Secondly, through the Device API security Workshop which OMTP
-	co-chaired and the efforts with the Web Applications group, the new Device APIs
-	and Policy working group is now set up and scoped precisely to mirror the BONDI
-	work.
+	From the outset W3C has been the target SDO (Standards Organisation) for
+	the BONDI specs. Considerable time and effort has been expended by both the
+	office and the members on this relationship. To date I think we can
+	congratulate ourselves on two major successes. Firstly, we have successfully
+	contributed to the Widget P&C spec ensuring all the core feature and
+	requirements of BONDI have been adopted in the current specification. Secondly,
+	through the Device API security Workshop which OMTP co-chaired and the efforts
+	with the Web Applications group, the new Device APIs and Policy working group
+	is now set up and scoped precisely to mirror the BONDI work.
 
 To date, BONDI **contributes** to the Web standards track whilst JIL **adopts**
-and fragments Web widgets.
+(and fragments) [W3C widgets](http://dev.w3.org/2006/waf/widgets/).
