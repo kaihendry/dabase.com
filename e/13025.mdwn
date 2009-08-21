@@ -1,0 +1,18 @@
+[[!meta title="Converting XML to CSV"]]
+
+<http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml> contains some
+unstructured data that we can simplify in a [Comma-separated
+values](http://en.wikipedia.org/wiki/Comma-separated_values) file.
+
+	curl -s http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml | xmlstarlet sel -t -m '//test' -v '@for' -o ',' -v '@src' -n
+
+So what are we doing? First we rip out all the tests with the Xpath match `-m '//test'`
+
+	curl -s http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml | xmlstarlet sel -t -m '//test' -v '.' -n
+
+Then we snag individiaul values with `-v`. @for selects "foo" for the attribute
+for="foo". If it was '.' it would select the innerText of the test element.
+
+`-o ','` inserts the comma and `-n` simply outputs a new line.
+
+[xmlstarlet](http://xmlstar.sourceforge.net/) is quite ok once you starting using it. [Search code search](http://www.google.com/codesearch?q=xmlstarlet) for more examples.
