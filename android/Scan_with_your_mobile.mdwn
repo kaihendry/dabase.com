@@ -15,9 +15,9 @@ ARGH!
 Unsurprisingly 'Data Matrix' support is 'alpha' quality according to the [ZXing
 library](http://code.google.com/p/zxing/) powering the Barcode application on the UK T-mobile Android G1.
 
-In the small print it says **WAP enabled mobiles only**. Eh? Have I gone back in
-time 10 years? To add insult to injury there is a link to the T&Cs:
-<http://www.mands.mobi/ftg> a frickin' stupid
+In the small print it says **WAP enabled mobiles only**. Eh? Have I gone back
+in time 8 years? To add insult to injury there is a link to the T&Cs:
+<http://www.mands.mobi/ftg> worryingly using a
 <http://en.wikipedia.org/wiki/DotMobi> address!
 
 <http://www.mands.mobi> reveals some suspects to this crime: [Incentivated](http://www.google.co.uk/#hl=en&q=Incentivated's+WAPsite+Publisher)
@@ -26,8 +26,8 @@ time 10 years? To add insult to injury there is a link to the T&Cs:
 	Our new corporate mobile internet site is coming soon. Please check back later
 	Site built using Incentivated's WAPsite Publisher
 
-OMG. How piss poor. :(
+OMG. How piss poor M&S. :(
 
-Retailers if you want an audience for your message, use a short (hopefully meaningful) URL e.g.
-`m&s.co.uk/oj` and markup your content in
+Retailers if you want an audience for your message, use a short (hopefully
+meaningful) URL e.g.  `m&s.co.uk/oj` and markup your content in
 [HTML5](http://www.whatwg.org.com/html5).
