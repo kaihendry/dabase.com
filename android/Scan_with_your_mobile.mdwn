@@ -13,18 +13,14 @@ code</a> and not a <a href="http://en.wikipedia.org/wiki/QR_Code">QR code</a>.
 ARGH!
 
 Unsurprisingly 'Data Matrix' support is 'alpha' quality according to the [ZXing
-library](http://code.google.com/p/zxing/) powering the Barcode application.
-
-So being unable to read the code, I hoped M&S packaging would sensibly give a
-short Web page URL for the same information. Urm, no they don't. Not even an
-email address. It's gets worse, WAP worse.
+library](http://code.google.com/p/zxing/) powering the Barcode application on the UK T-mobile Android G1.
 
 In the small print it say **WAP enabled mobiles only**. Eh? Have I gone back in
 time 10 years? To add insult to injury there is a link to the T&Cs:
 <http://www.mands.mobi/ftg> a frickin' stupid
 <http://en.wikipedia.org/wiki/DotMobi> address!
 
-<http://www.mands.mobi> reveals some suspects to the crime: [Incentivated](http://www.google.co.uk/#hl=en&q=Incentivated's+WAPsite+Publisher)
+<http://www.mands.mobi> reveals some suspects to this crime: [Incentivated](http://www.google.co.uk/#hl=en&q=Incentivated's+WAPsite+Publisher)
 
 	Welcome to Your M&S
 	Our new corporate mobile internet site is coming soon. Please check back later
