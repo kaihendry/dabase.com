@@ -15,6 +15,8 @@ ARGH!
 Unsurprisingly 'Data Matrix' support is 'alpha' quality according to the [ZXing
 library](http://code.google.com/p/zxing/) powering the Barcode application on the UK T-mobile Android G1.
 
+# WAP is CRAP
+
 In the small print it says **WAP enabled mobiles only**. Eh? Have I gone back
 in time 8 years? To add insult to injury there is a link to the T&Cs:
 <http://www.mands.mobi/ftg> worryingly using a
@@ -28,6 +30,16 @@ in time 8 years? To add insult to injury there is a link to the T&Cs:
 
 OMG. How piss poor M&S. :(
 
-Retailers if you want an audience for your message, use a short (hopefully
-meaningful) URL e.g.  `m&s.co.uk/oj` and markup your content in
-[HTML5](http://www.whatwg.org.com/html5).
+# 2d codes suck too
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/5/5d/UPC-A-036000291452.png" alt="barcode" />
+
+Regular [barcodes](http://en.wikipedia.org/wiki/Barcode) are OK in my book,
+because they have a **human readable** 13 digit fall back (036000291452) running along the
+bottom. I remember when 'Checkout dollies' (as we call them in the South West),
+typed in that that number in case the **barcode failed to read**.
+
+Where is the fall back to 2d codes??
+
+Please print a short (hopefully meaningful) URL e.g.  `m&s.co.uk/oj` and markup
+your content in [HTML5](http://www.whatwg.org.com/html5).
