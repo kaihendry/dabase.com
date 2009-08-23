@@ -1,0 +1,36 @@
+<a href="http://www.flickr.com/photos/hendry/3848844048/" title="Scan with your mobile by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3420/3848844048_123e5e9f56.jpg" width="375" height="500" alt="Scan with your mobile" /></a>
+
+Whilst passing through Waterloo station, I usually buy some fresh fruit juice
+from the Marks&Spencers (M&S) store. This time I noticed my bottle had some
+sort of 2d barcode on it.
+
+I spent a few uncomfortable minutes trying and trying again to scan the code
+with the "Barcode Scanner" application on my Android G1. Didn't work. :(
+
+Later I [found out](http://2d-code.co.uk/marks-and-spencer-2d-code) that this a
+<a href="http://en.wikipedia.org/wiki/Data_matrix_%28computer%29">Data Matrix
+code</a> and not a <a href="http://en.wikipedia.org/wiki/QR_Code">QR code</a>.
+ARGH!
+
+I checked and lo and behold, 'Data Matrix' is 'alpha' quality according to the
+[ZXing library](http://code.google.com/p/zxing/) behind the Barcode
+application.
+
+So being unable to read the code, I hoped M&S packaging would sensible give a
+short URL for the same information. Urm, no they don't. Not even an email
+address. It's gets worse, WAP worse.
+
+In the small print it say **WAP enabled mobiles only**. Eh? Have I gone back in
+time 10 years? To add insult to injury there is a link to the T&Cs:
+<http://www.mands.mobi> a frickin' stupid
+<http://en.wikipedia.org/wiki/DotMobi> address!
+
+The WAP site says:
+
+	Welcome to Your M&S
+	Our new corporate mobile internet site is coming soon. Please check back later
+	Site built using Incentivated's WAPsite Publisher
+
+OMG. How piss poor. :(
+
+You know I'd rather have them link to a M&S freshly squeezed Facebook page.
