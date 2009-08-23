@@ -41,5 +41,6 @@ typed in that that number in case the **barcode failed to read**.
 
 Where is the fall back to 2d codes??
 
-Please print a short (hopefully meaningful) URL e.g.  `m&s.co.uk/oj` and markup
-your content in [HTML5](http://www.whatwg.org.com/html5).
+As a 2d-code fallback I suggest clearly printing a short (hopefully meaningful)
+URL e.g.  `m&s.co.uk/oj` (12 characters) and markup your content in
+[HTML5](http://www.whatwg.org.com/html5).
