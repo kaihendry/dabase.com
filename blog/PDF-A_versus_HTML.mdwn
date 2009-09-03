@@ -25,7 +25,8 @@ proprietary tool. Great, what a start!
 * Since the viewer and content are much larger than HTML counterparts, PDF/A demands a faster internet connection. Have a slow connection? You're out of luck!
 * PDF isn't part of the Web. It's non-trivial to get PDF content on the Web. People end up converting it into a PNG and that's a terrible loss of information.
 * It's non-trivial to index and parse out information from a PDF
-* It's non-trivial to edit content in a PDF. Indeed, PDFs are often designed to be static (for Archival). Though if information can't be maintained, one can argue it's dead.
+* "Protected PDFs" forbid commons computing paradigms of <a href="http://twitter.com/bengoldacre/status/3733462935">copying&pasting</a>
+* It's non-trivial to edit content in a PDF. Indeed, PDFs are often designed to be static for archival and reproducible results. Though if information can't be maintained, one can argue it's dead.
 * Only accurate representations of stored content can be produced if you embed the font. Bloat!
 * A document is of little use unless it's transcribed into text. Scan a STASI file into a PDF. Great, now what? Storing it as a PNG would be even better as people would at least been able to view it easier.
 * [PDF has a poor accessibility record](http://www.usability.com.au/resources/pdf.cfm)
@@ -36,9 +37,9 @@ proprietary tool. Great, what a start!
 # Pros of HTML
 
 * You can read HTML in the simplest of text editors
-* [An algorithm for parsing HTML is defined](http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#parsing)
+* [An algorithm for parsing HTML is openly defined](http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#parsing)
 * You can "sign" an HTML file by using [XML digital signatures](http://www.w3.org/TR/xmldsig-core/). Widgets in fact use a subset called [Widgets 1.0: Digital Signatures](http://www.w3.org/TR/widgets-digsig/).
-* Scalable. Want text on your big or small screen? Sure thing.
+* Scalable. Want text on big or small? Sure thing.
 * Easy to edit and maintain. Anyone can edit HTML with a plethora of tools and support.
 * Simple to index, find and use the information marked up within an HTML file. Same is not true of a PDF.
 * HTML is space efficient. PDF isn't.
@@ -48,10 +49,10 @@ proprietary tool. Great, what a start!
 * Need to package some HTML content? (i.e. self-containment) Use a [[widget|blog/Widgets_are_simple_offline_packages]]!
 * You can generate static snapshots of HTML to formats like [PDF](http://en.wikipedia.org/wiki/PDF/A), with tools like [Prince](http://princexml.com/). You can't do the reverse very easily!
 * HTML is already the primary medium for archival of information! Checkout the [waybackmachine](http://www.archive.org/web/web.php)
-* Worried about data being tampered with? Mandate source control like [git](http://en.wikipedia.org/wiki/Git) where each document can be explicitly tracked.
+* Worried about data being tampered with? Mandate source control like [git](http://en.wikipedia.org/wiki/Git) where each document can be explicitly tracked since HTML can be treated as plain text for this purpose.
 
 # Cons of HTML
 
-* Can't be rendered consistently across devices or mediums -- HTML is not a (static A4 print) presentation format
-* [[Printing|blog/Web_browser_printing_comparison]] is particularly tiresome, which is good news for trees ;)
-* It's living markup and it ideally needs to be maintained
+* Can't be rendered consistently across devices or mediums -- HTML is not a (static A4 print) presentation format, it's a publishing format
+* [[Printing|blog/Web_browser_printing_comparison]] is particularly tiresome, which is good news for trees
+* HTML is living markup and it ideally needs to be maintained
