@@ -25,7 +25,7 @@ proprietary tool. Great, what a start!
 * Since the viewer and content are much larger than HTML counterparts, PDF/A demands a faster internet connection. Have a slow connection? You're out of luck!
 * PDF isn't part of the Web. It's non-trivial to get PDF content on the Web. People end up converting it into a PNG and that's a terrible loss of information.
 * It's non-trivial to index and parse out information from a PDF
-* "Protected PDFs" forbid commons computing paradigms of <a href="http://twitter.com/bengoldacre/status/3733462935">copying&pasting</a>
+* "Protected PDFs" break common computing paradigms of <a href="http://twitter.com/bengoldacre/status/3733462935">copying&pasting</a>
 * It's non-trivial to edit content in a PDF. Indeed, PDFs are often designed to be static for archival and reproducible results. Though if information can't be maintained, one can argue it's dead.
 * Only accurate representations of stored content can be produced if you embed the font. Bloat!
 * A document is of little use unless it's transcribed into text. Scan a STASI file into a PDF. Great, now what? Storing it as a PNG would be even better as people would at least been able to view it easier.
