@@ -1,0 +1,3 @@
+[[!meta title="Adding versions to Bugzilla"]]
+
+<http://your.bugzilla.instance/editversions.cgi?product=YOURPRODUCT>
