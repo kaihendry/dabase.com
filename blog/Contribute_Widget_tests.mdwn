@@ -50,5 +50,14 @@ which will have entries like:
 
 What is **ta-JXLFgompun** again? You can check it by either:
 
-* Finding the string in [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
-* Or by appending it to the Widget packaging specification like so <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-dxzVDWpaWg>
+* Finding the string `ta-JXLFgompun` in [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
+* Or by appending it to the Widget packaging specification like so <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-JXLFgompun>
+
+## How do I see if a certain test assertion has an existing test?
+
+	hendry@x61 tests$ find . -name 'test-suite*.xml' | xargs grep JXLFgompun | grep src
+	./test-cases/test-suite-marcos.xml:<test for="ta-JXLFgompun" src="test-suite/ta-JXLFgompun/000/test.wgt">
+
+Here we can see marcos has a test for
+<http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-JXLFgompun>. Only once
+reviewed and accepted the test is place in `test-suite.xml`.
