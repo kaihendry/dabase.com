@@ -8,7 +8,7 @@ realise its potential. A [Widget test
 suite](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/) would help
 ensure compliant and interoperable Widget runtimes(WRTs).
 
-# Grab the sources & build some tests
+# Grab the sources & build some existing [test cases](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/test-cases/)
 
 	export CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public
 	cvs login
@@ -26,56 +26,11 @@ ensure compliant and interoperable Widget runtimes(WRTs).
 		cd $BASE
 	done
 
-# Creating a widget test case walkthrough
-
-So lets walkthrough how you would go about writing a test. First you want to
-test an assertion. Preferably one that's absolute like a MUST assertion. So
-lets take an [Extracted Test Assertion](http://dev.w3.org/2006/waf/widgets/tests/).
-
-First we quickly check if there isn't an [existing
-test](http://git.webvm.net/?p=wgtqa;a=tree;f=suite) already. Lets focus on a
-test that will have a clear outcome, namely [Invalid Zip
-Archive](http://dev.w3.org/2006/waf/widgets/#invalid-zip-archive).
-
-	To conform to this specification, a Zip archive must contain one or more file entries and must not be an invalid Zip archive.
-
-Easy! I'll make an empty Zip. Hmm, can you with [Zip](http://packages.qa.debian.org/z/zip.html)?
-
-Ok, you could make an empty widget by only including directories!
-
-	$ mkdir -p invalid-zip-onlydirs/only/dirs/is/an/invalid/widget
-	$ zip -r invalid-zip-onlydirs.wgt invalid-zip-onlydirs/
-	updating: invalid-zip-onlydirs/ (stored 0%)
-	  adding: invalid-zip-onlydirs/only/ (stored 0%)
-	  adding: invalid-zip-onlydirs/only/dirs/ (stored 0%)
-	  adding: invalid-zip-onlydirs/only/dirs/is/ (stored 0%)
-	  adding: invalid-zip-onlydirs/only/dirs/is/an/ (stored 0%)
-	  adding: invalid-zip-onlydirs/only/dirs/is/an/invalid/ (stored 0%)
-	  adding: invalid-zip-onlydirs/only/dirs/is/an/invalid/widget/ (stored 0%)
-
-Boom, job done! Running `invalid-zip-onlydirs.wgt` with a widget runtime
-must trigger an **Invalid Zip archive**, otherwise it's not compliant.
-
 # Templates and guides
 
 * [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
-* [Basic test guide primer](http://webkit.org/quality/testwriting.html)
+* [Another basic test guide primer](http://webkit.org/quality/testwriting.html)
 
-Tip for [vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) users:
+# Tip for [vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) users:
 
 	au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
-
-# Open licensing of W3C contributed tests
-
-Contributors that aren't members of any W3C working groups simply need to [fill
-in a test grant form](http://www.w3.org/2002/09/wbs/1/testgrants2-200409/). The
-details of the patent-free royalty-free nature of the agreement can be found in
-the [W3C policy for contribution of Test
-Cases](http://www.w3.org/2004/10/27-testcases)
-
-Once your widget is ready, please send it (a URL to the widget prerably) to the
-[public-mwts@w3.org mailing
-list](http://lists.w3.org/Archives/Public/public-mwts) for review.
-
-If your test is accepted, you should see it immortalised in the [W3C widget
-test suite](http://dev.w3.org/2006/waf/widgets/tests/).
