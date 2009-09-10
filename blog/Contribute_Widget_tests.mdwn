@@ -1,14 +1,32 @@
 In order for a "Working Draft" specification to become a "Candidate
-Recommendation" here at the W3C, it is [likely to need a test
+Recommendation" at the W3C, it is [likely to need a test
 suite](http://www.w3.org/2005/10/Process-20051014/tr.html#cfr).
 
 Since the [Widget P&C specification](http://dev.w3.org/2006/waf/widgets/) is of
 profound interest to many, we hope you too will be interested in helping
 realise its potential. A [Widget test
-suite](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/suite/) would help
+suite](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/) would help
 ensure compliant and interoperable Widget runtimes(WRTs).
 
-# Find an assertion
+# Grab the sources & build some tests
+
+	export CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public
+	cvs login
+	cvs checkout 2006/waf/widgets
+	cd 2006/waf/widgets/tests/test-cases/
+
+	BASE=$(pwd)
+	for test in $(find . -type d -mindepth 2 -maxdepth 2 | grep -v CVS)
+	do
+		test=$(echo $test | sed 's!./!!')
+		echo $test
+		ZIP=$(echo $test | tr / -).wgt
+		cd $test
+		find . -name "CVS" -prune -o -print | zip $BASE/$ZIP -@
+		cd $BASE
+	done
+
+# Creating a widget test case walkthrough
 
 So lets walkthrough how you would go about writing a test. First you want to
 test an assertion. Preferably one that's absolute like a MUST assertion. So
@@ -40,8 +58,12 @@ must trigger an **Invalid Zip archive**, otherwise it's not compliant.
 
 # Templates and guides
 
+* [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
 * [Basic test guide primer](http://webkit.org/quality/testwriting.html)
-* [Templates](http://git.webvm.net/?p=wgtqa;a=tree;f=misc;)
+
+Tip for [vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) users:
+
+	au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
 
 # Open licensing of W3C contributed tests
 
@@ -56,4 +78,4 @@ Once your widget is ready, please send it (a URL to the widget prerably) to the
 list](http://lists.w3.org/Archives/Public/public-mwts) for review.
 
 If your test is accepted, you should see it immortalised in the [W3C widget
-test suite](http://dev.w3.org/2006/waf/widgets/tests/suite/).
+test suite](http://dev.w3.org/2006/waf/widgets/tests/).
