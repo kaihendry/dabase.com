@@ -45,7 +45,7 @@ up" with a
 which will have entries like:
 
 	<test for="ta-JXLFgompun" src="test-suite/ta-JXLFgompun/000/test.wgt">
-	Test baseline support for Zip spec. To pass, the user agent must display index.html as the start file. 
+	Test baseline support for Zip spec. To pass, the user agent must display index.html as the start file.
 	</test>
 
 What is **ta-JXLFgompun** again? You can check it by either:
@@ -58,6 +58,6 @@ What is **ta-JXLFgompun** again? You can check it by either:
 	hendry@x61 tests$ find . -name 'test-suite*.xml' | xargs grep JXLFgompun | grep src
 	./test-cases/test-suite-marcos.xml:<test for="ta-JXLFgompun" src="test-suite/ta-JXLFgompun/000/test.wgt">
 
-Here we can see marcos has a test for
+Here we can see [Marcos](http://datadriven.com.au/) has a test for
 <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-JXLFgompun>. Only once
-reviewed and accepted the test is place in `test-suite.xml`.
+reviewed and accepted the test will have an entry in `test-suite.xml`.
