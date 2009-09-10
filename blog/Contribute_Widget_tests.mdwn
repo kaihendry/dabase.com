@@ -34,3 +34,21 @@ ensure compliant and interoperable Widget runtimes(WRTs).
 # Tip for [vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) users:
 
 	au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
+
+# How the tests for the _test assertions_ are tracked
+
+The [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/) has some Javascript which extracts the test assertions from <http://dev.w3.org/cvsweb/~checkout~/2006/waf/widgets/Overview_TSE.html?content-type=application/xml;%20charset=utf-8>.
+
+Every testable assertion (TA) has a unique id, so ultimately it gets "mashed
+up" with a
+[test-suite.xml](http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml),
+which will have entries like:
+
+	<test for="ta-JXLFgompun" src="test-suite/ta-JXLFgompun/000/test.wgt">
+	Test baseline support for Zip spec. To pass, the user agent must display index.html as the start file. 
+	</test>
+
+What is **ta-JXLFgompun** again? You can check it by either:
+
+* Finding the string in [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
+* Or by appending it to the Widget packaging specification like so <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-dxzVDWpaWg>
