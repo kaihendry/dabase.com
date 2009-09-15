@@ -2,11 +2,12 @@ In order for a "Working Draft" specification to become a "Candidate
 Recommendation" at the W3C, it is [likely to need a test
 suite](http://www.w3.org/2005/10/Process-20051014/tr.html#cfr).
 
-Since the [Widget P&C specification](http://dev.w3.org/2006/waf/widgets/) is of
+Since the [Widget P&C
+specification](http://dev.w3.org/2006/waf/widgets/Overview_TSE.html) is of
 profound interest to many, we hope you too will be interested in helping
 realise its potential. A [Widget test
-suite](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/) would help
-ensure compliant and interoperable Widget runtimes(WRTs).
+suite](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/) would help ensure
+compliant and interoperable Widget runtimes(WRTs).
 
 # Grab the sources & build some existing [test cases](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/test-cases/)
 
@@ -26,10 +27,10 @@ ensure compliant and interoperable Widget runtimes(WRTs).
 		cd $BASE
 	done
 
-# Templates and guides
+# Bookmark these docs
 
+* <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html>
 * [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
-* [Another basic test guide primer](http://webkit.org/quality/testwriting.html)
 
 # Tip for [vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) users:
 
@@ -40,24 +41,26 @@ ensure compliant and interoperable Widget runtimes(WRTs).
 The [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/) has some Javascript which extracts the test assertions from <http://dev.w3.org/cvsweb/~checkout~/2006/waf/widgets/Overview_TSE.html?content-type=application/xml;%20charset=utf-8>.
 
 Every testable assertion (TA) has a unique id, so ultimately it gets "mashed
-up" with a
-[test-suite.xml](http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml),
+up" with an [example
+test-suite.xml](http://dev.w3.org/2006/waf/widgets/tests/test-cases/test-suite-marcos.xml),
 which will have entries like:
 
-	<test for="ta-JXLFgompun" src="test-suite/ta-JXLFgompun/000/test.wgt">
-	Test baseline support for Zip spec. To pass, the user agent must display index.html as the start file.
+	<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/000/test.wgt">
+	Test to make sure that the the UA only checks the root of the widget for config files, and not in an arbritrary folder.
+	To pass, the user agent must result treat this widget as an invalid widget (config file is not at the root).
 	</test>
 
-What is **ta-JXLFgompun** again? You can check it by either:
+What is **ta-dxzVDWpaWg** again? You can check the **test assertion** by either:
 
-* Finding the string `ta-JXLFgompun` in [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
-* Or by appending it to the Widget packaging specification like so <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-JXLFgompun>
+* Finding the string `ta-dxzVDWpaWg` in [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
+* Or by appending it to the Widget packaging specification like so <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-dxzVDWpaWg>
 
 ## How do I see if a certain test assertion has an existing test?
 
-	hendry@x61 tests$ find . -name 'test-suite*.xml' | xargs grep JXLFgompun | grep src
-	./test-cases/test-suite-marcos.xml:<test for="ta-JXLFgompun" src="test-suite/ta-JXLFgompun/000/test.wgt">
+hendry@x61 widgets$ find . -name 'test-suite*.xml' | xargs grep dxzVDWpaWg | grep src
+./tests/test-cases/test-suite-marcos.xml:<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/000/test.wgt">
+./tests/test-cases/test-suite-marcos.xml:<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/001/test.wgt">
+./tests/test-suite-unstable.xml:<test for="ta-dxzVDWpaWg" src="http://wgt.webvm.net/ta-dxzVDWpaWg.wgt"></test>
 
-Here we can see [Marcos](http://datadriven.com.au/) has a test for
-<http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-JXLFgompun>. Only once
-reviewed and accepted the test will have an entry in `test-suite.xml`.
+Here we can see [Marcos](http://datadriven.com.au/) has two tests for
+<http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-dxzVDWpaWg>. Also it shows another `test-suite-unstable.xml` containing a test. Once these tests are reviewed, they go into a final <http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml> which the [test plan](http://dev.w3.org/2006/waf/widgets/tests/) will reference!
