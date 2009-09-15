@@ -31,6 +31,7 @@ compliant and interoperable Widget runtimes(WRTs).
 
 * <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html>
 * [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
+* <http://www.w3.org/2008/webapps/wiki/TestWorkshop2009>
 
 # Tip for [vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) users:
 
