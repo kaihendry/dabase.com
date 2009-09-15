@@ -57,10 +57,10 @@ What is **ta-dxzVDWpaWg** again? You can check the **test assertion** by either:
 
 ## How do I see if a certain test assertion has an existing test?
 
-hendry@x61 widgets$ find . -name 'test-suite*.xml' | xargs grep dxzVDWpaWg | grep src
-./tests/test-cases/test-suite-marcos.xml:<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/000/test.wgt">
-./tests/test-cases/test-suite-marcos.xml:<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/001/test.wgt">
-./tests/test-suite-unstable.xml:<test for="ta-dxzVDWpaWg" src="http://wgt.webvm.net/ta-dxzVDWpaWg.wgt"></test>
+	hendry@x61 widgets$ find . -name 'test-suite*.xml' | xargs grep dxzVDWpaWg | grep src
+	./tests/test-cases/test-suite-marcos.xml:<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/000/test.wgt">
+	./tests/test-cases/test-suite-marcos.xml:<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/001/test.wgt">
+	./tests/test-suite-unstable.xml:<test for="ta-dxzVDWpaWg" src="http://wgt.webvm.net/ta-dxzVDWpaWg.wgt"></test>
 
 Here we can see [Marcos](http://datadriven.com.au/) has two tests for
 <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-dxzVDWpaWg>. Also it shows another `test-suite-unstable.xml` containing a test. Once these tests are reviewed, they go into a final <http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml> which the [test plan](http://dev.w3.org/2006/waf/widgets/tests/) will reference!
