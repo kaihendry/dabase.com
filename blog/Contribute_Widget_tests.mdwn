@@ -9,28 +9,17 @@ realise its potential. A [Widget test
 suite](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/) would help ensure
 compliant and interoperable Widget runtimes(WRTs).
 
-# Grab the sources & build some existing [test cases](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/test-cases/)
+# Grab the W3C widget test sources & build some existing [test cases](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/test-cases/)
 
 	export CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public
 	cvs login
 	cvs checkout 2006/waf/widgets
 	cd 2006/waf/widgets/tests/test-cases/
 
-	BASE=$(pwd)
-	for test in $(find . -type d -mindepth 2 -maxdepth 2 | grep -v CVS)
-	do
-		test=$(echo $test | sed 's!./!!')
-		echo $test
-		ZIP=$(echo $test | tr / -).wgt
-		cd $test
-		find . -name "CVS" -prune -o -print | zip $BASE/$ZIP -@
-		cd $BASE
-	done
-
 # Bookmark these docs
 
-* <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html>
-* [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
+* [Widget P&C](http://dev.w3.org/2006/waf/widgets/Overview_TSE.html)
+* [Widget P&C test plan](http://dev.w3.org/2006/waf/widgets/tests/)
 * <http://www.w3.org/2008/webapps/wiki/TestWorkshop2009>
 
 # Tip for [vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) users:
@@ -43,7 +32,7 @@ The [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/
 
 Every testable assertion (TA) has a unique id, so ultimately it gets "mashed
 up" with an [example
-test-suite.xml](http://dev.w3.org/2006/waf/widgets/tests/test-cases/test-suite-marcos.xml),
+test-suite.xml](http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml),
 which will have entries like:
 
 	<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/000/test.wgt">
@@ -55,13 +44,15 @@ What is **ta-dxzVDWpaWg** again? You can check the **test assertion** by either:
 
 * Finding the string `ta-dxzVDWpaWg` in [Widgets 1.0: Test Suite for Packaging and Configuration](http://dev.w3.org/2006/waf/widgets/tests/)
 * Or by appending it to the Widget packaging specification like so <http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-dxzVDWpaWg>
+* Or `wget -q http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml -O /dev/stdout | xmlstarlet sel -t -c "//test[@for='ta-dxzVDWpaWg']" -v '@src'`
 
-## How do I see if a certain test assertion has an existing test?
+# How are the widgets generated from test sources?
 
-	hendry@x61 widgets$ find . -name 'test-suite*.xml' | xargs grep dxzVDWpaWg | grep src
-	./tests/test-cases/test-suite-marcos.xml:<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/000/test.wgt">
-	./tests/test-cases/test-suite-marcos.xml:<test for="ta-dxzVDWpaWg" src="test-suite/ta-dxzVDWpaWg/001/test.wgt">
-	./tests/test-suite-unstable.xml:<test for="ta-dxzVDWpaWg" src="http://wgt.webvm.net/ta-dxzVDWpaWg.wgt"></test>
+1. <http://dev.w3.org/2006/waf/widgets/tests/test-cases/> or the [CVS interface](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/test-cases/)
+2. <http://dev.w3.org/2006/waf/widgets/tests/test-cases/make-widgets.sh>
+3. <http://dev.w3.org/2006/waf/widgets/tests/test-suite/> or the [CVS interface](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/test-suite/)
+4. And some W3C CVS blood, sweat & tears
 
-Here we can see [Marcos](http://datadriven.com.au/) has two tests for
-<http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#ta-dxzVDWpaWg>. Also it shows another `test-suite-unstable.xml` containing a test. Once these tests are reviewed, they go into a final <http://dev.w3.org/2006/waf/widgets/tests/test-suite.xml> which the [test plan](http://dev.w3.org/2006/waf/widgets/tests/) will reference!
+# WTF !! I'm a implementor and every Widget test FAILS!
+
+Does your WRT accept widgets without the **optional** widget [id attribute](http://dev.w3.org/2006/waf/widgets/Overview_TSE.html#the-widget-element)?
