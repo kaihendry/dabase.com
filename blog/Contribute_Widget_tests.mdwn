@@ -9,7 +9,7 @@ realise its potential. A [Widget test
 suite](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/) would help ensure
 compliant and interoperable Widget runtimes(WRTs).
 
-# Grab the W3C widget test sources & build some existing [test cases](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/test-cases/)
+# Grab the W3C widget test sources with [CVS](http://en.wikipedia.org/wiki/Concurrent_Versions_System)
 
 	export CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public
 	cvs login
@@ -20,7 +20,6 @@ compliant and interoperable Widget runtimes(WRTs).
 
 * [Widget P&C](http://dev.w3.org/2006/waf/widgets/Overview_TSE.html)
 * [Widget P&C test plan](http://dev.w3.org/2006/waf/widgets/tests/)
-* <http://www.w3.org/2008/webapps/wiki/TestWorkshop2009>
 
 # Tip for [vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) users:
 
@@ -48,7 +47,7 @@ What is **ta-dxzVDWpaWg** again? You can check the **test assertion** by either:
 
 [xmlstarlet](http://xmlstar.sourceforge.net/) should be [packaged](http://packages.qa.debian.org/x/xmlstarlet.html) in your Linux distribution. Here is another [tip](http://dabase.com/e/13025/).
 
-# How are the widgets generated from test sources?
+# How are these widgets generated from test sources?
 
 1. <http://dev.w3.org/2006/waf/widgets/tests/test-cases/> or the [CVS interface](http://dev.w3.org/cvsweb/2006/waf/widgets/tests/test-cases/)
 2. <http://dev.w3.org/2006/waf/widgets/tests/test-cases/make-widgets.sh>
