@@ -1,8 +1,9 @@
 # Why would you want to sign a widget?
 
-For the similar reasons why you would to sign a document or an email if you're
+For the same reasons why you would sign a document or an email if you're
 [GNUPG](http://en.wikipedia.org/wiki/Gnupg) savvy. To say it comes from **you**
-and as an added bonus that the files have their integrity.
+and as an added bonus to show that the files (contents) have their integrity
+intact (i.e. they have not been tampered with!).
 
 The [[bigger_idea|blog/JIL_versus_BONDI_on_Security]] with signatures is that
 they will be used to control trust in the use of [device
@@ -134,7 +135,7 @@ What new element <http://www.w3.org/TR/widgets-digsig> introduces to XML
 digital signature, is the [SignatureProperty
 identifier](http://www.w3.org/TR/widgets-digsig/#identifier-signature-property)
 which lies typically inside a `<Object Id="prop">` element. This has to be
-unique and in my scripts I simply call [uuid generator](http://en.wikipedia.org/wiki/Uuid).
+unique and in my scripts I simply call a [uuid generator](http://en.wikipedia.org/wiki/Uuid).
 
 So that's basically it. A widget can contain a single author signature and many
 several distributor signatures. The signatures are generated the same way with
