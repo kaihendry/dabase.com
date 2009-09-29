@@ -1,8 +1,8 @@
 # Why would you want to sign a widget?
 
 For the similar reasons why you would to sign a document or an email if you're
-GNUPG savvy. To say it comes from **you** and as an added bonus than the files
-have their integrity.
+[GNUPG](http://en.wikipedia.org/wiki/Gnupg) savvy. To say it comes from **you**
+and as an added bonus that the files have their integrity.
 
 # How does it work
 
@@ -17,7 +17,7 @@ page](http://linux.die.net/man/1/jarsigner-java-1.6.0-openjdk). Ultimately
 we're doing everything that `jarsigner` is doing, but using very complex and
 fragile W3C XML suite of technologies. Whoops.
 
-# Getting started with [xmlsec1](http://www.aleksey.com/xmlsec/)
+# Signing a widget with [xmlsec1](http://www.aleksey.com/xmlsec/)
 
 	hendry@x61 ~$ cd /tmp
 	hendry@x61 tmp$ git clone git://git.webvm.net/wgtqa
@@ -51,3 +51,89 @@ fragile W3C XML suite of technologies. Whoops.
 	  adding: config.xml (deflated 15%)
 	Signed /tmp/wgtqa/xmldsig/helloworld.wgt
 	hendry@x61 xmldsig
+
+For purposes of a demonstration I've signed the widget twice, once as an
+author `author-signature.xml` and once as a distributor `signature1.xml`, using
+the same
+[rsakey.p12](http://git.webvm.net/?p=wgtqa;a=blob;f=xmldsig/rsakey.p12).
+
+Typically you would only sign it once in the capacity of just an author or just
+a distributor, with your own key. To generate your own self-signed key look at the
+**example.p12** target in the
+[Makefile](http://git.webvm.net/?p=wgtqa;a=blob;f=xmldsig/Makefile).
+
+If you prefer GUIs you should instead look at the [LiMo supported BONDI SDK](http://bondisdk.limofoundation.org/) <http://bondisdk.limofoundation.org/docs/Signing_a_Web_Widget/>.
+
+# Verifying or validating a widget
+
+Since we are using test self-signed keys and not chaining to a root, we are
+strictly speaking not verifying a widget, we are validating its signatures
+instead.
+
+If you run `make validate` you'll should see something like:
+
+	./validate-widget-signature.sh --pkcs12 /tmp/wgtqa/xmldsig/rsakey.p12 --pwd secret helloworld.wgt
+	Archive:  helloworld.wgt
+	  inflating: /tmp/.13485/index.html
+	  inflating: /tmp/.13485/author-signature.xml
+	  inflating: /tmp/.13485/signature1.xml
+	  inflating: /tmp/.13485/config.xml
+	./author-signature.xml
+	Signature method RSA
+	if xmlsec1 verify --pkcs12 /tmp/wgtqa/xmldsig/rsakey.p12 --pwd secret ./author-signature.xml
+	func=xmlSecOpenSSLX509StoreVerify:file=x509vfy.c:line=360:obj=x509-store:subj=X509_verify_cert:error=4:crypto library function failed:subj=/C=GB/ST=Surrey/L=Guildford/CN=test.webvm.net;err=18;msg=self signed certificate
+	func=xmlSecOpenSSLX509StoreVerify:file=x509vfy.c:line=408:obj=x509-store:subj=unknown:error=71:certificate verification failed:err=18;msg=self signed certificate
+	OK
+	SignedInfo References (ok/all): 3/3
+	Manifests References (ok/all): 0/0
+	VALID SIGNATURE: ./author-signature.xml
+	dsp:Identifier
+	9f53f8e6-acf0-11de-aa47-0016d3ccf4f1
+
+	./signature1.xml
+	Signature method RSA
+	if xmlsec1 verify --pkcs12 /tmp/wgtqa/xmldsig/rsakey.p12 --pwd secret ./signature1.xml
+	func=xmlSecOpenSSLX509StoreVerify:file=x509vfy.c:line=360:obj=x509-store:subj=X509_verify_cert:error=4:crypto library function failed:subj=/C=GB/ST=Surrey/L=Guildford/CN=test.webvm.net;err=18;msg=self signed certificate
+	func=xmlSecOpenSSLX509StoreVerify:file=x509vfy.c:line=408:obj=x509-store:subj=unknown:error=71:certificate verification failed:err=18;msg=self signed certificate
+	OK
+	SignedInfo References (ok/all): 4/4
+	Manifests References (ok/all): 0/0
+	VALID SIGNATURE: ./signature1.xml
+	dsp:Identifier
+	a129383e-acf0-11de-b067-0016d3ccf4f1
+
+<http://git.webvm.net/?p=wgtqa;a=blob;f=xmldsig/validate-widget-signature.sh>
+validates the widget in one of two ways. It can try validate the
+**SignatureValue** using a key you provide, e.g. `--pkcs12
+/tmp/wgtqa/xmldsig/rsakey.p12` in this case.
+
+Or it can try extract the public key from the X509Certificate which can get
+embedded within the signature.
+
+So in practice a widget verification would be:
+
+1. Extracting out the public key from the Keyinfo-X509Data-X509Certificate part
+2. Checking the hashed widget contents against each referenced resources (SignedInfo)
+3. Canonicalising that SignedInfo and then using that public key to check the SignatureValue
+4. Then **verifying** the key is correctly chained up to a root certificate you trust
+
+In fact I have a **validation** Web service that does the first 3 steps at <http://test.webvm.net/>
+
+# Wait, there's more
+
+What new element <http://www.w3.org/TR/widgets-digsig> introduces to XML
+digital signature, is the [SignatureProperty
+identifier](http://www.w3.org/TR/widgets-digsig/#identifier-signature-property)
+which lies typically inside a `<Object Id="prop">` element. This has to be
+unique and in my scripts I simply call [uuid generator](http://en.wikipedia.org/wiki/Uuid).
+
+So that's basically it. A widget can contain an author signature and many several distributor signatures. The signatures are generated the same way with a:
+
+1. SignedInfo section which is the manifest, filenames and hashes
+2. KeyInfo - any details of the key
+3. Object bit, for identifying the signature itself (btw this gets hashed too in the SignedInfo!)
+
+I've modified a [RelaxNG schema for Widget digital
+signatures](http://git.webvm.net/?p=wgtqa;a=blob;f=xmldsig/xmldsig.rnc), so you
+can check the schema is correct.
+
