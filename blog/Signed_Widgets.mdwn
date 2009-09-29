@@ -1,0 +1,53 @@
+# Why would you want to sign a widget?
+
+For the similar reasons why you would to sign a document or an email if you're
+GNUPG savvy. To say it comes from **you** and as an added bonus than the files
+have their integrity.
+
+# How does it work
+
+1. You have a Widget package with a list of files
+2. Each file gets hashed, e.g. `md5sum *`
+3. Those filenames and hashes are put in a manifest and again all hashed, then signed with a private key
+
+For some godforsaken reason we are using [XML
+Signatures](http://www.w3.org/TR/widgets-digsig), however I suggest you read
+Java's [jarsigner man
+page](http://linux.die.net/man/1/jarsigner-java-1.6.0-openjdk). Ultimately
+we're doing everything that `jarsigner` is doing, but using very complex and
+fragile W3C XML suite of technologies. Whoops.
+
+# Getting started with [xmlsec1](http://www.aleksey.com/xmlsec/)
+
+	hendry@x61 ~$ cd /tmp
+	hendry@x61 tmp$ git clone git://git.webvm.net/wgtqa
+	Initialized empty Git repository in /tmp/wgtqa/.git/
+	remote: Counting objects: 2629, done.
+	remote: Compressing objects: 100% (2056/2056), done.
+	remote: Total 2629 (delta 1539), reused 586 (delta 235)
+	Receiving objects: 100% (2629/2629), 694.33 KiB | 220 KiB/s, done.
+	Resolving deltas: 100% (1539/1539), done.
+	hendry@x61 tmp$ cd wgtqa/xmldsig/
+	hendry@x61 xmldsig$ ls
+	dsakey.p12  keys      rsakey.p12           sign-widget.sh       validate-widget-signature.sh
+	helloworld  Makefile  signing-template.sh  strip-signatures.sh  xmldsig.rnc
+	hendry@x61 xmldsig$ make sign
+	rm -f helloworld.wgt
+	rm -f example*
+	zip -jr helloworld.wgt helloworld/
+	  adding: index.html (deflated 12%)
+	  adding: config.xml (deflated 15%)
+	./sign-widget.sh --pkcs12 /tmp/wgtqa/xmldsig/rsakey.p12 --pwd secret helloworld.wgt
+	Key type rsa
+	Archive:  helloworld.wgt
+	  inflating: /tmp/.6129/helloworld/index.html
+	  inflating: /tmp/.6129/helloworld/config.xml
+	Do you wish to add author-signature.xml?y
+	Do you wish to add signature1.xml?y
+	Do you wish to add signature2.xml?n
+	  adding: index.html (deflated 12%)
+	  adding: author-signature.xml (deflated 50%)
+	  adding: signature1.xml (deflated 52%)
+	  adding: config.xml (deflated 15%)
+	Signed /tmp/wgtqa/xmldsig/helloworld.wgt
+	hendry@x61 xmldsig
