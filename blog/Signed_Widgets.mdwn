@@ -4,6 +4,15 @@ For the similar reasons why you would to sign a document or an email if you're
 [GNUPG](http://en.wikipedia.org/wiki/Gnupg) savvy. To say it comes from **you**
 and as an added bonus that the files have their integrity.
 
+The [[bigger_idea|blog/JIL_versus_BONDI_on_Security]] with signatures is that
+they will be used to control trust in the use of [device
+APIs](http://www.w3.org/2009/dap/).
+
+If you want your widget to be distributed by a major operator, you need to have
+them sign your widget in order to approve of it. If later the operator has
+found your Widget to be malicious, widget signatures can be revoked using [OCSP
+verification](http://en.wikipedia.org/wiki/OCSP).
+
 # How does it work
 
 1. You have a Widget package with a list of files
@@ -127,13 +136,14 @@ identifier](http://www.w3.org/TR/widgets-digsig/#identifier-signature-property)
 which lies typically inside a `<Object Id="prop">` element. This has to be
 unique and in my scripts I simply call [uuid generator](http://en.wikipedia.org/wiki/Uuid).
 
-So that's basically it. A widget can contain an author signature and many several distributor signatures. The signatures are generated the same way with a:
+So that's basically it. A widget can contain a single author signature and many
+several distributor signatures. The signatures are generated the same way with
+a:
 
 1. SignedInfo section which is the manifest, filenames and hashes
 2. KeyInfo - any details of the key
-3. Object bit, for identifying the signature itself (btw this gets hashed too in the SignedInfo!)
+3. Object bit, for identifying the signature itself (btw this gets hashed too in the SignedInfo as `URI="#prop"`!)
 
 I've modified a [RelaxNG schema for Widget digital
 signatures](http://git.webvm.net/?p=wgtqa;a=blob;f=xmldsig/xmldsig.rnc), so you
-can check the schema is correct.
-
+too can check the signature is correctly structured.
