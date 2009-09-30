@@ -29,6 +29,11 @@ fragile W3C XML suite of technologies. Whoops.
 
 # Signing a widget with [xmlsec1](http://www.aleksey.com/xmlsec/)
 
+If you prefer a **user interface** to signing a widget you should instead look
+at the [LiMo supported BONDI SDK](http://bondisdk.limofoundation.org/) and
+<http://bondisdk.limofoundation.org/docs/Signing_a_Web_Widget/>, instead of the
+following textual intercourse:
+
 	hendry@x61 ~$ cd /tmp
 	hendry@x61 tmp$ git clone git://git.webvm.net/wgtqa
 	Initialized empty Git repository in /tmp/wgtqa/.git/
@@ -71,8 +76,6 @@ Typically you would only sign it once in the capacity of just an author or just
 a distributor, with your own key. To generate your own self-signed key look at the
 **example.p12** target in the
 [Makefile](http://git.webvm.net/?p=wgtqa;a=blob;f=xmldsig/Makefile).
-
-If you prefer GUIs you should instead look at the [LiMo supported BONDI SDK](http://bondisdk.limofoundation.org/) <http://bondisdk.limofoundation.org/docs/Signing_a_Web_Widget/>.
 
 # Verifying or validating a widget
 
@@ -153,9 +156,11 @@ too can check the signature is correctly structured.
 
 The [spec](http://www.w3.org/TR/widgets-digsig/#signature-verification)
 stipulates that you must be **notified** if your widget is signed, self-signed
-or unsigned, on a widget runtime (WRT) claim to support signatures.
+or unsigned, on a widget runtime (WRT) claiming to support signatures.
 
 So you could run these
 [tests](http://dev.w3.org/2006/waf/widgets-digsig/tests/test-suite-unstable.xml)
 from the [Widgets 1.0: Test Suite for Digital
 Signature](http://dev.w3.org/2006/waf/widgets-digsig/tests/), to see how well your WRT performs.
+
+If you widget runtime fails a test, you should report the bug! Thank you!
