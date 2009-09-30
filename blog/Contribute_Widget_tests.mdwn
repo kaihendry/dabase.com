@@ -13,8 +13,13 @@ compliant and interoperable Widget runtimes(WRTs).
 
 	export CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public
 	cvs login
-	cvs checkout 2006/waf/widgets
+
+Password is 'anonymous'.
+
+	cvs checkout 2006/waf/
 	cd 2006/waf/widgets/tests/test-cases/
+
+Subsequent updates to the checkout can be done with `cvs update -d`
 
 # Bookmark these docs
 

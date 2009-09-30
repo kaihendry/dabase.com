@@ -148,3 +148,14 @@ a:
 I've modified a [RelaxNG schema for Widget digital
 signatures](http://git.webvm.net/?p=wgtqa;a=blob;f=xmldsig/xmldsig.rnc), so you
 too can check the signature is correctly structured.
+
+# How do I check my widget runtime (WRT) supports signatures?
+
+The [spec](http://www.w3.org/TR/widgets-digsig/#signature-verification)
+stipulates that you must be **notified** if your widget is signed, self-signed
+or unsigned, on a widget runtime (WRT) claim to support signatures.
+
+So you could run these
+[tests](http://dev.w3.org/2006/waf/widgets-digsig/tests/test-suite-unstable.xml)
+from the [Widgets 1.0: Test Suite for Digital
+Signature](http://dev.w3.org/2006/waf/widgets-digsig/tests/), to see how well your WRT performs.
