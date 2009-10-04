@@ -1,0 +1,20 @@
+[[!meta title="Tips for a projector"]]
+
+<a href="http://www.flickr.com/photos/hendry/3952078815/" title="dwm on the big screen by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2501/3952078815_901cd69fb4.jpg" width="500" height="375" alt="dwm on the big screen" /></a>
+
+When you connect upto a projector, for X to start sending data to your VGA port, run:
+
+	xrandr --auto
+
+Use `urxvt` with a `~/.Xdefaults` setup like so:
+
+	urxvt*font:      -*-terminus-medium-r-*-*-24-*-*-*-*-*-*-*
+	urxvt*boldFont:  -*-terminus-medium-r-*-*-24-*-*-*-*-*-*-*
+
+So 24 sized font works. Defaults of a white background seem to work best too.
+
+Colour scheme found to be optimal for a `~/.vimrc`:
+
+	colors zellner
+
+Writing text to screen? Try [screen message](http://packages.qa.debian.org/s/screen-message.html)
