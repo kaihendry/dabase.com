@@ -17,7 +17,7 @@ verification](http://en.wikipedia.org/wiki/OCSP).
 # How does it work
 
 1. You have a Widget package with a list of files
-2. Each file gets hashed, e.g. `md5sum *`
+2. Each file gets hashed, e.g. `sha256sum *`
 3. Those filenames and hashes are put in a manifest and again all hashed, then signed with a private key
 
 For some godforsaken reason we are using [XML
