@@ -1,0 +1,7 @@
+[[!meta title="Updating a version number for a release"]]
+
+Here I am incrementing 0.4.2.16 to 0.4.2.17, ignoring any binary matches.
+
+	grep -r 0.4.2.16 . | sed 's/:.*//' | grep -v matches | xargs sed -i 's/0.4.2.16/0.4.2.17/'
+
+Also <http://hg.suckless.org/surf/file/470adc5f2725/Makefile#l51> is a good strategy in Makefiles.
