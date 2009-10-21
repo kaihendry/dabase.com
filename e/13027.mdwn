@@ -1,5 +1,3 @@
-[[!meta title="Using CSV values to insert text"]]
-
 Here I am [touching a few files](http://git.bondisdk.org/?p=bondisdk.org;a=commitdiff;h=3f6ba79eb58588dbe630a305ce057835e7baa650) to add a header to the markdown pages:
 
 	COUNT=1
@@ -12,3 +10,5 @@ Here I am [touching a few files](http://git.bondisdk.org/?p=bondisdk.org;a=commi
 			sed -i "1i# ${name}" general/$COUNT.mdwn
 		fi
 	done < titles.csv
+
+[[!meta title="Using CSV values to insert text"]]
