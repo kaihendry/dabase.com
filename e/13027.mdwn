@@ -6,9 +6,11 @@ Here I am [touching a few files](http://git.bondisdk.org/?p=bondisdk.org;a=commi
 		COUNT=`expr $COUNT + 1`
 		if test "${name}"
 		then
-			#echo '[[!meta title="'${name}'"]]' >> general/$COUNT.mdwn
+			#echo '\[\[!meta title="'${name}'"\]\]' >> general/$COUNT.mdwn
 			sed -i "1i# ${name}" general/$COUNT.mdwn
 		fi
 	done < titles.csv
+
+I am assuming the ids are order for this silly example.
 
 [[!meta title="Using CSV values to insert text"]]
