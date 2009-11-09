@@ -1,3 +1,5 @@
+Part 2 in the series, please see the [[first_part_of_the_JIL_BONDI_comparison|JIL_versus_BONDI]].
+
 Widgets need to be signed, because in many cases they take advantage of new
 experimental Device APIs that must be authorised (or checked over, like a MOT),
 else they might harm your privacy and security. You should not use a
