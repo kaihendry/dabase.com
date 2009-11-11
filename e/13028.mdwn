@@ -1,4 +1,4 @@
-[[!meta title="Do not use GNU find"]]
+[[!meta title="Do not use GNU find when recursion is not needed"]]
 
 Consider:
 
