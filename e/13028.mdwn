@@ -20,11 +20,11 @@ The solution? Add some fecking brackets:
 
 	find . \( -name author-signature.xml -o -name 'signature*.xml' \) -printf "%P\n"
 
-This is ugly, compare with:
+This is ugly, compare with the way I **should** have been doing it in the first place:
 
 	for i in author-signature.xml signature*.xml; do echo $i; done
 
 Morale of the story, do **not** use GNU find. It's against the UNIX philosophy
-and it's an abomination of command to use.
+and it's an abomination of a command to use.
 
 Though do **not** use `ls` for finding stuff either.
