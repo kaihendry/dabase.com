@@ -15,7 +15,7 @@ didn't bother with this mapping.
 
 Another reason WHY pointed out by
 [robin](http://twitter.com/robinberjon/status/5825994237) is that the simple
-Widget interface exposed by the widget runtime, would implement locale support
+Widget interface exposed by the widget runtime, would implement [locale support](http://dev.w3.org/2006/waf/widgets/Overview.html#locale-folder0)
 and give you the localised interface. I.e. it's doing a bit of work behind the
 scenes for the convenience of Widget developers and well...  non-English
 speakers. However again, one can argue that Widget developers can implement
