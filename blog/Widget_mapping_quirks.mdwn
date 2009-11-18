@@ -22,9 +22,13 @@ Which maps onto the [Widget interface](http://www.w3.org/TR/widgets-apis/) as:
 	Widget.id = "http://bondisdk.limofoundation.org/widget/webcmd";
 	Widget.version = "0.4.2";
 
+Though what about viewmodes? Hmm...
+
 Then:
 
 	<name short="WebC">Web Commander</name>
+
+Maps as:
 
 	Widget.name = "Web Commander";
 	Widget.shortName = "WebC";
