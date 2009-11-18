@@ -13,6 +13,13 @@ someone has argued that slapping new `Widget.` attributes makes it easier for
 library developers. [BONDI](http://bondi.omtp.org/) incidentally rightly (imo),
 didn't bother with this mapping.
 
+Another reason WHY pointed out by
+[robin](http://twitter.com/robinberjon/status/5825994237) is that the simple
+Widget interface exposed by the widget runtime, would implement locale support
+and give you the localised interface. I.e. it's doing a bit of work
+behind the scenes for the convienance of Widget developers and well...
+non-English speakers.
+
 Ok, in an [example](http://dev.w3.org/2006/waf/widgets/Overview.html#configuration-document) Widget configuration file, like `config.xml`, you might find:
 
 	<widget xmlns="http://www.w3.org/ns/widgets" id="http://bondisdk.limofoundation.org/widget/webcmd" version="0.4.2" viewmodes="fullscreen">
