@@ -9,7 +9,7 @@ to the Widget developer.
 **WHY?** You may rightly ask. The widget developer should know his own name and
 email address whilst writing a function to mail him a [bug
 report](http://www.w3.org/TR/widgets-apis/#metadata-attribute-values). I guess
-someone has argued that slapping new `Widget.` attributes makes it easier for
+someone has argued that slapping new `widget.` attributes makes it easier for
 library developers. [BONDI](http://bondi.omtp.org/) incidentally rightly (imo),
 didn't bother with this mapping.
 
@@ -28,8 +28,8 @@ Ok, in an [example](http://dev.w3.org/2006/waf/widgets/Overview.html#configurati
 
 Which maps onto the [Widget interface](http://www.w3.org/TR/widgets-apis/) as:
 
-	Widget.id = "http://bondisdk.limofoundation.org/widget/webcmd";
-	Widget.version = "0.4.2";
+	widget.id = "http://bondisdk.limofoundation.org/widget/webcmd";
+	widget.version = "0.4.2";
 
 Though what about viewmodes? Hmm...
 
@@ -39,8 +39,8 @@ Then:
 
 Maps as:
 
-	Widget.name = "Web Commander";
-	Widget.shortName = "WebC";
+	widget.name = "Web Commander";
+	widget.shortName = "WebC";
 
 Ok, the attribute `short` was used as a prefix to `name` which has become capitialised in order to make it easier to distinguish. Ok, fine. However this is there is _an inconsistency_ with:
 
@@ -48,9 +48,9 @@ Ok, the attribute `short` was used as a prefix to `name` which has become capiti
 
 Maps to the Widget interface like so:
 
-	Widget.author = "LiMo Foundation";
-	Widget.authorEmail = "sdk@bondisdk.org";
-	Widget.authorHref = "http://bondi.limofoundation.org/";
+	widget.author = "LiMo Foundation";
+	widget.authorEmail = "sdk@bondisdk.org";
+	widget.authorHref = "http://bondi.limofoundation.org/";
 
 Now the author element attributes like `email` and `href` become suffixed to `author`. You see how `shortName, should be **nameShort**?
 
@@ -87,15 +87,15 @@ storage](http://www.w3.org/TR/webstorage/) mechanism?
 
 Consider read-only keys like:
 
-	Widget.getItem("name")
-	Widget.getItem("nameShort")
-	Widget.getItem("authorEmail")
-	Widget.getItem("licencseHref")
+	widget.getItem("name")
+	widget.getItem("nameShort")
+	widget.getItem("authorEmail")
+	widget.getItem("licencseHref")
 
-Though perhaps ideally when you did a `Widget.getItem`, you received the JSON
+Though perhaps ideally when you did a `widget.getItem`, you received the JSON
 representation of the XML fragment. Though I'm not entirely sure if there is a
 standard way to map XML onto JSON. You might as well canonicalise the whole
-`config.xml` as a JSON string bound to **Widget.config**. There, simple.  Or
+`config.xml` as a JSON string bound to **widget.config**. There, simple.  Or
 `innerXML` if a JSON translation isn't possible.
 
 Btw the Widget interface as it stands are all readonly except for
