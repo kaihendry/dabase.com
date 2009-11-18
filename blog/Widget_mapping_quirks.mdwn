@@ -39,9 +39,9 @@ Maps to the Widget interface like so:
 	Widget.authorEmail = "sdk@bondisdk.org";
 	Widget.authorHref = "http://bondi.limofoundation.org/";
 
-Now the author element attributes like `email` and `href` become suffixed to `author`.
+Now the author element attributes like `email` and `href` become suffixed to `author`. You see how `shortName, should be **nameShort**?
 
-Other elements can be added to the `config.xml` such as:
+Other elements can be found on the `config.xml` such as:
 
 	  <feature name="http://bondi.omtp.org/api/ui" required="true"/>
 	  <license href="http://bondi.omtp.org/BONDI-LICENSE-2.0/"/>
@@ -58,16 +58,16 @@ It does get tricky especially thinking about the possible multiply nested <http:
 
 Also some punks might overload the `config.xml` with  _openURL_ which would clash.
 
-And I understand some elements like the [feature elements](http://dev.w3.org/2006/waf/widgets/Overview.html#feature) and undefined (proprietary) elements like:
+I understand some elements like the [feature elements](http://dev.w3.org/2006/waf/widgets/Overview.html#feature) and undefined (proprietary) elements like:
 
 	<access network="false" localfs="false" remote_scripts="false"/>
 	<billing required="true"/>
 
-Are perhaps only relevant and used by particular runtimes, though shouldn't there be convention and reasoning for why (and why **not**) certain interfaces are exposed in the [widget interface specification](http://www.w3.org/TR/widgets-apis/)?
+..are perhaps only relevant and used by particular runtimes, though shouldn't there be convention and reasoning for why (and why **not**) certain interfaces are exposed in the [widget interface specification](http://www.w3.org/TR/widgets-apis/)?
 
 
 If the <http://www.w3.org/TR/widgets-apis/#the-preferences-attribute> was
-mandatory, which I think it should be since many widget I've come across rely
+mandatory, which I think it should be since many widgets I've come across rely
 on **setPreferenceForKey** and **preferenceForKey** conventions, wouldn't it be
 sensible to put the interfaces all into this **preference** [Web
 storage](http://www.w3.org/TR/webstorage/) mechanism?
@@ -80,7 +80,7 @@ Consider read-only keys like:
 	Widget.getItem("licencseHref")
 
 Though perhaps ideally when you did a `Widget.getItem`, you received the JSON
-represenation of the XML fragment. Though I'm not entirely sure if there is a
+representation of the XML fragment. Though I'm not entirely sure if there is a
 standard way to map XML onto JSON. And if you started using XML, you might as
 well canonicalise the whole `config.xml` as a JSON string bound to
 **Widget.config**. There, simple. innerXML is JSON is somehow not translatable.
@@ -94,8 +94,9 @@ Btw the Widget interface as it stands are all readonly except for
 It's unclear to me if
 [width](http://www.w3.org/TR/widgets-apis/#the-width-attributes) and
 [height](http://www.w3.org/TR/widgets-apis/#the-height-attribute) map to the
-`config.xml` or the real actual viewport size. Surely one can defer to `window.screen.width` and `window.screen.height` instead?
-
+`config.xml` or the real actual viewport size. Surely one can defer to
+`window.screen.width` and `window.screen.height` instead? I know it says
+`screen`, but just imagine it says `viewport`?
 
 # My final proposal Widget interface proposal after thinking about it for two hours
 
