@@ -85,9 +85,9 @@ Consider read-only keys like:
 
 Though perhaps ideally when you did a `Widget.getItem`, you received the JSON
 representation of the XML fragment. Though I'm not entirely sure if there is a
-standard way to map XML onto JSON. And if you started using XML, you might as
-well canonicalise the whole `config.xml` as a JSON string bound to
-**Widget.config**. There, simple. innerXML is JSON is somehow not translatable.
+standard way to map XML onto JSON. You might as well canonicalise the whole
+`config.xml` as a JSON string bound to **Widget.config**. There, simple.  Or
+`innerXML` if a JSON translation isn't possible.
 
 Btw the Widget interface as it stands are all readonly except for
 [preferences](http://www.w3.org/TR/widgets-apis/#the-preferences-attribute) and
