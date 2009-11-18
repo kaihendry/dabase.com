@@ -16,9 +16,11 @@ didn't bother with this mapping.
 Another reason WHY pointed out by
 [robin](http://twitter.com/robinberjon/status/5825994237) is that the simple
 Widget interface exposed by the widget runtime, would implement locale support
-and give you the localised interface. I.e. it's doing a bit of work
-behind the scenes for the convienance of Widget developers and well...
-non-English speakers.
+and give you the localised interface. I.e. it's doing a bit of work behind the
+scenes for the convenience of Widget developers and well...  non-English
+speakers. However again, one can argue that Widget developers can implement
+their own locale support, which isn't that hard (they have probably done it
+before), but it would probably suck.
 
 Ok, in an [example](http://dev.w3.org/2006/waf/widgets/Overview.html#configuration-document) Widget configuration file, like `config.xml`, you might find:
 
