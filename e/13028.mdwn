@@ -1,7 +1,30 @@
-[[!meta title="Sort by column"]]
+[[!meta title="Do not use GNU find when recursion is not needed"]]
 
-Sort by third column using semi-colon as a delimiter:
+Consider:
 
-	wget http://weather.dabase.com/3day.txt -O /dev/stdout |  sort -n -t ";" -k 3
+	find . -name author-signature.xml -o -name 'signature*.xml'
 
-`-n` is for numeric sort.
+It correctly returns:
+
+	./author-signature.xml
+	./signature1.xml
+
+Oh, but I don't what the './' prefix. Lets add `-printf "%P\n"`, quickly check and sign-off.
+
+Then later you get a report an incredulous report that author signatures aren't
+being checked. WTF?
+
+The -printf only applies when the second -name is successful, not when the first is.
+
+The solution? Add some fecking brackets:
+
+	find . \( -name author-signature.xml -o -name 'signature*.xml' \) -printf "%P\n"
+
+This is ugly, compare with the way I **should** have been doing it in the first place:
+
+	for i in author-signature.xml signature*.xml; do echo $i; done
+
+Morale of the story, do **not** use GNU find. It's against the UNIX philosophy
+and it's an abomination of a command to use.
+
+Though do **not** use `ls` for finding stuff either.
