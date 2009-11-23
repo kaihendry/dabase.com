@@ -1,0 +1,8 @@
+[[!meta title="Sort by column"]]
+
+Sort by third column using semi-colon as a delimiter:
+
+	wget http://weather.dabase.com/3day.txt -O /dev/stdout |  sort -n -t ";" -k 3
+
+`-n` is for numeric sort.
+
