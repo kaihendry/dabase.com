@@ -1,17 +1,25 @@
-@font-face {
-   font-family: Andika;
-   font-weight: normal;
-   font-style: normal;
-   src: url("http://mirror.dabase.com/andika/AndBasR.ttf")
+@media not handheld {
+
+	@font-face {
+		font-family: Droid;
+		font-weight: normal;
+		font-style: normal;
+		src: url("http://static.natalian.org/2009-11-23/DroidSans.ttf");
+	}
+
+	body {
+		background-color: #F9F6BA;
+	}
+
 }
 
 body {
-	font-family: Andika, sans-serif;
+	font-family: Droid, sans-serif;
 	font-size: 80%;
 }
 
 ol {
-border-radius: 0.5em;
-background:#F9F6BA none repeat scroll 0 0;
-border: thin solid #C9C69A;
+	border-radius: 0.5em;
+	background:#F9F6BA none repeat scroll 0 0;
+	border: thin solid #C9C69A;
 }
