@@ -13,7 +13,7 @@ Your site is probably both:
 * Badly coded
 * Lacking information
 
-How can you tell you site is badly coded? Simply run <http://validator.nu/>
+How can you tell your site is badly coded? Simply run <http://validator.nu/>
 over every page. Errors? Well fix them! Make your pages HTML5 compliant.
 
 As for **lacking information**, the Web is all about **information**. Not
