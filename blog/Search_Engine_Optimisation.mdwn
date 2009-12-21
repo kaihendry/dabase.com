@@ -28,3 +28,9 @@ your pagerank will rise.
 
 If you sell a product or service, show that you are the expert by demonstrating
 how much you know about it in a clear and concise manner.
+
+Finally see what the Google robot see! Try your site with my new service <http://robot.dabase.com>.
+
+Does you page look intelligible? Can you see all your keywords on the text
+output? See for example my homepage
+<http://robot.dabase.com/http://hendry.iki.fi> and compare to your site.
