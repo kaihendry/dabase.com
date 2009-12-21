@@ -1,0 +1,16 @@
+[[!meta title="Writing shell scripts that suckless"]]
+
+
+Compare <http://static.natalian.org/2009-12-12/w3c.sh.txt> with:
+
+* <http://static.natalian.org/2009-12-12/list_positive.sh.txt>
+* <http://static.natalian.org/2009-12-12/list_negative.sh.txt>
+* <http://static.natalian.org/2009-12-12/test_positive.sh.txt>
+* <http://static.natalian.org/2009-12-12/test_negative.sh.txt>
+
+The original 100 line script might have been short, though it tried to do too
+many things at once. It was also too dependent on
+<http://xmlstar.sourceforge.net/> when it need not be.
+
+It takes a genius to break up a problem into small and very maintainable
+components.
