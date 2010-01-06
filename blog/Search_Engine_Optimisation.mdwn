@@ -1,6 +1,6 @@
 So you've been told your site needs some <abbr title="Search Engine Optimisation">SEO</abbr>. Why?
 
-You Google search for the keywords or simply your company name and it does not
+You Google search for your product's keywords or simply your company name and it does not
 appear on the first page of Google results.
 
 Hence your customers can't find your site and services and you _lose business_.
@@ -24,8 +24,13 @@ your pagerank will rise.
 * If you are at a fixed address, give co-ordinates to your location!
 * Forget the feedback form, just have an email address clearly advertised.
 * Is all that information spell checked and crystal clear?
-* It is OK to have everything on one page
+* It is OK to have everything on one page (think Wikipedia)
 
-If you sell a product or service, show that you are the expert by demonstrating how much you know about it in a clear and concise manner.
+If you sell a product or service, show that you are the expert by demonstrating
+how much you know about it in a clear and concise manner.
 
-It's not that hard.
+Finally see what the Google robot sees! Try your site with my new service <http://robot.dabase.com>.
+
+Does you page look intelligible? Can you see all your keywords on the text
+output? See for example my homepage
+<http://robot.dabase.com/http://hendry.iki.fi> and compare to your site.
