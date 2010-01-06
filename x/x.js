@@ -20,11 +20,8 @@ myHeight = document.body.clientHeight;
 }
 innerDimensions = document.createTextNode('Inner dimensions: ' + myWidth  + 'x' + myHeight);
 
-
 pre.appendChild(ua);
 pre.appendChild(hw);
 pre.appendChild(ahw);
 pre.appendChild(innerDimensions);
 body.appendChild(pre);
-
-
