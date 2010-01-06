@@ -32,14 +32,6 @@ border:1px solid #C9C69A;
   </head>
   <body style="font-family: Gentium, GentiumAlt, serif">
 
-<p>On the Web as <a href="http://hixie.ch/advocacy/xhtml">XHTML</a></p>
-
-<form action="http://www.google.com/cse" id="cse-search-box">
-  <input type="hidden" name="cx" value="012996381534923695250:e3cymw51mgs" />
-  <input type="text" name="q" size="25" />
-  <input type="submit" name="sa" value="Search amongst the tips" />
-</form>
-
     <ol>
       <li>
         <a style="background: red; color: black;" href="http://dev.w3.org/2008/mobile-test/v2/">WCTMB version TWO</a>
@@ -148,38 +140,7 @@ border:1px solid #C9C69A;
 
     </ol>
 
-	<script>
-
-  body  = document.getElementsByTagName("body").item(0);
-  pre = document.createElement("pre");
-  ua = document.createTextNode(window.navigator.userAgent + '\n');
-  hw = document.createTextNode('Screen size: ' + window.screen.width + 'x' + window.screen.height + '\n');
-  ahw = document.createTextNode('Availible screen size: ' + window.screen.availWidth + 'x' + window.screen.availHeight);
-
-var myWidth = 0, myHeight = 0;
-if( typeof( window.innerWidth ) == 'number' ) {
-//Non-IE
-myWidth = window.innerWidth;
-myHeight = window.innerHeight;
-} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-//IE 6+ in 'standards compliant mode'
-myWidth = document.documentElement.clientWidth;
-myHeight = document.documentElement.clientHeight;
-} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-//IE 4 compatible
-myWidth = document.body.clientWidth;
-myHeight = document.body.clientHeight;
-}
-innerDimensions = document.createTextNode('Inner dimensions: ' + myWidth  + 'x' + myHeight);
-
-
-  pre.appendChild(ua);
-  pre.appendChild(hw);
-  pre.appendChild(ahw);
-  pre.appendChild(innerDimensions);
-  body.appendChild(pre);
-
-</script>
+<script type="text/javascript" src="x.js"></script>
 
     <p>Nokia series 40 browsers do not seem to like : button type="submit"</p>
 
