@@ -19,8 +19,6 @@ WTF **.images** ?? See this [blog](http://viper.haque.net/~timeless/blog/170/) a
 
 ## Web application development on maemo
 
-Thanks to a [patch](http://mxr.maemo.org/fremantle/source/microb-engine/debian/patches/console-logger.js?raw=1):
-
 	Nokia-N900-42-11:~$ cat ~/.mozilla/microb/user.js
 	user_pref("browser.consolelogfile",
 	"/home/user/MyDocs/browser-logfile.txt");
