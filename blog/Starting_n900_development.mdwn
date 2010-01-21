@@ -10,7 +10,7 @@ N900, I enjoyed working on the device today. He's what I learnt about [Maemo5](h
 * Find ip from terminal `/sbin/ifconfig`
 * Put ip into your machine's `/etc/hosts` under [n900](http://en.wikipedia.org/wiki/Nokia_N900)
 * `ssh-copy-id root@n900`
-* Add `deb http://repository.maemo.org/extras-devel fremantle free non-free` to `/etc/apt/sources.list.d/hildon-application-manager.list`
+* Add `deb http://repository.maemo.org/extras-devel fremantle free non-free` to `/etc/apt/sources.list.d/that-is-not-ham.list`
 * `apt-get install rsync` and other stuff that you fancy :)
 * ctrl+shift+p to take a screenshot
 * `rsync -art root@n900:/home/user/MyDocs/.images/Screenshots .` to get the [screenshots](http://www.flickr.com/photos/hendry/tags/n900/)
@@ -26,3 +26,5 @@ Thanks to a [patch](http://mxr.maemo.org/fremantle/source/microb-engine/debian/p
 	"/home/user/MyDocs/browser-logfile.txt");
 
 Now `tail -f /home/user/MyDocs/browser-logfile.txt` and you get the invaluable JSconsole.
+
+Thanks to #maemo and especially timeless for addressing my complaints and increasing my Nokia brand loyalty. :)
