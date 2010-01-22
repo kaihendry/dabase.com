@@ -34,13 +34,17 @@ default.
 On the host system, `/scratchbox/users/hendry/home/user` is the working directory.
 
 I had to build:
+
 * gail-1.22.0 (wtf is this crap)
 * glib-2.22.4
 * libsoup-2.28.1
 * xmlsec1-1.2.12
 * And a fairly recent WebKit checkout from 12/2009 with a few patches
 
-Try build things into /usr/local in order not to screw up the rootstrap.
+(Later found out Christian has patches to remove gail and enchant. Nice.)
+
+Try build things into /usr/local in order not to screw up the rootstrap and to
+know what stuff to copy across.
 
 	export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
 	export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib
@@ -56,9 +60,11 @@ with commands like:
 	cp WebKit/gtk/webkit/webkitenumtypes.h /scratchbox/users/hendry/home/user/webkit/WebKit/gtk/webkit/webkitenumtypes.h
 	cp DerivedSources/CSS* /scratchbox/users/hendry/home/user/webkit/DerivedSources/
 
-If you see `undefined reference to `hildon_g_scanner_cache_open'` that means
-maemo5 is going nuts because it can't find some brain dead hildon patches my
-own sane **glib**. Simply implement the function like so:
+If you see:
+	undefined reference to hildon_g_scanner_cache_open
+
+That means maemo5 is going nuts because it can't find some brain dead hildon
+patches my own sane **glib**. Simply implement the function like so:
 
 	void hildon_g_scanner_cache_open() {}
 
@@ -67,7 +73,7 @@ I noticed that -lselinux somehow snuck in the build process. Had to remove it
 manually from the Makefile.
 
 I would like to build some Debian packages, though I **need** debhelper7. I
-dislike the previous versions like 5 currently installed on Fremantle.
+dislike the previous versions like 5 currently installed on Fremantle. Also dpkg-buildpackage does not seem to understand `-j8`. wtf!
 
 # Copying arm built stuff to the device
 
