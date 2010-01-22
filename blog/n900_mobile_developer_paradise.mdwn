@@ -38,7 +38,7 @@ I had to build:
 * gail-1.22.0 (wtf is this crap)
 * glib-2.22.4
 * libsoup-2.28.1
-* xmlsec1-1.2.12
+* xmlsec1-1.2.12 (my stuff, not needed for Webkit per-se)
 * And a fairly recent WebKit checkout from 12/2009 with a few patches
 
 (Later found out Christian has patches to remove gail and enchant. Nice.)
@@ -61,6 +61,7 @@ with commands like:
 	cp DerivedSources/CSS* /scratchbox/users/hendry/home/user/webkit/DerivedSources/
 
 If you see:
+
 	undefined reference to hildon_g_scanner_cache_open
 
 That means maemo5 is going nuts because it can't find some brain dead hildon
