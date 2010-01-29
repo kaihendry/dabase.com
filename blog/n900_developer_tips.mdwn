@@ -34,13 +34,13 @@ In my `/etc/apt/sources.list.d/debug.list` I have:
 	deb http://repository.maemo.org/ fremantle/sdk free non-free
 	deb http://repository.maemo.org/ fremantle/tools free non-free
 
-`apt-get install strace`
+`apt-get install strace` and bliss
 
 # Where to put maemo desktop shortcuts
 
 	/usr/share/applications/hildon
 
-These maemo specific shortcuts has some interesting options.
+These maemo specific shortcuts have some interesting options.
 
 The I use for starting [Web commander](http://wiki.webvm.net/wrtc/) looks like:
 
@@ -55,7 +55,7 @@ The I use for starting [Web commander](http://wiki.webvm.net/wrtc/) looks like:
 	X-Osso-Type=application/x-executable
 	X-HildonDesk-ShowInToolbar=true
 
-Where /home/user/w looks like:
+What `/home/user/w` looks like:
 
 	#!/bin/sh
 	. /home/user/setup
@@ -65,4 +65,13 @@ Where /home/user/w looks like:
 And `/home/user/setup`:
 
 	export LD_LIBRARY_PATH=/opt/lib:/usr/lib
-	export PATH=/opt/bin:$PATH
+
+# Android debug bridge on maemo5
+
+<http://git.webvm.net/?p=adb> has a maemo port (debhelper7 based) of
+[adb](http://developer.android.com/guide/developing/tools/adb.html).
+
+There is an odd pty issue with maemo5 that limits the amount of open shells you
+can have. Unfortunately `adb` does not alleviate this problem. However if you
+are an Android developer like myself it does seem to unify development
+somewhat. It also seems a little more responsive than ssh. Try it out.
