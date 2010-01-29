@@ -9,7 +9,7 @@ since you get to use `ctrl+r` for bash history which I find very productive.
 
 	apt-get install bash
 
-And change the root shell in `/etc/passwd` to `/bin/bash`
+And change the root shell in `/etc/passwd` to `/bin/bash`.
 
 ## debhelper seven works on maemo5
 
@@ -22,12 +22,12 @@ smaller and much more manageable.
 
 As mentioned before the N900's root space is stupidly tiny. :( I'm disappointed
 maemo developers didn't union/aufs mount this problem away. Have a look at
-<http://wiki.maemo.org/Opt_Problem> or rather the "/opt solution".
+<http://wiki.maemo.org/Opt_Problem> for the "/opt solution".
 
 TODO: Figure out wtf maemo keeps it's kernel configuration and perhaps try
 build my own with [aufs](http://en.wikipedia.org/wiki/Aufs) support.
 
-# strace embedded debugging
+## strace embedded debugging
 
 In my `/etc/apt/sources.list.d/debug.list` I have:
 
@@ -36,7 +36,7 @@ In my `/etc/apt/sources.list.d/debug.list` I have:
 
 `apt-get install strace` and bliss
 
-# Where to put maemo desktop shortcuts
+## Where to put maemo desktop shortcuts
 
 	/usr/share/applications/hildon
 
@@ -66,7 +66,7 @@ And `/home/user/setup`:
 
 	export LD_LIBRARY_PATH=/opt/lib:/usr/lib
 
-# Android debug bridge on maemo5
+## Android debug bridge on maemo5
 
 <http://git.webvm.net/?p=adb> has a maemo port (debhelper7 based) of
 [adb](http://developer.android.com/guide/developing/tools/adb.html).
