@@ -1,3 +1,3 @@
-[[!meta title="Life with an Android G1 in England"]]
+[[!meta title="Life with an Android Nexus One in England"]]
 
 [[!inline pages="android/* and !android/*/Discussion" description="Blogging UK G1 experiences" actions=no rss=yes show="10"]]
