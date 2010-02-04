@@ -40,6 +40,11 @@ tethering feature is a **must** for me and it works far better than
 `usb0`. `dhclient usb0` and you're surfing on 3G. Why do operators make it so
 hard?!
 
+Since I'm into [HTML5](http://whatwg.org/html5), I'm greatly enjoying using
+<http://gmail.com> and Calendar in the browser. It works amazingly well. I'm
+going to try avoid using the native Gmail client, though the native's 4 day
+background syncs are hard to beat.
+
 I'm a little [worried about the quality of the 3G
 connection](http://twitter.com/kaihendry/status/8642122287). The [3G scare
 stories](http://www.theregister.co.uk/2010/01/26/nexus_one_3g_patch/) don't
