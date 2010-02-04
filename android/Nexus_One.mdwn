@@ -18,14 +18,14 @@ Talk about ordeals... the device took 16days to arrive, because Google's
 fulfillment house in Indiana accidentally routed the N1 to Hong Kong. Google's
 "Android support" customer services is absolutely abysmal. I contacted them
 three times via Google checkout to tell them they have screwed up the package
-routing. I basically only got through to them via a old University friend who
+routing. I basically only got through to them via an old University friend who
 now works at Google. Shame. :(
 
 So the Nexus One(N1)! What do I think about it? It feels like a great upgrade
 over the G1. The 1Ghz <a
-href="http://en.wikipedia.org/wiki/Snapdragon_(processor)">Snapdragon]</a>
+href="http://en.wikipedia.org/wiki/Snapdragon_(processor)">Snapdragon</a>
 amazed me awhile back on the [Toshiba
-TG01](http://www.flickr.com/photos/hendry/3775427226/), so at last I have it.
+TG01](http://www.flickr.com/photos/hendry/3775427226/), so at last I have it! :) However the battery performance seems on par with the G1. Sigh.
 
 Despite a looming Nexus One update I though I'd rather be in control and hence
 I [unlocked my Nexus
@@ -34,10 +34,11 @@ and "voided my warranty". I think it's a bit poor that I've voided my warrany
 because I want different software on it. I don't "void the warranty" if I put
 Linux on my Thinkpad, now do I?
 
-[Cyanogen](http://twitter.com/cyanogen)'s beta4 N1 mod is pretty wild. I has
-USB tethering which is a **must** for me. It works far better than
-[[android/Android_3G_wifi_tethering]]. Just turn it on, and `ifconfig` shows
-`usb0`. `dhclient usb0` and you're surfing on 3G.
+[Cyanogen](http://twitter.com/cyanogen)'s beta4 N1 mod is pretty wild.  The USB
+tethering feature is a **must** for me and it works far better than
+[[android/Android_3G_wifi_tethering]]. Just turn it on, and `ifconfig -a` shows
+`usb0`. `dhclient usb0` and you're surfing on 3G. Why do operators make it so
+hard?!
 
 I'm a little [worried about the quality of the 3G
 connection](http://twitter.com/kaihendry/status/8642122287). The [3G scare
