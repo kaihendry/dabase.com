@@ -55,3 +55,7 @@ even more clear to see. :(
 You can upgrade your phone, but can you upgrade your connectivity? Well since
 my phone is unlocked I'll have to do some
 [[mobile_speed_testing|android/Android_3G_wifi_tethering]] again.
+
+UPDATE: Checkout <http://www.nytimes.com/2010/01/13/technology/companies/13google.html>
+
+I also heard Google is giving out N1s at developer meets. Ah great, they know how to satify paying customers.
