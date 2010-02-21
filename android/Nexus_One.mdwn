@@ -1,4 +1,4 @@
-<a href="http://www.flickr.com/photos/hendry/4327642576/" title="Me and my new Nexus from around the world by Kai Hendry, on Flickr"><img src="http://farm5.static.flickr.com/4060/4327642576_716645fee8_m.jpg" width="180" height="240" alt="Me and my new Nexus from around the world" /></a>
+<a href="http://www.flickr.com/photos/hendry/4327642576/" title="Kai has the passion"><img src="http://farm5.static.flickr.com/4060/4327642576_716645fee8_m.jpg" width="180" height="240" alt="Me and my new Nexus from around the world" /></a>
 
 So I bought the new <http://www.google.com/phone>, the Nexus One at 365.21GBP.
 Deep breath.
@@ -27,7 +27,7 @@ href="http://en.wikipedia.org/wiki/Snapdragon_(processor)">Snapdragon</a>
 amazed me awhile back on the [Toshiba
 TG01](http://www.flickr.com/photos/hendry/3775427226/), so at last I have it! :) However the battery performance seems on par with the G1. Sigh.
 
-Despite a looming Nexus One update I though I'd rather be in control and hence
+Despite a looming [Nexus One update](http://googlenexusoneboard.blogspot.com/2010/02/new-software-update-for-nexus-one.html) I though I'd rather be in control and hence
 I [unlocked my Nexus
 One](http://wiki.cyanogenmod.com/index.php/Full_Update_Guide_-_Nexus_One_Firmware_to_CyanogenMod)
 and "voided my warranty". I think it's a bit poor that I've voided my warrany
@@ -55,3 +55,7 @@ even more clear to see. :(
 You can upgrade your phone, but can you upgrade your connectivity? Well since
 my phone is unlocked I'll have to do some
 [[mobile_speed_testing|android/Android_3G_wifi_tethering]] again.
+
+UPDATE: Checkout <http://www.nytimes.com/2010/01/13/technology/companies/13google.html>
+
+I also heard Google is giving out N1s at developer meets. Ah great, they know how to satify paying customers.
