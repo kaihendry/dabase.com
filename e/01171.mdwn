@@ -1,0 +1,6 @@
+[[!meta title="Sensible boot loaders"]]
+
+* syslinux to boot from fat
+* extlinux to boot from ext
+* isolinux to boot from iso
+* pxelinux to boot from pxe
