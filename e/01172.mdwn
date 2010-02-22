@@ -30,3 +30,5 @@ reduced.
 
 As we've seen in the last couple of months, updates to libjpeg and libpng can
 also involve ABI changes, meaning complete rebuilds in any case.
+
+Please read the [stali FAQ](http://sta.li/faq) for more argumentation.
