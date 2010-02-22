@@ -1,0 +1,32 @@
+[[!meta title="Static linking improves security and updating"]]
+
+* <http://www.ksplice.com>
+* <http://www.redbend.com>
+* <http://blog.garbe.us/2008/02/08/01_Static_linking>
+* [Worse is better general Mercurial binary diff](http://www.radare.org/cgi-bin/hg/radare2/file/tip/libr/diff)
+* [Rsync](http://samba.anu.edu.au/rsync) is also a great tool for binary updates
+* <http://patent-warrior.blogspot.com/2009/10/red-bend-v-google-chrome-no-damages.html>
+* <http://dev.chromium.org/developers/design-documents/software-updates-courgette>
+
+Despite what GNU and opensource projects think, statically built apps are the way to go.
+
+# Security benefits of statically built binaries
+
+Shared libraries are often touted as being good for security. No need to
+rebuild, you just replace the binary and everything linked to say an updated
+libpng.so gets the security fix.
+
+Likewise one security problem in a shared library makes all the binaries
+dependent on it vulnerable.
+
+The good security benefit of statically built libararies is that you elimate
+the library path. So you can't hack binaries like so:
+
+	LD_PRELOAD=/usr/lib/libpng12vulnerable.so /usr/bin/firefox
+
+Also since statically built binaries only compile in the object code they
+actually use from the library, the surface area of the attack is greatly
+reduced.
+
+As we've seen in the last couple of months, updates to libjpeg and libpng can
+also involve ABI changes, meaning complete rebuilds in any case.
