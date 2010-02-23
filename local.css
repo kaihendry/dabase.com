@@ -1,21 +1,14 @@
-@media not handheld {
-
-	@font-face {
-		font-family: Droid;
-		font-weight: normal;
-		font-style: normal;
-		src: url("http://static.natalian.org/2009-11-23/DroidSans.ttf");
-	}
-
-	body {
-		background-color: #F9F6BA;
-	}
-
+body {
+	font-family: Georgia,Times New Roman,Times,serif;
+	color: #CCCCCC;
+	background-color: black;
 }
 
-body {
-	font-family: Droid, sans-serif;
-	font-size: 80%;
+@media handheld {
+	body {
+		background-color: #F9F6BA;
+		color: black;
+	}
 }
 
 ol {
