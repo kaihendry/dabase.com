@@ -43,3 +43,12 @@ a[href]:active {
 background:none repeat scroll 0 0 #FFFFFF;
 color:#FF0033;
 }
+
+a:link, div.sidebar div h2 a:link {
+	background:none repeat scroll 0 0 transparent;
+	color:#9999FF;
+}
+a:visited, div.sidebar div h2 a:visited {
+	background:none repeat scroll 0 0 transparent;
+	color:#CC66FF;
+}
