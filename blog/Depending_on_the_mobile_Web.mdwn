@@ -20,7 +20,7 @@ have a wider keyboard. If I was an operator I would be jumping up and down
 about this.
 
 Can't figure out how to make incoming SMSes vibrate. After searching I find
-this seems to be a general gripe about Android 2.1.
+this seems to be a general gripe about Android 2.1. Oh, found the answer <http://twitter.com/kaihendry/status/10142417024>
 
 The answer swipe is a bit brain dead.
 
