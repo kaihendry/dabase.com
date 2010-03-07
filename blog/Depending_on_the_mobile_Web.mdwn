@@ -54,3 +54,7 @@ unreliable and only worked in one room. :(
 
 Avoid [T-mobile](http://www.t-mobile.co.uk). Make careful preparations if you need the Internet like myself.
 I think I will buy a PAYG Orange or SFR SIM next time in France.
+
+I am also saddened to see no operator create some sort of Android app to help
+track expenses. It need not be a Java app. Just a usable Web one, unlike
+<https://www.t-mobile.co.uk/service/your-account> on a mobile.
