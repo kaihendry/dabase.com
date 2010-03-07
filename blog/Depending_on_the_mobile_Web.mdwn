@@ -1,3 +1,5 @@
+<a href="http://www.flickr.com/photos/hendry/4412963067/" title="Ski scene by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2712/4412963067_411dea438f.jpg" width="500" height="375" alt="Ski scene" /></a>
+
 After spending a week in France completely dependent on my
 [modded](http://www.cyanogenmod.com/home/cyanogenmod-5-0-nexus-one) Nexus One
 for my Internet use, I have gained some insights into the future of mobile
@@ -17,13 +19,16 @@ seriously more likely to Gtalk or Email than write an SMS, simply because I
 have a wider keyboard. If I was an operator I would be jumping up and down
 about this.
 
-Can't figure out how to make incoming SMSes vibrate
+Can't figure out how to make incoming SMSes vibrate. After searching I find
+this seems to be a general gripe about Android 2.1.
 
 The answer swipe is a bit brain dead.
 
 I forgot my USB cable. So it made it impossible to share some new music from my Swedish friends. There must be an easier way to peer to peer.
 
-So goes for side loading applications. It's not obvious how to share apps and that just sucks. There are plenty of cases where you want to peer since operators suck.
+Same goes for side loading applications. It's not obvious how to share apps and
+that just sucks. There are plenty of cases where you want to peer since
+operators suck.
 
 The photo picker for example with the Buzz integrated Google maps does not work. Crap. The buzz uploader does not give any progress status.
 
@@ -34,9 +39,9 @@ There is no call log. How long was a call? How much was a call? No idea. This **
 Acquiring location and policy control is a bit all over the place on Android.
 For example the news & weather widget has it's own little preference for "Use
 my location". I **need** an easy central [policy
-control](http://dabase.com/blog/Why_policies/). I also want to control
-granularity and see logs, since I don't want the weather man to know exactly
-where I am. I want to feel **in control**.
+control](http://dabase.com/blog/Why_policies/) [[policy_control|Why_policies]].
+I also want to control granularity and see transaction logs, since I don't want
+the weather man to know exactly where I am. I want to feel **in control**.
 
 Lastly I just wanted to mention, is it just me or is the <http://touch.facebook.com/>
 seriously broken? When people comment on pictures I can't seem to followup on
