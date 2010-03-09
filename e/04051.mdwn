@@ -38,3 +38,5 @@ The nasty CODE part is neccessary as code examples can be unfortunately included
 
 	Definitions/Module/Interface/Operation/descriptive/Code
 	Definitions/Module/Interface/descriptive/Code
+
+Use `xmlstarlet el telephony.widlprocxml` to examine the XML structure.
