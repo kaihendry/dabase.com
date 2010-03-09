@@ -12,29 +12,29 @@ Screen blanks out on a call and I can't get the hang up button, therefore charge
 
 Device should detect voice mail and hangup to avoid expense. I can't be the only one who does not care for voice mail.
 
-Does not rotate on the home screen. I'm concluding that Android's screen rotation is quite a UI mistake, compared to say Apple's design.
-
-Can't rotate keyboard on SMS. That makes it harder to write SMSes. I am
-seriously more likely to Gtalk or Email than write an SMS, simply because I
-have a wider keyboard. If I was an operator I would be jumping up and down
-about this.
+Does not rotate on the home screen. I'm concluding that Android's screen
+rotation is quite a UI mistake, compared to say Apple's design.
 
 Can't figure out how to make incoming SMSes vibrate. After searching I find
-this seems to be a general gripe about Android 2.1. Oh, found the answer <http://twitter.com/kaihendry/status/10142417024>
+this seems to be a general gripe about Android 2.1. Oh, found the answer
+<http://twitter.com/kaihendry/status/10142417024>
 
-The answer swipe is a bit brain dead.
+The answer swipe is a bit awkward. Is there a button I can press instead I wonder.
 
-I forgot my USB cable. So it made it impossible to share some new music from my Swedish friends. There must be an easier way to peer to peer.
+I forgot my USB cable. So it made it impossible to share some new music from my
+Swedish friends. There must be an easier way to peer to peer.
 
 Same goes for side loading applications. It's not obvious how to share apps and
 that just sucks. There are plenty of cases where you want to peer since
 operators suck.
 
-The photo picker for example with the Buzz integrated Google maps does not work. Crap. The buzz uploader does not give any progress status.
+The photo picker for example with the Buzz integrated Google maps does not
+work. Crap. The buzz uploader does not give any progress status.
 
 Progress status and resumable uploads is a must for crappy mobile connections.
 
-There is no call log. How long was a call? How much was a call? No idea. This **MUST** be fixed. I must know how much I am spending.
+How long was a call? How much was a call? No idea. This **MUST** be fixed. I
+must know how much I am spending.
 
 Acquiring location and policy control is a bit all over the place on Android.
 For example the news & weather widget has it's own little preference for "Use
