@@ -1,0 +1,40 @@
+[[!meta title="Counting code examples out of BONDI widlprocxml"]]
+
+Using BONDI WIDLs and [widlproc](http://widl.webvm.net/), how many code examples does each widl have?
+
+	hendry@x61 html$ sh code-count.sh
+	appconfig.widlprocxml 2
+	applauncher.widlprocxml 3
+	bondi.widlprocxml 2
+	calendar.widlprocxml 18
+	camera.widlprocxml 3
+	commlog.widlprocxml 0
+	contact.widlprocxml 19
+	devicestatus.widlprocxml 12
+	filesystem.widlprocxml 39
+	gallery.widlprocxml 19
+	geolocation.widlprocxml 19
+	messaging.widlprocxml 78
+	pim.widlprocxml 0
+	task.widlprocxml 14
+	telephony.widlprocxml 11
+	ui.widlprocxml 22
+
+Now the script using [xmlstarlet](http://xmlstar.sourceforge.net/):
+
+	for i in *.widlprocxml
+	do
+			CODE=$(xmlstarlet el $i | grep Code | sort | uniq)
+			TOTAL=0
+			for c in $CODE
+			do
+					NUM=$(xmlstarlet sel -t -v "count(//$c)" $i)
+					TOTAL=$(expr $TOTAL + $NUM)
+			done
+			echo $i $TOTAL
+	done
+
+The nasty CODE part is neccessary as code examples can be unfortunately included at different levels, for example:
+
+	Definitions/Module/Interface/Operation/descriptive/Code
+	Definitions/Module/Interface/descriptive/Code
