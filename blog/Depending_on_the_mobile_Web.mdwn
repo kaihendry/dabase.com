@@ -31,7 +31,9 @@ operators suck.
 The photo picker for example with the Buzz integrated Google maps does not
 work. Crap. The buzz uploader does not give any progress status.
 
-Progress status and resumable uploads is a must for crappy mobile connections.
+<a href="http://www.flickr.com/photos/hendry/4420227668/" title="native buzz sucks by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2734/4420227668_3125562668.jpg" width="500" height="300" alt="native buzz sucks" /></a>
+
+Progress status and resumable uploads is a **must** for crappy mobile connections.
 
 How long was a call? How much was a call? No idea. This **MUST** be fixed. I
 must know how much I am spending.
