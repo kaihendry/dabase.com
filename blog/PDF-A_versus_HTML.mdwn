@@ -33,6 +33,7 @@ proprietary tool. Great, what a start!
 * Non-trivial to diff, track and compare PDF documents
 * An open standard? That you need to [pay ISO](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=51502) 200GBP for?! Are there at least two interoperable implementations of PDF/A?
 * Probably only one **conforming** implementation (Guess who!). Is there a test suite?
+* [Not as secure](http://www.theregister.co.uk/2010/03/09/adobe_reader_attacks/) as Web technologies
 
 # Pros of HTML
 
