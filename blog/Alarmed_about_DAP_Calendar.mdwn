@@ -23,8 +23,8 @@ The DAP defined [use cases](http://dev.w3.org/2009/dap/calendar/#use-cases):
 
 Lets distil what we are trying to do. Because I for one don't care about the
 calendar of my mobile device. I care about the calendar on my Web service
-<http://calendar.google.com/>. I find out about friends' birthdays on
-<http://facebook.com/>. What I want my personal mobile device to do, is to
+<http://calendar.google.com>. I find out about friends' birthdays on
+<http://facebook.com>. What I want my personal mobile device to do, is to
 **remind** me about those events in my calendar.
 
 How does one get reminded? The way I have been doing it for years is setting
@@ -44,7 +44,7 @@ The dreaded [repeating UI](http://www.flickr.com/photos/hendry/4442265963/) is
 very simple and it just works for most cases. I've done this
 [before](http://natalian.org/archives/2007/07/30/pimples/).
 
-The easiest native way to implement this is to leverage cron, for example:
+The easiest way to implement this natively is to leverage cron, for example:
 
 	# m h  dom mon dow   command
 	35  7  *   *   sun         alarm
@@ -55,7 +55,7 @@ The easiest native way to implement this is to leverage cron, for example:
 
 # The "Alarmed" Calendar [WebIDL](http://www.w3.org/TR/WebIDL)
 
-I know the IDL is not quite valid, I will fix it when I get some time.
+(I know the IDL is not quite valid, I will fix it when I get some time.)
 
 	interface Alarm {
 	 attribute DOMString name;
@@ -117,7 +117,7 @@ If I leave out the filter, I mean all:
 
 Hell, you could implement this [cron in
 Javascript](http://elijahr.blogspot.com/2009/03/javascript-cron.html) if you
-had HTML audio and some UI vibrate and flash goodies at your disposal.
+had HTML5 audio and some UI vibrate and flash goodies at your disposal.
 
 I also think it's important to have a mapping to a [RestFUL
 API](http://en.wikipedia.org/wiki/Restful), for example:
