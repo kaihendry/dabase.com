@@ -1,0 +1,89 @@
+I've worked on Device API specifications in BONDI and I have learnt some lessons along the way.
+
+The idea with [BONDI](http://bondi.omtp.org) is that it works faster than the
+[W3C](http://www.w3.org), since industry players are pushing it along. W3C does
+take longer, though it's process is more open (BONDI interfaces list is member
+only) and invites more experts shall we say.
+
+The [Device APIs and Policy Working Group](http://www.w3.org/2009/dap/) is the
+relevant group in the W3C and lets take a closer peek at [calendar
+API](http://dev.w3.org/2009/dap/calendar) and its
+[issues](http://www.w3.org/2009/dap/track/products/3).
+
+To me the DAP's calendar is a reworked [BONDI
+calendar](http://bondidev.omtp.org/modules/calendar.html) and it simply misses
+the mark for me. Nevermind the incompatibilities between the two at this point
+and the "god knows how" the two APIs are going to converge, lets start at the
+beginning.
+
+The DAP defined [use cases](http://dev.w3.org/2009/dap/calendar/#use-cases):
+
+1. A web application would like to access the device calendar
+* A user would like to create/modify/delete a Calendar appointment
+* A user would like to enter a birthday of his friend with a recurrence event
+* A user would like to set a reminder for upcoming events.
+
+Lets distil what we are trying to do. Because I for one don't care about the
+calendar of my mobile device. I care about the calendar on
+<http://calendar.google.com/>. I find out about friend's birthdays on
+<http://facebook.com/>. What I want my personal mobile device to do, is to
+**remind** me about those events in my calendar.
+
+How does one get reminded? The way I have doing it for years is setting alarms on my mobile.
+
+Alarms to wake up. Alarms to go to my dentist appointment. Alarms reminding me
+about my Mother's birthday. The most basic alarm just sounds or vibrates the
+phone at the start of the appointment. More advanced alarms notify you in
+advance in a variety of ways.
+
+So what I am saying we don't need a calendar API, we need a **reminder API**. A
+good clean native API implementation on an Android smartphone looks like:
+
+<a href="http://www.flickr.com/photos/hendry/4442265961/" title="Alarm by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2788/4442265961_92e6706511_m.jpg" width="144" height="240" alt="Alarm" /></a>
+
+The dreaded [repeating UI](http://www.flickr.com/photos/hendry/4442265963/) is
+very simple and it just works for most cases. I've done this
+[before](http://natalian.org/archives/2007/07/30/pimples/).
+
+So why can't we make an API as simple as this?
+
+navigator.alarm.set(sb, eb, "cron string" or JSON); // could include a JSON structure to change settings, e.g. snooze times
+navigator.alarm.get(sb, eb, grepfilter);
+navigator.alarm.del(sb, eb, id);
+
+Natively this is very easy to implement. It's just an interface on cron:
+
+	# m h  dom mon dow   command
+	35  7  *   *   sun         alarm
+	30  6  *   *   mon         alarm
+	5   7  *   *   tue,thu,fri alarm
+	40  6  *   *   wed         alarm+vibrate
+	0   8  *   *   sat         alarm
+
+module alarm {
+	typedef sequence<cronEntry> cronEntries;
+
+	PendingOperation get(in AlarmSuccessCallback successCallback,
+			in ErrorCallback errorCallback,
+			[Optional] in AlarmFilter filter);
+
+	\* the cronString could be JSON or "40  6  *   *   wed         alarm+vibrate"
+	\* SuccessCallback would return the set object
+	PendingOperation set(in AlarmSuccessCallback successCallback,
+			in ErrorCallback errorCallback,
+			in DOMString cronString);
+
+	PendingOperation del(in SuccessCallback successCallback,
+		in ErrorCallback errorCallback,
+		in cronEntry cronentry);
+
+	[Callback=FunctionOnly, NoInterfaceObject] interface AlarmSuccessCallback {
+		void onSuccess(in cronEntries obj);
+	};
+
+	[NoInterfaceObject] interface cronEntry {
+	readonly attribute DOMString cronString; // toString??
+	}
+
+	[NoInterfaceObject] interface AlarmFilter : GenericFilter {};
+};
