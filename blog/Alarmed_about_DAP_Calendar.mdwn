@@ -16,7 +16,7 @@ beginning.
 
 The DAP defined [use cases](http://dev.w3.org/2009/dap/calendar/#use-cases):
 
-1. A web application would like to access the device calendar
+* A web application would like to access the device calendar
 * A user would like to create/modify/delete a Calendar appointment
 * A user would like to enter a birthday of his friend with a recurrence event
 * A user would like to set a reminder for upcoming events.
