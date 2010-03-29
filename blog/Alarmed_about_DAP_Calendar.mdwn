@@ -4,7 +4,7 @@ take longer, though it's process is more open (BONDI interfaces list is member
 only) and invites more experts shall we say.
 
 The [Device APIs and Policy Working Group](http://www.w3.org/2009/dap/) is the
-relevant group in the W3C and lets take a closer peek at [calendar
+relevant group in the W3C and lets take a closer peek at the [W3C calendar
 API](http://dev.w3.org/2009/dap/calendar) and its
 [issues](http://www.w3.org/2009/dap/track/products/3).
 
