@@ -27,13 +27,13 @@ calendar of my mobile device. I care about the calendar on my Web service
 <http://facebook.com/>. What I want my personal mobile device to do, is to
 **remind** me about those events in my calendar.
 
-How does one get reminded? The way I have doing it for years is setting alarms
-on my mobile.
+How does one get reminded? The way I have been doing it for years is setting
+alarms on my personal mobile device.
 
 Alarms to wake up. Alarms to go to my dentist appointment. Alarms reminding me
 about my Mother's birthday. The most basic alarm just sounds or vibrates the
-phone at the start of the appointment. More advanced alarms notify you in
-advance in a variety of ways.
+phone at the start of the appointment. More advanced alarms could notify you (in
+advance) in a variety of ways.
 
 So what I am saying we don't need a calendar API, we need a **reminder API**. A
 good clean native API implementation on an Android smartphone looks like:
@@ -55,7 +55,7 @@ The easiest native way to implement this is to leverage cron, for example:
 
 # The "Alarmed" Calendar [WebIDL](http://www.w3.org/TR/WebIDL)
 
-I know its not quite valid, I will fix it when I get some time.
+I know the IDL is not quite valid, I will fix it when I get some time.
 
 	interface Alarm {
 	 attribute DOMString name;
@@ -112,12 +112,12 @@ If I leave out the filter, I mean all:
 	navigator.alarm.get(
 		function(ob) {
 			if (ob instanceof Error) { alert(ob); }
-			else { alert("Alarm(s) set " + ob); } i
+			else { alert("Active alarm(s)" + ob); }
 		});
 
 Hell, you could implement this [cron in
 Javascript](http://elijahr.blogspot.com/2009/03/javascript-cron.html) if you
-had HTML audio and some UI vibrate and flash goodies.
+had HTML audio and some UI vibrate and flash goodies at your disposal.
 
 I also think it's important to have a mapping to a [RestFUL
 API](http://en.wikipedia.org/wiki/Restful), for example:
