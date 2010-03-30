@@ -125,7 +125,7 @@ API](http://en.wikipedia.org/wiki/Restful), for example:
 	POST /set
 	Req: {{ m: "*", h: "*", dom: "*", mon: "*", dow: "*", action: "sound+vibrate+flash" }}
 
-	Res: [ 1 ] // affected ids
+	Res: [ 1 ] // affected ids or name
 
 	POST /get
 	Req: { m: "*", h: "*" }
@@ -136,9 +136,9 @@ API](http://en.wikipedia.org/wiki/Restful), for example:
 		]
 
 	POST /del
-	Req: { id: 1 }
+	Req: { "1", "wakey wakey" }
 
-	Res: [ 1 ] // affected ids
+	Res: [ "1", "wakey wakey" ] // affected reminder ids/names/labels
 
 Please let [me](http://hendry.iki.fi/) know what you think.
 
