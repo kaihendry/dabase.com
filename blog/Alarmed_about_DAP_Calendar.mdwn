@@ -55,32 +55,31 @@ The easiest way to implement this natively is to leverage [cron](http://en.wikip
 
 # The "Alarmed" Calendar [WebIDL](http://www.w3.org/TR/WebIDL)
 
-(I know the IDL is not quite valid, I will fix it when I get some time.)
-
 	interface Alarm {
-	 attribute DOMString name;
-	 attribute DOMString m;
-	 attribute DOMString h;
-	 attribute DOMString dom;
-	 attribute DOMString mon;
-	 attribute DOMString dow;
-	 attribute DOMString action;
-	}
+	attribute DOMString name;
+	attribute DOMString m;
+	attribute DOMString h;
+	attribute DOMString dom;
+	attribute DOMString mon;
+	attribute DOMString dow;
+	attribute DOMString action;
+	};
 
-	interface AlarmFilter : Alarm {}
+	interface AlarmFilter : Alarm {};
 
 	typedef sequence<Alarm> AlarmArray;
 	typedef sequence<DOMString> StringArray;
 
 	interface Callback {
 	  void call(Object ob);
-	}
+	};
 
 	interface AlarmManager {
 	 void set(Callback c, AlarmArray alarms);
 	 void get(Callback c, [Optional] AlarmFilter filter);
 	 void del(Callback c, [Optional] AlarmFilter filter);
-	}
+	};
+
 
 Using [man 5 crontab](http://manpages.debian.net/cgi-bin/man.cgi?query=crontab&sektion=5) as a guide, lets set an alarm for getting up for work:
 
