@@ -10,9 +10,9 @@ API](http://dev.w3.org/2009/dap/calendar) and its
 
 To me the DAP's calendar is a reworked [BONDI
 calendar](http://bondidev.omtp.org/modules/calendar.html) and it simply misses
-the mark for me. Nevermind the incompatibilities between the two at this point
-and the "god knows how" the two APIs are going to converge, lets start at the
-beginning.
+the mark for me. Nevermind the insane added complexity and incompatibilities
+between the two at this point and the "god knows how" the two APIs are going to
+converge, lets start at the beginning.
 
 The DAP defined [use cases](http://dev.w3.org/2009/dap/calendar/#use-cases):
 
@@ -44,7 +44,7 @@ The dreaded [repeating UI](http://www.flickr.com/photos/hendry/4442265963/) is
 very simple and it just works for most cases. I've done this
 [before](http://natalian.org/archives/2007/07/30/pimples/).
 
-The easiest way to implement this natively is to leverage cron, for example:
+The easiest way to implement this natively is to leverage [cron](http://en.wikipedia.org/wiki/Cron), for example:
 
 	# m h  dom mon dow   command
 	35  7  *   *   sun         alarm
@@ -117,7 +117,7 @@ If I leave out the filter, I mean all:
 
 Hell, you could implement this [cron in
 Javascript](http://elijahr.blogspot.com/2009/03/javascript-cron.html) if you
-had HTML5 audio and some UI vibrate and flash goodies at your disposal.
+had [HTML5 audio](http://dev.w3.org/html5/spec/video.html#audio) and some [UI vibrate](http://bondidev.omtp.org/modules/ui.html#startVibrateN10415) and [flash](http://bondidev.omtp.org/modules/ui.html#lightOnN1056A) goodies at your disposal.
 
 I also think it's important to have a mapping to a [RestFUL
 API](http://en.wikipedia.org/wiki/Restful), for example:
@@ -141,3 +141,8 @@ API](http://en.wikipedia.org/wiki/Restful), for example:
 	Res: [ 1 ] // affected ids
 
 Please let [me](http://hendry.iki.fi/) know what you think.
+
+Cons:
+
+* The android interface I said was great can't actually describe a cron job accurately. Woops.
+* Cron has issues like not knowing holidays and stuff like that. I guess a clever implementation could mark this.
