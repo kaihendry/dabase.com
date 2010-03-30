@@ -1,20 +1,12 @@
-The idea with [BONDI](http://bondi.omtp.org) is that it works faster than the
-[W3C](http://www.w3.org), since industry players are pushing it along. W3C does
-take longer, though it's process is more open (BONDI interfaces list is member
-only) and invites more experts shall we say.
+To me the [W3C DAP](http://www.w3.org/2009/dap/)
+[calendar](http://dev.w3.org/2009/dap/calendar) is a reworked [BONDI
+calendar](http://bondidev.omtp.org/modules/calendar.html), which simply misses
+the mark for me. Nevermind the [proposed added
+complexity](http://lists.w3.org/Archives/Public/www-archive/2010Mar/att-0026/Proposal_of_Lunar_Calendar_System_to_Device_API.pdf)
+and the "god knows how" the two APIs are going to converge, lets start at the
+beginning.
 
-The [Device APIs and Policy Working Group](http://www.w3.org/2009/dap/) is the
-relevant group in the W3C and lets take a closer peek at the [W3C calendar
-API](http://dev.w3.org/2009/dap/calendar) and its
-[issues](http://www.w3.org/2009/dap/track/products/3).
-
-To me the DAP's calendar is a reworked [BONDI
-calendar](http://bondidev.omtp.org/modules/calendar.html) and it simply misses
-the mark for me. Nevermind the insane added complexity and incompatibilities
-between the two at this point and the "god knows how" the two APIs are going to
-converge, lets start at the beginning.
-
-The DAP defined [use cases](http://dev.w3.org/2009/dap/calendar/#use-cases):
+The [DAP](http://www.w3.org/2009/dap/) defined [use cases](http://dev.w3.org/2009/dap/calendar/#use-cases):
 
 * A web application would like to access the device calendar
 * A user would like to create/modify/delete a Calendar appointment
@@ -22,8 +14,8 @@ The DAP defined [use cases](http://dev.w3.org/2009/dap/calendar/#use-cases):
 * A user would like to set a reminder for upcoming events.
 
 Lets distil what we are trying to do. Because I for one don't care about the
-calendar of my mobile device. I care about the calendar on my Web service
-<http://calendar.google.com>. I find out about friends' birthdays on
+calendar of my mobile device (who does?). I care about the calendar on my Web
+service <http://calendar.google.com>. I find out about friends' birthdays on
 <http://facebook.com>. What I want my personal mobile device to do, is to
 **remind** me about those events in my calendar.
 
