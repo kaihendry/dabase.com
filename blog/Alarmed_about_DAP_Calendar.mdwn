@@ -139,5 +139,5 @@ Please let [me](http://hendry.iki.fi/) know what you think.
 
 Cons:
 
-* The android interface I said was great can't actually describe a cron job accurately. Woops.
+* The Android "clock" interface I said was great can't actually describe a cron job accurately. However, the [repeating UI](http://www.flickr.com/photos/hendry/4442265963/) could be extended for simple representations of 'm,h,dom,mon'
 * Cron has issues like not knowing holidays and stuff like that. I guess a clever implementation could mark this.
