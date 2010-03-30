@@ -131,6 +131,10 @@ API](http://en.wikipedia.org/wiki/Restful), for example:
 
 	Res: [ "1", "wakey wakey" ] // affected reminder ids/names/labels
 
+That way I could send an alarm set request (with some auth magic) on my
+mobile's httpd endpoint at for example http://192.168.1.10/alarm/set without
+even touching my mobile device.
+
 Please let [me](http://hendry.iki.fi/) know what you think.
 
 Cons:
