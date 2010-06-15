@@ -15,17 +15,20 @@ I think Freenode should definitely discreetly host company channels, since it
 will only encourage companies to contribute to open source software projects
 down the line.
 
-# NickServ -- user authentication
+# NickServ - user authentication
 
 First you need to register with nickserv, `/msg nickserv help register`
 
-Then you need to configure your IRC client to authenticate to the nickserv on
-[startup](http://www.irssi.org/documentation/startup).
+Then you need to configure your IRC client to authenticate (identify) to the
+nickserv on [startup](http://www.irssi.org/documentation/startup). Ideally all
+your employees need to do this, though you can restrict your channel to IPs
+instead.
 
-# ChanServ -- controlling channel
+# ChanServ - restricting your channel to your employees
 
 Setup a dialog with chanserv and then begin like so:
 
+	help
 	help register
 
 Which provides help how to register your channel. For the purposes of this tutorial, I'll use #example.
