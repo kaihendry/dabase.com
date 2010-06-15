@@ -3,8 +3,9 @@ like teleconferences (urgh), email, instant messaging (which one?) and more
 integrated packages like [campfire](http://campfirenow.com).
 
 Or you can be a little old school and use **existing platforms for real time
-chat** like Inter Relay Chat (IRC). IRC does a bit of a learning curve, though
-if your company are engineers, it shouldn't be too much a problem.
+chat** like Inter Relay Chat (IRC). IRC does exhibit quite a learning curve,
+though if your company are engineers, it shouldn't be too much a problem to
+learn [how to use IRC](http://www.irchelp.org/irchelp/ircprimer.html).
 
 Here is a **guide to setting up your company with a private channel** on
 [Freenode](http://freenode.net/using_the_network.shtml). Whilst running your
