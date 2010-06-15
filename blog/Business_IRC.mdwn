@@ -1,9 +1,10 @@
 In a modern distributed company in order to communicate, businesses use tools
-like teleconferences (urgh), email, instant messaging and more integrated
-packages like [campfire](http://campfirenow.com).
+like teleconferences (urgh), email, instant messaging (which one?) and more
+integrated packages like [campfire](http://campfirenow.com).
 
-Or you can be a little old school and use **existing platforms** like Inter
-Relay Chat (IRC).
+Or you can be a little old school and use **existing platforms for real time
+chat** like Inter Relay Chat (IRC). IRC does a bit of a learning curve, though
+if your company are engineers, it shouldn't be too much a problem.
 
 Here is a **guide to setting up your company with a private channel** on
 [Freenode](http://freenode.net/using_the_network.shtml). Whilst running your
@@ -11,9 +12,9 @@ company on Freenode is not strictly [on
 topic](http://freenode.net/policy.shtml#ontopic), it certainly isn't [off
 topic](http://freenode.net/policy.shtml#offtopic).
 
-I think Freenode should definitely discreetly host company channels, since it
-will only encourage companies to contribute to open source software projects
-down the line.
+I think [Freenode](http://freenode.net/pdpc.shtml) should definitely discreetly
+host company channels, since it will only encourage companies to contribute to
+open source software projects down the line.
 
 # NickServ - user authentication
 
@@ -51,7 +52,7 @@ To add an additional admin user:
 
 	FLAGS #example ircusername +votsriRfAF
 
-If a user tried to join the channel, the user will be immediately kick banned.
+If a user tried to join your restricted channel, the user will be immediately kick banned.
 So if that user is for example later added on the access list, you need to
 unban that user for that user to rejoin the channel.
 
