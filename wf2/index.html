@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8" />
-  <title>Web Forms 2.0 - Your daily Electricity cost</title>
+<head>
+<meta charset="utf-8" />
+<title>Web Forms 2.0 - Your daily Electricity cost</title>
+
+<style>
+input { background:red }
+input:valid { background:lime }
+</style>
+
 
 <script type="text/javascript">
-if (! window.opera)
-	{ alert("Web Forms 2 only works in the Opera browser currently"); 
-	  window.location.replace('http://www.opera.com/download/');
-	}
-
 	function calctotal() {
-	var total = 0;
-	var outputs = document.forms[0].getElementsByTagName('output');
-	for(var i = 0, output; output = outputs[i]; i++) {
-	if(output.name != 'total') total += parseFloat(output.value);
-	}
-	return total;
+		var total = 0;
+		var outputs = document.forms[0].getElementsByTagName('output');
+		for(var i = 0, output; output = outputs[i]; i++) {
+			if(output.name != 'total') total += parseFloat(output.value);
+		}
+		return total;
 	}
 </script>
 </head>
@@ -24,59 +25,59 @@ if (! window.opera)
 
 <form action="http://software.hixie.ch/utilities/cgi/test-tools/echo" method="post">
 
-<p>
-Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">price per kiloWatt hour</a>:
-<input name="price" type="number" title="Price per kiloWatt hour" step="any" value="12.2"/> pence
-</p>
+	<p>
+	Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">price per kiloWatt hour</a>:
+	<input name="price" type="number" title="Price per kiloWatt hour" step="any" value="12.2"/> pence
+	</p>
 
-<fieldset>
-<legend>List your appliances</legend>
+	<fieldset>
+		<legend>List your appliances</legend>
 
-   <table>
-    <thead>
-     <tr>
-			<th>Quantity</th>
-			<th>Appliance</th>
-			<th>Wattage</th>
-			<th>Time (minutes)</th>
-			<th>Cost</th>
-			<th></th>
-     </tr>
-    </thead>
-    <tbody>
+		<table>
+			<thead>
+				<tr>
+					<th>Quantity</th>
+					<th>Appliance</th>
+					<th>Wattage</th>
+					<th>Time (minutes)</th>
+					<th>Cost</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
 
-     <tr repeat="template" id="row">
-      <td><input required="required" name="quantity_[row]" type="number" value="1"></td>
-      <td><input required="required" name="name_[row]" type="text" value="Spot light"></td>
-      <td><input required="required" name="wattage_[row]" type="number" value="50"></td>
-      <td><input required="required" min="0" max="1440" name="minutes_[row]" type="number" value="1"></td>
+				<tr repeat="template" id="row">
+					<td><input required="required" name="quantity_[row]" type="number" value="1"></td>
+					<td><input required="required" name="name_[row]" type="text" value="Spot light"></td>
+					<td><input required="required" name="wattage_[row]" type="number" value="50"></td>
+					<td><input required="required" min="0" max="1440" name="minutes_[row]" type="number" value="1"></td>
 
-	  <td><output name="result_[row]" onforminput="value = (quantity_[row].value * (wattage_[row].value / 1000) * (minutes_[row].value / 60)) * price.value">0</output></td>
+					<td><output name="result_[row]" onforminput="value = (quantity_[row].value * (wattage_[row].value / 1000) * (minutes_[row].value / 60)) * price.value">0</output></td>
 
-      <td><button type="remove">Delete Row</button></td>
-     </tr>
+					<td><button type="remove">Delete Row</button></td>
+				</tr>
 
-    </tbody>
-   </table>
+			</tbody>
+		</table>
 
-   <p>
-    <button type="add" template="row">Add Row</button>
-   </p>
+		<p>
+		<button type="add" template="row">Add Row</button>
+		</p>
 
 
-</fieldset>
+	</fieldset>
 
-  <h2>Approximate cost per day: <output name="total" onformchange="value = calctotal()">0</output> pence</h2>
-  <h2>Approximate cost per month: £ <output name="total" onformchange="value = (calctotal() * 30) / 100">0</output></h2>
+	<h2>Approximate cost per day: <output name="total" onformchange="value = calctotal()">0</output> pence</h2>
+	<h2>Approximate cost per month: £ <output name="total" onformchange="value = (calctotal() * 30) / 100">0</output></h2>
 
-  </form>
+</form>
 
 <p>There are:
 </p>
 <ul>
-<li>60 minutes in an hour</li>
-<li>480 minutes in 8 hours</li>
-<li>1440 minutes in each day</li>
+	<li>60 minutes in an hour</li>
+	<li>480 minutes in 8 hours</li>
+	<li>1440 minutes in each day</li>
 </ul>
 
 Requires <a href="http://www.whatwg.org/specs/web-forms/current-work/">Web Form 2.0</a> support. e.g. <a href="http://www.opera.com/">Opera</a>. Thanks to the #mrt peeps! :)<br><a href="http://natalian.org/archives/2008/06/29/daily-electricity-cost/">Back story</a>
