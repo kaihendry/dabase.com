@@ -1,0 +1,22 @@
+[[!meta title="Using shell instead of awk for printing columns"]]
+
+There are two typical ways to get say the first column of a file. Most people
+currently use **awk**, like so:
+
+	awk '{print $1}' webc-6.0.txt
+
+See my [[awk_tip|01085]] for more.
+
+However did you know you can use bash like so?
+
+	while read -r -a fields; do echo -e "${fields[1]}"; done < webc-6.1.txt > webc-6.1-1col.txt
+
+To get the last field using bash, use:
+
+	while read -r -a fields; do echo "${fields[@]:(-1)}"; done < webc-6.0.txt
+
+However **awk** is still much faster than shell for this task.
+
+If your columns are delimited with say a full stop, the recipe may help you:
+
+	while IFS=. read -r -a fields; do echo "${fields[@]:(-2)}" | tr ' '  ','; done < $1 | grep .
