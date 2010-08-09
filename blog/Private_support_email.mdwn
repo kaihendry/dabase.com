@@ -1,0 +1,28 @@
+Say you handle support emails privately at `support@example.com`.
+
+Ideally this email is distributed amongst at least two employees in different timezones: Tom & John.
+
+Q: How does Tom answer a support email and let John knows he's answered it?
+A: Use [BCC](http://en.wikipedia.org/wiki/Blind_carbon_copy)
+
+Q: How do you make sure the inquirer keeps to the support@example.com thread/conversation and not the personal email address of Tom?
+
+A: Use Reply-To:
+
+In [mutt](http://www.mutt.org), you can automate this process like so:
+
+	set include
+	reply-hook "~C support@example.com"  'my_hdr Reply-To: support@example.com'
+	reply-hook "~C support@example.com" 'push <edit-bcc>,support@example.com<enter>'
+
+In Gmail, you can setup the Reply-To: rule, but only for the entire
+@example.com account which is awkward. Also you must remember to set the BCC:
+manually.
+
+Now with some luck, you can handle support/issue requests or "bug reports" as
+conversations in your inbox. This is far from perfect as you would have to
+manually archive threads to mark them as done.
+
+Futhermore a mail BTS hybrid could be better achieved with labels/folders to
+emulate something like Debian's
+[tags](http://www.debian.org/Bugs/Developer#tags).
