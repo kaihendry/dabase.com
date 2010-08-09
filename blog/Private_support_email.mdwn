@@ -21,8 +21,12 @@ manually.
 
 Now with some luck, you can handle support/issue requests or "bug reports" as
 conversations in your inbox. This is far from perfect as you would have to
-manually archive threads to mark them as done.
+manually archive threads to mark them as done. And then you would only know
+it's "done", as there is no way of telling John is has been archived
+accordingly without sharing a mailbox. Sharing a mailbox AFAIK is pretty darn
+hard, though I've heard a rumour of IMAP having such a feature. And you would
+probably lose some accountability benefit sharing a mailbox.
 
-Futhermore a mail BTS hybrid could be better achieved with labels/folders to
-emulate something like Debian's
+Futhermore an interim mail BTS hybrid could be better achieved with
+labels/folders to emulate something like Debian's
 [tags](http://www.debian.org/Bugs/Developer#tags).
