@@ -15,9 +15,12 @@ In [mutt](http://www.mutt.org), you can automate this process like so:
 	reply-hook "~C support@example.com"  'my_hdr Reply-To: support@example.com'
 	reply-hook "~C support@example.com" 'push <edit-bcc>,support@example.com<enter>'
 
-In Gmail, you can setup the Reply-To: rule, but only for the entire
-@example.com account which is awkward. Also you must remember to set the BCC:
-manually.
+Many thanks to [scandal](http://sigpipe.org) on #mutt on irc.freenode.net for
+the above `~/.muttc` configuration lines.
+
+In [Gmail](http://en.wikipedia.org/wiki/Gmail), you can setup the Reply-To:
+rule, but only for the entire @example.com account which is awkward. Also you
+must remember to set the BCC: manually.
 
 Now with some luck, you can handle support/issue requests or "bug reports" as
 conversations in your inbox. This is far from perfect as you would have to
