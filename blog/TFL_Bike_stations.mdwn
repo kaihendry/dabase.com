@@ -1,0 +1,341 @@
+[[!table  data="""
+Docking Station Unique Name,Village Name,Terminal Location Easting X co-ordinate ,Terminal Location Y co-ordinate (Face A/B),Max docking points
+Abbey Orchard Street,Westminster,529755.52,179341.07,29
+Abingdon Villas,Kensington,525235.96,179145.61,17
+Albert Embankment,Vauxhall,530422.63,178502.44,24
+Albert Gate,Hyde Park,527912.8,179831.63,28
+Alderney Street,Pimlico,529184.31,178206.2,14
+Aldersgate Street,Barbican,532102.65,181929.32,15
+Altab Ali Park,Whitechapel,534161.89,181535.31,16
+Ampton Street ,Clerkenwell,530630.49,182607.79,21
+Appold Street,Liverpool Street,533225.36,182059.03,26
+Argyll Road,Kensington,525351.92,179483.81,19
+Ashley Place,Victoria,529147.11,179106.96,25
+Baker Street,Marylebone,528026.98,181610.41,22
+Baldwin Street,St. Luke's,532695,182632.9,21
+Bank of England Museum,Bank,532797.84,181235.22,16
+Bankside Mix,Bankside,531948.57,180253.48,33
+Barbican Centre,Barbican,532463.19,181850.05,19
+Bath Street,St. Luke's,532538.4,182502.8,18
+Bayley Street ,Bloomsbury,529700.83,181616.6,25
+Baylis Road,Waterloo,531231.55,179748.28,18
+Bayswater Road,Hyde Park,526789.06,180791.63,26
+Beaumont Street,Marylebone,528351.81,181962.95,23
+Bedford Way,Bloomsbury,529941.38,182188.65,23
+Belgrave Road,Victoria,528934.35,178772.58,29
+Belgrave Square,Belgravia,528348.77,179448.56,21
+Belgrove Street ,King's Cross,530253.76,182894.42,21
+Bell Street ,Marylebone,527339.64,181936.92,18
+Belvedere Road,South Bank,530941.4,180262.54,39
+Bermondsey Street,Bermondsey,533261.06,179401.7,18
+Berry Street,Clerkenwell,531912.73,182148.2,41
+Bethnal Green Road,Shoreditch,533661.28,182282.38,22
+Black Lion Gate,Kensington Gardens,525854.15,180554.1,24
+Black Prince Road,Vauxhall,530830.63,178561.01,19
+Bolsover Street,Fitzrovia,528884.89,182144.48,19
+Borough High Street,The Borough,532356.33,179694.02,21
+Borough Road,Elephant & Castle,531950.9,179483.56,41
+Bourne Street,Belgravia,528303.17,178497.38,16
+Bouverie Street,Temple,531388.33,181129.55,18
+Braham Street,Aldgate,533773.28,181237.7,34
+Bramham Gardens,Earl's Court,525731.42,178354.02,14
+Breams Buildings,Holborn,531115.08,181357.98,16
+Bricklayers Arms,The Borough,532977.22,179083.3,28
+British Museum,Bloomsbury,530211.09,181684.46,35
+Broadcasting House,Marylebone,528857.44,181542.87,18
+Broadwick Street,Soho,529469.99,181065.13,18
+Brunswick Square,Bloomsbury,530348.16,182230.04,24
+Brushfield Street,Liverpool Street,533380.93,181755.97,22
+Bruton Street,Mayfair,528882.67,180722.19,21
+Bunhill Row,Moorgate,532619.6,181944.7,30
+Cadogan Place,Knightsbridge,527960.38,178908.3,34
+Calshot Street ,King's Cross,530703.8,183063.65,24
+Campden Hill Road,Notting Hill,525088.74,180165.36,17
+Carey Street,Holborn,531050.1,181253.15,16
+Cartwright Gardens ,Bloomsbury,530100.11,182491.47,16
+Chadwell Street,Angel,531445.7,182988.8,18
+Chapel Place,Marylebone,528658.96,181225.18,29
+Charlbert Street,St. John's Wood,527158.01,183300.75,16
+Charles II Street,West End,529735.86,180488.71,24
+Cheapside,Bank,532415.73,181164.05,21
+Chelsea Green,Chelsea,527389.8,178451.03,27
+Chepstow Villas,Notting Hill,524896.54,180778.45,24
+Christopher Street ,Liverpool Street,532984.81,182001.53,32
+Claremont Square,Angel,531199.2,183110.5,18
+Claverton Street,Pimlico,529377.55,177853.07,32
+Clerkenwell Green,Clerkenwell,531584.48,182184.98,21
+Cleveland Gardens,Bayswater,526166.22,181195.94,12
+Clifton Road,Maida Vale,526383.28,182310.54,22
+Cloudesley Road,Angel,531252.73,183416.66,20
+Collingham Gardens,Earl's Court,525980.1,178521.74,14
+Colombo Street,Southwark,531567.52,180203.72,15
+Commercial Street,Shoreditch,533611.07,182016.51,16
+Concert Hall Approach,South Bank,530865.79,180140.84,28
+Cotton Garden Estate,Kennington,531565.98,178567.74,24
+Craven Street,Strand,530149.2,180461.39,28
+Crawford Street,Marylebone,527952.63,181758.37,18
+Cumberland Gate,Hyde Park,527634.48,180844.45,20
+Curlew Street,Shad Thames,533763.05,179907.22,21
+Curzon Street,Mayfair,528772.32,180311.26,16
+De Vere Gardens,Kensington,526075.29,179650.36,29
+Denyer Street,Knightsbridge,527477.72,178778.08,30
+Derry Street,Kensington,525626.45,179597.82,18
+Devonshire Square,Liverpool Street,533340.26,181474.99,16
+Dickens Square,The Borough,532410.03,179261.03,32
+Doric Way ,Somers Town,529658.08,182755.67,31
+Dorset Square,Marylebone,527673.49,182011.34,16
+Drummond Street ,Euston,529451.5,182628.28,28
+Drury Lane,Covent Garden,530393.97,181209.62,27
+Earnshaw Street ,Covent Garden,529948.48,181348.22,18
+East Road,Hoxton,532765.36,182818.1,27
+Eastbourne Mews,Paddington,526440.38,181292.94,34
+Eaton Gate,Belgravia,528204.64,178860.97,17
+Eaton Square,Belgravia,528454.85,179132.12,20
+Eccleston Place,Victoria,528689.88,178849.45,19
+Elizabeth Bridge,Victoria,528704.44,178673.86,34
+Embankment (Savoy),Strand,530628.75,180643.74,42
+Emperor's Gate,South Kensington,526070.94,178940.89,22
+Empire Square,The Borough,532687.96,179716.97,46
+Endsleigh Gardens,Euston,529784.86,182536.83,32
+Euston Road,Euston,529515.81,182463,16
+Eversholt Street ,Camden Town,529331.2,183211.54,16
+Falkirk Street,Hoxton,533379.78,183087.62,26
+Fanshaw Street,Hoxton,533047.65,182921.6,34
+Farringdon Lane,Clerkenwell,531331.83,182207.37,16
+Fashion Street,Whitechapel,533767.99,181699.01,30
+Finsbury Circus,Liverpool Street,532852.76,181529.75,32
+Finsbury Leisure Centre,St. Luke's,532158.64,182505.71,20
+Finsbury Library ,Finsbury,531603.01,182570.25,29
+Finsbury Square ,Moorgate,532914.39,181963.95,33
+Flood Street,Chelsea,527369.84,178156.66,18
+Foley Street,Fitzrovia,529114.14,181667.74,24
+Fore Street Avenue,Guildhall,532590.85,181616.89,26
+Frampton Street,Paddington,526699.99,182071.19,32
+George Place Mews,Marylebone,527888.1,181382.08,16
+Geraldine Street,Elephant & Castle,531572.94,179165.49,17
+Gloucester Road (Central),South Kensington,526207.25,179066.74,19
+Gloucester Road (North),Kensington,526165.34,179228.37,16
+Gloucester Road Station,South Kensington,526256.44,178814.57,15
+Gloucester Street,Pimlico,529253.6,178531.22,25
+Gloucester Terrace,Bayswater,525814.32,181444.5,23
+Godliman Street,St. Paul's,532001.83,180996.72,25
+Golden Lane,Barbican,532298.79,182035.26,27
+Golden Square,Soho,529373.54,180863.79,18
+Goswell Road (City Uni),Finsbury,531825.57,182746.06,17
+Gower Place ,Euston,529464.5,182349.44,17
+Grafton Street,Mayfair,528931.26,180640.57,18
+Graham Street,Angel,531885.3,183239,26
+Great Dover Street,The Borough,532718.34,179334.86,33
+Great Marlborough Street,Soho,529310.5,181165.15,26
+Great Percy Street,Clerkenwell,530821.02,182794.61,23
+Great Russell Street,Bloomsbury,529994.61,181528.35,26
+Great Titchfield Street,Fitzrovia,529052.72,181785.42,19
+Great Tower Street,Monument,533128.38,180803.6,16
+Green Street,Mayfair,527957.43,180870.1,19
+Grosvenor Crescent,Belgravia,528282.44,179662.78,18
+Grosvenor Road,Pimlico,529090.15,177903.33,29
+Grove End Road,St. John's Wood,526564.34,182906.36,20
+Guildhouse Street,Victoria,529131.03,178682.02,16
+Guilford Street ,Bloomsbury,530509.42,182166.89,38
+Hampstead Road,Euston,529252.54,182379.06,54
+Hampstead Road (Cartmel),Euston,529197.05,182882.41,16
+Hampton Street,Walworth,531894.21,178733.38,21
+Hardwick Street,Clerkenwell,531338.27,182688.56,30
+Harewood Avenue,Marylebone,527484.48,181975.79,21
+Harper Road,The Borough,532246.71,179457.81,42
+Harrington Square,Camden Town,529165.96,183208.85,27
+Hatton Garden,Holborn,531366.95,181685.89,28
+Hatton Wall,Holborn,531290.96,181999.47,26
+Hinde Street,Marylebone,528327.06,181384.41,21
+Holborn Circus,Holborn,531325.83,181587.43,39
+Holy Trinity Brompton,Knightsbridge,527203.19,179157.56,28
+Hop Exchange,The Borough,532535.83,180136.32,36
+Horseferry Road,Westminster,529873.85,178973.78,16
+Houghton Street,Strand,530775.78,181091.44,15
+Howick Place,Westminster,529299.12,179176.71,28
+Hyde Park Corner,Hyde Park,528254.85,179858.52,28
+Ilchester Place,Kensington,524844.09,179509.41,24
+Jewry Street,Aldgate,533549.8,181139.82,17
+Jubilee Gardens,South Bank,530816.89,180092.77,30
+Kennington Cross,Kennington,531216.31,178356.44,29
+Kennington Lane Rail Bridge,Vauxhall,530456.13,178047.92,19
+Kennington Lane Tesco,Vauxhall,530915.77,178108.3,14
+Kennington Road  ,Vauxhall,531234.8,179111.16,36
+Kennington Road Post Office,Oval,531280.47,177896.16,18
+Kensington Church Street,Kensington,525619.17,179797.09,17
+Kensington Gore,Knightsbridge,526515.02,179627.42,23
+Kensington Olympia Station,Olympia,524383.68,179210.4,25
+Kingsway,Covent Garden,530654.56,181176.09,16
+Knaresborough Place,Earl's Court,525707.33,178739.31,18
+Knightsbridge,Hyde Park,528128.94,179815.18,43
+Lambeth North Station,Waterloo,531145.7,179489.69,20
+Lambeth Road,Vauxhall,530745.36,179005.39,18
+Leman Street,Aldgate,534056,181037.08,16
+Leonard Circus ,Shoreditch,532986.42,182381.31,22
+Lexham Gardens,Kensington,525608.84,178985.58,19
+Lisson Grove,St. John's Wood,526894.33,182420.42,18
+Liverpool Road (N1 Centre),Angel,531393.7,183431.3,24
+Llittle Argyll Street,West End,529062.28,181145.45,21
+LMU Commercial Road,Whitechapel,534288.83,181328.18,14
+Lodge Road,St. John's Wood,527031.7,182634.5,18
+Lollard Street,Vauxhall,530962.17,178788.37,25
+London Zoo Car Park,The Regent's Park,528391.59,183623.53,32
+Long Lane ,Bermondsey,532975.83,179529.99,20
+Longford Street,Regent's Park,528846.41,182374.62,16
+Lower Thames Street,Monument,532993.34,180668.39,17
+LSBU (Borough Road),Elephant & Castle,531764.47,179461.63,35
+Malet Street,Bloomsbury,529804.55,181963.45,40
+Mallory Street,Marylebone,527306.54,182275.31,20
+Margery Street ,Clerkenwell,531039.1,182542.5,19
+Marylebone Lane,Marylebone,528597.94,181162.61,24
+Milford Lane,Temple,531042.4,180919.11,18
+Milroy Walk,South Bank,531524.53,180401.24,30
+Montpelier Street,Knightsbridge,527437.25,179366.83,16
+Moorfields,Moorgate,532735.97,181748.6,26
+Murray Grove ,Hoxton,532597.78,183060.43,27
+Museum of London,Barbican,532169.89,181594.98,52
+Natural History Museum,South Kensington,526501.98,178977.26,42
+Nevern Place,Earl's Court,525419.72,178700.14,20
+New Globe Walk,Bankside,532203.97,180434.55,19
+New Inn Yard,Shoreditch,533347.02,182371.93,20
+New Kent Road,The Borough,532485.73,179000.94,33
+New North Road,Hoxton,532861.67,183094.77,44
+New Road ,Whitechapel,534517.16,181693.13,73
+Newgate Street ,St. Paul's,532013.51,181323.53,34
+North Audley Street,Mayfair,528218.73,180947.41,17
+North Wharf Road,Paddington,526606.98,181542.44,25
+Northington Street ,Holborn,530937.29,182057.43,19
+Norton Folgate,Liverpool Street,533383.23,181993.05,23
+Notting Hill Gate Station,Notting Hill,525262.07,180478.32,16
+Nutford Place,Marylebone,527462.88,181329.66,18
+Old Brompton Road,South Kensington,526368.13,178456.82,16
+Old Quebec Street,Marylebone,527897.26,181113.12,16
+Old Street Station,St. Luke's,532702.7,182488.5,37
+Ontario Street,Elephant & Castle,531892.27,179217.4,15
+Orsett Terrace,Bayswater,526118.3,181453.46,15
+Paddington Street,Marylebone,528123.95,181798.72,16
+Palace Gardens Terrace,Notting Hill,525446.83,180399.05,22
+Palace Gate,Kensington Gardens,526114.73,179685.29,16
+Pall Mall ,St. James's,529414.33,180179.06,24
+Pall Mall East,West End,529825.47,180416.1,22
+Pancras Road,King's Cross,529841.66,183348.98,16
+Panton Street,West End,529763.87,180622.49,21
+Park Lane ,Hyde Park,527974.95,180619.17,28
+Park Road (Baker Street),The Regent's Park,527817.25,182228.7,22
+Park Street,Bankside,532463.89,180284.3,18
+Pembridge Villas,Notting Hill,525179.06,180668.3,16
+Penfold Street,Marylebone,526939.5,182025.86,15
+Penywern Road,Earl's Court,525590.34,178509.69,17
+Phillimore Gardens,Kensington,525207.07,179391.86,37
+Pont Street,Knightsbridge,527739.05,179152.13,24
+Porchester Place,Paddington,527414.36,181131.29,18
+Portland Place,Marylebone,528781.93,181829.97,34
+Portugal Street,Holborn,530814.86,181239.61,16
+Poured Lines,Bankside,531741.25,180345.48,31
+Prince Albert Road,The Regent's Park,527654.29,183490.4,24
+Princes Square,Bayswater,525600.85,180946.27,16
+Queen Mother Sports Centre,Victoria,529223.25,178820.98,26
+Queen Street,Bank,532434.82,180904.36,16
+Queen Victoria Street,St. Paul's,532121.28,180941.66,32
+Queen's Gate (Central),South Kensington,526530.45,178797.11,31
+Queen's Gate (North),Kensington,526405.85,179579.5,19
+Queen's Gate (South),South Kensington,526555.34,178632.18,25
+Rampayne Street,Pimlico,529727.03,178433.45,21
+Red Lion Square,Holborn,530595.47,181733.86,16
+Regency Street,Westminster,529764.23,178666.38,22
+Risinghill Street ,Angel,531070.62,183293.01,25
+River Street ,Clerkenwell,531202.52,182832.02,19
+Rochester Row,Westminster,529527.71,179079.49,13
+Rodney Road ,Walworth,532681.73,178677.61,24
+Rodney Street,Angel,530892.74,183113.88,30
+Roscoe Street,St. Luke's,532263.4,182168.6,18
+Royal Avenue,Chelsea,527653.88,178372.09,20
+Royal London Hospital,Whitechapel,534723.17,181800.37,17
+Royal Mews,Victoria,528942.48,179302.62,26
+Russell Square Station,Bloomsbury,530237.34,182167.88,26
+Sackville Street,Mayfair,529253.69,180654.96,18
+Sadlers Sports Centre,Finsbury,531941.91,182373.28,17
+Sancroft Street,Vauxhall,530956.46,178409.7,24
+Scala Street,Fitzrovia,529420.51,181757.11,21
+Serpentine Car Park,Hyde Park,526916.47,180035.85,16
+Seville Street,Knightsbridge,527861.67,179708.09,27
+Shoreditch High Street,Shoreditch,533419.11,182579.78,26
+Shoreditch Park,Hoxton,532824.63,183417.17,30
+Sloane Avenue,Knightsbridge,527284.91,178728.84,30
+Smith Square,Westminster,530076.33,179091.14,18
+Soho Square ,Soho,529690.11,181287.38,37
+South Audley Street,Mayfair,528392.09,180542.12,15
+South Wharf Road,Paddington,526668.47,181400.78,15
+Southampton Place,Holborn,530447.71,181526.59,20
+Southwick Street,Paddington,527127.56,181258.45,17
+Speakers' Corner,Hyde Park,527733.47,180856.79,45
+St. Chad's Street,King's Cross,530436.76,182911.99,23
+St. George Street,Mayfair,528975.13,180860.64,18
+St. George's Square,Pimlico,529538.31,178233.95,29
+St. James's Square,St. James's,529554.32,180370.72,40
+St. John Street,Finsbury,531568.7,182752.1,18
+St. John's Wood Church,The Regent's Park,527202.89,182878,50
+St. John's Wood Road,St. John's Wood,526721.14,182510.28,34
+St. Luke's Church,Chelsea,527134.93,178339.16,20
+St. Martin's Street,West End,529891.25,180564.33,18
+St. Mary Axe,Aldgate,533279.12,181223.75,21
+Stamford Street,South Bank,531156.74,180205.31,27
+Stonecutter Street,Holborn,531566.99,181355.5,16
+Sumner Place,South Kensington,526886.31,178499.35,19
+Sun Street,Liverpool Street,533036.68,181861.94,26
+Swan Street,The Borough,532479.75,179652.88,27
+Tachbrook Street,Victoria,529337.84,178661.19,16
+Tanner Street,Bermondsey,533461.67,179717.59,19
+Tavistock Place,Bloomsbury,530271.73,182483.89,18
+Tavistock Street,Covent Garden,530506.11,180900.62,33
+Taviton Street,Bloomsbury,529744.38,182336.93,30
+The Guildhall,Guildhall,532412.94,181369.17,17
+The Tennis Courts,The Regent's Park,528196.4,182332.8,16
+Theobald's Road ,Holborn,530761.07,181867.36,26
+Tooley Street,Bermondsey,533382.53,180032.3,17
+Torrens Street,Angel,531505.2,183177.73,19
+Tower Gardens ,Tower,533653.76,180708.49,24
+Trebovir Road,Earl's Court,525328.5,178420.86,18
+Triangle Car Park,Hyde Park,527082.5,180200.04,27
+Turquoise Island,Notting Hill,524939.88,181021.93,21
+Tyers Gate,Bermondsey,533144.55,179736.24,36
+Tysoe Street,Clerkenwell,531259.84,182530.82,20
+Union Street,The Borough,532071.91,180019.73,17
+Vaughan Way,Wapping,534231.65,180605.6,24
+Vauxhall Bridge ,Pimlico,529973.46,178260.55,35
+Vauxhall Cross,Vauxhall,530320.05,177997,17
+Vicarage Gate,Kensington,525542.52,179969.49,18
+Vincent Square,Westminster,529432.24,178872.11,19
+Walnut Tree Walk,Vauxhall,531231.91,178884.98,20
+Wansey Street,Walworth,532201.84,178631.36,17
+Wapping High Street,Wapping,534197.58,180201.54,20
+Wardour Street,Soho,529638.37,180939.3,16
+Warren Street Station,Euston,529270.36,182256.69,26
+Warwick Avenue Station,Maida Vale,526094.38,182055.16,19
+Warwick Square,Pimlico,529097.16,178404.14,19
+Webber Street ,Southwark,531831.15,179680.23,24
+Wellington Arch,Hyde Park ,528530.17,179823.44,36
+Wellington Road,St. John's Wood,526852.57,183153.22,17
+Wellington Street ,Strand,530581.33,180879.01,15
+Wells Street,Fitzrovia,529286.74,181467.67,38
+Wenlock Road ,Hoxton,532311.64,183064.25,28
+West Cromwell Road,Earl's Court,525173.73,178736.49,24
+West Smithfield Rotunda,Farringdon,531870.82,181631.408,25
+Westbourne Grove,Bayswater,525672.29,181175.1,16
+Westminster University,Marylebone,528104.35,182009.43,16
+Whitehall Place,Strand,530350.82,180292.98,46
+Whiteley's,Bayswater,525820.85,181094.2,16
+William IV Street,Strand,530233.58,180614.78,26
+Windsor Terrace,Hoxton,532350.41,182860.8,24
+Winsland Street,Paddington,526692.36,181339.58,15
+Wood Street,Guildhall,532353.43,181509.24,17
+Woodstock Street,Mayfair,528655.55,181091.24,21
+Wormwood Street,Liverpool Street,533151.22,181435.12,16
+Wright's Lane,Kensington,525517.64,179487.53,37
+"""]]
+
+It took me a scary amount of time to realise that <http://www.tfl.gov.uk/tfl/businessandpartners/syndication/example-feeds.aspx#cyclehirestations> was just **an example feed**. Once I [registered](https://www.tfl.gov.uk/tfl/businessandpartners/syndication/get-feeds.aspx) I was given a feed URL based on my email address, whereby I could get a Zip file of the XLS of the above data. _Sigh_.
+
+Anyone know what unit their X/Y co-ordinates are in?? [TFL's user
+guide](https://www.tfl.gov.uk/tfl/businessandpartners/syndication/user-guide.aspx)
+didn't enlighten me.
