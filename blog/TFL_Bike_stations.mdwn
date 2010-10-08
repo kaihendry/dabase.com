@@ -1,4 +1,5 @@
 [[!table  data="""
+id, stationName, areaName, lat, long
 1,River Street,Clerkenwell,51.52916347,-0.109970527,0,19,true,false,false
 2,Phillimore Gardens,Kensington,51.49960695,-0.197574246,31,6,true,false,false
 3,Christopher Street,Liverpool Street,51.52128377,-0.084605692,32,0,true,false,false
