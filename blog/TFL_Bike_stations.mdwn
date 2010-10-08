@@ -352,7 +352,7 @@ Anyone know what unit their X/Y co-ordinates are in?? [TFL's user
 guide](https://www.tfl.gov.uk/tfl/businessandpartners/syndication/user-guide.aspx)
 didn't enlighten me.
 
-Update: [cycleapp] has informed me the original data is supplied in "UK
+Update: [cycleapp](http://twitter.com/#!/cyclehireapp/status/26653840092) has informed me the original data is supplied in "UK
 National Grid coordinates". Anyhoo, they seem to have an AWESOME sane [London
 Bike hire CSV feed service](http://cyclehireapp.com/cyclehirelive/), from which
 I pulled the data down above for a preview.
