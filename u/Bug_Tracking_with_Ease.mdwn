@@ -1,3 +1,0 @@
-Bontq is a [web based project management software](http://www.bontq.com) for project managers, software developers and testers. It allows you to manage projects and track bugs, tasks, feature requests very easy because of its clean and user-friendly interface. The essential part of Bontq is it's cross-platform Desktop Client. Using Desktop Client's functionality you can Capture Screenshots, Record Videos and attach them right to your items (bugs, tasks, issues and etc).
-
-DEMO: http://demo.bontq.com
