@@ -1,6 +1,7 @@
 [[!meta title="Shell CGI"]]
 
-For simple scripts shell is pretty good. It's the only choice if you plan on embedding Web application on a device. 
+For simple scripts shell is pretty good. It's a sane choice if you plan on
+embedding a Web application on a device, as PHP is a bit of a PIG.
 
 The Apache2 configuration with .htaccess is straight forward:
 
@@ -41,4 +42,4 @@ text/html" in there with a couple of carriage returns.
 
 `/dev/stderr` outputs to `/var/log/apache2/error.log` so you need redirect `wget` output to stdout as I do in this case.
 
-[More examples of CGI applications embedded on machines.](http://git.debian.org/?p=users/kai-guest/nostromo/.git;a=tree;f=webc;h=c8ddaf9a00125c8310e9aa2ad502bdc36c7650be;hb=refs/heads/webc)
+Here is a more worked example <http://saveaswidget.com/hgweb.cgi/file/tip/save.cgi>.

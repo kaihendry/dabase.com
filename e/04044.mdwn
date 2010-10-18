@@ -1,14 +1,49 @@
 [[!meta title="Apache2 Vhost logging"]]
 
-After long last, the Debian package introduces:
+This is my "suckless" configuration for Apache running under Debian.
 
-	nox:/etc/apache2% grep vhost apache2.conf
-	LogFormat "%v:%p %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" vhost_combined
-	CustomLog /var/log/apache2/other_vhosts_access.log vhost_combined
+Obviously replace "212.13.195.83" with your server's IP.
 
-But the el-cheapo virtual hosting `VirtualDocumentRoot /srv/www/%0` [setups do
-not have ServerNames
-setup](http://www.debian-administration.org/users/lee/weblog/12). So what you
-really need is:
+	$ cat /etc/apache2/sites-enabled/virtual
+	NameVirtualHost 212.13.195.83:80
+	<VirtualHost 212.13.195.83:80>
+	ServerAdmin you@example.com
+	UseCanonicalName    Off
+	VirtualDocumentRoot /srv/www/%0
+	Options All ExecCGI
+	LogFormat "%{Host}i %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" vfull
+	CustomLog "|/usr/sbin/vlogger -s access.log -u www-data -g www-data /var/log/apache2" vfull
+	ErrorLog "|/usr/sbin/vlogger -e -s error.log -u www-data -g www-data /var/log/apache2"
+	</VirtualHost>
 
-	LogFormat "%{Host}i:%p %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" vhost_combined
+I also make sure CGI is enabled:
+
+	mods-available/mime.conf:AddHandler cgi-script .cgi
+
+And a fair few Apache is enabled to make the above work for a start:
+
+	hendry@webconverger apache2$ ls -1 mods-enabled/*.load
+	mods-enabled/alias.load
+	mods-enabled/auth_basic.load
+	mods-enabled/auth_digest.load
+	mods-enabled/authn_file.load
+	mods-enabled/authz_default.load
+	mods-enabled/authz_groupfile.load
+	mods-enabled/authz_host.load
+	mods-enabled/authz_user.load
+	mods-enabled/autoindex.load
+	mods-enabled/cgi.load
+	mods-enabled/deflate.load
+	mods-enabled/dir.load
+	mods-enabled/env.load
+	mods-enabled/headers.load
+	mods-enabled/include.load
+	mods-enabled/mime.load
+	mods-enabled/negotiation.load
+	mods-enabled/php5.load
+	mods-enabled/reqtimeout.load
+	mods-enabled/rewrite.load
+	mods-enabled/setenvif.load
+	mods-enabled/speling.load
+	mods-enabled/status.load
+	mods-enabled/vhost_alias.load
