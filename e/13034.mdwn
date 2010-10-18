@@ -1,0 +1,23 @@
+[[!meta title="Using return codes"]]
+
+Follow Arve's guide how to [hide shell
+output](http://virtuelvis.com/archives/2005/04/script-output-bitbucket). I use
+this in scripts and I focus on the return code.
+
+However beware of `&>`, consider the following code:
+
+	system("echo foo | grep bar", $returncode);
+	echo $returncode . "\n";
+
+	system("echo foo | grep bar > /dev/null 2>&1", $returncode);
+	echo $returncode . "\n";
+
+	system("echo foo | grep bar &>/dev/null", $returncode);
+	echo $returncode . "\n"
+
+I am not sure how PHP executes shell, but as you can see it returns the wrong error code when using `&>/dev/null` in the third case:
+
+	$ php test.php
+	1
+	1
+	0
