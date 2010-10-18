@@ -1,0 +1,27 @@
+[[!meta title="Apache Digest access authentication"]]
+
+Digest access authentication is the quickest and most secure way of protecting
+a Web resource, besides using a secret URL or something.
+
+Using a [[Apache_virtual_host_setup|04044]].
+
+First lets setup Apache's cryptic local filesystem `.htaccess` configuration file:
+
+	hendry@webconverger upload.dabase.com$ cat .htaccess
+	Order deny,allow
+	Deny from all
+	AuthType Digest
+	AuthName "upload"
+	AuthUserFile /srv/www/upload.dabase.com/digest-password
+	Require valid-user
+	Satisfy any
+
+Now using [htdigest](http://manpages.debian.net/cgi-bin/man.cgi?query=htdigest), to setup an initial user and password:
+
+	hendry@webconverger upload.dabase.com$ htdigest -c digest-password upload hendry
+	Adding password for hendry in realm upload.
+	New password:
+	Re-type new password:
+	hendry@webconverger upload.dabase.com$
+
+In PHP you can greet the user, by adding `<? echo "<h1>Hello " . $_SERVER["REMOTE_USER"] . "</h1>";  ?>` you your script.
