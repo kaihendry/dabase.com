@@ -24,4 +24,4 @@ Now using [htdigest](http://manpages.debian.net/cgi-bin/man.cgi?query=htdigest),
 	Re-type new password:
 	hendry@webconverger upload.dabase.com$
 
-In PHP you can greet the user, by adding `<? echo "<h1>Hello " . $_SERVER["REMOTE_USER"] . "</h1>";  ?>` you your script.
+In PHP you can greet the user, by adding `<? echo "<h1>Hello " . $_SERVER["REMOTE_USER"] . "</h1>";  ?>` your PHP script.
