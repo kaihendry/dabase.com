@@ -1,0 +1,22 @@
+[[!meta title="Tunnelling ssh through https"]]
+
+You need `sudo apt-get install corkscrew` on the client machine.
+
+You need to figure out the proxy address if your corporate environment is dumb
+enough to use a non-transparent proxy, in my case it's 145.230.25.1.
+
+On your host, in my case webconverger.org, hosted with
+[Bitfolk](http://bitfolk.com), you need to specify the HTTPS port 443 in the
+configuration and reload the [sshd](http://en.wikipedia.org/wiki/OpenSSH) daemon.
+
+	grep "Port 443" /etc/ssh/sshd_config
+
+
+Now with a `~/.ssh/config` setup like so:
+
+	ProxyCommand /usr/bin/corkscrew 145.230.25.1 8080 %h %p
+	host webc
+		HostName webconverger.org
+		Port 443
+
+In my case I `ssh webc` to freedom.
