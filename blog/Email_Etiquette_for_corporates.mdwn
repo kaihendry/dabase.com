@@ -27,8 +27,8 @@ benefit.
 
 The consequences of losing a great asynchronous medium such as email, leads you
 onto time consuming synchronous mediums like teleconferences,
-[webex](http://en.wikipedia.org/wiki/WebEx) and generally poor unrecorded
-communication.
+[webex](http://en.wikipedia.org/wiki/WebEx) and generally poor unrecorded /
+unreferenced communication.
 
 
 Other guides on email etiquette:

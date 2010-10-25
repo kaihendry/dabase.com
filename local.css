@@ -11,11 +11,6 @@ body {
 	}
 }
 
-ol {
-	border-radius: 0.5em;
-	border: thin solid #C9C69A;
-}
-
 /* Stolen from http://mutt.blackfish.org.uk */
 
 a:link {
