@@ -1,0 +1,22 @@
+[[!meta title="Piping to a function"]]
+
+	#!/bin/sh
+	t() {
+		if ! test -t 0 # If stdin is open
+		then
+			cat # echo it
+		else
+			echo hello # otherwise print hello
+		fi
+	}
+
+	echo foo bar | t
+	t
+	t
+
+Results in:
+
+	hendry@webconverger test$ sh bar.sh 
+	foo bar
+	hello
+	hello
