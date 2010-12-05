@@ -7,7 +7,7 @@ browsable from the Web.
 
 Since I work with
 [widgets](http://dabase.com/blog/Widgets_are_simple_offline_packages/), I'm
-often left thinking about how they compare to "the Debian way" of doing things.
+often left thinking about how they compare to "the mature Debian way" of doing things.
 
 # The kill switch
 
@@ -34,7 +34,7 @@ path](http://wiki.debian.org/ftpmaster_Removals) for users.
 
 # Comparing the update process
 
-Updates is a pain point. On Debian for example, they are done rather
+Updates are a pain point. On Debian for example, they are done rather
 inefficiently, as you need to download the entire package even though there
 might be a one line of change.
 
