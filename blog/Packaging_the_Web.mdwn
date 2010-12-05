@@ -63,7 +63,7 @@ stability is put at risk.
 Of course it is more complicated than that. Add the whacky shrinkwrap &
 "freemium" business models and you generally put blame squarely on the original
 author. But can you? The picture is really muddled when intermediaries like
-Apple and what not take a revenue share and conduct testing.
+Apple and alike who take a revenue share and conduct testing.
 
 Do you think a intermediary a right to change a product on the way to the end
 consumer? I'll leave you to think about what happens in the real marketplace
