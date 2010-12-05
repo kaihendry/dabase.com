@@ -1,0 +1,60 @@
+Packaging has interested
+[me](http://qa.debian.org/developer.php?login=hendry@iki.fi) for awhile and of
+late I prefer the [simple arch
+packaging](http://aur.archlinux.org/packages/dwm-hg/dwm-hg/PKGBUILD) where you
+just clone from a [hg URL](http://hg.suckless.org/) that's importantly
+browsable from the Web.
+
+Since I work with
+[widgets](http://dabase.com/blog/Widgets_are_simple_offline_packages/), I'm
+often left thinking about how they compare to "the Debian way" of doing things.
+
+# The kill switch
+
+This seems to be an Operator requirement, since
+[Android](http://www.theregister.co.uk/2008/10/16/android_kill_switch/) and the
+Itunes App store I believe implements one.
+
+On Debian and all other Linux distributions security is largely the
+responsibility of the user. That is to
+[remove](http://www.debian.org/News/2008/20081023) or **upgrade** the package
+in question. It most cases an "evil" or dangerous package is detected by its
+maintainer or during the unstable->testing->stable transition by intrepid
+users. Further information are given in [security
+advisories](http://debian.org/security/#DSAS), which in turn are usually linked
+to a wider [CVE identifier](http://cve.mitre.org/).
+
+I personally like the upgrade approach as that's very much in line of how the
+Web works. You update your way out of trouble, and that works for all parties.
+
+[Removal](http://ftp-master.debian.org/#removed) (aka the kill switch) is a
+very **negative process**.  What happens if a user relies on that particular
+"bad" app to get his or her job done? There is [no upgrade
+path](http://wiki.debian.org/ftpmaster_Removals) for users.
+
+# Comparing the update process
+
+Updates is a pain point. On Debian for example, they are done rather
+inefficiently, as you need to download the entire package even though there
+might be a one line of change.
+
+On mobiles, this problem worsens as network capacity is tightly limited and
+complex, where [OTA push
+updates](http://en.wikipedia.org/wiki/Over-the-air_programming) are favoured.
+Furthermore Operators typically demand to test each update before deployment,
+making the process rather cumbersome and slow.
+
+I personally think the manual upgrade path with efficient [binary
+diffing](http://blog.chromium.org/2009/07/smaller-is-faster-and-safer-too.html)
+is the way forward, much like the Web has shown all the other platforms how to
+do it.
+
+# And who does the updates ?
+
+If a problem is found on Debian, the [security
+team](http://debian.org/security/#contact) or package maintainer assume
+responsibility for fixing the problem as **quickly as possible**.
+
+In the widget world, Android & Apple App store world, the emphasis is squarely
+on the author to fix the problem or be banned/removed/killed. I would argue
+this is bad for users and ecosystem at large.
