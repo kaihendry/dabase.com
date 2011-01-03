@@ -32,8 +32,9 @@ proprietary tool. Great, what a start!
 * [PDF has a poor accessibility record](http://www.usability.com.au/resources/pdf.cfm)
 * Non-trivial to diff, track and compare PDF documents
 * An open standard? That you need to [pay ISO](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=51502) 200GBP for?! Are there at least two interoperable implementations of PDF/A?
-* Probably only one **conforming** implementation (Guess who!). Is there a test suite?
+* Probably only one **conforming** implementation (Guess who!). Is there a test suite or validator? No
 * [Not as secure](http://www.theregister.co.uk/2010/03/09/adobe_reader_attacks/) as Web technologies
+* [OMG WTF PDF](http://www.youtube.com/watch?v=54XYqsf4JEY)
 
 # Pros of HTML
 
