@@ -10,10 +10,20 @@ Privacy settings there is "Back up my data" & "Automatic restore" option
 ticked, but it didn't seem to work!
 
 On first impression, the screen does look better than the Nexus 1. The battery
-life seems just as bad as the Nexus 1.
+life seems just as bad as the Nexus 1. The lock and home keys are re-mapped,
+which I'm getting used to. Tbh, I prefer the home key on the right, but it is
+worrying how this small aspect is so fragmented already!
 
 # Cons
 
 * Slippery back
 * Terrible battery life, though the display is on a 30 second time out!
 * Hard to tell it's upside down when taking it out my pocket
+* I have a little lip on my screen
+
+# Pros
+
+* Lightweight
+* NFC reader!
+* It's what Google employees work with
+* No mouse ball (less is more)
