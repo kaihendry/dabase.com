@@ -20,6 +20,7 @@ worrying how this small aspect is so fragmented already!
 * Terrible battery life, though the display is on a 30 second time out!
 * Hard to tell it's upside down when taking it out my pocket
 * I have a little lip on my screen
+* No Gtalk video enabled chat :( I want it, though this function [kills my laptop](http://twitter.com/#!/kaihendry/status/20858521155272705), nevermind my mobile
 
 # Pros
 
@@ -28,3 +29,4 @@ worrying how this small aspect is so fragmented already!
 * It's what Google employees work with
 * No mouse ball (less is more)
 * The new vector drawn Maps is coool
+* [VOIP capablity](http://www.flickr.com/photos/hendry/5313161074/) is exciting
