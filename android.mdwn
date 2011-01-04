@@ -1,3 +1,5 @@
-[[!meta title="Life with an Android Nexus One in England"]]
+[[!meta title="Life as a cutting edge Android user in England"]]
+
+Quality of life? Still pretty rotten. ;)
 
 [[!inline pages="android/* and !android/*/Discussion" description="Blogging UK G1 experiences" actions=no rss=yes show="10"]]
