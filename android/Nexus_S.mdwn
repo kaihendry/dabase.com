@@ -27,3 +27,4 @@ worrying how this small aspect is so fragmented already!
 * NFC reader!
 * It's what Google employees work with
 * No mouse ball (less is more)
+* The new vector drawn Maps is coool
