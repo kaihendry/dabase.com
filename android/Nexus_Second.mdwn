@@ -1,13 +1,14 @@
 <a href="http://www.flickr.com/photos/hendry/5313161074/" title="Gingerbread VOIP setup by Kai Hendry, on Flickr"><img src="http://farm6.static.flickr.com/5165/5313161074_036f47569b_m.jpg" width="144" height="240" alt="Gingerbread VOIP setup" /></a>
 
-Upgrading from a [[Nexus 1|Nexus_One]], I found it particularly painful that I
-had to re-install all the apps. Furthermore the App metadata like where I am
-with "Angry birds" is not carried over. So I've must have lost many several
-hours of setup! :(
+Upgrading from a [[Nexus 1|Nexus_One]] was particularly painful since I had to
+re-install all the apps. Furthermore the App metadata like where I am with
+"Angry birds" is not carried over. So I've must have lost many several hours of
+setup! :(
 
 Network settings, Bookmarks, email accounts, all need to be re-setup. Under
 Privacy settings there is "Back up my data" & "Automatic restore" option
-ticked, but it didn't seem to work! There is definitely seems to be an opportunity to sort out the Android upgrade path.
+ticked, but it didn't seem to work! Most definitely seems to be an opportunity
+to sort out the Android upgrade path.
 
 On first impression, the screen does look better than the Nexus 1. The battery
 life seems just as bad as the Nexus 1. The lock and home keys are re-mapped,
