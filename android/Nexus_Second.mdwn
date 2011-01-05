@@ -13,7 +13,9 @@ to sort out the Android upgrade path.
 On first impression, the screen does look better than the Nexus 1. The battery
 life seems just as bad as the Nexus 1. The lock and home keys are re-mapped,
 which I'm getting used to. Tbh, I prefer the home key on the right, but it is
-worrying how this small aspect is so fragmented already!
+worrying how this small aspect is so fragmented already! Pick up an Android and
+you will need to get used it's mappings. Pick up an Iphone and you're A for
+away.
 
 # Cons
 
@@ -22,7 +24,7 @@ worrying how this small aspect is so fragmented already!
 * Hard to tell when it's upside down when taking it out my pocket
 * I have a little lip on my screen
 * No Gtalk video enabled chat :( I want it, though this function [kills my laptop](http://twitter.com/#!/kaihendry/status/20858521155272705), nevermind my mobile
-* NFC reader consumes battery :/
+* NFC reader consumes battery :/ Can't figure out the new Tags application even though a friend also have a Nexus S!
 
 # Pros
 
