@@ -3,7 +3,7 @@
 Upgrading from a [[Nexus 1|Nexus_One]] was particularly painful since I had to
 re-install all the apps. Furthermore the App metadata like where I am with
 "Angry birds" is not carried over. So I've must have lost many several hours of
-setup! :(
+setup & game progression! :(
 
 Network settings, Bookmarks, passwords, cookies, email accounts, all need to be
 re-setup. Under Privacy settings there is "Back up my data" & "Automatic
@@ -24,7 +24,7 @@ mappings. Pick up an Iphone and you're A for away.
 * Hard to tell when it's upside down when taking it out my pocket
 * I have a little lip on my screen
 * No Gtalk video enabled chat :( I want it, though this function [kills my laptop](http://twitter.com/#!/kaihendry/status/20858521155272705), nevermind my mobile
-* NFC reader consumes battery :/ Can't figure out the new Tags application even though a friend also have a Nexus S!
+* NFC reader consumes battery :/ Can't figure out the new **Tags** application even though a friend also has a Nexus S!
 
 # Pros
 
