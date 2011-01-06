@@ -1,4 +1,4 @@
-<a href="http://www.flickr.com/photos/hendry/5313161074/" title="Gingerbread VOIP setup by Kai Hendry, on Flickr"><img src="http://farm6.static.flickr.com/5165/5313161074_036f47569b_m.jpg" width="144" height="240" alt="Gingerbread VOIP setup" /></a>
+<a href="http://www.flickr.com/photos/hendry/5329299281/" title="Me &amp; my new Nexus S by Kai Hendry, on Flickr"><img src="http://farm6.static.flickr.com/5049/5329299281_5ec87c9f23.jpg" width="500" height="281" alt="Me &amp; my new Nexus S" /></a>
 
 Upgrading from a [[Nexus 1|Nexus_One]] was particularly painful since I had to
 re-install all the apps. Furthermore the App metadata like where I am with
