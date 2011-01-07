@@ -1,0 +1,9 @@
+[[!meta title="Create solid colour PNGs with Imagemagick"]]
+
+How about a red 240x320 PNG?
+
+	convert -size 240x320 xc:red 240x320.png
+
+Or a green square 100x100?
+
+	convert -size 100x100 xc:green 100x100.png
