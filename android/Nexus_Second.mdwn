@@ -22,7 +22,7 @@ mappings. Pick up an Iphone and you're A for away.
 * Slippery back. Place the mobile on my bed and it slips off!
 * [Terrible battery life](http://www.flickr.com/photos/hendry/5326740066/), though the display is on a 30 second time out!
 * Hard to tell when it's upside down when taking it out my pocket
-* I have a little lip on my screen
+* I have a little lip on my screen, turns out to be "physical damage" out the box, but Carphone warehouse accuse me of doing it :(
 * No Gtalk video enabled chat :( I want it, though this function [kills my laptop](http://twitter.com/#!/kaihendry/status/20858521155272705), nevermind my mobile
 * NFC reader consumes battery :/ Can't figure out the new **Tags** application even though a friend also has a Nexus S!
 
@@ -34,3 +34,5 @@ mappings. Pick up an Iphone and you're A for away.
 * No mouse ball (less is more)
 * The new vector drawn Maps is coool
 * [VOIP capability](http://www.flickr.com/photos/hendry/5313161074/) is exciting
+* No notification light
+* [Reboot bug whilst making calls](http://goo.gl/viiZg) :(
