@@ -1,8 +1,12 @@
+
+
 # Vehicle
 
 [Rules](http://mongolrally11.theadventurists.com/index.php?mode=handbook&handbook=mongolrally11&page=vehiclerules)
 
 # Visas
+
+[Visa machine](http://visamachine.theadventurists.com/index.php?mode=visamachine&setadv=89) indicates the intrepid route through Iran isn't that unusual!
 
 ## May
 
@@ -17,3 +21,6 @@ pay 127GBP and get finger prints taken.
 # Events
 
 * [5th of Feb](http://afternoontea.theadventurists.com/)
+
+
+# [Edit page](http://dabase.com/ikiwiki.cgi?page=geekout&do=edit)
