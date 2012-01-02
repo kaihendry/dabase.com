@@ -1,4 +1,4 @@
-[[!meta title="Makefile for generating your CV"]]
+[[!meta title="Makefile for generating your CV or invoice"]]
 
 
-[Makefile](http://svn.natalian.org/projects/shopping-list/Makefile)
+[Makefile](https://github.com/kaihendry/PrinceInvoiceTemplate/blob/master/Makefile)

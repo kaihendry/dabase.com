@@ -15,6 +15,6 @@ I typically use it to change some files from one format to another:
 
 Remove echo for it to run...
 
-Here is cool tip to append / join all the images into one file with `convert`.
+Here is cool tip to merge / append / join all the images into one file with `convert`.
 
 	convert 6600-opera-1.jpg 6600-opera-2.jpg 6600-opera-3.jpg +append all.jpg
