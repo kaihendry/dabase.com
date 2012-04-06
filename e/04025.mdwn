@@ -1,48 +1,16 @@
-[[!meta title="Apache 2 Vhost"]]
-Apache1.3 Ref: http://httpd.apache.org/docs/mod/mod_vhost_alias.html
-Apache2 Ref: http://httpd.apache.org/docs-2.0/mod/mod_vhost_alias.html
-Is vhost enabled?
+[[!meta title="Apache 2.4 Virtual hosting"]]
 
-	scrooge-15$ ls /etc/apache2/mods-enabled/ | grep vhost
+`Include conf/extra/virtual.conf` in `/usr/local/apache2/conf/httpd.conf` looks like:
 
-	vhost_alias.load
-Ah goodie, then in apache2.conf:
+	$ cat conf/extra/virtual.conf 
+	<VirtualHost YOUR_SERVER_IP:80>
+	UseCanonicalName    Off
+	VirtualDocumentRoot /srv/www/%0
+	</VirtualHost>
 
-	UseCanonicalName Off
+# Logging tips
 
-	VirtualDocumentRoot /web/%0
+`%v` needs to capitalised unlike <http://httpd.apache.org/docs/2.4/logs.html#virtualhost>
 
-	LogFormat "%V %h %l %u %t \"%r\" %>s %b" vhost_common
-
-	CustomLog /var/log/apache2/access_log vhost_common
-Ok lets setup some sites:
-
-	scrooge-15$ ls -al /web/
-
-	total 12
-
-	drwxr-xr-x   3 hendry root   4096 2004-07-15 22:47 .
-
-	drwxr-xr-x  23 root   root   4096 2004-06-19 16:26 ..
-
-	lrwxrwxrwx   1 hendry hendry   27 2004-07-15 22:45 aat.localhost -> /home/hendry/projects/abbr/
-
-	lrwxrwxrwx   1 hendry hendry   29 2004-07-15 22:47 fortune.localhost -> /home/hendry/projects/fortune
-Our own little subdomain DNS server for local testing:
-
-	scrooge-15$ cat /etc/hosts | grep localhost
-
-	127.0.0.1       localhost
-
-	127.0.0.1       praze.localhost
-
-	127.0.0.1       aat.localhost
-
-	127.0.0.1       fortune.localhost
-
-	127.0.0.1       test.localhost
-
-	::1     ip6-localhost ip6-loopback
-Further info:
-http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/
-http://svn.natalian.org/debian/configuration/bilbo/
+	LogFormat "%V %h %l %u %t \"%r\" %>s %b" comonvhost
+	CustomLog "|/usr/local/apache2/bin/rotatelogs -l logs/access.%Y-%m-%d 86400" comonvhost
