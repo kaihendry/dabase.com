@@ -1,0 +1,34 @@
+What does a FAQ need?
+
+1. A table of contents listing the questions
+2. A way to hyperlink the question
+
+Unfortunately most FAQs seem to fail to do this. To save you time doing this by
+hand, I highly recommend [anolis](http://anolis.gsnedders.com/)
+
+FAQ template, `faq.src.html`:
+
+	<h2 class="no-toc no-num">Frequently Asked Questions</h2>
+	<div id="tocwrapper"><!-- toc --></div>
+
+	<h3>How do I create a FAQ?</h3>
+	<p>Using HTML</p>
+
+	<h3>What's the best kiosk software out there?</h3>
+	<p><a href="http://webconverger.com">Webconverger</a></p>
+
+Run `anolis faq.src.html faq.html` and boom:
+
+	<h2 class="no-toc no-num">Frequently Asked Questions</h2>
+	<div id=tocwrapper>
+	<!--begin-toc-->
+	<ol class=toc>
+	 <li><a href=#how-do-i-create-a-faq?><span class=secno>1 </span>How do I create a FAQ?</a></li>
+	 <li><a href="#what's-the-best-kiosk-software-out-there?"><span class=secno>2 </span>What's the best kiosk software out there?</a></li></ol>
+	<!--end-toc--></div>
+
+	<h3 id=how-do-i-create-a-faq?><span class=secno>1 </span>How do I create a FAQ?</h3>
+	<p>Using HTML</p>
+
+	<h3 id="what's-the-best-kiosk-software-out-there?"><span class=secno>2 </span>What's the best kiosk software out there?</h3>
+	<p><a href=http://webconverger.com>Webconverger</a></p>
