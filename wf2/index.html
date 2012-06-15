@@ -3,53 +3,47 @@
 <head>
 <meta charset="utf-8" />
 <title>Your daily Electricity cost</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="script.js"></script>
-<script src="jquery-1.4.2.min.js"></script>
+<style>
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+</style>
+
+<script>
+function roundTo(n, decimals) {
+    var d = Math.pow(10, decimals);
+    return Math.round(n * d)/d;
+}
+</script>
+
 </head>
 <body>
 
-	<form onsubmit="return false">
+<form oninput="x.value = roundTo(parseFloat(price.value)*parseInt(quantity.value)*(parseInt(wattage.value)/1000)*(parseInt(minutes.value)/60),1);">
 
-		<p>
-		Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">price per kiloWatt hour</a>:
-		<input name="price" type="number" title="Price per kiloWatt hour" step="0.1" value="12.2"/> pence
-		</p>
+<p>
+Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72157605153273216/">price per kiloWatt hour</a>
+<input name="price" type="number" title="Price per kiloWatt hour" step="0.1" value="12.2"/> pence
+</p>
 
-		<fieldset>
-			<legend>List your appliances</legend>
-
-			<table id="t">
-				<thead>
-					<tr>
-						<th>Quantity</th>
-						<th>Appliance</th>
-						<th>Wattage</th>
-						<th>Time (minutes)</th>
-						<th>Cost</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr id="template">
-						<td><input required name="quantity_[row]" type="number" value="1"></td>
-						<td><input required name="name_[row]" type="text" value="Spot light"></td>
-						<td><input required name="wattage_[row]" type="number" value="50"></td>
-						<td><input required name="minutes_[row]" type="number" value="1"></td>
-						<td><p class="rowtotal">5</p></td>
-						<td><button onclick="$(this).parent().parent().remove()">Delete Row</button></td>
-					</tr>
-				</tbody>
-			</table>
-
-			<p>
-			<button onclick="addrow()">Add Row</button>
-			</p>
-
-		</fieldset>
-
-<h2>Approximate cost per day: <output name="total" onformchange="value = calctotal()">0</output> pence</h2>
-<h2>Approximate cost per month: <output name="total" onformchange="value = (calctotal() * 30) / 100">0</output>GBP</h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Wattage (average)</th>
+<th>Time (minutes)</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+	<td><input required name="quantity" type="number" value="1"></td>
+	<td><input required name="wattage" type="number" min="1" value="10"></td>
+	<td><input required name="minutes" type="number" min="1" value="1"></td>
+	<td><output name="x" for="price quantity wattage minutes"></output>GBP</td>
+	</tr>
+</tbody>
+</table>
 
 </form>
 
