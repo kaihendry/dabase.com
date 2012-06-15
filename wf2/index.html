@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Your daily Electricity cost</title>
+<title>Electricity cost calculator</title>
+<meta content="width=device-width, initial-scale=1,maximum-scale=1.0;" name=viewport>
+<meta name="description" content="Calculate your appliance's energy cost">
+<meta name="author" content="Kai Hendry">
 <style>
 body {
   font-family: Helvetica, Arial, Sans-Serif;
@@ -38,7 +41,7 @@ Unit price aka <a href="http://www.flickr.com/photos/hendry/2508376346/in/set-72
 <tbody>
 	<tr>
 	<td><input required name="quantity" type="number" value="1"></td>
-	<td><input required name="wattage" type="number" min="1" value="10"></td>
+	<td><input required name="wattage" type="number" step=1  min="1" value="10"></td>
 	<td><input required name="minutes" type="number" min="1" value="1"></td>
 	<td><output name="x" for="price quantity wattage minutes"></output>GBP</td>
 	</tr>
