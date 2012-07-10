@@ -1,0 +1,27 @@
+Setting up a proxy might needed to evade censorship and [geo
+restrictions](http://dabase.com/e/04052/). Out of my frustration of dealing
+with the default configuration, I've spent a good hour or two reducing it to
+the ABSOLUTELY minimal configuration possible.
+
+# Install squid3
+
+	sudo apt-get install squid3
+
+# /etc/squid3/squid.conf
+
+	auth_param digest program /usr/lib/squid3/digest_pw_auth -c /etc/squid3/passwords
+	auth_param digest realm proxy
+	acl authenticated proxy_auth REQUIRED
+	http_access allow authenticated
+	http_access deny all
+	http_port 3128
+
+These 6 lines, sure beat the INSANE 5539 LOC of `squid.conf.dpkg-dist`.
+
+# Setting up a user
+
+	htdigest -c /etc/squid3/passwords proxy user
+
+Drop the `-c` for your subsequent users.
+
+`tail -f /var/log/squid3/access.log` to see who is using your proxy
