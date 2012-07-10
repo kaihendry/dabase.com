@@ -19,7 +19,7 @@ minimal configuration possible.
 	http_access deny all
 	http_port 3128
 
-These 6 lines, sure beat the INSANE 5539 LOC of `squid.conf.dpkg-dist`.
+These 6 lines, sure beats the INSANE 5539 LOC of `squid.conf.dpkg-dist` and I found a [bug in the process](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=681122)!
 
 # Setting up a user
 
