@@ -1,7 +1,10 @@
-Setting up a proxy might needed to evade censorship and [geo
-restrictions](http://dabase.com/e/04052/). Out of my frustration of dealing
-with the default configuration, I've spent a good hour or two reducing it to
-the ABSOLUTELY minimal configuration possible.
+Setting up a Web proxy might be needed to evade censorship and [geo
+restrictions](http://dabase.com/e/04052/). I'm using
+[squid3](http://www.squid-cache.org/) packaged in either Debian or Ubuntu.
+
+Out of my frustration of dealing with the crazy bloated default squid3
+configuration, I've spent a good hour or two reducing it to the ABSOLUTELY
+minimal configuration possible.
 
 # Install squid3
 
@@ -24,4 +27,4 @@ These 6 lines, sure beat the INSANE 5539 LOC of `squid.conf.dpkg-dist`.
 
 Drop the `-c` for your subsequent users.
 
-`tail -f /var/log/squid3/access.log` to see who is using your proxy
+`tail -f /var/log/squid3/access.log` to see who is using your proxy.
