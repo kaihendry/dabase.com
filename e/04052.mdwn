@@ -1,18 +1,6 @@
 [[!meta title="Proxying around BBC Iplayer geo restrictions"]]
 
-Ask for the foreign user wanting to access BBC Iplayer content abroad for their
-IP (foreign IP).  <http://www.whatismyip.com/> is probably easiest.
-
-Get a VPS in the UK. I recommend <http://bitfolk.com/> or <http://www.bytemark.co.uk/>
-
-Use Debian and [squid3](http://packages.qa.debian.org/s/squid3.html).
-
-`sudo vim /etc/squid3/squid.conf` and add the foreign IP (example uses
-121.121.121.121) like so:
-
-	acl localhost src 121.121.121.121
-
-`sudo /etc/init.d/squid3 restart` and `tail -f /var/log/squid3/access.log`
+See the following [guide to setting up a Squid3 based proxy with authentication](http://dabase.com/blog/Minimal_squid3_proxy_configuration/).
 
 ## Configuring the foreign user's browser
 
