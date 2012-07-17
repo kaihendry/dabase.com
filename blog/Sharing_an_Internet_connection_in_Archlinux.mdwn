@@ -1,0 +1,37 @@
+Assuming you are Internet connected via your wireless interface `wlan0` and you
+want to supply internet via your eth0.
+
+Lets configure your ethernet port:
+
+	ifconfig eth0 192.168.0.1 up
+
+Start your DHCPd to hand out address on 192.168.0.x with the following configuration:
+
+
+		x220:~$ cat /etc/dhcpd.conf 
+		# /etc/dhcpd.conf
+
+		allow booting;
+		allow bootp;
+
+		option domain-name-servers 8.8.8.8;
+		default-lease-time 86400;
+		max-lease-time 604800;
+		authoritative;
+		subnet 192.168.0.0 netmask 255.255.255.0 {
+		 range 192.168.0.10 192.168.0.49;
+		 filename "pxelinux.0";        # the PXELinux boot agent
+		 next-server 192.168.0.1;
+		 option subnet-mask 255.255.255.0;
+		 option broadcast-address 192.168.0.255;
+		 option routers 192.168.0.1;
+		}
+
+Start the DHCPd like so:
+
+	/etc/rc.d/dhcp4 start
+
+Now tell the kernel to forward packets from wlan0:
+
+	echo 1 > /proc/sys/net/ipv4/ip_forward
+	iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
