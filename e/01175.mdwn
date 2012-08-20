@@ -1,0 +1,12 @@
+[[!meta title="Setting up an external screen"]]
+
+	x220:~$ cat /etc/udev/rules.d/20-hdmi.rules
+	KERNEL=="card0", ACTION=="change", RUN+="/usr/sbin/hdmi"
+	x220:~$ cat /usr/sbin/hdmi
+	#!/bin/sh
+
+	export XAUTHORITY=/home/hendry/.Xauthority
+	export DISPLAY=:0.0
+
+	/usr/bin/xrandr --output LVDS1 --auto --output HDMI1 --left-of LVDS1 --auto
+	x220:~$
