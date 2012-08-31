@@ -1,0 +1,11 @@
+[[!meta title="Friends should not let friends use dbus"]]
+
+To sanity test dbus:
+
+	dbus-monitor
+
+To monitor the bus and:
+
+	dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.ListNames
+
+To send some crap down to monitor it.
