@@ -1,0 +1,8 @@
+[[!meta title="Extracting/unpacking a EML attachment"]]
+
+**eml attachements** are god forsaken things that Outlook conjure up. If you
+receive one in Gmail, you need to download and run:
+
+	munpack noname.eml
+
+To get the base64 encoded data out.
