@@ -1,1 +1,3 @@
-<script src="http://gist-it.appspot.com/github/kaihendry/Kai-s--HOME/raw/master/bin/screenshot"></script>
+<https://github.com/kaihendry/Kai-s--HOME/blob/master/bin/screenshot>
+
+<https://github.com/kaihendry/Kai-s--HOME/blob/master/bin/upload>
