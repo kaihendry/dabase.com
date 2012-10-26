@@ -1,14 +1,1 @@
-`:r !cat /usr/local/bin/upload`
-
-	cd /tmp
-	scrot $@ '%s_$wx$h.png' -e 'upload $f'
-
-
-`:r !cat /usr/local/bin/upload`
-
-	host=webconverger.com
-	path=static.natalian.org/`date --rfc-3339=date`/
-	rsync --remove-source-files $1 $host:$path && logger http://${path}${1}
-
-
-Sidenote: Wish there was a sane way to share `/usr/local/bin/`. I guess git is fine really, and then new installs of my computer grab this. $HOME/bin would be probably saner, I guess you would just need to teach sudo to look at your $HOME/bin PATH.
+<script src="http://gist-it.appspot.com/github/kaihendry/Kai-s--HOME/raw/master/bin/screenshot"></script>
