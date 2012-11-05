@@ -1,12 +1,7 @@
 Assuming you are Internet connected via your wireless interface `wlan0` and you
 want to supply internet via your eth0.
 
-Lets configure your ethernet port:
-
-	ifconfig eth0 192.168.0.1 up
-
 Start your DHCPd to hand out address on 192.168.0.x with the following configuration:
-
 
 		x220:~$ cat /etc/dhcpd.conf 
 		# /etc/dhcpd.conf
@@ -27,11 +22,13 @@ Start your DHCPd to hand out address on 192.168.0.x with the following configura
 		 option routers 192.168.0.1;
 		}
 
-Start the DHCPd like so:
+Script it like so as root:
 
-	/etc/rc.d/dhcp4 start
-
-Now tell the kernel to forward packets from wlan0:
-
+	ifconfig net0 192.168.0.1 up
+	#/etc/rc.d/dhcp4 start  # old initscripts way
+	systemctl start dhcpd4  #systemd way
 	echo 1 > /proc/sys/net/ipv4/ip_forward
 	iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+
+
+Furthermore you can try `iptraf-ng` to monitor the bridge.
