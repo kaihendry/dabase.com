@@ -1,0 +1,10 @@
+[[!meta title="Cloning a cgit repositories"]]
+
+For example to clone all repositories upon <http://git.suckless.org/>, which uses the [cgit](http://hjemli.net/git/cgit/) frontend:
+
+	curl -s http://git.suckless.org/ |
+	xml sel -N x="http://www.w3.org/1999/xhtml" -t -m "//x:a" -v '@title' -n |
+	grep . |
+	while read repo
+	do git clone git://git.suckless.org/$repo
+	done
