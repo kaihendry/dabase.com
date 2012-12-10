@@ -8,3 +8,8 @@ For example to clone all repositories upon <http://git.suckless.org/>, which use
 	while read repo
 	do git clone git://git.suckless.org/$repo
 	done
+
+Alternatively:
+
+	15:24 <c00kiemon5ter> curl -s http://git.suckless.org/ | xml pyx | awk '$1 == "Atitle" { print $2 }'
+	15:26 <c00kiemon5ter> funnier: curl -s http://git.suckless.org/ | xml pyx | awk '$1 == "Atitle" { printf("git clone %s\n",$2) }' | sh
