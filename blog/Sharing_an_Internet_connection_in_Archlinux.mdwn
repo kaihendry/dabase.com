@@ -1,5 +1,5 @@
 Assuming you are Internet connected via your wireless interface `wlan0` and you
-want to supply internet via your eth0.
+want to supply internet via `net0`
 
 Start your DHCPd to hand out address on 192.168.0.x with the following configuration:
 

@@ -1,13 +1,17 @@
 [[!meta title="SMTP via SSH"]]
 
-SMTP is often blocked at ISPs to prevent spammers.
-Use mutt and a shell script with this [[tip|e/01013]].
+SMTP can be blocked at ISPs to prevent spammers.
 
-	frodo$ cat server.soltecsoftware.com.au-sendmail
+Use a shell script with this [[ssh access to a remote machine|e/01013]].
+
+	$ cat /usr/sbin/sendmail
 	#!/bin/sh
-	ssh server.soltecsoftware.com.au /usr/sbin/sendmail "$@"
+	ssh sg.webconverger.com /usr/sbin/sendmail "$@"
 
-Now configure [mutt MUA](http://www.mutt.org/) to use your own MTA hack:
+This is a less suckier solution than running msmtp or esmtp, since you rely on
+your ssh credentials, not some saved password on your filesystem.
 
-	frodo$ egrep sendmail .muttrc
-	set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
+You can configure [mutt MUA](http://www.mutt.org/) to use a specific sendmail binary like so:
+
+	$ egrep sendmail .muttrc
+	set sendmail = "/home/hendry/sg-sendmail"
