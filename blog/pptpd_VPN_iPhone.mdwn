@@ -12,12 +12,26 @@ On your VPS:
 
 	sudo apt-get install pptpd
 
-Configure a login in `/etc/ppp/chap-secrets`. I used this as a [guide](http://www.howtogeek.com/51237/setting-up-a-vpn-pptp-server-on-debian/)
+Configure a login in `/etc/ppp/chap-secrets`. I used this as a [guide](http://www.howtogeek.com/51237/setting-up-a-vpn-pptp-server-on-debian/).
 
-I don't know why, but `pptpd` does not seem to log at all in Debian wheezy,
-despite their being `debug` in `/etc/ppp/pptpd-options`. I didn't change any
-values like `localip` or `remoteip` in `/etc/pptpd.conf`, instead relying on a
-[NAT](http://en.wikipedia.org/wiki/Network_address_translation). 
+Using rsyslog and `tail -f /var/log/syslog`, when I connect from my iPhone5, I see:
+
+	Dec 27 05:46:44 uk pptpd[14292]: CTRL: Starting call (launching pppd, opening GRE)
+	Dec 27 05:46:44 uk pppd[14293]: Plugin /usr/lib/pptpd/pptpd-logwtmp.so loaded.
+	Dec 27 05:46:44 uk pppd[14293]: pppd 2.4.5 started by root, uid 0
+	Dec 27 05:46:44 uk pppd[14293]: Using interface ppp0
+	Dec 27 05:46:44 uk pppd[14293]: Connect: ppp0 <--> /dev/pts/3
+	Dec 27 05:46:44 uk pptpd[14292]: GRE: Bad checksum from pppd.
+	Dec 27 05:46:48 uk pppd[14293]: peer from calling number 175.139.36.248 authorized
+	Dec 27 05:46:49 uk pppd[14293]: MPPE 128-bit stateless compression enabled
+	Dec 27 05:46:49 uk pppd[14293]: Cannot determine ethernet address for proxy ARP
+	Dec 27 05:46:49 uk pppd[14293]: local  IP address 192.168.0.1
+	Dec 27 05:46:49 uk pppd[14293]: remote IP address 192.168.1.1
+
+I didn't change any values like `localip` or `remoteip` in `/etc/pptpd.conf`,
+instead relying on a
+[NAT](http://en.wikipedia.org/wiki/Network_address_translation) and (hopefully
+working) defaults.
 
 <a href="http://www.flickr.com/photos/hendry/8313643288/" title="PPTP setup in IOS6 by Kai Hendry, on Flickr"><img src="http://farm9.staticflickr.com/8496/8313643288_0eae972719.jpg" width="282" height="500" alt="PPTP setup in IOS6"></a>
 
@@ -54,4 +68,4 @@ iptables:
 	# iptables -A FORWARD -j ACCEPT
 	# iptables -A POSTROUTING -t nat -o eth0 -j MASQUERADE
 
-I found the IPv6 Toolkit app on IOS6 useful for debugging.
+I found the IPv6 Toolkit app on IOS6 useful for debugging on the iPhone.
