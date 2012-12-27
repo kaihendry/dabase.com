@@ -1,7 +1,12 @@
-If you have your own Debian based VPS on the Internet, you might want to
-install a VPN service just in case.
+If you have your own Debian based
+[VPS](http://en.wikipedia.org/wiki/Virtual_private_server) on the Internet, you
+might want to install a
+[VPN](http://en.wikipedia.org/wiki/Virtual_private_network) service just in
+case.
 
-I've chosen the PoPToP Point to Point Tunneling Server, since it seems supported by IOS6.
+I've gone for the PoPToP Point to Point Tunneling Server, since it seems
+supported by IOS6. I don't have experience of L2TP or IPSec. I'm keen on the
+fastest and simplest solution.
 
 On your VPS:
 
@@ -16,8 +21,6 @@ values like `localip` or `remoteip` in `/etc/pptpd.conf`, instead relying on a
 
 <a href="http://www.flickr.com/photos/hendry/8313643288/" title="PPTP setup in IOS6 by Kai Hendry, on Flickr"><img src="http://farm9.staticflickr.com/8496/8313643288_0eae972719.jpg" width="282" height="500" alt="PPTP setup in IOS6"></a>
 
-<a href="http://www.flickr.com/photos/hendry/8313643006/" title="Should be the same on ppp0 by Kai Hendry, on Flickr"><img src="http://farm9.staticflickr.com/8079/8313643006_e4d762110f.jpg" width="282" height="500" alt="Should be the same on ppp0"></a>
-
 Once connected from the Iphone I saw:
 
 	$ /sbin/ifconfig  ppp0
@@ -28,6 +31,8 @@ Once connected from the Iphone I saw:
 			  TX packets:8514 errors:0 dropped:0 overruns:0 carrier:0
 			  collisions:0 txqueuelen:3 
 			  RX bytes:1172538 (1.1 MiB)  TX bytes:10880037 (10.3 MiB)
+
+<a href="http://www.flickr.com/photos/hendry/8313643006/" title="Should be the same on ppp0 by Kai Hendry, on Flickr"><img src="http://farm9.staticflickr.com/8079/8313643006_e4d762110f.jpg" width="282" height="500" alt="Should be the same on ppp0"></a>
 
 Setup DNS:
 
@@ -48,3 +53,5 @@ iptables:
 	# iptables -F FORWARD
 	# iptables -A FORWARD -j ACCEPT
 	# iptables -A POSTROUTING -t nat -o eth0 -j MASQUERADE
+
+I found the IPv6 Toolkit app on IOS6 useful for debugging.
