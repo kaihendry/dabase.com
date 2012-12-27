@@ -1,0 +1,50 @@
+If you have your own Debian based VPS on the Internet, you might want to
+install a VPN service just in case.
+
+I've chosen the PoPToP Point to Point Tunneling Server, since it seems supported by IOS6.
+
+On your VPS:
+
+	sudo apt-get install pptpd
+
+Configure a login in `/etc/ppp/chap-secrets`. I used this as a [guide](http://www.howtogeek.com/51237/setting-up-a-vpn-pptp-server-on-debian/)
+
+I don't know why, but `pptpd` does not seem to log at all in Debian wheezy,
+despite their being `debug` in `/etc/ppp/pptpd-options`. I didn't change any
+values like `localip` or `remoteip` in `/etc/pptpd.conf`, instead relying on a
+[NAT](http://en.wikipedia.org/wiki/Network_address_translation). 
+
+<a href="http://www.flickr.com/photos/hendry/8313643288/" title="PPTP setup in IOS6 by Kai Hendry, on Flickr"><img src="http://farm9.staticflickr.com/8496/8313643288_0eae972719.jpg" width="282" height="500" alt="PPTP setup in IOS6"></a>
+
+<a href="http://www.flickr.com/photos/hendry/8313643006/" title="Should be the same on ppp0 by Kai Hendry, on Flickr"><img src="http://farm9.staticflickr.com/8079/8313643006_e4d762110f.jpg" width="282" height="500" alt="Should be the same on ppp0"></a>
+
+Once connected from the Iphone I saw:
+
+	$ /sbin/ifconfig  ppp0
+	ppp0      Link encap:Point-to-Point Protocol  
+			  inet addr:192.168.0.1  P-t-P:192.168.1.1  Mask:255.255.255.255
+			  UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1496  Metric:1
+			  RX packets:6688 errors:0 dropped:0 overruns:0 frame:0
+			  TX packets:8514 errors:0 dropped:0 overruns:0 carrier:0
+			  collisions:0 txqueuelen:3 
+			  RX bytes:1172538 (1.1 MiB)  TX bytes:10880037 (10.3 MiB)
+
+Setup DNS:
+
+	$ grep ^ms-dns /etc/ppp/pptpd-options
+	ms-dns 8.8.8.8
+	ms-dns 8.8.4.4
+
+Ensure forwarding is enabled:
+
+	$ grep forward  /etc/sysctl.conf
+	net.ipv4.ip_forward=1
+	net.ipv6.conf.all.forwarding=1
+	$ cat /proc/sys/net/ipv4/ip_forward
+	1
+
+iptables:
+
+	# iptables -F FORWARD
+	# iptables -A FORWARD -j ACCEPT
+	# iptables -A POSTROUTING -t nat -o eth0 -j MASQUERADE
