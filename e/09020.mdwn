@@ -1,4 +1,4 @@
-[[!meta title="Cloning a cgit repositories"]]
+[[!meta title="Cloning cgit repositories"]]
 
 For example to clone all repositories upon <http://git.suckless.org/>, which uses the [cgit](http://hjemli.net/git/cgit/) frontend:
 
