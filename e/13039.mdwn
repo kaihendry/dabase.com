@@ -1,0 +1,5 @@
+[[!meta title="Testing suckless programs"]]
+
+Make the version information useful like so:
+
+	make VERSION=$(git describe --always)
