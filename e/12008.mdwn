@@ -1,0 +1,50 @@
+[[!meta title="systemd"]]
+
+System:
+
+	/usr/lib/systemd/system/
+
+This is where IIUC packages install their service files.
+
+	$ find /usr/lib/systemd/system/ -name '*.service' | wc -l
+	152
+
+User:
+
+	/etc/systemd/system
+	/etc/systemd/system/local-fs.target.wants
+	/etc/systemd/system/syslog.service
+	/etc/systemd/system/multi-user.target.wants
+	/etc/systemd/system/multi-user.target.wants/network.service
+	/etc/systemd/system/multi-user.target.wants/ntpd.service
+	/etc/systemd/system/multi-user.target.wants/vboxservice.service
+	/etc/systemd/system/multi-user.target.wants/syslog-ng.service
+	/etc/systemd/system/multi-user.target.wants/sshd.service
+	/etc/systemd/system/multi-user.target.wants/remote-fs.target
+	/etc/systemd/system/multi-user.target.wants/httpd.service
+	/etc/systemd/system/multi-user.target.wants/dcron.service
+	/etc/systemd/system/network.service
+	/etc/systemd/system/autologin@.service
+	/etc/systemd/system/sysinit.target.wants
+	/etc/systemd/system/getty.target.wants
+	/etc/systemd/system/getty.target.wants/getty@tty1.service
+
+# Enabling and disabling a service
+
+	$ sudo systemctl disable network
+	rm '/etc/systemd/system/multi-user.target.wants/network.service'
+
+	/etc/systemd/system$ sudo systemctl enable conn
+	ln -s '/etc/systemd/system/conn.service' '/etc/systemd/system/multi-user.target.wants/conn.service'
+
+Symlinks to `/etc/systemd/system/multi-user.target.wants`.
+
+So listing the contents of `/etc/systemd/system/multi-user.target.wants` shows basically what a user wants to startup.
+
+# Listing /etc/systemd/system/
+
+If you have a `/etc/systemd/system/foobar.service` present:
+
+	$ systemctl list-units | grep foo
+	$ systemctl list-unit-files | grep foo
+	foobar.service                          disabled
