@@ -1,5 +1,3 @@
-TEST
-
 Intro: As part of the [W3C Mobile Web Test Suites Working
 Group](http://www.w3.org/2005/MWI/Tests/) I'm co-ordinating in tests of the
 Widget runtime, in which W3C compliant Widget run times implement [Widgets 1.0:
