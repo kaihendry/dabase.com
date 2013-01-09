@@ -30,7 +30,7 @@ proprietary tool. Great, what a start!
 * Only accurate representations of stored content can be produced if you embed the font. Bloat!
 * A document is of little use unless it's transcribed into text. Scan a STASI file into a PDF. Great, now what? Storing it as a PNG would be even better as people would at least been able to view it easier.
 * [PDF has a poor accessibility record](http://www.usability.com.au/resources/pdf.cfm)
-* Non-trivial to diff, track and compare PDF documents
+* Non-trivial to diff, track, merge and compare PDF documents
 * An open standard? That you need to [pay ISO](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=51502) 200GBP for?! Are there at least two interoperable implementations of PDF/A?
 * Probably only one **conforming** implementation (Guess who!). Is there a test suite or validator? No
 * [Not as secure](http://www.theregister.co.uk/2010/03/09/adobe_reader_attacks/) as Web technologies
@@ -57,4 +57,4 @@ proprietary tool. Great, what a start!
 
 * Can't be rendered consistently across devices or mediums -- HTML is not a (static A4 print) presentation format, it's a publishing format
 * [[Printing|blog/Web_browser_printing_comparison]] is particularly tiresome, which is good news for trees
-* HTML is living markup and it ideally needs to be maintained
+* [HTML is living markup](http://whatwg.org/html) and it ideally needs to be maintained
