@@ -1,33 +1,42 @@
 [[!meta title="systemd"]]
 
-System:
+On Archlinux, /etc/systemd/system/ takes precedence over /usr/lib/systemd/system/.
 
-	/usr/lib/systemd/system/
+# System: /usr/lib/systemd/system/
 
-This is where IIUC packages install their service files.
+	x220:~$ ls /usr/lib/systemd/system/ | grep rsync
+	rsyncd.service
+	rsyncd@.service
+	rsyncd.socket
+	x220:~$ systemctl list-unit-files | grep rsync
+	rsyncd.service                          disabled
+	rsyncd@.service                         static
+	rsyncd.socket                           disabled
 
-	$ find /usr/lib/systemd/system/ -name '*.service' | wc -l
-	152
+# Your system wide systemd stuff: /etc/systemd/system/
 
-User:
+	x220:/etc/systemd/system$ tree
+	.
+	├── autologin@.service
+	├── conn.service
+	├── foobar.service
+	├── getty.target.wants
+	│   └── getty@tty1.service -> /etc/systemd/system/autologin@.service
+	├── local-fs.target.wants
+	├── multi-user.target.wants
+	│   ├── conn.service -> /etc/systemd/system/conn.service
+	│   ├── dcron.service -> /usr/lib/systemd/system/dcron.service
+	│   ├── httpd.service -> /usr/lib/systemd/system/httpd.service
+	│   ├── ntpd.service -> /usr/lib/systemd/system/ntpd.service
+	│   ├── remote-fs.target -> /usr/lib/systemd/system/remote-fs.target
+	│   ├── sshd.service -> /usr/lib/systemd/system/sshd.service
+	│   ├── syslog-ng.service -> /usr/lib/systemd/system/syslog-ng.service
+	│   └── vboxservice.service -> /usr/lib/systemd/system/vboxservice.service
+	├── network.service
+	├── sysinit.target.wants
+	└── syslog.service -> /usr/lib/systemd/system/syslog-ng.service
 
-	/etc/systemd/system
-	/etc/systemd/system/local-fs.target.wants
-	/etc/systemd/system/syslog.service
-	/etc/systemd/system/multi-user.target.wants
-	/etc/systemd/system/multi-user.target.wants/network.service
-	/etc/systemd/system/multi-user.target.wants/ntpd.service
-	/etc/systemd/system/multi-user.target.wants/vboxservice.service
-	/etc/systemd/system/multi-user.target.wants/syslog-ng.service
-	/etc/systemd/system/multi-user.target.wants/sshd.service
-	/etc/systemd/system/multi-user.target.wants/remote-fs.target
-	/etc/systemd/system/multi-user.target.wants/httpd.service
-	/etc/systemd/system/multi-user.target.wants/dcron.service
-	/etc/systemd/system/network.service
-	/etc/systemd/system/autologin@.service
-	/etc/systemd/system/sysinit.target.wants
-	/etc/systemd/system/getty.target.wants
-	/etc/systemd/system/getty.target.wants/getty@tty1.service
+	4 directories, 14 files
 
 # Enabling and disabling a service
 
