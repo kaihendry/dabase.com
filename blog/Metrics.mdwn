@@ -1,0 +1,79 @@
+# Background
+
+I'm too embarrassed to write this "statistics architecture" up on Webconverger
+blog and this is too technical for Natalian.
+
+After messing around with [Anselm's monitor rc
+scripts](https://github.com/kaihendry/monitor), [fiddling with
+GNUplot](https://github.com/kaihendry/laptemp), looking into
+[statsd](https://github.com/etsy/statsd) and
+[graphite](https://launchpad.net/graphite) (v. scary) and watching [metrics
+everywhere](http://pivotallabs.com/139-metrics-metrics-everywhere/)... I have a LOT to think about.
+
+Of course I want to apply the [suckless
+philosophy](http://suckless.org/philosophy) and cut through the crap.
+
+# Measure what?
+
+I started with this faux problem of measuring my machine temperature, since
+this is related to Webconverger deployments, that require monitoring.
+Monitoring translates to business value, since this is what clients are
+prepared to pay for.
+
+My "suckless" approach is to generate time series CSV based on epoch time.
+
+	*/5 * * * * echo $(date +%s) $(cat /proc/temp) | ssh server 'cat - >> temp.csv'
+
+Over a ssh socket. Then on the server we either run GNUplot over the CSV or
+churn it in JSON and write put the data into a [time series
+graph](http://dl.webconverger.com/stats/).
+
+The problem with quirky GNUplot is that the Web output of a PNG or SVG can be
+difficult to explore.
+
+Then again the JSON frontend is easier to write and interact with, but it can
+become pretty darn cumbersome.
+
+The CSV files can be probably managed with `logrotate`.
+
+This approach makes a number of assumptions about ssh and the frequency and
+such and so forth. And it lacks monitoring **alerts**. I'm not quite sure how
+to do that yet. Perhaps extra logic on the server, that filters new data and if
+something goes wrong, it sends an alert. My preference would probably be an
+email.
+
+# What else should I be measuring?
+
+Important elements for Webconverger are number of subscriptions. Of course this
+could be a daily thing:
+
+	1358518011 45
+	1358604429 44
+
+So our generic grapher script can easily draw this, to show 45 subscribers
+yesterday and 44 today.
+
+What about something more complicated like, [ping.csv](http://ping.webconverger.org/):
+
+	1358604429 206.78.148.37 16.0 US ae653a33b312fa3943541f8ac9c9b781
+
+We need to do perhaps have a script that counts things up for a day and then
+generates another CSV to generate a graph.
+
+So on the server we can have we have at it's simplest:
+
+	/stats/foobar.csv -> generic gnuplot script -> /srv/www/example.com/stats/foobar.png
+
+`/stats` is managed by logrotate.
+
+Slightly more complicated:
+
+	/stats/foobar.csv -> generic json script -> /srv/www/example.com/stats/foobar.json -> /srv/www/example.com/stats/foobar/index.{js,css,html}
+
+for example: <http://dl.webconverger.com/stats/>
+
+Perhaps we need some filtering / tweaking?
+
+	/stats/foobar.csv -> generic gnuplot script -> /stats/foobar.sh -> /srv/www/example.com/stats/foobar.png
+
+The generic script sees a shell script of the same name, and therefore passes it through it.
