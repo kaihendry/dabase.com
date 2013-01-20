@@ -89,3 +89,116 @@ Perhaps we need some filtering / tweaking?
 The frequency of how often this generate (i.e. call $graphname.sh) can be
 triggered by `inotifywait` on the server. i.e. when it sees new data, it calls
 the graphing script.
+
+# Suckless rrdtool
+
+From __20h__ !
+
+## Hierarchy
+
+	$ROOT
+	$DATAROOT
+	$SCRIPTROOT
+	srrd.cron – symlink from /etc/cron.d/srrd
+	srrd.logrotate – symlink from /etc/logrotate.d/srrd
+
+$DATAROOT
+	$machineid
+		$graphname
+			csv – csv database
+				file-$from-$to.csv
+				new.csv
+			json – json database
+				file-$from-$to.json
+				new.js
+			png – png database
+				png-$from-$to.json
+				new.png
+			svg – svg database
+				svc-$from-$to.svc
+				new.svg
+			...
+	
+	$from ::= YYYY[MM[DD[THH[:MM[:SS[.XXXX]]]]]][±ZZZZ]
+	$to ::= YYYY[MM[DD[THH[:MM[:SS[.XXXX]]]]]][±ZZZZ]
+	$step ::= [[[[[[YYYY]MM]DD]THH:]MM:]SS][.XXXX]
+
+	$step is from the backward, beginning at the smallest time unit up to
+	years.
+
+	$from and $to begin at the year and then work towards the
+	milliseconds.
+
+	The timezone can be given and will be converted to the internal UTC
+	time.
+
+	TODO: Maybe a WXX for week notation could be used too.
+
+$SCRIPTROOT
+	csv2all.sh – calls the other csv2 scripts
+	csv2json.sh
+	csv2png.sh
+	csv2svg.sh
+	...
+	gatherall.sh – runs all gather scripts on the current machine
+	gathercpu.sh
+	gatherhddtemp.sh
+	gathereth0stats.sh
+	...
+
+$PATH (system-wide installation)
+	srrdc – client application
+	srrdr – run script which will run scripts in $SCRIPTROOT
+
+## $SCRIPTROOT calling convention
+
+	csv2all.sh $machineid $graphname
+
+* If $graphname is missing, all $graphname should be generated.
+* If $machineid is missing, all $machineid with all $graphname should be
+  generated.
+
+## srrdc
+
+	srrdc [options] [[$from] [$to] [$step]]
+		-m machineid
+		-g graphname
+		-f format for output mode [csv,json,png,...]
+		-i (input mode)
+		-o (output mode)
+
+### Input mode
+
+	cpugatheringscript.sh:
+
+		$timestamp\t$value\n
+		$timestamp\t$value\n
+		... \
+	| -> srrdc -m example -g cpu -i
+
+### Output mode
+
+	srrdc -m example -g cpu -f png -o
+		# will output the file 
+		# $DATAROOT/example/cpu/png/new.png
+	srrdc -m example -g cpu -f json -o 2010 2011 0100T00:00:00 
+		# This will generate a json file consisting of all values from
+		# 2010 to 2012 in a one month step.
+
+## Input Sources
+### Cronjob
+
+* This requires the knowledge of the cron daemon cronjob file. But that is a
+  standard around the Linux environment.
+
+	*/10 * * * * /bin/srrdr gathercpu.sh | srrdc -m $MACHINEID -g cpu -i
+					   # gather the cpu stats for this
+					   # machine
+
+	*/10 * * * * /bin/srrdr csv2all.sh # generate all machines inputting
+					   # to this statistics server
+
+### Special Scripts
+
+* Could be using inotifywait.
+* See the subsection »Input Mode« of »srrdc«.
