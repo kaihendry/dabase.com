@@ -23,7 +23,7 @@ prepared to pay for.
 
 My "suckless" approach is to generate time series CSV rooted on epoch time.
 
-	*/5 * * * * echo $(date +%s) $(cat /proc/temp) | ssh server 'cat - >> /data/${id:-$SSH_CLIENT}/temp/data.csv'
+	*/5 * * * * echo $(date +%s) $(cat /proc/temp) | ssh server 'cat - >> /data/${id:-$SSH_CLIENT}/temp/$(date +%j).csv'
 
 Over a ssh socket. Then on the server we either run GNUplot over the CSV or
 [churn it in JSON](https://github.com/Webconverger/dl/blob/master/toJSON.sh)
@@ -68,23 +68,23 @@ graph.
 
 So on the server we can have we have at its simplest:
 
-	$DATAROOT/$machineid/$graphname/data.csv -> $DATAROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.png
+	$WWWROOT/$machineid/$graphname/$(date +%j).csv -> $WWWROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.png
 
-`$DATAROOT/*/*/*.csv` is managed by logrotate.
+`$WWWROOT/*/*/*.csv` is managed by logrotate.
 
 Now with a different "graph script", generic-json.js:
 
-	ln -s generic-json.sh $DATAROOT/$machineid/$graphname.sh
+	ln -s generic-json.sh $WWWROOT/$machineid/$graphname.sh
 
-	$DATAROOT/$machineid/$graphname/data.csv -> $DATAROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.json -> /srv/www/example.com/stats/$machineid/$graphname/index.{js,css,html}
+	$WWWROOT/$machineid/$graphname/$(date +%j).csv -> $WWWROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.json -> /srv/www/example.com/stats/$machineid/$graphname/index.{js,css,html}
 
 html/js example: <http://dl.webconverger.com/stats/>
 
 Perhaps we need some filtering / tweaking?
 
-	ln -s special-gnuplot.sh $DATAROOT/$machineid/$graphname.sh
+	ln -s special-gnuplot.sh $WWWROOT/$machineid/$graphname.sh
 
-	$DATAROOT/$machineid/$graphname/data.csv -> $DATAROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.png
+	$WWWROOT/$machineid/$graphname/$(date +%j).csv -> $WWWROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.png
 
 The frequency of how often this generate (i.e. call $graphname.sh) can be
 triggered by `inotifywait` on the server. i.e. when it sees new data, it calls
@@ -92,20 +92,14 @@ the graphing script.
 
 ## Client Hierarchy
 
-	*/10 * * * * echo $(date +%s) $(cat /proc/temp) | srrdc $server:$WWWROOT/$machine_id/$graphname
-
-ssrdc at its simplest:
-
-	IFS=: set -- $1
-	ssh $1 'cat - >> $2/data.csv'
+	*/10 * * * * echo $(date +%s) $(cat /proc/temp) | ssh $server 'cat - >> $WWWROOT/$machineid/$graphname/$(date +%j).csv'
 
 ## Server Hierarchy
 
 	$SCRIPTROOT
 	$WWWROOT
-	ln -s srrd.logrotate /etc/logrotate.d/srrd
 
-Appended to $DATAROOT/$machineid/$graphname/data.csv
+Client appends to server's $WWWROOT/$machineid/$graphname/$(date +%j).csv
 
 * WWWROOT = /srv/www/stats.example.com
 * machineid = $UUID;$mac, /etc/machine-id, or even $SSH_CLIENT
@@ -113,26 +107,22 @@ Appended to $DATAROOT/$machineid/$graphname/data.csv
 
 	while true
 	do
-		inotifywait -m -e append "data.csv"
+		inotifywait -m -e append "$(date +%j).csv"
 		for i in *.sh; ./$i; done
 	done
 
-Example scripts:
+Example scripts in $SCRIPTROOT
 
 You are encouraged to create your own scripts, based upon $SCRIPTROOT/{prune,json,png}.sh
-
-Prune by default trims data.csv to 1 month. Older entries go into data.old?
-
-[--since=, --until=](http://www.freedesktop.org/software/systemd/man/journalctl.html) Default: "1 month ago"
-
-	ln -s $SCRIPTROOT/prune.sh $WWWROOT/$machineid/$graphname/
-
-Generates just the json output files:
-
-	ln -s $SCRIPTROOT/json.sh $WWWROOT/$machineid/$graphname/
-	Output: $WWWROOT/$machineid/$graphname.json
 
 Generates just the PNG file using GNUplot:
 
 	ln -s $SCRIPTROOT/png.sh $WWWROOT/$machineid/$graphname/
 	Output: $WWWROOT/$machineid/$graphname.png
+
+`png.sh` by default can take the last 30 days, `ls -t *.csv | tail -n30`
+
+Generates just the json output files:
+
+	ln -s $SCRIPTROOT/json.sh $WWWROOT/$machineid/$graphname/
+	Output: $WWWROOT/$machineid/$graphname.json
