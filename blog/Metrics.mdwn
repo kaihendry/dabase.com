@@ -38,91 +38,10 @@ with. However it's powerful, fast and plays well with shell.
 Then again the JSON frontend is easier to write and interact with, but it can
 become pretty darn cumbersome.
 
-The CSV files can be probably managed with `logrotate`.
-
 This approach makes a number of assumptions about ssh and the frequency and
 such and so forth. And it lacks monitoring **alerts**. I'm not quite sure how
 to do that yet. Perhaps extra logic on the server, that filters new data and if
 something goes wrong, it sends an alert. My preference would probably be an
 email.
 
-# What else should I be measuring?
-
-Important elements for Webconverger are number of subscriptions. Of course this
-could be a @daily (instead of every 5 minutes) thing:
-
-	1358518011 45
-	1358604429 44
-
-So our generic time series "grapher" script can easily draw this, to show 45
-subscribers yesterday and 44 today.
-
-What about something more complicated like, [ping.csv](http://ping.webconverger.org/):
-
-	epoch IP VERSION COUNTRY ID
-	1358604429 206.78.148.37 16.0 US ae653a33b312fa3943541f8ac9c9b781
-
-We need to tweak the script that counts things up for a day and then generates
-another CSV that filters in a different GNUplot graphing script to generate a
-graph.
-
-So on the server we can have we have at its simplest:
-
-	$WWWROOT/$machineid/$graphname/$(date +%j).csv -> $WWWROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.png
-
-`$WWWROOT/*/*/*.csv` is managed by logrotate.
-
-Now with a different "graph script", generic-json.js:
-
-	ln -s generic-json.sh $WWWROOT/$machineid/$graphname.sh
-
-	$WWWROOT/$machineid/$graphname/$(date +%j).csv -> $WWWROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.json -> /srv/www/example.com/stats/$machineid/$graphname/index.{js,css,html}
-
-html/js example: <http://dl.webconverger.com/stats/>
-
-Perhaps we need some filtering / tweaking?
-
-	ln -s special-gnuplot.sh $WWWROOT/$machineid/$graphname.sh
-
-	$WWWROOT/$machineid/$graphname/$(date +%j).csv -> $WWWROOT/$machineid/$graphname.sh -> /srv/www/example.com/stats/$machineid/$graphname.png
-
-The frequency of how often this generate (i.e. call $graphname.sh) can be
-triggered by `inotifywait` on the server. i.e. when it sees new data, it calls
-the graphing script.
-
-## Client Hierarchy
-
-	*/10 * * * * echo $(date +%s) $(cat /proc/temp) | ssh $server 'cat - >> $WWWROOT/$machineid/$graphname/$(date +%j).csv'
-
-## Server Hierarchy
-
-	$SCRIPTROOT
-	$WWWROOT
-
-Client appends to server's $WWWROOT/$machineid/$graphname/$(date +%j).csv
-
-* WWWROOT = /srv/www/stats.example.com
-* machineid = $UUID;$mac, /etc/machine-id, or even $SSH_CLIENT
-* graphname = temp
-
-	while true
-	do
-		inotifywait -m -e append "$(date +%j).csv"
-		for i in *.sh; ./$i; done
-	done
-
-Example scripts in $SCRIPTROOT
-
-You are encouraged to create your own scripts, based upon $SCRIPTROOT/{prune,json,png}.sh
-
-Generates just the PNG file using GNUplot:
-
-	ln -s $SCRIPTROOT/png.sh $WWWROOT/$machineid/$graphname/
-	Output: $WWWROOT/$machineid/$graphname.png
-
-`png.sh` by default can take the last 30 days, `ls -t *.csv | tail -n30`
-
-Generates just the json output files:
-
-	ln -s $SCRIPTROOT/json.sh $WWWROOT/$machineid/$graphname/
-	Output: $WWWROOT/$machineid/$graphname.json
+Please see <https://github.com/kaihendry/sg> for an implementation!
