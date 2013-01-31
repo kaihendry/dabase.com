@@ -7,7 +7,7 @@ Using PowerTOP versionv2.1:
 
 	powertop -html
 
-<img src=http://s.natalian.org/2013-01-31/1359609740_1366x768.png>
+<img width=640 height=480 src=http://s.natalian.org/2013-01-31/1359609740_1366x768.png>
 
 Use the `td:first-child { display: none; }` trick to be able to copy and paste the second column.
 
@@ -20,19 +20,15 @@ You will get something like
 	echo '1' > '/sys/module/snd_hda_intel/parameters/power_save';
 	echo 'auto' > '/sys/bus/usb/devices/3-1/power/control';
 	echo 'auto' > '/sys/bus/pci/devices/0000:0e:00.0/power/control';
-	echo 'auto' > '/sys/bus/pci/devices/0000:00:1f.3/power/control';
-	echo 'auto' > '/sys/bus/pci/devices/0000:00:1a.0/power/control';
 	ethtool -s net0 wol d;
 
 Which you need to convert like so in systemd's `/etc/tmpfiles.d/power-savings.conf`:
 
-	/sys/class/scsi_host/host0/link_power_management_policy - - - - min_power
-	/proc/sys/kernel/nmi_watchdog - - - - 0
-	/proc/sys/vm/dirty_writeback_centisecs - - - - 1500
-	/sys/module/snd_hda_intel/parameters/power_save - - - - 1
-	/sys/bus/usb/devices/3-1/power/control - - - - auto
-	/sys/bus/pci/devices/0000:0e:00.0/power/control - - - - auto
-	/sys/bus/pci/devices/0000:00:00.0/power/control - - - - auto
-	/sys/bus/pci/devices/0000:00:02.0/power/control - - - - auto
+	w /sys/class/scsi_host/host0/link_power_management_policy - - - - min_power
+	w /proc/sys/kernel/nmi_watchdog - - - - 0
+	w /proc/sys/vm/dirty_writeback_centisecs - - - - 1500
+	w /sys/module/snd_hda_intel/parameters/power_save - - - - 1
+	w /sys/bus/usb/devices/3-1/power/control - - - - auto
+	w /sys/bus/pci/devices/0000:0e:00.0/power/control - - - - auto
 
 For `ethtool` and `iw` have a look at [Vodik's /etc/rules.d/50-network-powersave.rules](https://github.com/vodik/powersave/blob/master/rules.d/50-network-powersave.rules)
