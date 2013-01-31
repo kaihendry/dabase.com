@@ -11,6 +11,10 @@ GNUplot](https://github.com/kaihendry/laptemp), looking into
 [graphite](https://launchpad.net/graphite) (v. scary) and watching [metrics
 everywhere](http://pivotallabs.com/139-metrics-metrics-everywhere/)... I have a LOT to think about.
 
+* https://www.icinga.org sucks
+* munin sucks
+* nagios sucks
+
 Of course I want to apply the [suckless
 philosophy](http://suckless.org/philosophy) and cut through the crap.
 
