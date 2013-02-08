@@ -35,7 +35,7 @@ Run `anolis faq.src.html faq.html` and boom:
 
 Job done. Here is a better [example FAQ](http://config.webconverger.com/faq/)
 
-Here is Makefile I use a lot on my Websites:
+Here is a Makefile I use a lot on my Websites:
 
 	INFILES = $(shell find . -name "*.src.html")
 	OUTFILES = $(INFILES:.src.html=.html)
