@@ -9,6 +9,8 @@ Using:
 1. [scrot](http://en.wikipedia.org/wiki/Scrot)
 * [gimp](http://www.gimp.org/)
 
+Using the [dwm](http://dwm.suckless.org/) window manager and [dmenu](http://tools.suckless.org/dmenu/) to run commands at the top.
+
 The [screen casting tool is recordmydesktop2.0](https://github.com/kaihendry/recordmydesktop2.0).
 
 
