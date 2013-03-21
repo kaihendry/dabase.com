@@ -41,5 +41,3 @@ text/html" in there with a couple of carriage returns.
 	END
 
 `/dev/stderr` outputs to `/var/log/apache2/error.log` so you need redirect `wget` output to stdout as I do in this case.
-
-Here is a more worked example <http://saveaswidget.com/hgweb.cgi/file/tip/save.cgi>.
