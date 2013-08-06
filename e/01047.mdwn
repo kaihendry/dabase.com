@@ -1,8 +1,12 @@
 [[!meta title="Time in New York? Tokyo?"]]
-Get time/date in the New York timezone (EST) like so:
 
-	TZ=EST date
-Time in Tokyo?
-Look it up:
-http://twiki.org/cgi-bin/xtra/tzdate
-Ah, JST! Japanese Standard Time I presume.
+Look up the timezone in <ftp://ftp.iana.org/tz/data/zone.tab>
+
+For example, New York is 'America/New_York' and Tokyo is 'Asia/Tokyo'.
+
+
+	$ TZ='America/New_York' date
+	Tue  6 Aug 05:59:32 EDT 2013
+	$ TZ='Asia/Tokyo' date
+	Tue  6 Aug 18:59:42 JST 2013
+
