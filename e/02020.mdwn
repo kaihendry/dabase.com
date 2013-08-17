@@ -1,0 +1,10 @@
+[[!meta title="Could not copy message"]]
+
+If you get "Could not copy message" or "Can't open PGP subprocess!: No such
+file or directory (errno = 2)", it means your mutt and GPG are not configured
+to work with another.
+
+The solution is to source from your ~/.muttrc a mutt/gpg configuration usually
+in your mutt package. On Archlinux add to your ~/.muttrc:
+
+	source /etc/Muttrc.gpg.dist
