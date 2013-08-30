@@ -1,0 +1,27 @@
+[[!meta title="AWS Route 53 health check hostname"]]
+
+<img src=http://s.natalian.org/2013-08-30/1377840113_1366x768.png alt="Failing AWS health check">
+
+Notice the **Host Name** with `http://../` will fail:
+
+	curl -H 'Host: http://browserinabox.com/' http://117.121.241.187:80
+	<html>
+	<head><title>400 Bad Request</title></head>
+	<body bgcolor="white">
+	<center><h1>400 Bad Request</h1></center>
+	<hr><center>nginx/1.4.2</center>
+	</body>
+	</html>
+
+However:
+
+	curl -H 'Host: browserinabox.com' http://117.121.241.187:80
+	<h1>Hello World</h1>
+
+Will work. Update thoe **Host Name** and this is what a health check looks like:
+
+<img src=http://s.natalian.org/2013-08-30/1377843414_1366x768.png alt="Health AWS health check">
+
+Do be aware that the **Amazon Route 53 Health Check Service** checks very aggressively compared to a bog standard nagios check!
+
+<img src=http://s.natalian.org/2013-08-30/1377843503_1366x768.png alt="Amazon Route 53 Health Check Service logs">

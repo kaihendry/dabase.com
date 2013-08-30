@@ -44,4 +44,8 @@
 ## Bash and shell
 [[!inline pages="e/13* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
+## The Cloud
+[[!inline pages="e/14* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
+
+
 ### All tips are in the public domain

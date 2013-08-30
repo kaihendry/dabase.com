@@ -16,4 +16,4 @@
 	CustomLog "|/usr/local/apache2/bin/rotatelogs -l logs/access.%Y-%m-%d 86400" comonvhost
 
 
-Here is the [[Nginx "VirtualDocumentRoot" version|04055]]
+Here is the [[Nginx "VirtualDocumentRoot" version|04055]].
