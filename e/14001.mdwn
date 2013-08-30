@@ -18,7 +18,8 @@ However:
 	curl -H 'Host: browserinabox.com' http://117.121.241.187:80
 	<h1>Hello World</h1>
 
-Will work. Update thoe **Host Name** and this is what a health check looks like:
+Will work. Update the **Host Name** field to remove the http syntax and this is
+what a good health check looks like:
 
 <img src=http://s.natalian.org/2013-08-30/1377843414_1366x768.png alt="Health AWS health check">
 
