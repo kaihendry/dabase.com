@@ -1,0 +1,52 @@
+So I bought a "SanDisk SDSSDHP-128G-G25 128GB Ultra Plus SATA 3.0 6GB/s 7mm
+Internal SSD" aka "sandisk" to complement my existing "OCZ 120GB Nocti SSD -
+mSATA SATA-II - Read 280MB/s Write 260MB/s" aka "nocti" disk connected to my
+Mini-SATA port.
+
+I primarily thought I would **experiment with cloning** nocti to the sandisk, so
+that if nocti failed I could use sandisk. Or I could see performance
+differences running the same system. Or I could do fun things like upgrade one,
+but not the other and see if I could measure or debug something.
+
+# Straight up dd
+
+I first tried, whilst running and mounted on /dev/sdb (nocti):
+
+	dd if=/dev/sdb | pv | dd of=/dev/sda
+
+`pv` supposed to "monitor the progress of data through a pipe", however it
+didn't give me a proper progress bar. It only told me that I was copying at a
+rate of about 10MB/sec, which I found a bit dissapointing.
+
+	# parted --list | grep .
+	Model: ATA SanDisk SDSSDH21 (scsi)
+	Disk /dev/sda: 128GB
+	Sector size (logical/physical): 512B/512B
+	Partition Table: msdos
+	Disk Flags:
+	Number  Start   End    Size   Type     File system  Flags
+	 1      32.3kB  120GB  120GB  primary  ext4         boot
+	Model: ATA OCZ-NOCTI (scsi)
+	Disk /dev/sdb: 120GB
+	Sector size (logical/physical): 512B/512B
+	Partition Table: msdos
+	Disk Flags:
+	Number  Start   End    Size   Type     File system  Flags
+	 1      32.3kB  120GB  120GB  primary  ext4         boot
+
+First problem is that I'm wasting 8GB. Second problem is that I'm dd-ing from a running system. Lets try boot into sandisk!
+
+Uh oh, [lots of errors](http://www.flickr.com/photos/hendry/sets/72157636140014884/). `dd` simply didn't work, even after running a `fsck` upon it. Also scarily, the "sandisk" was referring to itself as "nocti" when I was using it. That's because when I dd-ed it, the label came across:
+
+	x220:~$ sudo e2label /dev/sda1
+	nocti
+	x220:~$ sudo e2label /dev/sdb1
+	nocti
+
+Sadly one can't do a top level label, you have to do it on a partition:
+
+	sudo e2label /dev/sda sandisk
+	e2label: Bad magic number in super-block while trying to open /dev/sdb
+	Couldn't find valid filesystem superblock.
+
+# Lets try a dd from a live USB like Webconverger
