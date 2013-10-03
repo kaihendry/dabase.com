@@ -50,3 +50,35 @@ Sadly one can't do a top level label, you have to do it on a partition:
 	Couldn't find valid filesystem superblock.
 
 # Lets try a dd from a live USB like Webconverger
+
+<img src="http://s.natalian.org/2013-10-03/dd-from-webc.png">
+
+In 20 minutes I successfully managed to clone "nocti" to "sandisk" using 4M as
+the block size. I ran `e2label /dev/sda1 sandisk` and now we have:
+
+	$ lsblk -f
+	NAME   FSTYPE LABEL   UUID                                 MOUNTPOINT
+	sda
+	└─sda1 ext4   sandisk 5d40f591-086f-407a-9b6c-fb3fec1dc046 /
+	sdb
+	└─sdb1 ext4   nocti   5d40f591-086f-407a-9b6c-fb3fec1dc046
+
+Notice they have the exact same UUID.
+
+# hdparm to compare disk speed
+
+So the sandisk shows:
+
+	# hdparm -tT /dev/sda
+	/dev/sda:
+	 Timing cached reads:   6672 MB in  2.00 seconds = 3336.70 MB/sec
+	 Timing buffered disk reads: 1466 MB in  3.00 seconds = 488.37 MB/sec
+
+And nocti is:
+
+	[root@x220 ~]# hdparm -tT /dev/sdb
+	/dev/sdb:
+	 Timing cached reads:   10298 MB in  2.00 seconds = 5152.28 MB/sec
+	 Timing buffered disk reads: 338 MB in  3.01 seconds = 112.21 MB/sec
+
+# Next, expanding the sandisk to take all the space
