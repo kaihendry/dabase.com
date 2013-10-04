@@ -81,4 +81,17 @@ And nocti is:
 	 Timing cached reads:   10298 MB in  2.00 seconds = 5152.28 MB/sec
 	 Timing buffered disk reads: 338 MB in  3.01 seconds = 112.21 MB/sec
 
+I added "noatime,discard" to my mount options and sda seems faster or hdparm is just variable?
+
+	[root@x220 ~]# hdparm -tT /dev/sda
+	/dev/sda:
+	 Timing cached reads:   10688 MB in  2.00 seconds = 5347.33 MB/sec
+	 Timing buffered disk reads: 1368 MB in  3.00 seconds = 455.69 MB/sec
+	[root@x220 ~]# hdparm -tT /dev/sdb
+	/dev/sdb:
+	 Timing cached reads:   10156 MB in  2.00 seconds = 5081.24 MB/sec
+	 Timing buffered disk reads: 338 MB in  3.01 seconds = 112.13 MB/sec
+
+
 # Next, expanding the sandisk to take all the space
+
