@@ -166,4 +166,20 @@ And [nocti](http://ix.io/8mR) is on ata3:
 	# journalctl -b | grep -i nocti | grep at
 	Oct 07 15:26:41 x220 kernel: ata3.00: ATA-8: OCZ-NOCTI, 2.15, max UDMA/133
 
+# Finally, the right way to clone a disk
 
+The best approach I've found is to boot Archlinux install disk. Assuming your
+destination is sandisk at /dev/sda and source is nocti at /dev/sdb.
+
+	lsblk -f
+	fdisk /dev/sda
+	n, p, enter, enter # Create partition
+	mkfs.ext4 /dev/sda1
+	e2label /dev/sda1 sandisk
+	mkdir /mnt/{nocti,sandisk}
+	mount /dev/sdb1 /mnt/nocti
+	mount /dev/sda1 /mnt/sandisk -o noatime,rw,discard
+	rsync -a /dev/nocti/ /mnt/sandisk
+	vim /mnt/sandisk/etc/fstab # update LABEL=sandisk
+	vim /mnt/sandisk/boot/syslinux/syslinux.cfg # update root=LABEL=sandisk
+	syslinux-install_update.sh -i -a -m -c /mnt/sandisk
