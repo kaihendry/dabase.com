@@ -10,13 +10,15 @@ but not the other and see if I could measure or debug something.
 
 # Straight up dd
 
+Note: In hindsight you are almost always better off `mkfs.ext4` and `rsync -a` files over instead off `dd`!
+
 I first tried, whilst running and mounted on /dev/sdb (nocti):
 
 	dd if=/dev/sdb | pv | dd of=/dev/sda
 
 `pv` supposed to "monitor the progress of data through a pipe", however it
 didn't give me a proper progress bar. It only told me that I was copying at a
-rate of about 10MB/sec, which I found a bit dissapointing.
+rate of about 10MB/sec, which I found a bit disappointing.
 
 	# parted --list | grep .
 	Model: ATA SanDisk SDSSDH21 (scsi)
@@ -95,7 +97,7 @@ I added "noatime,discard" to my mount options and sda seems faster or hdparm is 
 
 # Next, expanding the sandisk to take all the space
 
-parted seems unable to detect the dimensions of the disk for partion creation, hence I used `fdisk`.
+parted seems unable to detect the dimensions of the disk for partition creation, hence I used `fdisk`.
 
 	# fdisk /dev/sda
 	Welcome to fdisk (util-linux 2.23.2).
@@ -137,6 +139,8 @@ parted seems unable to detect the dimensions of the disk for partion creation, h
 I think the problem is that fdisk seems to think the start is at **default
 2048**, when looking back to original `parted` output after the dd, it's in fact
 **32.3kB**. I do not know how to specify **32.3kB** as the start for fdisk.
+
+<http://askubuntu.com/a/115337/676> is bad advice.
 
 # SATA speeds
 
