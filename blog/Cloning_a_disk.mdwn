@@ -95,3 +95,27 @@ I added "noatime,discard" to my mount options and sda seems faster or hdparm is 
 
 # Next, expanding the sandisk to take all the space
 
+
+# SATA speeds
+
+On my X220 system, I have a number of SATA ports:
+
+	# ls /sys/class/ata_port/
+	ata1  ata2  ata3  ata4  ata5  ata6
+
+To determine the speed:
+
+	# dmesg | grep -i sata | grep 'link up'
+	ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+	ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+	ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+
+IIUC, [sandisk](http://ix.io/8mQ) is on ata1:
+
+	# journalctl -b | grep -i sandisk | grep ata
+	Oct 07 15:26:41 x220 kernel: ata1.00: ATA-8: SanDisk SDSSDH2128G, X211200, max UDMA/133
+
+And [nocti](http://ix.io/8mR) is on ata3:
+
+	# journalctl -b | grep -i nocti | grep at
+	Oct 07 15:26:41 x220 kernel: ata3.00: ATA-8: OCZ-NOCTI, 2.15, max UDMA/133
