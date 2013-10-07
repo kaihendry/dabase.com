@@ -95,9 +95,9 @@ I added "noatime,discard" to my mount options and sda seems faster or hdparm is 
 	 Timing buffered disk reads: 338 MB in  3.01 seconds = 112.13 MB/sec
 
 
-# Next, expanding the sandisk to take all the space
+# Next, expanding the sandisk to take all the space by recreating the partition (BAD IDEA)
 
-parted seems unable to detect the dimensions of the disk for partition creation, hence I used `fdisk`.
+Parted seems unable to detect the dimensions of the disk for partition creation, hence I used `fdisk`.
 
 	# fdisk /dev/sda
 	Welcome to fdisk (util-linux 2.23.2).
@@ -140,7 +140,7 @@ I think the problem is that fdisk seems to think the start is at **default
 2048**, when looking back to original `parted` output after the dd, it's in fact
 **32.3kB**. I do not know how to specify **32.3kB** as the start for fdisk.
 
-<http://askubuntu.com/a/115337/676> is bad advice.
+WARNING: <http://askubuntu.com/a/115337/676> is bad advice, since `fdisk` will forcibly start at 2048 (default since fdisk 2.17.2), and will not allow to start at a lower sector!
 
 # SATA speeds
 
