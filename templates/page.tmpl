@@ -213,6 +213,8 @@ Last edited <TMPL_VAR MTIME>
 <!-- Created <TMPL_VAR CTIME> -->
 </div>
 
+<p id=feedback>Noticed an error? Something that could be better? Please tell me!</p>
+
 <TMPL_IF HTML5></nav><TMPL_ELSE></div></TMPL_IF>
 <TMPL_IF EXTRAFOOTER><TMPL_VAR EXTRAFOOTER></TMPL_IF>
 </TMPL_UNLESS>
@@ -221,7 +223,9 @@ Last edited <TMPL_VAR MTIME>
 
 <TMPL_IF HTML5></article><TMPL_ELSE></div></TMPL_IF>
 
-<p>testing</p>
+<script>
+document.getElementById("feedback").innerHTML += " feedback" + new Date().getFullYear() + "@dabase.com";
+</script>
 
 </body>
 </html>
