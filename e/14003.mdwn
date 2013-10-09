@@ -2,9 +2,8 @@
 
 Say for example you have a S3 bucket named `s3://p-dl/`
 
-If you have made it public it should reachable upon
-<http://s3.amazonaws.com/p-dl> or redirect you to
-<http://p-dl.s3.amazonaws.com>, which may again redirect you to
+If you have made your bucket **public** (Hint: s3cmd -P) it should reachable
+upon <http://p-dl.s3.amazonaws.com>, which may again redirect you to
 <http://p-dl.s3-ap-southeast-1.amazonaws.com/>.
 
 Now you should see an XML listing like:
