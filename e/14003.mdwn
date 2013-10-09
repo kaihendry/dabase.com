@@ -1,0 +1,46 @@
+[[!meta title="Download entire public S3 bucket without credentials"]]
+
+Say for example you have a S3 bucket named `s3://p-dl/`
+
+If you have made it public it should reachable upon
+<http://s3.amazonaws.com/p-dl> or redirect you to
+<http://p-dl.s3.amazonaws.com>, which may again redirect you to
+<http://p-dl.s3-ap-southeast-1.amazonaws.com/>.
+
+Now you should see an XML listing like:
+
+	<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+	<Name>p-dl</Name>
+	<Prefix/>
+	<Marker/>
+	<MaxKeys>1000</MaxKeys>
+	<IsTruncated>false</IsTruncated>
+	<Contents>
+	<Key>foo.txt</Key>
+	<LastModified>2013-10-09T09:12:53.000Z</LastModified>
+	<ETag>"59ca0efa9f5633cb0371bbc0355478d8"</ETag>
+	<Size>13</Size>
+	<StorageClass>REDUCED_REDUNDANCY</StorageClass>
+	</Contents>
+	<Contents>
+	<Key>test.jpg</Key>
+	<LastModified>2013-10-09T09:12:53.000Z</LastModified>
+	<ETag>"c9af9358e016984c1445a6102b4c35fc"</ETag>
+	<Size>89761</Size>
+	<StorageClass>REDUCED_REDUNDANCY</StorageClass>
+	</Contents>
+	</ListBucketResult>
+
+If not, perhaps you are missing the <a href="http://s.natalian.org/2013-09-12/s3-permissions.png">**Everyone** **List** permission</a>.
+
+You can download all the resources with a bit of `xmlstarlet` magic like so:
+
+	s3url=http://p-dl.s3-ap-southeast-1.amazonaws.com
+	curl -s $s3url |
+	xml sel -N w="http://s3.amazonaws.com/doc/2006-03-01/" -T -t -m "//w:Key" -v . -n |
+	while read filename
+	do
+		wget -N $s3url/$filename
+	done
+
+Is there an easier way? Please let me know. It would be good if there was a JSON API.
