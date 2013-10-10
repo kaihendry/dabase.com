@@ -6,8 +6,4 @@
 
 # Latest [[tips]]
 
-[[!inline pages="e/*" show="2" actions=no rss=no]]
-
-# Android in the United Kingdom
-
-[[!inline pages="android/* and !android/*/Discussion" description="Blogging UK G1 experiences" actions=no rss=no show="2"]]
+[[!inline pages="e/*" show="5" actions=no rss=no]]
