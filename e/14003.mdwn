@@ -3,7 +3,7 @@
 Say for example you have a S3 bucket named `s3://p-dl/`
 
 If you have made your bucket **public** (Hint: s3cmd -P) it should reachable
-upon <http://p-dl.s3.amazonaws.com>, which may again redirect you to
+upon <a href=http://p-dl.s3.amazonaws.com>http://p-dl.<strong>s3.amazonaws.com</strong></a>, which may again redirect you to
 <http://p-dl.s3-ap-southeast-1.amazonaws.com/>.
 
 Now you should see an XML listing like:
@@ -39,7 +39,7 @@ You can download all the resources with a bit of `xmlstarlet` magic like so:
 	xml sel -N w="http://s3.amazonaws.com/doc/2006-03-01/" -T -t -m "//w:Key" -v . -n |
 	while read filename
 	do
-		wget -N $s3url/$filename
+		wget -cN $s3url/$filename
 	done
 
 Is there an easier way? Please let me know. It would be good if there was a JSON API.
