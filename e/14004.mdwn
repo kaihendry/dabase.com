@@ -1,0 +1,9 @@
+[[!meta title="Remove a bucket"]]
+
+Using the AWS cli:
+
+	x220:~$ aws s3 rm --recursive s3://p-dl
+	delete: s3://p-dl/foo.txt
+	delete: s3://p-dl/test.jpg
+	x220:~$ aws s3 rb s3://p-dl
+	remove_bucket: s3://p-dl/
