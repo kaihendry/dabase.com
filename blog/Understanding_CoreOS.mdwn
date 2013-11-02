@@ -41,6 +41,10 @@ I am not so sure if I trust CoreOS developers to make the "base" choices for
 me. Ultimately people get conservative and start running older and older
 software. It will probably get mightily bloated too.
 
+Update: I think the base OS is just for running several instances of say Ubuntu
+in docker containers. Tbh I thought the containers would inherit the base
+system OS entirely, but this doesn't seem to be the case.
+
 # Wtf is Docker?
 
 IIUC [Docker](http://www.docker.io/) is a fancy name of <abbr title="LinuX
@@ -58,12 +62,12 @@ for sure.
 
 # And Wtf is etcd?
 
-[Etcd](http://coreos.com/blog/distributed-configuration-with-etcd/) as I understand it, is used two things:
+[Etcd](http://coreos.com/blog/distributed-configuration-with-etcd/) as I understand it, is used for two things:
 
-1. Key value store for configuration data like Windows Registry, for services running on CoreOS
+1. Key value store for configuration data like the Windows Registry, for services running on CoreOS
 2. Some tools to manage the distribution / control of the services
 
-Key, value store is easy to imagine. But how does that map to `/etc/nginx/nginx.conf` what might be thinking?
+Key, value store is easy to imagine. But how does that map to `/etc/nginx/nginx.conf` one might be thinking?
 
 Well ideally I'm told that services talk directly with etcd, but if they can't like most Linux services, they need to talk via [confd](https://github.com/kelseyhightower/confd), so you end up with something like:
 
@@ -76,7 +80,7 @@ of hook to expand macros like HOSTNAME or whatever you need machine by machine.
 The abstraction or mapping between etcd and a services config file, e.g.
 `/etc/postfix/main.cf` is obviously going to be
 [leaky](http://en.wikipedia.org/wiki/Leaky_abstraction). The only positive
-point I can think of, is that it maybe over time... gets services like postfix,
+point I can think of, is that it maybe over time... services like postfix,
 nginx, apache et al to talk directly with etcd and gets rid of their particular
 crufty configuration languages. I.e. make things much simpler for admins!
 
