@@ -87,7 +87,7 @@ crufty configuration languages. I.e. make things much simpler for admins!
 ## What about this "tools to manage the distribution / control of the services" feature of etcd
 
 Ok, you would think they would split this out to another tool name. Anyway, as
-I understand it, etcd gives you **automation** abilities.
+I understand it, etcd **also** gives you **automation** abilities.
 
 Lets pretend you are spinning up 30 machines to serve some Web service.
 Without getting trapped into the <abbr title="Amazon Web services">AWS</abbr>
@@ -110,4 +110,4 @@ So with that preamble, a good summary is given at the bottom of the <http://core
 
 <img src=http://s.natalian.org/2013-11-02/1383372510_1366x768.png>
 
-Good luck to CoreOS. I will be keeping a very close eye on their developments!
+Good luck to the CoreOS team. I will be keeping a very close eye on their developments!
