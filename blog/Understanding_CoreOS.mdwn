@@ -52,6 +52,14 @@ Update: I think the base OS is just for running several instances of say Ubuntu
 in docker containers. Tbh I thought the containers would inherit the base
 system OS entirely, but this doesn't seem to be the case.
 
+On a further IRC discussion, Brandon Philips seemed to envision lightweight
+containers running almost a static build of a Web application:
+
+	10:32 <philips> hendry: the applications would talk to etcd. A container isn't
+	exactly like a virtual machine guest. For example you could have a node.js
+	application or go application that runs just fine in a container that is just
+	libc, resolv.conf and a few other required files
+
 # Wtf is Docker?
 
 IIUC [Docker](http://www.docker.io/) is a fancy name for <abbr title="LinuX
