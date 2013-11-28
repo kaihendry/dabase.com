@@ -55,22 +55,23 @@ When I use `dovecot -n` to get a canonical view of the configuration I get:
 	  driver = passwd
 	}
 
-I'm not sure where managesieve* stuff comes from.
+That managesieve... stuff is injected from installing the separate [pigeonhole
+package](https://projects.archlinux.org/svntogit/packages.git/log/trunk?h=packages/pigeonhole)
+btw.
 
 My Dovecot IMAP configuration goals are:
 
 * Have the most minimal configuration possible. Every LOC counts!
 * For sent mail to be in the inbox so I can see my replies inline, in the context of a conversation like Gmail
 * To get full text search search working
-* To get DSPAM integrated, since I don't want SPAM
-* To get my mailing list traffic in seperate folders, labelled by the listname
+* To get DSPAM integrated, since I don't want SPAM and I don't want Perl on my system ideally
+* To get my mailing list traffic in separate folders (I think this is where pigeonhole/sieve comes in), labelled by the listname
 * To get SSL stuff working
 * To be able to access my mail via Apple IOS client on my Iphone
 
 I want to see dovecot succeed by there are a couple of problems with it:
 
 * [the moinmoin wiki](http://wiki2.dovecot.org/) sucks, no git backend. Documentation around the Web is terrible / confusing (this blog will probably make matters worse)
-* Source control is mercurial ... urgh
-* No sane bug list
-* Only one main developer; Timo Sirainen
-* 
+* [Source control is in mercurial](http://hg.dovecot.org/dovecot-2.2/) ... urgh, no one wants to work with that anymore since 2013
+* No sane bug list AFAICT
+* Only one main developer, the esteemed Timo Sirainen of [irssi](http://en.wikipedia.org/wiki/Irssi) fame
