@@ -59,6 +59,7 @@ I'm not sure where managesieve* stuff comes from.
 My Dovecot IMAP configuration goals are:
 
 * To be able to access my mail via Apple IOS client on my Iphone
+* For sent mail to be in the inbox so I can see my replies inline, in the context of a conversation like Gmail
 * To get full text search search working
 * To get DSPAM integrated, since I don't want SPAM
 * To get my mailing list traffic in seperate folders, labelled by the listname
