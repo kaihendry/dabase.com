@@ -74,5 +74,4 @@ I want to see Dovecot succeed but there are a couple of obvious problems with it
 * [the moinmoin wiki](http://wiki2.dovecot.org/) sucks, no git backend. Documentation around the Web is terrible / confusing (this blog will probably make matters worse)
 * [Source control is in mercurial](http://hg.dovecot.org/dovecot-2.2/) ... urgh, no one wants to work with that anymore since 2013
 * No sane bug list AFAICT
-* Only one main developer, the esteemed Timo Sirainen of [irssi](http://en.wikipedia.org/wiki/Irssi) fame
 * The [mailing list archives are barely usable](http://www.dovecot.org/mailinglists.html), difficult to explore or find useful information
