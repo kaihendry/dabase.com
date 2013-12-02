@@ -1,0 +1,8 @@
+[[!meta title="Finding GOLANG examples"]]
+
+
+<http://golang.org/pkg/encoding/json/#example_Marshal>
+
+Add "src"
+
+<http://golang.org/src/pkg/encoding/json/#example_Marshal>

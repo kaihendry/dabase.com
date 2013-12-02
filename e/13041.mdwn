@@ -1,0 +1,15 @@
+[[!meta title="Convert square meters into square feet"]]
+
+<http://www.gnu.org/software/units/manual/html_node/Command-Line-Use.html#Command-Line-Use>
+
+	x220:~$ units "100 m^2" ft^2
+	Currency exchange rates from 2012-10-24
+			* 1076.391
+			/ 0.0009290304
+	x220:~$ python2
+	Python 2.7.5 (default, Sep  6 2013, 09:55:21)
+	[GCC 4.8.1 20130725 (prerelease)] on linux2
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> 1076.391 * 0.0009290304
+	0.9999999612864
+	>>>

@@ -1,0 +1,4 @@
+[[!meta title="Posting a GOLANG snippet to play.golang.org"]]
+
+
+	curl --data-binary @example.go http://play.golang.org/share

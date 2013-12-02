@@ -47,5 +47,8 @@
 ## The Cloud
 [[!inline pages="e/14* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
 
+## GOLANG
+[[!inline pages="e/15* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
+
 
 ### All tips are in the public domain
