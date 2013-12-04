@@ -62,8 +62,8 @@ Permissions are important. You will be doing `sudo chown -R 501:501 .`
 # .muttrc test
 
 	$ cat mutt-econv-test
-	set spoolfile=imap://anonymous@nl.webconverger.com
-	set folder=imap://anonymous@nl.webconverger.com
+	set spoolfile=imap://anonymous@imap.dabase.com
+	set folder=imap://anonymous@imap.dabase.com
 	set sort=threads
 	set sort_aux=reverse-last-date-received
 
