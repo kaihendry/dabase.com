@@ -1,0 +1,27 @@
+[[!meta title="Setting up structs"]]
+
+Examples of how to populate a struct.
+
+	package main
+
+	import "fmt"
+
+	type event struct {
+		Name string
+		Date string
+	}
+
+	type events []event
+
+	func main() {
+		e1 := event{}
+		e1.Date = "Today"
+		e1.Name = "Somethiing"
+		e2 := event{Date: "Tomorrow", Name: "Dentist"}
+
+		s := events{e1, e2}
+
+		fmt.Printf("%+v\n", s)
+
+	}
+

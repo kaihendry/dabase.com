@@ -111,4 +111,6 @@ Alternative example with depth: <http://play.golang.org/p/QOwxJQ4z4Z>
 
 Source is with thanks again from dsal from #go-nuts <http://play.golang.org/p/pt4MLJ6HcV>
 
-However ideally you know the JSON structure beforehand, and you create a structure for it to map to, e.g. <http://play.golang.org/p/vZjv2AmGeC>
+However ideally you know the JSON structure beforehand, and you create a structure for it to map to, e.g. <http://play.golang.org/p/bdjC6DLTqo>. Only then you can access values easily like:
+
+	fmt.Println(myOb.Menu.Popup.Menuitem[0].Value)
