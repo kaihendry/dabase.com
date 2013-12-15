@@ -27,7 +27,7 @@ Desired output:
 
 ## Python implementation
 
-With thanks from Hyperair
+With thanks from Hyperair on Freenode's #hackerspace.sg
 
 	#!/usr/bin/python3
 
@@ -57,6 +57,10 @@ With thanks from Hyperair
 	dump_obj('this', obj)
 
 ## Golang implementation
+
+Since Golang is statically typed, the important element in the code is `t :=
+x.(type)` where they type of x gets asserted, which is a required step, so you
+can then iterate over the resulting structure.
 
 	package main
 
@@ -105,4 +109,4 @@ With thanks from Hyperair
 
 Alternative example with depth: <http://play.golang.org/p/QOwxJQ4z4Z>
 
-Source is from dsal from #go-nuts <http://play.golang.org/p/pt4MLJ6HcV>
+Source is with thanks again from dsal from #go-nuts <http://play.golang.org/p/pt4MLJ6HcV>
