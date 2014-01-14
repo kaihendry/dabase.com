@@ -227,5 +227,30 @@ Last edited <TMPL_VAR MTIME>
 document.getElementById("feedback").innerHTML += " feedback" + new Date().getFullYear() + "@dabase.com";
 </script>
 
+
+<form onsubmit="return feedback(this);" style="margin: 1em;" action="http://feedback.dabase.com/feedback/feedback.php" method="post">
+
+<p class=field>
+<label for=from class=fieldname>
+Your email address (leave blank if you want to be anonymous)
+</label>
+<input style="width: 100%; display: block;" type=email id=from name=from>
+</p>
+
+<p class="field">
+
+<label for="msg" class="fieldname">
+Your feedback
+</label>
+<textarea style="width: 100%; border-style: inset; border-width: 2px;" required id="msg" name="msg" rows="6"></textarea>
+</p>
+
+<input id=send type=submit>
+
+<p style="font-size: x-small; display: inline;">Powered by <a href="https://github.com/kaihendry/vanilla-php-feedback-form">Vanilla PHP feedback form</a></p>
+
+</form>
+<script src=http://feedback.dabase.com/feedback/feedback.js></script>
+
 </body>
 </html>
