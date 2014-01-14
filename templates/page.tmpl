@@ -228,7 +228,8 @@ document.getElementById("feedback").innerHTML += " feedback" + new Date().getFul
 </script>
 
 
-<div class=feedback>
+<fieldset style='margin: 2em; font-family "Helvetica Neue Thin, sans-serif";' class=feedback>
+<legend>Feedback</legend>
 <form onsubmit="return feedback(this);" style="margin: 1em;" action="http://feedback.dabase.com/feedback/feedback.php" method="post">
 
 <p class=field>
@@ -252,7 +253,7 @@ Your feedback
 
 </form>
 <script src=http://feedback.dabase.com/feedback/feedback.js></script>
-</div>
+</fieldset>
 
 </body>
 </html>
