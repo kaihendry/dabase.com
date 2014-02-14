@@ -101,8 +101,12 @@ Ok, here GPLhost's 50Mbit/s limit is plain to see.
 # Conclusion
 
 Digital Ocean's SG droplet internal connectivity to Singapore is a little
-worrying. I need someone on a 1Gbps line to do some `iperf` testing. Any [My
-Republic users reading this](https://secure.myrepublic.com.sg/pricing.php)?
+worrying. A
+[traceroute](http://s.natalian.org/2014-02-14/1392356590_1364x742.png)
+indicates traffic is going upto Hong Kong!
+
+I need someone on a 1Gbps line to do some `iperf` testing. Any [My Republic
+users reading this](https://secure.myrepublic.com.sg/pricing.php)?
 
 I'm going to continue with GPLhost till at least to the end of May and I guess
 I will make a decision whether to migrate or not long before then. GPLhost are
