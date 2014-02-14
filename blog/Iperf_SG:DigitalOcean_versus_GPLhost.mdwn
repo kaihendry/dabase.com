@@ -115,3 +115,6 @@ I've used them. <abbr title="Digital Ocean">DO</abbr> on the hand seems a bit
 unpredictable. It took them two days to sort out a networking glitch in
 Archlinux images made available in Singapore. <abbr title="Digital
 Ocean">DO</abbr> could easily be a victim of their own success.
+
+Update: A network engineer from <abbr title="Digital Ocean">DO</abbr> got in
+touch to say they working to improve local peering. I guess a follow up test from me will be in order...(!)
