@@ -1,3 +1,5 @@
+Since [Digital Oceans has opened a new SG datacenter](https://digitalocean.com/blog_posts/we-re-excited-to-announce-our-singapore-datacenter-sgp1), it's time to pit my existing SG VPS at [GPLhost](https://dtc.node6503.gplhost.com/dtc/affiliation.php?affiliate=kaihendry&return=/hosting-vps.html) against it!
+
 From my Singtel connection at home, with `iperf -s` running on either VPS.
 
 	x220:~$ iperf -c sg.hackandtell.org # GPLhost
@@ -103,4 +105,8 @@ worrying. I need someone on a 1Gbps line to do some `iperf` testing. Any [My
 Republic users reading this](https://secure.myrepublic.com.sg/pricing.php)?
 
 I'm going to continue with GPLhost till at least to the end of May and I guess
-I will make a decision whether to migrate or not long before then.
+I will make a decision whether to migrate or not long before then. GPLhost are
+a small outfit, though they have provided really good service over the period
+I've used them. DO on the hand seems a bit unpredictable. It took them two days
+to sort out a networking glitch in Archlinux images made available in
+Singapore. DO could easily be a victim of their own success.
