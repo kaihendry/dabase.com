@@ -30,6 +30,8 @@ Now you should see an XML listing like:
 	</Contents>
 	</ListBucketResult>
 
+NOTE: You are limited to [1000 objects](http://docs.aws.amazon.com/AmazonS3/2006-03-01/API/RESTBucketGET.html)
+
 If not, perhaps you are missing the <a href="http://s.natalian.org/2013-09-12/s3-permissions.png">**Everyone** **List** permission</a>.
 
 You can download all the resources with a bit of `xmlstarlet` magic like so:
