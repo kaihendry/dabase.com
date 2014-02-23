@@ -1,15 +1,15 @@
 [[!meta title="Download entire public S3 bucket without credentials"]]
 
-Say for example you have a S3 bucket named `s3://p-dl/`
+Say for example you have a S3 bucket named `s3://mr2011/`
 
 If you have made your bucket **public** (Hint: s3cmd -P) it should reachable
-upon <a href=http://p-dl.s3.amazonaws.com>http://p-dl.<strong>s3.amazonaws.com</strong></a>, which may again redirect you to
-<http://p-dl.s3-ap-southeast-1.amazonaws.com/>.
+upon <a href=http://mr2011.s3.amazonaws.com>http://mr2011.<strong>s3.amazonaws.com</strong></a>, which may again redirect you to
+<http://mr2011.s3-ap-southeast-1.amazonaws.com/>.
 
 Now you should see an XML listing like:
 
 	<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-	<Name>p-dl</Name>
+	<Name>mr2011</Name>
 	<Prefix/>
 	<Marker/>
 	<MaxKeys>1000</MaxKeys>
@@ -36,7 +36,7 @@ If not, perhaps you are missing the <a href="http://s.natalian.org/2013-09-12/s3
 
 You can download all the resources with a bit of `xmlstarlet` magic like so:
 
-	s3url=http://p-dl.s3-ap-southeast-1.amazonaws.com
+	s3url=http://mr2011.s3-ap-southeast-1.amazonaws.com
 	curl -s $s3url |
 	xml sel -N w="http://s3.amazonaws.com/doc/2006-03-01/" -T -t -m "//w:Key" -v . -n |
 	while read filename
