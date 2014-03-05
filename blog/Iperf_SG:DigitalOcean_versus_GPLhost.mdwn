@@ -118,3 +118,5 @@ Ocean">DO</abbr> could easily be a victim of their own success.
 
 Update: A network engineer from <abbr title="Digital Ocean">DO</abbr> got in
 touch to say they working to improve local peering. I guess a follow up test from me will be in order...(!)
+
+Update: Outage today <http://www.digitaloceanstatus.com/history?update=206#95> and still the routing from Singtel to SGP1 is poor <http://ix.io/aWZ> after a month. :/
