@@ -19,6 +19,12 @@ From my Singtel connection at home, with `iperf -s` running on either VPS.
 	[ ID] Interval       Transfer     Bandwidth
 	[  3]  0.0-10.3 sec  6.00 MBytes  4.89 Mbits/sec
 
+**BAD SINGTEL ROUTING**: <a
+href="https://en.wikipedia.org/wiki/MTR_(software)">mtr</a> shows the routing
+from Singtel (SG's largest ISP IIUC) to Digital Ocean's SGP1 is poor. It seems
+to go to Hong Kong and back and hence the pings are ~80ms, when they should be
+~5ms!
+
 I know GPLhost's [network
 configuration](http://www.gplhost.com/gplhost-network-singapore.html) is
 limited to just **50 Mbit/sec**. It's a shame I'm not getting close to it from
