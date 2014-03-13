@@ -18,7 +18,7 @@ manually.
 
 ## How to setup a networking interface with ip
 
-I'm more familiar with `ipconfig` & `route`, but with some frantic Googling I
+I'm more familiar with `ifconfig` & `route`, but with some frantic Googling I
 did figure out `ip`'s odd unfamilar API:
 
 	ip addr add 128.199.252.174/255.255.192.0 dev enp0s3
