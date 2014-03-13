@@ -1,0 +1,31 @@
+From roughly systemd version 210, networking in my Droplet changed.
+
+Out went netctl somehow (good riddance), and my network connectivity.
+
+Use Digital Ocean's buggy Console Access, I managed to setup my network access
+manually.
+
+`/etc/network.d/ethernet-static` gave me the clue, to run:
+
+	ip addr add 128.199.252.174/255.255.192.0 dev enp0s3
+	ip route add default via 128.199.192.1
+
+And yay! I can ssh in. Now to migrate to
+[systemd-networkd](https://wiki.archlinux.org/index.php/Network_configuration#systemd-networkd).
+
+I created `/etc/systemd/network/enp0s3.network`:
+
+	[root@sgd ~]# cat /etc/systemd/network/enp0s3.network
+	# Migrated from /etc/network.d/ethernet-static
+	# https://coreos.com/blog/intro-to-systemd-networkd/
+	[Match]
+	Name=enp0s3
+	[Network]
+	Address=128.199.252.174/18
+	Gateway=128.199.192.1
+
+1. To test `systemctl start systemd-networkd.service`.
+* Check `systemctl status systemd-networkd.service` looks good
+* Enable it `systemctl enable systemd-networkd.service`
+* And reboot!
+
