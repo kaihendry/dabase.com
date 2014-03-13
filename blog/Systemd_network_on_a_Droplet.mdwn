@@ -41,8 +41,9 @@ did figure out `ip`'s odd unfamilar API:
 Sidenote: I'm not sure why my Droplet's network interface is called `enp0s3` and not
 something simple like `eth0`.
 
-Ping to test... YES... I can ssh in. Now to migrate to
-[systemd-networkd](https://wiki.archlinux.org/index.php/Network_configuration#systemd-networkd).
+Ping to test... YES... I can ssh in. 
+
+## Now to migrate to [systemd-networkd](https://wiki.archlinux.org/index.php/Network_configuration#systemd-networkd).
 
 I created `/etc/systemd/network/enp0s3.network`:
 
