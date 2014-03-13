@@ -1,6 +1,6 @@
 From roughly systemd version 210, networking in my Droplet changed.
 
-Out went netctl somehow (good riddance), and my network connectivity.
+Out went netctl somehow (good riddance), and my network connectivity (uh oh).
 
 Using Digital Ocean's buggy Console Access, I managed to setup my network access
 manually.
@@ -16,8 +16,10 @@ manually.
 	GATEWAY='128.199.192.1'
 	DNS=('8.8.4.4' '8.8.8.8' '209.244.0.3')
 
-I'm more familiar with `ipconfig`, but with some frantic Googling I did figure
-out `ip`'s odd unfamilar API:
+## How to setup a networking interface with ip
+
+I'm more familiar with `ipconfig` & `route`, but with some frantic Googling I
+did figure out `ip`'s odd unfamilar API:
 
 	ip addr add 128.199.252.174/255.255.192.0 dev enp0s3
 	ip route add default via 128.199.192.1
@@ -36,8 +38,10 @@ out `ip`'s odd unfamilar API:
 		inet6 fe80::601:11ff:fe8d:8901/64 scope link
 		   valid_lft forever preferred_lft forever
 
+Sidenote: I'm not sure why my Droplet's network interface is called `enp0s3` and not
+something simple like `eth0`.
 
-And yay! I can ssh in. Now to migrate to
+Ping to test... YES... I can ssh in. Now to migrate to
 [systemd-networkd](https://wiki.archlinux.org/index.php/Network_configuration#systemd-networkd).
 
 I created `/etc/systemd/network/enp0s3.network`:
@@ -71,7 +75,7 @@ I created `/etc/systemd/network/enp0s3.network`:
 * Enable it `systemctl enable systemd-networkd.service`
 * And reboot!
 
-# Loose ends, ifplugd
+## Loose ends, ifplugd
 
 I noticed in `htop` ifplugd is running. I can't see from `systemctl` or `pstree` what invoked it. Mysterious.
 
