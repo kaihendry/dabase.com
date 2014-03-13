@@ -2,7 +2,7 @@ From roughly systemd version 210, networking in my Droplet changed.
 
 Out went netctl somehow (good riddance), and my network connectivity.
 
-Use Digital Ocean's buggy Console Access, I managed to setup my network access
+Using Digital Ocean's buggy Console Access, I managed to setup my network access
 manually.
 
 `/etc/network.d/ethernet-static` gave me the previous network settings:
@@ -53,6 +53,7 @@ I created `/etc/systemd/network/enp0s3.network`:
 
 1. To test `systemctl start systemd-networkd.service`.
 * Check `systemctl status systemd-networkd.service` looks good
+
 		[root@sgd ~]# systemctl status systemd-networkd.service
 		systemd-networkd.service - Network Service
 		   Loaded: loaded (/usr/lib/systemd/system/systemd-networkd.service; enabled)
@@ -66,7 +67,6 @@ I created `/etc/systemd/network/enp0s3.network`:
 		Mar 13 04:02:24 sgd systemd-networkd[158]: enp0s3: carrier on
 		Mar 13 04:02:24 sgd systemd-networkd[158]: enp0s3: link configured
 		Mar 13 04:02:24 sgd systemd[1]: Started Network Service.
-
 
 * Enable it `systemctl enable systemd-networkd.service`
 * And reboot!
