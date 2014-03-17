@@ -73,6 +73,8 @@ I created `/etc/systemd/network/enp0s3.network`:
 		Mar 13 04:02:24 sgd systemd-networkd[158]: enp0s3: link configured
 		Mar 13 04:02:24 sgd systemd[1]: Started Network Service.
 
+To watch/tail what the systemd-networkd.service is doing, `journalctl -u systemd-networkd.service -f`
+
 * Enable it `systemctl enable systemd-networkd.service`
 * And reboot!
 
