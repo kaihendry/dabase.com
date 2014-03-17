@@ -1,0 +1,51 @@
+For the last year Archlinux has been recommending users to use
+[netctl](https://wiki.archlinux.org/index.php/Netctl) to configure their
+network interfaces.
+
+Netctl's ethernet-dhcp worked well, but not the wireless interface management
+which never made sense to me.
+
+Upstream's Jouke Witteveen is
+[sadly](https://github.com/joukewitteveen/netctl/issues/66)
+[unhelpful](https://github.com/joukewitteveen/netctl/issues/81) despite my
+cries for help.
+
+So on the back of systemd's (>210) **systemd-networkd**, which I [previously blogged about when
+configuring my Droplet](http://dabase.com/blog/Systemd_network_on_a_Droplet/),
+I now have:
+
+	$ cat /etc/systemd/network/eth0.network
+	[Match]
+	Name=eth0
+	[Network]
+	DHCP=yes
+
+Via `journalctl -u systemd-networkd.service -f` this seems to be able to detect
+the carrier is on or off **without** ifplugd. Nice!
+
+Unresolved: When eth0 comes up, resolv.conf is at `/run/systemd/network/resolv.conf` oddly, it recommends creating a symlink, but I bring up my wireless a different way using `dhcpcd`.
+
+## How I cope with Wireless
+
+AFAIK systemd-networkd doesn't do wireless with WPA yet. At least I don't
+understand how it works.
+
+I simply keep all my wireless passwords in `/etc/wpa_supplicant.conf` and a
+start [wpasupplicant](https://en.wikipedia.org/wiki/Wpa_supplicant) with
+[conn](http://git.r-36.net/conn/), like so `wpa_cli -i wlan0 -a
+/etc/conn/wifi/wlan0-action.sh -B`. It works.
+
+## TODO
+
+When network is plugged in (carrier on), disable wireless and use wired.
+Currently I manually turn off wifi using my Thinkpad's switch.
+
+Currently [dhcpcd 6.3.1-2 gets
+racy](http://s.natalian.org/2014-03-17/1395037018_1364x742.png) when just using
+the switch to kill wifi,  instead of a more graceful `sudo conn -k -f wifi`.
+
+	sudo conn -k -f wifi
+	conn: running: wifi -k
+	dhcpcd[6525]: sending signal 15 to pid 25415
+	dhcpcd[6525]: waiting for pid 25415 to exit
+	dhcpcd[6525]: pid 25415 failed to exit
