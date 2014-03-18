@@ -23,7 +23,10 @@ I now have:
 Via `journalctl -u systemd-networkd.service -f` this seems to be able to detect
 the carrier is on or off **without** ifplugd. Nice!
 
-Unresolved: When eth0 comes up, resolv.conf is at `/run/systemd/network/resolv.conf` oddly, it recommends creating a symlink, but I bring up my wireless a different way using `dhcpcd`.
+Unresolved: When eth0 comes up, resolv.conf (where the DNS servers are defined)
+are at `/run/systemd/network/resolv.conf` oddly, it recommends creating a
+symlink to /etc/resolv.conf, but also I bring up my network, using my wireless
+interace using `dhcpcd` which I imagine would need to overwrite that symlink. Confusion.
 
 ## Wireless
 
@@ -38,7 +41,7 @@ the IP address. So we need a DHCP client, slightly confusingly named
 
 	sudo systemctl enable dhcpcd@wlan0.service
 
-But then I noticed `/usr/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant`! So I don't tink you need `wpa_supplicant@wlan0.service`.
+But then I noticed `/usr/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant`! So I don't need `wpa_supplicant@wlan0.service` ?!
 
 	x220:~$ systemctl status wpa_supplicant@wlan0.service
 	wpa_supplicant@wlan0.service - WPA supplicant daemon (interface-specific version)
@@ -71,5 +74,14 @@ When network is plugged in (carrier on), disable wireless and use wired.
 Currently I manually turn off wifi using my Thinkpad's switch.
 
 Currently [dhcpcd 6.3.1-2 gets
-racy](http://s.natalian.org/2014-03-17/1395037018_1364x742.png). This means my
-machine doesn't shutdown as `dhcpcd -x` doesn't seem to do the trick. I tried to report the bug <https://bugs.archlinux.org/task/39512>.
+racy polling](http://s.natalian.org/2014-03-17/1395037018_1364x742.png) for me. This means my
+machine doesn't shutdown quickly. I tried to report the bug <https://bugs.archlinux.org/task/39512>.
+
+Another concern is how long it takes to connect to the internet:
+
+	x220:~$ systemd-analyze blame | head -n4
+			  8.245s systemd-networkd.service
+			  5.462s dhcpcd@wlan0.service
+			   926ms dkms.service
+			   264ms httpd.service
+
