@@ -48,11 +48,14 @@ Now to get the IP address, we use **systemd-networkd**, with the configuration:
 	[Network]
 	DHCP=yes
 
-## TODO
+## Wrap up
 
-When wired network is plugged in (carrier on), disable wireless and use wired.
-Currently I manually turn off wifi using my Thinkpad's switch, which is fine
-really.
+systemd-analyze for
+[wlan0](http://s.natalian.org/2014-03-18/wlan0-systemd-analyze.txt) is 3.203s
+and [eth0](http://s.natalian.org/2014-03-18/eth0-systemd-analyze.txt) is 3.085s. I'm happy !
+
+Currently I manually turn toggle wifi using my Thinkpad's wireless switch, for
+switching between wired and wireless interfaces.
 
 Acknowledgements: [WonderWoofy on the the Archlinux
 forums](https://bbs.archlinux.org/viewtopic.php?pid=1393759#p1393759)
