@@ -1,4 +1,4 @@
-For the last year Archlinux has been recommending users to use
+For the last year (2013) Archlinux has been recommending users to use
 [netctl](https://wiki.archlinux.org/index.php/Netctl) to configure their
 network interfaces.
 
@@ -33,7 +33,7 @@ To do all the WPA authentication stuff:
 
 	sudo systemctl enable wpa_supplicant@wlan0.service
 
-You need to make sure /etc/wpa_supplicant/wpa_supplicant-wlan0.conf is in
+You need to make sure `/etc/wpa_supplicant/wpa_supplicant-wlan0.conf` is in
 place, as you can see in `/usr/lib/systemd/system/wpa_supplicant@.service`. I
 prefer to link in `/etc/wpa_supplicant.conf` where I've also stored my wireless
 passwords and things.
