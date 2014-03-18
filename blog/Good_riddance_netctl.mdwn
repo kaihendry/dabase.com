@@ -23,65 +23,36 @@ I now have:
 Via `journalctl -u systemd-networkd.service -f` this seems to be able to detect
 the carrier is on or off **without** ifplugd. Nice!
 
-Unresolved: When eth0 comes up, resolv.conf (where the DNS servers are defined)
-are at `/run/systemd/network/resolv.conf` oddly, it recommends creating a
-symlink to /etc/resolv.conf, but also I bring up my network, using my wireless
-interace using `dhcpcd` which I imagine would need to overwrite that symlink. Confusion.
+For your DNS nameservers, you need to symlink /etc/resolv.conf to `/run/systemd/network/resolv.conf`
+
+	etc$ sudo ln -s /run/systemd/network/resolv.conf
 
 ## Wireless
+
+To do all the WPA authentication stuff:
 
 	sudo systemctl enable wpa_supplicant@wlan0.service
 
 You need to make sure /etc/wpa_supplicant/wpa_supplicant-wlan0.conf is in
-place, as you can see in `/usr/lib/systemd/system/wpa_supplicant@.service`.
+place, as you can see in `/usr/lib/systemd/system/wpa_supplicant@.service`. I
+prefer to link in `/etc/wpa_supplicant.conf` where I've also stored my wireless
+passwords and things.
 
-However `wpa_supplicant@wlan0.service` alone, doesn't seem to be enough to get
-the IP address. So we need a DHCP client, slightly confusingly named
-**dhcpcd**.
+	/etc/wpa_supplicant$ sudo ln -s /etc/wpa_supplicant.conf wpa_supplicant-wlan0.conf
 
-	sudo systemctl enable dhcpcd@wlan0.service
+Now to get the IP address, we use **systemd-networkd**, with the configuration:
 
-But then I noticed `/usr/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant`! So I don't need `wpa_supplicant@wlan0.service` ?!
-
-	x220:~$ systemctl status wpa_supplicant@wlan0.service
-	wpa_supplicant@wlan0.service - WPA supplicant daemon (interface-specific version)
-	   Loaded: loaded (/usr/lib/systemd/system/wpa_supplicant@.service; disabled)
-	   Active: inactive (dead)
-	x220:~$ sudo systemctl status dhcpcd@wlan0.service
-	dhcpcd@wlan0.service - dhcpcd on wlan0
-	   Loaded: loaded (/usr/lib/systemd/system/dhcpcd@.service; enabled)
-	   Active: active (running) since Tue 2014-03-18 10:33:08 SGT; 21s ago
-	  Process: 969 ExecStart=/usr/bin/dhcpcd -q -w %I (code=exited, status=0/SUCCESS)
-	 Main PID: 2613 (dhcpcd)
-	   CGroup: /system.slice/system-dhcpcd.slice/dhcpcd@wlan0.service
-			   ├─1980 wpa_supplicant -B -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -iwlan0
-			   └─2613 /usr/bin/dhcpcd -q -w wlan0
-	Mar 18 10:32:49 x220 dhcpcd[969]: version 6.3.1 starting
-	Mar 18 10:32:58 x220 dhcpcd[969]: DUID 00:01:00:01:1a:87:0b:83:08:11:96:ae:2d:3c
-	Mar 18 10:32:58 x220 dhcpcd[969]: wlan0: IAID 96:ae:2d:3c
-	Mar 18 10:32:58 x220 dhcpcd[969]: wlan0: soliciting an IPv6 router
-	Mar 18 10:32:58 x220 dhcpcd[969]: wlan0: rebinding lease of 192.168.88.249
-	Mar 18 10:33:08 x220 dhcpcd[969]: wlan0: leased 192.168.88.249 for 259200 seconds
-	Mar 18 10:33:08 x220 dhcpcd[969]: wlan0: adding route to 192.168.88.0/24
-	Mar 18 10:33:08 x220 dhcpcd[969]: wlan0: adding default route via 192.168.88.1
-	Mar 18 10:33:08 x220 dhcpcd[969]: forked to background, child pid 2613
-	Mar 18 10:33:08 x220 systemd[1]: Started dhcpcd on wlan0.
-
+	$ cat /etc/systemd/network/wlan0.network
+	[Match]
+	Name=wlan0
+	[Network]
+	DHCP=yes
 
 ## TODO
 
-When network is plugged in (carrier on), disable wireless and use wired.
-Currently I manually turn off wifi using my Thinkpad's switch.
+When wired network is plugged in (carrier on), disable wireless and use wired.
+Currently I manually turn off wifi using my Thinkpad's switch, which is fine
+really.
 
-Currently [dhcpcd 6.3.1-2 gets
-racy polling](http://s.natalian.org/2014-03-17/1395037018_1364x742.png) for me. This means my
-machine doesn't shutdown quickly. I tried to report the bug <https://bugs.archlinux.org/task/39512>.
-
-Another concern is how long it takes to connect to the internet:
-
-	x220:~$ systemd-analyze blame | head -n4
-			  8.245s systemd-networkd.service
-			  5.462s dhcpcd@wlan0.service
-			   926ms dkms.service
-			   264ms httpd.service
-
+Acknowledgements: [WonderWoofy on the the Archlinux
+forums](https://bbs.archlinux.org/viewtopic.php?pid=1393759#p1393759)
