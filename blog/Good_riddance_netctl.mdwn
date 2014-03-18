@@ -25,15 +25,45 @@ the carrier is on or off **without** ifplugd. Nice!
 
 Unresolved: When eth0 comes up, resolv.conf is at `/run/systemd/network/resolv.conf` oddly, it recommends creating a symlink, but I bring up my wireless a different way using `dhcpcd`.
 
-## How I cope with Wireless
+## Wireless
 
-AFAIK systemd-networkd doesn't do wireless with WPA yet. At least I don't
-understand how it works.
+	sudo systemctl enable wpa_supplicant@wlan0.service
 
-I simply keep all my wireless passwords in `/etc/wpa_supplicant.conf` and a
-start [wpasupplicant](https://en.wikipedia.org/wiki/Wpa_supplicant) with
-[conn](http://git.r-36.net/conn/), like so `wpa_cli -i wlan0 -a
-/etc/conn/wifi/wlan0-action.sh -B`. It works.
+You need to make sure /etc/wpa_supplicant/wpa_supplicant-wlan0.conf is in
+place, as you can see in `/usr/lib/systemd/system/wpa_supplicant@.service`.
+
+However `wpa_supplicant@wlan0.service` alone, doesn't seem to be enough to get
+the IP address. So we need a DHCP client, slightly confusingly named
+**dhcpcd**.
+
+	sudo systemctl enable dhcpcd@wlan0.service
+
+But then I noticed `/usr/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant`! So I don't tink you need `wpa_supplicant@wlan0.service`.
+
+	x220:~$ systemctl status wpa_supplicant@wlan0.service
+	wpa_supplicant@wlan0.service - WPA supplicant daemon (interface-specific version)
+	   Loaded: loaded (/usr/lib/systemd/system/wpa_supplicant@.service; disabled)
+	   Active: inactive (dead)
+	x220:~$ sudo systemctl status dhcpcd@wlan0.service
+	dhcpcd@wlan0.service - dhcpcd on wlan0
+	   Loaded: loaded (/usr/lib/systemd/system/dhcpcd@.service; enabled)
+	   Active: active (running) since Tue 2014-03-18 10:33:08 SGT; 21s ago
+	  Process: 969 ExecStart=/usr/bin/dhcpcd -q -w %I (code=exited, status=0/SUCCESS)
+	 Main PID: 2613 (dhcpcd)
+	   CGroup: /system.slice/system-dhcpcd.slice/dhcpcd@wlan0.service
+			   ├─1980 wpa_supplicant -B -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -iwlan0
+			   └─2613 /usr/bin/dhcpcd -q -w wlan0
+	Mar 18 10:32:49 x220 dhcpcd[969]: version 6.3.1 starting
+	Mar 18 10:32:58 x220 dhcpcd[969]: DUID 00:01:00:01:1a:87:0b:83:08:11:96:ae:2d:3c
+	Mar 18 10:32:58 x220 dhcpcd[969]: wlan0: IAID 96:ae:2d:3c
+	Mar 18 10:32:58 x220 dhcpcd[969]: wlan0: soliciting an IPv6 router
+	Mar 18 10:32:58 x220 dhcpcd[969]: wlan0: rebinding lease of 192.168.88.249
+	Mar 18 10:33:08 x220 dhcpcd[969]: wlan0: leased 192.168.88.249 for 259200 seconds
+	Mar 18 10:33:08 x220 dhcpcd[969]: wlan0: adding route to 192.168.88.0/24
+	Mar 18 10:33:08 x220 dhcpcd[969]: wlan0: adding default route via 192.168.88.1
+	Mar 18 10:33:08 x220 dhcpcd[969]: forked to background, child pid 2613
+	Mar 18 10:33:08 x220 systemd[1]: Started dhcpcd on wlan0.
+
 
 ## TODO
 
@@ -41,11 +71,5 @@ When network is plugged in (carrier on), disable wireless and use wired.
 Currently I manually turn off wifi using my Thinkpad's switch.
 
 Currently [dhcpcd 6.3.1-2 gets
-racy](http://s.natalian.org/2014-03-17/1395037018_1364x742.png) when just using
-the switch to kill wifi,  instead of a more graceful `sudo conn -k -f wifi`.
-
-	sudo conn -k -f wifi
-	conn: running: wifi -k
-	dhcpcd[6525]: sending signal 15 to pid 25415
-	dhcpcd[6525]: waiting for pid 25415 to exit
-	dhcpcd[6525]: pid 25415 failed to exit
+racy](http://s.natalian.org/2014-03-17/1395037018_1364x742.png). This means my
+machine doesn't shutdown as `dhcpcd -x` doesn't seem to do the trick. I tried to report the bug <https://bugs.archlinux.org/task/39512>.
