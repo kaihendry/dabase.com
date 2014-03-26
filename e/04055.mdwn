@@ -19,6 +19,7 @@ This is the Archlinux default:
 		charset utf-8;
 		listen 80;
 		autoindex on;
+		include        fastcgi.conf;
 
 **Here we map the requested domain** to `/srv/www/$vhost`
 
@@ -30,15 +31,17 @@ This is the Archlinux default:
 To get PHP/CGI working, it's you need this with `php-fpm.service` & `fcgiwrap.service` going beforehand.
 
 		location ~ \.php$ {
-			try_files      $uri = 404;
+			try_files      $uri =404;
 			fastcgi_pass   unix:/run/php-fpm/php-fpm.sock;
-			fastcgi_index  index.php;
-			include        fastcgi.conf;
 		}
 
 		location ~ \.cgi$ {
-			include        fastcgi.conf;
 			fastcgi_pass   unix:/run/fcgiwrap.sock;
 		}
 	}
 	}
+
+
+# Optimisations to consider
+
+* <http://wiki.nginx.org/HttpCoreModule#open_file_cache>
