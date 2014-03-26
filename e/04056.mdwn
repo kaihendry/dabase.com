@@ -6,7 +6,7 @@ Apache:
 
 Nginx:
 
-	rewrite ^/client/(.*)$ /client.php?id=$1&$args last; break;
+	rewrite ^/client/(.*)$ /client.php?id=$1&$args last;
 
 * Notice uris in nginx must start with /
 * Notice &$args is needed to replicate Apache's `QSA` feature
