@@ -1,0 +1,15 @@
+[[!meta title="Failed to start Verify integrity of password and group files."]]
+
+Fix it by running `pwck`.
+
+	x220:~$ sudo pwck
+	user 'umurmur': directory '/home/umurmur' does not exist
+	pwck: no changes
+	x220:~$ pacman -Ss umurmur
+	community/umurmur 0.2.14-1
+		Minimalistic Mumble server
+	x220:~$ sudo vim /etc/passwd
+	x220:~$ sudo pwck
+	no matching password file entry in /etc/passwd
+	delete line 'umurmur:!:16094::::::'? yes
+	pwck: the files have been updated
