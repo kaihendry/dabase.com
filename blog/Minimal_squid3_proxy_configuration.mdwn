@@ -18,7 +18,11 @@ minimal configuration possible.
 	http_access allow authenticated
 	http_port 3128
 
-These 5 lines, sure beats the INSANE 5539 LOC of `squid.conf.dpkg-dist` and I found a [bug in the process](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=681122)!
+On Ubuntu 14.04, digest_pw_auth has been renamed to digest_file_auth, i.e. use:
+
+	auth_param digest program /usr/lib/squid3/digest_file_auth -c /etc/squid3/passwords
+
+These 5 lines, sure beats the INSANE 5539 <abbr title="Lines of Code">LOC</abbr> of `squid.conf.dpkg-dist` and I found a [bug in the process](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=681122)!
 
 # Setting up a user
 

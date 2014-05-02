@@ -30,18 +30,12 @@ Now you should see an XML listing like:
 	</Contents>
 	</ListBucketResult>
 
-NOTE: You are limited to [1000 objects](http://docs.aws.amazon.com/AmazonS3/2006-03-01/API/RESTBucketGET.html)
-
 If not, perhaps you are missing the <a href="http://s.natalian.org/2013-09-12/s3-permissions.png">**Everyone** **List** permission</a>.
 
-You can download all the resources with a bit of `xmlstarlet` magic like so:
+You're not limited to 1k objects. Attach ?max-keys=2147483647 to get more. If
+`<IsTruncated>` is still True, one strategy is to break results down by
+specifying first letter of path by attaching ?prefix=a, ?prefix=b.... etc.
 
-	s3url=http://mr2011.s3-ap-southeast-1.amazonaws.com
-	curl -s $s3url |
-	xml sel -N w="http://s3.amazonaws.com/doc/2006-03-01/" -T -t -m "//w:Key" -v . -n |
-	while read filename
-	do
-		wget -cN $s3url/$filename
-	done
+You can download all the resources with a bit of `xmlstarlet` magic like so: <https://github.com/kaihendry/s3listing/blob/master/listing.sh>
 
-Is there an easier way? Please let me know. It would be good if there was a JSON API.
+Alternatively to `xmlstarlet`, [xml2](http://xmlsoft.org/) is a nice way of working xml.
