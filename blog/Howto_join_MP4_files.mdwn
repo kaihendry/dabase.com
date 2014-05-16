@@ -1,6 +1,6 @@
 # What does not work
 
-[ffmpeg has an insane interface](http://trac.ffmpeg.org/wiki/How%20to%20concatenate%20(join,%20merge)%20media%20files) for simple use cases like joining two MP4 files.
+<a href="http://trac.ffmpeg.org/wiki/How%20to%20concatenate%20(join,%20merge)%20media%20files">ffmpeg has an insane interface</a> for simple use cases like joining two MP4 files.
 
 	cat draw.mp4 draw2.mp4 > draw3.mp4
 
