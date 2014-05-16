@@ -1,0 +1,43 @@
+[[!meta title="Setting a read S3 policy from the command line"]]
+
+<img src=http://s.natalian.org/2014-05-16/1400235989_1364x748.png>
+
+Easier than logging into <https://console.aws.amazon.com/s3/> since I need to
+get out my [MFA](https://en.wikipedia.org/wiki/Multi-factor_authentication)
+device out everytime.
+
+	x220:/tmp$ bash allow-read.sh b3-webc
+	s3://b3-webc/: Policy updated
+
+`allow-read.sh` is just a script to help write the policy:
+
+	x220:/tmp$ cat allow-read.sh
+	#!/bin/bash
+	test "$1" || exit
+	s3_bucket=$1
+	tmp=$(mktemp)
+	s3cmd ls > $tmp
+	if ! grep -q $s3_bucket $tmp
+	then
+			echo Could not find bucket s3://${s3_bucket}
+			cat $tmp
+			exit
+	fi
+	cat <<END > $tmp
+	{
+	  "Version":"2008-10-17",
+	  "Statement":[{
+		"Sid":"AllowPublicRead",
+			"Effect":"Allow",
+		  "Principal": {
+				"AWS": "*"
+			 },
+		  "Action":["s3:GetObject"],
+		  "Resource":["arn:aws:s3:::${s3_bucket}/*"
+		  ]
+		}
+	  ]
+	}
+	END
+	s3cmd setpolicy $tmp s3://${s3_bucket}
+
