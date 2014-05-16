@@ -7,3 +7,7 @@ Using the [AWS cli](https://github.com/aws/aws-cli):
 	delete: s3://example/test.jpg
 	$ aws s3 rb s3://example
 	remove_bucket: s3://example/
+
+Using the better [s3cmd](https://github.com/s3tools/s3cmd)
+
+	$ s3cmd rb --force s3://example
