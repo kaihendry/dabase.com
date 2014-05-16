@@ -1,0 +1,60 @@
+I do like [AWS S3](https://console.aws.amazon.com/s3), but on the topic of
+policy/security languages, IIUC Amazon have fecked up by having THREE of them.
+
+<img src=http://s.natalian.org/2014-05-16/s3-permissions-policy.png />
+
+1. permissions
+* policy
+* CORS configuration
+
+What to add anonymous public listing? You could:
+
+1. Click "Add more permissions"
+* On the **Grantee** drop down box, select Everyone (not sure why I'm called hendry60 and "me")
+* Ensure listing is selected and Save
+
+or you could set a policy with "s3:ListBucket" IIUC.
+Futhermore I don't see why CORS couldn't be derived from Amazon's own [Access Policy Language](http://docs.aws.amazon.com/IAM/latest/UserGuide/policy-reference.html).
+
+# Permissive listing policy
+
+	$ bash allow-list.sh b3-webc
+	ERROR: S3 error: 400 (MalformedPolicy): Action does not apply to any resource(s) in statement
+
+Not sure what's wrong with my policy:
+
+	$ cat allow-list.sh
+	#!/bin/bash
+	test "$1" || exit
+	s3_bucket=$1
+	tmp=$(mktemp)
+	s3cmd ls > $tmp
+	if ! grep -q $s3_bucket $tmp
+	then
+			echo Could not find bucket s3://${s3_bucket}
+			cat $tmp
+			exit
+	fi
+	cat <<END > $tmp
+	{
+	  "Id": "Policy1400237335721",
+	  "Statement": [
+		{
+		  "Sid": "Stmt1400237307049",
+		  "Action": [
+			"s3:GetObject",
+			"s3:ListBucket"
+		  ],
+		  "Effect": "Allow",
+		  "Resource": "arn:aws:s3:::${s3_bucket}/*",
+		  "Principal": {
+			"AWS": [
+			  "*"
+			]
+		  }
+		}
+	  ]
+	}
+	END
+	s3cmd setpolicy $tmp s3://${s3_bucket}
+
