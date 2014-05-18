@@ -126,3 +126,5 @@ Update: A network engineer from <abbr title="Digital Ocean">DO</abbr> got in
 touch to say they working to improve local peering. I guess a follow up test from me will be in order...(!)
 
 Update: Outage today <http://www.digitaloceanstatus.com/history?update=206#95> and still the routing from Singtel to SGP1 is poor <http://ix.io/aWZ> after a month. :/
+
+Update: 4 months later, still bad: <http://r2d2.webconverger.org/2014-05-18/mtr-sgo.webconverger.com.html>
