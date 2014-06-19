@@ -1,0 +1,10 @@
+[[!meta title="Ensure www-data is always able to write"]]
+
+Ensure your fs is mounted with `acl`.
+
+	 mount | grep acl
+	/dev/root on / type ext3 (rw,noatime,errors=remount-ro,acl,barrier=0,data=writeback)
+
+And to ensure www-data always has free reign:
+
+	setfacl -R -m default:group:www-data:rwx /srv/www
