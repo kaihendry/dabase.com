@@ -30,14 +30,14 @@ Wireless is working well so far with the [broadcom-wl](https://aur.archlinux.org
 
 ## Keyboard
 
-The [Alt key is way too small](https://www.flickr.com/photos/hendry/14287300829/)
+The [Alt key is way too small](https://www.flickr.com/photos/hendry/14287300829/) and I am not sure what to make of the fn & cmd key.
 
 ## TrackPad
 
 I am familiar with the Thinkpad nipple. I'm struggling with the trackpad. I
 can't figure out how to paste!!!
 
-Is it a "three finger click"?
+Is it a "three finger click" to paste? Anyone know the keyboard shortcut?
 
 ## caffeinate
 
@@ -48,4 +48,6 @@ long upload or download and I do not want it to sleep.
 
 ## Brightness buttons don't work
 
-## Is the Thunderbolt port usable?
+## Is the Thunderbolt port usable? Yes!
+
+<iframe src="https://www.flickr.com/photos/hendry/14288409050/player/" width="75" height="75" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
