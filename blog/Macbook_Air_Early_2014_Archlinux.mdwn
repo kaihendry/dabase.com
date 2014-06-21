@@ -1,0 +1,32 @@
+I upgraded my Mom's old [11 inch Macbook
+Air](http://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&item=221470328889) since
+she said the screen was too small. Enter a 13-inch, Early 2014 model with OS X
+10.9.3 and enter an opportunity for me to test how well Archlinux works on this
+gorgeous Apple hardware in the month of June 2014. Yes, I am looking to upgrade
+from my Thinkpad X220 and [Lenovo sadness](http://www.reddit.com/r/thinkpad).
+
+Firstly I must say, [Archlinux wiki's Macbook
+page](https://wiki.archlinux.org/index.php/MacBook) is a bit of mess. It
+over-complicates partitioning and boot loading. However I don't feel like
+wading in there to try fix it.
+
+It's surprisingly simple to Archlinux going on the Macbook Air.
+
+1. Boot into OSX. Upgrade.
+* Resize the disk using [Disk Utility](http://s.natalian.org/2014-06-21/DiskUtil.png), amazingly you can resize a running MacOSX install
+* [Install rEFInd](http://s.natalian.org/2014-06-21/rEFInd.png), with the all drivers switch, `./install.sh --alldrivers`
+* Boot the Archlinux ISO on a USB stick by holding down the Alt key
+* Fdisk, create a new partition /dev/sda4, mkfs.ext4 format it, mount it and pacstrap the mount
+* Reboot and with some luck rEFInd, will pick it up!
+
+# Issues
+
+## TrackPad
+
+I am familiar with the Thinkpad nipple. I'm struggling with the trackpad. I
+can't figure out how to paste!!!
+
+## caffeinate
+
+When I close the lid, the Macbook Air goes to sleep. But sometimes it's doing a
+long upload or download. I don't know how to keep it awake.
