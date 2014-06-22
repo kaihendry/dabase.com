@@ -32,7 +32,9 @@ Wireless is since working well so far with the [broadcom-wl](https://aur.archlin
 
 The [Alt key is way too small](https://www.flickr.com/photos/hendry/14287300829/) and I am not sure what to make of the fn & cmd key.
 
-Fixed with `setxkbmap -option altwin:swap_alt_win`
+Fixed with `setxkbmap -option altwin:swap_alt_win`.
+
+Someone needs to tell me where the HELL is the Insert key on a Macbook Air.
 
 ## TrackPad
 
@@ -41,7 +43,9 @@ can't figure out how to paste!!!
 
 Is it a "three finger click" to paste? Anyone know the keyboard shortcut?
 
-Better with `synclient PalmDetect=1`
+Better with `synclient PalmDetect=1`.
+
+BETTER with xf86-input-mtrack-git from AUR.
 
 ## caffeinate
 
@@ -50,13 +54,13 @@ Suspending, shutdown etc. works out of the box with Archlinux. I think systemd s
 When I close the lid, the Macbook Air goes to sleep. But sometimes it's doing a
 long upload or download and I do not want it to sleep.
 
-## Sound output doesn't work
-
-Help! I tried setting up `/etc/asound.conf` and `options snd_hda_intel model=intel-mac-auto` options.
+## Sound / Audio output doesn't work
 
 	rain:/etc/modprobe.d$ lspci | grep Audio
 	00:03.0 Audio device: Intel Corporation Device 0a0c (rev 09)
 	00:1b.0 Audio device: Intel Corporation Lynx Point-LP HD Audio Controller (rev 04)
+
+I'm not sure what I did, but it's [working now with pavucontrol](http://s.natalian.org/2014-06-22/macbook-air-sound.png).
 
 ## Brightness buttons don't work
 
@@ -78,5 +82,3 @@ crazily as the X220 does. Which is good!! I also can't feel the heat very much o
 The 1440x900 screen is nicer, but I expected it to a LOT better.
 
 The battery seems to drain as fast as the old 9 cell in the Thinkpad worryingly.
-
-The Trackpad is really tough to work with. I'm told to try the mtrack driver. Arghhghgh
