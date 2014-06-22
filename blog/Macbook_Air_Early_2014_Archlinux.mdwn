@@ -20,17 +20,17 @@ It's surprisingly simple to Archlinux going on the Macbook Air.
 * Boot the Archlinux ISO on a USB stick by holding down the [Alt key](https://www.flickr.com/photos/hendry/14287300829/)
 * Fdisk, create a new partition /dev/sda4, mkfs.ext4 format it, mount it and pacstrap the mount
 * Oops, pacstrap doesn't work without Internet and `03:00.0 Network controller: Broadcom Corporation BCM4360 802.11ac Wireless Network Adapter (rev 03)` is not supported by the 3.15 Linux kernel :( Had to purchase a [USB 3.0 to 10/100/1000 Gigabit Ethernet LAN Network Adapter](http://www.amazon.co.uk/gp/product/B00DNU8Y20/), Apple IIUC doesn't offer USB3 hardware!?
-* Reboot and with some luck rEFInd, will pick it up!
+* Reboot and with some luck rEFInd, will pick it up! Hint: Installing refind-efi and `refind-mkrlconf` should give you more control, e.g. for adding "rw quiet".
 
 <iframe src="https://www.flickr.com/photos/hendry/14287303290/in/photostream/player/" width="500" height="334" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-Wireless is working well so far with the [broadcom-wl](https://aur.archlinux.org/packages/broadcom-wl/) package from AUR.
+Wireless is since working well so far with the [broadcom-wl](https://aur.archlinux.org/packages/broadcom-wl/) package from AUR.
 
 # Issues
 
 ## Keyboard
 
-The [Alt key is way too small](https://www.flickr.com/photos/hendry/14287300829/)
+The [Alt key is way too small](https://www.flickr.com/photos/hendry/14287300829/) and I am not sure what to make of the fn & cmd key.
 
 Fixed with `setxkbmap -option altwin:swap_alt_win`
 
@@ -39,7 +39,7 @@ Fixed with `setxkbmap -option altwin:swap_alt_win`
 I am familiar with the Thinkpad nipple. I'm struggling with the trackpad. I
 can't figure out how to paste!!!
 
-Is it a "three finger click"?
+Is it a "three finger click" to paste? Anyone know the keyboard shortcut?
 
 Better with `synclient PalmDetect=1`
 
@@ -50,10 +50,16 @@ long upload or download and I do not want it to sleep.
 
 ## Sound output doesn't work
 
-Help
+Help! I tried setting up `/etc/asound.conf` and `options snd_hda_intel model=intel-mac-auto` options.
+
+	rain:/etc/modprobe.d$ lspci | grep Audio
+	00:03.0 Audio device: Intel Corporation Device 0a0c (rev 09)
+	00:1b.0 Audio device: Intel Corporation Lynx Point-LP HD Audio Controller (rev 04)
 
 ## Brightness buttons don't work
 
 Pommed dies with `E: Unknown Apple machine: MacBookAir6,2`
 
-## Is the Thunderbolt port usable?
+## Is the Thunderbolt port usable? Yes!
+
+<iframe src="https://www.flickr.com/photos/hendry/14288409050/in/photostream/player/" width="500" height="334" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
