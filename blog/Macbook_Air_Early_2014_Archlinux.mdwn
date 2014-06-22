@@ -45,6 +45,8 @@ Better with `synclient PalmDetect=1`
 
 ## caffeinate
 
+Suspending, shutdown etc. works out of the box with Archlinux. I think systemd should get the thanks.
+
 When I close the lid, the Macbook Air goes to sleep. But sometimes it's doing a
 long upload or download and I do not want it to sleep.
 
@@ -63,3 +65,18 @@ Pommed dies with `E: Unknown Apple machine: MacBookAir6,2`
 ## Is the Thunderbolt port usable? Yes!
 
 <iframe src="https://www.flickr.com/photos/hendry/14288409050/in/photostream/player/" width="500" height="334" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+# User Experience notes
+
+The Air doesn't have a fan, so when I come back to using the X220, I find the
+X220 noisy.
+
+The Macbook Air so far seems to hover around 51C (~70C with Youtube playback) and its
+temperature `/sys/class/thermal/thermal_zone0/temp` doesn't fluctuate as
+crazily as the X220 does. Which is good!! I also can't feel the heat very much on my lap.
+
+The 1440x900 screen is nicer, but I expected it to a LOT better.
+
+The battery seems to drain as fast as the old 9 cell in the Thinkpad worryingly.
+
+The Trackpad is really tough to work with. I'm told to try the mtrack driver. Arghhghgh
