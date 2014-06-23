@@ -45,7 +45,7 @@ Is it a "three finger click" to paste? Anyone know the keyboard shortcut?
 
 Better with `synclient PalmDetect=1`.
 
-**BETTER** with xf86-input-mtrack-git from AUR.
+**BETTER** with [xf86-input-mtrack-git](https://github.com/BlueDragonX/xf86-input-mtrack) from AUR.
 
 ## caffeinate
 
