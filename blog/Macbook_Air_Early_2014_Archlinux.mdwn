@@ -83,3 +83,7 @@ my lap without feeling like I am killing my sperm off.
 The 1440x900 screen is nicer, but I expected it to a LOT better. I guess I was stupidly expecting Retina.
 
 The battery seems to drain as fast as the old 9 cell in the Thinkpad worryingly. I have [tuned it with PowerTOP](http://dabase.com/blog/Systemd_powertop_tunables/) and still I'm not very confident at all. I suspect the screen on full brightness doesn't help.
+
+# Webconverger
+
+The distro that I maintain and earn a living from, [Webconverger works with the Apple Macbook Air hardware too with the USB network device is attached](http://youtu.be/g-JJioLq_T4).
