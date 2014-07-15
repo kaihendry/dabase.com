@@ -15,7 +15,7 @@ So porting my aliases and such from [~/.config/fish/config.fish](https://github.
 
 * fish's conditional statements are not POSIX shell compatible <--- insane
 
-Nonetheless I got fish up and running... and **I used fish for about a month**.
+Nonetheless I got fish up and running... and **I used fish 2.1 for about a month**.
 
 # So... does shell history work in fish?
 
@@ -25,7 +25,7 @@ Yes, yes it does. fishd provided me the commands I typed in, HOWEVER:
 * failed commands could be a password. To remove them I had to 'fish_config' and go to history tab.
 * ctrl+r (bash's reverse search) doesn't work. Instead you need to toggle between ctrl+f (autocomplete) and ctrl+p (search)
 
-Tbh I could live with these fishiness. Simply because I had a working shell history. Seriously.
+Tbh I could live with this _fishiness_. Simply because I had a working shell history. Seriously.
 
 # Why I stopped using fish
 
@@ -40,10 +40,10 @@ IIUC [variable expansion](http://fishshell.com/docs/current/index.html#expand-va
 Furthermore setting up PATH on Linux is just generally insane, probably because
 I've (wrongly) setup the PATH mainly in my
 [~/.bashrc](https://github.com/kaihendry/dotfiles/blob/master/.bashrc), instead
-of `~/.profile` or is it somewhere else? Anyway my PATH was consistency broken in fish too and I never figured 100% why. I guess also because of its variable expansion anti-feature.
+of `~/.profile` or is it somewhere else? Anyway my PATH was consistency broken in fish too and I never figured 100% why. Perhaps because of its variable expansion anti-feature.
 
 # Back to GNU bash
 
-Tbh, `ctrl+r` aka **(reverse-i-search)** is much better than fish's `ctrl+f` & `ctrl+p`.
+Tbh, `ctrl+r` aka **(reverse-i-search)** is much better & intuitive than fish's `ctrl+f` & `ctrl+p`.
 
 Now if only I could get my bash history working. I miss `fishd` I guess. Tbh I did like fish's `fish_config` and the way it attempted but [kinda failed to integrate with the browser](https://github.com/fish-shell/fish-shell/issues/342).
