@@ -1,0 +1,28 @@
+[[!meta title="Working with a directories of unknown files"]]
+
+Using <http://mywiki.wooledge.org/BashFAQ/020> as a starting point, you could:
+
+	find /tmp -type f -print0 | while IFS= read -r -d '' file
+	do
+	   echo properly escaped "$file" for doing stuff
+	done
+
+However that's a bit ugly. And note that `-d ''` only works in bash. So none of this is "POSIX".
+
+Another way of writing this, which works from bash 4 is using dotglob/globstar:
+
+	shopt -s dotglob  # find .FILES
+	shopt -s globstar # make ** recurse
+	for f in /tmp/**
+	do
+		if [[ -f $f && ! -L $f ]]
+		then
+			echo properly escaped "$f" for doing stuff
+		fi
+	done
+
+Another perhaps more POSIX way is
+
+	foo () { for i in "$@"; do echo $i; done };export -f foo;find /tmp -type f -exec bash -c 'foo "$@"' - {} + | wc -l
+
+I.e. export a script function to be executed by the -exec parameter of find, or just use a seperate script file.
