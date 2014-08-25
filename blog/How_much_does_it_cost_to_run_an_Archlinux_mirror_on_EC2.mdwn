@@ -30,7 +30,7 @@ tried their calculator (since I couldn't figure out what they charge per GB)
 with a lowball [1TB a month in and out and that costs almost
 200USD](http://s.natalian.org/2014-08-25/1408952194_1364x748.png).
 
-Wow that's expensive! AWS EC2 isn't suitable for an Archlinux mirror!
+Wow that's expensive! AWS EC2 (+ 500SGD credit) isn't suitable for an Archlinux mirror! :(
 
 # Digital Ocean quote
 
