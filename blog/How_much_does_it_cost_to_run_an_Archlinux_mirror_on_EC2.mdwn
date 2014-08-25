@@ -21,7 +21,13 @@ However, now to do the budgeting.
 
 There is roughly 9000 hours in a year. So that's $3528. Eeeek, over budget by just 3000 dollars!
 
-Ignoring added complexity of Spot and EBS enhancements, a [one year **resevered instance**](http://s.natalian.org/2014-08-25/1408951951_1364x748.png) under "Light Utilization Reserved Instances" (I am not sure what that means) is 497 dollars! Yes!!
+<strike>Ignoring added complexity of Spot and EBS enhancements, a [one year **resevered instance**](http://s.natalian.org/2014-08-25/1408951951_1364x748.png) under "Light Utilization Reserved Instances" (I am not sure what that means) is 497 dollars! Yes!!</strike>
+
+I'm told "Light utilization means that you will not turn it on all the time".
+For 1 year I would need **heavy utilization**!
+
+So a m3.xlarge would be: 981 (down payment)  + 24*365*0.124 = **$2067.24**,
+about 1500 dollars over budget.
 
 # Oh and bandwidth?
 
