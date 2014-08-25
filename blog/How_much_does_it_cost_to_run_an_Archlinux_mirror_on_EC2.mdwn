@@ -40,8 +40,8 @@ For a machine with at least 50GB, you would need [Digital Ocean's top tier machi
 * 640GB SSD DISK
 * 9TB TRANSFER
 
-Bu that is 640USD a MONTH !!!
+BUT that is **640USD a MONTH** !!!
 
 # Lessons learnt
 
-Running a mirror is pretty darn expensive with the typical cloud providers on offer. No free lunch.
+Running a mirror is pretty darn expensive with the typical cloud providers on offer today. No free lunch.
