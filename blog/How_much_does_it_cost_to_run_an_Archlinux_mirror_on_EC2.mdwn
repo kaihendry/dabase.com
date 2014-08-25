@@ -26,7 +26,7 @@ There is roughly 9000 hours in a year. So that's $3528. Eeeek, over budget by ju
 I'm told "Light utilization means that you will not turn it on all the time".
 For 1 year I would need **heavy utilization**!
 
-So a m3.xlarge would be: 981 (down payment)  + 24*365*0.124 = **$2067.24**,
+So a m3.xlarge would be: 981 (down payment)  + 24 \* 365 \* 0.124 = **$2067.24**,
 about 1500 dollars over budget.
 
 # Oh and bandwidth?
