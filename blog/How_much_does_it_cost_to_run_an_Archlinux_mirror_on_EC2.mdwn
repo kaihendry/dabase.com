@@ -40,14 +40,15 @@ Wow that's expensive! AWS EC2 (+ 500SGD credit) isn't suitable for an Archlinux 
 
 # Digital Ocean quote
 
-For a machine with at least 50GB, you would need [Digital Ocean's top tier machine](http://s.natalian.org/2014-08-25/1408952409_1364x748.png), with
+For a machine with at least 50GB of disk, you would need [Digital Ocean's
+60GB offering](http://s.natalian.org/2014-08-25/1408952409_1364x748.png), with
 
-* 64GB / 20 CPUS
-* 640GB SSD DISK
-* 9TB TRANSFER
+* 4GB / 2 CPUS
+* 60GB SSD DISK
+* 4TB TRANSFER
 
-BUT that is **640USD a MONTH** !!!
+So that is **40USD a MONTH** or 480USD a year. A lot cheaper than EC2, and bandwidth clearly priced at 2c per GB, so 1TB = 20USD IIUC.
 
 # Lessons learnt
 
-Running a mirror is pretty darn expensive with the typical cloud providers on offer today. No free lunch.
+Running a mirror is quite expensive on EC2. It's not really feasible on <abbr title='Digital Ocean'>DO</abbr> either without some free unmetered traffic.
