@@ -1,4 +1,4 @@
-<abbr title="Amazon Web Services">AWS</a> Singapore kindly gifted
+<abbr title="Amazon Web Services">AWS</abbr> Singapore kindly gifted
 <http://hackerspace.sg/> with 500SGD of AWS credits.
 
 Since the mirrors <http://mirror.nus.edu.sg/> and <http://download.nus.edu.sg>,
