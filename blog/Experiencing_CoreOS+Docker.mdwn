@@ -9,8 +9,9 @@ containers">LXC</abbr>. It works. Docker is monolithic and **depends on Linux**.
 
 Once upon a time there were simple general packaged distributions. Their main
 fault was probably being **too general**, poor abilities to upgrade and
-downgrade. Along came CoreOS, a lightweight Linux OS with systemd & docker.
-CoreOS is monolithic and **depends on Linux**.
+downgrade. Along came CoreOS, a lightweight Linux OS with (a modern init)
+[systemd](https://en.wikipedia.org/wiki/Systemd) & docker.  CoreOS is also
+monolithic and **depends on Linux**.
 
 I've attempted to [understand
 CoreOS](http://dabase.com/blog/Understanding_CoreOS/) before, though since I
@@ -25,13 +26,15 @@ The 20LOC
 [Greptweet Dockerfile](https://github.com/kaihendry/greptweet/blob/master/Dockerfile) took
 me almost all day to create, though this was my favourite accomplishment. I studied other [Archlinux](https://github.com/search?utf8=%E2%9C%93&q=%22FROM+base%2Farchlinux%22+filename%3ADockerfile&type=Code&ref=searchresults) and [Ubuntu](https://github.com/search?utf8=%E2%9C%93&q=%22FROM+ubuntu%3Alatest%22+filename%3ADockerfile&type=Code&ref=searchresults) docker files on Github to give me guidance how to achieve this.
 
-So now I have a succinct file that describes Greptweets environment to function. I [found it astonishing the container for running a PHP app on Nginx is almost 1GB!](https://twitter.com/kaihendry/status/522336431251791873)
+So now I have a succinct file that describes Greptweet's environment to function. I [found it astonishing the container for running a PHP app on Nginx is almost 1GB!](https://twitter.com/kaihendry/status/522336431251791873)
+
+Yes, I need to re-implement it in Golang!
 
 # Read only filesystem on CoreOS
 
 I was hoping CoreOS would do away with root altogether. I'm seriously tired of
 `sudo`. I noticed [read only
-mounts](http://s.natalian.org/2014-10-18/1413615988_1362x740.png). I was trying to disable password ssh logins to avoid loads of:
+mounts](http://s.natalian.org/2014-10-18/1413615988_1362x740.png), whilst trying to disable password ssh logins to avoid loads of:
 
 	Failed password for root from $badman_IP port $highport ssh2
 
@@ -121,7 +124,8 @@ pretty darn wild way of doing things.
 I've been BATTLING TO GET TMUX running. It was suggested that this [screen
 CoreOS install guide](https://gist.github.com/crawford/62e1bf8e4f6c6bdd21e7)
 might help me. There is also an odd "toolbox" alias to a Fedora container with
-tools, but it doesn't map back to the host. All this for tmux. OMG.
+tools, but it doesn't map back to the host. All this for a terminal
+multiplexer. OMG.
 
 # Starting your Docker container in CoreOS was non-trivial
 
@@ -130,7 +134,7 @@ Here is [Greptweet's service file](https://github.com/kaihendry/greptweet/blob/m
 [CoreOS's launch
 guide](https://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/)
 was a bit strange to me. Am I supposed to publish my Greptweet image, so the
-`docker pull` works? It could be a lot simpler I feel. I.e. the docker daemon
+`docker pull` works? It could be a lot simpler I feel. I.e. why the docker daemon
 managing the containers itself!?
 
 # Conclusion
@@ -144,8 +148,8 @@ volumes.
 
 Gosh, how did we get into this mess?!
 
-So now system administrators now run hypervisors aka CoreOS and spin up VPS aka
-containers all by themselves. Seems like another level of abstraction that
-empowers system administrators but at the same time there is going to a raft of
-bugs/pain to enjoy with this movement. It's also slightly concerning that
-CoreOS/Dockerfile do seem to fly in the face of the Unix philosophy.
+So now system administrators now run hypervisors aka CoreOS and spin up VPSes
+aka Docker containers all by themselves. Seems like another level of
+abstraction that empowers system administrators but at the same time there is
+going to a raft of bugs/pain to enjoy with this "movement". It's also slightly
+concerning that CoreOS/Docker seems to fly in the face of the Unix philosophy.
