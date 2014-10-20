@@ -28,7 +28,7 @@ I was hoping CoreOS would do away with root altogether. I'm seriously tired of
 `sudo`. I noticed [read only
 mounts](http://s.natalian.org/2014-10-18/1413615988_1362x740.png). I was trying to disable password ssh logins to avoid loads of:
 
-	Failed password for root from $badman port $highport ssh2
+	Failed password for root from $badman_IP port $highport ssh2
 
 In my `journalctl`. Ok, if they are going to fix the config of sshd_config I thought, maybe they would do away with root?! PLEASE.
 
@@ -114,6 +114,16 @@ I've been BATTLING TO GET TMUX running. It was suggested that this [screen
 CoreOS install guide](https://gist.github.com/crawford/62e1bf8e4f6c6bdd21e7)
 might help me. There is also an odd "toolbox" alias to a Fedora container with
 tools, but it doesn't map back to the host. All this for tmux. OMG.
+
+# Starting your Docker container in CoreOS was non-trivial
+
+Here is [Greptweet's service file](https://github.com/kaihendry/greptweet/blob/master/greptweet.service).
+
+[CoreOS's launch
+guide](https://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/)
+was a bit strange to me. Am I supposed to publish my Greptweet image, so the
+`docker pull` works? It could be a lot simpler I feel. I.e. the docker daemon
+managing the containers itself!?
 
 # Conclusion
 
