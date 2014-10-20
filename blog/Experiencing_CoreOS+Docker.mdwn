@@ -14,7 +14,7 @@ CoreOS is monolothic and **depends on Linux**.
 
 I've attempted to [understand
 CoreOS](http://dabase.com/blog/Understanding_CoreOS/) before, though since I
-needed to move Greptweet to a VPS with more disk space... quickly... I "deep
+needed to move [Greptweet](http://greptweet.com/) to a VPS with more disk space... quickly... I "deep
 dived" into CoreOS & Docker and here is my writeup of the experience.
 
 # Dockerfile
