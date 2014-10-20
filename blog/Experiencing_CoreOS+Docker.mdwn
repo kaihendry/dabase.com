@@ -52,8 +52,9 @@ mind.
 
 # Init
 
-A little weird thing is that when you run a docker container, you IIUC are
-expected to run one process, i.e. the httpd.
+A jarring thing is that when you run a docker container, you <abbr title="if I
+understand correctly">IIUC</abbr> are expected to run one process, i.e. the
+httpd.
 
 Unfortunately with nginx, to get PHP working you need to run a seperate
 (FastCGI) PHP process to nginx httpd, hence [the Greptweet
@@ -96,6 +97,8 @@ and it's still not clear to me. As an operating system maintainer myself for
 our [gitfs upgrade system](https://webconverger.org/upgrade/) is MUCH CLEARER
 than how CoreOS updates are handled. I wonder <abbr title="when the
 hell">wth</abbr> Docker 1.3 is going to hit CoreOS stable.
+
+Keeping my Archlinux container uptodate is also a bit of a mystery to me...
 
 # CoreOS packaging is just WEIRD
 
