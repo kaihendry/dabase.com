@@ -1,31 +1,31 @@
 Once upon a time there was
 [chroot](http://git.suckless.org/sbase/tree/chroot.c). `chroot` was a simple
 way of sandboxing your application. It didn't really work as well as some
-people wanted and along came Docker, which is a front end to <abbr title="Linux
-containers">LXC</abbr>. It works. Docker is monolothic and depends on Linux.
+people wanted and along came [Docker](https://www.docker.com/), which is a front end to <abbr title="Linux
+containers">LXC</abbr>. It works. Docker is monolothic and **depends on Linux**.
 
 Once upon a time there were simple general packaged distributions. Their main
 fault was probably being **too general**, poor abilities to upgrade and
 downgrade. Along came CoreOS, a lightweight Linux OS with systemd & docker.
-CoreOS is monolothic and depends on Linux.
+CoreOS is monolothic and **depends on Linux**.
 
 I've attempted to [understand
 CoreOS](http://dabase.com/blog/Understanding_CoreOS/) before, though since I
 needed to move Greptweet to a VPS with more disk space... quickly... I "deep
-dived" into CoreOS & Docker.
+dived" into CoreOS & Docker and here is my writeup of the experience.
 
 # Dockerfile
 
 The 20LOC
-[Greptweet](https://github.com/kaihendry/greptweet/blob/master/Dockerfile) took
+[Greptweet Dockerfile](https://github.com/kaihendry/greptweet/blob/master/Dockerfile) took
 me almost all day to create, though this was my favourite accomplishment. I studied other [Archlinux](https://github.com/search?utf8=%E2%9C%93&q=%22FROM+base%2Farchlinux%22+filename%3ADockerfile&type=Code&ref=searchresults) and [Ubuntu](https://github.com/search?utf8=%E2%9C%93&q=%22FROM+ubuntu%3Alatest%22+filename%3ADockerfile&type=Code&ref=searchresults) docker files on Github to give me guidance how to achieve this.
 
-So now I have a succint file that describes Greptweets environment to function. I [found it astonishing the container for running a PHP app on Nginx is almost 1GB!](https://twitter.com/kaihendry/status/522336431251791873)
+So now I have a succinct file that describes Greptweets environment to function. I [found it astonishing the container for running a PHP app on Nginx is almost 1GB!](https://twitter.com/kaihendry/status/522336431251791873)
 
 # Read only filesystem on CoreOS
 
 I was hoping CoreOS would do away with root altogether. I'm seriously tired of
-sudo. I noticed [read only
+`sudo`. I noticed [read only
 mounts](http://s.natalian.org/2014-10-18/1413615988_1362x740.png). I was trying to disable password ssh logins to avoid loads of:
 
 	Failed password for root from $badman port $highport ssh2
@@ -38,11 +38,11 @@ I hate UNIX permissions, hate hate hate. So with Docker your data is mounted on 
 host IIUC and your app stays firmly containerized.
 
 But when your app writes data out on to a mount point, what THE HELL should the
-permissions be? I ended up just `chmod -R 777` on my Volume. What a mess!
+permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint. What a mess!
 
 <img src=http://s.natalian.org/2014-10-17/1413507967_1362x740.png>
 
-# How am I supposed to log?
+# How am I supposed to log CoreOS/Docker?!
 
 I'm confused about Volume mounts. I run Greptweet like so: `/usr/bin/docker run --name greptweet1 -v /srv/www/greptweet.com:/srv/http/u -p 80:80 greptweet`, and /srv/http/u/ is where the data lives. But HOW am I supposed to get at my [container's logs](http://s.natalian.org/2014-10-20/diff.txt)? Another volume mount?
 
@@ -65,7 +65,7 @@ for managing nginx/php processes. Suck.
 
 # NO Cron
 
-Greptweet used cron to create backups, relay stats and generate reports. Now
+Greptweet used cron to create backups, [relay stats](https://github.com/kaihendry/sg) and generate reports. Now
 AFAICT I don't have the basic utility of cron in my container. Now what?!
 
 WTF IS CRON IN COREOS, I NEED IT BACK!
@@ -93,26 +93,27 @@ Furthermore I noticed `locksmithd` which I think reboots the machine, but I'm no
 I've glanced over <https://coreos.com/using-coreos/updates/> several times now
 and it's still not clear to me. As an operating system maintainer myself for
 [Webconverger updates](https://github.com/Webconverger/webc/commits/master),
-our gitfs system is MUCH CLEARER that how CoreOS updates are handled. I wonder
-wth Docker 1.3 is going to hit CoreOS stable.
+our [gitfs upgrade system](https://webconverger.org/upgrade/) is MUCH CLEARER
+than how CoreOS updates are handled. I wonder <abbr title="when the
+hell">wth</abbr> Docker 1.3 is going to hit CoreOS stable.
 
-# Other comments
+# CoreOS packaging is just WEIRD
 
 <blockquote class="twitter-tweet" lang="en"><p>My mind is BLOWN by `docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter` <a href="https://twitter.com/jpetazzo">@jpetazzo</a> <a href="http://t.co/ZLrHZLFDVS">http://t.co/ZLrHZLFDVS</a></p>&mdash; Kai Hendry (@kaihendry) <a href="https://twitter.com/kaihendry/status/522632031864254464">October 16, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-It took me too long how to enter a container and have a look. nsenter will be
-replaced by Docker 1.3's `docker exec`, but the way it installed was very
-intruiging.
+It took me way too long to figure out how to enter a Docker 1.2 container and
+have a look. nsenter will be replaced by Docker 1.3's `docker exec`, but the
+way it installed was very intriguing.
 
-In fact package management in CoreOS eyes I think means starting a
-share/privledged container and mapping it back to the host system. That's
+In fact package management in CoreOS eyes _I think_ means starting a
+share/privileged container and mapping it back to the host system. That's
 pretty darn wild way of doing things.
 
 I've been BATTLING TO GET TMUX running. It was suggested that this [screen
 CoreOS install guide](https://gist.github.com/crawford/62e1bf8e4f6c6bdd21e7)
 might help me. There is also an odd "toolbox" alias to a Fedora container with
-tools, but it doesn't map back to the host. Odd.
+tools, but it doesn't map back to the host. All this for tmux. OMG.
 
 # Conclusion
 
@@ -123,7 +124,7 @@ how Ansible/Chef/Puppet/Vagrant did such a bad job compared to the
 hosters never really got a decent API together to move/expand/inspect their VPS
 volumes.
 
-Gosh, how did we get here?!
+Gosh, how did we get into this mess?!
 
 So now system administrators now run hypervisors aka CoreOS and spin up VPS aka
 containers all by themselves. Seems like another level of abstraction that
