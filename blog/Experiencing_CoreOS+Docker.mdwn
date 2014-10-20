@@ -118,8 +118,8 @@ have a look. nsenter will be replaced by Docker 1.3's `docker exec`, but the
 way it installed was very intriguing.
 
 In fact package management in CoreOS eyes _I think_ means starting a
-share/privileged container and mapping it back to the host system. That's
-pretty darn wild way of doing things.
+share/privileged container and mapping it back to the host system. That's a
+pretty darn wild way of doing things <abbr title="in my opinion">imo</abbr>.
 
 I've been BATTLING TO GET TMUX running. It was suggested that this [screen
 CoreOS install guide](https://gist.github.com/crawford/62e1bf8e4f6c6bdd21e7)
