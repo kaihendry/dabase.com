@@ -1,4 +1,4 @@
-<embed  style="width: 100%" type="image/svg+xml" src="https://raw.githubusercontent.com/coreos/coreos-web/master/src/svg/logo.svg" />
+<embed  style="width: 100%" type="image/svg+xml" src="http://s.natalian.org/2014-10-20/coreos_logo.svg" />
 <img src=https://d3oypxn00j2a10.cloudfront.net/0.11.2/images/pages/brand_guidelines/small_h.png alt="Docker Logo">
 
 Once upon a time there was
