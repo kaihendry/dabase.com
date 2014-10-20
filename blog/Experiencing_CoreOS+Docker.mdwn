@@ -1,0 +1,132 @@
+Once upon a time there was
+[chroot](http://git.suckless.org/sbase/tree/chroot.c). `chroot` was a simple
+way of sandboxing your application. It didn't really work as well as some
+people wanted and along came Docker, which is a front end to <abbr title="Linux
+containers">LXC</abbr>. It works. Docker is monolothic and depends on Linux.
+
+Once upon a time there were simple general packaged distributions. Their main
+fault was probably being **too general**, poor abilities to upgrade and
+downgrade. Along came CoreOS, a lightweight Linux OS with systemd & docker.
+CoreOS is monolothic and depends on Linux.
+
+I've attempted to [understand
+CoreOS](http://dabase.com/blog/Understanding_CoreOS/) before, though since I
+needed to move Greptweet to a VPS with more disk space... quickly... I "deep
+dived" into CoreOS & Docker.
+
+# Dockerfile
+
+The 20LOC
+[Greptweet](https://github.com/kaihendry/greptweet/blob/master/Dockerfile) took
+me almost all day to create, though this was my favourite accomplishment. I studied other [Archlinux](https://github.com/search?utf8=%E2%9C%93&q=%22FROM+base%2Farchlinux%22+filename%3ADockerfile&type=Code&ref=searchresults) and [Ubuntu](https://github.com/search?utf8=%E2%9C%93&q=%22FROM+ubuntu%3Alatest%22+filename%3ADockerfile&type=Code&ref=searchresults) docker files on Github to give me guidance how to achieve this.
+
+So now I have a succint file that describes Greptweets environment to function. I [found it astonishing the container for running a PHP app on Nginx is almost 1GB!](https://twitter.com/kaihendry/status/522336431251791873)
+
+# Read only filesystem on CoreOS
+
+I was hoping CoreOS would do away with root altogether. I'm seriously tired of
+sudo. I noticed [read only
+mounts](http://s.natalian.org/2014-10-18/1413615988_1362x740.png). I was trying to disable password ssh logins to avoid loads of:
+
+	Failed password for root from $badman port $highport ssh2
+
+In my `journalctl`. Ok, if they are going to fix the config of sshd_config I thought, maybe they would do away with root?! PLEASE.
+
+# Haunting permissions
+
+I hate UNIX permissions, hate hate hate. So with Docker your data is mounted on the
+host IIUC and your app stays firmly containerized.
+
+But when your app writes data out on to a mount point, what THE HELL should the
+permissions be? I ended up just `chmod -R 777` on my Volume. What a mess!
+
+<img src=http://s.natalian.org/2014-10-17/1413507967_1362x740.png>
+
+# How am I supposed to log?
+
+I'm confused about Volume mounts. I run Greptweet like so: `/usr/bin/docker run --name greptweet1 -v /srv/www/greptweet.com:/srv/http/u -p 80:80 greptweet`, and /srv/http/u/ is where the data lives. But HOW am I supposed to get at my [container's logs](http://s.natalian.org/2014-10-20/diff.txt)? Another volume mount?
+
+How does CoreOS envision managing httpd logs? I don't understand. And how am I
+supposed to `logrorate`!? "One step forward, two steps back" is playing in my
+mind.
+
+# Init
+
+A little weird thing is that when you run a docker container, you IIUC are
+expected to run one process, i.e. the httpd.
+
+Unfortunately with nginx, to get PHP working you need to run a seperate
+(FastCGI) PHP process to nginx httpd, hence [the Greptweet
+Dockerfile](https://github.com/kaihendry/greptweet/blob/master/Dockerfile) uses
+Python's **supervisor** daemon to manage both processes. Urgh. I copied this
+paradigm from another Dockerfile. Tbh I was **expecting to manage the process
+with systemd** inside the container. Now I have Python crapware in my container
+for managing nginx/php processes. Suck.
+
+# NO Cron
+
+Greptweet used cron to create backups, relay stats and generate reports. Now
+AFAICT I don't have the basic utility of cron in my container. Now what?!
+
+WTF IS CRON IN COREOS, I NEED IT BACK!
+
+# Update_engine
+
+As mentioned in my [previous blog on
+CoreOS](http://dabase.com/blog/Understanding_CoreOS/), I was quite excited
+about have "free" updates to my core host system. Sadly after looking at the
+logs, I'm not impressed.
+
+There is **no visibility to the actual update**.
+
+Furthermore I noticed `locksmithd` which I think reboots the machine, but I'm not sure.
+
+	Oct 18 03:11:11 dc update_engine[458]: <request protocol="3.0" version="CoreOSUpdateEngine-0.1.0.0" updaterversion="CoreOSUpdateEngine-0
+	Oct 18 03:11:11 dc update_engine[458]: <os version="Chateau" platform="CoreOS" sp="444.5.0_x86_64"></os>
+	Oct 18 03:11:11 dc update_engine[458]: <app appid="{e96281a6-d1af-4bde-9a0a-97b76e56dc57}" version="444.5.0" track="stable" from_track="
+	Oct 18 03:11:11 dc update_engine[458]: <ping active="1"></ping>
+	Oct 18 03:11:11 dc update_engine[458]: <updatecheck targetversionprefix=""></updatecheck>
+	Oct 18 03:11:11 dc update_engine[458]: <event eventtype="3" eventresult="2" previousversion=""></event>
+	Oct 18 03:11:11 dc update_engine[458]: </app>
+	Oct 18 03:11:11 dc update_engine[458]: </request>
+
+I've glanced over <https://coreos.com/using-coreos/updates/> several times now
+and it's still not clear to me. As an operating system maintainer myself for
+[Webconverger updates](https://github.com/Webconverger/webc/commits/master),
+our gitfs system is MUCH CLEARER that how CoreOS updates are handled. I wonder
+wth Docker 1.3 is going to hit CoreOS stable.
+
+# Other comments
+
+<blockquote class="twitter-tweet" lang="en"><p>My mind is BLOWN by `docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter` <a href="https://twitter.com/jpetazzo">@jpetazzo</a> <a href="http://t.co/ZLrHZLFDVS">http://t.co/ZLrHZLFDVS</a></p>&mdash; Kai Hendry (@kaihendry) <a href="https://twitter.com/kaihendry/status/522632031864254464">October 16, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+It took me too long how to enter a container and have a look. nsenter will be
+replaced by Docker 1.3's `docker exec`, but the way it installed was very
+intruiging.
+
+In fact package management in CoreOS eyes I think means starting a
+share/privledged container and mapping it back to the host system. That's
+pretty darn wild way of doing things.
+
+I've been BATTLING TO GET TMUX running. It was suggested that this [screen
+CoreOS install guide](https://gist.github.com/crawford/62e1bf8e4f6c6bdd21e7)
+might help me. There is also an odd "toolbox" alias to a Fedora container with
+tools, but it doesn't map back to the host. Odd.
+
+# Conclusion
+
+I think the basic idea of lightweight host OS (CoreOS) and containers (Docker)
+has legs. I just wish it was as simple as `chroot`. Or I'm just left thinking
+how Ansible/Chef/Puppet/Vagrant did such a bad job compared to the
+[Dockerfile](https://docs.docker.com/reference/builder/). Or perhaps how VPS
+hosters never really got a decent API together to move/expand/inspect their VPS
+volumes.
+
+Gosh, how did we get here?!
+
+So now system administrators now run hypervisors aka CoreOS and spin up VPS aka
+containers all by themselves. Seems like another level of abstraction that
+empowers system administrators but at the same time there is going to a raft of
+bugs/pain to enjoy with this movement. It's also slightly concerning that
+CoreOS/Dockerfile do seem to fly in the face of the Unix philosophy.
