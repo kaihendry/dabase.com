@@ -1,3 +1,6 @@
+<embed  style="width: 100%" type="image/svg+xml" src="https://raw.githubusercontent.com/coreos/coreos-web/master/src/svg/logo.svg" />
+<img src=https://d3oypxn00j2a10.cloudfront.net/0.11.2/images/pages/brand_guidelines/small_h.png alt="Docker Logo">
+
 Once upon a time there was
 [chroot](http://git.suckless.org/sbase/tree/chroot.c). `chroot` was a simple
 way of sandboxing your application. It didn't really work as well as some
