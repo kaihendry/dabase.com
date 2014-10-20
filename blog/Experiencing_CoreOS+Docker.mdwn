@@ -5,17 +5,19 @@ Once upon a time there was
 [chroot](http://git.suckless.org/sbase/tree/chroot.c). `chroot` was a simple
 way of sandboxing your application. It didn't really work as well as some
 people wanted and along came [Docker](https://www.docker.com/), which is a front end to <abbr title="Linux
-containers">LXC</abbr>. It works. Docker is monolothic and **depends on Linux**.
+containers">LXC</abbr>. It works. Docker is monolithic and **depends on Linux**.
 
 Once upon a time there were simple general packaged distributions. Their main
 fault was probably being **too general**, poor abilities to upgrade and
 downgrade. Along came CoreOS, a lightweight Linux OS with systemd & docker.
-CoreOS is monolothic and **depends on Linux**.
+CoreOS is monolithic and **depends on Linux**.
 
 I've attempted to [understand
 CoreOS](http://dabase.com/blog/Understanding_CoreOS/) before, though since I
-needed to move [Greptweet](http://greptweet.com/) to a VPS with more disk space... quickly... I "deep
-dived" into CoreOS & Docker and here is my writeup of the experience.
+needed to move [Greptweet](http://greptweet.com/) to a VPS with more disk
+space... quickly... I "deep dived" into CoreOS & Docker and here is my writeup
+of the experience. Tip #1, the default user for CoreOS is "core", e.g. `ssh
+core@178.62.119.197` once you get for e.g. your CoreOS droplet going.
 
 # Dockerfile
 
