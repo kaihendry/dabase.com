@@ -64,7 +64,7 @@ A jarring thing is that when you run a docker container, you <abbr title="if I
 understand correctly">IIUC</abbr> are expected to run one process, i.e. the
 httpd.
 
-Unfortunately with nginx, to get PHP working you need to run a seperate
+Unfortunately with nginx, to get PHP working you need to run a separate
 (FastCGI) PHP process to nginx httpd, hence [the Greptweet
 Dockerfile](https://github.com/kaihendry/greptweet/blob/master/Dockerfile) uses
 Python's **supervisor** daemon to manage both processes. Urgh. I copied this
