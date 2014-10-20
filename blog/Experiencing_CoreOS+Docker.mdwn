@@ -28,7 +28,7 @@ me almost all day to create, though this was my favourite accomplishment. I stud
 
 So now I have a succinct file that describes Greptweet's environment to function. I [found it astonishing the container for running a PHP app on Nginx is almost 1GB!](https://twitter.com/kaihendry/status/522336431251791873)
 
-Yes, I need to re-implement it in Golang!
+Yes, I need to re-implement greptweet in Golang to greatly reduce this huge bloat of a dependency!
 
 # Read only filesystem on CoreOS means no superuser or what?
 
@@ -46,7 +46,7 @@ I hate UNIX permissions, hate hate hate. So with Docker your data is mounted on 
 host IIUC and your app stays firmly containerized.
 
 But when your app writes data out on to a mount point, what THE HELL should the
-permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint, though I should probably have used [setfacl](e/01178/) What a mess!
+permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint, though I should probably have used [setfacl](/e/01178/) What a mess!
 
 <img src=http://s.natalian.org/2014-10-20/33-perms.png alt="User/group 33">
 
