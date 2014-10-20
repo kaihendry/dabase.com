@@ -30,7 +30,7 @@ So now I have a succinct file that describes Greptweet's environment to function
 
 Yes, I need to re-implement it in Golang!
 
-# Read only filesystem on CoreOS
+# Read only filesystem on CoreOS means no superuser or what?
 
 I was hoping CoreOS would do away with root altogether. I'm seriously tired of
 `sudo`. I noticed [read only
@@ -46,7 +46,7 @@ I hate UNIX permissions, hate hate hate. So with Docker your data is mounted on 
 host IIUC and your app stays firmly containerized.
 
 But when your app writes data out on to a mount point, what THE HELL should the
-permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint. What a mess!
+permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint, though I should probably have used [setfacl](e/01178/) What a mess!
 
 <img src=http://s.natalian.org/2014-10-20/33-perms.png alt="User/group 33">
 
@@ -55,8 +55,8 @@ permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint. What a
 I'm confused about Volume mounts. I run Greptweet like so: `/usr/bin/docker run --name greptweet1 -v /srv/www/greptweet.com:/srv/http/u -p 80:80 greptweet`, and /srv/http/u/ is where the data lives. But HOW am I supposed to get at my [container's logs](http://s.natalian.org/2014-10-20/diff.txt)? Another volume mount?
 
 How does CoreOS envision managing httpd logs? I don't understand. And how am I
-supposed to `logrorate`!? "One step forward, two steps back" is playing in my
-mind.
+supposed to run `logrorate`!? ["One step forward, two steps
+back"](http://youtu.be/xweiQukBM_k) is playing in my mind.
 
 # Init
 
