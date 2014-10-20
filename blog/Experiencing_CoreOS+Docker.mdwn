@@ -45,7 +45,7 @@ host IIUC and your app stays firmly containerized.
 But when your app writes data out on to a mount point, what THE HELL should the
 permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint. What a mess!
 
-<img src=http://s.natalian.org/2014-10-17/1413507967_1362x740.png>
+<img src=http://s.natalian.org/2014-10-20/33-perms.png alt="User/group 33">
 
 # How am I supposed to log CoreOS/Docker?!
 
