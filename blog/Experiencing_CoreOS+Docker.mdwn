@@ -38,7 +38,7 @@ mounts](http://s.natalian.org/2014-10-18/1413615988_1362x740.png), whilst trying
 
 	Failed password for root from $badman_IP port $highport ssh2
 
-In my `journalctl`. Ok, if they are going to fix the config of sshd_config I thought, maybe they would do away with root?! PLEASE.
+In my `journalctl`. Ok, if they are going to fix the config of `sshd_config` I thought, maybe they would do away with root?! PLEASE.
 
 # Haunting permissions
 
@@ -52,7 +52,7 @@ permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint, though
 
 # How am I supposed to log CoreOS/Docker?!
 
-I'm confused about Volume mounts. I run Greptweet like so: `/usr/bin/docker run --name greptweet1 -v /srv/www/greptweet.com:/srv/http/u -p 80:80 greptweet`, and /srv/http/u/ is where the data lives. But HOW am I supposed to get at my [container's logs](http://s.natalian.org/2014-10-20/diff.txt)? Another volume mount?
+I'm confused about Volume mounts. I run Greptweet like so: `/usr/bin/docker run --name greptweet1 -v /srv/www/greptweet.com:/srv/http/u -p 80:80 greptweet`, and `/srv/http/u/` is where the data lives. But HOW am I supposed to get at my [container's logs](http://s.natalian.org/2014-10-20/diff.txt)? Another volume mount?
 
 How does CoreOS envision managing httpd logs? I don't understand. And how am I
 supposed to run `logrorate`!? ["One step forward, two steps
@@ -134,8 +134,8 @@ Here is [Greptweet's service file](https://github.com/kaihendry/greptweet/blob/m
 [CoreOS's launch
 guide](https://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/)
 was a bit strange to me. Am I supposed to publish my Greptweet image, so the
-`docker pull` works? It could be a lot simpler I feel. I.e. why the docker daemon
-managing the containers itself!?
+`docker pull` works? It could be a lot simpler I feel. I.e. why doesn't the
+docker daemon manage/start the containers itself!?
 
 # Conclusion
 
