@@ -2,10 +2,12 @@
 <img src=https://d3oypxn00j2a10.cloudfront.net/0.11.2/images/pages/brand_guidelines/small_h.png alt="Docker Logo">
 
 Once upon a time there was
-[chroot](http://git.suckless.org/sbase/tree/chroot.c). `chroot` was a simple
-way of sandboxing your application. It didn't really work as well as some
-people wanted and along came [Docker](https://www.docker.com/), which is a front end to <abbr title="Linux
-containers">LXC</abbr>. It works. Docker is monolithic and **depends on Linux**.
+[chroot](http://git.suckless.org/sbase/tree/chroot.c) (notice, it's just
+50LOC?!). `chroot` was a simple way of sandboxing your application. It didn't
+really work as well as some people wanted and along came
+[Docker](https://www.docker.com/), which is a front end to <abbr title="Linux
+containers">LXC</abbr>. It works, though it has a LOT of
+SLOC/complexity/features. Docker is monolithic and **depends on Linux**.
 
 Once upon a time there were simple general packaged distributions. Their main
 fault was probably being **too general**, poor abilities to upgrade and
