@@ -9,9 +9,9 @@ really work as well as some people wanted and along came
 containers">LXC</abbr>. It works, though it has a LOT of
 SLOC/complexity/features. Docker is monolithic and **depends on Linux**.
 
-Once upon a time there were simple general packaged distributions. Their main
-fault was probably being **too general**, poor abilities to upgrade and
-downgrade. Along came CoreOS, a lightweight Linux OS with (a modern init)
+Today we have general packaged distributions like Debian & Archlinux. Their
+main fault was probably being **too general**, poor abilities to upgrade and
+downgrade. Along comes CoreOS, a lightweight Linux OS with (a modern init)
 [systemd](https://en.wikipedia.org/wiki/Systemd) & docker.  CoreOS is also
 monolithic and **depends on Linux**.
 
@@ -142,11 +142,11 @@ docker daemon manage/start the containers itself!?
 # Conclusion
 
 I think the basic idea of lightweight host OS (CoreOS) and containers (Docker)
-has legs. I just wish it was as simple as `chroot`. Or I'm just left thinking
-how Ansible/Chef/Puppet/Vagrant did such a bad job compared to the
-[Dockerfile](https://docs.docker.com/reference/builder/). Or perhaps how VPS
-hosters never really got a decent API together to move/expand/inspect their VPS
-volumes.
+has legs. I just wish it was as simple as `chroot`. Now I'm left thinking how
+Ansible/Chef/Puppet/Vagrant did such a bad job compared to the
+[Dockerfile](https://docs.docker.com/reference/builder/). Or perhaps blaming
+VPS hosters who never really got a decent API together to move/expand/inspect
+their VPS volumes.
 
 Gosh, how did we get into this mess?!
 
