@@ -88,7 +88,7 @@ CoreOS](http://dabase.com/blog/Understanding_CoreOS/), I was quite excited
 about have "free" updates to my core host system. Sadly after looking at the
 logs, I'm not impressed.
 
-There is **no visibility to the actual update**.
+There is **little visibility to the actual update**. I have recently found <https://coreos.com/releases/> but it uses some horrible XML manifest to layer on the updates. Why can't the whole rootfs just be in git ffs?
 
 Furthermore I noticed `locksmithd` which I think reboots the machine, but I'm not sure.
 
