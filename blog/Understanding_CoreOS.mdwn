@@ -133,4 +133,4 @@ So with that preamble, a good summary is given at the bottom of the <http://core
 
 Good luck to the CoreOS team. I will be keeping a very close eye on their developments!
 
-Update: I've now [[experiencing_CoreOS+Docker]] !
+Update: I am now [[experiencing_CoreOS+Docker]] !
