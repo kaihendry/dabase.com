@@ -11,8 +11,8 @@ SLOC/complexity/features. Docker is monolithic and **depends on Linux**.
 
 Today we have general packaged distributions like Debian & Archlinux. Their
 main fault was probably being **too general**, poor abilities to upgrade and
-downgrade. Along comes CoreOS, a lightweight Linux OS with (a modern init)
-[systemd](https://en.wikipedia.org/wiki/Systemd) & docker.  CoreOS is also
+downgrade. Along comes CoreOS, a lightweight Linux OS with (a modern, but hugely controversial init)
+[systemd](https://en.wikipedia.org/wiki/Systemd), [heavyweight btrfs](http://dl.garbe.us/The_suckless_org_universe.pdf) & docker.  CoreOS is also
 monolithic and **depends on Linux**.
 
 I've attempted to [understand
@@ -36,16 +36,21 @@ Yes, I need to re-implement greptweet in Golang to greatly reduce this huge bloa
 
 I was hoping CoreOS would do away with root altogether. I'm seriously tired of
 `sudo`. I noticed [read only
-mounts](http://s.natalian.org/2014-10-18/1413615988_1362x740.png), whilst trying to disable password ssh logins to avoid loads of:
+mounts](http://s.natalian.org/2014-11-05/1415193358_1362x740.png), whilst trying to disable password ssh logins to avoid loads of:
 
 	Failed password for root from $badman_IP port $highport ssh2
 
 In my `journalctl`. Ok, if they are going to fix the config of `sshd_config` I thought, maybe they would do away with root?! PLEASE.
 
+Update: If you discover WHERE `sshd_config` is managed in git by the CoreOS, I
+will give you a MAN HUG. CoreOS have totally obfuscated how they maintain
+configurations, compared to [Archlinux
+packages](https://projects.archlinux.org/svntogit/packages.git/)!!
+
 # Haunting permissions
 
 I hate UNIX permissions, hate hate hate. So with Docker your data is mounted on the
-host IIUC and your app stays firmly containerized.
+host IIUC and your app stays firmly _containerized_.
 
 But when your app writes data out on to a mount point, what THE HELL should the
 permissions be? I ended up just `chmod -R 777` on my Volume's mountpoint, though I should probably have used [setfacl](/e/01178/) What a mess!
@@ -81,6 +86,8 @@ AFAICT I don't have the basic utility of cron in my container. Now what?!
 
 WTF IS CRON IN COREOS, I NEED IT BACK!
 
+Update: We are suppose to use [systemd timers](https://wiki.archlinux.org/index.php/Systemd/Timers)
+
 # Update_engine
 
 As mentioned in my [previous blog on
@@ -108,7 +115,7 @@ our [gitfs upgrade system](https://webconverger.org/upgrade/) is MUCH CLEARER
 than how CoreOS updates are handled. I wonder <abbr title="when the
 hell">wth</abbr> Docker 1.3 is going to hit CoreOS stable.
 
-Keeping my Archlinux container uptodate is also a bit of a mystery to me...
+Keeping my Archlinux docker container uptodate is also a bit of a mystery to me...
 
 # CoreOS packaging is just WEIRD
 
@@ -155,3 +162,5 @@ aka Docker containers all by themselves. Seems like another level of
 abstraction that empowers system administrators but at the same time there is
 going to a raft of bugs/pain to enjoy with this "movement". It's also slightly
 concerning that CoreOS/Docker seems to fly in the face of the Unix philosophy.
+
+My rating for CoreOS: 1 out of 5 stars
