@@ -1,19 +1,21 @@
 <embed style="width: 30%" type="image/svg+xml" src="http://s.natalian.org/2014-10-20/coreos_logo.svg" />
-<img src=https://d3oypxn00j2a10.cloudfront.net/0.11.2/images/pages/brand_guidelines/small_h.png alt="Docker Logo">
+<img src=http://s.natalian.org/2014-11-14/docker-logo.png alt="Docker Logo">
 
 Once upon a time there was
 [chroot](http://git.suckless.org/sbase/tree/chroot.c) (notice, it's just
-50LOC?!). `chroot` was a simple way of sandboxing your application. It didn't
-really work as well as some people wanted and along came
-[Docker](https://www.docker.com/), which is a front end to <abbr title="Linux
-containers">LXC</abbr>. It works, though it has a LOT of
-SLOC/complexity/features. Docker is monolithic and **depends on Linux**.
+50LOC?!). `chroot` was a simple way of sandboxing your application, namely just
+[filesystem isolation](http://unix.stackexchange.com/a/141595). `chroot` lacked
+some features people wanted and alongs came [Docker](https://www.docker.com/),
+which is a front end to <abbr title="Linux containers">LXC</abbr>. It works,
+though it has a LOT of SLOC/complexity/features. Docker is monolithic and
+**depends on Linux**.
 
 Today we have general packaged distributions like Debian & Archlinux. Their
 main fault was probably being **too general**, poor abilities to upgrade and
-downgrade. Along comes CoreOS, a lightweight Linux OS with (a modern, but hugely controversial init)
-[systemd](https://en.wikipedia.org/wiki/Systemd), [heavyweight btrfs](http://dl.garbe.us/The_suckless_org_universe.pdf) & docker.  CoreOS is also
-monolithic and **depends on Linux**.
+downgrade. Along comes CoreOS, a lightweight Linux OS with (a modern, but
+hugely controversial init) [systemd](https://en.wikipedia.org/wiki/Systemd),
+[heavyweight btrfs](http://dl.garbe.us/The_suckless_org_universe.pdf) & docker.
+CoreOS is also monolithic and **depends on Linux**.
 
 I've attempted to [understand
 CoreOS](http://dabase.com/blog/Understanding_CoreOS/) before, though since I
