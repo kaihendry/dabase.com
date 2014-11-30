@@ -1,17 +1,3 @@
 [[!meta title="How to rotate a video"]]
 
-Make sure you have:
-
-	deb http://www.debian-multimedia.org unstable main
-
-in your `sources.list`. Then `sudo apt-get update && sudo apt-get install mencoder`.
-
-Finally, run something like:
-
-	mencoder -vf rotate=1 -o rotated.avi -oac copy -ovc lavc /mnt/sd/dcim/101canon/mvi_3099.avi
-
-* [Further scaling tips](http://therning.org/niklas/2006/07/rotating-video-clips-shot-in-portrait-mode/)
-
-If you take the video from upside down:
-
-	mencoder -vf mirror,flip -o flip-mirror.avi -oac copy -ovc lavc /mnt/sd/dcim/101canon/mvi_3104.avi
+See <https://github.com/kaihendry/recordmydesktop2.0/blob/master/htmlvideo>
