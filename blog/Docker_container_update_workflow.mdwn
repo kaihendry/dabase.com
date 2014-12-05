@@ -16,15 +16,27 @@ checks the source code out from git, but I need to **test my working changes**.
 
 # How did I deploy the fix
 
-On my CoreOS droplet, I built a new image with `docker build -t greptweet .`
-from a git checkout. I wasn't too sure what was going to happen, since there
-was already an image called "greptweet" there and in fact running. The new
-build seemed to simply replace that currently running build and all I then
-needed to do was `sudo systemctl restart greptweet.service` for the [systemd
-service
+On my CoreOS droplet, I built a new image (from scratch) with `docker build
+--no-cache -t greptweet .` from a git checkout. I wasn't too sure what was
+going to happen, since there was already an image called "greptweet" there and
+in fact running.  The new build seemed to simply replace that currently running
+build and all I then needed to do was `sudo systemctl restart
+greptweet.service` for the [systemd service
 file](https://github.com/kaihendry/greptweet/blob/master/greptweet.service) to
 serve it.
 
 NEED A SOLUTION: Er, so what happened to the old build of Greptweet? Seems to
 have disappeared by the build that replaced it. What happens if I want to
 downgrade, just `git checkout oldversion` and Docker build from there??
+
+# Gotchas
+
+WTH: Initially I built like so `docker build -t greptweet .` and noticed no
+changes on restart and an old version number on the
+[app](http://greptweet.com/). It seems that Docker caching can't seem to tell
+when a step is actually likely to change (new changes in git) and invalidate
+it.
+
+Had some issues with [nginx configuration syntax
+error](https://twitter.com/kaihendry/status/540428915911557120), independent of
+Docker.
