@@ -1,0 +1,30 @@
+I setup [Greptweet](https://github.com/kaihendry/greptweet) a few months ago on
+a <abbr title="Digital Ocean">DO</abbr> "Droplet" aka <abbr title="Virtual
+Private Server">VPS</abbr> in London running [CoreOS](https://coreos.com/)
+stable.
+
+Over that period of time, there was at least one PHP update (as per bloody usual) and a [cache bugfix](https://github.com/kaihendry/greptweet/issues/52) <a href=https://twitter.com/kaihendry/status/539308862461865984>(backstory)</a> I need to rollout.
+
+# How do I test the fix?
+
+This fix was to do with the [nginx.conf](https://github.com/kaihendry/greptweet/blob/master/nginx.conf), not the actual code, so it was easy to build the docker image locally, e.g. `sudo docker build -t g5 .` & `sudo docker run -v /srv/www/greptweet.com:/srv/http/u -p 80:80 -ti g5`
+
+NEED A SOLUTION: What I found difficult to do however, is test any local code
+changes, like a Bootstrap update. Since the
+[Dockerfile](https://github.com/kaihendry/greptweet/blob/master/Dockerfile)
+checks the source code out from git, but I need to **test my working changes**.
+
+# How did I deploy the fix
+
+On my CoreOS droplet, I built a new image with `docker build -t greptweet .`
+from a git checkout. I wasn't too sure what was going to happen, since there
+was already an image called "greptweet" there and in fact running. The new
+build seemed to simply replace that currently running build and all I then
+needed to do was `sudo systemctl restart greptweet.service` for the [systemd
+service
+file](https://github.com/kaihendry/greptweet/blob/master/greptweet.service) to
+serve it.
+
+NEED A SOLUTION: Er, so what happened to the old build of Greptweet? Seems to
+have disappeared by the build that replaced it. What happens if I want to
+downgrade, just `git checkout oldversion` and Docker build from there??
