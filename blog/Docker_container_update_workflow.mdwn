@@ -14,6 +14,8 @@ changes, like a Bootstrap update. Since the
 [Dockerfile](https://github.com/kaihendry/greptweet/blob/master/Dockerfile)
 checks the source code out from git, but I need to **test my working changes**.
 
+UPDATE: Neerav Kumar from [DockerSG](https://www.facebook.com/groups/dockersg/) suggested I [use ADD instead of git clone in my Dockerfile](https://github.com/kaihendry/greptweet/commit/18cdf60aaeb4bbb8a76aa4d22629f6ff7f527a7b).
+
 # How did I deploy the fix
 
 On my CoreOS droplet, I built a new image (from scratch) with `docker build
@@ -29,6 +31,10 @@ NEED A SOLUTION: Er, so what happened to the old build of Greptweet? Seems to
 have disappeared by the build that replaced it. What happens if I want to
 downgrade, just `git checkout oldversion` and Docker build from there??
 
+UPDATE: People suggested tags and [updating the service
+file](https://privatepaste.com/efca12aa5f) but I think git checking out and
+older version is a better approach for me.
+
 # Gotchas
 
 WTH: Initially I built like so `docker build -t greptweet .` and noticed no
@@ -36,6 +42,8 @@ changes on restart and an old version number on the
 [app](http://greptweet.com/). It seems that Docker caching can't seem to tell
 when a step is actually likely to change (new changes in git) and invalidate
 it.
+
+UPDATE: I'm told Docker can sense changes with ADD but not the RUN. So hopefully [the change](https://github.com/kaihendry/greptweet/commit/18cdf60aaeb4bbb8a76aa4d22629f6ff7f527a7b) will make the builds better.
 
 Had some issues with [nginx configuration syntax
 error](https://twitter.com/kaihendry/status/540428915911557120), independent of
