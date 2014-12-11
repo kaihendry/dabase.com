@@ -1,8 +1,8 @@
 [[!meta title="dabase"]]
 
-# Kai Hendry's other blog [[blog/archives]]
+# [[List_of_blogs|blog/archives]]
 
-[[!inline pages="blog/* and !blog/*/*" show="2" feedshow="5" actions=no rss=yes]]
+[[!inline pages="blog/* and !blog/*/*" show="4" actions=no rss=yes quick="yes"]]
 
 # Latest [[tips]]
 

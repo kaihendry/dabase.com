@@ -1,3 +1,1 @@
-[RSS feed](http://dabase.com/index.rss)
-
 [[!inline pages="blog/* and !blog/*/*" show="2" feedshow="5" actions=no rss=no]]
