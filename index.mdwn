@@ -1,9 +1,5 @@
 [[!meta title="dabase.com"]]
 
-# Blogs
+# [Kai Hendry](http://hendry.iki.fi/)'s techy writings & [[tips]]
 
-[[!inline pages="blog/* and !*/Discussion and !link(unfinished)" archive="yes" rss="yes"]]
-
-# Latest [[tips]]
-
-[[!inline pages="e/*" show="4" actions=no]]
+[[!inline pages="blog/* and !*/Discussion and !link(unfinished)" archive="yes" rss="no"]]
