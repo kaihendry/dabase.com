@@ -1,9 +1,9 @@
-[[!meta title="dabase"]]
+[[!meta title="dabase.com"]]
 
-# [[List_of_blogs|blog/archives]]
+# Blogs
 
-[[!inline pages="blog/* and !blog/*/*" show="4" actions=no rss=yes quick="yes"]]
+[[!inline pages="blog/* and !*/Discussion and !link(unfinished)" archive="yes" rss="yes"]]
 
 # Latest [[tips]]
 
-[[!inline pages="e/*" show="5" actions=no rss=no]]
+[[!inline pages="e/*" show="4" actions=no]]
