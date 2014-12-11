@@ -1,9 +1,8 @@
 [[!meta title="Hendry's tips and tricks"]]
 
-[[!inline pages="e/* and !e/new.sh and !*/Discussion" description="Hendry's hints" feedonly="yes" timeformat="%F" show=0]]
+### All tips are in the public domain
 
-## Please contribute a tip or a snappy howto
-[[!inline actions=yes pages="u/* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F" rootpage="u"]]
+[[!inline pages="e/* and !e/new.sh and !*/Discussion" description="Hendry's hints" feedonly="yes" timeformat="%F" show=0]]
 
 ## Debian
 [[!inline pages="e/01* and !*/Discussion" archive="yes" rss="no" atom="no" timeformat="%F"]]
@@ -61,4 +60,3 @@
 
 
 
-### All tips are in the public domain
