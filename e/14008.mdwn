@@ -1,0 +1,5 @@
+[[!meta title="Deleting underscored filenames from a bucket"]]
+
+Using the [AWS cli](http://aws.amazon.com/cli/) and a fairly straightforward shell:
+
+	aws s3 ls --recursive s3://BUCKET | grep -F "._" | awk '{print $4}' | while read delme; do echo aws s3 rm s3://BUCKET/$delme; done
