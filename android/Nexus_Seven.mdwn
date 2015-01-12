@@ -37,3 +37,29 @@ Hangout](https://en.wikipedia.org/wiki/Google_Hangouts).
 I've earmarked today to setup the [Android development environment on
 Archlinux](https://wiki.archlinux.org/index.php/android#Android_Studio). Bonus
 points if I manage a Hello World app.
+
+Got android-studio installed after enabling multilib. Why is it 32 bit is beyond me. Especially considering the RAM it consumes.
+
+Optional dependencies for android-studio
+    android-sdk
+    android-sdk-platform-tools
+    android-sdk-build-tools
+
+
+<https://bugs.archlinux.org/task/43418?project=1&cat%5B0%5D=2&string=java-runtime-common>
+
+I had some corrupt JDK since I ran out of disk space on /tmp, hence [I wasted some time](https://bugs.archlinux.org/task/43418?project=1&cat%5B0%5D=2&string=java-runtime-common). OpenJDK was unstable with crap outs like `systemd-coredump[20156]: Process 7039 (java) of user 1000 dumped core`. The Oracle JDK works better since I think it's compiled against a newer libc from what I was reading after a frantic Google session.
+
+	x220:~$ sudo archlinux-java status
+	Available Java environments:
+	  java-8-jdk (default)
+	  java-8-jre/jre
+	  java-8-openjdk
+
+Worryingly, selecting to create a new project takes seriously 5 minutes of frantic downloading. Scary: <http://r2d2.webconverger.org/2015-01-12/gradle.mp4>
+
+Android studio seems to going mental with "Unregistered Vcs root detected" with the fact the my homedir is in Git. Configure doesn't seem to point out where my Project lives. I think I've resolved this now.
+
+Both `wmname LG3D` and `export _JAVA_AWT_WM_NONREPARENTING=1` seems to be needed to make android-studio behave with [dwm](http://dwm.suckless.org/).
+
+<img src=http://s.natalian.org/2015-01-12/helloworld.png alt="initial">
