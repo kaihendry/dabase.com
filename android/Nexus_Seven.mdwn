@@ -1,0 +1,37 @@
+<a href="https://www.flickr.com/photos/hendry/16254776355" title="Nexus 7 running lollipop aka Android 5 by Kai Hendry, on Flickr"><img src="https://farm9.staticflickr.com/8661/16254776355_2bd458127b_n.jpg" width="240" height="320" alt="Nexus 7 running lollipop aka Android 5"></a>
+
+So it's [[four_years|The_deprecated_SDcard]] since my last Android post. Ever
+since I was given a "free" iPhone from my workplace Vodafone those years ago, I
+decided to switch to IOS and I've been a happy camper ever since.
+
+As people will testify who know me, I not an Android fan. Usability is poor and
+I'm a Java hater. Nonetheless I've set myself a challenge to explore & develop
+a Webconverger port. The source code won't be public, though I will make
+efforts to document my efforts here.
+
+## 2015-01-11
+
+I need Lollipop and I need a device. If my memory at Aplix serves me correctly,
+running AVD emulator on my aging X220 would be madness.
+
+<a href="https://www.flickr.com/photos/hendry/16254776355" title="Nexus 7 running lollipop aka Android 5 by Kai Hendry, on Flickr"><img src="https://farm9.staticflickr.com/8661/16254776355_2bd458127b_n.jpg" width="240" height="320" alt="Nexus 7 running lollipop aka Android 5"></a>
+
+So I bought a second hand Nexus 7 for 200SGD off <https://carousell.co/>.
+
+First impressions of setting up the device is that the wireless "password" prompt is jarringly wrapped. UGLY!
+
+It seems the device is unusable without logging into Google. Tbh I don't use
+Gmail anymore and I don't want it to download my old email, nonetheless it went
+ahead and did it. :( I'm logged into Youtube, but it seems like I need to
+separately log into the Play store et al. What the hell!?
+
+Not sure how I would ever use this device myself in my daily life. Ok, maybe
+for watching Youtube videos in bed? :)
+
+## 2015-01-12
+
+<img src=http://s.natalian.org/2015-01-12/lib32-android-studio.png alt="lib32 fugliness">
+
+I've earmarked today to setup the [Android development environment on
+Archlinux](https://wiki.archlinux.org/index.php/android#Android_Studio). Bonus
+points if I manage a Hello World app.
