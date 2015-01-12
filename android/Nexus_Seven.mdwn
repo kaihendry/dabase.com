@@ -1,8 +1,6 @@
-<a href="https://www.flickr.com/photos/hendry/16254776355" title="Nexus 7 running lollipop aka Android 5 by Kai Hendry, on Flickr"><img src="https://farm9.staticflickr.com/8661/16254776355_2bd458127b_n.jpg" width="240" height="320" alt="Nexus 7 running lollipop aka Android 5"></a>
-
 So it's [[four_years|The_deprecated_SDcard]] since my last Android post. Ever
-since I was given a "free" iPhone from my workplace Vodafone those years ago, I
-decided to switch to IOS and I've been a happy camper ever since.
+since I was given a "free" iPhone from my workplace at the time, all those years
+ago, I decided to switch to IOS and I've been a happy camper ever since.
 
 As people will testify who know me, I not an Android fan. Usability is poor and
 I'm a Java hater. Nonetheless I've set myself a challenge to explore & develop
@@ -11,8 +9,8 @@ efforts to document my efforts here.
 
 ## 2015-01-11
 
-I need Lollipop and I need a device. If my memory at Aplix serves me correctly,
-running AVD emulator on my aging X220 would be madness.
+I want **Android 5** and I need a device. If my memory at Aplix serves me
+correctly, running AVD emulator on my aging X220 would be madness.
 
 <a href="https://www.flickr.com/photos/hendry/16254776355" title="Nexus 7 running lollipop aka Android 5 by Kai Hendry, on Flickr"><img src="https://farm9.staticflickr.com/8661/16254776355_2bd458127b_n.jpg" width="240" height="320" alt="Nexus 7 running lollipop aka Android 5"></a>
 
@@ -27,6 +25,10 @@ separately log into the Play store et al. What the hell!?
 
 Not sure how I would ever use this device myself in my daily life. Ok, maybe
 for watching Youtube videos in bed? :)
+
+So far nothing impresses me about the device. I thought there was a VOIP
+client, but I can't find it. Seems like I have to use the [proprietary Google
+Hangout](https://en.wikipedia.org/wiki/Google_Hangouts).
 
 ## 2015-01-12
 
