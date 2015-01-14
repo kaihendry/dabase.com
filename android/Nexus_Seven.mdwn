@@ -40,11 +40,10 @@ points if I manage a Hello World app.
 
 Got android-studio installed after enabling multilib. Why is it 32 bit is beyond me. Especially considering the RAM it consumes.
 
-Optional dependencies for android-studio
-    android-sdk
-    android-sdk-platform-tools
-    android-sdk-build-tools
-
+	Optional dependencies for android-studio
+		android-sdk
+		android-sdk-platform-tools
+		android-sdk-build-tools
 
 <https://bugs.archlinux.org/task/43418?project=1&cat%5B0%5D=2&string=java-runtime-common>
 
@@ -58,8 +57,41 @@ I had some corrupt JDK since I ran out of disk space on /tmp, hence [I wasted so
 
 Worryingly, selecting to create a new project takes seriously 5 minutes of frantic downloading. Scary: <http://r2d2.webconverger.org/2015-01-12/gradle.mp4>
 
-Android studio seems to going mental with "Unregistered Vcs root detected" with the fact the my homedir is in Git. Configure doesn't seem to point out where my Project lives. I think I've resolved this now.
+Android studio seems to going mental with "Unregistered Vcs root detected" with
+the fact the my homedir is in Git. Configure doesn't seem to point out where my
+Project lives. I think I've resolved this now.
 
-Both `wmname LG3D` and `export _JAVA_AWT_WM_NONREPARENTING=1` seems to be needed to make android-studio behave with [dwm](http://dwm.suckless.org/).
+Both `wmname LG3D` and `export _JAVA_AWT_WM_NONREPARENTING=1` seems to be
+needed to make android-studio behave with [dwm](http://dwm.suckless.org/).
 
 <img src=http://s.natalian.org/2015-01-12/helloworld.png alt="initial">
+
+## 2015-01-13
+
+Things I don't understand about IntelliJ. How to reformat buffer? Why is
+finding a class so bloody slow? How do I search all the files in a project?
+
+Not sure how Android documentation is organised. Took me hours to find:
+
+<http://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()> was the way you test <http://developer.android.com/reference/android/app/Activity.html#startLockTask()> is active. Why isn't there a cross reference?
+
+Furthermore, to be able to query this property, you need to quite a length
+instantiation: `ActivityManager activityManager = (ActivityManager)
+this.getSystemService(Context.ACTIVITY_SERVICE);`
+
+Creating a URL in Java is a bit weird. Seems to bizarrely demand a try..catch.
+
+So bundles, IIUC, are Android's version of [localStorage](https://html.spec.whatwg.org/multipage/webstorage.html#the-localstorage-attribute)?
+
+### WebView
+
+Why doesn't it prompt that it needs the **android.permission.INTERNET** permission in the IDE?
+
+Odd how you need to explicitly enable Javascript and make links clickable.
+
+Odd to me, that `loadUrl` wants a string, not a URL object.
+
+## 2015-01-14
+
+I wish there was a way taking a video capture like you can with IOS attached to
+a MBP with Quicktime player "Movie recording".
