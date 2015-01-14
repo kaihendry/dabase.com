@@ -3,9 +3,9 @@ since I was given a "free" iPhone from my workplace at the time, all those years
 ago, I decided to switch to IOS and I've been a happy camper ever since.
 
 As people will testify who know me, I not an Android fan. Usability is poor and
-I'm a Java hater. Nonetheless I've set myself a challenge to explore & develop
-a Webconverger port. The source code won't be public, though I will make
-efforts to document my efforts here.
+I'm a Java language hater. Nonetheless I've set myself a challenge to explore &
+develop a Webconverger port. The source code won't be public, though I will
+make efforts to document my efforts here.
 
 ## 2015-01-11
 
@@ -14,7 +14,7 @@ correctly, running AVD emulator on my aging X220 would be madness.
 
 <a href="https://www.flickr.com/photos/hendry/16254776355" title="Nexus 7 running lollipop aka Android 5 by Kai Hendry, on Flickr"><img src="https://farm9.staticflickr.com/8661/16254776355_2bd458127b_n.jpg" width="240" height="320" alt="Nexus 7 running lollipop aka Android 5"></a>
 
-So I bought a second hand Nexus 7 for 200SGD off <https://carousell.co/>.
+So I bought a second hand Nexus 7 for 200SGD off <https://carousell.co/>. I'm happy with it.
 
 First impressions of setting up the device is that the wireless "password" prompt is jarringly wrapped. UGLY!
 
@@ -61,27 +61,34 @@ Android studio seems to going mental with "Unregistered Vcs root detected" with
 the fact the my homedir is in Git. Configure doesn't seem to point out where my
 Project lives. I think I've resolved this now.
 
+<blockquote class="twitter-tweet" lang="en"><p>Is this how <a href="https://twitter.com/Android">@Android</a> Studio really works? Spawning zillions of Java VMs ? <a href="http://t.co/s4froaYKQt">http://t.co/s4froaYKQt</a> :/</p>&mdash; Kai Hendry (@kaihendry) <a href="https://twitter.com/kaihendry/status/554587440871006208">January 12, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Both `wmname LG3D` and `export _JAVA_AWT_WM_NONREPARENTING=1` seems to be
 needed to make android-studio behave with [dwm](http://dwm.suckless.org/).
 
-<img src=http://s.natalian.org/2015-01-12/helloworld.png alt="initial">
+<img width=500 src=http://s.natalian.org/2015-01-12/helloworld.png alt="Got my Android dev environment going!">
 
 ## 2015-01-13
 
-Things I don't understand about IntelliJ. How to reformat buffer? Why is
-finding a class so bloody slow? How do I search all the files in a project?
+Things I don't understand about IntelliJ. How to reformat my buffer? Why is
+finding a class for an import so bloody slow? It makes `goimports` look like
+genius. How do I search all the files in a project?
 
 Not sure how Android documentation is organised. Took me hours to find:
 
-<http://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()> was the way you test <http://developer.android.com/reference/android/app/Activity.html#startLockTask()> is active. Why isn't there a cross reference?
+<http://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()> was the way you test <http://developer.android.com/reference/android/app/Activity.html#startLockTask()> is active. Why isn't there a cross reference from `startLockTask`?!?!?!
 
 Furthermore, to be able to query this property, you need to quite a length
 instantiation: `ActivityManager activityManager = (ActivityManager)
-this.getSystemService(Context.ACTIVITY_SERVICE);`
+this.getSystemService(Context.ACTIVITY_SERVICE);` Is this normal??!
 
 Creating a URL in Java is a bit weird. Seems to bizarrely demand a try..catch.
 
-So bundles, IIUC, are Android's version of [localStorage](https://html.spec.whatwg.org/multipage/webstorage.html#the-localstorage-attribute)?
+So bundles, IIUC, are Android's version of
+[localStorage](https://html.spec.whatwg.org/multipage/webstorage.html#the-localstorage-attribute)?
+I'm getting to grips with the Android lifecycle and it means saving state
+manually between onCreate AFAICT. Haven't quite got a good mental model.
 
 ### WebView
 
@@ -89,7 +96,7 @@ Why doesn't it prompt that it needs the **android.permission.INTERNET** permissi
 
 Odd how you need to explicitly enable Javascript and make links clickable.
 
-Odd to me, that `loadUrl` wants a string, not a URL object.
+Odd to me, that WebView's `loadUrl` wants a string, not a URL object.
 
 ## 2015-01-14
 
