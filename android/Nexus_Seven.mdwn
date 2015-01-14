@@ -71,6 +71,8 @@ needed to make android-studio behave with [dwm](http://dwm.suckless.org/).
 
 ## 2015-01-13
 
+First, many thanks to [Wyemun](https://github.com/wyemun) for answering several of my questions.
+
 Things I don't understand about IntelliJ. How to reformat my buffer? Why is
 finding a class for an import so bloody slow? It makes `goimports` look like
 genius. How do I search all the files in a project?
@@ -102,3 +104,9 @@ Odd to me, that WebView's `loadUrl` wants a string, not a URL object.
 
 I wish there was a way taking a video capture like you can with IOS attached to
 a MBP with Quicktime player "Movie recording".
+
+Had this scary [Default Activity not found](http://stackoverflow.com/questions/18828654/default-activity-not-found-in-android-studio). Restarting Android Studio 1.0.2 fixed it for me.
+
+<http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html> confusingly [generates PNGs with a **mipmap** directory prefix](https://github.com/romannurik/AndroidAssetStudio/issues/38) instead of drawable. WTH. Ok, spending way way too long trying to setup the icons. Sheesh
+
+Bizaare to me that Android just doesn't use SVG and let the SDK build out the PNGs as needed. Whacky.
