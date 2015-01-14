@@ -79,22 +79,22 @@ Not sure how Android documentation is organised. Took me hours to find:
 
 <http://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()> was the way you test <http://developer.android.com/reference/android/app/Activity.html#startLockTask()> is active. Why isn't there a cross reference from `startLockTask`?!?!?!
 
-Furthermore, to be able to query this property, you need to quite a length
+Furthermore, to be able to query this property, you need to grossly vebose
 instantiation: `ActivityManager activityManager = (ActivityManager)
 this.getSystemService(Context.ACTIVITY_SERVICE);` Is this normal??!
 
-Creating a URL in Java is a bit weird. Seems to bizarrely demand a try..catch.
+Creating a URL in Java is a bit weird. Seems to bizarrely demand a try..catch. Really starting to appreciate Golang's [error handling model](http://blog.golang.org/errors-are-values).
 
 So bundles, IIUC, are Android's version of
 [localStorage](https://html.spec.whatwg.org/multipage/webstorage.html#the-localstorage-attribute)?
 I'm getting to grips with the Android lifecycle and it means saving state
-manually between onCreate AFAICT. Haven't quite got a good mental model.
+manually between onCreate AFAICT. Haven't quite got a good mental model. TODO: <http://developer.android.com/training/basics/activity-lifecycle/>
 
 ### WebView
 
-Why doesn't it prompt that it needs the **android.permission.INTERNET** permission in the IDE?
+Why doesn't it prompt that it needs the **android.permission.INTERNET** permission in the IntelliJ (Android Studio) IDE?
 
-Odd how you need to explicitly enable Javascript and make links clickable.
+Odd how you need to explicitly enable Javascript in the WebView and make links clickable. Why aren't these defaults?
 
 Odd to me, that WebView's `loadUrl` wants a string, not a URL object.
 
