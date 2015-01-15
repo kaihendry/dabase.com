@@ -73,15 +73,16 @@ needed to make android-studio behave with [dwm](http://dwm.suckless.org/).
 
 First, many thanks to [Wyemun](https://github.com/wyemun) for answering several of my questions.
 
-Things I don't understand about IntelliJ. How to reformat my buffer? Why is
-finding a class for an import so bloody slow? It makes `goimports` look like
-genius. How do I search all the files in a project?
+Things I don't understand about IntelliJ. How to reformat my buffer? (Update:
+2015-01-15 Ctrl-Alt-L, Return) Why is finding a class for an import so bloody
+slow / not working at time? It makes `goimports` look like genius. How do I
+search all the files in a project?
 
 Not sure how Android documentation is organised. Took me hours to find:
 
 <http://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()> was the way you test <http://developer.android.com/reference/android/app/Activity.html#startLockTask()> is active. Why isn't there a cross reference from `startLockTask`?!?!?!
 
-Furthermore, to be able to query this property, you need to grossly vebose
+Furthermore, to be able to query this property, you need to grossly verbose
 instantiation: `ActivityManager activityManager = (ActivityManager)
 this.getSystemService(Context.ACTIVITY_SERVICE);` Is this normal??!
 
@@ -110,3 +111,20 @@ Had this scary [Default Activity not found](http://stackoverflow.com/questions/1
 <http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html> confusingly [generates PNGs with a **mipmap** directory prefix](https://github.com/romannurik/AndroidAssetStudio/issues/38) instead of drawable. WTH. Ok, spending way way too long trying to setup the icons. Sheesh
 
 Bizaare to me that Android just doesn't use SVG and let the SDK build out the PNGs as needed. Whacky.
+
+Annoyingly [romannurik](https://github.com/romannurik) who pissed me off with `s,@drawable,@mipmap,` (nevermind all the stock ic_launcher.pngs) change fronts a [video explaining how to do Android immersive mode](https://www.youtube.com/watch?v=cBi8fjv90E4). Maybe it was because I was upset with him, but I didn't get it. Bit silly how hard it is to hide the {action,status} bar until the App is interacted with.
+
+## 2015-01-15
+
+Today, my mission is to understand how [Device Administrator](http://s.natalian.org/2015-01-15/device-administrator.png) works.
+
+1. http://android.stackexchange.com/a/85125/90140
+2. http://stackoverflow.com/questions/26467321
+3. https://code.google.com/p/android-developer-preview/issues/detail?id=1646
+
+It seems that you can only setup an [Android Lollipop device with NFC](http://developer.android.com/about/versions/android-5.0.html#Enterprise). A tad bizarre. This means you need at least two NFC capable Android devices. That run Lollipop. Hmmm, Ok.
+
+After a frantic 1-2hr coding session, I managed to root the device and further lock down the App by establishing Device Administrator. Some puzzles remain:
+
+* How to disable Device Administrator? Bizarrely uninstalling the App doesn't work. <http://s.natalian.org/2015-01-15/still-admin.png>
+* If the device is powered off, which is quite possible to do when mounted in a public environment, it doesn't return to the (locked) app. Oh dear.
