@@ -112,15 +112,15 @@ Had this scary [Default Activity not found](http://stackoverflow.com/questions/1
 
 Bizaare to me that Android just doesn't use SVG and let the SDK build out the PNGs as needed. Whacky.
 
-Annoyingly [romannurik](https://github.com/romannurik) who pissed me off with `s,@drawable,@mipmap,` (nevermind all the stock ic_launcher.pngs) change fronts a [video explaining how to do Android immersive mode](https://www.youtube.com/watch?v=cBi8fjv90E4). Maybe it was because I was upset with him, but I didn't get it. Bit silly how hard it is to hide the {action,status} bar until the App is interacted with.
+Annoyingly [romannurik](https://github.com/romannurik) who pissed me off with `s,@drawable,@mipmap,` (nevermind all the stock ic_launcher.pngs laying around my project) change, fronts a [video explaining how to do Android immersive mode](https://www.youtube.com/watch?v=cBi8fjv90E4). Maybe it was because I was upset with him, but I didn't get it. Bit silly how hard it is to hide the {action,status} bar until the App is interacted with.
 
 ## 2015-01-15
 
 Today, my mission is to understand how [Device Administrator](http://s.natalian.org/2015-01-15/device-administrator.png) works.
 
-1. http://android.stackexchange.com/a/85125/90140
-2. http://stackoverflow.com/questions/26467321
-3. https://code.google.com/p/android-developer-preview/issues/detail?id=1646
+1. <http://android.stackexchange.com/a/85125/90140>
+2. <http://stackoverflow.com/questions/26467321>
+3. <https://code.google.com/p/android-developer-preview/issues/detail?id=1646> ... ah, if only it could be easy
 
 It seems that you can only setup an [Android Lollipop device with NFC](http://developer.android.com/about/versions/android-5.0.html#Enterprise). A tad bizarre. This means you need at least two NFC capable Android devices. That run Lollipop. Hmmm, Ok.
 
