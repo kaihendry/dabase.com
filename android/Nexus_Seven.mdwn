@@ -128,3 +128,16 @@ After a frantic 1-2hr coding session, I managed to root the device and further l
 
 * How to disable Device Administrator? Bizarrely uninstalling the App doesn't work. <http://s.natalian.org/2015-01-15/still-admin.png>
 * If the device is powered off, which is quite possible to do when mounted in a public environment, it doesn't return to the (locked) app. Oh dear.
+
+## 2015-01-16
+
+Mission today is explore Android Lollipop's "Tap & Go" feature. I need another NFC Android 5.0 device to this. Arghhhh!!
+
+So I spent a few minutes restoring to locked, non-rooted Android lollipop to
+see whether this Device Admin via NFC works. Worryingly I managed to update to
+[5.0.2](http://s.natalian.org/2015-01-16/5.0.2.png) when previously I am quite
+certain that Android was adamant that 5.0.1 was current.
+
+I couldn't find an official Google source iterating the difference between
+5.0.2 & 5.0.1. Best I found was via
+[Wikipedia](https://en.wikipedia.org/wiki/Android_version_history).
