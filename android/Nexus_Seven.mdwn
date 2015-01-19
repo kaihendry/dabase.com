@@ -166,3 +166,6 @@ why isn't it just encrypted by default Lollipop?
 Must have wasted at least an hour trying to rename (aka refactor in Android
 Studio) my app from *.myfirstapp to *.kiosk. Still have not succeeded. I will
 try `sed` next.
+
+Did the mistake of copying a directory of an App example and thinking Android
+Studio would just pick up on it. Oh no. Oh hell no.
