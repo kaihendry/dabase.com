@@ -141,3 +141,28 @@ certain that Android was adamant that 5.0.1 was current.
 I couldn't find an official Google source iterating the difference between
 5.0.2 & 5.0.1. Best I found was via
 [Wikipedia](https://en.wikipedia.org/wiki/Android_version_history).
+
+Signed up for a Google Play account! BOOM!
+
+## 2015-01-19
+
+I'm decided that once I'm done buggering around, I'm going to release this
+kiosk app as opensource. I'm still climbing this very steep learning curve,
+copying and pasting SO answers and letting Android Studio work its magic. So
+many things I don't really understand yet. :/
+
+One thing that took me off guard is the way you can't just simply destroy the
+Webview and re-instantiate (not sure if that's correct terminology) it. Motive
+here is to ensure an ABSOLUTELY clean slate (just like Webconverger for PC) if
+the Webview was interacted with. First destroying it and building it up again
+manually in the layout is not straightforward, but more importantly its state
+is surprisingly not under the Webview object but somewhere else!
+
+The NFC provisioning is EXTREMELY slow since A) I don't know what I'm doing, so
+I need to iterate B) The iterations seem to [necessitate an OTT encryption
+step](https://www.flickr.com/photos/hendry/16314353155/). Begs the question,
+why isn't it just encrypted by default Lollipop?
+
+Must have wasted at least an hour trying to rename (aka refactor in Android
+Studio) my app from *.myfirstapp to *.kiosk. Still have not succeeded. I will
+try `sed` next.
