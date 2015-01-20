@@ -169,3 +169,20 @@ try `sed` next.
 
 Did the mistake of copying a directory of an App example and thinking Android
 Studio would just pick up on it. Oh no. Oh hell no.
+
+Why do some projects have such crazy directory structures? e.g.
+
+	app/src/main/java/uk/co/name/codesample/MainActivity.java
+
+Directory **main** seems unnecessary.  Directories like uk/co/name/codesample are pretty pointless too.
+
+## 2015-01-20
+
+I have honestly spent HOURS OF FRUSTRATION with org.apache.commons library. I
+put the dependency in the wrong gradle file. Wish creating a SHA1 sum was
+slightly saner.
+
+Added some images that [demonstrate the glitches around
+provisioning](https://www.flickr.com/search/?tags=lollipop&sort=relevance&user_id=16105436%40N00)
+and I've opensourced the code I'm working on since it kinda works:
+<https://github.com/webconverger/android> and I'm not too embarrassed about it.
