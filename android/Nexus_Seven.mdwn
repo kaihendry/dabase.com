@@ -179,10 +179,37 @@ Directory **main** seems unnecessary.  Directories like uk/co/name/codesample ar
 ## 2015-01-20
 
 I have honestly spent HOURS OF FRUSTRATION with org.apache.commons library. I
-put the dependency in the wrong gradle file. Wish creating a SHA1 sum was
-slightly saner.
+put the dependency in the wrong gradle file. Wish creating a SHA1 sum in
+Android was slightly saner.
 
 Added some images that [demonstrate the glitches around
 provisioning](https://www.flickr.com/search/?tags=lollipop&sort=relevance&user_id=16105436%40N00)
 and I've opensourced the code I'm working on since it kinda works:
 <https://github.com/webconverger/android> and I'm not too embarrassed about it.
+
+## 2015-01-21
+
+My objective today is make the device unlock via the
+<https://config.webconverger.com/> API.
+
+I wish I could say I am feeling more confident about running Android Studio.
+Nope... I'm in fear of what craziness will get in my way next.
+
+Don't quite understand the switch statement in Java. Is seems to have been
+features in Java7, but am I using a Java7 dialect? I have no idea.
+
+I have a line like: if (bundle.getBoolean("foobar"), false) {, but foobar
+doesn't exist. So is it right that I get `java.lang.NullPointerException:
+Attempt to invoke virtual method 'boolean
+android.os.Bundle.getBoolean(java.lang.String)' on a null object reference`
+?!... shouldn't it be just false? Oh, I figured it out. My bundle argument was
+someone coming through my PostExecute as null and I needed a null check.
+
+## 2015-01-22
+
+Made slow and steady progress yesterday on <https://github.com/Webconverger/android/commits/master>.
+
+Takes a RIDICULOUS amount of time to provision the App over NFC, watch it encrypt etc etc.
+
+Mission today is to upload to Google Play and try get an update working. So I
+need to work out how to embed a version string too.
