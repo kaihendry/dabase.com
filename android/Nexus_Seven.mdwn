@@ -213,3 +213,28 @@ Takes a RIDICULOUS amount of time to provision the App over NFC, watch it encryp
 
 Mission today is to upload to Google Play and try get an update working. So I
 need to work out how to embed a version string too.
+
+I am seeing this issue: <http://stackoverflow.com/questions/27826431/activity-startlocktask-occasionally-throws-illegalargumentexception>
+
+## 2015-01-26
+
+My objective today is to get someone to test my App before it goes live on
+production. Once it's "live" I want to test updates and such and so forth.
+
+I also want to work out how timers work. i.e. I want the app to do something at
+X minutes of inactivity.
+
+It appears that you can't put an App on the play store as "unlisted". Testing
+via a Google Group or G+ is kinda crazy.
+
+## 2015-01-27
+
+<img src=http://s.natalian.org/2015-01-27/1422347272_1364x748.png alt="Uploading to Google Play">
+
+I've uploaded the [current alpha quality state](https://github.com/Webconverger/android/commit/f13b04c88345c5b250e758d82210b8a3814fbb1c) to
+<https://play.google.com/store/apps/details?id=com.webconverger.KioskApp>. I've
+also taken a video with my GoPro that I need to edit in Premiere Pro to
+describe the setup steps for an absolute beginner.
+
+I can't take a screenshot of emulator running Webconverger on a 10 inch tablet
+since my 4GB Thinkpad X220 seems physically incapable of doing so! :(
