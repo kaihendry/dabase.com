@@ -251,3 +251,12 @@ Wow, it's in! <img src=http://s.natalian.org/2015-01-28/1422408822_1364x748.png 
 * <http://s.natalian.org/2015-01-28/permissionswebconverger.png>
 * <http://s.natalian.org/2015-01-28/installedwebconverger.png>
 
+Installed Android Studio on a Mac:
+
+* WTH is Osascript? https://www.dropbox.com/s/ie2i62hrgawza21/Screenshot%202015-01-28%2010.09.59.png?dl=0
+
+Gradle got confused about the build SDK. After a couple of re-installs and reboots of studio, amazingly I can run my project.
+
+Studio got stumped by my VCS root. Shit, is it so hard to realise I've checked out a project into ~/AndroidProjects? Studio alsdo creates an `android.iml` file. Not sure it's worth checking into git since I don't quite understand what it does and it looks like boiler plate to me.
+
+So I launched a 10 inch emulator trying to get that [prized screenshot for Google Play](http://s.natalian.org/2015-01-28/1422413326_1364x748.png), but [everytime I try take a shot, it's just black! :(](https://www.dropbox.com/s/m5wfspzy9i47m4w/Screenshot%202015-01-28%2010.42.17.png?dl=0)
