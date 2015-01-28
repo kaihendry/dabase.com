@@ -260,3 +260,11 @@ Gradle got confused about the build SDK. After a couple of re-installs and reboo
 Studio got stumped by my VCS root. Shit, is it so hard to realise I've checked out a project into ~/AndroidProjects? Studio alsdo creates an `android.iml` file. Not sure it's worth checking into git since I don't quite understand what it does and it looks like boiler plate to me.
 
 So I launched a 10 inch emulator trying to get that [prized screenshot for Google Play](http://s.natalian.org/2015-01-28/1422413326_1364x748.png), but [everytime I try take a shot, it's just black! :(](https://www.dropbox.com/s/m5wfspzy9i47m4w/Screenshot%202015-01-28%2010.42.17.png?dl=0)
+
+I need to create a video and do some [better screenshots](https://developer.android.com/distribute/tools/promote/device-art.html) to explain how this app works.
+
+1) Launch & lock
+* Create config using email address as an identifier
+* Confirm email on some other device
+* Add Android device to config
+* Reset button <--- not sure people realise what that little icon on the top right of the action bar is
