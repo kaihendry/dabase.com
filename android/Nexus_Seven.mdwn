@@ -238,3 +238,9 @@ describe the setup steps for an absolute beginner.
 
 I can't take a screenshot of emulator running Webconverger on a 10 inch tablet
 since my 4GB Thinkpad X220 seems physically incapable of doing so! :(
+
+# 2015-01-28
+
+Woke up to find the **com.webconverger.KioskApp** still not in the store. I think I must have marked in Alpha. Tried to re-upload straight to production tab to be told I need to increment the versioncode. After some head scratching, I found the variable to increment in <https://github.com/Webconverger/android/blob/master/app/build.gradle>.
+
+Wow, it's in! <img src=http://s.natalian.org/2015-01-28/1422408822_1364x748.png alt="First version on Webconverger for Android">
