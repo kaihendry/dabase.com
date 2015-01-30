@@ -263,8 +263,30 @@ So I launched a 10 inch emulator trying to get that [prized screenshot for Googl
 
 I need to create a video and do some [better screenshots](https://developer.android.com/distribute/tools/promote/device-art.html) to explain how this app works.
 
-1) Launch & lock
+
+1. Launch & lock
 * Create config using email address as an identifier
 * Confirm email on some other device
 * Add Android device to config
 * Reset button <--- not sure people realise what that little icon on the top right of the action bar is
+
+# 2015-01-29
+
+Oops, yesterday I did work on
+<https://github.com/Webconverger/android/commits/master>, to make the action
+bar slink away when not being used and maximise the screen to show the
+homepage.
+
+I also took a couple of videos, without thinking how awful they would look in
+portrait. So I need to redo them in landscape.
+
+I also had to retweak the signup process on
+<https://config.webconverger.com/clients/?id=foobar> since [Bootstrap's modal
+Javascript](http://getbootstrap.com/) was way too slow.  As a conseqence signup
+video walkthroughs like <https://www.youtube.com/watch?v=aAbIYAbXf5E> probably
+make no sense. :/
+
+This morning my main objective was to see the [App auto
+update](http://s.natalian.org/2015-01-30/play-update.png). It didn't. Is it
+because it's [still running?](http://s.natalian.org/2015-01-30/app-info.png) I
+ended up manually updating. :( I miss Web applications.
