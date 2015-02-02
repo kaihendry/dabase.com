@@ -2,7 +2,7 @@ So it's [[four_years|The_deprecated_SDcard]] since my last Android post. Ever
 since I was given a "free" iPhone from my workplace at the time, all those years
 ago, I decided to switch to IOS and I've been a happy camper ever since.
 
-As people will testify who know me, I not an Android fan. Usability is poor and
+As people will testify who know me, I am not an Android fan. Usability is poor and
 I'm a Java language hater. Nonetheless I've set myself a challenge to explore &
 develop a Webconverger port. The source code won't be public, though I will
 make efforts to document my efforts here.
