@@ -290,3 +290,30 @@ This morning my main objective was to see the [App auto
 update](http://s.natalian.org/2015-01-30/play-update.png). It didn't. Is it
 because it's [still running?](http://s.natalian.org/2015-01-30/app-info.png) I
 ended up manually updating. :( I miss Web applications.
+
+# 2015-02-02
+
+My object today is to streamline the <https://config.webconverger.com/> on
+boarding process for the Android device. Hopefully this will improve the PC
+signup process too.
+
+I was messing around with theming the action bar and IIUC Android 5.0 aka
+Lollipop is what I only plan to support at this point in time. Which is API
+version 21. I've just noticed this directory structure:
+
+* app/src/main/res/values-v21/styles.xml
+* app/src/main/res/values/styles.xml
+
+So I assume values-v21 is for Lollipop.... and above? Can I remove
+`app/src/main/res/values/styles.xml` since I don't plan to use it? Confusing!
+
+# 2015-02-03
+
+I upgraded my RAM on my Thinkpad X220 from 4GB to 8GB for 54SGD since my
+machine was locking up with Android Studio + Emulator.
+
+Now with 8GB it doesn't lock up, but I still [cannot get that elusive 10inch
+tablet screenshot](http://s.natalian.org/2015-02-03/nexus-10-fail.png) for the
+[Google Play
+listing](https://play.google.com/store/apps/details?id=com.webconverger.KioskApp)
+to say "Designed for Tablets". Sad. :/
