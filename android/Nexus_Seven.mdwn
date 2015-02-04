@@ -317,3 +317,14 @@ tablet screenshot](http://s.natalian.org/2015-02-03/nexus-10-fail.png) for the
 [Google Play
 listing](https://play.google.com/store/apps/details?id=com.webconverger.KioskApp)
 to say "Designed for Tablets". Sad. :/
+
+Black screenshots from the emulator, I think it's this bug: <https://code.google.com/p/android/issues/detail?id=60359>.
+
+[Asked for testers for
+webc-users](https://groups.google.com/d/msg/webc-users/qXZHvmk1Jgo/3B2lw0mnWqMJ)
+and updated the [FAQ entry on touch
+screens](http://webconverger.com/faq/#does-webconverger-support-touch-screens).
+I think there is a programatic API for changing the IME, i.e. the keyboard for
+supporting CJK locales. I'm confident Google have done a good job here and it
+would be nice for this port to support it via our existing [i18n
+API](http://webconverger.org/i18n/).
