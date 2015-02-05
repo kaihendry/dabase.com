@@ -328,3 +328,14 @@ I think there is a programatic API for changing the IME, i.e. the keyboard for
 supporting CJK locales. I'm confident Google have done a good job here and it
 would be nice for this port to support it via our existing [i18n
 API](http://webconverger.org/i18n/).
+
+# 2015-02-05
+
+Annoyingly the [Google Play listing](https://play.google.com/store/apps/details?id=com.webconverger.KioskApp) STILL says designed for phones, despite my [change yesteday](https://github.com/Webconverger/android/commit/bca4a0a03ffe8aa7a386a9c07ac0c81aa58238c9). Argh!
+
+I wonder if there is a way to get the [list of supported devices of Google
+Play](http://s.natalian.org/2015-02-05/1423099789_1364x748.png) ?
+
+Today I want to focus on hiding the version number behind a couple of clicks
+and neatening up the Action bar, as per
+<https://github.com/Webconverger/android/issues/1>
