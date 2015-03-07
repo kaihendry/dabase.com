@@ -27,3 +27,8 @@ Singtel's 500Mbps is actually 500Mbps... in one test it even went as high as
 
 Digital Ocean and GPLHost seem limited to 100Mbps and 50Mbps respectively.
 Though it's highly variable. Suck!
+
+Sidenote: Somewhat depressingly, since my landlord doesn't allow me to run
+cables from the router, I typically get just 70 Mbits/sec using Wireless AC and
+my Rpi2 with a USB Wireless-N can only seem to achieve 13 Mbits/sec... i.e. the
+final 10m is underperforming!
