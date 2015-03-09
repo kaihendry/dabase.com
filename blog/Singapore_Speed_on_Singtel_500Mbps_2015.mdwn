@@ -4,7 +4,7 @@ I configured both instances as 64bit Ubuntu since that has the `iperf` package r
 
 Here are some abbreviated typical results:
 
-	x220:~$ for i in 52.74.16.160 52.74.13.219 sgo.webconverger.com sg.webconverger.com; do iperf -c $i; sleep 1; done
+	wired-to-singtel_FG7003GRV$ for i in 52.74.16.160 52.74.13.219 sgo.webconverger.com sg.webconverger.com; do iperf -c $i; sleep 1; done
 	[  3]  0.0-10.0 sec   648 MBytes   543 Mbits/sec
 	[  3]  0.0-10.0 sec   601 MBytes   504 Mbits/sec
 	[  3]  0.0-10.0 sec  64.8 MBytes  54.2 Mbits/sec
@@ -20,7 +20,7 @@ a look at <https://webconverger.org/servers> for details.
 # My conclusions
 
 There is no difference in **Network Performance** between the _high_ of
-m3.xlarge and _low to medium_ of t2.micro.
+m3.xlarge and _low to medium_ of t2.micro at 500Mbps.
 
 Singtel's 500Mbps is actually 500Mbps... in one test it even went as high as
 542Mbps. &#128079;
@@ -29,6 +29,7 @@ Digital Ocean and GPLHost seem limited to 100Mbps and 50Mbps respectively.
 Though it's highly variable. Suck!
 
 Sidenote: Somewhat depressingly, since my landlord doesn't allow me to run
-cables from the router, I typically get just 70 Mbits/sec using Wireless AC and
-my Rpi2 with a USB Wireless-N can only seem to achieve 13 Mbits/sec... i.e. the
-final 10m is underperforming!
+cables to the router, I typically get just 70 Mbits/sec using [Wireless
+AC](http://en.wikipedia.org/wiki/IEEE_802.11ac) and my Rpi2 with a USB
+Wireless-N can only seem to achieve 13 Mbits/sec... i.e. my own internal "final
+10m" is underperforming!
