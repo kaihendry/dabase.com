@@ -15,6 +15,8 @@ documentation](https://support.google.com/chrome/), which goes on to break
 Other times, I have a particular question and I can only find an answer perhaps
 on an outdated forum. The service I am dealing with, should have the canonical
 answer on a [[FAQ that does not suck|How to create a FAQ that does not suck]].
+E.g. Does Webconverger support touch screens? Here have a look at:
+<http://webconverger.com/faq/#does-webconverger-support-touch-screens>.
 
 # Rule 2
 
