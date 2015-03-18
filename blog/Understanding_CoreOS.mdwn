@@ -28,7 +28,7 @@ CoreOS implements an automated upgrade mechanism along the lines of ChromeOS.
 Tbh I don't have experience of ChromeOS updates, though they must work. My big
 criticism of this approach is that they might as well use gitfs like
 [Webconverger uses for upgrades](http://webconverger.org/servers/). Automatic
-upgrades are the future, so big thumbs up for me here.
+upgrades are the future, so big thumbs up from me here.
 
 I'm also having a hard time understanding what CoreOS means by "base". In
 Webconverger, our [base is the entire
