@@ -1,13 +1,13 @@
-Using `ifuse` you can mount your Iphone6 as I do and archive the contents of **DCIM** your hard drive.
+Using `sudo ifuse /mnt/iphone/` you can mount your Iphone6 as I do and archive the contents of **DCIM** your hard drive.
 
-	rsync -Part . ~/media/iphone6
+	rsync -Part /mnt/iphone/DCIM ~/media/iphone6
 
 <img src=http://s.natalian.org/2015-03-23/1427077158_854x530.png>
 
 However you may find the Photos app has not detected the images have been moved, and it's not recreating the database.
 
-The workaround is to
+The workaround is to:
 
-	rm ./PhotoData/Photos.sqlite
+	rm /mnt/iphone/PhotoData/Photos.sqlite
 
-And reboot the iPhone to fix it.
+And then reboot the iPhone to fix it.
