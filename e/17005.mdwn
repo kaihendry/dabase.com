@@ -1,11 +1,12 @@
 [[!meta title="Webkit versions in Archlinux"]]
 
-* webkit2gtk (2.6.5-1) is webkit2 (current in Archlinux) - UA Safari/601.1 - **2.8.0** is current at <http://webkitgtk.org/>
-* webkitgtk2 (2.4.8-1) is webkit1 (not actively maintained since 2014) - UA Safari/537.15
+* [webkit2gtk](https://www.archlinux.org/packages/?q=webkit2gtk) (2.6.5-1) is webkit2 (current in Archlinux) - UA Safari/601.1 - **2.8.0** is current at <http://webkitgtk.org/>
+* [webkitgtk2](https://www.archlinux.org/packages/?q=webkitgtk2) (2.4.8-1) is webkit1 (not actively maintained since 2014) - UA Safari/537.15
 
 Unfortunatley the current version (early 2015) of
-[surf](http://surf.suckless.org/) is built against the older webkit1 API. There
-is a newer port `git://quinq.eu.org/surf2` however it has some issues:
+[surf](http://surf.suckless.org/) is built against the older webkit1 /
+**webkitgtk2** API. There is a newer port `git://quinq.eu.org/surf2` however it
+has some issues:
 
 * on asynchronous stuff, occasionally it hangs up
 * Also it leaks memory on webthings (don't really know which ones) related to JS
