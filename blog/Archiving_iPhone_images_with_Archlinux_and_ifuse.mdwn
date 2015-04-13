@@ -1,4 +1,6 @@
-Using `sudo ifuse /mnt/iphone/` you can mount your Iphone6 as I do and archive the contents of **DCIM** your hard drive.
+Using `sudo ifuse /mnt/iphone/` you can mount your Iphone6 as I do and archive
+the contents of **DCIM** your hard drive. Make sure you have _Personal Hotspot_
+enabled else it might not work.
 
 	rsync -Part /mnt/iphone/DCIM ~/media/iphone6
 
