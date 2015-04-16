@@ -1,0 +1,17 @@
+[[!meta title="YYYY-MM-DD in Golang"]]
+
+<http://play.golang.org/p/HnU4YjTA4b>
+
+	package main
+
+	import (
+		"fmt"
+		"time"
+	)
+
+	func main() {
+		t := time.Now().Local()
+		s := t.Format("2006-01-02")
+		fmt.Println(t, "=>", s)
+	}
+
