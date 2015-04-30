@@ -1,0 +1,10 @@
+[[!meta title="Streaming a Live Broadcast from your Webcam to your iPhone"]]
+
+	ffmpeg -f v4l2 -i /dev/video0 -f alsa -i pulse -acodec aac -strict experimental -pix_fmt yuv420p playlist.m3u8
+
+Then launch a httpd, like `python -m http.server` and share the URL, e.g. <http://192.168.6.44:8000/playlist.m3u8>
+
+Back story:
+
+* <http://stackoverflow.com/questions/2993573>
+* <https://ffmpeg.org/pipermail/ffmpeg-user/2015-April/026263.html>
