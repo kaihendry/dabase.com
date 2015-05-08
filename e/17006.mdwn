@@ -8,9 +8,11 @@
 
 Explanation:
 
-`git ls-files $file --error-unmatch` checks $file is actually in git.
+`git ls-files $file --error-unmatch` checks $file is actually in git. I make
+the assumption here that if the file is in git, then it has been already added to git-annex.
 
-`git annex metadata -t drop $file` tags the file as dropped. This is useful if I accidentally import or copy it in again.
+`git annex metadata -t drop $file` tags the file as dropped. This is useful if
+I accidentally import or copy it in again.
 
 `git rm $file` actually deletes the file
 
