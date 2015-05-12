@@ -4,7 +4,7 @@ Lets take a [REAL WORLD example of JSON
 file](http://s.natalian.org/2015-05-12/sg-bus.json) and lets have the typical
 case of sorting it by a particular value in its array.
 
-CHALLENGE: We want to find the next bus! Answer is 61 btw. :)
+Use case: We want to find the next bus! Answer is 61 btw. :)
 
 # jq / shell
 
@@ -19,6 +19,9 @@ CHALLENGE: We want to find the next bus! Answer is 61 btw. :)
 # Golang
 
 # PHP
+
+First example I have where I managed to output the same values as the original,
+just sorted aka "in place":
 
 	<?php
 
