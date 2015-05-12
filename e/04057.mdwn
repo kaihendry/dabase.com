@@ -6,9 +6,9 @@ We want to find the next bus! Answer is 67 btw. :)
 
 # jq
 
-curl -s http://s.natalian.org/2015-05-12/sg-bus.json |
-jq -r '.Services[] | [.ServiceNo, .NextBus.EstimatedArrival] | @csv' |
-sort --field-separator=',' --key=2
+	curl -s http://s.natalian.org/2015-05-12/sg-bus.json |
+	jq -r '.Services[] | [.ServiceNo, .NextBus.EstimatedArrival] | @csv' |
+	sort --field-separator=',' --key=2
 
 # javascript
 
