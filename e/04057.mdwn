@@ -1,17 +1,42 @@
-[[!meta title="Sorting a JSON by value"]]
+[[!meta title="Sorting JSON in place by a value"]]
 
-Lets take a [REAL WORLD example of JSON file](http://s.natalian.org/2015-05-12/sg-bus.json) and lets have the typical case of sorting it by a particular value in it's array.
+Lets take a [REAL WORLD example of JSON
+file](http://s.natalian.org/2015-05-12/sg-bus.json) and lets have the typical
+case of sorting it by a particular value in its array.
 
 CHALLENGE: We want to find the next bus! Answer is 61 btw. :)
 
-# jq
+# jq / shell
 
 	curl -s http://s.natalian.org/2015-05-12/sg-bus.json |
 	jq -r '.Services[] | [.ServiceNo, .NextBus.EstimatedArrival] | @csv' |
 	sort --field-separator=',' --key=2
 
-# javascript
+# Javascript
 
-# python
+# Python
 
-# golang
+# Golang
+
+# PHP
+
+	<?php
+
+	$jf = file_get_contents("http://s.natalian.org/2015-05-12/sg-bus.json");
+
+	$j =json_decode($jf);
+
+	function my_sort($a, $b) {
+		if ($a->NextBus->EstimatedArrival < $b->NextBus->EstimatedArrival) {
+			return -1;
+		} else if ($a->NextBus->EstimatedArrival > $b->NextBus->EstimatedArrival) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
+	usort($j->Services, 'my_sort');
+	echo json_encode($j, JSON_PRETTY_PRINT);
+
+	?>
