@@ -1,0 +1,18 @@
+[[!meta title="Sorting a JSON by value"]]
+
+Lets take a [REAL WORLD example of JSON file](http://s.natalian.org/2015-05-12/sg-bus.json) and lets have the typical case of sorting it by a particular value in it's array.
+
+We want to find the next bus! Answer is 67 btw. :)
+
+# jq
+
+curl -s http://s.natalian.org/2015-05-12/sg-bus.json |
+jq -r '.Services[] | [.ServiceNo, .NextBus.EstimatedArrival] | @csv' |
+sort --field-separator=',' --key=2
+
+# javascript
+
+
+# python
+
+# golang
