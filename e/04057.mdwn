@@ -2,7 +2,7 @@
 
 Lets take a [REAL WORLD example of JSON file](http://s.natalian.org/2015-05-12/sg-bus.json) and lets have the typical case of sorting it by a particular value in it's array.
 
-We want to find the next bus! Answer is 67 btw. :)
+CHALLENGE: We want to find the next bus! Answer is 61 btw. :)
 
 # jq
 
@@ -11,7 +11,6 @@ We want to find the next bus! Answer is 67 btw. :)
 	sort --field-separator=',' --key=2
 
 # javascript
-
 
 # python
 
