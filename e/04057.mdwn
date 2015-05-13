@@ -9,8 +9,7 @@ Use case: We want to find the next bus! Answer is 61 btw. :)
 # jq / shell
 
 	curl -s http://s.natalian.org/2015-05-12/sg-bus.json |
-	jq -r '.Services[] | [.ServiceNo, .NextBus.EstimatedArrival] | @csv' |
-	sort --field-separator=',' --key=2
+	jq '.Services | sort_by(.NextBus.EstimatedArrival)'
 
 # Javascript
 
