@@ -2,7 +2,7 @@
 
 Lets take a [REAL WORLD example of JSON
 file](http://s.natalian.org/2015-05-12/sg-bus.json) and lets have the typical
-case of sorting it by a particular value in its array.
+case of sorting it by a particular value in its array. The next bus's **EstimatedArrival** !
 
 Use case: We want to find the next bus! Answer is 61 btw. :)
 
@@ -16,6 +16,8 @@ Use case: We want to find the next bus! Answer is 61 btw. :)
 # Python
 
 # Golang
+
+<https://play.golang.org/p/nRqOm0-TMn> by [Zoltan Giber](https://github.com/zgiber).
 
 # PHP
 
