@@ -13,6 +13,8 @@ Use case: We want to find the next bus! Answer is 61 btw. :)
 
 # Javascript
 
+<https://jsfiddle.net/kaihendry/efctamcx/1/>
+
 # Python
 
 # Golang
