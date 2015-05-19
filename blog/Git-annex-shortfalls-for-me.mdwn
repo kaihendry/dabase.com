@@ -1,10 +1,10 @@
 <http://git-annex.branchable.com/> by my definition is a ground breaking addon
 to git to help archive / replicate and optionally add metadata to large files
-by the esteemed Joey Hess.
+by the esteemed [Joey Hess](https://joeyh.name/).
 
 It doesn't do several things which I've learnt the hard way:
 
-* doesn't play well with S3 if you care about using original filenames
+1. doesn't play well with S3 if you care about using original filenames
 * doesn't actually efficiently store your binary files or diff them
 * taxes my puny earth brain
 
