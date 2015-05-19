@@ -19,7 +19,7 @@ Slightly more compressed version: <http://codepen.io/ponyfleisch/pen/BNKrvP?edit
 
 # Python
 
-TODO: Something like `python -c "import json ; import sys; import dateutil; print sorted(json.load(sys.stdin)['Services'], key=lambda x: int(dateutil.parse(x['NextBus']['EstimatedArrival'])))"` but evidently the dateutil library in Python sucks, some comparing the iso8601 dates is actually non-trivial.
+TODO: gaqzi sez something like `python -c "import json ; import sys; import dateutil; print sorted(json.load(sys.stdin)['Services'], key=lambda x: int(dateutil.parse(x['NextBus']['EstimatedArrival'])))"` but evidently the dateutil library in Python sucks, so comparing the iso8601 dates is actually non-trivial.
 
 # Golang
 
