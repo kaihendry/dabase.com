@@ -15,7 +15,11 @@ Use case: We want to find the next bus! Answer is 61 btw. :)
 
 <https://jsfiddle.net/kaihendry/efctamcx/1/>
 
+Slightly more compressed version: <http://codepen.io/ponyfleisch/pen/BNKrvP?editors=001>
+
 # Python
+
+TODO: Something like `python -c "import json ; import sys; import dateutil; print sorted(json.load(sys.stdin)['Services'], key=lambda x: int(dateutil.parse(x['NextBus']['EstimatedArrival'])))"` but evidently the dateutil library in Python sucks, some comparing the iso8601 dates is actually non-trivial.
 
 # Golang
 
