@@ -3,6 +3,7 @@ to git to help archive / replicate and optionally add metadata to large files
 by the esteemed Joey Hess.
 
 It doesn't do several things which I've learnt the hard way:
+
 * doesn't play well with S3 if you care about using original filenames
 * doesn't actually efficiently store your binary files or diff them
 * taxes my puny earth brain
@@ -15,12 +16,12 @@ It's a large, monolothic, complex Haskell implementation. Basically you need
 the static binary release. Ideally it was just some C extending the existing
 git C code base.
 
-I still haven't managed to get it running on my arm device.
+I still haven't managed to get it running on my [alarm device](http://archpi.dabase.com/).
 
 # Making modifications to files is really difficult without replicating beforehand
 
-If you are in the school of thought of making changes in your media file and
-not externally, you will hit the problems I have with git-annex.
+If you are in the school of thought of making changes **in** your media file
+and not externally, you will hit the problems I have with git-annex.
 
 Say you want to describe your images by [adding exif
 tags](https://github.com/muennich/iptckwed) to your images, you will need
