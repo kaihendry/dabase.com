@@ -2,19 +2,21 @@ I have used Adobe Premiere, iMovie, Final Cut Pro X and a myriad of other video
 editors.
 
 I think it's possible to create a simple localhost video editor, using
-opensource software, for telling a story.
+opensource software, for telling a story. I think there are projects like
+[html5-videoEditor](https://github.com/casatt/html5-videoEditor), but I do not
+like the dependencies like MongoDB.
 
 # Basic Requirements
 
 * Replacing audio
-* Marking in and out, essentially cutting the video
-* Arranging & concatening several cut clips
+* Marking in and out, essentially trimming the video
+* Arranging & concatening several trimmed clips
 
 I don't need a ton of other features for my basic video editing flow. Besides
 many features such as colour grading & stabilisation are being offered by "the
 cloud" aka Youtube nowadays.
 
-## Cutting and concatenating the video
+## Trimming and concatenating the video
 
 Like my earlier video experiment; <http://video.geekout.org.uk>, what I imagine
 happening is listing your videos by source locations, for example:
@@ -36,16 +38,16 @@ been cut away. So you could basically make a **jump cut** quickly.
 
 Now all these edits could be described in a simple JSON file like so:
 
-	[ "filename": "gopro/104GOPRO/GOPR1685.MP4", edits: [ "00:10,734408275-00:12,047272937", "01:11,993418198-02:00,907110375" ],
-	[ "filename": "iphone6/105APPLE/IMG_5592.mp4", edits: [ "00:12,732408275-00:41,147272937", "02:11,993418198-03:00,107110375" ],
+	[ "filename": "gopro/104GOPRO/GOPR1685.MP4", edits: [ "00:00:03-00:00:08", "00:00:10-00:00:22" ],
+	[ "filename": "iphone6/105APPLE/IMG_5592.mp4", edits: [ "00:00:01-00:00:07", "00:01:00-00:01:42" ],
 
-Two filenames for example above have both been edited down to two clips.  The 8
-digits of the seconds is nanoseconds. Frame count will probably be better, but
-I am not sure if the browser exposes that.
+Two filenames for example above have both been edited/cut/trimmed down to two
+clips.
 
 Now that simply data structure can hopefully be fed into ffmpeg where it would
-make the proceeding edit and create a **final.mp4** consisting of the 4 clips
-concatenated in time order.
+[make the edits](http://stackoverflow.com/questions/18444194) and then
+concatenate to a **final.mp4** consisting of the 4 clips concatenated in time
+order.
 
 ## What about sound?
 
