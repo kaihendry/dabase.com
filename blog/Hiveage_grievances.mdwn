@@ -31,7 +31,9 @@ Leading to all sorts of potential annoyances for customers
 
 Requires 5 steps currently
 
-# No bitcoin support
+<s><h1>No bitcoin support</h1></s>
+
+I think they have support via [coinbase](https://www.hiveage.com/blog/accept-bitcoin-payments-with-coinbase/) now
 
 # No sane way to toggle options on a Web application
 
