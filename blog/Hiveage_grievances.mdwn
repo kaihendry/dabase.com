@@ -1,6 +1,10 @@
 After complaining several times about [Hiveage](https://www.hiveage.com/), I get this from support:
 
-	On a somewhat related note, are you happy with using Hiveage? It seems you haven't had the most pleasant experience with it. There won't be many changes in the way we continue to develop the service, so if it isn't the right fit for your requirements, we would encourage you to find a service that does. A happy client is way more important to us than the subscription they pay us!
+<blockquote>On a somewhat related note, are you happy with using Hiveage? It seems you
+haven't had the most pleasant experience with it. There won't be many changes
+in the way we continue to develop the service, so if it isn't the right fit for
+your requirements, we would encourage you to find a service that does. A happy
+client is way more important to us than the subscription they pay us!</blockquote>
 
 Here are some of Hiveage's shortcomings:
 
@@ -46,9 +50,11 @@ So if the quantity goes up, you have to change it in the recurring invoice, not 
 
 If I am billing a company called Acme&Acme, I like to set the order number as
 AA-1. It's a strange requirement maybe. So the next I bill Acme&Acme it
-becomes, AA-2. However Hiveage cannot copy with this and any invoice will
-appear as AA-2 as the next invoice. Until I change it manually.
+becomes, AA-2. However Hiveage cannot cope with this and any invoice will
+appear as AA-2 as the next invoice. Until I change it manually. E.g. I change
+it to ZZ-1 and then Hiveage naively goes to ZZ-2 for the next invoice.
 
 # No contacts API
 
-So I have two disperate contact lists I have to maintain. One on Hiveage and one on Fastmail.
+So I have two disperate contact lists I have to maintain. One on Hiveage and
+one on Fastmail. Very annoying.
