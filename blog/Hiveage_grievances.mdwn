@@ -1,3 +1,6 @@
+First, can I just say that Curdbee/Hiveage service has been good over the
+years. I like the product and I want to see it improve.
+
 After complaining several times about [Hiveage](https://www.hiveage.com/), I get this from support:
 
 <blockquote>On a somewhat related note, are you happy with using Hiveage? It seems you
@@ -5,6 +8,8 @@ haven't had the most pleasant experience with it. There won't be many changes
 in the way we continue to develop the service, so if it isn't the right fit for
 your requirements, we would encourage you to find a service that does. A happy
 client is way more important to us than the subscription they pay us!</blockquote>
+
+Unfortunately my feedback doesn't seem welcome.
 
 Here are some of Hiveage's shortcomings:
 
