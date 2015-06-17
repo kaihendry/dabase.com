@@ -1,7 +1,7 @@
 First, can I just say that Curdbee/Hiveage service has been good over the
 years. I like the product and I want to see it improve.
 
-After complaining several times about [Hiveage](https://www.hiveage.com/), I get this from support:
+After complaining several times about [Hiveage](https://www.hiveage.com/), I get this from support in Oct 2014:
 
 <blockquote>On a somewhat related note, are you happy with using Hiveage? It seems you
 haven't had the most pleasant experience with it. There won't be many changes
@@ -9,9 +9,12 @@ in the way we continue to develop the service, so if it isn't the right fit for
 your requirements, we would encourage you to find a service that does. A happy
 client is way more important to us than the subscription they pay us!</blockquote>
 
-Unfortunately my feedback doesn't seem welcome.
+Unfortunately my feedback doesn't seem welcome and my requests aren't logged.
 
-Here are some of Hiveage's shortcomings:
+Update: 2015-06-17 Since I blogged this, I have been told I have 7 days to
+leave the service whilst on holiday. A SaaS horror story. :(
+
+Here are some of Hiveage's shortcomings for me:
 
 # Expects me to fill in client's address customers, without prompting the customer to fill in their details.
 
@@ -51,7 +54,8 @@ You need to roll with their defaults, like for frequency of new invoices
 
 # Doesn't remember updates to invoices
 
-So if the quantity goes up, you have to change it in the recurring invoice, not the draft one...
+So if the quantity goes up, you have to change it in the recurring invoice, not
+the draft one...
 
 # Can't have order number counters specific to customer
 
