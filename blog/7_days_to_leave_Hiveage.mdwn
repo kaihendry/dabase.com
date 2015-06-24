@@ -126,9 +126,14 @@ contacts to create the invoices with. I'm downloading and linking them manually
 which is very cumbersome, I'm praying that a CardDAV API will make it this much
 easier.
 
+Late last night I update billing.webconverger.com CNAME to point to my own
+server (previously it was pointing to webc.hiveage.com) and give customers a
+message. I'm only redirecting the latest batch of outstanding invoice. I have a
+couple of days to build out to recurring billing logic.
+
 # Day 9 (Wednesday)
 
 Tried logging on and got "Invalid email or password.". Guess I am now properly
-booted off.
+booted off!
 
 <img src=http://s.natalian.org/2015-06-24/1435136433_1054x1058.png>
