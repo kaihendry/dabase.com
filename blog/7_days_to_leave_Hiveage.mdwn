@@ -81,7 +81,7 @@ online](http://s.natalian.org/2015-06-24/barclays-braintree-sg.png)! No [CVV](ht
 # Day 5/6 (weekend)
 
 Fastmail did get back to me saying that I can import the contacts into a
-seperate list if I downgrade to their classic UI, and filter by contacts not in
+separate list if I downgrade to their classic UI, and filter by contacts not in
 a group. This doesn't help me because my 1000s of contact (mixed with personal,
 exported from Gmail) are all not in a group! _Sigh_
 
@@ -126,7 +126,7 @@ payments in USD, but it looks not. So I have to
 integrate Paypal tonight... or since I'm chilled out about this... tomorrow.
 
 
-Bit dissapointed Fastmail hasn't got back to me about the BETA, or provided a
+Bit disappointed Fastmail hasn't got back to me about the BETA, or provided a
 good solution for CardDAV yet. So right now I've using badly converted VCF
 contacts to create the invoices with. I'm downloading and linking them manually
 which is very cumbersome, I'm praying that a CardDAV API will make it this much
@@ -156,9 +156,10 @@ Nonetheless my invoicing today is in tatters. There is a lot of work to do. :/
 Today I noticed the exported data is missing descriptions, rate and quantity. I
 don't believe it!!! :( :( Wrote a desperate email to Prabath.
 
-## Retriving the hash information
+## Retrieving the hash information
 
-I probably could do this with Hiveage, but since Gmail gets a copy of my Hiveage email I:
+I probably could do this with Fastmail's JSON API somehow, but since Gmail gets
+a copy of my Hiveage email I:
 
 1. Created a [filter for Hiveage](http://s.natalian.org/2015-06-24/filter-hiveage.png)
 * Create an [App password for gmail](https://security.google.com/settings/security/apppasswords)
