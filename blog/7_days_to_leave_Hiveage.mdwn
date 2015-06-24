@@ -146,3 +146,5 @@ example I didn't have a good way to cross reference how many machines were
 payed for by an individual customer, with the amount of machines that customer
 had on their Webconverger control panels. This will now be possible, so I am
 thinking the future looks good.
+
+Nonetheless my invoicing today is in tatters. There is a lot of work to do. :/
