@@ -78,7 +78,9 @@ Paypal's infamous `paypal.com/cgi-bin/webscr` API then!!
 # Day 5/6 (weekend)
 
 Fastmail did get back to me saying that I can import the contacts into a
-seperate list if I downgrade to their classic UI. _Sigh_
+seperate list if I downgrade to their classic UI, and filter by contacts not in
+a group. This doesn't help me because my 1000s of contact (mixed with personal,
+exported from Gmail) are all not in a group! _Sigh_
 
 My sister and brother in law came down and since this is a family holiday and
 left the laptop and instead was a mostly in a snappy stressful mood. Thinking
@@ -126,10 +128,10 @@ contacts to create the invoices with. I'm downloading and linking them manually
 which is very cumbersome, I'm praying that a CardDAV API will make it this much
 easier.
 
-Late last night I update billing.webconverger.com CNAME to point to my own
-server (previously it was pointing to webc.hiveage.com) and give customers a
-message. I'm only redirecting the latest batch of outstanding invoice. I have a
-couple of days to build out to recurring billing logic.
+Late last night I updated billing.webconverger.com CNAME on AWS Route53 to
+point to my own server (previously it was pointing to webc.hiveage.com) and
+give customers a message. I'm only redirecting the latest batch of outstanding
+invoices. I have a couple of days to build out some recurring billing logic.
 
 # Day 9 (Wednesday)
 
@@ -137,3 +139,10 @@ Tried logging on and got "Invalid email or password.". Guess I am now properly
 booted off!
 
 <img src=http://s.natalian.org/2015-06-24/1435136433_1054x1058.png>
+
+I'm determined to make paying invoices a better experience for customers. I'm
+determined to create a better billing system than Hiveage ever could. For
+example I didn't have a good way to cross reference how many machines actually
+payed for, with the amount of machines customers had on their Webconverger
+control panels. This will now be possible, so I am thinking the future looks
+good.
