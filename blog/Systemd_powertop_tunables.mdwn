@@ -3,15 +3,15 @@ Lennart](http://lists.freedesktop.org/archives/systemd-devel/2012-November/00744
 though here goes. Prompted by the legendary [Power regressions
 thread](https://bbs.archlinux.org/viewtopic.php?pid=1220617#p1220617).
 
-Using PowerTOP versionv2.1:
+Using PowerTOP version v2.7:
 
-	powertop -html
+	sudo powertop -r powertop.html
 
-<img width=640 height=480 src=http://s.natalian.org/2013-01-31/1359609740_1366x768.png>
+You should get a report like <http://s.natalian.org/2015-07-08/powertop.html>
 
 Use the `td:first-child { display: none; }` trick to be able to copy and paste the second column.
 
-You will get something like
+You will get something like:
 
 	iw dev wlan0 set power_save off
 	echo 'min_power' > '/sys/class/scsi_host/host0/link_power_management_policy';
@@ -22,6 +22,8 @@ You will get something like
 	echo 'auto' > '/sys/bus/pci/devices/0000:0e:00.0/power/control';
 	ethtool -s net0 wol d;
 
+Which I save into a tunables.txt, this is [mine for example](http://s.natalian.org/2015-07-08/tunables.txt).
+
 Which you need to convert like so in systemd's `/etc/tmpfiles.d/power-savings.conf`:
 
 	w /sys/class/scsi_host/host0/link_power_management_policy - - - - min_power
@@ -31,4 +33,20 @@ Which you need to convert like so in systemd's `/etc/tmpfiles.d/power-savings.co
 	w /sys/bus/usb/devices/3-1/power/control - - - - auto
 	w /sys/bus/pci/devices/0000:0e:00.0/power/control - - - - auto
 
-For `ethtool` and `iw` have a look at [Vodik's /etc/rules.d/50-network-powersave.rules](https://github.com/vodik/powersave/blob/master/rules.d/50-network-powersave.rules)
+I wrote a shell script to help me do it called <http://s.natalian.org/2015-07-08/rewrite.sh>:
+
+	cleanup() {
+		echo $1 | tr -d "';"
+	}
+	while read _ arg _ dev
+	do
+		echo w $(cleanup $dev) - - - - $(cleanup $arg)
+	done < tunables.txt
+
+Which I move into the right place like so:
+
+	x220:~/tmp/powertop$ bash rewrite.sh > /tmp/power-savings.conf
+	x220:~/tmp/powertop$ sudo mv /tmp/power-savings.conf /etc/tmpfiles.d/power-savings.conf
+
+For `ethtool` and `iw` have a look at [Vodik's
+/etc/rules.d/50-network-powersave.rules](https://github.com/vodik/powersave/blob/master/rules.d/50-network-powersave.rules).

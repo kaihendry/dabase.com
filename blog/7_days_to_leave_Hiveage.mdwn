@@ -1,6 +1,6 @@
 I'm on holiday, but I need to leave Hiveage since I'm been told to leave the
 service in this [email exchange](http://s.natalian.org/2015-06-17/7days.pdf),
-after posting <http://dabase.com/blog/Hiveage_grievances/>. :(
+after posting [[Hiveage_grievances]]. :(
 
 # Day 1 (Tuesday)
 
@@ -82,7 +82,7 @@ online](http://s.natalian.org/2015-06-24/barclays-braintree-sg.png)! No [CVV](ht
 
 Fastmail did get back to me saying that I can import the contacts into a
 separate list if I downgrade to their classic UI, and filter by contacts not in
-a group. This doesn't help me because my 1000s of contact (mixed with personal,
+a group. This doesn't help me because my 1000s of contacts (mixed with personal,
 exported from Gmail) are all not in a group! _Sigh_
 
 My sister and brother in law came down and since this is a family holiday and
