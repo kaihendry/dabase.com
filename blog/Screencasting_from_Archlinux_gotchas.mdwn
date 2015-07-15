@@ -48,7 +48,7 @@ which is unwatchable.
 # And the Linux tooling sucks
 
 To work out the optimal recording setup is a LOT OF HARD WORK. Especially since
-it can be difficult to grok the load, the **dropped frames** and the resulting FPS
+it can be difficult to grok the load, the **skipped frames** and the resulting FPS
 until you finished recording.
 
 For best results, you probably just want to record separately however combining
