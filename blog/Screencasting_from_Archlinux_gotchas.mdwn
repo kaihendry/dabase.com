@@ -1,3 +1,5 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mLJOv9a_4as" frameborder="0" allowfullscreen></iframe>
+
 This follows up from a blog on [capturing video from HDMI](http://natalian.org/2015/03/13/HDMI_in/)
 
 I've invested a lot of time, money and effort into screencasting from my
@@ -35,7 +37,7 @@ The gstreamer implementation at <https://github.com/01org/gstreamer-vaapi/blob/m
 
 	The point is that libva for encoding is incredibly annoying to use, which is the reason why no usefull implementations exist.
 
-# Without hardware accelerated H264.. prepare to drop frames. LOTS OF FRAMES
+# Without hardware accelerated H264.. prepare to SKIP FRAMES. LOTS OF FRAMES
 
 On my Broadwell Thinkpad X1C3 recording my desktop at 1920x1080 with a
 1920x1080 overlay from my GoPro via <abbr title="Video for Linux">V4L</abbr> is
@@ -44,6 +46,8 @@ a **non-starter**. Think of reducing the GoPro input to **640x480** maybe. [Samp
 Remember software encoding multiple video feeds plus audio is **EXTREMELY CPU
 INTENSIVE**. Your machine is unlikely to cope and the result will be jittery video
 which is unwatchable.
+
+Workaround: Using MKV output format LOWERS my CPU LOAD! Which Youtube actually understands without taking another step to encode it into MP4.
 
 # And the Linux tooling sucks
 
