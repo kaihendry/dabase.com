@@ -47,7 +47,7 @@ Remember software encoding multiple video feeds plus audio is **EXTREMELY CPU
 INTENSIVE**. Your machine is unlikely to cope and the result will be jittery video
 which is unwatchable.
 
-Workaround: Using MKV output format LOWERS my CPU LOAD! Which Youtube actually understands without taking another step to encode it into MP4.
+Workaround: Using MKV output format LOWERS my CPU LOAD! Which Youtube actually understands without taking [another step to encode it into MP4](https://github.com/kaihendry/recordmydesktop2.0/blob/master/htmlvideo).
 
 # And the Linux tooling sucks
 
