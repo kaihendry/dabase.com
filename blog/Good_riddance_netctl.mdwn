@@ -23,7 +23,13 @@ I now have:
 Via `journalctl -u systemd-networkd.service -f` this seems to be able to detect
 the carrier is on or off **without** ifplugd. Nice!
 
-For your DNS nameservers, you need to symlink /etc/resolv.conf to `/run/systemd/network/resolv.conf`
+## Completely optional - systemd-resolved for DNS
+
+Tbh I prefer to hard code /etc/resolv.conf with `nameserver 8.8.8.8`.
+
+However you can `sudo systemctl {run,status,enable} systemd-resolved`.  For
+your DNS nameservers, you need to symlink /etc/resolv.conf to
+`/run/systemd/network/resolv.conf`
 
 	etc$ sudo ln -sf /var/run/systemd/resolve/resolv.conf
 
@@ -56,6 +62,8 @@ and [eth0](http://s.natalian.org/2014-03-18/eth0-systemd-analyze.txt) is 3.085s.
 
 Currently I manually turn toggle wifi using my Thinkpad's wireless switch, for
 switching between wired and wireless interfaces.
+
+Update: [Guide for the Raspberry PI on Archlinux Arm (alarm)](http://archpi.dabase.com/#wireless)
 
 Acknowledgements: [WonderWoofy on the the Archlinux
 forums](https://bbs.archlinux.org/viewtopic.php?pid=1393759#p1393759)
