@@ -1,3 +1,5 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jCueB33PcTE" frameborder="0" allowfullscreen></iframe>
+
 For the last year (2013) Archlinux has been recommending users to use
 [netctl](https://wiki.archlinux.org/index.php/Netctl) to configure their
 network interfaces.
