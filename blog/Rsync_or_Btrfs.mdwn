@@ -29,5 +29,4 @@ Cons:
 
 * You need to setup the snapshotting regime
 * Complex, probably buggy and fallible (potentially dangerous)
-* You need to backup TO btrfs otherwise the diffs will be full size
 * btrfs send cannot be resumed, so if you sending a backup somewhere remote and it's interrupted... start again!
