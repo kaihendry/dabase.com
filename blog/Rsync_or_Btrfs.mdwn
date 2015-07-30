@@ -20,7 +20,7 @@ A new entrant! Is it actually ... BETTER than rsync?
 
 Pros:
 
-* A snapshot (to be backed up) can be made on boot or on poweroff, when the files aren't open
+* A snapshot (to be backed up) can be made instantly on boot or on poweroff, when the files aren't open
 * Works nicely with [systemd-nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html) so you can safely test mirrors of your filesystem
 * Easier to roll back
 * Can store more efficiently
