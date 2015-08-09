@@ -14,15 +14,15 @@ largely controlled by the Government, they just need to block the domain
 www.sarawakreport.org. To block further domain variations and IPs is quick and
 easy.
 
-However if the Sarawak report's content of the site was hosted upon Facebook
-Group, then Malaysia network administrators are in a pickle. Blocking a path of
-Facebook is not easy and impossible over HTTPS. Of course the Malaysian
-government can make a request, though that request is logged, like:
+However if the Sarawak report's content was hosted upon Facebook, then
+Malaysian network administrators cannot censor it. Blocking a URL path of
+Facebook page is not easy and impossible over HTTPS. Of course the Malaysian
+government can make a request to Facebook, though that request is logged, like:
 
 * <https://govtrequests.facebook.com/country/Malaysia/2014-H2/>
 * <http://www.google.com/transparencyreport/removals/government/MY/?hl=en>
 
-As you can see, there is much transparency. We don't know any details like who,
+As you can see, there isn't much transparency. We don't know any details like who,
 what, when. Can we assume the information was available for days or months
 before it was taken down?
 
@@ -33,6 +33,10 @@ service can maybe be a little resilient to removal requests?
 
 You could rely on your visitors accessing your site via a VPN or Tor, but both
 those options exclude anyone not computer savvy.
+
+New domains and IPs as mentioned before are easy to block and trace for that
+matter... and worse... hard to find or discover! (Nevermind cost of getting IP
+and domain registration.)
 
 ## What's opposite to `rel=canonical`?
 
