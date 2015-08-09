@@ -1,0 +1,74 @@
+[[!meta title="Side effect of centralisation WRT censorship"]]
+
+I'm no fan of massively centralised services such as Google's Youtube,
+Facebook, Twitter and Reddit, since I feel there is too much power in one
+place.
+
+Then it occurred to me that if content is hosted on any of these services (e.g.
+Amos Yee's infamous Youtube channel in Singapore), then it becomes bureaucratic
+for government to remove the content.
+
+Consider the <http://www.sarawakreport.org/> which is banned in Malaysia. Since
+[Internet in Malaysia](https://en.wikipedia.org/wiki/Internet_in_Malaysia) is
+largely controlled by the Government, they just need to block the domain
+www.sarawakreport.org. To block further domain variations and IPs is quick and
+easy.
+
+However if the Sarawak report's content of the site was hosted upon Facebook
+Group, then Malaysia network administrators are in a pickle. Blocking a path of
+Facebook is not easy and impossible over HTTPS. Of course the Malaysian
+government can make a request, though that request is logged, like:
+
+* <https://govtrequests.facebook.com/country/Malaysia/2014-H2/>
+* <http://www.google.com/transparencyreport/removals/government/MY/?hl=en>
+
+As you can see, there is much transparency. We don't know any details like who,
+what, when. Can we assume the information was available for days or months
+before it was taken down?
+
+I wonder can we assume content disagreeable to governments hosted a centralised
+service can maybe be a little resilient to removal requests?
+
+# When you host on your own... you are at a distinct disadvantage
+
+You could rely on your visitors accessing your site via a VPN or Tor, but both
+those options exclude anyone not computer savvy.
+
+## What's opposite to `rel=canonical`?
+
+When you host your own Website: `rel=canonical` is the way to tell Google do
+not index me..  `mirror.dissentdaily.com/` (a copy of some content), index
+`www.dissentdaily.com/` (authoritative)! But what happens if
+`www.dissentdaily.com/foobar` is blocked?
+
+I have never known Google to properly index a mirrored site. In the case of [The
+Pirate
+Bay](https://en.wikipedia.org/wiki/The_Pirate_Bay#Domain_blocking_by_countries),
+sites pointing to mirrors are indexed, but as mentioned earlier blocking
+domain variations and IPs is quick and easy if you control a state network,
+like a state power. Furthermore Google might be indexing sites that would be
+blocked and give a bad user experience... how would it know?
+
+## Mix in centralisation again... the cloud !
+
+I was thinking that creating a S3 bucket is fast and easy to do for a content
+publisher. For example creating
+`https://s3-ap-southeast-1.amazonaws.com/dissentdaily` would take just moments
+to do and is hard to block. Notice how the content is on the `/dissentdaily`
+path on SSL? That's practically impossible to block without breaking a lot of
+sites dependent on Amazon's S3!
+
+# So what's missing for Dissent Daily on `https://s3-ap-southeast-1.amazonaws.com/dissentdaily`?
+
+There is still a discoverability problem on Google and hence for users seeking
+that banned content. If Google could redirect to a mirror of a Website in case
+the authoritative one failed.. that would be useful for dissenters of a
+particular country. Unfortunately it doesn't do that. And obviously if it did
+that, it might be breaking local law.
+
+For my fictional example: DissentDaily.com now on
+https://s3-ap-southeast-1.amazonaws.com/dissentdaily`. Is it statically built?
+Is it using relative URL path structure? You might want to address that dear
+controversial publisher!
+
+Enough food for thought for now. Do let me know if I've missed anything.
