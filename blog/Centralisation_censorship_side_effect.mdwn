@@ -62,6 +62,8 @@ to do and is hard to block. Notice how the content is on the `/dissentdaily`
 path on SSL? That's practically impossible to block without breaking a lot of
 sites dependent on Amazon's S3!
 
+Update: Found an re-assuring blog on [Amazon's stance to privacy and security](https://blogs.aws.amazon.com/security/post/Tx35449P4T7DJIA/Privacy-and-Data), however their version of the [transparency report](http://d0.awsstatic.com/certifications/Information_Request_Report.pdf) is a bit lacking!
+
 # So what's missing for Dissent Daily on `https://s3-ap-southeast-1.amazonaws.com/dissentdaily`?
 
 There is still a discoverability problem on Google and hence a problem for
@@ -72,7 +74,7 @@ obviously if it did that, it might be breaking local law.
 
 For my fictional example: DissentDaily.com now on
 https://s3-ap-southeast-1.amazonaws.com/dissentdaily`. Is it statically built?
-Is it using relative URL path structure? Controversial publishers might want to
+Is it using **relative URL path** structure? Controversial publishers might want to
 address that.
 
 Enough food for thought for now. Do let me know if I've missed anything.
