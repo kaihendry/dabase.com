@@ -1,0 +1,36 @@
+# Problem
+
+Like some of my dear readers I maintain several
+[servers](https://webconverger.org/servers/) over the years and tbh running
+either `pacman -Syu` or `apt-get update; apt-get -u dist-upgrade` has become
+tiresome... TO SAY THE LEAST!
+
+So picking PHP as a specific example, how do you keep it up to date painlessly?
+
+Tbh I did find [CoreOS](https://coreos.com/) update functionality to work. I
+think it uses over-complex technology from ChromeOS. Caveat: I helped develop a
+update system called [git-fs](https://github.com/Webconverger/git-fs), but I've
+yet to adapt it for server environments.
+
+However the big issue with CoreOS is that the Docker image itself wasn't
+updated and tbh [[update_Docker_is_a_PITA|Docker_container_update_workflow]].
+
+# Proposed solution ... use containers
+
+So with some experience of Copy-on-Write filesystem like btrfs under my belt, I
+now know I can duplicate a rootfs cheaply.
+
+So the idea in my head is that I could have one "golden" PHP+nginx image and roll
+that out across my PHP applications using some systemd-nspawn and btrfs magic.
+
+That maintained "golden" image could and would ideally staged before rolling it
+across all Apps, to ensure stability.
+
+Is there a better way? I'm not aware of any tooling to do this, so I guess as
+usual I need to develop my own. There is also the question of maintaining the
+host system.
+
+I could and probably should use Docker for this, but I'm a bit fed up with
+Docker since it's too slow and bloated for my taste. I much prefer
+**systemd-nspawn**, however that only really works well on the rolling release
+Archlinux at this point in time.
