@@ -7,10 +7,13 @@ tiresome... TO SAY THE LEAST!
 
 So picking PHP as a specific example, how do you keep it up to date painlessly?
 
-Tbh I did find [CoreOS](https://coreos.com/) update functionality to work. I
-think it uses over-complex technology from ChromeOS. Caveat: I helped develop a
-update system called [git-fs](https://github.com/Webconverger/git-fs), but I've
-yet to adapt it for server environments.
+Tbh I did find [CoreOS update
+functionality](https://coreos.com/using-coreos/updates/) to work. There was
+some nasty surprises like random reboots, but you can override/control that. I
+think it uses somewhat over-complex technology from ChromeOS. Caveat: I helped
+develop a update system called
+[git-fs](https://github.com/Webconverger/git-fs), but I've yet to adapt it for
+server environments.
 
 However the big issue with CoreOS is that the Docker image itself wasn't
 updated and tbh [[updating_Docker_images_is_a_PITA|Docker_container_update_workflow]].
