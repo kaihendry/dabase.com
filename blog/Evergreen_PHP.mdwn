@@ -13,15 +13,15 @@ update system called [git-fs](https://github.com/Webconverger/git-fs), but I've
 yet to adapt it for server environments.
 
 However the big issue with CoreOS is that the Docker image itself wasn't
-updated and tbh [[update_Docker_is_a_PITA|Docker_container_update_workflow]].
+updated and tbh [[updating_Docker_images_is_a_PITA|Docker_container_update_workflow]].
 
-# Proposed solution ... use containers
+# Proposed solution ... using containers
 
 So with some experience of Copy-on-Write filesystem like btrfs under my belt, I
 now know I can duplicate a rootfs cheaply.
 
 So the idea in my head is that I could have one "golden" PHP+nginx image and roll
-that out across my PHP applications using some systemd-nspawn and btrfs magic.
+that out across my PHP applications using some systemd-nspawn and btrfs scripting magic.
 
 That maintained "golden" image could and would ideally staged before rolling it
 across all Apps, to ensure stability.
