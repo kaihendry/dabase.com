@@ -1,3 +1,12 @@
+What seems like years ago now, hosters like Dreamhost would offer **shared
+hosting** and they would keep PHP updated for you.
+
+This fell out of favour once vendors started to offer whole virtualised
+machines cheaply (e.g. Digital Ocean), since now you have more control to run &
+install programs that might require superuser privileges! HOWEVER that has
+lumped developers now with the headache of maintaining PHP and the rest of the
+system.
+
 # Problem
 
 Like some of my dear readers I maintain several
