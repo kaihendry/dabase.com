@@ -6,6 +6,7 @@ working. I suspect it's something to do with fonts!
 
 	sudo systemd-nspawn --setenv=DISPLAY=:0 \
 				   --setenv=XAUTHORITY=~/.Xauthority \
+				   --bind=/tmp/.X11-unix \
 				   --bind-ro=$HOME/.Xauthority:/root/.Xauthority \
 				   -D ~/containers/firefox \
 				   firefox
