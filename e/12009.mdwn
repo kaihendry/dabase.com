@@ -11,4 +11,13 @@ working. I suspect it's something to do with fonts!
 				   -D ~/containers/firefox \
 				   --network-veth -b
 
+<img src=http://s.natalian.org/2015-08-25/bbcnews.png alt="Testing pageload for BBCNEWS">
+
+To see it's network activity, assuming your container is called "firefox" like mine:
+
+	grep firefox /proc/net/dev
+	ve-firefox:  407205    2396    0    0    0     0          0         0  3732997    2814    0    0    0     0       0          0
+
+So 4 megabytes for a non-interactive Desktop session for BBC news?
+
 [Lennart warns](http://lists.freedesktop.org/archives/systemd-devel/2015-August/034006.html) that Firefox shouldn't be PID 1.
