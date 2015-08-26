@@ -4,20 +4,49 @@ Assuming you installed firefox in a container `~/containers/firefox`. On first
 run on got **Segmentation fault**s until I got [st](http://st.suckless.org/)
 working. I suspect it's something to do with fonts!
 
+# PID 1
+
+You can run Firefox as PID 1 with an invocation like:
+
 	sudo systemd-nspawn --setenv=DISPLAY=:0 \
 				   --setenv=XAUTHORITY=~/.Xauthority \
 				   --bind-ro=$HOME/.Xauthority:/root/.Xauthority \
 				   --bind=/tmp/.X11-unix \
 				   -D ~/containers/firefox \
+				   firefox
+
+However, [Lennart warns](http://lists.freedesktop.org/archives/systemd-devel/2015-August/034006.html) that Firefox shouldn't be PID 1.
+
+# Running in a booted and isolated network interface
+
+To isolate a container to its own networking interface you need to create a
+virtual Ethernet link ("veth") between host and container aka run with **-n**
+or **--network-veth**. However as I note in a [systemd-devel mailing list
+message](http://lists.freedesktop.org/archives/systemd-devel/2015-August/034013.html),
+you need to now **boot** the container in order to setup networking.
+
+	sudo systemd-nspawn --bind-ro=$HOME/.Xauthority:/root/.Xauthority \
+				   --bind=/tmp/.X11-unix \
+				   -D ~/containers/firefox \
 				   --network-veth -b
 
-<img src=http://s.natalian.org/2015-08-25/bbcnews.png alt="Testing pageload for BBCNEWS">
+Now with the style of container instatation you need to either start
+**systemd-networkd** [manually](http://s.natalian.org/2015-08-25/bbcnews.png)
+or have enabled it beforehand.
+
+I use a container networking configuration like so
+[/etc/systemd/network/80-container-host0.network](http://s.natalian.org/2015-08-26/80-container-host0.network).
+
+Now run Firefox as [Lennart suggests](http://lists.freedesktop.org/archives/systemd-devel/2015-August/034014.html) with:
+
+	sudo systemd-run -M firefox --setenv=DISPLAY=:0 firefox
 
 To see it's network activity, assuming your container is called "firefox" like mine:
 
 	grep firefox /proc/net/dev
 	ve-firefox:  407205    2396    0    0    0     0          0         0  3732997    2814    0    0    0     0       0          0
 
-So 4 megabytes for a non-interactive Desktop session for BBC news?
+So ~4 megabytes for a non-interactive Desktop session for BBC news. Notice from
+the point of view of the host, the data was transmitted - to the container!
 
-[Lennart warns](http://lists.freedesktop.org/archives/systemd-devel/2015-August/034006.html) that Firefox shouldn't be PID 1.
+That's why `/proc/net/dev`'s **Receive** and **Transmit** might be flipped around.
