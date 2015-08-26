@@ -1,34 +1,26 @@
-Assuming you are Internet connected via your wireless interface `wlan0` and you
-want to supply internet via `net0`
+My WIFI is connected to the Internet. I want share Internet with a device that doesn't have wifi via the WIRED ethernet ports.
 
-Start your DHCPd to hand out address on 192.168.0.x with the following configuration:
+Using [systemd-networkd](https://wiki.archlinux.org/index.php/Systemd-networkd) I configure `/etc/systemd/network/wifi.network` like so:
 
-		x220:~$ cat /etc/dhcpd.conf 
-		# /etc/dhcpd.conf
+	[Match]
+	Name=wl*
+	[Network]
+	DHCP=ipv4
+	LinkLocalAddressing=no
+	IPForward=ipv4
 
-		allow booting;
-		allow bootp;
+Notice **IPForward** which is key.
 
-		option domain-name-servers 8.8.8.8;
-		default-lease-time 86400;
-		max-lease-time 604800;
-		authoritative;
-		subnet 192.168.0.0 netmask 255.255.255.0 {
-		 range 192.168.0.10 192.168.0.49;
-		 filename "pxelinux.0";        # the PXELinux boot agent
-		 next-server 192.168.0.1;
-		 option subnet-mask 255.255.255.0;
-		 option broadcast-address 192.168.0.255;
-		 option routers 192.168.0.1;
-		}
+My WIRED ethernet port is configured by `/etc/systemd/network/wired.network` like so:
 
-Script it like so as root:
+	[Match]
+	Name=enp0s25
+	[Network]
+	Address=0.0.0.0/28
+	LinkLocalAddressing=no
+	DHCPServer=yes
+	IPMasquerade=yes
 
-	ifconfig net0 192.168.0.1 up
-	#/etc/rc.d/dhcp4 start  # old initscripts way
-	systemctl start dhcpd4  #systemd way
-	echo 1 > /proc/sys/net/ipv4/ip_forward
-	iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+Notice my **DHCPServer** so that the client to the network port can get an IP.
 
-
-Furthermore you can try `iptraf-ng` to monitor the bridge.
+I use this [networking technique when wire sharking](https://www.youtube.com/watch?v=tVPiIruJ7rA).
