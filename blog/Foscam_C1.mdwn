@@ -1,5 +1,7 @@
 I've bought 3 Foscam C1s. One in the UK for 53.97GBP and two in Singapore for
-100SGD each a few months later.
+100SGD each a few months later. Btw I've now noticed a new [C2 on the
+market](http://foscam.us/foscam-c2-white-indoor-hd-1080p-wireless-p2p-ip-camera.html),
+which offers 1080p over C1's 720p.
 
 Before Foscam was recommended to me, I only had experience with the
 [Y-cam](http://www.y-cam.com/) brand of IP cameras after
@@ -55,3 +57,16 @@ using on the top right.
 
 I was expecting to see a Foscam cloud service that had images and videos of
 motion alert events. To my surprise, there aren't!
+
+# Web confusion
+
+There are lots of foscam Web sites and I am still not sure which one is
+**canonical**.
+
+[foscam.us offers some worrying security advice](http://foscam.us/blog/foscamipcameras/tips-on-securing-your-foscam-camera/) [backup link](http://s.natalian.org/2015-09-06/foscam-5-steps.png). 
+
+1. install latest firmware - this is absolutely non-trivial on foscam cameras .. like where do you get the firmware?
+* never use the defaults... well the defaults are blank soo....
+* choose a long password >8 chars ... argh
+* change your default ports
+* check your logs... I have not figured this out myself
