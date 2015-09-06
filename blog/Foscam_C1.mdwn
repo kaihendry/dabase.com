@@ -27,4 +27,22 @@ be basically installing anything on your system. It could be malicious. That I
 find is completely unacceptable. You should be able to adjust settings without
 running their plugin!!
 
+## No API
 
+There is no documentated API for the C1. There are drips and drabs around the
+Internet about how to interact with the Webcam with a restful API, but a lot of
+the material is out dated or just wrong.
+
+## Lots of apps on the appstore
+
+It's hard to compare and judge the value of the zillions of Foscam Apps in the Apple Appstore.
+
+* <https://itunes.apple.com/sg/app/foscam-viewer/id740126713?mt=8> sucked
+* <https://itunes.apple.com/sg/app/foscam/id924381688?mt=8> is what I use but argh... it's painful
+
+So many bugs with it. No way to listen to audio. No sane ways to manage alerts,
+like only get them when out of the house. Often fails to connect (says it's
+OFF). Yes I have UPNP enabled.
+
+The one GOOD thing I like about the app is that it shows the bandwidth it's
+using on the top right.
