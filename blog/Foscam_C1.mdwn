@@ -19,6 +19,8 @@ little suspucious as to how it punches out of my home network.
 I access it from the odd address of <http://192.168.1.10:88/>. It has a fairly
 odd [nmap scan](http://ix.io/kDy).
 
+<img alt="no login if no plugin installed" src=http://s.natalian.org/2015-09-06/plugin-login.png>
+
 Number one annoyance is that FOSCAM'S WEB INTERFACE DOES NOT LET YOU LOGIN
 WITHOUT YOU INSTALLING THEIR PLUGIN. Yes, it's a black hole binary. You could
 be basically installing anything on your system. It could be malicious. That I
