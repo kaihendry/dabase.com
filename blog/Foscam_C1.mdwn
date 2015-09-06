@@ -30,19 +30,28 @@ running their plugin!!
 ## No API
 
 There is no documentated API for the C1. There are drips and drabs around the
-Internet about how to interact with the Webcam with a restful API, but a lot of
-the material is out dated or just wrong.
+Internet about how to interact with Foscam Webcams with a restful API, but a
+lot of the material is out dated or just wrong. Very frustrating !
+
+## FTP of SD CARD
+
+You can't seem to have both which is a shame. Also it can't upload via HTTP
+which is a sin in 2015.
 
 ## Lots of apps on the appstore
 
-It's hard to compare and judge the value of the zillions of Foscam Apps in the Apple Appstore.
+It's hard to compare and judge the value of the zillions of Foscam or Webcam Apps in the Apple Appstore.
 
 * <https://itunes.apple.com/sg/app/foscam-viewer/id740126713?mt=8> sucked
-* <https://itunes.apple.com/sg/app/foscam/id924381688?mt=8> is what I use but argh... it's painful
+* <https://itunes.apple.com/sg/app/foscam/id924381688?mt=8> is what I use but argh...
 
-So many bugs with it. No way to listen to audio. No sane ways to manage alerts,
-like only get them when out of the house. Often fails to connect (says it's
-OFF). Yes I have UPNP enabled.
+So many bugs with
+[it](https://itunes.apple.com/sg/app/foscam/id924381688?mt=8). No way to listen
+to audio. No sane way to manage alerts, like only get them when out of the
+house. Often fails to connect (says it's OFF). Yes I have UPNP enabled.
 
 The one GOOD thing I like about the app is that it shows the bandwidth it's
 using on the top right.
+
+I was expecting to see a Foscam cloud service that had images and videos of
+motion alert events. To my surprise, there aren't!
