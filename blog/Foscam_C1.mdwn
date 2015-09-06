@@ -76,7 +76,7 @@ motion alert events. To my surprise, there aren't!
 There are lots of foscam Web sites and I am still not sure which one is
 **canonical**.
 
-[foscam.us offers some worrying security advice](http://foscam.us/blog/foscamipcameras/tips-on-securing-your-foscam-camera/) [backup link](http://s.natalian.org/2015-09-06/foscam-5-steps.png).
+[foscam.us offers some worrying security advice](http://foscam.us/blog/foscamipcameras/tips-on-securing-your-foscam-camera/).. [Backup link](http://s.natalian.org/2015-09-06/foscam-5-steps.png)
 
 1. install latest firmware - this is absolutely non-trivial on foscam cameras .. like where do you get the firmware?
 * never use the defaults... well the defaults are blank soo....
