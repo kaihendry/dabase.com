@@ -1,0 +1,28 @@
+I've bought 3 Foscam C1s. One in the UK for 53.97GBP and two in Singapore for
+100SGD each a few months later.
+
+Before Foscam was recommended to me, I only had experience with the
+[Y-cam](http://www.y-cam.com/) brand of IP cameras after
+[@edent](https://twitter.com/edent) recommended them to me and Raspberry PI
+cameras.
+
+# Annoyances
+
+Hostname is blank on my ZNID24xxA-Router's DHCP Leases.
+
+Doesn't show up on `avahi-browse -alr`.
+
+To my surprise almost is doesn't seem to setup [UPnP Port Forwarding
+Rules](http://s.natalian.org/2015-09-05/1441448184_1918x1058.png), making me a
+little suspucious as to how it punches out of my home network.
+
+I access it from the odd address of <http://192.168.1.10:88/>. It has a fairly
+odd [nmap scan](http://ix.io/kDy).
+
+Number one annoyance is that FOSCAM'S WEB INTERFACE DOES NOT LET YOU LOGIN
+WITHOUT YOU INSTALLING THEIR PLUGIN. Yes, it's a black hole binary. You could
+be basically installing anything on your system. It could be malicious. That I
+find is completely unacceptable. You should be able to adjust settings without
+running their plugin!!
+
+
