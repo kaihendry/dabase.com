@@ -1,3 +1,5 @@
+<img alt="C1 image" src=http://s.natalian.org/2015-09-06/c1.jpg>
+
 I've bought 3 Foscam C1s. One in the UK for 53.97GBP and two in Singapore for
 100SGD each a few months later. Btw I've now noticed a new [C2 on the
 market](http://foscam.us/foscam-c2-white-indoor-hd-1080p-wireless-p2p-ip-camera.html),
@@ -43,8 +45,11 @@ lot of the material is out dated or just wrong. Very frustrating !
 
 ## FTP ..OR.. SD CARD
 
-You can't seem to have both which is a shame. Also it can't upload via HTTP
-which is a sin in 2015.
+You can't seem to have both which is a shame. Ideally the flow would be to save
+to SD card and upload. If upload fails, retry and with sdcard we always have a
+backup.
+
+Also it can't upload via HTTP which is a sin in 2015.
 
 ## Lots of "Foscam" apps on the appstore
 
@@ -69,7 +74,7 @@ motion alert events. To my surprise, there aren't!
 There are lots of foscam Web sites and I am still not sure which one is
 **canonical**.
 
-[foscam.us offers some worrying security advice](http://foscam.us/blog/foscamipcameras/tips-on-securing-your-foscam-camera/) [backup link](http://s.natalian.org/2015-09-06/foscam-5-steps.png). 
+[foscam.us offers some worrying security advice](http://foscam.us/blog/foscamipcameras/tips-on-securing-your-foscam-camera/) [backup link](http://s.natalian.org/2015-09-06/foscam-5-steps.png).
 
 1. install latest firmware - this is absolutely non-trivial on foscam cameras .. like where do you get the firmware?
 * never use the defaults... well the defaults are blank soo....
