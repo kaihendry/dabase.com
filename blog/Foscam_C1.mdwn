@@ -16,20 +16,20 @@ Doesn't show up on `avahi-browse -alr`. Can someone PLEASE EXPLAIN what is this 
 
 <img alt="foscam P2P address" src=http://s.natalian.org/2015-09-06/foscam-p2p.jpg>
 
-To my surprise almost is doesn't seem to setup [UPnP Port Forwarding
+To my surprise almost, the Webcam doesn't seem to setup [UPnP Port Forwarding
 Rules](http://s.natalian.org/2015-09-05/1441448184_1918x1058.png), making me a
-little suspucious as to how it punches out of my home network.
+little suspicious as to how it punches out of my home network.
 
-I access it from the odd address of <http://192.168.1.10:88/>. It has a fairly
-odd [nmap scan](http://ix.io/kDy).
+I access it from the odd address of <http://192.168.1.10:88/> (port eighty
+eight). It has a fairly odd [nmap scan](http://ix.io/kDy).
 
 <img alt="no login if no plugin installed" src=http://s.natalian.org/2015-09-06/plugin-login.png>
 
 Number one annoyance is that FOSCAM'S WEB INTERFACE DOES NOT LET YOU LOGIN
-WITHOUT YOU INSTALLING THEIR PLUGIN. Yes, it's a black hole binary. You could
-be basically installing anything on your system. It could be malicious. That I
-find is completely unacceptable. You should be able to adjust settings without
-running their plugin!!
+WITHOUT YOU INSTALLING THEIR PLUGIN. Yes, it's a black hole of an untrusted
+proprietary binary. You could be basically installing anything on your system.
+It could be malicious. That I find is completely unacceptable. You should be
+able to adjust Webcam settings without running their plugin!!
 
 ## Doesn't sync ntp time by default
 
@@ -37,16 +37,16 @@ What on earth... why?? Time should always be correct. Except on this Foscam, by 
 
 ## No API
 
-There is no documentated API for the C1. There are drips and drabs around the
+There is no documented API for the C1. There are drips and drabs around the
 Internet about how to interact with Foscam Webcams with a restful API, but a
 lot of the material is out dated or just wrong. Very frustrating !
 
-## FTP of SD CARD
+## FTP ..OR.. SD CARD
 
 You can't seem to have both which is a shame. Also it can't upload via HTTP
 which is a sin in 2015.
 
-## Lots of apps on the appstore
+## Lots of "Foscam" apps on the appstore
 
 It's hard to compare and judge the value of the zillions of Foscam or Webcam Apps in the Apple Appstore.
 
