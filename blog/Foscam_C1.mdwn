@@ -12,7 +12,9 @@ cameras.
 
 Hostname is blank on my ZNID24xxA-Router's DHCP Leases.
 
-Doesn't show up on `avahi-browse -alr`.
+Doesn't show up on `avahi-browse -alr`. Can someone PLEASE EXPLAIN what is this P2P address and how can I peer or at least discover it?!
+
+<img alt="foscam P2P address" src=http://s.natalian.org/2015-09-06/foscam-p2p.jpg>
 
 To my surprise almost is doesn't seem to setup [UPnP Port Forwarding
 Rules](http://s.natalian.org/2015-09-05/1441448184_1918x1058.png), making me a
@@ -28,6 +30,10 @@ WITHOUT YOU INSTALLING THEIR PLUGIN. Yes, it's a black hole binary. You could
 be basically installing anything on your system. It could be malicious. That I
 find is completely unacceptable. You should be able to adjust settings without
 running their plugin!!
+
+## Doesn't sync ntp time by default
+
+What on earth... why?? Time should always be correct. Except on this Foscam, by default.. it isn't!
 
 ## No API
 
