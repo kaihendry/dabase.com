@@ -64,7 +64,9 @@ to audio. No sane way to manage alerts, like only get them when out of the
 house. Often fails to connect (says it's OFF). Yes I have UPNP enabled.
 
 The one GOOD thing I like about the app is that it shows the bandwidth it's
-using on the top right.
+using on the top right:
+
+<img alt="screenshot of viewing the Webcam from an iPhone6" src=http://s.natalian.org/2015-09-06/webcam-via-app.jpg>
 
 I was expecting to see a Foscam cloud service that had images and videos of
 motion alert events. To my surprise, there aren't!
