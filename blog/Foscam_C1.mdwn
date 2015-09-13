@@ -1,3 +1,5 @@
+NOT RECOMMENDED: Requires a [plugin to be installed](http://s.natalian.org/2015-09-13/plugins-foscam-c1.png) in order to edit settings in their Web interface
+
 <img alt="C1 image" src=http://s.natalian.org/2015-09-06/c1.jpg>
 
 I've bought 3 Foscam C1s. One in the UK for 53.97GBP and two in Singapore for
