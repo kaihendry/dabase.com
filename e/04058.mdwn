@@ -1,0 +1,20 @@
+[[!meta title="AH01144: No protocol handler was valid for the URL /"]]
+
+I spend an hour over this confusing error message and I hope this will save
+you some time!
+
+	<VirtualHost *:80>
+		ServerName gt.dabase.com
+		ProxyPass / https://localhost:81/
+		ProxyPassReverse / https://localhost:81/
+	</VirtualHost>
+
+What's the issue?! SSL! Your Docker container is probably not listening off SSL. The fix:
+
+	<VirtualHost *:80>
+		ServerName gt.dabase.com
+		ProxyPass / https://localhost:81/
+		ProxyPassReverse / https://localhost:81/
+	</VirtualHost>
+
+
