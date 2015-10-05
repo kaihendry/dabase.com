@@ -1,3 +1,6 @@
+<blockquote cite="http://lwn.net/Articles/658198/">As a result, we can, unfortunately, expect to continue to be subjected to surveillance and criminal behavior from the devices that we think we own. We can't say we weren't warned.</blockquote>
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6G1iGSypZGk" frameborder="0" allowfullscreen></iframe>
 
 NOT RECOMMENDED: Requires a [plugin to be installed](http://s.natalian.org/2015-09-13/plugins-foscam-c1.png) in order to edit settings in their Web interface
