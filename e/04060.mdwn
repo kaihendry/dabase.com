@@ -1,0 +1,15 @@
+[[!meta title="Protected dir listing on Apache 2.4"]]
+
+We only password protect directories here since IOS Safari seems to prompt on every URL:
+
+	<Files .>
+	AuthType Digest
+	AuthName "cam"
+	AuthBasicProvider file
+	AuthUserFile "/etc/httpd/digest-password"
+	Require valid-user
+	</Files>
+
+Fix for mobile devices:
+
+	IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
