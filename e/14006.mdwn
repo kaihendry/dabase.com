@@ -1,0 +1,7 @@
+[[!meta title="Installing AWS on Archlinux"]]
+
+The AUR package sucks.
+
+	x220:~$ aws --version
+	aws-cli/1.4.4 Python/3.4.1 Linux/3.16.3-1-ARCH
+	x220:~$ sudo pip install --upgrade awscli
