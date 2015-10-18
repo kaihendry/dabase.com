@@ -1,0 +1,4 @@
+[[!meta title="Viewing systemd logs from the Web"]]
+
+	sudo systemctl start systemd-journal-gatewayd
+	xdg-open http://localhost:19531/browse
