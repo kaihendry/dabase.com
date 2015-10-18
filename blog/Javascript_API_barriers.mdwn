@@ -3,9 +3,11 @@ publishes data about **air quality** in a machine readable format aka an "API".
 
 Currently they publish it with a key, For example:
 
-	http://www.nea.gov.sg/api/WebAPI?dataset=psi_update&keyref=A_REALLY_REALLY_LONG_KEY
+	http://www.nea.gov.sg/api/WebAPI?dataset=psi_update&keyref=${NEAAUTHORIZATION-KEY}
 
-The actual current [XML payload](http://s.natalian.org/2015-10-18/NEA_PSI_XML_API_EXAMPLE.txt) is worthy of a blog in itself. It has **numerous issues**.
+The actual current [XML
+payload](http://s.natalian.org/2015-10-18/NEA_PSI_XML_API_EXAMPLE.txt) is
+worthy of a blog in itself. It has **numerous issues**.
 
 Firstly, why do they need a key? You can control access to an API by
 **Access-Control-Allow-Origin**, maybe the referrer or IP if access is a
