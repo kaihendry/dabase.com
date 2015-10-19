@@ -30,11 +30,15 @@ Now you should see an XML listing like:
 	</Contents>
 	</ListBucketResult>
 
-If not, perhaps you are missing the <a href="http://s.natalian.org/2013-09-12/s3-permissions.png">**Everyone** **List** permission</a>.
+If not, perhaps you are missing the `aws s3api put-bucket-acl --bucket archpi.dabase.com --acl public-read` listing permission.
 
 You're not limited to 1k objects. Attach ?max-keys=2147483647 to get more. If
 `<IsTruncated>` is still True, one strategy is to break results down by
 specifying first letter of path by attaching ?prefix=a, ?prefix=b.... etc.
+
+Fetch first give objects on the day **2015-10-12** providing that's how you store your objects (HINT: prefix with YYYY-MM-DD is a good idea)
+
+	curl -s 'http://c.prazefarm.co.uk.s3.amazonaws.com?max-keys=5&prefix=2015-10-12' | xml sel -N w="http://s3.amazonaws.com/doc/2006-03-01/" -T -t -m "//w:Key" -o "${s3url%/}/" -v . -n
 
 You can download all the resources with a bit of `xmlstarlet` magic like so: <https://github.com/kaihendry/s3listing/blob/master/listing.sh>
 
