@@ -11,12 +11,10 @@ worthy of a blog in itself. It has **numerous issues**.
 
 Firstly, why do they need a key? You can control access to an API by
 **Access-Control-Allow-Origin**, maybe the referrer or IP if access is a
-problem. And why would access be a problem? The load on an API is far lower
-than a Website since the API is a fraction of the size & far more efficient.
+problem.
 
-I am assuming the key must be kept secret, so that means that static Web
-applications cannot use the key directly for fear that the secret key is
-exposed, isn't that correct?
+And why would access be a problem? The load on an API is far lower than a
+Website since the API is a fraction of the size & far more efficient.
 
 So please correct me if I am wrong, the current access the NEA PSI API is limited by:
 
@@ -24,4 +22,6 @@ So please correct me if I am wrong, the current access the NEA PSI API is limite
 * Limits the API use to server side only, which is far more complex to deploy to than a [simple static JS app](https://github.com/kaihendry/myhaze)
 
 These are artificial barriers to entry that should be removed to streamline a
-"smart nation" that's capitalising on information.
+"smart nation" that's capitalising on information. Please **do NOT use API keys**.
+
+UPDATE: The workaround is something [like this](https://github.com/kaihendry/jbsg/blob/master/nsg.php) which took me longer to code than I would like to admit. :(
