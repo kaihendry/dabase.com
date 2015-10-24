@@ -1,4 +1,5 @@
 [[!meta title="How to validate systemd service file"]]
 
-	X1C3:/etc/systemd/system$ sudo vim chrome.service
-	X1C3:/etc/systemd/system$ sudo systemd-analyze verify chrome.service
+Check or lint a service for syntax errors!
+
+	sudo systemd-analyze verify foobar.service
