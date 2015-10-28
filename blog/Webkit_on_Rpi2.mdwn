@@ -1,9 +1,9 @@
 Since creating a [Webconverger Rpi2 port](https://webconverger.org/rpi2/) based
-upon [Archlinux-Arm](http://archlinuxarm.org/) I've run into the issue whereby
+upon [Archlinux-Arm](http://archlinuxarm.org/) (Alarm) I've run into the issue whereby
 Webkit2 stops working after an upgrade.
 
 The canonical issue is raised upon
-<https://bugs.webkit.org/show_bug.cgi?id=143817>, since the [Archlinux Arm
+<https://bugs.webkit.org/show_bug.cgi?id=143817>, since the [Alarm
 project say its an upstream
 issue](http://archlinuxarm.org/forum/viewtopic.php?f=60&t=8740&p=46442).
 
@@ -13,7 +13,7 @@ Rpi2](http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2)!
 # Does Webkit2 work on Raspbian? Yes... but
 
 So upon [Webkit2](http://webkitgtk.org/) the Stable tarball is WebKitGTK+
-**2.10.3**. Archlinux's [webkit2gtk is good at being
+**2.10.3**. Alarm's [webkit2gtk is good at being
 current](https://github.com/archlinuxarm/PKGBUILDs/blob/master/extra/webkit2gtk/PKGBUILD), however Debian's packaging is a bit odd.
 
 Firstly their package is called **libwebkitgtk-3.0-0**. The source package from
@@ -41,3 +41,8 @@ don't understand where the patches come from. `debian/copyright` or
 I don't have a sane build system for **ARMv7h**. I can't try different compiler
 flags and what not since my only build system is the embedded board itself
 which takes DAYS to build.
+
+# Help
+
+I'm stuck. I want a current Webkit version on an Arm board please. Please help
+me get out of this rut. Btw I am testing with [surf2](http://git.suckless.org/surf/log/?h=surf2).
