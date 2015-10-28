@@ -3,8 +3,8 @@ upon [Archlinux-Arm](http://archlinuxarm.org/) I've run into the issue whereby
 Webkit2 stops working after an upgrade.
 
 The canonical issue is raised upon
-<https://bugs.webkit.org/show_bug.cgi?id=143817> since the [Archlinux Arm
-project think its an upstream
+<https://bugs.webkit.org/show_bug.cgi?id=143817>, since the [Archlinux Arm
+project say its an upstream
 issue](http://archlinuxarm.org/forum/viewtopic.php?f=60&t=8740&p=46442).
 
 **THE MISSION**: Get Webkit2 working on the [Alarm
