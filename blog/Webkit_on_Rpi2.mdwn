@@ -1,0 +1,43 @@
+Since creating a [Webconverger Rpi2 port](https://webconverger.org/rpi2/) based
+upon [Archlinux-Arm](http://archlinuxarm.org/) I've run into the issue whereby
+Webkit2 stops working after an upgrade.
+
+The canonical issue is raised upon
+<https://bugs.webkit.org/show_bug.cgi?id=143817> since the [Archlinux Arm
+project think its an upstream
+issue](http://archlinuxarm.org/forum/viewtopic.php?f=60&t=8740&p=46442).
+
+**THE MISSION**: Get Webkit2 working on the [Alarm
+Rpi2](http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2)!
+
+# Does Webkit2 work on Raspbian? Yes... but
+
+So upon [Webkit2](http://webkitgtk.org/) the Stable tarball is WebKitGTK+
+**2.10.3**. Archlinux's [webkit2gtk is good at being
+current](https://github.com/archlinuxarm/PKGBUILDs/blob/master/extra/webkit2gtk/PKGBUILD), however Debian's packaging is a bit odd.
+
+Firstly their package is called **libwebkitgtk-3.0-0**. The source package from
+where it is built from is confusingly called **webkitgtk** and their current
+version at time of writing is **2.4.8-2+rpi1**, which is about 6 months old.
+
+After grabbing the source, you can see a scary amount of patches. [314](http://ix.io/lF0) to be exact.
+
+	pi@raspberrypi ~/webkitgtk-2.4.1/debian/patches/rpi $ ls -1 *.patch | wc -l
+	314
+
+So one of these patches probably might make **Webkit2** work on **ARMv7h**.
+Well... actually I am not confident at all since I know for a fact
+**webkit2gtk-2.6.5-1** works fine in [Webconverger's Rpi2
+port](https://webconverger.org/rpi2/), and Raspbian's **heavily patched**
+version is _2.4.8_... which is older!
+
+My next step now is to contact <https://www.collabora.com/> since I actually
+don't understand where the patches come from. `debian/copyright` or
+`debian/source/` didn't yield any clues. I can't see the patches from
+<https://git.collabora.com/cgit/raspberry-pi/WebKit.git/>. Maybe I'm blind.
+
+# Building
+
+I don't have a sane build system for **ARMv7h**. I can't try different compiler
+flags and what not since my only build system is the embedded board itself
+which takes DAYS to build.
