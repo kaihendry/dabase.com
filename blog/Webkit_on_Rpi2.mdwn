@@ -10,6 +10,8 @@ issue](http://archlinuxarm.org/forum/viewtopic.php?f=60&t=8740&p=46442).
 **THE MISSION**: Get Webkit2 working on the [Alarm
 Rpi2](http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2)!
 
+<img src=http://s.natalian.org/2015-10-29/Pi2ModB1GB_-comp.webp alt="Rpi2">
+
 # Does Webkit2 work on Raspbian? Yes... but without hardware acceleration for compositing
 
 So upon [Webkit2](http://webkitgtk.org/) the Stable tarball is WebKitGTK+
@@ -33,7 +35,7 @@ port](https://webconverger.org/rpi2/), and Raspbian's **heavily patched**
 version is _2.4.8_... which is older!
 </s>
 
-**libwebkit2gtk-4.0-37** and the source package **webkit2gtk** of version
+[Raspbian](https://www.raspbian.org/)'s **libwebkit2gtk-4.0-37** and the source package **webkit2gtk** of version
 2.9.3, which is newer than the last known Webkit2 in Alarm, **2.6.5**.
 
 Here there are **thankfully** only 12 patches (down from 314):
@@ -68,6 +70,6 @@ finished.
 # The future for Webkit on Rpi2
 
 It doesn't look promising in the short term. Emanuele added on 2015-10-07 that
-it looks like [one or two years from having a GL implementation we can rely
+it looks like [**one or two years** from having a GL implementation we can rely
 on](https://bugs.webkit.org/show_bug.cgi?id=147258) on the Broadcom based
 Raspberry Pi platform ! :(
