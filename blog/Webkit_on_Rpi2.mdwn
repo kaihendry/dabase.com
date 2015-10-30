@@ -10,7 +10,7 @@ issue](http://archlinuxarm.org/forum/viewtopic.php?f=60&t=8740&p=46442).
 **THE MISSION**: Get Webkit2 working on the [Alarm
 Rpi2](http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2)!
 
-<img src=http://s.natalian.org/2015-10-29/Pi2ModB1GB_-comp.webp alt="Rpi2">
+<img style="max-height: calc(100vh - 260px);" src=http://s.natalian.org/2015-10-29/Pi2ModB1GB_-comp.webp alt="Rpi2">
 
 # Does Webkit2 work on Raspbian? Yes... but without hardware acceleration for compositing
 
