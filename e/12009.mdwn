@@ -1,7 +1,7 @@
 [[!meta title="Running Firefox in a systemd-nspawn container"]]
 
 Assuming you installed firefox in a container `~/containers/firefox`. On first
-run on got **Segmentation fault**s until I got [st](http://st.suckless.org/)
+run I had **Segmentation fault**s until I got [st](http://st.suckless.org/)
 working. I suspect it's something to do with fonts!
 
 # PID 1
