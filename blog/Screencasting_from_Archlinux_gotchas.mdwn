@@ -1,3 +1,5 @@
+## Update: I now use [obs-studio](https://obsproject.com/) for my [videos](https://www.youtube.com/user/kaihendry)!
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mLJOv9a_4as" frameborder="0" allowfullscreen></iframe>
 
 This follows up from a blog on [capturing video from HDMI](http://natalian.org/2015/03/13/HDMI_in/)
