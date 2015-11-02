@@ -73,13 +73,15 @@ So the Rpi2 which is a Arm7 board differs say to the
 [ODROID-XU4](http://archlinuxarm.org/platforms/armv7/samsung/odroid-xu4)
 because it uses the [Broadcom
 VideoCore](http://archlinuxarm.org/platforms/armv7/samsung/odroid-xu4) GPU
-instead of the ARM reference GL hardware called
-[Mali](https://en.wikipedia.org/wiki/Mali_(GPU)).
+instead of the ARM reference GL hardware called <a
+href=https://en.wikipedia.org/wiki/Mali_(GPU)>Mali</a>.
 
 Obviously a Archlinux Arm7 package for Webkit2 with `-DENABLE_OPENGL=OFF` would
-be detrimnetal to working GL implementations like Mali, so at this present time
-the [package PKGBUILD](https://github.com/archlinuxarm/PKGBUILDs/issues/1155)
-is unlikely to be fixed for Rpi2!
+be detrimental to working GL implementations like Mali, so at this present time
+the Alarm [package
+PKGBUILD](https://github.com/archlinuxarm/PKGBUILDs/issues/1155) is unlikely to
+be fixed for Rpi2! Since the fix would disable GL working acceleration for the
+likes of ODROID-XU4 and make them slow!
 
 I asked Emanuele Aina about the possibility of fallback within Webkit runtime
 itself and not a build switch and he said there is a
