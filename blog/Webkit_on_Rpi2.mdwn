@@ -67,6 +67,26 @@ accelerated composition at all**. Emanuele is working upon a [software only
 compositor](https://bugs.webkit.org/show_bug.cgi?id=147258), but it's far from
 finished.
 
+# Workaround that breaks accelerated composition for everyone else
+
+So the Rpi2 which is a Arm7 board differs say to the
+[ODROID-XU4](http://archlinuxarm.org/platforms/armv7/samsung/odroid-xu4)
+because it uses the [Broadcom
+VideoCore](http://archlinuxarm.org/platforms/armv7/samsung/odroid-xu4) GPU
+instead of the ARM reference GL hardware called
+[Mali](https://en.wikipedia.org/wiki/Mali_(GPU)).
+
+Obviously a Archlinux Arm7 package for Webkit2 with `-DENABLE_OPENGL=OFF` would
+be detrimnetal to working GL implementations like Mali, so at this present time
+the [package PKGBUILD](https://github.com/archlinuxarm/PKGBUILDs/issues/1155)
+is unlikely to be fixed for Rpi2!
+
+I asked Emanuele Aina about the possibility of fallback within Webkit runtime
+itself and not a build switch and he said there is a
+`WebCore::Settings::setAcceleratedCompositingEnabled()` setting but he has had
+issues with it. There needs to be a custom check, though since he works on
+Raspbian, he may not find time to implement it. :(
+
 # The future for Webkit on Rpi2
 
 It doesn't look promising in the short term. Emanuele added on 2015-10-07 that
