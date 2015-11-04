@@ -44,7 +44,7 @@ Of course you would need to modify this for your IRC channel and $USER too.
 
 	[Service]
 	ConditionPathExists=/home/hendry/irc/irc.freenode.net/#hackerspacesg/out
-	# This is important for it to find it's template
+	# This is important for it to find its template
 	WorkingDirectory=/home/hendry/tmp/gotail
 	ExecStart=/home/hendry/tmp/gotail/gotail /home/hendry/irc/irc.freenode.net/#hackerspacesg/out
 	Restart=on-failure
@@ -52,3 +52,6 @@ Of course you would need to modify this for your IRC channel and $USER too.
 
 	[Install]
 	WantedBy=multi-user.target
+
+Edit & test them out (start and status systemctl cycles!) and once you are
+happy, the final test is to `sudo systemctl enable ii gotail` and reboot!
