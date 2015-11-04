@@ -2,13 +2,16 @@ Upon <http://irc.dabase.com/> I log the <irc://irc.freenode.net/hackerspacesg>
 channel.
 
 To do this you will need:
-* an always connected VPS with systemd
+
+1. an always connected VPS with systemd
 * [ii](http://tools.suckless.org/ii/) suckless IRC client
 * [gotail](https://github.com/kaihendry/gotail)
 
 # systemd service files
 
 ## ii
+
+Which would live at `/etc/systemd/system/ii.service`
 
 	[Unit]
 	Description=IRC logger
@@ -27,6 +30,8 @@ To do this you will need:
 	WantedBy=multi-user.target
 
 ## gotail
+
+Which would live at `/etc/systemd/system/gotail.service`
 
 Of course you would need to modify this for your IRC channel and $USER too.
 
