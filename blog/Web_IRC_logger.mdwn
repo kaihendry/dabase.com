@@ -1,5 +1,7 @@
-Upon <http://irc.dabase.com/> I log the <irc://irc.freenode.net/hackerspacesg>
-channel.
+Upon <http://irc.dabase.com/> I log the `irc://irc.freenode.net/hackerspacesg`
+IRC channel. I implemented this as **minimal** as possible! It's not an
+archive, it's just to see what's the latest chitter chatter for a [community
+sign board](http://frame.dabase.com/).
 
 To do this you will need:
 
