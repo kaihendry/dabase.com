@@ -1,0 +1,47 @@
+Upon <http://irc.dabase.com/> I log the <irc://irc.freenode.net/hackerspacesg>
+channel.
+
+To do this you will need:
+* an always connected VPS with systemd
+* [ii](http://tools.suckless.org/ii/) suckless IRC client
+* [gotail](https://github.com/kaihendry/gotail)
+
+# systemd service files
+
+## ii
+
+	[Unit]
+	Description=IRC logger
+	# Start once network is up
+	After=network.target
+
+	[Service]
+	# NOTE CHANGE hendry to your $USER
+	User=hendry
+	ExecStart=/home/hendry/tmp/ii/ii -s irc.freenode.net -n iilogbot
+	# Join the channel
+	ExecStartPost=/bin/bash -c 'sleep 5 && echo "/join #hackerspacesg" > /home/hendry/irc/irc.freenode.net/in'
+	Restart=on-failure
+
+	[Install]
+	WantedBy=multi-user.target
+
+## gotail
+
+Of course you would need to modify this for your IRC channel and $USER too.
+
+	[Unit]
+	Description=Log IRC to the browser
+	After=ii.service
+	Requires=ii.service
+
+	[Service]
+	ConditionPathExists=/home/hendry/irc/irc.freenode.net/#hackerspacesg/out
+	# This is important for it to find it's template
+	WorkingDirectory=/home/hendry/tmp/gotail
+	ExecStart=/home/hendry/tmp/gotail/gotail /home/hendry/irc/irc.freenode.net/#hackerspacesg/out
+	Restart=on-failure
+	RestartSec=10s
+
+	[Install]
+	WantedBy=multi-user.target
