@@ -1,13 +1,13 @@
 Upon <http://irc.dabase.com/> I log the `irc://irc.freenode.net/hackerspacesg`
-IRC channel. I implemented this as **minimal** as possible! It's not an
-archive, it's just to see what's the latest chitter chatter for a [community
-sign board](http://frame.dabase.com/).
+IRC channel. I implemented this as **minimal** as possible! It's **not an
+archive**, it's just to see what's the latest _chitter chatter_ for a
+[community sign board](http://frame.dabase.com/).
 
 To do this you will need:
 
-1. an always connected VPS with systemd
-* [ii](http://tools.suckless.org/ii/) suckless IRC client
-* [gotail](https://github.com/kaihendry/gotail)
+1. an always connected VPS with systemd (I use Archlinux upon an AWS EC2 micro instance)
+* [ii suckless IRC client](http://tools.suckless.org/ii/) since it's filesystem-based!
+* [gotail](https://github.com/kaihendry/gotail) to take the file and stream it to browser using [SSE](https://en.wikipedia.org/wiki/Server-sent_events)
 
 # systemd service files
 
