@@ -60,12 +60,14 @@ VPN and everything is OK.
 
 # Word about network accounting
 
-To see it's network activity, assuming your container is called "firefox" like mine:
+Assuming your container is called "firefox" like mine:
 
 	grep firefox /proc/net/dev
 	ve-firefox:  407205    2396    0    0    0     0          0         0  3732997    2814    0    0    0     0       0          0
 
-So ~4 megabytes for a non-interactive Desktop session for BBC news. Notice from
-the point of view of the host, the data was transmitted - to the container!
+So ~4 megabytes for a non-interactive Desktop session for BBC news.
+Notice from the point of view of the host, the data was transmitted -
+to the container!
 
-That's why `/proc/net/dev`'s **Receive** and **Transmit** might be flipped around.
+That's why `/proc/net/dev`'s **Receive** and **Transmit** might be
+flipped around.
