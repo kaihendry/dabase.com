@@ -73,3 +73,5 @@ Sadly [msmtp](http://msmtp.sourceforge.net/) is harder to debug and suffers from
 
 	send-mail: server message: 554 Transaction failed: Missing final '@domain'
 	send-mail: could not send mail (account default from /etc/msmtprc)
+
+Update: A good answer to getting mail to one address is the [sed rewrite suggestion in /usr/sbin/sendmail](http://sourceforge.net/p/msmtp/mailman/message/34627361/)
