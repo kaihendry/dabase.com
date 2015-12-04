@@ -14,4 +14,6 @@ it's simply `sg.dabase.com`.
 `192.168.x.x` address inside a NAT. To address it in a LAN it's simply
 `X1C3.local` since all the devices on my LAN run
 [Avahi/Zeroconf/Bonjour/mDNS](https://wiki.archlinux.org/index.php/Avahi#Hostname_resolution)
-hostname resolution.
+hostname resolution. You cannot connect to it from anywhere on the Internet.
+However if you are in the same LAN/vicinity/network as I am, you should be able
+to explore my Web apps off `http://X1C3.local/`.
