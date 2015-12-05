@@ -12,7 +12,7 @@ it's simply `sg.dabase.com`.
 
 `X1C3` is my laptop. It's not online all the time. It's usually on a
 `192.168.x.x` address inside a NAT. To address it in a LAN it's simply
-`X1C3**.local**` since all the devices on my LAN run
+`X1C3.local` since all the devices on my LAN run
 [Avahi/Zeroconf/Bonjour/mDNS](https://wiki.archlinux.org/index.php/Avahi#Hostname_resolution)
 hostname resolution.
 You cannot connect to it from anywhere on the Internet.
@@ -21,7 +21,7 @@ to explore my Web apps off `http://X1C3.local/`.
 
 # Issues
 
-## How to test hostname that it's a remote or local machine?
+## How to test hostname if it's a remote or local machine?
 
 In shell it could be:
 
