@@ -2,7 +2,7 @@ Set up <https://aws.amazon.com/ses/> with a [verified
 email](http://s.natalian.org/2015-11-10/1447139043_1150x1058.png) so that it
 can send as that address and only to that address.
 
-I tested both **ssmtp* and **mstmp** !
+I tested both **ssmtp** and **mstmp** !
 
 # /etc/ssmtp/ssmtp.conf
 
