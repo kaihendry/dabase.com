@@ -1,21 +1,8 @@
-So I thought it was prude to establish reliable `mail()` functionality from my
-various servers I administer.
-
-First step was choose a name of VPS. I chose "rojak".
-
-I setup a domain alias at Fastmail.fm so I can receive the emails to that address.
-
-I then set up <https://aws.amazon.com/ses/> with a [verified
+Set up <https://aws.amazon.com/ses/> with a [verified
 email](http://s.natalian.org/2015-11-10/1447139043_1150x1058.png) so that it
-could send as that address.
+can send as that address and only to that address.
 
-Caveat: You are only able to send mail to that email address to. So for example
-if you had foo@example.com verified, you can only send to and from that
-address!
-
-So now I needed a dumb mailer. My new VPS is Fedora 23 and the usual candidates
-of [msmtp](http://msmtp.sourceforge.net/) & Debian's
-[ssmtp](https://wiki.debian.org/sSMTP).
+I tested both **ssmtp* and **mstmp** !
 
 # /etc/ssmtp/ssmtp.conf
 
@@ -29,29 +16,6 @@ of [msmtp](http://msmtp.sourceforge.net/) & Debian's
 	TLS_CA_File=/etc/pki/tls/certs/ca-bundle.crt
 	AuthMethod=LOGIN
 	Debug=YES
-
-	echo testing | mail -s foobar root
-	[root@rojak ssmtp]# send-mail: 554 Transaction failed: Missing final '@domain'
-
-The final line of my `/etc/aliases` says
-
-	root:           foo@example.com
-
-I can see from the debug, it correctly remapping with a test like `echo testing | mail -s postmaster abuse`, e.g.
-
-	Nov 10 07:15:37 rojak sSMTP[8509]: Remapping: "abuse" --> "root"
-	Nov 10 07:15:37 rojak sSMTP[8509]: Remapping: "root" --> "foo@example.com"
-	Nov 10 07:21:22 rojak sSMTP[8540]: RCPT TO:<foo@example.com>
-
-But still the **To** is:
-
-	Nov 10 07:15:37 rojak sSMTP[8509]: To: abuse
-
-Which is rejected my AWS SES with:
-
-	Nov 10 07:15:38 rojak sSMTP[8509]: 554 Transaction failed: Missing final '@domain'
-
-I wish AWS SES could just use **RCPT TO** here.
 
 # /etc/msmtprc
 
@@ -67,11 +31,27 @@ I wish AWS SES could just use **RCPT TO** here.
 	password secret
 	from foo@example.com
 
-Don't forget the `ln -s /usr/bin/msmtp /usr/sbin/sendmail`
+# Workaround write your own /usr/sbin/sendmail
 
-Sadly [msmtp](http://msmtp.sourceforge.net/) is harder to debug and suffers from the same **554 Transaction failed: Missing final '@domain'** issue.
+When you get:
+
+	[root@rojak ssmtp]# send-mail: 554 Transaction failed: Missing final '@domain'
+	ssmtp: 554 Message rejected: Email address is not verified.
 
 	send-mail: server message: 554 Transaction failed: Missing final '@domain'
 	send-mail: could not send mail (account default from /etc/msmtprc)
 
-Update: A good answer to getting mail to one address is the [sed rewrite suggestion in /usr/sbin/sendmail](http://sourceforge.net/p/msmtp/mailman/message/34627361/)
+
+If you use msmtp:
+
+	v=foo@example.com # aws ses verified email
+	cat | /usr/bin/msmtp -i -- $v
+
+I recommend msmtp since the revaliases is just:
+
+	# cat /etc/msmtp-aliases
+	default: foo@example.com
+
+If you use ssmtp:
+
+	cat | /usr/sbin/ssmtp -i -- $v
