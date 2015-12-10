@@ -1,3 +1,5 @@
+[[!meta title="Mail from a VPS using AWS SES from sandbox mode" ]]
+
 Set up <https://aws.amazon.com/ses/> with a [verified
 email](http://s.natalian.org/2015-11-10/1447139043_1150x1058.png) so that it
 can send as that address and only to that address.
@@ -31,7 +33,7 @@ I tested both **ssmtp** and **mstmp** !
 	password secret
 	from foo@example.com
 
-# Workaround write your own /usr/sbin/sendmail
+# Making /usr/sbin/sendmail to send to your verified address only
 
 When you get:
 
@@ -41,10 +43,14 @@ When you get:
 	send-mail: server message: 554 Transaction failed: Missing final '@domain'
 	send-mail: could not send mail (account default from /etc/msmtprc)
 
+Either request for a "Limit Increase: SES Sending Limits" so that your account
+moves out of the sandbox, so you no longer need to verify recipient
+addresses... or follow the steps below to make `sendmail` to send mail to your
+only verified email:
 
 If you use msmtp:
 
-	v=foo@example.com # aws ses verified email
+	v=foo@example.com # your AWS SES verified email
 	cat | /usr/bin/msmtp -i -- $v
 
 I recommend msmtp since the revaliases is just:
@@ -52,6 +58,6 @@ I recommend msmtp since the revaliases is just:
 	# cat /etc/msmtp-aliases
 	default: foo@example.com
 
-If you use ssmtp:
+Though `ssmtp` has nicer logging. If you use ssmtp, change the binary:
 
 	cat | /usr/sbin/ssmtp -i -- $v
