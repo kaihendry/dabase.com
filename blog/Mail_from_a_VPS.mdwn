@@ -4,6 +4,9 @@ Set up <https://aws.amazon.com/ses/> with a [verified
 email](http://s.natalian.org/2015-11-10/1447139043_1150x1058.png) so that it
 can send as that address and only to that address.
 
+For your sanity keep track of the AWS region you are in! I am using [Oregon aka
+us-west-2](http://s.natalian.org/2015-12-10/1449713100_1918x1058.png).
+
 I tested both **ssmtp** and **mstmp** !
 
 # /etc/ssmtp/ssmtp.conf
