@@ -18,3 +18,5 @@ I'd say just over 10m away through a door.
 The last test was almost 60MB/sec where my computer was right next to the AP.
 
 <img src=http://s.natalian.org/2016-01-03/x1c3-archerc7.webp alt="X1C3 iperf3 testing next to Archer C7 with OpenWRT 15.05">
+
+Update: [Opensource Wireless AC doesn't seem to exist sadly. :(](https://twitter.com/kaihendry/status/683665977758748672)
