@@ -3,7 +3,11 @@
 Lets create a bucket from the command line using
 [s3cmd](https://www.archlinux.org/packages/community/any/s3cmd/):
 
-	$ s3cmd mb s3://example
+	$ s3cmd mb s3://example # aws s3 mb s3://example
+	$ git fsck
 	$ git update-server-info
-	$ s3cmd -P sync .git/ s3://example
-	$ s3cmd ws-create s3://example
+	$ test -d .git && cd .git
+	$ s3cmd -P sync . s3://example # aws s3 sync --acl public-read . s3://example
+	$ git clone https://example.s3.amazonaws.com
+
+To be safer, you should probably use [git bundle](http://stackoverflow.com/a/34593391/4534)
