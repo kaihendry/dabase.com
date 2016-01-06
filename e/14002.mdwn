@@ -1,13 +1,11 @@
 [[!meta title="Steps to make a S3 hosted Git repository"]]
 
-Lets create a bucket from the command line using
-[s3cmd](https://www.archlinux.org/packages/community/any/s3cmd/):
-
-	$ s3cmd mb s3://example # aws s3 mb s3://example
-	$ git fsck
+	$ export BUCKET=YOUR_BUCKET_NAME
+	$ s3cmd mb s3://$BUCKET # aws s3 mb s3://$BUCKET
 	$ git update-server-info
 	$ test -d .git && cd .git
-	$ s3cmd -P sync . s3://example # aws s3 sync --acl public-read . s3://example
-	$ git clone https://example.s3.amazonaws.com
+	$ s3cmd -P sync . s3://$BUCKET # aws s3 sync --acl public-read . s3://$BUCKET
+	$ aws s3api put-bucket-acl --bucket $BUCKET --acl public-read
+	$ git clone https://$BUCKET.s3.amazonaws.com
 
-To be safer, you should probably use [git bundle](http://stackoverflow.com/a/34593391/4534)
+To be safer, you should probably use [git bundle](http://stackoverflow.com/a/34593391/4534).
