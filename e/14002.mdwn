@@ -1,11 +1,20 @@
 [[!meta title="Steps to make a S3 hosted Git repository"]]
 
 	$ export BUCKET=YOUR_BUCKET_NAME
+
+	# Only run these two commands once per bucket/repo
 	$ s3cmd mb s3://$BUCKET # aws s3 mb s3://$BUCKET
+	$ aws s3api put-bucket-acl --bucket $BUCKET --acl public-read
+
+	# Run These commands every time you wish to push to the S3 repo
 	$ git update-server-info
 	$ test -d .git && cd .git
 	$ s3cmd -P sync . s3://$BUCKET # aws s3 sync --acl public-read . s3://$BUCKET
-	$ aws s3api put-bucket-acl --bucket $BUCKET --acl public-read
+
+	# Run this once you want to clone from the S3 repo to another folder
 	$ git clone https://$BUCKET.s3.amazonaws.com
+
+	# Run this after cloning the repo to update from the latest changes pushed to S3
+	$ git pull
 
 To be safer, you should probably use [git bundle](http://stackoverflow.com/a/34593391/4534).
