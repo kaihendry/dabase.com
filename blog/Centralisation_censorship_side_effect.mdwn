@@ -1,7 +1,8 @@
 [[!meta title="Side effect of centralisation WRT censorship"]]
 
-UPDATE 2016-01-28: Unsurprisingly Sarawak Report moved to Medium and the
-Malaysian government proceeded to block medium.com hilariously.
+UPDATE 2016-01-28: Unsurprisingly Sarawak Report moved to
+[Medium](https://medium.com/) and the Malaysian government proceeded to block
+medium.com hilariously. If only Sarawak report moved to http://s3.amazonaws.com ... lol
 
 I'm no fan of massively centralised services such as Google's Youtube,
 Facebook, Twitter and Reddit, since I feel there is too much power in one
