@@ -13,3 +13,5 @@ The workaround is to:
 	rm /mnt/iphone/PhotoData/Photos.sqlite
 
 And then reboot the iPhone to fix it.
+
+Here is a complete script I use to archive my photos: <http://s.natalian.org/2016-01-28/datemove.sh>
