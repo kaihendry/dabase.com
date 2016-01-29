@@ -1,6 +1,6 @@
 [[!meta title="Finding the rotation of a iPhone video"]]
 
-Using `ffprobe` which should be included in a [[ffmpeg]](https://twitter.com/FFmpeg) distribution:
+Using `ffprobe` which should be included in a [ffmpeg](https://twitter.com/FFmpeg) distribution:
 
 
 	for m in *.MOV
