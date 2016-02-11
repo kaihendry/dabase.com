@@ -7,7 +7,7 @@ can send as that address and only to that address.
 For your sanity keep track of the AWS region you are in! I am using [Oregon aka
 us-west-2](http://s.natalian.org/2015-12-10/1449713100_1918x1058.png).
 
-I tested both **ssmtp** and **mstmp** !
+I tested both **ssmtp** and [msmtp](http://msmtp.sourceforge.net/) !
 
 # /etc/ssmtp/ssmtp.conf
 
@@ -64,3 +64,5 @@ I recommend msmtp since the revaliases is just:
 Though `ssmtp` has nicer logging. If you use ssmtp, change the binary:
 
 	cat | /usr/sbin/ssmtp -i -- $v
+
+Also [ssmtp weighs in at 5k SLOC whilst msmtp is 18k](http://s.natalian.org/2016-02-11/1455175273_1912x1036.png)
