@@ -17,4 +17,4 @@ Using python2.
 How do you figure out that `reverse` comes from `from django.core.urlresolvers import reverse`? Need something like goimports!
 
 * the [power of the admin page](https://docs.djangoproject.com/en/1.9/intro/tutorial07/) make me think I should be using that as a basis of my customer facing forms.
-* the section on [reusable apps](https://docs.djangoproject.com/en/1.9/intro/reusable-apps/) was bit beyond remit of a tutorial I feel
+* the section on [reusable apps](https://docs.djangoproject.com/en/1.9/intro/reusable-apps/) was bit beyond remit of a tutorial I feel. Are all these [Github search results](https://github.com/search?q=django&ref=simplesearch&type=Repositories&utf8=%E2%9C%93) sort of apps I can drop into my project?
