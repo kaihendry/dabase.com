@@ -13,3 +13,8 @@ Using python2.
 * the [double underscore thing](https://docs.djangoproject.com/en/1.9/intro/tutorial02/) was a bit jarring.
 * following the tutorial, i.e. copying and pasting into vim was a gigantic PITA. there must be a better way. Remembering to `:set paste`... arghghghgh
 * the [vim django tips on the wiki](https://code.djangoproject.com/wiki/UsingVimWithDjango) are good. ditched [python-mode](https://twitter.com/kaihendry/status/705696319789096960) for [syntastic](https://github.com/scrooloose/syntastic) and I'm happier
+
+How do you figure out that `reverse` comes from `from django.core.urlresolvers import reverse`? Need something like goimports!
+
+* the [power of the admin page](https://docs.djangoproject.com/en/1.9/intro/tutorial07/) make me think I should be using that as a basis of my customer facing forms.
+* the section on [reusable apps](https://docs.djangoproject.com/en/1.9/intro/reusable-apps/) was bit beyond remit of a tutorial I feel
