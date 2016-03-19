@@ -4,7 +4,7 @@
 Using python2.
 
 * [tutorial is good](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
-* This app within a project, but an app can be in many projects seems a bit wierd. Prefer just app (KISS).
+* This app within a project, but an app can be in many projects seems a bit wierd. Prefer just "app" (KISS).
 * Where's the `.gitignore` file and the `Dockerfile`?
 * sqlite seems fine, so at what point is it worth taking the leap to postgres?
 * manage.py is good. `manage.py runserver` auto-reloading is great. So is the debug. So is the shell (didn't expect that!).
