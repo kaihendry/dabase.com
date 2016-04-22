@@ -3,17 +3,17 @@
 Yes, [versioning on my bucket is enabled!](http://docs.aws.amazon.com/AmazonS3/latest/UG/enable-bucket-versioning.html)
 
 
-	/tmp/test$ aws --profile jewel s3 ls s3://s3test.jptdev.com/test.txt
+	/tmp/test$ aws --profile example s3 ls s3://s3test.jptdev.com/test.txt
 	2016-04-22 11:29:29         50 test.txt
 
 Make changes to `test.txt`.
 
-	/tmp/test$ aws --profile jewel s3 cp test.txt s3://s3test.jptdev.com/
+	/tmp/test$ aws --profile example s3 cp test.txt s3://s3test.jptdev.com/
 	upload: ./test.txt to s3://s3test.jptdev.com/test.txt
 
 Notice the `aws-cli/1.10.20`'s `list-object-versions` seems to work with **prefix** not **key**.
 
-	aws --profile jewel s3api list-object-versions --bucket s3test.jptdev.com --prefix test.txt
+	aws --profile example s3api list-object-versions --bucket s3test.jptdev.com --prefix test.txt
 	{
 		"Versions": [
 			{
@@ -23,7 +23,7 @@ Notice the `aws-cli/1.10.20`'s `list-object-versions` seems to work with **prefi
 				"StorageClass": "STANDARD",
 				"Key": "test.txt",
 				"Owner": {
-					"DisplayName": "sean",
+					"DisplayName": "hendry",
 					"ID": "d68f9f3b34a478c25469ceb76ca6772fe9d3b02488a908f0562e93084c4294f7"
 				},
 				"IsLatest": true,
@@ -36,7 +36,7 @@ Notice the `aws-cli/1.10.20`'s `list-object-versions` seems to work with **prefi
 				"StorageClass": "STANDARD",
 				"Key": "test.txt",
 				"Owner": {
-					"DisplayName": "sean",
+					"DisplayName": "hendry",
 					"ID": "d68f9f3b34a478c25469ceb76ca6772fe9d3b02488a908f0562e93084c4294f7"
 				},
 				"IsLatest": false,
@@ -49,7 +49,7 @@ Notice the `aws-cli/1.10.20`'s `list-object-versions` seems to work with **prefi
 				"StorageClass": "STANDARD",
 				"Key": "test.txt",
 				"Owner": {
-					"DisplayName": "sean",
+					"DisplayName": "hendry",
 					"ID": "d68f9f3b34a478c25469ceb76ca6772fe9d3b02488a908f0562e93084c4294f7"
 				},
 				"IsLatest": false,
@@ -62,7 +62,7 @@ Notice the `aws-cli/1.10.20`'s `list-object-versions` seems to work with **prefi
 				"StorageClass": "STANDARD",
 				"Key": "test.txt",
 				"Owner": {
-					"DisplayName": "sean",
+					"DisplayName": "hendry",
 					"ID": "d68f9f3b34a478c25469ceb76ca6772fe9d3b02488a908f0562e93084c4294f7"
 				},
 				"IsLatest": false,
@@ -71,7 +71,7 @@ Notice the `aws-cli/1.10.20`'s `list-object-versions` seems to work with **prefi
 		]
 	}
 
-	/tmp/test$ aws --profile jewel s3api get-object --bucket s3test.jptdev.com --key test.txt --version-id NhFpF7hak4qe7zg0bbGIQmk6QYqyC2q9 foo.txt
+	/tmp/test$ aws --profile example s3api get-object --bucket s3test.jptdev.com --key test.txt --version-id NhFpF7hak4qe7zg0bbGIQmk6QYqyC2q9 foo.txt
 	{
 		"AcceptRanges": "bytes",
 		"ContentType": "text/plain",
