@@ -40,3 +40,11 @@ and no add script defined` otherwise.
 # client /etc/fstab
 
 	//nuc.local/raid1 /mnt/raid1 cifs username=hendry,uid=1000,gid=100,noauto,nofail,user
+
+# RAID1 configuration with USB drives
+
+Btw I am actually RAID1 two external USB drives. It's **EXPERIMENTAL** at this
+stage & I wouldn't recommend doing this.
+
+* [btrfs fi show /dev/sdc1](http://s.natalian.org/2016-05-02/show.txt)
+* [btrfs filesystem usage /mnt/raid1/](http://s.natalian.org/2016-05-02/usage.txt)
