@@ -48,3 +48,7 @@ stage & I wouldn't recommend doing this.
 
 * [btrfs fi show /dev/sdc1](http://s.natalian.org/2016-05-02/show.txt)
 * [btrfs filesystem usage /mnt/raid1/](http://s.natalian.org/2016-05-02/usage.txt)
+
+Btw I [asked the samba
+list](https://lists.samba.org/archive/samba/2016-May/199652.html) for some
+clarity regarding the PAM/passwd integration.
