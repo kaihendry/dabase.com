@@ -31,8 +31,10 @@ Finally & most importantly to me, someone else maintains it &
 
 # So how do I integrate this to my system?
 
-I recommend using a system systemd with Docker. Most "modern" linux systems do
-this now. This is what my `/etc/systemd/system/caddy.service` looks like:
+Unsurprisingly **linux containers** best run on Linux & I recommend using a
+Linux system with [systemd](https://en.wikipedia.org/wiki/Systemd) with Docker.
+Most "modern" linux systems do this now. This is what my
+`/etc/systemd/system/caddy.service` looks like:
 
 	[Unit]
 	Description=Caddy
@@ -76,7 +78,8 @@ My configuration `/home/hendry/caddy/Caddyfile` looks like:
 		errors stdout
 	}
 
-Notice I use stdout, so I can use `journalctl -u caddy -f` to look at the logs.
+Notice I use stdout, so I can use `journalctl -u caddy -f` to view & most
+importantly maintain the logs.
 
 # Hostnames
 
@@ -84,6 +87,8 @@ I manually add the names of my hosts into `/etc/hosts`. **172.17.0.1** in my
 case is the IP of the Docker instance. If anyone know how to make this easier,
 please let me know.
 
-172.17.0.1 natalian config
+	172.17.0.1 natalian config
 
 So typically once I edit `~/caddy/Caddyfile` with a new site, I then edit `/etc/hosts` and then `sudo systemctl restart caddy`.
+
+To have it startup on boot. `sudo systemctl enable caddy`
