@@ -1,8 +1,8 @@
 <img src=http://s.natalian.org/2016-05-09/local-caddy.png alt="Caddy running in Docker on Archlinux">
 
-Instead of running Caddy via `go get`, I've opted on my local machine to use
-Docker. Why? Because that's how my servers run, so I thought it would be
-sensible to reproduce the environment locally on my laptop.
+Instead of running [Caddy](https://caddyserver.com/) via `go get`, I've opted
+on my local machine to use Docker. Why? Because that's how my servers run, so I
+thought it would be sensible to reproduce the environment locally on my laptop.
 
 # What is Docker?
 
