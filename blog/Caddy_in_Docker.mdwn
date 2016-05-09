@@ -14,7 +14,7 @@ Assuming you have Docker setup, to run a "packaged" Caddy in a container, it can
 
 	docker run --rm -p 2015:2015 abiosoft/caddy:php
 
-* `--rm` means get rid of the image once we exit
+* `--rm` means clean up after exiting (we are just kicking the tyres here)
 * `-p 2015:2015` means expose port 2015
 * [abiosoft/caddy:php](https://github.com/abiosoft/caddy-docker/) is the name of the "packaged" maintained Docker featuring Caddy
 
@@ -23,8 +23,9 @@ Assuming you have Docker setup, to run a "packaged" Caddy in a container, it can
 It's cool because we don't have to fiddle with a golang environment or which
 binaries we should download and how to setup PHP. It just works!
 
-I don't need to actually know too much about the internals. I supply a config
-file, some directory and port mappings ... and BOOM ... I'm away!
+I don't need to actually know too much about the boring internal stuff. I
+supply a config file, some directory and port mappings ... and BOOM ... I'm
+away!
 
 Finally & most importantly to me, someone else maintains it &
 [abiosoft](https://twitter.com/abiosoft) is doing a good job!
@@ -54,6 +55,11 @@ Most "modern" linux systems do this now. This is what my
 	[Install]
 	WantedBy=multi-user.target
 
+You might be wondering, **why** are there these _pre_ steps to {kill,rm,pull}
+Caddy?  It looks really ugly but what we are doing here on restart is checking
+for updates and using that update. No more patching! A `restart` is almost all
+we need to ensure we are current.
+
 Notice I bind my configuration at `/home/hendry/caddy/Caddyfile` to the
 location the container expects that to be in. These little mappings should be
 documented in the container's README or
@@ -78,7 +84,10 @@ My configuration `/home/hendry/caddy/Caddyfile` looks like:
 		errors stdout
 	}
 
-Notice I use stdout, so I can use `journalctl -u caddy -f` to view & most
+Since I run Caddy locally on my laptop for development, I don't need Caddy's
+awesome **automatic HTTPS** feature.
+
+Notice I use `stdout`, so I can use `journalctl -u caddy -f` to view & most
 importantly maintain the logs.
 
 # Hostnames
@@ -91,4 +100,10 @@ please let me know.
 
 So typically once I edit `~/caddy/Caddyfile` with a new site, I then edit `/etc/hosts` and then `sudo systemctl restart caddy`.
 
-To have it startup on boot. `sudo systemctl enable caddy`
+To have it startup on boot. `sudo systemctl enable caddy`.
+
+# Conclusion
+
+This is my current local laptop configuration, but the production version on
+[CoreOS on Digital Ocean](https://m.do.co/c/37b3b1850b32) is almost the same
+except the hostnames and the user being **core** instead of _hendry_.
