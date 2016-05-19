@@ -1,3 +1,5 @@
+UPDATE: Latest OpenGL work status seems to be here, <https://dri.freedesktop.org/wiki/VC4/> which is **Required** for Webkit2.
+
 Since creating a [Webconverger Rpi2 port](https://webconverger.org/rpi2/) based
 upon [Archlinux-Arm](http://archlinuxarm.org/) (Alarm) I've run into the issue whereby
 Webkit2 stops working after an upgrade.
