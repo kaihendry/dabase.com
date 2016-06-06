@@ -7,36 +7,7 @@ Unfortunately most FAQs seem to fail to do this. To save you time doing this by
 hand, I have written [toc](https://github.com/kaihendry/toc), a tool that
 creates a table of contents from your headers with `id` anchors.
 
-FAQ template, `faq.src.html`:
-
-	<h2 class="no-toc no-num">Frequently Asked Questions</h2>
-	<div data-fill-with="table-of-contents" ><!-- toc --></div>
-
-	<h3>How do I create a FAQ?</h3>
-	<p>Using HTML</p>
-
-	<h3>What's the best kiosk software out there?</h3>
-	<p><a href="http://webconverger.com">Webconverger</a></p>
-
-Run `toc faq.src.html > faq.html` and boom:
-
-	<h2 class="no-toc no-num">Frequently Asked Questions</h2>
-	<div id=tocwrapper>
-	<!--begin-toc-->
-	<ol class=toc>
-	 <li><a href=#how-do-i-create-a-faq?><span class=secno>1 </span>How do I create a FAQ?</a></li>
-	 <li><a href="#what's-the-best-kiosk-software-out-there?"><span class=secno>2 </span>What's the best kiosk software out there?</a></li></ol>
-	<!--end-toc--></div>
-
-	<h3 id=how-do-i-create-a-faq?><span class=secno>1 </span>How do I create a FAQ?</h3>
-	<p>Using HTML</p>
-
-	<h3 id="what's-the-best-kiosk-software-out-there?"><span class=secno>2 </span>What's the best kiosk software out there?</h3>
-	<p><a href=http://webconverger.com>Webconverger</a></p>
-
-Job done. Here is a better [example FAQ](https://config.webconverger.com/faq/)
-
-Here is a Makefile I use a lot on my Websites:
+Here is a Makefile I use on my Websites:
 
 	INFILES = $(shell find . -name "*.src.html")
 	OUTFILES = $(INFILES:.src.html=.html)
@@ -53,3 +24,5 @@ Here is a Makefile I use a lot on my Websites:
 		rm -f $(OUTFILES)
 
 	PHONY: all clean
+
+`m4` is used for inserting footers and such.
