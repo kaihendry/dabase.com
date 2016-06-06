@@ -4,12 +4,13 @@ What does a FAQ need?
 2. A way to hyperlink the question
 
 Unfortunately most FAQs seem to fail to do this. To save you time doing this by
-hand, I highly recommend [anolis](https://aur.archlinux.org/packages/python2-anolis/)
+hand, I have written [toc](https://github.com/kaihendry/toc), a tool that
+creates a table of contents from your headers with `id` anchors.
 
 FAQ template, `faq.src.html`:
 
 	<h2 class="no-toc no-num">Frequently Asked Questions</h2>
-	<div id="tocwrapper"><!-- toc --></div>
+	<div data-fill-with="table-of-contents" ><!-- toc --></div>
 
 	<h3>How do I create a FAQ?</h3>
 	<p>Using HTML</p>
@@ -17,7 +18,7 @@ FAQ template, `faq.src.html`:
 	<h3>What's the best kiosk software out there?</h3>
 	<p><a href="http://webconverger.com">Webconverger</a></p>
 
-Run `anolis faq.src.html faq.html` and boom:
+Run `toc faq.src.html > faq.html` and boom:
 
 	<h2 class="no-toc no-num">Frequently Asked Questions</h2>
 	<div id=tocwrapper>
@@ -45,7 +46,7 @@ Here is a Makefile I use a lot on my Websites:
 
 	%.html: %.src.html
 		m4 -PEIinc $< > $(TEMP)
-		anolis $(TEMP) $@
+		toc $(TEMP) > $@
 		rm -f $(TEMP)
 
 	clean:
