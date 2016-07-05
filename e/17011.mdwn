@@ -1,0 +1,11 @@
+[[!meta title="Interesting journalctl logs"]]
+
+See failed services:
+
+	systemctl --failed
+
+See erroring line:
+
+	journalctl -b -p err
+
+Many thanks to [grawity](https://github.com/grawity)
