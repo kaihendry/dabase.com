@@ -1,5 +1,7 @@
 [[!meta title="PDF/A versus HTML" ]]
 
+2016 update: <https://shkspr.mobi/blog/2016/07/pdfs-are-the-cheques-of-the-21st-century/> has a good summary why PDF is a bad format
+
 Latest: Leonard Rosenthol has since posted a [followup on the discussion](http://acroeng.adobe.com/leonardr/PDFA_vs_HTML.html).
 
 [PDFSAGE](http://twitter.com/pdfsage/status/2313664922) wondered what the cons
