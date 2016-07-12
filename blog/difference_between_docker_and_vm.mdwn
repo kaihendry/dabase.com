@@ -1,16 +1,17 @@
-[[!meta title="Whats the difference between a Docker container and a virtual machine?" ]]
+[[!meta title="Whats the difference between a Docker container and a Virtual machine?" ]]
 
 Docker is much **faster** and more productive to work with than a Virtual
 machine. It's basically a front end on [**Linux containers** aka
 LXC](https://en.wikipedia.org/wiki/LXC).
 
 Ideally Docker is running on a "bare metal" machine since it does not need to
-virtualised. It runs a lot faster, but admittedly you probably won't see the
+be virtualised. It runs a lot faster, but admittedly you probably won't see the
 performance boon if you are running on a already virtualised VPS like EC2 or
 MacOS.
 
 Docker runs whole services in containers which are isolated and can be
-controlled much like a Virtual machine.
+controlled much like a Virtual machine, but without any complex hardware
+abstractions.
 
 But Docker is much more. For example the <https://hub.docker.com/> is a public
 repository where you can almost pick a pre-**packaged** service off the shelf.
@@ -28,7 +29,7 @@ changes and to iterate quickly. You can easily keep uptodate or roll back and
 forth atomically using image tags.
 
 Docker has a raft of handy tools in their popular ecosystem to help network
-containers and manage mounts between the container and host.
+containers and manage filesystem mounts between the container and host.
 [Compose](https://docs.docker.com/compose/) is a advanced tool with a
 definition language for managing a whole formation. A complex network of
 services can be launched and maintained using it.
