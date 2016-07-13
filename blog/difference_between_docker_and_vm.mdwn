@@ -23,7 +23,7 @@ who know the software and dependencies best.
 
 Docker defines a
 [Dockerfile](https://docs.docker.com/engine/reference/builder/) which like
-`debian/build` or Arch's `PKGBUILD` is a very succinct way of describing how a
+`debian/rules` or Arch's `PKGBUILD` is a very succinct way of describing how a
 service is packaged and furthermore deployed in a network and run.
 
 Docker has a layered filesystem to make it easy for developers to isolate
