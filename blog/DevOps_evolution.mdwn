@@ -1,0 +1,37 @@
+# Phase 1
+
+Manual everything.
+
+Not scalable at all.
+
+# Phase 2
+
+Using a <https://en.wikipedia.org/wiki/Configuration_management> tool like
+Chef, Puppet or Ansible.
+
+Scalability achieved with AMI snapshots and such.
+
+# Phase 3
+
+Using PaaS like [Dokku](https://github.com/dokku/dokku), so a developer can
+`git push` to a "[Heroku-ish](https://github.com/gliderlabs/herokuish)"
+endpoint.
+
+Probably can't scale very well.
+
+# Phase 4
+
+Using Docker & containerizing all the things on something like CoreOS or
+RancherOS. Scalability is as manual as making sure you can quickly spin up new
+CoreOS instances with a load balancer in front.
+
+Bonus points is if one is figured out how to get a CI to build the image and
+deploy it.
+
+# Phase 5
+
+Orchestrating Docker deployments with [Docker
+Compose](https://docs.docker.com/compose/), using things like AWS ECR (private
+Docker image hosting) and AWS ECS for managing the containers on EC2.
+
+Scales rather well.
