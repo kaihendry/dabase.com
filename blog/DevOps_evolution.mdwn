@@ -11,7 +11,8 @@ Not scalable at all.
 Using a <https://en.wikipedia.org/wiki/Configuration_management> tool like
 Chef, Puppet or Ansible.
 
-Scalability achieved with AMI snapshots and such.
+Scalability achieved with AMI snapshots and such. Zero downtime with an
+[ELB](https://aws.amazon.com/elasticloadbalancing/).
 
 # Phase 3
 
@@ -19,16 +20,24 @@ Using PaaS like [Dokku](https://github.com/dokku/dokku), so a developer can
 `git push` to a "[Heroku-ish](https://github.com/gliderlabs/herokuish)"
 endpoint.
 
-Probably can't scale very well.
+Probably can't scale very well. Zero downtime can be achieved cheaply using
+[some
+tricks](http://dokku.viewdocs.io/dokku/deployment/zero-downtime-deploys/).
+Probably best solution for personal projects or starting out since it's fairly
+simple.
 
 # Phase 4
 
-Using Docker & containerizing all the things on something like CoreOS or
-RancherOS. Scalability is as manual as making sure you can quickly spin up new
-CoreOS instances with a load balancer in front.
+Using Docker & containerizing all the things on something like
+[CoreOS](https://aws.amazon.com/lambda/details/) or RancherOS. Scalability is
+as manual as making sure you can quickly spin up new CoreOS instances with a
+load balancer in front.
 
 Bonus points is if one has figured out how to get a <abbr title="Continuous
 Integration">CI</abbr> to build the image and deploy it.
+
+Bonus points for running two instances for Blue/Green deployments behind the
+load balancer.
 
 # Phase 5
 
@@ -38,4 +47,10 @@ title="Elastic Container Repository">ECR</abbr> (private Docker image hosting)</
 and AWS <abbr title="Elastic Container Service">ECS</abbr> for managing the
 containers on EC2.
 
-Scales rather well.
+Scales rather well. Quite complex and heavyweight.
+
+# Phase 6
+
+Serverless computing? [AWS Lambda](https://aws.amazon.com/lambda/details/)
+
+Most apps would have to be completely rewritten.
