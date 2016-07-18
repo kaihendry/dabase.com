@@ -8,7 +8,8 @@ Not scalable at all.
 
 # Phase 2
 
-Using a <https://en.wikipedia.org/wiki/Configuration_management> tool like
+Using a [Configuration
+Management](https://en.wikipedia.org/wiki/Configuration_management) tool like
 Chef, Puppet or Ansible.
 
 Scalability achieved with AMI snapshots and such. Zero downtime with an
