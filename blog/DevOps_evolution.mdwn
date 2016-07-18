@@ -1,3 +1,5 @@
+Ignoring the complexities surrounding data.
+
 # Phase 1
 
 Manual everything.
@@ -25,13 +27,15 @@ Using Docker & containerizing all the things on something like CoreOS or
 RancherOS. Scalability is as manual as making sure you can quickly spin up new
 CoreOS instances with a load balancer in front.
 
-Bonus points is if one is figured out how to get a CI to build the image and
-deploy it.
+Bonus points is if one has figured out how to get a <abbr title="Continuous
+Integration">CI</abbr> to build the image and deploy it.
 
 # Phase 5
 
 Orchestrating Docker deployments with [Docker
-Compose](https://docs.docker.com/compose/), using things like AWS ECR (private
-Docker image hosting) and AWS ECS for managing the containers on EC2.
+Compose](https://docs.docker.com/compose/), using things like <a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_Console_Repositories.html">AWS <abbr
+title="Elastic Container Repository">ECR</abbr> (private Docker image hosting)</a>
+and AWS <abbr title="Elastic Container Service">ECS</abbr> for managing the
+containers on EC2.
 
 Scales rather well.
