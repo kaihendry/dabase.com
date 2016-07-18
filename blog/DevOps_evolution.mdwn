@@ -16,9 +16,9 @@ Scalability achieved with AMI snapshots and such. Zero downtime with an
 
 # Phase 3
 
-Using PaaS like [Dokku](https://github.com/dokku/dokku), so a developer can
-`git push` to a "[Heroku-ish](https://github.com/gliderlabs/herokuish)"
-endpoint.
+Using <abbr title="Platform as a Service">PaaS</abbr> like
+[Dokku](https://github.com/dokku/dokku), so a developer can `git push` to a
+"[Heroku-ish](https://github.com/gliderlabs/herokuish)" endpoint.
 
 Probably can't scale very well. Zero downtime can be achieved cheaply using
 [some
@@ -30,14 +30,14 @@ simple.
 
 Using Docker & containerizing all the things on something like
 [CoreOS](https://aws.amazon.com/lambda/details/) or RancherOS. Scalability is
-as manual as making sure you can quickly spin up new CoreOS instances with a
-load balancer in front.
+as manual as making sure you can quickly spin up new CoreOS instances & run the
+Docker images with a load balancer in front.
 
 Bonus points is if one has figured out how to get a <abbr title="Continuous
 Integration">CI</abbr> to build the image and deploy it.
 
 Bonus points for running two instances for Blue/Green deployments behind the
-load balancer.
+load balancer for zero downtime.
 
 # Phase 5
 
@@ -53,4 +53,5 @@ Scales rather well. Quite complex and heavyweight.
 
 Serverless computing? [AWS Lambda](https://aws.amazon.com/lambda/details/)
 
-Most apps would have to be completely rewritten.
+Most apps would probably have to be completely rewritten and tied to the
+hosting platform in question.
