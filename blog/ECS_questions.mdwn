@@ -1,3 +1,7 @@
+<a href=http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html>
+<img src=http://docs.aws.amazon.com/AmazonECS/latest/developerguide/images/load-balancing.png>
+</a>
+
 # With the Amazon AMI who keeps the host machine uptodate?
 
 	~$ ssh ec2-user@54.255.129.57
@@ -42,7 +46,6 @@ Unanswered
 
 I thought one good thing about containers is that they can share all the memory of the host!
 
-
 # Port mappings are kinda confusing
 
 You map ELB front end ports to the instance ports effectively.
@@ -53,7 +56,7 @@ You map ELB front end ports to the instance ports effectively.
 
 Your health check is probably pointing to port 80 when you should be checking the port of your container!
 
-## What is the developer work flow?
+# What is the developer work flow?
 
 <https://github.com/aws/amazon-ecs-cli/issues/136>
 
@@ -61,4 +64,10 @@ I realise one could run **Service Update** to deliver an update. However after
 pushing changes back to Github, how does a developer deploy to the service
 themselves?
 
+# Setting environment up
 
+Sharing environment values between clusters seems pretty hard:
+
+<https://github.com/aws/amazon-ecs-agent/issues/347>
+
+My question RE more env variables: <https://github.com/aws/amazon-ecs-agent/issues/456>
