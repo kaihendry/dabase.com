@@ -38,7 +38,10 @@ Unanswered
 
 # What does CPU unit and memory supposed to mean?
 
+<img src=http://s.natalian.org/2016-07-20/1468980692_2558x1404.png>
+
 I thought one good thing about containers is that they can share all the memory of the host!
+
 
 # Port mappings are kinda confusing
 
@@ -52,6 +55,10 @@ Your health check is probably pointing to port 80 when you should be checking th
 
 ## What is the developer work flow?
 
+<https://github.com/aws/amazon-ecs-cli/issues/136>
+
 I realise one could run **Service Update** to deliver an update. However after
 pushing changes back to Github, how does a developer deploy to the service
 themselves?
+
+
