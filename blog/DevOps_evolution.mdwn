@@ -4,7 +4,8 @@ Ignoring the complexities surrounding data.
 
 Manual everything.
 
-Not scalable at all.
+Not scalable at all. Well it might be surprisingly scalable if the code is well
+engineered, since everything is so simple! ;)
 
 # Phase 2
 
@@ -12,8 +13,9 @@ Using a [Configuration
 Management](https://en.wikipedia.org/wiki/Configuration_management) tool like
 Chef, Puppet or Ansible.
 
-Scalability achieved with AMI snapshots and such. Zero downtime with an
-[ELB](https://aws.amazon.com/elasticloadbalancing/).
+Scalability achieved with AMI snapshots and such. Zero downtime with a [load
+balancer](https://aws.amazon.com/elasticloadbalancing/) fronting two instances
+running your App.
 
 # Phase 3
 
@@ -34,6 +36,8 @@ Using Docker & containerizing all the things on something like
 as manual as making sure you can quickly spin up new CoreOS instances & run the
 Docker images with a load balancer in front.
 
+Bonus points if you have moved from Postfix MTA to a Restful mail API or queue.
+
 Bonus points is if one has figured out how to get a <abbr title="Continuous
 Integration">CI</abbr> to build the image and deploy it.
 
@@ -50,7 +54,9 @@ containers on EC2.
 
 Tip: Getting into ECS like myself? Checkout [[ECS questions]]!
 
-Scales rather well. Quite complex and heavyweight.
+Scales rather well, providing you have [Service Auto Scaling in your
+region](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html).
+Quite complex and heavyweight. 
 
 # Phase 6
 
