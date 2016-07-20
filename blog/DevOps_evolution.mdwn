@@ -48,6 +48,8 @@ title="Elastic Container Repository">ECR</abbr> (private Docker image hosting)</
 and AWS <abbr title="Elastic Container Service">ECS</abbr> for managing the
 containers on EC2.
 
+Tip: Getting into ECS like myself? Checkout [[ECS questions]]!
+
 Scales rather well. Quite complex and heavyweight.
 
 # Phase 6
