@@ -14,8 +14,8 @@ Management](https://en.wikipedia.org/wiki/Configuration_management) tool like
 Chef, Puppet or Ansible.
 
 Scalability achieved with AMI snapshots and such. Zero downtime with a [load
-balancer](https://aws.amazon.com/elasticloadbalancing/) fronting two instances
-running your App.
+balancer](https://aws.amazon.com/elasticloadbalancing/) fronting at least two
+instances running your App independently of one another.
 
 # Phase 3
 
@@ -36,7 +36,8 @@ Using Docker & containerizing all the things on something like
 as manual as making sure you can quickly spin up new CoreOS instances & run the
 Docker images with a load balancer in front.
 
-Bonus points if you have moved from Postfix MTA to a Restful mail API or queue.
+Bonus points if you have moved from Postfix <abbr title="Mail transfer
+agent">MTA</abbr> to a Restful mail API or queue.
 
 Bonus points is if one has figured out how to get a <abbr title="Continuous
 Integration">CI</abbr> to build the image and deploy it.
@@ -56,7 +57,7 @@ Tip: Getting into ECS like myself? Checkout [[ECS questions]]!
 
 Scales rather well, providing you have [Service Auto Scaling in your
 region](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html).
-Quite complex and heavyweight. 
+Quite complex and heavyweight.
 
 # Phase 6
 
