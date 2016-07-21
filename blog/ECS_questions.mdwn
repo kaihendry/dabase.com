@@ -2,6 +2,14 @@
 <img src=http://docs.aws.amazon.com/AmazonECS/latest/developerguide/images/load-balancing.png>
 </a>
 
+# Biggest tip use `ecs-cli`
+
+<https://github.com/aws/amazon-ecs-cli>
+
+This helps setup the instances, setup the tasks via `docker-compose.yml` and scale it!!
+
+[Example ecs-cli usage log](http://s.natalian.org/2016-07-21/ecs-service.txt) where I setup a cluster in Oregon for <https://github.com/kaihendry/letterly>.
+
 # With the Amazon AMI who keeps the host machine uptodate?
 
 	~$ ssh ec2-user@54.255.129.57
@@ -28,6 +36,8 @@ Here I later found my ELB was in the wrong VPC with "HTTP/1.1 503 Service Unavai
 You need to ensure you have right EC2 Role for ECS for a start!
 
 Follow <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html> carefully!
+
+Or just use `ecs-cli up --capability-iam` to avoid these problem space.
 
 # What log driver should I be using to get into Kibana?
 
@@ -58,7 +68,7 @@ Your health check is probably pointing to port 80 when you should be checking th
 
 # What is the developer work flow?
 
-<https://github.com/aws/amazon-ecs-cli/issues/136>
+<https://github.com/aws/amazon-ecs-cli/issues/136> suggests `ecs-cli compose service up`
 
 I realise one could run **Service Update** to deliver an update. However after
 pushing changes back to Github, how does a developer deploy to the service
@@ -70,4 +80,10 @@ Sharing environment values between clusters seems pretty hard:
 
 <https://github.com/aws/amazon-ecs-agent/issues/347>
 
-My question RE more env variables: <https://github.com/aws/amazon-ecs-agent/issues/456>
+My question RE more env variables: <https://github.com/aws/amazon-ecs-agent/issues/456> & <https://forums.docker.com/t/exposing-image-id-and-hostname-in-the-containers-environment/18634>
+
+# How does one actually scale?
+
+Remember [EC2 autoscaling](https://us-west-2.console.aws.amazon.com/ec2/autoscaling/home?region=us-west-2#AutoScalingGroups:) & [Service autoscaling](http://s.natalian.org/2016-07-21/1469084154_2558x1404.png) ARE NOT THE SAME!!
+
+<img src=http://s.natalian.org/2016-07-21/1469084164_2558x1404.png alt="ECS alarm">
