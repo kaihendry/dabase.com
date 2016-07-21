@@ -1,6 +1,4 @@
-<a href=http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html>
-<img src=http://docs.aws.amazon.com/AmazonECS/latest/developerguide/images/load-balancing.png>
-</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Imeb-_g_CtU" frameborder="0" allowfullscreen></iframe>
 
 # Biggest tip use `ecs-cli`
 
@@ -83,6 +81,8 @@ Sharing environment values between clusters seems pretty hard:
 My question RE more env variables: <https://github.com/aws/amazon-ecs-agent/issues/456> & <https://forums.docker.com/t/exposing-image-id-and-hostname-in-the-containers-environment/18634>
 
 # How does one actually scale?
+
+<https://aws.amazon.com/blogs/compute/automatic-scaling-with-amazon-ecs/>
 
 Remember [EC2 autoscaling](https://us-west-2.console.aws.amazon.com/ec2/autoscaling/home?region=us-west-2#AutoScalingGroups:) & [Service autoscaling](http://s.natalian.org/2016-07-21/1469084154_2558x1404.png) ARE NOT THE SAME!!
 
