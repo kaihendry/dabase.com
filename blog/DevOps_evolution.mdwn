@@ -7,6 +7,8 @@ Manual everything.
 Not scalable at all. Well it might be surprisingly scalable if the code is well
 engineered, since everything is so simple! ;)
 
+Probably never reboots, despite updates (e.g. Linux) requiring it.
+
 # Phase 2
 
 Using a [Configuration
@@ -16,6 +18,9 @@ Chef, Puppet or Ansible.
 Scalability achieved with AMI snapshots and such. Zero downtime with a [load
 balancer](https://aws.amazon.com/elasticloadbalancing/) fronting at least two
 instances running your App independently of one another.
+
+Updates are applied before making a new AMI image. Latest AMI images are
+applied haphazardly.
 
 # Phase 3
 
@@ -29,6 +34,8 @@ tricks](http://dokku.viewdocs.io/dokku/deployment/zero-downtime-deploys/).
 Probably best solution for personal projects or starting out since it's fairly
 simple.
 
+Probably never reboots or applies security updates properly.
+
 # Phase 4
 
 Using Docker & containerizing all the things on something like
@@ -37,13 +44,16 @@ as manual as making sure you can quickly spin up new CoreOS instances & run the
 Docker images with a load balancer in front.
 
 Bonus points if you have moved from Postfix <abbr title="Mail transfer
-agent">MTA</abbr> to a Restful mail API or queue.
+agent">MTA</abbr> to an external Restful mail API or queue.
 
 Bonus points is if one has figured out how to get a <abbr title="Continuous
 Integration">CI</abbr> to build the image and deploy it.
 
 Bonus points for running two instances for Blue/Green deployments behind the
 load balancer for zero downtime.
+
+Serious kudos if you manage to orchestrate your updates with [etcd
+locks](https://coreos.com/os/docs/latest/update-strategies.html) and have no downtime.
 
 # Phase 5
 
@@ -55,9 +65,9 @@ containers on EC2.
 
 Tip: Getting into ECS like myself? Checkout [[ECS questions]]!
 
-Scales rather well, providing you have [Service Auto Scaling in your
+Scales in a complex way (worry about bother Container & Instance utilisation
+and timings), providing you have [Service Auto Scaling in your
 region](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html).
-Quite complex and heavyweight.
 
 # Phase 6
 
