@@ -12,7 +12,7 @@ Following up after [[ECS_questions]]
 
 <img src=http://s.natalian.org/2016-07-27/ecs-instance.png alt="ECS instance resources">
 
-Mem limit was figured by taking **Available Memory**, t2.micro is 995 and getting bytes like so: 
+Mem limit was figured by taking **Available Memory**, t2.micro is 995 and getting bytes like so:
 
 	~$ echo $((995 << 20))
 	1043333120
@@ -50,7 +50,7 @@ So you need to terminate the instance manually if you want to save some money.
 
 Typically a 100mb upload
 
-Then bring down the service and up the service like so: http://s.natalian.org/2016-07-27/ecs.txt
+Then bring down the service and up the service like so: <http://s.natalian.org/2016-07-27/ecs.txt>
 
 # Bringing down a service
 
@@ -86,5 +86,27 @@ it works. Some careful orchestration with Health limits.
 
 Upgrading an instance basically means killing it and starting it again. I guess
 that would entail a scale event to launch a new instance. ssh to it to ensure
-it's uptodate. And then decommission the old one by removing it from the load
-balancer.
+it's uptodate (security group permitting). And then decommission the old one by
+removing it from the load balancer.
+
+# Issues
+
+No way to terminate last EC2 Instance in cluster:
+
+	$ ecs-cli scale --size 0 --capability-iam
+	INFO[0002] Waiting for your cluster resources to be updated
+	INFO[0003] Cloudformation stack status                   stackStatus=UPDATE_IN_PROGRESS
+	ERRO[0035] Failure event                                 reason= resourceType=AWS::CloudFormation::Stack
+	ERRO[0035] Error executing 'scale': Cloudformation failure waiting for 'UPDATE_COMPLETE'. State is 'UPDATE_ROLLBACK_COMPLETE'
+
+
+# Steps
+
+1. `ecs-cli up --capability-iam --keypair spuul_sysadmin`
+2. `ecs-cli compose service up` to create service
+2. Find VPC name <http://s.natalian.org/2016-08-02/1470124829_2558x1404.png
+>
+3. Create ELB <http://s.natalian.org/2016-08-02/1470125741_2558x1404.png
+>
+4. Create service from task and associate ELB
+5. Update Route 53 Failover record with ELB name in case things really go badly
