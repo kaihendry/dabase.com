@@ -1,5 +1,7 @@
 Following up after [[ECS_questions]]
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/onTnyvrHggo" frameborder="0" allowfullscreen></iframe>
+
 # docker-compose.yml example
 
 	version: '2'
@@ -21,10 +23,19 @@ Assuming you have the `docker-compose.yml` ready and `ecs-cli configure`d,
 start up the cluster of a EC2 instance running the service like so:
 
 	ecs-cli up --capability-iam --keypair example_sysadmin
-	ecs-cli compose service up
 	ecs-cli compose service ps
 
 # [Setting up the load balancer is manual](https://github.com/aws/amazon-ecs-cli/issues/1#issuecomment-235465247)
+
+Create the service by attaching the load balancer to the task
+
+	export CLUSTER_NAME=default
+
+	aws --region ap-southeast-1 ecs create-service --service-name "ecscompose-service-count" \
+		--cluster "$CLUSTER_NAME" \
+		--task-definition "ecscompose-count" \
+		--load-balancers "loadBalancerName=ecs-count,containerName=web,containerPort=9000" \
+		--desired-count 1 --deployment-configuration "maximumPercent=100,minimumHealthyPercent=50" --role ecsServiceRole
 
 * Make it's in the VPC of the created ECS (look at tags)
 * Make sure the security groups are permissive
@@ -104,9 +115,9 @@ No way to terminate last EC2 Instance in cluster:
 
 1. `ecs-cli up --capability-iam --keypair spuul_sysadmin`
 2. `ecs-cli compose service up` to create service
-2. Find VPC name <http://s.natalian.org/2016-08-02/1470124829_2558x1404.png
+2. Find VPC name <http://s.natalian.org/2016-08-02/1470124829_2558x1404.png>
 >
-3. Create ELB <http://s.natalian.org/2016-08-02/1470125741_2558x1404.png
+3. Create ELB <http://s.natalian.org/2016-08-02/1470125741_2558x1404.png>
 >
 4. Create service from task and associate ELB
 5. Update Route 53 Failover record with ELB name in case things really go badly
