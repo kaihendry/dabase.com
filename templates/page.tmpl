@@ -226,7 +226,7 @@ Last edited <TMPL_VAR MTIME>
 
 <fieldset style='margin: 2em; font-family "Helvetica Neue Thin, sans-serif";' class=feedback>
 <legend>Feedback</legend>
-<form onsubmit="return feedback(this);" style="margin: 1em;" action="https://feedback.dabase.com/feedback/feedback.php" method="post">
+<form onsubmit="return feedback(this);" style="margin: 1em;" method="post">
 
 <p class=field>
 <label for=from class=fieldname>
@@ -248,7 +248,36 @@ Your feedback
 <p style="font-size: x-small; display: inline;">Powered by <a href="https://github.com/kaihendry/vanilla-php-feedback-form">Vanilla PHP feedback form</a></p>
 
 </form>
-<script src=http://feedback.dabase.com/feedback/feedback.js></script>
+<script>
+function feedback(feedbackform) {
+
+	const formData = {};
+
+	for (let input of feedbackform) {
+		if (input.name && input.value) {
+			formData[input.name] = input.value;
+		}
+	}
+
+	feedbackform.send.value = "Sending...";
+	feedbackform.send.disabled = true;
+
+	fetch("https://eb1tv85d00.execute-api.ap-southeast-1.amazonaws.com/prod", { method: "POST", body: JSON.stringify(formData) }).then(function(res){
+		if (res.ok) {
+			console.log(res);
+			feedbackform.send.value = "Sent!";
+		} else {
+			console.log("error", res);
+			feedbackform.send.value = "Error, try again";
+			feedbackform.send.disabled = false;
+		}
+	});
+
+	return false;
+}
+
+
+</script>
 </fieldset>
 
 <script>
