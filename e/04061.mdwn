@@ -1,0 +1,27 @@
+[[!meta title="Javascript ES6 refactoring"]]
+
+# Find loop
+
+	for (var i = 0; i < this.items.length; i++) {
+		   if (this.$route.params.uuid == this.items[i].uuid) {
+				   return this.items[i]
+		   }
+	}
+
+Can be written like this:
+
+	return this.items.find((item) => item.uuid === this.$route.params.uuid)
+
+# Arrow functions
+
+If you ever find yourself writing code that looks like `var that = this` using
+arrow functions gets rid of that problem!
+
+# Promises
+
+I find contructing Promises still a little tricky, but note that the Fetch API supports them natively.
+
+* https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+
+Way better than `XMLHttpRequest` callback hell!
+
