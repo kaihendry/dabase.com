@@ -19,9 +19,8 @@ arrow functions gets rid of that problem!
 
 # Promises
 
-I find contructing Promises still a little tricky, but note that the Fetch API supports them natively.
+I find constructing Promises still a little tricky, but note that the Fetch API supports them natively.
 
-* https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+* <https://developers.google.com/web/updates/2015/03/introduction-to-fetch>
 
-Way better than `XMLHttpRequest` callback hell!
-
+Way better than `XMLHttpRequest` callback hell, especially for catching errors.
