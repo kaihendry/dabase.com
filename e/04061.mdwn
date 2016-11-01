@@ -12,6 +12,12 @@ Can be written like this:
 
 	return this.items.find((item) => item.uuid === this.$route.params.uuid)
 
+If you need to several items, use [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter):
+
+	return this.items.filter(item => item.status === status)
+
+As used in this [Vue2 example](https://jsfiddle.net/kaihendry/8uqrkqg1/)
+
 # Arrow functions
 
 If you ever find yourself writing code that looks like `var that = this` using
@@ -23,4 +29,5 @@ I find constructing Promises still a little tricky, but note that the Fetch API 
 
 * <https://developers.google.com/web/updates/2015/03/introduction-to-fetch>
 
-Way better than `XMLHttpRequest` callback hell, especially for catching errors.
+Way better than `XMLHttpRequest` callback hell, especially for catching errors
+/ writing robust code in poor networking situations which is all too common.
