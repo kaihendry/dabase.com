@@ -1,0 +1,5 @@
+[[!meta title="Join words in a template by comma"]]
+
+Not working <https://play.golang.org/p/FAR__vMaEL>
+
+Working <https://play.golang.org/p/1V5ii0e8TC>
