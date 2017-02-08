@@ -49,7 +49,7 @@ Or event just:
 	  return Promise.resolve().then(() => data.Item || data)
 	}
 
-# const isn't that bad
+# [prefer const](https://github.com/feross/standard/issues/523)
 
 From Tim Oxley: seems a shame to lose benefits of const due to conditional
 initialisation. Instead of if/else + let I generally go for const + || in cases
@@ -65,3 +65,67 @@ like the above, or a ternary :
 	)
 	? valueIfTrue
 	: valueIfFalse
+
+# Single line arrows
+
+for single line arrows, you don't need the curlies or the return:
+
+	const a = () => { return get(uuidgen) }
+	// is equivalent to:
+	const b = () => get(uuidgen)
+
+i.e. right hand side of the arrow can be a block or an expression
+
+
+# Promise refactoring
+
+	return Promise.resolve().then(() => { return })
+
+is the same as:
+
+	return Promise.resolve()
+
+Remember with promise you can resolve to either a promise or a value. if you
+resolve to a promise, the resolved value of the current promise will become the
+value resolved from the returned/resolved promise.
+
+These are (mostly) equivalent, and will both resolve to 3
+
+	Promise.resolve().then(() => {
+	  return 3
+	})
+
+	Promise.resolve().then(() => {
+	  return Promise.resolve(3)
+	})
+
+These are also (mostly) equivalent:
+
+	Promise.resolve()
+
+	Promise.resolve().then(() => {})
+
+	Promise.resolve().then(() => { return })
+
+	Promise.resolve().then(() => {
+	  return Promise.resolve(undefined)
+	})
+
+# Two callbacks are bad!
+
+	function cb () {
+	  console.log('called');
+	  throw new Error('bad')
+	}
+
+	Promise.resolve()
+	.then(() => cb(null))
+	.catch(cb)
+
+Correct is:
+
+	Promise.resolve()
+	.then(() => cb(null), cb)
+
+Remember, then takes a second argument, e.g. `p.then(onResolved, onRejected)`,
+which fits perfectly with the errback signature `callback(err)`!
