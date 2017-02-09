@@ -129,3 +129,25 @@ Correct is:
 
 Remember, then takes a second argument, e.g. `p.then(onResolved, onRejected)`,
 which fits perfectly with the errback signature `callback(err)`!
+
+# More short hand action
+
+foo.js
+
+	function foo (data) {
+		return new Promise((resolve, reject) => {
+		  if (data.sdadas.dasdsada) { resolve(2) }
+		  resolve(1)
+		})
+	}
+	module.exports = foo
+
+main.js:
+
+	const foo = require('./foo.js')
+
+	foo()
+	//.then((data) => { console.log(data) })
+	.then(console.log)
+	// .catch((e) => { console.log("oh dear", e) } )
+	.catch(console.log)
