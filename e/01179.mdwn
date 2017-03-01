@@ -1,0 +1,5 @@
+[[!meta title="rsync images to USB key"]]
+
+	rsync -rtP --prune-empty-dirs --dry-run --include="*/" --include='*.JPG' --exclude='*' 2017-02-1* /mnt/sda1/
+
+Many thanks to BasketCase on #rsync IRC
