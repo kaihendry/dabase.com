@@ -1,0 +1,13 @@
+[[!meta title="Sorting"]]
+
+Notice this list is not correctly sorted:
+
+	curl -s https://s.natalian.org/2017-04-25/segments-unsorted.txt | sort
+
+The solution is to sort by a key:
+
+	curl -s https://s.natalian.org/2017-04-25/segments-unsorted.txt | sort -t - -k2n
+
+Alternatively version sort:
+
+	curl https://s.natalian.org/2017-04-25/segments-unsorted.txt | sort -V
