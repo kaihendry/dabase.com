@@ -69,3 +69,6 @@ Update: [Guide for the Raspberry PI on Archlinux Arm (alarm)](http://archpi.daba
 
 Acknowledgements: [WonderWoofy on the the Archlinux
 forums](https://bbs.archlinux.org/viewtopic.php?pid=1393759#p1393759)
+
+
+What would be the solution, if there are two wireless interfaces wlan0 and wlan1? Should I use two configurations /etc/systemd/network/wlan0.network, /etc/systemd/network/wlan1.network, /etc/wpa_supplicant/etc/wpa_supplicant@wlan0.conf and /etc/wpa_supplicant@wlan1.conf and then also start two wpa_supplicant.services (wpa_supplicant@wlan0.service and wpa_supplicant@wlan0.service)? Or is it possible to handle two wireless interfaces with one configuration and one service?
