@@ -47,3 +47,5 @@ Consider the primitive way:
 	  <App items={[{ price: 12.12 }, { price: 0.01 }]} />,
 	  document.getElementById('root'),
 	);
+
+Alternative light weight templating: https://gist.github.com/brigand/94c09476676a70e78e33ca84f0cc8ad3
