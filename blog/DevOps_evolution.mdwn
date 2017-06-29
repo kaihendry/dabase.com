@@ -63,7 +63,7 @@ title="Elastic Container Repository">ECR</abbr> (private Docker image hosting)</
 and AWS <abbr title="Elastic Container Service">ECS</abbr> for managing the
 containers on EC2.
 
-Tip: Getting into ECS like myself? Checkout [[ECS questions]]!
+Tip: Getting into ECS like myself? Checkout [[ECS questions]] or [[AWS_ECS_Workflow]]!
 
 Scales in a complex way (worry about bother Container & Instance utilisation
 and timings), providing you have [Service Auto Scaling in your
@@ -71,7 +71,18 @@ region](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-
 
 # Phase 6
 
-Serverless computing? [AWS Lambda](https://aws.amazon.com/lambda/details/)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l08c8uQJL_o?ecver=1" frameborder="0" allowfullscreen></iframe>
 
-Most apps would probably have to be completely rewritten and tied to the
-hosting platform in question.
+Serverless computing?
+[FaaS](https://en.wikipedia.org/wiki/Function_as_a_Service)! [AWS
+Lambda](https://aws.amazon.com/lambda/details/).  It's not without servers of
+course, it more of a *managed Containers* or *dynamic server allocation*
+solution.
+
+You get:
+* A/B deployments
+* Logging
+* Optionally: API gateway is pretty sweet (basically you get Cloudfront integrated)
+
+Most apps would probably have to be completely rewritten and somewhat tied to
+the hosting platform's API.
