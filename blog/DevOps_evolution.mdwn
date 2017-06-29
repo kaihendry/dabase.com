@@ -79,7 +79,8 @@ Lambda](https://aws.amazon.com/lambda/details/).  It's not without servers of
 course, it more of a *managed Containers* or *dynamic server allocation*
 solution.
 
-You get:
+Included with "serverless":
+
 * A/B deployments
 * Logging
 * Optionally: API gateway is pretty sweet (basically you get Cloudfront integrated)
