@@ -1,0 +1,10 @@
+[[!meta title="Indexing templates"]]
+
+Say you want to diff between items in a template...
+
+One way is to precompute with a struct: <https://play.golang.org/p/COtfgaKKCs>
+
+Or you can use the template's indexes! <https://play.golang.org/p/XtOLfDdMQY>
+
+
+Many thanks to pestle on #go-nuts
