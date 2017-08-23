@@ -1,5 +1,7 @@
 [[!meta title="Embedding types example"]]
 
+Reference: https://golang.org/doc/effective_go.html#embedding
+
 https://play.golang.org/p/ry8L4tqbjh
 
 	package main
