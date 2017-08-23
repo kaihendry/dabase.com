@@ -1,0 +1,37 @@
+[[!meta title="Embedding types example"]]
+
+https://play.golang.org/p/ry8L4tqbjh
+
+	package main
+
+	import (
+		"log"
+		"os"
+		"text/template"
+		"time"
+	)
+
+	// https://stackoverflow.com/a/25015260/4534
+	type customTime struct {
+		time.Time
+	}
+
+	func main() {
+
+		tmpl, err := template.New("test").Parse(`{{ .Start }} {{ .Stop }} Duration: {{ .Stop.Time.Sub .Start.Time }}`)
+		if err != nil {
+			panic(err)
+		}
+		err = tmpl.Execute(os.Stdout, struct {
+			Start customTime
+			Stop  customTime
+		}{
+			Start: customTime{time.Now()},
+			Stop:  customTime{time.Now().AddDate(0, 0, 1)},
+		})
+
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
+
