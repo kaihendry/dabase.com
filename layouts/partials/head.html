@@ -3,6 +3,7 @@
 {{ $alternate_title := replace .File.BaseFileName "_" " " | title }}
 <title>{{ .Title  | default $alternate_title }}</title>
 <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
 {{ template "_internal/google_analytics_async.html" . }}
 <meta name="twitter:creator" content="@kaihendry">
 <link rel="canonical" href="{{ .Permalink }}" />
