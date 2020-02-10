@@ -17,7 +17,9 @@ Then I was thinking what would it take me to adopt this style.
 	}
 
 Trouble that Hugo removes the dashes of the ISO8601 formatted date. Also adds
-`drafts: true`.
+`drafts: true`. It needs to effortless to open that todo window.
+
+# The style
 
 The author uses a compact markdown style to record his day:
 
@@ -39,7 +41,15 @@ update biosketch for Co-PI
 5pm 1:1 with Beyonce #phdadvisee
 6pm faculty interview dinner with Madonna
 
-
 But as you can see, it doesn't look good in markdown. 🤦
 
-Further the caveat or _Prerequisite: A calendar_ really confuses me. **How do I sync this with my [Fastmail calendar](https://www.fastmail.com/help/calendar/calendartroubleshooting.html)**?
+# Lacking calendar integration
+
+The _Prerequisite: A calendar_ really confuses me. **How do I sync this with my [Fastmail calendar](https://www.fastmail.com/help/calendar/calendartroubleshooting.html)**?
+
+It appears it is possible to sync with the [Google suite](https://news.ycombinator.com/item?id=22276793), but I am using Fastmail!
+
+Only [one comment](https://news.ycombinator.com/item?id=22279284) alludes to:
+
+> (Reminds me to figure out how to morph it into iCalendar files (and perhaps
+> back)) 

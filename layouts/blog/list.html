@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+{{ range (.Data.Pages.GroupByDate "2006") }}
+<h1> {{ .Key }}</h1>
+
+<ul>
+{{ range .Pages.ByDate }}
+<li><time>{{ .Date.Format "Jan 02" }}</time> <a href="{{.Permalink}}">
+{{ $alternate_title := replace .File.BaseFileName "_" " " | title }}
+{{ .Title  | default $alternate_title }}
+</a></li>
+{{ end }}
+</ul>
+{{ end }}
+
+{{ end }}
