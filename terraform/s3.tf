@@ -10,16 +10,19 @@ provider "aws" {
   alias   = "cloudfront"
 }
 
+terraform {
+  backend "s3" {
+    profile = "mine"
+    bucket  = "hendry-terraform-state"
+    key     = "dabase.com.tfstate"
+    region  = "ap-southeast-1"
+  }
+}
+
 variable "fqdn" {
   description = "The fully-qualified domain name of the resulting S3 website."
   default     = "dabase.com"
 }
-
-variable "domain" {
-  description = "The domain name."
-  default     = "example.com"
-}
-
 
 # Using this module
 module "main" {
@@ -36,6 +39,17 @@ module "main" {
   cloudfront_price_class = "PriceClass_All"
 
   force_destroy = "true"
+
+  routing_rules = <<EOF
+  [{
+    "Condition": {
+      "KeyPrefixEquals": "index.atom"
+    },
+    "Redirect": {
+        "ReplaceKeyPrefixWith": "index.xml"
+    }
+  }]
+EOF
 
   providers = {
     aws.main       = aws.main
