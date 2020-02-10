@@ -1,0 +1,45 @@
+---
+title: "TODO"
+date: 2020-02-10T15:53:53+08:00
+---
+
+I thought https://jeffhuang.com/productivity_text_file/ and the [HN
+comments](https://news.ycombinator.com/item?id=22276184) accompanying post to
+very inspiring.
+
+Then I was thinking what would it take me to adopt this style.
+
+# A shell alias
+
+	todo () {
+			cd /home/hendry/wikis/dabase.branchable.com
+			hugo new --editor vim todo/$(date +%F).md
+	}
+
+Trouble that Hugo removes the dashes of the ISO8601 formatted date. Also adds
+`drafts: true`.
+
+The author uses a compact markdown style to record his day:
+
+2017-11-31
+11:00am meet with Head TAs
+- where are things at with inviting portfolio reviewers?
+11:30am meet with student Enya (interested in research)
+review and release A/B Testing assignment grading
+12pm HCI group meeting
+- vote for lab snacks
+send reminders for CHI external reviewers
+read Sketchy draft
+Zelda pick up eye tracker
+- have her sign for it
+update biosketch for Co-PI
+3:15pm join call with Umbrella Corp and industry partnership staff
+3:45pm advising meet with Oprah
+4pm Rihanna talk (368 CIT)
+5pm 1:1 with Beyonce #phdadvisee
+6pm faculty interview dinner with Madonna
+
+
+But as you can see, it doesn't look good in markdown. 🤦
+
+Further the caveat or _Prerequisite: A calendar_ really confuses me. **How do I sync this with my [Fastmail calendar](https://www.fastmail.com/help/calendar/calendartroubleshooting.html)**?
