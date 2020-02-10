@@ -6,7 +6,7 @@
 <h1> {{ .Key }}</h1>
 
 <ul>
-{{ range .Pages.ByDate }}<li><time datetime="{{ .Date }}">
+{{ range .Pages.ByDate }}<li><time datetime="{{ .Date.Format "2006-01-02T15:04" }}">
 {{- .Date.Format "2/1" }}</time> <a href="{{.Permalink}}">
 {{- $alternate_title := replace .File.BaseFileName "_" " " | title }}
 {{- .Title  | default $alternate_title }}</a></li>
