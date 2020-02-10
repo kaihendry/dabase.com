@@ -1,3 +1,7 @@
+---
+date: 2016-05-02 12:56:53 +0800
+---
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GwhtoeMx1I8" frameborder="0" allowfullscreen></iframe>
 
 # /etc/samba/smb.conf

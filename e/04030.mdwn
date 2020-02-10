@@ -1,2 +1,0 @@
-[[!meta title="Licensing"]]
-http://lists.debian.org/debian-legal/2004/08/msg00011.html

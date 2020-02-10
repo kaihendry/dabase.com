@@ -1,3 +1,0 @@
-[[!meta title="Mapping URLs to the FS"]]
-/usr/share/doc/latex2html/README.Debian.gz
-Excellent example with FS fails to map icons onto the URL.

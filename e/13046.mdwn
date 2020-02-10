@@ -1,3 +1,0 @@
-[[!meta title="JSON to 100"]]
-
-	echo {1..100} | jq -s  '[.[]|{id:.,"foo":"bar"}]'

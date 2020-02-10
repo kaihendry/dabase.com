@@ -1,3 +1,7 @@
+---
+date: 2016-05-19 09:32:43 +0800
+---
+
 <img src=http://s.natalian.org/2016-05-19/Data-Wipe-Failed.jpg alt="Data Wipe Failed">
 
 My friend came to me with his **Xiaomi Mi Note** that he was planning to sell,

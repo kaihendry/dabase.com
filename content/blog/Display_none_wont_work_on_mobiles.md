@@ -1,3 +1,7 @@
+---
+date: 2009-02-01 20:26:14 +0000
+---
+
 For years I have argued incorrectly that mobile browsers should not download images when something like:
 
 	img { display: none; }

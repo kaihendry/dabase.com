@@ -1,8 +1,0 @@
-[[!meta title="How to print Unicode characters in bash"]]
-
-	$ echo -e "\u263A"
-	☺
-
-\u + HEX value
-
-<http://www.fileformat.info/info/unicode/char/263a/>

@@ -1,3 +1,0 @@
-[[!meta title="PyGTK"]]
-Tutorial gtk1 :
-http://www.moeraki.com/pygtktutorial/pygtktutorial/index.html

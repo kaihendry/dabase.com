@@ -1,3 +1,7 @@
+---
+date: 2009-06-30 16:34:33 +0100
+---
+
 In order for a "Working Draft" specification to become a "Candidate
 Recommendation" at the W3C, it is [likely to need a test
 suite](http://www.w3.org/2005/10/Process-20051014/tr.html#cfr).

@@ -1,5 +1,0 @@
-[[!meta title="Howto tar up dot files and dirs"]]
-
-from 'dondelelcaro' on #debian:
-
-    tar -zcvf dotfiles.tar.gz .??*

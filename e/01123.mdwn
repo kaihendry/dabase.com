@@ -1,3 +1,0 @@
-[[!meta title="Turn off Beeping"]]
-"set bell-style none" in /etc/inputrc
-xset b off if you are using X

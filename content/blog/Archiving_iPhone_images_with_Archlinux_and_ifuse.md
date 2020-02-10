@@ -1,3 +1,7 @@
+---
+date: 2015-03-24 15:29:51 +0800
+---
+
 Using `sudo ifuse /mnt/iphone/` you can mount your Iphone6 as I do and archive
 the contents of **DCIM** your hard drive. Make sure you have _Personal Hotspot_
 enabled else it might not work.

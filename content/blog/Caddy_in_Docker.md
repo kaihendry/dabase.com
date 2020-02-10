@@ -1,3 +1,7 @@
+---
+date: 2016-05-09 15:51:57 +0800
+---
+
 <img src=http://s.natalian.org/2016-05-09/local-caddy.png alt="Caddy running in Docker on Archlinux">
 
 Instead of running [Caddy](https://caddyserver.com/) via `go get`, I've opted

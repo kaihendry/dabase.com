@@ -1,3 +1,7 @@
+---
+date: 2016-06-08 13:42:05 +0800
+---
+
 Do NOT `btrfs device delete` which is the synonymous with `btrfs device remove`
 when removing a disk from a [btrfs](https://en.wikipedia.org/wiki/Btrfs) RAID
 array.

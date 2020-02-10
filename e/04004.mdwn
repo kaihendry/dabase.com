@@ -1,3 +1,0 @@
-[[!meta title="Web stats are useless"]]
-Read this to know why:
-http://www.goldmark.org/netrants/webstats/

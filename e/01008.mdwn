@@ -1,4 +1,0 @@
-[[!meta title="KODAK DC3400 ZOOM DIGITAL CAMERA gphoto2"]]
-
-Use a compact flash reader, instead of using the camera's broken native
-import/export interface.

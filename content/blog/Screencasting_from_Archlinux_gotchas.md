@@ -1,3 +1,7 @@
+---
+date: 2015-07-15 11:37:22 +0800
+---
+
 ## Update: I now use [obs-studio](https://obsproject.com/) for my [videos](https://www.youtube.com/user/kaihendry)!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mLJOv9a_4as" frameborder="0" allowfullscreen></iframe>

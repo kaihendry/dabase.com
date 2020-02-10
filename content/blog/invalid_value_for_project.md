@@ -1,3 +1,7 @@
+---
+date: 2014-11-08 20:18:58 +0800
+---
+
 [[!meta title="'invalid value for project' google compute engine"]]
 
 Google wasted my time by having a distinction between PROJECT NAME & PROJECT ID.

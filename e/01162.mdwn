@@ -1,3 +1,0 @@
-[[!meta title="Clearing space on root"]]
-
-	sudo apt-get clean

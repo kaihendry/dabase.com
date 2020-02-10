@@ -1,3 +1,7 @@
+---
+date: 2014-10-20 13:50:34 +0800
+---
+
 <embed style="width: 30%" type="image/svg+xml" src="http://s.natalian.org/2014-10-20/coreos_logo.svg" />
 <img src=http://s.natalian.org/2014-11-14/docker-logo.png alt="Docker Logo">
 

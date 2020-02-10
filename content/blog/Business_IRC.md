@@ -1,3 +1,7 @@
+---
+date: 2010-06-15 18:43:03 +0100
+---
+
 In a modern distributed company in order to communicate, businesses use tools
 like teleconferences (urgh), email, instant messaging (which one?) and more
 integrated packages like [campfire](http://campfirenow.com).

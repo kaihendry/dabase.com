@@ -1,3 +1,7 @@
+---
+date: 2015-11-10 15:24:56 +0800
+---
+
 [[!meta title="Mail from a VPS using AWS SES from sandbox mode" ]]
 
 Set up <https://aws.amazon.com/ses/> with a [verified

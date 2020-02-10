@@ -1,5 +1,0 @@
-[[!meta title="chroot"]]
-After chrooting into a Debian install (/mnt/hd)  and network isn't working, you probably need to:
-Exit out of the chroot, 'mount -o bind /proc /mnt/hd/proc'
-And probably the same with /sys
-Thanks to StevenK on #debian-devel

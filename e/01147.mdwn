@@ -1,3 +1,0 @@
-[[!meta title="Packages from experimental"]]
-
-[Debian Experimental](http://wiki.debian.org/DebianExperimental) is soo not recommended. :)

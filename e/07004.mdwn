@@ -1,3 +1,0 @@
-[[!meta title="FAQ"]]
-The online FAQ should be here:
-http://vimdoc.sourceforge.net/cgi-bin/vimfaq2html3.pl

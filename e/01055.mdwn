@@ -1,2 +1,0 @@
-[[!meta title="xkill - Killing a process"]]
-CTRL+ALT+ESC

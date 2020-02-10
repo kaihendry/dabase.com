@@ -1,4 +1,0 @@
-[[!meta title="Screencasting, YouTube-y tips"]]
-
-* [[Howto_record_a_WAV|u/record_wav]]
-* [[How_to_screencast|e/01010]]

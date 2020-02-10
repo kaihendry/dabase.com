@@ -1,4 +1,0 @@
-[[!meta title="Infrequently asked questions"]]
-From reading this:
-http://www.norvig.com/python-iaq.html
-I discovered the Set data type and Norvig's .python startup file

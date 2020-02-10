@@ -1,3 +1,7 @@
+---
+date: 2010-10-12 22:10:30 +0100
+---
+
 I was very dissapointed to see <http://news.bbc.co.uk> start to redirect to
 <http://www.bbc.co.uk/news/> earlier this year.
 

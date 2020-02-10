@@ -1,3 +1,7 @@
+---
+date: 2015-10-18 09:48:27 +0800
+---
+
 In Singapore, the <abbr title="National Environment Agency">NEA</abbr>
 publishes data about **air quality** in a machine readable format aka an "API".
 

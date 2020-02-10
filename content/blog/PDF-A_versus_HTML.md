@@ -1,3 +1,7 @@
+---
+date: 2009-06-24 21:33:40 +0100
+---
+
 [[!meta title="PDF/A versus HTML" ]]
 
 2016 update: <https://shkspr.mobi/blog/2016/07/pdfs-are-the-cheques-of-the-21st-century/> has a good summary why PDF is a bad format

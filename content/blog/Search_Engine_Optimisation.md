@@ -1,3 +1,7 @@
+---
+date: 2009-12-16 22:44:32 +0000
+---
+
 So you've been told your site needs some <abbr title="Search Engine Optimisation">SEO</abbr>. Why?
 
 You Google search for your product's keywords or simply your company name and it does not

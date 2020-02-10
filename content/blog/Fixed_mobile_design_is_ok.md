@@ -1,3 +1,7 @@
+---
+date: 2009-02-01 20:27:51 +0000
+---
+
 
 For years I've promoted liquid, fluid, scalable Web designs.
 

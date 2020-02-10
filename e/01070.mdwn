@@ -1,9 +1,0 @@
-[[!meta title="Better than apt-cache search"]]
-Finding package information:
-
-	grep-dctrl
-And aliases:
-
-	grep-status
-
-	grep-availible

@@ -1,3 +1,0 @@
-[[!meta title="Formatting text"]]
-
-Visual select and `=`

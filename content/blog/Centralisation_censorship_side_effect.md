@@ -1,3 +1,7 @@
+---
+date: 2015-08-09 17:46:51 +0800
+---
+
 [[!meta title="Side effect of centralisation WRT censorship"]]
 
 UPDATE 2016-01-28: Unsurprisingly Sarawak Report moved to

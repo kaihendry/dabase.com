@@ -1,3 +1,7 @@
+---
+date: 2015-09-06 10:34:09 +0800
+---
+
 <blockquote cite="http://lwn.net/Articles/658198/">As a result, we can, unfortunately, expect to continue to be subjected to surveillance and criminal behavior from the devices that we think we own. We can't say we weren't warned.
 <cite><a href="http://lwn.net/Articles/658198/">Jonathan Corbet</a></cite>
 </blockquote>

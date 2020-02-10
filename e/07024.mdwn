@@ -1,8 +1,0 @@
-[[!meta title="vim7's auto-completion features"]]
-
-Omnicompletion whilst programming:
-
-	CTRL-X CTRL-O
-	CTRL+[p]
-
-I still don't use this very much.

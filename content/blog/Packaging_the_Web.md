@@ -1,3 +1,7 @@
+---
+date: 2010-12-05 16:56:01 +0000
+---
+
 Packaging has interested
 [me](http://qa.debian.org/developer.php?login=hendry@iki.fi) for awhile and of
 late I prefer the [simple arch

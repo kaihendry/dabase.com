@@ -1,8 +1,0 @@
-[[!meta title="lsof"]]
-List of all open files
-
-	lsof
-List open internet connections
-
-	lsof -i
-Cool...

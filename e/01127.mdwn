@@ -1,3 +1,0 @@
-[[!meta title="Testing a firewall?"]]
-Use netcat
-And nmap

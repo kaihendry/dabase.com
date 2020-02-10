@@ -1,3 +1,7 @@
+---
+date: 2009-05-19 19:12:46 +0100
+---
+
 PAYG Internet charges are coming down. Though they are not as fast as
 [HSDPA](http://en.wikipedia.org/wiki/HSPDA) dongle products
 [seemingly](http://dabase.com/android/Android_3G_wifi_tethering/), they do

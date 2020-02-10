@@ -1,3 +1,0 @@
-[[!meta title="Runlevels."]]
-invoke-rc.d - executes System&#8208;V style init script actions
-update-rc.d - install and remove System&#8208;V style init script links

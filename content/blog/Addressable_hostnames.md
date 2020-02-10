@@ -1,3 +1,7 @@
+---
+date: 2015-12-04 21:18:57 +0800
+---
+
 Consider:
 
 	[hendry@sg ~]$ hostname

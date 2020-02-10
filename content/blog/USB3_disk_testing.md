@@ -1,3 +1,7 @@
+---
+date: 2014-02-10 16:53:02 +0800
+---
+
 So I exchanged [my WD Passport Ultra with a poorly fitting USB
 cable](http://youtu.be/StSIib6RmCw) for a Seagate Backup Plus (Slim) portable drive
 which was roughly the same price at Sim Lim at Cybermind Computer on the 4th floor.

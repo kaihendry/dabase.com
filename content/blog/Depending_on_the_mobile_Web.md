@@ -1,3 +1,7 @@
+---
+date: 2010-03-07 23:25:01 +0000
+---
+
 <a href="http://www.flickr.com/photos/hendry/4412963067/" title="Ski scene by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2712/4412963067_411dea438f.jpg" width="500" height="375" alt="Ski scene" /></a>
 
 After spending a week in France completely dependent on my

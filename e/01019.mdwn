@@ -1,3 +1,0 @@
-[[!meta title="Basename (removing filename extensions in BASH)"]]
-
-`basename`. Always forget that sucker.

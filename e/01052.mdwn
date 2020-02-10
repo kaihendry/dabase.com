@@ -1,4 +1,0 @@
-[[!meta title="Java in Debian"]]
-See the FAQ:
-http://www.debian.org/doc/manuals/debian-java-faq/ch11.html#s11.2
-Remember... JAVA SUCKS ASS

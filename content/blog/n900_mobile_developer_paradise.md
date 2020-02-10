@@ -1,3 +1,7 @@
+---
+date: 2010-01-22 18:47:16 +0000
+---
+
 <a href="http://www.flickr.com/photos/hendry/4295918782/" title="Multiple widgets by Kai Hendry, on Flickr"><img src="http://farm5.static.flickr.com/4055/4295918782_478a271f4a_o.png" width="800" height="480" alt="Multiple widgets" /></a>
 
 Wow, something that usually takes a couple of days has been achieved on a

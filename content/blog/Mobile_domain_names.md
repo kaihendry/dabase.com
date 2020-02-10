@@ -1,3 +1,7 @@
+---
+date: 2009-02-01 20:29:32 +0000
+---
+
 # Maintain URL integrity (including HTTPS!!!)
 
 Entering https://paypal.co.uk into a mobile Android browser should take you to

@@ -1,3 +1,7 @@
+---
+date: 2009-02-01 20:26:14 +0000
+---
+
 I've written before about [key Web features such as degrading
 gracefully](http://natalian.org/archives/2008/09/16/3-reasons-why-the-web-platform-will-not-fragment-on-mobiles/)
 and how that feature is going make the Web a winner on mobiles.

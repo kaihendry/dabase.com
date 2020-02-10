@@ -1,3 +1,7 @@
+---
+date: 2014-08-06 22:07:01 +0800
+---
+
 <video controls width=640 height=360>
 <source src=http://r2d2.webconverger.org/2014-08-06/sigfox-impressions.mp4 type=video/mp4>
 </video>

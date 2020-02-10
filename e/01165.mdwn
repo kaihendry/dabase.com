@@ -1,3 +1,0 @@
-[[!meta title="How to rotate a video"]]
-
-See <https://github.com/kaihendry/recordmydesktop2.0/blob/master/htmlvideo>

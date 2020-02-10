@@ -1,6 +1,0 @@
-[[!meta title="Accessibility = disability"]]
-And thinking about "accessibility" for awhile, I have to the conclusion
-that it should narrowed down to people who are specifically disabled (in
-the legal sense) and require special need/considerations. It should not be a catchall term.
-http://www.w3.org/Talks/WAI-Intro/slide3-0.html
-Web accessibility means access to the Web by everyone, regardless of disability.

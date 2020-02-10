@@ -1,3 +1,7 @@
+---
+date: 2009-09-29 11:58:34 +0100
+---
+
 # Why would you want to sign a widget?
 
 For the same reasons why you would sign a document or an email if you're

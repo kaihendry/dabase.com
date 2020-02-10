@@ -1,2 +1,0 @@
-[[!meta title="Setting a read S3 policy from the command line"]]
-[[!meta redir=blog/S3_permission_policy_confusion]]

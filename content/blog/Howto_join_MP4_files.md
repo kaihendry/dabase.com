@@ -1,3 +1,7 @@
+---
+date: 2014-04-30 17:52:18 +0800
+---
+
 # What does not work
 
 <a href="http://trac.ffmpeg.org/wiki/How%20to%20concatenate%20(join,%20merge)%20media%20files">ffmpeg has an insane interface</a> for simple use cases like joining two MP4 files.

@@ -1,9 +1,0 @@
-[[!meta title="Adding a user to a group"]]
-
-In Debian this is done simply, like so:
-
-	adduser hendry sudo
-
-In Archlinux, it's done like this:
-
-	usermod -a -G <groups> <user>

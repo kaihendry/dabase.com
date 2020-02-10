@@ -1,5 +1,0 @@
-[[!meta title="Where is my Xorg log?"]]
-
-Try:
-
-	~/.local/share/xorg/

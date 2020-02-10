@@ -1,3 +1,7 @@
+---
+date: 2010-01-28 15:33:04 +0000
+---
+
 * <http://dabase.com/blog/Starting_n900_development>
 * <http://dabase.com/blog/n900_mobile_developer_paradise>
 * <http://wiki.maemo.org/User:Jebba/Package_Building_HOWTO>

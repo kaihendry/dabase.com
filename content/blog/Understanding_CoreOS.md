@@ -1,3 +1,7 @@
+---
+date: 2013-11-02 14:17:34 +0800
+---
+
 [CoreOS](http://coreos.com/) has come up on my radar a couple of times and I
 decided to see what all the fuss about especially when they were soliciting
 companies to pilot their software for 5000USD!

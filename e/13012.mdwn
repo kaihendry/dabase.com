@@ -1,7 +1,0 @@
-[[!meta title="find and copy"]]
-
-xargs isn't the solution.
-
-Try the strangely formatted -exec option like:
-
-	frodo$ find /media/mp3/ -name *.avi -type f -exec cp '{}' /home/hendry/videos/jutta/ \;

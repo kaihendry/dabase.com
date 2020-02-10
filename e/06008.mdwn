@@ -1,4 +1,0 @@
-[[!meta title="for i in range(len(li)): BAD"]]
-for i in li:
-    print i
-GOOD

@@ -1,3 +1,0 @@
-[[!meta title="Debian feed"]]
-http://natalian.org/wp-rss.php?cat=2
-http://natalian.org/archives/category/debian/rss

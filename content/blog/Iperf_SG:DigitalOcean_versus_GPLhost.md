@@ -1,3 +1,7 @@
+---
+date: 2014-02-14 13:31:38 +0800
+---
+
 Since [Digital Ocean has opened a new SG datacenter](https://digitalocean.com/blog_posts/we-re-excited-to-announce-our-singapore-datacenter-sgp1), it's time to pit my existing SG VPS at [GPLhost](https://dtc.node6503.gplhost.com/dtc/affiliation.php?affiliate=kaihendry&return=/hosting-vps.html) against it!
 
 From my Singtel connection at home, with `iperf -s` running on either VPS.

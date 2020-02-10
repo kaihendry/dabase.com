@@ -1,8 +1,0 @@
-[[!meta title="bash prompt"]]
-Know this:
-
-	# is root
-
-	$ for user
-man bash
-/PROMPTING

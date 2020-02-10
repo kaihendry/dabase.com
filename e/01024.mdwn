@@ -1,3 +1,0 @@
-[[!meta title="Finding additional information about a package not installed"]]
-
-    apt-cache show

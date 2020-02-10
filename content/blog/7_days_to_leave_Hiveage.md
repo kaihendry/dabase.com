@@ -1,3 +1,7 @@
+---
+date: 2015-06-24 10:02:42 +0100
+---
+
 Update: [Wrote my own billing platform](https://www.youtube.com/watch?v=PPL1C5TmGvY)
 
 I'm on holiday, but I need to leave Hiveage since I'm been told to leave the

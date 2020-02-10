@@ -1,3 +1,7 @@
+---
+date: 2010-10-25 16:17:13 +0100
+---
+
 Working in a corporate environment, I am shocked at the ineffective use of email.
 
 However it is not surprisingly when colleagues say the email discussion "got

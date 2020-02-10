@@ -1,3 +1,0 @@
-[[!meta title="Radical Simplicity"]]
-Simplicity = Zero training
-http://intertwingly.net/slides/2005/rs/

@@ -1,3 +1,0 @@
-[[!meta title="Default bugzilla severity priority"]]
-
-<http://your.bugzilla.instance/editparams.cgi?section=bugfields#defaultpriority>

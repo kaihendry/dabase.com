@@ -1,7 +1,0 @@
-[[!meta title="Checking packages"]]
-
-Checking your package is a good idea:
-
-    hendry@sam:~/mypackage2$ lintian python-lupy_0.1-1_i386.changes | lintian-info
-
-another helpful tool is called "linda"

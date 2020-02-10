@@ -1,3 +1,7 @@
+---
+date: 2013-02-18 16:57:00 +0800
+---
+
 <video poster=http://s.natalian.org/2013-02-18/region-highlight.png controls width=640 height=360>
 <source src=http://r2d2.webconverger.org/2013-02-18/highlight.webm type=video/webm>
 <source src=http://r2d2.webconverger.org/2013-02-18/highlight.mp4 type=video/mp4>

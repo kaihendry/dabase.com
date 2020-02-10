@@ -1,3 +1,7 @@
+---
+date: 2009-09-07 09:20:33 +0100
+---
+
 Part 2 in the series, please see the [[first_part_of_the_JIL_BONDI_comparison|JIL_versus_BONDI]].
 
 Widgets need to be signed, because in many cases they take advantage of new

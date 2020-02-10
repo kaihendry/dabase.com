@@ -1,3 +1,7 @@
+---
+date: 2015-06-16 08:56:16 +0100
+---
+
 Update: 2015-06-17 Since I blogged this, I have been told I have 7 days to
 leave the service whilst on holiday. A SaaS horror story. :(
 

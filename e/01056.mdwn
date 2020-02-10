@@ -1,6 +1,0 @@
-[[!meta title="Modifying runlevels"]]
-
-http://www.debian.org/doc/manuals/reference/ch-system.en.html#s-runlevels
-
-
-	update-rc.d

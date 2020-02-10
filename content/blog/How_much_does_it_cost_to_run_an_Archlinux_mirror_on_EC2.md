@@ -1,3 +1,7 @@
+---
+date: 2014-08-25 15:44:18 +0800
+---
+
 <abbr title="Amazon Web Services">AWS</abbr> Singapore kindly gifted
 <http://hackerspace.sg/> with 500SGD of AWS credits.
 

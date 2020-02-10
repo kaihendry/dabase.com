@@ -1,3 +1,7 @@
+---
+date: 2015-10-28 19:05:40 +0800
+---
+
 UPDATE 2017-04-02: <https://twitter.com/anholt/status/840753745721937920> there might be a working driver now...
 
 UPDATE: Latest OpenGL work status seems to be here, <https://dri.freedesktop.org/wiki/VC4/> which is **Required** for Webkit2.

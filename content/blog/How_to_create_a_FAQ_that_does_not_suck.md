@@ -1,3 +1,7 @@
+---
+date: 2012-04-15 11:40:44 +0800
+---
+
 What does a FAQ need?
 
 1. A table of contents listing the questions

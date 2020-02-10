@@ -1,3 +1,7 @@
+---
+date: 2013-02-19 23:09:26 +0800
+---
+
 Store [markdown formatted](http://en.wikipedia.org/wiki/Markdown) index.mdwn files in a directory hierarchy. Store the style.css, [header.inc](https://github.com/kaihendry/sg-hackandtell/blob/master/header.inc) & [footer.inc](https://github.com/kaihendry/sg-hackandtell/blob/master/footer.inc) in the base directory with the following [Makefile](https://github.com/kaihendry/sg-hackandtell/blob/master/Makefile):
 
 	INFILES = $(shell find . -name "*.mdwn")

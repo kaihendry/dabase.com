@@ -1,5 +1,0 @@
-[[!meta title="How to validate systemd service file"]]
-
-Check or lint a service for syntax errors!
-
-	sudo systemd-analyze verify foobar.service

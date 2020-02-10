@@ -1,2 +1,0 @@
-[[!meta title="date fun"]]
-date -d 'now + 2 hours'

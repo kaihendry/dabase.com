@@ -1,3 +1,7 @@
+---
+date: 2009-08-02 21:52:50 +0100
+---
+
 Thanks to the [Hide & Seek festival in London](http://hideandseekfest.co.uk/)
 this Sunday, I played two interesting games using a mobile device.
 

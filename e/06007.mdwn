@@ -1,4 +1,0 @@
-[[!meta title="Return, do not print"]]
-Common mistake with people like me who can't program properly.
-return results
-do not print shit all the time.

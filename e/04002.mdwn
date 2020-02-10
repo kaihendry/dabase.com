@@ -1,6 +1,0 @@
-[[!meta title="Mozilla Type Ahead Find"]]
-http://www.mozilla.org/projects/ui/accessibility/typeaheadfind.html
-Type some text to search.
-F3 for next.
-Insert for launching the link in a tab.
-Nice.

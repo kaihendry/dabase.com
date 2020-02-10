@@ -1,3 +1,7 @@
+---
+date: 2013-10-27 13:33:20 +0800
+---
+
 So, I have unenviable task of moving a VPS from Bitfolk to Linode.
 
 Both run Debian 7 (wheezy).

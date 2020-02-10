@@ -1,0 +1,8 @@
+<head>
+<meta charset="utf-8">
+{{ $alternate_title := replace .File.BaseFileName "_" " " | title }}
+<title>{{ .Title  | default $alternate_title }}</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="twitter:creator" content="@kaihendry">
+<link rel="canonical" href="{{ .Permalink }}" />
+</head>

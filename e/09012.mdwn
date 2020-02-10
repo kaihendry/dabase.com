@@ -1,7 +1,0 @@
-[[!meta title="Tracking another branch of a project with GIT"]]
-Ok, go into your live-initramfs clone and:
-    git remote add otavio git://git.debian.org/git/users/otavio/live-initramfs.git
-    git remote update
-    git checkout -b otavio-master otavio/master
-later:
-    git checkout otavio-master ; git rebase otavio/master

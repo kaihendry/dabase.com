@@ -1,3 +1,7 @@
+---
+date: 2009-02-17 13:25:07 +0000
+---
+
 Er, why doesn't HTML5 just use [ISO 8601](http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/date_and_time_format.htm)?
 
 Why the HELL have [they](http://whatwg.org) gone and invented their own [datetime specification](http://www.whatwg.org/specs/web-apps/current-work/multipage/infrastructure.html#valid-date-string)?

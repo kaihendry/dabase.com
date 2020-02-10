@@ -1,4 +1,0 @@
-[[!meta title="Version of package ?"]]
-Finding package version information:
-
-	hendry@bilbo:~$ dpkg -s maradns

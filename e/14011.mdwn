@@ -1,5 +1,0 @@
-[[!meta title="Debugging running Docker image"]]
-
-$name of docker image
-
-	docker exec -it $name /bin/sh

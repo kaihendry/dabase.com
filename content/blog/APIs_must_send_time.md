@@ -1,3 +1,7 @@
+---
+date: 2015-10-25 16:54:40 +0800
+---
+
 I'm a novice API critic after building a [couple](http://bus.dabase.com/)
 [of](http://greptweet.com/) [apps](http://jbsg.dabase.com/) that depend on
 APIs. I've written before about [[poor API design that hinders client side

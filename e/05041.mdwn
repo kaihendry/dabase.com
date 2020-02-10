@@ -1,5 +1,0 @@
-[[!meta title="Writing a new faq entry"]]
-
-I type it up all in my familiar editor.
-
-I use Markdown.

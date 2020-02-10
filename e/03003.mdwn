@@ -1,2 +1,0 @@
-[[!meta title="Debian keysigning"]]
-http://www.debian.org/events/keysigning

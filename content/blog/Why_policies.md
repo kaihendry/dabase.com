@@ -1,3 +1,7 @@
+---
+date: 2009-12-21 15:57:06 +0000
+---
+
 What's the P in [W3C DAP](http://www.w3.org/2009/dap/) stand for?
 
 **Policy** people! There has been some

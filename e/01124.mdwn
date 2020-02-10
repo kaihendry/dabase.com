@@ -1,3 +1,0 @@
-[[!meta title="mkdir -p not mkhier"]]
-To create a hierachy use mkdir -p
-See: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=314565

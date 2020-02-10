@@ -1,3 +1,0 @@
-[[!meta title="Browser security"]]
-ARGH!
-http://www.infodrom.org/~joey/log/?200507300606

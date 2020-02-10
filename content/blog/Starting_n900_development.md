@@ -1,3 +1,7 @@
+---
+date: 2010-01-21 16:05:12 +0000
+---
+
 <a href="http://www.flickr.com/photos/hendry/4292443879/" title="Install maemo-geolocation"><img src="http://farm5.static.flickr.com/4001/4292443879_4cf04f0655.jpg" width="500" height="300" alt="geo.webvm.net on n900" /></a>
 
 Despite my initial

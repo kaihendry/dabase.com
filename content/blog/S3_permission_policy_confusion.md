@@ -1,3 +1,7 @@
+---
+date: 2014-05-16 19:18:36 +0800
+---
+
 I do like [AWS S3](https://console.aws.amazon.com/s3), but on the topic of
 policy/security languages, IIUC Amazon have fecked up by having THREE of them.
 

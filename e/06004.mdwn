@@ -1,2 +1,0 @@
-[[!meta title="Regular Expressions"]]
-http://db.cs.helsinki.fi/~hendry/python/re.cgi

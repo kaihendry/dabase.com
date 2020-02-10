@@ -1,8 +1,0 @@
-[[!meta title="Anti-aliased fonts"]]
-
-This is a helpful guide:
-
-http://mumford1.dyndns.org/~bs7452/linuxhelp/aa_fonts.html
-
-At one point I emulated RH's desktop on my Debian machine. Nimbus Sans font et
-al.  Now I use Bitstream's Sans font.

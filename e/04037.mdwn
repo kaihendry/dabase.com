@@ -1,5 +1,0 @@
-[[!meta title="Disable an extension in Iceweasel/Firefox"]]
-Use safe mode.
-http://kb.mozillazine.org/Safe_Mode_(Firefox)
-Edit the RDF:Description
-And add carefully NS1:userDisabled="true"

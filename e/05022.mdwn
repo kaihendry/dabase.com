@@ -1,3 +1,0 @@
-[[!meta title="DRM"]]
-http://craphound.com/msftdrm.txt
-http://www.imperialviolet.org/gilmore.html

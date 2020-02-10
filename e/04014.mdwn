@@ -1,2 +1,0 @@
-[[!meta title="PDF"]]
-Install the package plugger in debian !

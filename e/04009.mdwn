@@ -1,5 +1,0 @@
-[[!meta title="Keywords"]]
-http://www.mozilla.org/docs/end-user/keywords.html
-You can set up a Custom Keyword for instantly accessing Python module documentation using the string www.python.org/doc/current/lib/module-%s.html - I have this set up as pydoc, so I can type pydoc re to jump straight to the re module documentation. I only set it up half an hour ago and I've already used it about a dozen times.
-From:
-http://simon.incutio.com/archive/2003/10/26/reSplit

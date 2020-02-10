@@ -1,3 +1,7 @@
+---
+date: 2016-02-11 18:00:19 +0800
+---
+
 Companion [video on the issues I have with Docker](https://www.youtube.com/watch?v=tQZfCOpXJmE)
 
 In an attempt to improve my previous [[Docker_container_update_workflow]], I

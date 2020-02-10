@@ -1,3 +1,7 @@
+---
+date: 2010-08-10 00:32:28 +0100
+---
+
 Say you handle support emails privately at `support@example.com`.
 
 Ideally this email is distributed amongst at least two employees in different timezones: Tom & John.

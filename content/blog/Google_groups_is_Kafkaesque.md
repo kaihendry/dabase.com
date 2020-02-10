@@ -1,3 +1,7 @@
+---
+date: 2013-09-06 11:23:22 +0800
+---
+
 There are plenty of [Google Groups rants](http://ejohn.org/blog/google-groups-is-dead/) out there, here is mine:
 
 * 99% of SPAM is Chinese, Non-English and non-primary language as I've configured the group. Still it comes.

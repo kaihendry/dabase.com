@@ -1,3 +1,7 @@
+---
+date: 2013-10-03 13:45:22 +0800
+---
+
 So I bought a "SanDisk SDSSDHP-128G-G25 128GB Ultra Plus SATA 3.0 6GB/s 7mm
 Internal SSD" aka "sandisk" to complement my existing "OCZ 120GB Nocti SSD -
 mSATA SATA-II - Read 280MB/s Write 260MB/s" aka "nocti" disk connected to my

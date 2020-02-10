@@ -1,3 +1,0 @@
-[[!meta title="Links"]]
-For reference:
-http://www.cs.nyu.edu/courses/fall02/V22.0480-001/latex.html

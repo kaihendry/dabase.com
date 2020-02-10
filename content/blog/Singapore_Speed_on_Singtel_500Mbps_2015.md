@@ -1,3 +1,7 @@
+---
+date: 2015-03-07 20:13:02 +0800
+---
+
 I was curious to know if there was a real difference between the **Network Performance** between AWS ap-southeast-1a m3.xlarge (52.74.16.160) and a ap-southeast-1a t2.micro (52.74.13.219).
 
 I configured both instances as 64bit Ubuntu since that has the `iperf` package readily available and on my wired X220 laptop I ran several iperf tests.

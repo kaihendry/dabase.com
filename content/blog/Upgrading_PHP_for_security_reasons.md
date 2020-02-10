@@ -1,3 +1,7 @@
+---
+date: 2015-09-02 10:52:39 +0800
+---
+
 I like to talk at [local Singaporean tech meetups](http://www.webuild.sg/) to
 challenge myself. When I talk vehemently about certain topics, don't think I
 actually believe in what I say. I'm overstating on purpose in order to attract

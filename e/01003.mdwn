@@ -1,8 +1,0 @@
-[[!meta title="Showing friends and family GNU/Linux"]]
-
-Convincing people to make the switch is pretty damn difficult. However I can suggest you use a Live Linux filesystem distro such as:
-
-* [Debian Live](http://debian-live.alioth.debian.org/)
-* [Webconverger](http://webconverger.com/)
-
-To show them. It does not touch their hard drive, so they have nothing to fear. And they can sit back and play around with linux. It is also a good indicator to see if the NIC or modem will work etc. etc.

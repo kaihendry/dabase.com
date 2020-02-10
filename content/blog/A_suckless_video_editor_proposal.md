@@ -1,3 +1,7 @@
+---
+date: 2015-05-19 17:45:03 +0800
+---
+
 I have used Adobe Premiere, iMovie, Final Cut Pro X and a myriad of other video
 editors.
 

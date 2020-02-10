@@ -1,0 +1,13 @@
+title: dabase
+baseURL: https://dabase.com
+defaultContentLanguage: en
+disablePathToLower: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+deployment:
+  targets:
+    name: 'dabase'
+    URL: 's3://dabase.com?region=ap-southeast-1'

@@ -1,3 +1,7 @@
+---
+date: 2012-02-23 13:01:02 +0800
+---
+
 After installing [Apache 2.4](http://httpd.apache.org/download.cgi#apache24) in `/usr/local/apache2/`, I struggled to get my
 VirtualHost setup going.
 

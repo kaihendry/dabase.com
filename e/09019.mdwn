@@ -1,5 +1,0 @@
-[[!meta title="Cherry picking git commits from another branch"]]
-
-I want the file `config/binary_debian-installer/preseed.cfg` from the branch **atlav**.
-
-	git diff ..atlav config/binary_debian-installer/preseed.cfg | patch config/binary_debian-installer/preseed.cfg

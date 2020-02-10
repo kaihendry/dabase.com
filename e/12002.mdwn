@@ -1,3 +1,0 @@
-[[!meta title="Installing from CDs using the console"]]
-You could always copy the CD's to a central directory/repo and change /etc/sysconfig/rhn/sources to refer to that local directory and then you can use the up2date tool
-There is also the --aid option with Rpm

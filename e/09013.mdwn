@@ -1,7 +1,0 @@
-[[!meta title="Howto send a PATCH from git"]]
-
-	git format-patch HEAD^
-
-or rather
-
-	git format-patch origin

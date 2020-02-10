@@ -1,9 +1,0 @@
-[[!meta title="RAID sucks"]]
-From http://www.gllug.org.uk/index.php?/archives/35-Mailing-Lists-are-broken.html
-
-	As the server uses hardware RAID we cannot simply swap the disks into a different box and replacing the PSU etc is likely to take about a week.
-From experience in a datacentre, RAID mounts fail. Esp. DELL.
-RAID batteries fail.
-A lot of RAID hardware is proprietary and buggy.
-Software RAID is often worse.
-Rebuilding configurations with broken RAID setups can be really hard.

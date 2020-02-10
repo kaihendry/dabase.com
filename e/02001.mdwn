@@ -1,6 +1,0 @@
-[[!meta title="My censored .muttrc"]]
-Please consult :
-http://svn.natalian.org/home/.muttrc
-And my offline muttrc executed with : alias mutto='mutt -F ~/.muttorc'
-in the .bashrc
-http://svn.natalian.org/home/.muttorc

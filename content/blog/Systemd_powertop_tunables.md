@@ -1,3 +1,7 @@
+---
+date: 2013-01-31 13:35:55 +0800
+---
+
 Putting Powertop tunables in a systemd format will probably be [blogged by
 Lennart](http://lists.freedesktop.org/archives/systemd-devel/2012-November/007445.html),
 though here goes. Prompted by the legendary [Power regressions

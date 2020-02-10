@@ -1,3 +1,7 @@
+---
+date: 2013-01-19 22:20:55 +0800
+---
+
 # Background
 
 I'm too embarrassed to write this "statistics architecture" up on the

@@ -1,4 +1,0 @@
-[[!meta title="Write now!"]]
-I wonder about encoding now:
-
-	open(file, "w").write(new)

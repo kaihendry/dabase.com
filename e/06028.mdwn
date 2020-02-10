@@ -1,3 +1,0 @@
-[[!meta title="Passing arguments"]]
-import sys
-filename = sys.argv[1]

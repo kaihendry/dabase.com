@@ -1,4 +1,0 @@
-[[!meta title="Shorcuts in Mozilla"]]
-alt+arrow keys for back and for
-
-	ctrl+l for location focus

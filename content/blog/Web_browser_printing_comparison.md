@@ -1,3 +1,7 @@
+---
+date: 2009-06-08 23:14:23 +0100
+---
+
 After setting up [CUPS-PDF](http://webconverger.org/printing/) for testing
 [Webconverger](http://webconverger.com/), I realised I could print from various
 browsers and compare their postscript output.

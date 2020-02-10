@@ -1,4 +1,0 @@
-[[!meta title="Taking screenshots"]]
-Screenshots are great to show people !
-
-I recommend `scrot`. Time delay features which work.

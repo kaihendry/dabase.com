@@ -1,3 +1,7 @@
+---
+date: 2014-07-15 17:47:30 +0800
+---
+
 <img src=http://fishshell.com/assets/img/Terminal_Logo_CRT_Small.png alt="Fish logo">
 
 I tried the <http://fishshell.com/> instead of bash, mainly because my bash

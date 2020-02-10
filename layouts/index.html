@@ -1,0 +1,8 @@
+{{ define "main" }}
+<p>
+    There are {{ len .Site.RegularPages }} pages currently on this site.
+    <a href="/tips">{{ len (where .Site.RegularPages "Section" "=" "tips") }} tips</a>,
+	and 
+    <a href="/blog">{{ len (where .Site.RegularPages "Section" "=" "blog") }} blog posts</a>.
+</p>
+{{ end }}

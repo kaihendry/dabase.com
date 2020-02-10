@@ -1,9 +1,0 @@
-[[!meta title="jq query with a hyphen"]]
-
-Notice the difference between:
-
-	jq '.POST["family-name"]' < notes.json
-
-and
-
-	jq '.POST.pricing' < notes.json

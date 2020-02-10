@@ -1,3 +1,7 @@
+---
+date: 2009-11-18 12:53:12 +0000
+---
+
 Update: Marcos has replied to all my concerns <http://lists.w3.org/Archives/Public/public-webapps/2009OctDec/0943.html>
 
 This late rant is prompted by [Widget interface spec (Last Call)](http://twitter.com/widgetspecs/status/5799561554).

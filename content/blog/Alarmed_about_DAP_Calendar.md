@@ -1,3 +1,7 @@
+---
+date: 2010-03-29 17:24:57 +0100
+---
+
 To me the [W3C DAP](http://www.w3.org/2009/dap/)
 [calendar](http://dev.w3.org/2009/dap/calendar) is a reworked [BONDI
 calendar](http://bondidev.omtp.org/modules/calendar.html), which simply misses

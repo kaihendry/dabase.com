@@ -1,3 +1,0 @@
-[[!meta title="XML on the Web has failed."]]
-http://www.xml.com/pub/a/2004/07/21/dive.html
-http://www.hixie.ch/advocacy/xhtml

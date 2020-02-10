@@ -1,6 +1,0 @@
-[[!meta title="Configuring POSTFIX with your ISP's smtp"]]
-Ha ha, EZ:
-
-	13:58 < snowblink> hendry: sudo postconf -e relayhost=yourispsmtpserver
-
-	13:58 < snowblink> hendry: then sudo /etc/init.d/postfix restart

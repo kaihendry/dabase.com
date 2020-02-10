@@ -1,3 +1,7 @@
+---
+date: 2016-03-04 19:12:53 +0800
+---
+
 	~$ python2 -c "import django; print(django.get_version())"
 	1.9.2
 

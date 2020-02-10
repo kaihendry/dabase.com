@@ -1,2 +1,0 @@
-[[!meta title="whois dig"]]
-For checking domain info.

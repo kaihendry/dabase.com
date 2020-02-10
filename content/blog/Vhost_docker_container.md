@@ -1,3 +1,7 @@
+---
+date: 2014-11-09 23:49:33 +0800
+---
+
 	23:19 <hendry> biggest feature missing for me is dockers lack of vhosting support. hosting off a random port is a bit silly, no?
 	23:20 <dstufft> hendry: you can't generically do vhosting
 	23:24 <hendry> dstufft: not quite sure why vhosting is SUCH a hard feature

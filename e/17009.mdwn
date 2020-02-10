@@ -1,7 +1,0 @@
-[[!meta title="Firefox gstreamer MP4 playback"]]
-
-As indicated in the [Firefox PKGBUILD](https://projects.archlinux.org/svntogit/packages.git/tree/trunk/PKGBUILD?h=packages/firefox),
-
-	pacman -S gst-plugins-good gst-libav
-
-And here is a good test site: <http://natalian.org/2015/10/12/iPhone6S_Live_photo_markup/>

@@ -1,3 +1,7 @@
+---
+date: 2015-03-13 13:57:21 +0800
+---
+
 # Rule 1
 
 ## Have a URL that addresses the issue as clearly as possible.

@@ -1,3 +1,7 @@
+---
+date: 2016-07-12 13:32:43 +0800
+---
+
 [[!meta title="Whats the difference between a Docker container and a Virtual machine?" ]]
 
 Docker is much **faster** and more productive to work with than a Virtual

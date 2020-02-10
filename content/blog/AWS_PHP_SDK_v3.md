@@ -1,3 +1,7 @@
+---
+date: 2016-08-27 14:40:59 +0800
+---
+
 Whilst "Dockerizing" a really simple [PHP project to send feedback
 email](https://github.com/kaihendry/vanilla-php-feedback-form), I had the
 unfortunate experience of tustling with the [AWS PHP

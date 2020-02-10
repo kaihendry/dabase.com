@@ -1,3 +1,7 @@
+---
+date: 2013-11-28 17:34:32 +0800
+---
+
 <blockquote class="twitter-tweet" lang="en"><p>There is too much configuration. There is too much state. There are too many options. There are too many dot files. Stuff should just work.</p>&mdash; Rob Pike (@rob_pike) <a href="https://twitter.com/rob_pike/statuses/360557625756229632">July 26, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

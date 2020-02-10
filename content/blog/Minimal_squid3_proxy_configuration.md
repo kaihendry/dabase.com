@@ -1,3 +1,7 @@
+---
+date: 2012-07-10 21:19:43 +0200
+---
+
 Setting up a Web proxy might be needed to evade censorship and [geo
 restrictions](http://dabase.com/e/04052/). I'm using
 [squid3](http://www.squid-cache.org/) packaged in either Debian or Ubuntu.

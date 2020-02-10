@@ -1,3 +1,7 @@
+---
+date: 2014-06-21 17:35:19 +0100
+---
+
 I upgraded my Mom's old [11 inch Macbook
 Air](http://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&item=221470328889) since
 she said the screen was too small. Enter a 13-inch, Early 2014 model with OS X

@@ -1,3 +1,7 @@
+---
+date: 2014-12-05 11:28:45 +0800
+---
+
 I setup [Greptweet](https://github.com/kaihendry/greptweet) a few months ago on
 a <abbr title="Digital Ocean">DO</abbr> "Droplet" aka <abbr title="Virtual
 Private Server">VPS</abbr> in London running [CoreOS](https://coreos.com/)

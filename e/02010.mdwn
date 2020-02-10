@@ -1,9 +1,0 @@
-[[!meta title="Reading attachments (God forbid)"]]
-For reading .pdf attachments in the background this link is useful:
-http://www.spocom.com/users/gjohnson/mutt/#pdf
-
-	application/pdf;                $HOME/mutt_bgrun acroread %s; test=sh -c 'test $DISPLAY'
-
-	application/pdf;                pdftotext %s -; copiousoutput
-You need this program:
-http://www.spocom.com/users/gjohnson/mutt/mutt_bgrun

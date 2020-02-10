@@ -1,3 +1,7 @@
+---
+date: 2013-12-02 10:35:34 +0800
+---
+
 <img src=http://s.natalian.org/2013-12-02/youtube-flash-required.png>
 
 Launch console, with `shift+ctrl+i` and copy and paste in:

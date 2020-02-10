@@ -1,4 +1,0 @@
-[[!meta title="Makefile for generating your CV or invoice"]]
-
-
-[Makefile](https://github.com/kaihendry/PrinceInvoiceTemplate/blob/master/Makefile)

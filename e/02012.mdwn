@@ -1,3 +1,0 @@
-[[!meta title="Maildrop: Forwarding emails"]]
-The exclaimation mark does it:
-http://svn.natalian.org/home/.mailfilter

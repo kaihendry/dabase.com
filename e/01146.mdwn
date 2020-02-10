@@ -1,6 +1,0 @@
-[[!meta title="Realplayer"]]
-Realplayer with CC proxy.
-Then icecast server.
-ices2 ices-alsa.xml
-And aumix to choose the main output device as input!
-http://natalian.org/archives/2006/06/15/bbc-radio-5-live/

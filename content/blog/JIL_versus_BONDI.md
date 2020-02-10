@@ -1,3 +1,7 @@
+---
+date: 2009-07-25 17:34:23 +0100
+---
+
 So [what](http://www.jil.org/jil-forums/posts/list/42.page) are the differences between [BONDI](http://bondi.omtp.org) and [JIL](http://www.jil.org)?
 
 # Part 1 -- Organisational differences

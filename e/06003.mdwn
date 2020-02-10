@@ -1,9 +1,0 @@
-[[!meta title="Urllib"]]
-import urllib
-
-	f = urllib.urlopen('http://www.cs.helsinki.fi/u/hendry/')
-
-	data = f.read()
-
-	print data
-COOL HUH?

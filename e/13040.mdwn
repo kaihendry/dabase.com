@@ -1,5 +1,0 @@
-[[!meta title="Scan for hosts alive on your subnet"]]
-
-For 192.168.5.*
-
-	nmap -PR -sP 192.168.5.0/24

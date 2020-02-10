@@ -1,3 +1,7 @@
+---
+date: 2016-07-18 17:11:38 +0800
+---
+
 Ignoring the complexities surrounding data.
 
 # Phase 1

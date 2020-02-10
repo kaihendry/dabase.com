@@ -1,4 +1,0 @@
-[[!meta title="Emailing pictures"]]
-Do this non-interactively:
-
-	mutt hendry@example.com -a /home/hendry/pix/jutta/img_3381.jpg < messagebody

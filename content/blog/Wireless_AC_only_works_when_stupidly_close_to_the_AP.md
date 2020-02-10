@@ -1,3 +1,7 @@
+---
+date: 2016-01-03 10:41:05 +0800
+---
+
 The **Qualcomm Atheros QCA9880 802.11nac** in my [Archer C7
 v2](https://wiki.openwrt.org/toh/tp-link/tl-wdr7500) running OpenWRT 15.05 only
 seems to perform when really close to the <abbr title="Access Point">AP</abbr>.

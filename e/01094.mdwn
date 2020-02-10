@@ -1,4 +1,0 @@
-[[!meta title="Arch Indep packages"]]
-Wanted to find all the arch independant packages on my system:
-
-	grep-status -F Architecture all | less

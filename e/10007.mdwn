@@ -1,9 +1,0 @@
-[[!meta title="Biblography tips"]]
-Usually your school or research organization gives you a .bst file to work with. e.g. tktl.bst
-This has the styles you need to work with in some sort of functional bibtex language.
-I was looking for something to give attribution or cite material like W3C specs on the web. THANKFULLY there was something in tktl.bst that does it, as the latex defaults I don't think cut it.
-In my bst my favourite is @www-inproceedings.
-You could write a bst yourself, but I am sure that is probably not a good idea.
-When compiling your tex look closely for warnings. Sort them out.
-For reference:
-http://svn.natalian.org/school/thesis/tktl/references.bib

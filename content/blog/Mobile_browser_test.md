@@ -1,3 +1,7 @@
+---
+date: 2009-04-29 13:27:11 +0100
+---
+
 Hey guys, [I'm blogging over at the Mobile Web Test Suites Working Group
 Blog](http://www.w3.org/blog/index.php?blog=26&author=176).
 

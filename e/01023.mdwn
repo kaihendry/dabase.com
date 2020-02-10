@@ -1,5 +1,0 @@
-[[!meta title="Official Debian Tips"]]
-
-Quite a few good [Debian tips](http://www.debian.org/doc/manuals/reference/ch-tips.en.html).
-
-Though it's far easier to contribute your tip here. :)

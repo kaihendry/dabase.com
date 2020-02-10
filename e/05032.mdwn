@@ -1,6 +1,0 @@
-[[!meta title="Lesscode!"]]
-This is FAR TOO LONG:
-
-	frodo$ wc -l /usr/src/linux-source-2.6.12/drivers/net/wireless/airo.c
-
-	7725 /usr/src/linux-source-2.6.12/drivers/net/wireless/airo.c

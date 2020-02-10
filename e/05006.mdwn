@@ -1,2 +1,0 @@
-[[!meta title="Digital Media"]]
-It is not surprising, then, that when browser vendors started adding methods for specifying presentation details—such as font size and colors—authors started using them. But they weren't satisfied with this early technology. They kept asking for publishing-quality typographic control on the Web. Designers and authors got some of what they wanted, and we got this mess.

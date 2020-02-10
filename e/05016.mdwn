@@ -1,3 +1,0 @@
-[[!meta title="Certification bodies"]]
-Rackets
-http://www.iso.ch/iso/en/iso9000-14000/pdf/survey10thcycle.pdf

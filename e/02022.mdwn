@@ -1,5 +1,0 @@
-[[!meta title="Sharing a conversation"]]
-
-Tag the thread and (s)ave or (f)orward it
-
-	<esc>t ;f (or ;s)

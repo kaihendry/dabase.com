@@ -1,3 +1,7 @@
+---
+date: 2014-03-13 12:12:46 +0800
+---
+
 From roughly systemd version 210, networking in my Droplet changed.
 
 Out went netctl somehow (good riddance), and my network connectivity (uh oh).

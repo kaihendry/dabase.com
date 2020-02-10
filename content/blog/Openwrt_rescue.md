@@ -1,3 +1,7 @@
+---
+date: 2016-03-19 15:21:56 +0800
+---
+
 When resetting an OpenWRT router into failsafe mode, it usually comes up as
 192.168.1.1 with no DHCPD. So you need to manually set your machine 192.168.1.1
 and telnet to it.

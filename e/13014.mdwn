@@ -1,7 +1,0 @@
-[[!meta title="Getting port numbers out of /etc/service"]]
-There is usually a couple of ways:
-
-	15:14 < hendry> gnychis: tail /etc/services | awk '{print $2}' | awk -F / '{print $1}'
-
-	15:18 < m4n> gnychis: while read line; do line="${line%/*}"; echo "${line##* }"; done < yourfile
-Though the second one is a bashism.

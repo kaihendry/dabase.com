@@ -1,3 +1,7 @@
+---
+date: 2012-07-17 16:34:44 +0200
+---
+
 My WIFI is connected to the Internet. I want share Internet with a device that doesn't have wifi via the WIRED ethernet ports.
 
 Using [systemd-networkd](https://wiki.archlinux.org/index.php/Systemd-networkd) I configure `/etc/systemd/network/wifi.network` like so:

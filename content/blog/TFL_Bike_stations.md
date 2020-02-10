@@ -1,3 +1,7 @@
+---
+date: 2010-10-07 13:30:32 +0100
+---
+
 [[!table  data="""
 id, stationName, areaName, lat, long
 1,River Street,Clerkenwell,51.52916347,-0.109970527,0,19,true,false,false

@@ -1,3 +1,7 @@
+---
+date: 2015-11-04 11:20:10 +0800
+---
+
 Upon <http://irc.dabase.com/> I log the `irc://irc.freenode.net/hackerspacesg`
 IRC channel. I implemented this as **minimal** as possible! It's **not an
 archive**, it's just to see what's the latest _chitter chatter_ for a
