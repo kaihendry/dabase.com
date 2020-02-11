@@ -46,6 +46,7 @@ module "main" {
       "KeyPrefixEquals": "index.atom"
     },
     "Redirect": {
+        "HostName": "dabase.com",
         "ReplaceKeyPrefixWith": "index.xml"
     }
   }]

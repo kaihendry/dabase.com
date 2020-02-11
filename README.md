@@ -6,8 +6,4 @@ https://www.youtube.com/watch?v=PmbVccyFY7U
 
 # Terraform
 
-See the terraform/ directory
-
-# TODO
-
-Redirect http://dabase.com/index.atom to https://dabase.com/index.xml
+See the [terraform](terraform/) directory.
