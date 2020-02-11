@@ -4,7 +4,7 @@ date: 2020-02-10T15:53:53+08:00
 ---
 
 I thought https://jeffhuang.com/productivity_text_file/ and the [HN
-comments](https://news.ycombinator.com/item?id=22276184) accompanying post to
+comments](https://news.ycombinator.com/item?id=22276184) accompanying post to be
 very inspiring.
 
 Then I was thinking what would it take me to adopt this style.
@@ -53,3 +53,5 @@ Only [one comment](https://news.ycombinator.com/item?id=22279284) alludes to:
 
 > (Reminds me to figure out how to morph it into iCalendar files (and perhaps
 > back)) 
+
+{{< tweet 1226836687247929345 >}}
