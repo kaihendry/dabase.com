@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: peaceiris/hugo-extended-docker
+    runs-on: peaceiris/hugo
     steps:
       - uses: actions/checkout@v1
       - name: Setup Hugo
