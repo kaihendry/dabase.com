@@ -6,14 +6,16 @@ on:
       - master
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-18.04
+  publish:
+    runs-on: ubuntu-latest
     container:
-      image: peaceiris/hugo:latest
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      image: peaceiris/hugo
     steps:
-      - uses: actions/checkout@v1
-      - run: hugo
-      - run: hugo deploy
+      - uses: actions/checkout@v2
+      - name: Build and Deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          hugo
+          hugo deploy
