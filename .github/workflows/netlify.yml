@@ -1,4 +1,4 @@
-name: Build and Deploy to Netlify
+name: Build and Deploy preview Hugo site to Netlify
 on:
   push:
   pull_request:
@@ -6,6 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: peaceiris/hugo
     steps:
       - uses: actions/checkout@v2
       - name: Build
