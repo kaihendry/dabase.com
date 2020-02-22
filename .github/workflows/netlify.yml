@@ -1,16 +1,20 @@
-name: Build and Deploy to Netlify
+name: Build and Deploy preview Hugo site to Netlify
 on:
   push:
   pull_request:
     types: [opened, synchronize]
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
+    container: peaceiris/hugo
     steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: hugo
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.0
         with:
-          publish-dir: './dist'
+          publish-dir: './public'
           production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
