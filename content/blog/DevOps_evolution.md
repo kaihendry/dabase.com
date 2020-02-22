@@ -67,7 +67,7 @@ title="Elastic Container Repository">ECR</abbr> (private Docker image hosting)</
 and AWS <abbr title="Elastic Container Service">ECS</abbr> for managing the
 containers on EC2.
 
-Tip: Getting into ECS like myself? Checkout [[ECS questions]] or [[AWS_ECS_Workflow]]!
+Tip: Getting into ECS like myself? Checkout [ECS questions](/blog/ECS_questions/) or [AWS ECS Workflow](/blog/AWS_ECS_Workflow/).
 
 Scales in a complex way (worry about bother Container & Instance utilisation
 and timings), providing you have [Service Auto Scaling in your
