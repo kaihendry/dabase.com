@@ -37,6 +37,8 @@ Acronyms:
 
 # New solutions
 
+## Sub-domain: security requirements and controls
+
 <img src="https://s.natalian.org/2020-02-26/kinesis-order.jpg">
 
 <img src="https://s.natalian.org/2020-02-26/kinesis-types.jpg">
@@ -48,3 +50,57 @@ Acronyms:
 <img src="https://s.natalian.org/2020-02-26/dynamodb-global-tables.jpg">
 
 <abbr title="Amazon Simple Workflow Service">SWF</abbr> takes an awful lot of code to make it work well.
+
+<img src="https://s.natalian.org/2020-02-26/iam-access-controls.jpg">
+
+<img src="https://s.natalian.org/2020-02-26/seperate-security-account.jpg">
+
+<img src="https://s.natalian.org/2020-02-26/user-vs-identity-pools.png">
+
+## Sub-domain: deployment strategies for business requirements
+
+<img src="https://s.natalian.org/2020-02-26/deployment-mechanisms.jpg">
+
+# Migration planning
+
+* Plan
+	* Discover
+		* Assessment and profiling
+		* Data requirements and classification
+		* Prioritization
+		* Business logic and infrastructure dependencies
+	* Design
+		* Detailed migration plan
+		* Estimate effort
+		* Security and risk assessment
+* Build
+	* Transform
+		* Network topology
+		* Migrate
+		* Deploy
+		* Validate
+	* Transition
+		* Pilot testing
+		* Transition to support
+		* Release management
+		* Cutover and decommission
+* Run
+	* Operate
+		* Staff training
+		* Monitoring
+		* Incident management
+		* Provisioning
+	* Optimise
+		* Monitoring-driven optimization
+		* Continuous integration and continuous deployment
+		* Well-Architected Framework
+
+<img src="https://s.natalian.org/2020-02-26/storage-portfolio.jpg">
+
+<img src="https://s.natalian.org/2020-02-26/all-three.jpg">
+
+# Cost control
+
+<img src="https://s.natalian.org/2020-02-26/tag-everything.jpg">
+
+<img src="https://s.natalian.org/2020-02-26/two-tags.jpg">
