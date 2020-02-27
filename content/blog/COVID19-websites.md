@@ -14,6 +14,10 @@ government site. Not easy to tell sometimes.
 My goal is to capture the nuances in the information delivery between each
 country's **COVID-19 tracker** 📊.
 
+# China 🇨🇳
+
+* 📊 https://news.qq.com/zt2020/page/feiyan.htm#/
+
 # Singapore 🇸🇬
 
 * 👮📊 https://experience.arcgis.com/experience/7e30edc490a5441a874f9efe67bd8b89
