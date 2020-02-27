@@ -70,6 +70,10 @@ country's **COVID-19 tracker** 📊.
 
 * 👮 https://www.bundesgesundheitsministerium.de/coronavirus.html
 
+# Europe 🇪🇺
+
+* 👮📊 https://www.ecdc.europa.eu/en/cases-2019-ncov-eueea
+
 Via [Reddit](https://www.reddit.com/r/Coronavirus/comments/fa7uco/list_of_national_covid19_tracking_websites_work/) I discovered another [tracker list](https://www.notion.so/44a0635465f4461ea0c8b0b388054569?v=610e123a445c46dc9a7dbbd2eea949db).
 
 I welcome contributions by editing the page below!
