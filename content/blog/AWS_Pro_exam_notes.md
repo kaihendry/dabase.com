@@ -104,3 +104,5 @@ Acronyms:
 <img src="https://s.natalian.org/2020-02-26/tag-everything.jpg">
 
 <img src="https://s.natalian.org/2020-02-26/two-tags.jpg">
+
+Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_watchers/fivmppj/?context=3).
