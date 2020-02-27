@@ -4,7 +4,7 @@ date: 2020-02-27T09:24:00+08:00
 ---
 
 Thanks to a prod by the [esteemed
-@cheeuan](https://twitter.com/cheeaun/status/1232658527572774912), I am
+@cheeaun](https://twitter.com/cheeaun/status/1232658527572774912), I am
 collecting country specific Websites that communicate the ["Wuhan" Coronavirus
 Outbreak](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_outbreak) to their local populace.
 
