@@ -89,6 +89,10 @@ country's **COVID-19 tracker** 📊.
 
 * 👮📊  http://www.moh.gov.my/index.php/pages/view/2274 website appears a little [buggy](https://s.natalian.org/2020-02-27/getSegment.png)
 
+# Belgium 🇧🇪
+
+* https://www.info-coronavirus.be/
+
 Via [Reddit](https://www.reddit.com/r/Coronavirus/comments/fa7uco/list_of_national_covid19_tracking_websites_work/) I discovered another [tracker list](https://www.notion.so/44a0635465f4461ea0c8b0b388054569?v=610e123a445c46dc9a7dbbd2eea949db).
 
 I welcome contributions by editing the page below!
