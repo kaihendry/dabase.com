@@ -17,6 +17,7 @@ country's **COVID-19 tracker** 📊.
 # China 🇨🇳
 
 * 📊 https://news.qq.com/zt2020/page/feiyan.htm#/
+* 📊 https://ncov.dxy.cn/ncovh5/view/pneumonia
 
 # Singapore 🇸🇬
 
@@ -25,6 +26,7 @@ country's **COVID-19 tracker** 📊.
 # Japan 🇯🇵
 
 * 📊 https://japan-cov-19.now.sh/
+* 📊 https://covid-2019.live/
 * 👮 https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html
 
 # Korea 🇰🇷
@@ -35,5 +37,19 @@ country's **COVID-19 tracker** 📊.
 # France 🇫🇷
 
 * 👮 https://www.gouvernement.fr/info-coronavirus
+
+# Philippines 🇵🇭
+
+* 👮📊 https://ncovtracker.doh.gov.ph/
+
+# Taiwan 🇹🇼
+
+* 📊 https://viator.maps.arcgis.com/apps/opsdashboard/index.html#/bbd3dfeeec9c494daf178457c7b74c3e
+
+# Hong Kong 🇭🇰
+
+* 👮📊 https://chp-dashboard.geodata.gov.hk/covid-19/en.html
+
+Via [Reddit](https://www.reddit.com/r/Coronavirus/comments/fa7uco/list_of_national_covid19_tracking_websites_work/) I discovered another [tracker list](https://www.notion.so/44a0635465f4461ea0c8b0b388054569?v=610e123a445c46dc9a7dbbd2eea949db).
 
 I welcome contributions by editing the page below!
