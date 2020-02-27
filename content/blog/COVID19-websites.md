@@ -21,6 +21,7 @@ country's **COVID-19 tracker** 📊.
 
 # Singapore 🇸🇬
 
+* 👮 https://www.moh.gov.sg/covid-19
 * 👮📊 https://experience.arcgis.com/experience/7e30edc490a5441a874f9efe67bd8b89
 
 # Japan 🇯🇵
