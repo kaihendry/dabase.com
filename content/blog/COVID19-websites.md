@@ -29,6 +29,7 @@ country's **COVID-19 tracker** 📊.
 
 # Korea 🇰🇷
 
+* 📊 https://wuhanvirus.kr
 * 👮 https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030
 
 # France 🇫🇷
