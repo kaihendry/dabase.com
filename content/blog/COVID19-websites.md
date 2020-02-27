@@ -80,6 +80,10 @@ country's **COVID-19 tracker** 📊.
 
 * 👮 http://www.health.gov.za/index.php/outbreaks/145-corona-virus-outbreak/465-corona-virus-outbreak
 
+# Italy 🇮🇹
+
+* 👮 http://www.salute.gov.it/nuovocoronavirus SSL appears broken due to Akamai CDN?
+
 Via [Reddit](https://www.reddit.com/r/Coronavirus/comments/fa7uco/list_of_national_covid19_tracking_websites_work/) I discovered another [tracker list](https://www.notion.so/44a0635465f4461ea0c8b0b388054569?v=610e123a445c46dc9a7dbbd2eea949db).
 
 I welcome contributions by editing the page below!
