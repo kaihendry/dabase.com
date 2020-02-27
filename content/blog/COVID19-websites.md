@@ -12,18 +12,23 @@ I'm using 👮 to indicate the site I believe to be an official respective
 government site. Not easy to tell sometimes.
 
 My goal is to capture the nuances in the information delivery between each
-country.
+country's **COVID-19 tracker** 📊.
 
 # Singapore 🇸🇬
 
-* 👮 https://experience.arcgis.com/experience/7e30edc490a5441a874f9efe67bd8b89
+* 👮📊 https://experience.arcgis.com/experience/7e30edc490a5441a874f9efe67bd8b89
 
 # Japan 🇯🇵
 
-* https://japan-cov-19.now.sh/
+* 📊 https://japan-cov-19.now.sh/
+* 👮 https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html
 
 # Korea 🇰🇷
 
 * 👮 https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030
+
+# France 🇫🇷
+
+* 👮 https://www.gouvernement.fr/info-coronavirus
 
 I welcome contributions by editing the page below!
