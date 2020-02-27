@@ -50,6 +50,19 @@ country's **COVID-19 tracker** 📊.
 
 * 👮📊 https://chp-dashboard.geodata.gov.hk/covid-19/en.html
 
+# Australia 🇦🇺
+
+* 👮 https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert
+
+# United States 🇺🇸
+
+* 👮 https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html
+
+# Canada 🇨🇦
+
+* 👮 https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html
+
+
 Via [Reddit](https://www.reddit.com/r/Coronavirus/comments/fa7uco/list_of_national_covid19_tracking_websites_work/) I discovered another [tracker list](https://www.notion.so/44a0635465f4461ea0c8b0b388054569?v=610e123a445c46dc9a7dbbd2eea949db).
 
 I welcome contributions by editing the page below!
