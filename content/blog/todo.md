@@ -1,7 +1,9 @@
 ---
-title: "TODO"
+title: TODO tracking
 date: 2020-02-10T15:53:53+08:00
 ---
+
+Update: Thanks to <https://tech.ingolf-wagner.de/> I am now using [taskwarrior](https://taskwarrior.org/), packaged as [task in Archlinux](https://www.archlinux.org/packages/community/x86_64/task/).
 
 I thought https://jeffhuang.com/productivity_text_file/ and the [HN
 comments](https://news.ycombinator.com/item?id=22276184) accompanying post to be
