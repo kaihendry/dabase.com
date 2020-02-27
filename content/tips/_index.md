@@ -1,3 +1,3 @@
 ---
-Title: Tips
+Title: Kai's Tech Tips
 ---
