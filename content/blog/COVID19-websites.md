@@ -16,6 +16,7 @@ country's **COVID-19 tracker** 📊.
 
 # China 🇨🇳
 
+* 👮 http://en.nhc.gov.cn/
 * 📊 https://news.qq.com/zt2020/page/feiyan.htm#/
 * 📊 https://ncov.dxy.cn/ncovh5/view/pneumonia
 
