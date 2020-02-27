@@ -1,6 +1,5 @@
 name: Build and Deploy preview Hugo site to Netlify
 on:
-  push:
   pull_request:
     types: [opened, synchronize]
 jobs:
