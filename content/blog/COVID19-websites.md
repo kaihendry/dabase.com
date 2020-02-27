@@ -28,6 +28,7 @@ country's **COVID-19 tracker** 📊.
 
 * 📊 https://japan-cov-19.now.sh/
 * 📊 https://covid-2019.live/
+* 📊 https://covid19japan.com/ with [github source](https://github.com/reustle/covid19japan)!
 * 👮 https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html
 
 # Korea 🇰🇷
