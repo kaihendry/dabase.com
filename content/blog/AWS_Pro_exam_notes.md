@@ -163,3 +163,5 @@ Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_
 * AWS ECS
 
 <img src="https://s.natalian.org/2020-02-28/additional-resources.jpg">
+
+{{< tweet 1233291346154098688 >}}
