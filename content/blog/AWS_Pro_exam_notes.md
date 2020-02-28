@@ -106,3 +106,60 @@ Acronyms:
 <img src="https://s.natalian.org/2020-02-26/two-tags.jpg">
 
 Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_watchers/fivmppj/?context=3).
+
+* Termination protection does not work for Auto scaling groups
+* Instance protection does work
+
+# Improving Architectures
+
+## Sub-domain: troubleshooting solution architectures
+
+<img src="https://s.natalian.org/2020-02-28/trouble-shooting.jpg">
+
+<img width=1280 height=720 src="https://s.natalian.org/2020-02-28/1582860243_2560x1440.png" alt="CW Events != Alarms">
+
+## Sub-domain: operational excellence
+
+* Two way doors (reversible changes) as opposed to more risky one way doors
+* Implement [CloudFormation](https://www.reddit.com/r/aws/comments/f74b61/after_being_in_the_consultant_biz_for_3_years/fi92oal/) aka <abbr title="Infrastructure as Code">IaC</abbr>
+
+## Sub-domain: improve reliability
+
+<img src="https://s.natalian.org/2020-02-28/operational.png" alt="The operational continium">
+
+* [Instance auto recovery](https://aws.amazon.com/about-aws/whats-new/2018/05/amazon-ec2-auto-recovery-is-now-available-for-dedicated-instances/)
+* Use Multi-AZ services: S3/DynamoDB automatically Multi-AZ
+* AWS EBS Snapshots minimize Recovery Point Objective
+* Use RI for critical systems
+* [DLP with CloudTrail](https://darkbit.io/blog/2020/02/18/simple-dlp-for-amazon-s3)
+
+<img src="https://s.natalian.org/2020-02-28/snapshots.jpg">
+
+## Sub-domain: improving performance
+
+<img src="https://s.natalian.org/2020-02-28/ebs-performance.jpg">
+
+<img src="https://s.natalian.org/2020-02-28/redis-performance.jpg">
+
+* Memcached is single AZ
+
+## Sub-domain: improving security
+
+<img src="https://s.natalian.org/2020-02-28/restrict-access.jpg">
+
+<img src="https://s.natalian.org/2020-02-28/encryption-options.jpg">
+
+<img src="https://s.natalian.org/2020-02-28/perimeter-controls.jpg">
+
+* <abbr title="Network Access Control Layer">NACLs</abbr> are stateless and accomodate **DENY** rules unlike Security groups
+* Redis [Lazy loading versus Write through](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Strategies.html)
+
+## Sub-domain: improving deployment
+
+* Cloud Formation - consider Deletion policy attribute, be wary of downtime
+* Code deploy - Must remove underlying instances
+* Elastic Beanstalk - can do it all
+* OpsWorks - Chef can handle minimal downtime
+* AWS ECS
+
+<img src="https://s.natalian.org/2020-02-28/additional-resources.jpg">
