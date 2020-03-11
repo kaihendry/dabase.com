@@ -127,8 +127,6 @@ RHEL HA Add-on, SIOS Protection Suite.
 
 # Quickstart
 
-s3://saplabs-media000/hana20/sps04/
-
 	ec2-user@imdbmaster:~> lsblk
 	NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 	nvme0n1                 259:0    0   50G  0 disk
