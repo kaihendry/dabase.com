@@ -1,7 +1,6 @@
 ---
 title: "My First SAP"
 date: 2020-03-11T09:28:32+08:00
-draft: true
 ---
 
 A [post on SAP on HN](https://news.ycombinator.com/item?id=22244750) I found
@@ -45,11 +44,25 @@ Business logic and configuration, as well as data, is all kept in the HANA datab
 On the topic of "certified", only certain [AWS instance
 types](https://aws.amazon.com/sap/instance-types/) can be used.
 
+Considering HANAs high memory requirements, remember:
+
+* R,X memory optimised
+* U high memory
+
+**SAPS** is a benchmark, which correlates to interactions per user on the SAP
+sales and distribution module. [Quick
+sizer](https://www.sap.com/about/benchmark/sizing.html) on existing workloads
+can help you map to the AWS instances via **SAPS**.
+
+SSD disks should always be used.
+
 ## Deployments and networking
 
+These often require a static IP, aka an AWS Elastic IP:
+
 * SAProuter - so you can "ssh in"
-* SAP Web dispatch - their load balancer
-* SAP Transports so you can do RPC calls between environement
+* SAP Web dispatcher - their load balancer
+* SAP Transports `/usr/sap/trans` so you can do RPC calls between environment
 
 In the AWS context, deployments are usually are in a private VPC. Requiring a
 VPN (IPsec) for access.
@@ -64,7 +77,85 @@ To improve connectivity latency for clients, AWS offers an Accelerated VPN produ
 
 For the age old "production data in staging" environment for debugging problem, SAP does offer a "System refresh" way of getting data. But to mask / redact sensitive production data, tools like <abbr title="SAP Test Data Migration Server">TDMS</abbr> and other third party tools like **Qlik Gold**.
 
+## Monitoring
 
+AWS Data Provider for SAP feeds data into SAP <abbr title="Computing Center Management System">CCMS</abbr>.
 
+## AWS EBS volumes
 
+Do not use the Instance store for SAP Workloads.
 
+They should be encrypted by default.
+
+1. root OS
+2. SAP app
+3. data, aka the database
+4. logs from database
+
+Depending on performance characteristics, it could just be two volumes:
+
+1. root OS & SAP app
+2. database & logs
+
+Or use multiple volumes in a RAID-0 striped setup for increased I/O. Or try
+different volume type. Though it's actually cheaper to **allocate more space** in
+**gp2 space**.
+
+Remember you can change volume size type on the fly. You can temporarily change
+the type for increased performance!
+
+For backups use snapshot for OS + App. Use SAP tools for the data/base and
+script to S3. Often via an intermediate st1 volume.
+
+S3 is 10 9s for durability and 4 nines availability.
+
+**sapmnt** would use EFS on Linux and FSx for Windows workloads.
+
+## High availability
+
+For high availability workloads, use an ELB to two workloads on different AZs.
+The app could be hosted on EFS (also use <abbr title="enqueue replicate
+service">ers</abbr>) and the database could be replicated with DB Log
+replication. It's Active / Passive, it cannot be Active/Active due the nature
+of DB replication. However it's common to use a third party solution, SLES HAE,
+RHEL HA Add-on, SIOS Protection Suite.
+
+## Disaster Recovery
+
+* Passive DR, backup up to S3
+* Pilot light would be using replication
+
+# Quickstart
+
+s3://saplabs-media000/hana20/sps04/
+
+	ec2-user@imdbmaster:~> lsblk
+	NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+	nvme0n1                 259:0    0   50G  0 disk
+	├─nvme0n1p1             259:1    0    2M  0 part
+	├─nvme0n1p2             259:2    0   20M  0 part /boot/efi
+	└─nvme0n1p3             259:3    0   50G  0 part /
+	nvme1n1                 259:4    0  512G  0 disk
+	└─vghanaback-lvhanaback 254:0    0  511G  0 lvm  /backup
+	nvme2n1                 259:5    0  300G  0 disk /hana/shared
+	nvme3n1                 259:6    0  225G  0 disk
+	└─vghanadata-lvhanadata 254:1    0  585G  0 lvm  /hana/data
+	nvme4n1                 259:7    0  225G  0 disk
+	└─vghanadata-lvhanadata 254:1    0  585G  0 lvm  /hana/data
+	nvme5n1                 259:8    0  225G  0 disk
+	└─vghanadata-lvhanadata 254:1    0  585G  0 lvm  /hana/data
+	nvme6n1                 259:9    0  175G  0 disk
+	└─vghanalog-lvhanalog   254:2    0  325G  0 lvm  /hana/log
+	nvme7n1                 259:10   0  175G  0 disk
+	└─vghanalog-lvhanalog   254:2    0  32G  0 lvm  /hana/log
+	nvme8n1                 259:11   0   50G  0 disk /usr/sap
+	nvme9n1                 259:12   0   50G  0 disk /media
+
+# HANA offerings
+
+1. *SAP HANA <abbr title="Bring Your Own License">BYOL</abbr> only S4 HANA compatible
+2. SAP Cloud Platform SAP HANA service for custom application development
+3. SAP HANA express edition for testing use case studies
+4. SAP HANA Enterprise Cloud (HEC) on AWS -- one throat to choke
+
+You can't seperate your app and database, for latency reasons.
