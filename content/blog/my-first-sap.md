@@ -81,6 +81,14 @@ For the age old "production data in staging" environment for debugging problem, 
 
 AWS Data Provider for SAP feeds data into SAP <abbr title="Computing Center Management System">CCMS</abbr>.
 
+How SAP CCMS is the old way of SAP monitoring. Currently the SAP monitoring solutions are:
+* [Solution manager](https://support.sap.com/en/alm/solution-manager/expert-portal.html)
+* [SAP Hana Cockpit](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.03/en-US/c61b097543124d5a9e631c0288c6714c.html)
+
+However the most forward looking SAP monitoring strategy appears to be adopting
+[Prometheus with
+exporters](https://blogs.sap.com/2020/02/07/monitoring-sap-and-hana-instances-with-prometheus-and-grafana/).
+
 ## AWS EBS volumes
 
 Do not use the Instance store for SAP Workloads.
