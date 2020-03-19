@@ -3,7 +3,7 @@ title: "Failed the AWS Certified Solutions Architect professional exam"
 date: 2020-03-18T09:48:37+08:00
 ---
 
-Yesterday I took and failed my SAP-C01 exam. You may have noticed I scribbled
+Yesterday I took and failed the SAP-C01 exam. You may have noticed I scribbled
 some [preparation notes earlier](https://dabase.com/blog/AWS_Pro_exam_notes/).
 
 Candidate score was 730 and I needed 750 to pass. So I was close, but it showed
@@ -15,8 +15,9 @@ at least to me some gaps in my knowledge:
 * Even though I've used AWS ECS for years, some questions about the [task roles](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html) and [awsvpc](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html) versus `bridge` confused me.
 * Routing <abbr title="with respect to">wrt</abbr> joining two VPCs that share the same private subnet range 10.0.0.1/24
 * Little confused by inter VPC connectivity options. Transit? Gateway?
+* A lot of weird regional <abbr title="AWS Certificate Manager">ACM<abbr> questions that threw me. This is undergoing change I believe at writing to Amazon Trust Services, so the questions will be extra confusing until updated.
 
 
 The 3 hour test is pretty gruelling. Not looking forward to retaking it in to
-two weeks, but I need it for my current employers <https://www.corexpert.net/>
-who are AWS partners.
+two weeks on the 2nd of April, but I need it for my employer
+<https://www.corexpert.net/> who are AWS partners.
