@@ -14,3 +14,5 @@ When forming a working group between companies, the basic tools needed in order 
 Ok, but what does **all four**?
 
 {{< tweet 1237939442192539648 >}}
+
+**SOLUTION** [Basecamp](https://basecamp.com/how-it-works) appears like it ticks most boxes. How do to get the data out is an open question though.

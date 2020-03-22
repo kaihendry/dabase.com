@@ -172,3 +172,9 @@ Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_
 <img width=1280 height=720 src="https://s.natalian.org/2020-03-05/1583386029_2560x1440.png" alt="RPO versus RTO">
 
 <img width=1280 height=720 src="https://s.natalian.org/2020-03-05/1583386197_2560x1440.png" alt="Backup/Restore, Pilot light, Warm standby, to Hot standby">
+
+#  The common cloud data migration challenge
+
+<blockquote cite="https://aws.amazon.com/cloud-data-migration/">
+Number of days = (Total Bytes)/(Megabits per second * 125 * 1000 * Network Utilization * 60 seconds * 60 minutes * 24 hours)
+</blockquote>
