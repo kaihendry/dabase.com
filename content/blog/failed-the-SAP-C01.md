@@ -16,7 +16,7 @@ at least to me some gaps in my knowledge:
 * Even though I've used AWS ECS for years, some questions about the [task roles](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html) and [awsvpc](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html) versus `bridge` confused me.
 * Routing <abbr title="with respect to">wrt</abbr> joining two VPCs that share the same private subnet range 10.0.0.1/24
 * Little confused by inter VPC connectivity options. Transit? Gateway?
-* A lot of weird regional <abbr title="AWS Certificate Manager">ACM<abbr> questions that threw me. This is undergoing change I believe at writing to Amazon Trust Services, so the questions will be extra confusing until updated. My confusion is that I generally only use the Global Cloudfront service where the ACM's end up in us-east-1.
+* A lot of weird regional <abbr title="AWS Certificate Manager">ACM</abbr> questions that threw me. This is undergoing change I believe at writing to Amazon Trust Services, so the questions will be extra confusing until updated. My confusion is that I generally only use the Global Cloudfront service where the ACM's end up in us-east-1.
 
 
 The 3 hour test is pretty gruelling. Not looking forward to retaking it in to
