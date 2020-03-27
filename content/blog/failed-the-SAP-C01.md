@@ -22,3 +22,34 @@ at least to me some gaps in my knowledge:
 The 3 hour test is pretty gruelling. Not looking forward to retaking it in to
 two weeks on the 2nd of April, but I need it for my employer
 <https://www.corexpert.net/> who are AWS partners.
+
+## VIRTUAL PRIVATE NETWORK (VPN)
+
+### Customer Gateways
+
+An Amazon VPC VPN connection links your data center (or network) to your Amazon Virtual Private Cloud (VPC). A **customer gateway** device is the anchor on your side of that connection. It can be a physical or software appliance.
+
+### Virtual Private Gateways
+
+The anchor on the AWS side of the VPN connection is called a **virtual private** gateway. Associate this with your VPC.
+
+### Site-to-Site VPN Connections
+
+<img src="https://s.natalian.org/2020-03-27/site-to-site.png">
+
+This is typically for on-premise network to an AWS VPC as redundancy to a Direct Connect.
+
+If you want a connection between VPCs, say across regions, you want a [Peering
+Connections](https://ap-southeast-1.console.aws.amazon.com/vpc/home?region=ap-southeast-1#PeeringConnections:sort=vpcPeeringConnectionId)
+instead. However if your region supports [AWS Transit Gateway with Inter-Regional Peering](https://aws.amazon.com/blogs/aws/aws-transit-gateway-adds-multicast-and-inter-regional-peering/), you want to use this for added flexibility. Track availability on the [FAQ](https://aws.amazon.com/transit-gateway/faqs/).
+
+### Client VPN Endpoints
+
+This links **customer gateway** and **virtual private**. At time of writing mutual authentication via Public Key cryptography seems like the defacto way of doing it: <https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html>
+
+The connection is done via Openvpn configuration called
+`downloaded-client-config.ovpn` which you need to [painfully
+edit](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html#cvpn-getting-started-config)
+in an ID to the connection address and the keys generated via [Mutual
+Authentication](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/authentication-authorization.html#mutual)
+process aka public/private keys instead of shared secret.
