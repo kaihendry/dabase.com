@@ -11,7 +11,7 @@ at least to me some gaps in my knowledge:
 
 * How big is a Snowball: [~80TB](https://docs.aws.amazon.com/snowball/latest/ug/limits.html) and do consider you can have **multiple** (aka scale out)
 * VM Import/Export - is this the way you export VMs to AWS from an on premise data center? I thought one used [CloudEndure](https://www.cloudendure.com/)..
-* Various <abbr title="Active Directory">AD</abbr> configurations or rather migration strategies. If a client has an <abbr title="Active Directory">AD</abbr> controller on premises, what is needed to move it to the AWS Cloud? Connector and then? <https://tutorialsdojo.com/aws-directory-service/>
+* Various <abbr title="Active Directory">AD</abbr> configurations or rather migration strategies. If a client has an <abbr title="Active Directory">AD</abbr> controller on premises, what is needed to move it to the AWS Cloud? Connector and then? <https://tutorialsdojo.com/aws-directory-service/> <https://www.youtube.com/watch?v=fO2t2yYbl7g>
 * Various Cloudformation questions. Like if you have an existing setup in one region, can you **export** the Cloudformation template and just run it with a changed region parameter?
 * Even though I've used AWS ECS for years, some questions about the [task roles](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html) and [awsvpc](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html) versus `bridge` confused me; [Answer](https://s.natalian.org/2020-03-27/bridge.png)
 * Routing <abbr title="with respect to">wrt</abbr> joining two VPCs that share the same private subnet range 10.0.0.1/24
