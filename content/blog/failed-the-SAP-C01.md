@@ -53,3 +53,17 @@ edit](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-starte
 in an ID to the connection address and the keys generated via [Mutual
 Authentication](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/authentication-authorization.html#mutual)
 process aka public/private keys instead of shared secret.
+
+## Deployment options
+
+<https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html>
+
+There is a [cheatsheet](https://tutorialsdojo.com/aws-codedeploy/) but I find the AWS documentation clearer.
+
+[All at once Elastic Beanstalk
+option](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deploy-existing-version.html#deployments-newversion)
+results in down time, so avoid it to minimise disruption.
+
+## Will I have enough capacity to scale?
+
+You can make a [On-Demand Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html)
