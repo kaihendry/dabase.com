@@ -3,6 +3,11 @@ title: "TASCAM DR 40 background Noise"
 date: 2020-04-11T09:33:34+08:00
 ---
 
+Thanks Stephan for borrowing me the device. These tests are all USB powered
+**BUS POWER** with no AA batteries inside.
+
+I've asked the [audioengineering Reddit community](https://www.reddit.com/r/audioengineering/comments/fyu8fo/noisy_tascam_dr40_recorder_can_it_be_filtered_out/)
+
 <img src="https://s.natalian.org/2020-04-11/tascam-dr-40.jpg">
 <p>Lowcut filter 40Hz</p>
 <audio controls src="https://s.natalian.org/2020-04-11/lowcut-40.mp3"></audio>
@@ -20,3 +25,11 @@ date: 2020-04-11T09:33:34+08:00
 <p>Alarming noisy... white noise? How does one get clear audio straight out of a recorder?</p>
 
 <video controls src="https://s.natalian.org/2020-04-11/tascam-dr-40-no-ext-inputs.mp4"></video>
+
+# With batteries
+
+I.e. no **BUS POWER**, 3 fresh Alkaline batteries
+
+<p>With no inputs</p>
+
+<audio controls src="https://s.natalian.org/2020-04-11/tascam-dr40-no-ext-inputs-batteries.mp3"></audio>
