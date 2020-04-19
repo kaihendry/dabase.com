@@ -3,6 +3,9 @@ baseURL: https://dabase.com
 defaultContentLanguage: en
 disablePathToLower: true
 googleAnalytics: UA-195686-7
+permalinks:
+  blog: /blog/:year/:filename/
+
 markup:
   goldmark:
     renderer:

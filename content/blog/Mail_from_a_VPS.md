@@ -1,8 +1,7 @@
 ---
 date: 2015-11-10 15:24:56 +0800
+title: Mail from a VPS using AWS SES from sandbox mode
 ---
-
-[[!meta title="Mail from a VPS using AWS SES from sandbox mode" ]]
 
 Set up <https://aws.amazon.com/ses/> with a [verified
 email](http://s.natalian.org/2015-11-10/1447139043_1150x1058.png) so that it
