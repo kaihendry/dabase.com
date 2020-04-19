@@ -1,6 +1,7 @@
 ---
 title: National COVID2019 Websites
 date: 2020-02-27T09:24:00+08:00
+description: Snapshot of COVID19 websites by mainly Governments around the world
 ---
 
 Thanks to a prod by the [esteemed
