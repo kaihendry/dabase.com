@@ -1,9 +1,21 @@
 {{ define "main" }}
 <header>
+
+
+
 <h1>{{.Title}}</h1>
 <h4>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</h4>
 </header>
 
 {{.Content}}
+
+<nav>
+{{ if .PrevInSection }}
+<a href="{{ .PrevInSection.URL }}" title="{{ .PrevInSection.Title}}">&larr;Previous</a>
+{{ end }}
+{{ if .NextInSection }}
+<a href="{{ .NextInSection.URL }}" title="{{ .NextInSection.Title}}">Next&rarr;</a>
+{{ end }}
+</nav>
 
 {{ end }}
