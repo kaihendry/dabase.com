@@ -131,7 +131,7 @@ Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_
 * Use Multi-AZ services: S3/DynamoDB automatically Multi-AZ
 * AWS EBS Snapshots minimize Recovery Point Objective
 * Use RI for critical systems
-* [DLP with CloudTrail](https://darkbit.io/blog/2020/02/18/simple-dlp-for-amazon-s3)
+* <a href="https://darkbit.io/blog/2020/02/18/simple-dlp-for-amazon-s3"><abbr title="Data Loss Prevention">DLP</abbr> with CloudTrail</a>
 
 <img src="https://s.natalian.org/2020-02-28/snapshots.jpg">
 
@@ -142,6 +142,7 @@ Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_
 <img src="https://s.natalian.org/2020-02-28/redis-performance.jpg">
 
 * Memcached is single AZ
+* Redis [Lazy loading versus Write through](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Strategies.html)
 
 ## Sub-domain: improving security
 
@@ -152,11 +153,10 @@ Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_
 <img src="https://s.natalian.org/2020-02-28/perimeter-controls.jpg">
 
 * <abbr title="Network Access Control Layer">NACLs</abbr> are stateless and accomodate **DENY** rules unlike Security groups
-* Redis [Lazy loading versus Write through](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Strategies.html)
 
 ## Sub-domain: improving deployment
 
-* Cloud Formation - consider Deletion policy attribute, be wary of downtime
+* Cloud Formation - consider Deletion policy attribute, be wary of downtime. **Retain** for S3, **Snapshot** (default) for RDS/EBS etc
 * Code deploy - Must remove underlying instances
 * Elastic Beanstalk - can do it all
 * OpsWorks - Chef can handle minimal downtime
