@@ -4,7 +4,7 @@
 
 <ul>
 {{ range .Pages }}
-<li><a href="{{.Permalink}}">
+<li><a href="{{.RelPermalink}}">
 {{ $alternate_title := replace .File.BaseFileName "_" " " | title }}
 {{ .Title  | default $alternate_title }}
 </a></li>
