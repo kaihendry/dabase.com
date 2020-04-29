@@ -1,10 +1,7 @@
 {{ define "main" }}
 <header>
-
-
-
 <h1>{{.Title}}</h1>
-<h4>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</h4>
+<h4>Published: {{ dateFormat "Monday, Jan 2, 2006" .Date }} Last modified: {{ dateFormat "Monday, Jan 2, 2006" .Params.LastMod }}</h4>
 </header>
 
 {{.Content}}
