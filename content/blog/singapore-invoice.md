@@ -1,5 +1,5 @@
 ---
-title: "Singapore Payment Requests could be get better"
+title: "Singapore Payment Requests could be a LOT better"
 date: 2020-03-13T15:58:46+08:00
 description: The average invoice in Singapore is still pretty painful to pay
 ---
@@ -15,7 +15,6 @@ What could be better here?
 3. Total includes late fee. Am I already late? Huh?
 4. No way of me knowing if I have already paid this amount (assuming I forgot the next step)
 5. Expects a reply telling them the date of the transfer
-
 
 # [1] Paynow with a reference?!
 
