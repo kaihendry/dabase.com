@@ -1,6 +1,7 @@
 ---
 title: "What Working Group Tools?"
 date: 2020-03-12T12:14:47+08:00
+description: What tools do you need for a project?
 ---
 
 When forming a working group between companies, the basic tools needed in order of importance <abbr title="In My Humble Opinion">IMHO</abbr>:

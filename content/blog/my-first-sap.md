@@ -1,6 +1,7 @@
 ---
 title: "My First SAP"
 date: 2020-03-11T09:28:32+08:00
+description: Understanding ERP software
 ---
 
 A [post on SAP on HN](https://news.ycombinator.com/item?id=22244750) I found

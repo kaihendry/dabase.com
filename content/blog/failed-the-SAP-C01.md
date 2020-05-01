@@ -1,6 +1,7 @@
 ---
 title: "Failed the AWS Certified Solutions Architect professional exam"
 date: 2020-03-18T09:48:37+08:00
+description: The professional AWS exam is one hell of an exam!
 ---
 
 # UPDATE: Just passed the Pearson Vue online exam!
