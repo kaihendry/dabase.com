@@ -18,3 +18,8 @@ jobs:
         run: |
           hugo
           hugo deploy
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            https://dabase.com
