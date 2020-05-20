@@ -67,7 +67,7 @@ Typing **google.com** into the URL bar will redirect the user to **www.google.co
 
 # Notice the HTTPS padlock takes up room
 
-I suggest using [colours](http://getacue.dabase.com/) like a gold or
+I suggest using [colours](http://q.dabase.com/) like a gold or
 [green](http://www.flickr.com/photos/jamiekitson/3176790336/) bar like Firefox
 does already.
 
