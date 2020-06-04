@@ -56,6 +56,30 @@ However there are some cons like:
 [Use a group as a Collaborative
 Inbox](https://support.google.com/a/answer/167430) appears to be Google's
 answer to **shared mailboxes** with the added ability to tag, which appears
-quite useful.
+quite useful. Fastmail claims to support [tagging/labelling in the near future](https://twitter.com/Fastmail/status/1265341936791142404).
 
-I have not tried it, so I don't know the nuances of the product.
+I have not tried it, so I don't know the nuances of the product, however my accountant has, she had this to say:
+
+<blockquote>
+The interface doesn't make clear what is the status of each topic or ticket for
+lack of a better word.
+
+<q>Are you able to tell when a colleague is crafting a reply in the group?</q>
+
+That's one problem. You have to assign, otherwise it just sits there.
+
+Another problem is that you can't easily tell if the ticket has been seen by
+the colleague and resolved.
+
+So checking and managing is a problem.
+
+I recall some weird quirk too where you had to cc the group email to keep all
+correspondence in the ticket. If you replied to an external party without cc,
+it wouldn't show on the ticket. But I think that's been fixed by now.
+</blockquote>
+
+# Other solutions
+
+I am not a fan of "ticketing systems" since they tend to bring email out of ...
+_standards based_ email, but there tools I've used like
+<https://www.helpscout.com/> which are quite effective.
