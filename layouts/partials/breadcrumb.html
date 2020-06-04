@@ -1,5 +1,5 @@
 <nav>
-  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </nav>
 {{ define "breadcrumbnav" }}
 {{ if .p1.Parent }}

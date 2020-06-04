@@ -1,3 +1,6 @@
+---
+---
+
 <a href="http://www.flickr.com/photos/hendry/4327642576/" title="Kai has the passion"><img src="http://farm5.static.flickr.com/4060/4327642576_716645fee8_m.jpg" width="180" height="240" alt="Me and my new Nexus from around the world" /></a>
 
 So I bought the new <http://www.google.com/phone>, the Nexus One at 365.21GBP.
