@@ -30,3 +30,15 @@ vendor knows the invoice was paid) and this is the reply from DBS:
 > be tech cost to be incurred for customer’s own system to be integrated with
 > the API solution.  Transaction cost via API will be advised further by the
 > relevant team as it differs from product to product.
+
+# DBS UX is abysmal
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The <a href="https://twitter.com/digibank?ref_src=twsrc%5Etfw">@digibank</a> by <a href="https://twitter.com/dbsbank?ref_src=twsrc%5Etfw">@dbsbank</a> is so frustrating <a href="https://twitter.com/hashtag/paynow?src=hash&amp;ref_src=twsrc%5Etfw">#paynow</a> 😖 <a href="https://t.co/RNfpneooGh">pic.twitter.com/RNfpneooGh</a></p>&mdash; Kai Hendry 🇸🇬 (@kaihendry) <a href="https://twitter.com/kaihendry/status/1266550701011820545?ref_src=twsrc%5Etfw">May 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+I have publicly complained about the [DBS UX showing your balance as you pay](https://www.reddit.com/r/singapore/comments/gipq19/pay_by_uen_ux_shows_my_balance/).
+
+It's too easy to [accidentally make mistakes](https://www.reddit.com/r/singapore/comments/e0xdkj/spore_lady_wrongly_paynows_s500_to_spore_man_both/) as most vendors do not have a way creating a preset for you.
+
+There are some systems that create a QR code on the POS, but I am not sure how much they cost:
+
+<img src="https://s.natalian.org/2020-06-04/paynow-prompt.jpeg" alt="Paynow QR code generation">

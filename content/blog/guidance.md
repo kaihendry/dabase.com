@@ -1,5 +1,6 @@
 ---
-title: "How to hand hold a computer user"
+title: How to hand hold a computer user
+description: How to let "support" control your computer to show you how to do something!
 date: 2020-05-20T14:58:21+08:00
 ---
 
