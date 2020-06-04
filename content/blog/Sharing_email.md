@@ -58,7 +58,9 @@ Inbox](https://support.google.com/a/answer/167430) appears to be Google's
 answer to **shared mailboxes** with the added ability to tag, which appears
 quite useful. Fastmail claims to support [tagging/labelling in the near future](https://twitter.com/Fastmail/status/1265341936791142404).
 
-I have not tried it, so I don't know the nuances of the product, however my accountant has, she had this to say:
+I have not tried it, so I don't know the nuances of the product, however my
+[trusted Singaporean corporate secretary](http://kolibri.sg) has, she had this
+to say:
 
 <blockquote>
 The interface doesn't make clear what is the status of each topic or ticket for
