@@ -63,3 +63,17 @@ I don't know how to solve 1., but for 2. I've found using [SUBTOTAL](https://sup
 # Excel support
 
 Via [Twitter they referred me](https://twitter.com/msexcel/status/1268209786987974661) to a [TechNet forum](https://social.technet.microsoft.com/Forums/en-US/home?category=&forum=&filter=&sort=relevancedesc&brandIgnore=true&searchTerm=excel+filtering) which looks like a train wreck to me.
+
+# History.. or lack there of
+
+Like all Microsoft products I've seen, the [history of the
+document](https://s.natalian.org/2020-06-04/diff-excel.mp4) is awful to work
+with. One is left having to manage different files and copies, and oh gosh,
+what a nightmare! **Google Sheets** is better in this regard.
+
+# Conclusion
+
+My dream is for [Pandas](https://pandas.pydata.org/) and Python notebooks to
+have better usability. Seems far off though.
+
+So Excel via FreeRDP or [AWS Workspaces](https://aws.amazon.com/workspaces/) seems like a reasonable workaround.
