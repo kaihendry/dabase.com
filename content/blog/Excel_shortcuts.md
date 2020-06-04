@@ -1,8 +1,13 @@
 ---
 title: Excel shortcuts for Lusers
-description: Excel shortcuts from a long time Linux user
+description: Excel shortcuts from a long time Linux user via xfreerdp
 date: 2020-06-04T14:12:58+08:00
 ---
+
+As an Archlinux user [I use Excel via
+freeRDP](https://www.youtube.com/watch?v=uXjBdpYj-ZY) from a work PC on my LAN.
+
+<img width="50%" src="https://s.natalian.org/2020-06-04/excel.svg" alt="Excel logo">
 
 <style>
 /* https://shkspr.mobi/blog/2020/05/better-keyboard-buttons-in-html/ */
@@ -41,6 +46,8 @@ Inspired by [@edent's blog](https://shkspr.mobi/blog/2020/05/better-keyboard-but
 * <kbd>Alt</kbd>+<kbd>=</kbd> -- Sum up something
 
 Here is the authoritative [list of shortcuts for Microsoft Excel](https://support.office.com/en-us/article/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f), but they don't highlight the productive ones.
+
+Update: My dear old friend Philip pointed [these nicely laid out Excel shortcuts](https://exceljet.net/keyboard-shortcuts), that you could conceivably print I suppose.
 
 # Filtering
 
