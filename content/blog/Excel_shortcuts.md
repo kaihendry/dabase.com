@@ -2,12 +2,13 @@
 title: Excel shortcuts for Lusers
 description: Excel shortcuts from a long time Linux user via xfreerdp
 date: 2020-06-04T14:12:58+08:00
+icon: https://s.natalian.org/2020-06-04/excel.svg
 ---
 
 As an Archlinux user [I use Excel via
 freeRDP](https://www.youtube.com/watch?v=uXjBdpYj-ZY) from a work PC on my LAN.
 
-<img width="50%" src="https://s.natalian.org/2020-06-04/excel.svg" alt="Excel logo">
+<img width="50%" src="https://s.natalian.org/2020-06-04/selected-excel.png" alt="Excel's bottom right summary">
 
 <style>
 /* https://shkspr.mobi/blog/2020/05/better-keyboard-buttons-in-html/ */
@@ -27,12 +28,7 @@ kbd:hover {
 }
 </style>
 
-Inspired by [@edent's blog](https://shkspr.mobi/blog/2020/05/better-keyboard-buttons-in-html/) and ... a [Tiktok series by @acouplecents](https://www.tiktok.com/@acouplecents):
-
-1. https://www.tiktok.com/@acouplecents/video/6819380884333006086
-2. https://www.tiktok.com/@acouplecents/video/6821158756852813062
-3. https://www.tiktok.com/@acouplecents/video/6827655218629463301
-4. https://www.tiktok.com/@acouplecents/video/6827903955343887622
+Inspired by [@edent's blog](https://shkspr.mobi/blog/2020/05/better-keyboard-buttons-in-html/) and ... a [Tiktok series by @acouplecents](https://www.tiktok.com/@acouplecents)'s [1](https://www.tiktok.com/@acouplecents/video/6819380884333006086) [2](https://www.tiktok.com/@acouplecents/video/6821158756852813062) [3](https://www.tiktok.com/@acouplecents/video/6827655218629463301) [4](https://www.tiktok.com/@acouplecents/video/6827903955343887622) short videos.
 
 * <kbd>Ctrl</kbd>+<kbd>&larr;</kbd>/<kbd>&rarr;</kbd> move around a spread sheet quickly
 * <kbd>Esc</kbd> / <kbd>F2</kbd> -- Toggle between editing, like <kbd>Esc</kbd> works in [vim](https://www.vim.org/)
@@ -51,13 +47,15 @@ Update: My dear old friend Philip pointed [these nicely laid out Excel shortcuts
 
 # Filtering
 
+<kbd>Ctrl</kbd>+<kbd>⇪</kbd>+<kbd>L</kbd> -- Create filter tabs
+
 For me, working with **EC2InstanceRecommendations-DirectMatch** exports from [AWS
 Migration Hub](https://aws.amazon.com/migration-hub/), I need to be able to
 filter machines that are designated to migrate to the cloud.
 
 A great tip I've found is to use [COUNTIF](https://www.extendoffice.com/documents/excel/3694-excel-filter-based-on-another-sheet.html) for advanced filtering based on other cells. When filtering I've found two issues:
 
-1. It's not clear what is filtered out
+1. It's not clear what is filtered out (collapsed?)
 2. Totals are not recalculated properly
 
 I don't know how to solve 1., but for 2. I've found using [SUBTOTAL](https://support.office.com/en-us/article/subtotal-function-7b027003-f060-4ade-9040-e478765b9939) instead of [SUM](https://support.microsoft.com/en-us/office/sum-function-043e1c7d-7726-4e80-8f32-07b23e057f89). I'm not sure why tbh.
