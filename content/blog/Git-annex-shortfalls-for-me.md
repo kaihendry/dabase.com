@@ -20,7 +20,7 @@ It's a large, monolothic, complex Haskell implementation. Basically you need
 the static binary release. Ideally it was just some C extending the existing
 git C code base.
 
-I still haven't managed to get it running on my [alarm device](http://archpi.dabase.com/).
+I still haven't managed to get it running on my [alarm device](https://pi.dabase.com/).
 
 # Making modifications to files is really difficult without replicating beforehand
 
