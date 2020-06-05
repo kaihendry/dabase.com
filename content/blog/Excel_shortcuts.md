@@ -55,7 +55,7 @@ filter machines that are designated to migrate to the cloud.
 
 A great tip I've found is to use [COUNTIF](https://www.extendoffice.com/documents/excel/3694-excel-filter-based-on-another-sheet.html) for advanced filtering based on other cells. When filtering I've found two issues:
 
-1. It's not clear what is filtered out (collapsed?)
+1. It's not clear what is filtered out (collapsed?) [Appears to be a common issue](https://www.reddit.com/r/excel/comments/gwexnr/how_can_i_be_made_better_aware_of_filtered_rows/fsuitde/)
 2. Totals are not recalculated properly
 
 I don't know how to solve 1., but for 2. I've found using [SUBTOTAL](https://support.office.com/en-us/article/subtotal-function-7b027003-f060-4ade-9040-e478765b9939) instead of [SUM](https://support.microsoft.com/en-us/office/sum-function-043e1c7d-7726-4e80-8f32-07b23e057f89). I'm not sure why tbh.
