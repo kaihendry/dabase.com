@@ -71,6 +71,8 @@ document](https://s.natalian.org/2020-06-04/diff-excel.mp4) is awful to work
 with. One is left having to manage different files and copies, and oh gosh,
 what a nightmare! **Google Sheets** is better in this regard.
 
+[Reddit's /r/excel has no real answer to this either](https://www.reddit.com/r/excel/comments/gwvpgc/excel_version_history_appears_unusable_is_there_a/fsyctrx/)..
+
 # Conclusion
 
 My dream is for [Pandas](https://pandas.pydata.org/) and Python notebooks to
