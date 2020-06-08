@@ -26,8 +26,8 @@ Cons:
 * When a new colleague joins, he/she won't be able to access conversions before he/she joined
 
 To share a message in the past, what I've seen people do is create an **.eml**
-attachment, which is horrible compared to a mailing archive URL. Most email
-clients cannot open a **.eml** attachment except Outlook.
+attachment. Referring to attachment in my experience is incredibly awkward
+compared to a URL you just click.
 
 # Fastmail
 
