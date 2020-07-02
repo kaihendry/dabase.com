@@ -60,6 +60,10 @@ A great tip I've found is to use [COUNTIF](https://www.extendoffice.com/document
 
 I don't know how to solve 1., but for 2. I've found using [SUBTOTAL](https://support.office.com/en-us/article/subtotal-function-7b027003-f060-4ade-9040-e478765b9939) instead of [SUM](https://support.microsoft.com/en-us/office/sum-function-043e1c7d-7726-4e80-8f32-07b23e057f89). I'm not sure why tbh.
 
+# Power Query for splitting into rows
+
+Found this [splitting tip](https://s.natalian.org/2020-07-02/PivotTable_PQ.mp4) useful from [Excel Tech Community](https://techcommunity.microsoft.com/t5/excel/split-a-column/m-p/1493909) rather awesome.
+
 # Excel support
 
 Via [Twitter they referred me](https://twitter.com/msexcel/status/1268209786987974661) to a [TechNet forum](https://social.technet.microsoft.com/Forums/en-US/home?category=&forum=&filter=&sort=relevancedesc&brandIgnore=true&searchTerm=excel+filtering) which looks like a train wreck to me.
