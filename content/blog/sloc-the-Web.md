@@ -15,7 +15,7 @@ code, there is more complexity. As The Notorious B.I.G. said: Mo Code, Mo
 Problems.
 
 There are too thorny issues whilst counting to be aware of before we get started:
-1.. Tests, I made a [testbloat.sh](https://s.natalian.org/2020-07-04/sloc-from-arch.txt) script to rip them out
+1. Tests, I made a [testbloat.sh](https://s.natalian.org/2020-07-04/sloc-from-arch.txt) script to rip them out
 2. Dependencies (look at Arch's PKGBUILD for some clues)
 
 ## Blink
