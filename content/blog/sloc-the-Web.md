@@ -63,3 +63,10 @@ More than half the code base is... **tests** !
 I want to examine the git checkout to see if it differs from the source
 downloads. I'm also keen to examine their sloc over time using
 https://github.com/kaihendry/graphsloc
+
+So **with the git history**, the projects weigh in at:
+
+	hendry@knuckles ~/sloc $ du -sh *
+	11G     WebKit
+	26G     blink
+	5.6G    gecko
