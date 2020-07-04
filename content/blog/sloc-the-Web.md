@@ -1,5 +1,5 @@
 ---
-title: "SLOC the Web"
+title: SLOC the Web
 date: 2020-07-04T09:24:09+08:00
 description: Notes on trying to measure the Web's implementation
 ---
@@ -22,7 +22,7 @@ There are too thorny issues whilst counting to be aware of before we get started
 
 * Used in the Market share leader "Chrome" (chomium in OSS) by Google
 * Fork of Webkit in [August 2001](https://chromium.googlesource.com/chromium/src/+/d869b93fe74f4d6cb2dd6f6c3e9bf9daee39ba19)
-* `git clone https://chromium.googlesource.com/chromium/src blink`
+* `git clone https://chromium.googlesource.com/chromium/src blink` Warning: Takes forever
 * Web view: https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/content/
 * [Archlinux package](https://git.archlinux.org/svntogit/packages.git/tree/trunk/PKGBUILD?h=packages/chromium)
 
@@ -58,6 +58,8 @@ There are too thorny issues whilst counting to be aware of before we get started
 
 More than half the code base is... **tests** !
 
-# Count!
+# Git checkout
 
-I want to examine the git checkout to see if it differs from the source downloads. I'm also keen to examine their sloc over time using https://github.com/kaihendry/graphsloc
+I want to examine the git checkout to see if it differs from the source
+downloads. I'm also keen to examine their sloc over time using
+https://github.com/kaihendry/graphsloc
