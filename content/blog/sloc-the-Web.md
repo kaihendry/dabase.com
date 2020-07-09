@@ -4,6 +4,15 @@ date: 2020-07-04T09:24:09+08:00
 description: Notes on trying to measure the Web's implementation
 ---
 
+<style>
+img {
+  background-color: white;
+  border: thin solid black;
+  border-radius: 20px;
+  }
+video { width: 100%; }
+</style>
+
 Since [my video on measuring the <abbr title="Source Lines of Code">SLOC</abbr>](https://youtu.be/g7jpfAlC-Zg) using
 [ohcount](https://github.com/blackducksoftware/ohcount), I've been wanting to
 tackle the elephant in the room. **The Web!!**
@@ -70,3 +79,33 @@ So **with the git history**, the projects weigh in at:
 	11G     WebKit
 	26G     blink
 	5.6G    gecko
+
+<img src="https://s.natalian.org/2020-07-09/web-commit-count.svg" alt="count of commits in respective git repositories">
+
+Can anyone make
+[collect-stats.sh](https://github.com/kaihendry/graphsloc/blob/master/collect-stats.sh)
+faster because these took DAYS to gather the data.
+
+## Blink
+
+<img src="https://s.natalian.org/2020-07-09/blink-fa66724154f7.svg" alt="blink lines changes from git">
+
+## Gecko
+
+<img src="https://s.natalian.org/2020-07-06/gecko-668686ae0504.csv.svg" alt="gecko lines changes from git">
+
+# Git versus source distribution
+
+The mapping isn't clear for me.
+
+## Chromium/Blink
+
+<video src="https://s.natalian.org/2020-07-09/chromium-vs-blink-git.mp4" controls></video>
+
+## Firefox
+
+<video src="https://s.natalian.org/2020-07-09/firefox-vs-git.mp4" controls></video>
+
+## webkit2gtk
+
+<video src="https://s.natalian.org/2020-07-09/webkit2gtk-src-vs-git.mp4" controls></video>

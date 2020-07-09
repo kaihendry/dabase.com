@@ -62,11 +62,10 @@ I don't know how to solve 1., but for 2. I've found using [SUBTOTAL](https://sup
 
 # Power Query for splitting into rows
 
-Found this [splitting tip](https://s.natalian.org/2020-07-02/PivotTable_PQ.mp4) useful from [Excel Tech Community](https://techcommunity.microsoft.com/t5/excel/split-a-column/m-p/1493909) rather awesome.
-
-# Excel support
-
-Via [Twitter they referred me](https://twitter.com/msexcel/status/1268209786987974661) to a [TechNet forum](https://social.technet.microsoft.com/Forums/en-US/home?category=&forum=&filter=&sort=relevancedesc&brandIgnore=true&searchTerm=excel+filtering) which looks like a train wreck to me.
+Found this [splitting tip](https://s.natalian.org/2020-07-02/PivotTable_PQ.mp4)
+useful from [Excel Tech
+Community](https://techcommunity.microsoft.com/t5/excel/split-a-column/m-p/1493909)
+rather awesome.
 
 # History.. or lack there of
 
