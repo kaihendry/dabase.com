@@ -89,6 +89,11 @@ Lets look at:
 * number of files `find chromium-83.0.4103.116/ -type f | wc -l`
 * cloc's number of files
 
+I chose [cloc](https://github.com/AlDanial/cloc/issues/500#issuecomment-656476950) over ohcount since it was faster. It ignores files that it doesn't
+deem as source. Tbh, I think every file in a source distribution should be
+considered source. Since pruning non-source files, tests and documentation is a
+slipperly slope!
+
 <img src="https://s.natalian.org/2020-07-10/files.svg" alt="browser source files count">
 
 * number of lines `find chromium-83.0.4103.116 -type f -exec cat {} + | wc -l`
