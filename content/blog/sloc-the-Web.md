@@ -145,15 +145,21 @@ faster because these took DAYS to gather the data.
 
 <img src="https://s.natalian.org/2020-07-09/blink-fa66724154f7.svg" alt="blink lines changes from git">
 
+45M lines of code when I add up all the lines of all the commits. However that falls considerably short of the **100M** of `find chromium-83.0.4103.116 -type f -exec cat {} + | wc -l`. However if you look at cloc's analysis of 49M... it's pretty close to 45M!
+
 ## Gecko
 
 <img src="https://s.natalian.org/2020-07-06/gecko-668686ae0504.csv.svg" alt="gecko lines changes from git">
 
 I'm not quite sure why there are horizontal lines. Do please look at the [gecko source CSV](https://s.natalian.org/2020-07-10/gecko-668686ae0504.csv)!
 
+The total is ~130M, but when I look at just the firefox-78.0.1 source distribution... it's just 43M or if you just want to look at source files with `cloc` ... 23M. I suspect the git - mercurial bridge is problematic.
+
 ## Webkit
 
 <img src="https://s.natalian.org/2020-07-10/WebKit-3a2f99102ac.svg" alt="webkit lines changes from git">
+
+40M doesn't come close to the 5-3M of code I got from the https://webkitgtk.org sources... can anyone please explain?!
 
 # Git versus source distribution
 
