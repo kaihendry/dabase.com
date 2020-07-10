@@ -80,7 +80,7 @@ So **with the git history**, the projects weigh in at:
 	26G     blink
 	5.6G    gecko
 
-<img src="https://s.natalian.org/2020-07-09/web-commit-count.svg" alt="count of commits in respective git repositories">
+<img src="https://s.natalian.org/2020-07-10/web-commit-count.svg" alt="count of commits in respective git repositories">
 
 Can anyone make
 [collect-stats.sh](https://github.com/kaihendry/graphsloc/blob/master/collect-stats.sh)
