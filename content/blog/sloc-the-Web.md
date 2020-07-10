@@ -1,7 +1,7 @@
 ---
 title: SLOC the Web
 date: 2020-07-04T09:24:09+08:00
-description: Notes on trying to measure the Web's implementation
+description: Notes on trying to measure the Web's client, aka the browser
 ---
 
 <style>
@@ -93,6 +93,10 @@ faster because these took DAYS to gather the data.
 ## Gecko
 
 <img src="https://s.natalian.org/2020-07-06/gecko-668686ae0504.csv.svg" alt="gecko lines changes from git">
+
+## Webkit
+
+<img src="https://s.natalian.org/2020-07-10/WebKit-3a2f99102ac.svg" alt="webkit lines changes from git">
 
 # Git versus source distribution
 
