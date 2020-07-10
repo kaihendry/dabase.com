@@ -53,6 +53,7 @@ source distribution and compile it in. Hence we should see much bigger <abbr tit
 * `git clone git://git.webkit.org/WebKit-https.git WebKit`
 * Web view: https://trac.webkit.org/browser
 * [Archlinux package](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=webkitgtk)
+* [blink is fork from Webkit](https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/third_party/blink/)
 
 `testbloat.sh webkit2gtk`:
 
