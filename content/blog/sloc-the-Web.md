@@ -37,7 +37,8 @@ source distribution and compile it in. Hence we should see much bigger <abbr tit
 ## Blink
 
 * Used in the Market share leader "Chrome" (chomium in OSS) by Google
-* Hard Fork of Webkit in 2013, though I can't find/trace a single similar file between [Webkit](https://git.webkit.org/) and [Blink](https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/third_party/blink/) in 2020
+* Hard Fork of Webkit in 2013, though I can't find/trace a single similar file between [Webkit](https://git.webkit.org/?p=WebKit.git;a=tree;f=Source/WebCore/dom;) and [Blink](https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/third_party/blink/renderer/core/dom/) in 2020
+* [Webkit can be seen to have merged in 2001](https://chromium.googlesource.com/chromium/src/+/d869b93fe74f4d6cb2dd6f6c3e9bf9daee39ba19)
 * `git clone https://chromium.googlesource.com/chromium/src blink` Warning: Takes forever
 * Web view: https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/content/
 * [Archlinux package](https://git.archlinux.org/svntogit/packages.git/tree/trunk/PKGBUILD?h=packages/chromium)
