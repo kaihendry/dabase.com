@@ -37,7 +37,7 @@ source distribution and compile it in. Hence we should see much bigger <abbr tit
 ## Blink
 
 * Used in the Market share leader "Chrome" (chomium in OSS) by Google
-* Fork of Webkit in [August 2001](https://chromium.googlesource.com/chromium/src/+/d869b93fe74f4d6cb2dd6f6c3e9bf9daee39ba19)
+* Hard Fork of Webkit in 2013, though I can't find/trace a single similar file between [Webkit](https://git.webkit.org/) and [Blink](https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/third_party/blink/) in 2020
 * `git clone https://chromium.googlesource.com/chromium/src blink` Warning: Takes forever
 * Web view: https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/content/
 * [Archlinux package](https://git.archlinux.org/svntogit/packages.git/tree/trunk/PKGBUILD?h=packages/chromium)
@@ -53,7 +53,6 @@ source distribution and compile it in. Hence we should see much bigger <abbr tit
 * `git clone git://git.webkit.org/WebKit-https.git WebKit`
 * Web view: https://trac.webkit.org/browser
 * [Archlinux package](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=webkitgtk)
-* [blink is fork from Webkit](https://chromium.googlesource.com/chromium/src.git/+/refs/heads/master/third_party/blink/)
 
 `testbloat.sh webkit2gtk`:
 
@@ -136,6 +135,29 @@ So **with the git history**, the projects weigh in at:
 	5.6G    gecko
 
 <img src="https://s.natalian.org/2020-07-10/web-commit-count.svg" alt="count of commits in respective git repositories">
+
+
+	hendry@knuckles ~/sloc $ bash wc.sh
+	browser rev files lines
+	WebKit 3a2f99102aca947abcf9f70d0785dc3e5c073560 310036 43304162
+	blink fa66724154f74bab505fe38c4b6d0d31b5a83ed0 330146 42244206
+	gecko 668686ae0504450a8c93501d1eb115f201eb982d 281292 43547855
+	hendry@knuckles ~/sloc $ cat wc.sh
+	echo browser rev files lines
+	for i in WebKit blink gecko
+	do
+			echo $i $(git --git-dir ./$i/.git rev-parse HEAD) $(find $i/ -not -path '*/\.git/*' -type f | wc -l) $(find $i/ -not -path '*/\.git/*' -type f -exec cat {} + | wc -l)
+	done
+
+
+Now this hardly makes sense:
+
+<img src="https://s.natalian.org/2020-07-11/LOC.png" alt="wc LOC in the respective git repos">
+
+And the file count is remarkably similar:
+
+
+<img src="https://s.natalian.org/2020-07-11/file-count-in-git.png" alt="wc file count in the respective git repos">
 
 Can anyone make
 [collect-stats.sh](https://github.com/kaihendry/graphsloc/blob/master/collect-stats.sh)
