@@ -50,7 +50,7 @@ source distribution and compile it in. Hence we should see much bigger <abbr tit
 
 ## Webkit
 
-* Originated from Konquerer and the KDE project, whereby Apple hired its developers
+* Originated from Konquerer and the KDE project (grep for kde.org), Apple hired Antti Koivisto
 * `git clone git://git.webkit.org/WebKit-https.git WebKit`
 * Web view: https://trac.webkit.org/browser
 * [Archlinux package](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=webkitgtk)
