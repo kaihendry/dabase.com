@@ -6,6 +6,7 @@ googleAnalytics: UA-195686-7
 enableGitInfo: true
 permalinks:
   blog: /blog/:year/:filename/
+rssLimit: 10
 
 markup:
   goldmark:
