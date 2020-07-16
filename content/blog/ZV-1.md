@@ -1,6 +1,7 @@
 ---
 title: Sony ZV-1 notes from Singapore
 date: 2020-07-16T16:44:25+08:00
+description: Upgraded from a G7X mk3 to the Sony ZV-1 for my Youtubing ambitions
 ---
 
 From Cathay Photo on the 14th of July 2020 I upgraded from my [Canon G7X mkiii](https://sg.carousell.com/p/canon-g7x-mark-iii-%E2%80%94-can-be-used-as-a-high-quality-webcam-1014586590/)
