@@ -3,7 +3,7 @@
 {{ .Content }}
 
 {{ range (.Data.Pages.GroupByDate "2006") }}
-<h1> {{ .Key }}</h1>
+<h1>{{ .Key }}</h1>
 
 <ul>
 {{ range .Pages.ByDate.Reverse }}<li><time datetime="{{ .Date.Format "2006-01-02T15:04" }}">
