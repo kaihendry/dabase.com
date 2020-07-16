@@ -33,7 +33,7 @@ I don't know who to turn to for Sony support. Cathay are not very helpful. There
 
 ## Unable to record at 30fps 4K
 
-Solution: Switch to NTSC from PAL
+Solution: [Switch to NTSC from PAL](https://helpguide.sony.net/dc/1910/v1/en/contents/TP0002847077.html?search=NTSC)
 
 Oddly this requires a reformat
 
@@ -86,3 +86,19 @@ Not sure how to turn this off!
 As many have complained a lens adaptor is sorely needed. I'm not sure where to
 source the Len adaptor mentioned in https://youtu.be/qY8yVDZV70s in Singapore.
 Cathay are of no help. [This lens adaptor doesn't ship to Singapore](https://www.amazon.co.uk/gp/product/B07ZVJ6TDF/ref=as_li_tl?ie=UTF8&tag=christophelan-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=B07ZVJ6TDF&linkId=7ea384a637d8ca5c2e91f204dec1dbfb).
+
+## Turning on
+
+Some times I put it in my pocket and the camera turns on and lens extends. Why? I am not sure what triggered it!
+
+## Poor mobile connectivity
+
+I'm unable to control the camera with Imaging Edge Mobile, the Sony IOS camera app.
+
+## Can't fit the Peak Design Cuff
+
+<img src="https://s.natalian.org/2020-07-16/cuff-zv1.jpeg" alt="cuff lanyard is too thick for the ZV-1 camera">
+
+## Digital stabilisation
+
+Sadly not nearly as good as the Canon G7X out the box. **Active stabilization** mode crops like crazy!
