@@ -4,6 +4,8 @@ date: 2020-07-16T16:44:25+08:00
 description: Upgraded from a G7X mk3 to the Sony ZV-1 for my Youtubing ambitions
 ---
 
+**tl;dr if you are an image quality nazi, consider this. If you value convenience, get an iPhone 12**
+
 From Cathay Photo on the 14th of July 2020 I upgraded from my [Canon G7X mkiii](https://sg.carousell.com/p/canon-g7x-mark-iii-%E2%80%94-can-be-used-as-a-high-quality-webcam-1014586590/)
 
 1. Sony ZV-1 SGD999
@@ -12,7 +14,7 @@ From Cathay Photo on the 14th of July 2020 I upgraded from my [Canon G7X mkiii](
 
 
 Prices quoted above are GST inclusive and valid till 2 August 2020.
-Warranty is 15 months upon online registration and non-transferrable.
+Warranty is 15 months upon online registration and non-transferable.
 
 # Memory card
 
@@ -34,9 +36,11 @@ I don't know who to turn to for Sony support. Cathay are not very helpful. There
 
 ## Unable to record at 30fps 4K
 
+<img src="https://s.natalian.org/2020-07-17/25p.jpeg" alt="25p options on PAL">
+
 Solution: [Switch to NTSC from PAL](https://helpguide.sony.net/dc/1910/v1/en/contents/TP0002847077.html?search=NTSC)
 
-Oddly this requires a reformat
+Oddly this requires a reformat ...
 
 ## Directory structure
 
@@ -66,7 +70,7 @@ On a freshly formatted disk there is already a ton of files:
 		└── SONY
 			└── SONYCARD.IND
 
-Videos bizaarely end up in PRIVATE/M4ROOT which [MacOS
+Videos bizarrely end up in PRIVATE/M4ROOT which [MacOS
 Photos](https://www.apple.com/sg/macos/photos/) doesn't see for import.
 [FCPX](https://www.apple.com/sg/final-cut-pro/) is however able to find the
 videos to import.
@@ -75,8 +79,10 @@ Here is a sample structure https://s.natalian.org/2020-07-16/zv-1.txt which inte
 
 ## 4k recording cuts out
 
-I think it just cuts when it's over heating around the 10 minute mark. The problem is doesn't tell you
-it's stopped recording very clearly. :(
+I think it just cuts when it's over heating around the 10 minute mark. The
+problem is doesn't tell you it's stopped recording very clearly. :(
+
+Is there a workaround??
 
 ## Menu volume / shutter sound is annoying
 
@@ -84,7 +90,7 @@ Not sure how to turn this off!
 
 ## Wide angle
 
-As many have complained a lens adaptor is sorely needed. I'm not sure where to
+As many have complained a **wide lens adaptor** is sorely needed. I'm not sure where to
 source the Len adaptor mentioned in https://youtu.be/qY8yVDZV70s in Singapore.
 Cathay are of no help. [This lens adaptor doesn't ship to Singapore](https://www.amazon.co.uk/gp/product/B07ZVJ6TDF/ref=as_li_tl?ie=UTF8&tag=christophelan-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=B07ZVJ6TDF&linkId=7ea384a637d8ca5c2e91f204dec1dbfb).
 
@@ -94,7 +100,11 @@ Some times I put it in my pocket and the camera turns on and lens extends. Why? 
 
 ## Poor mobile connectivity
 
+<img src="https://s.natalian.org/2020-07-17/pairing.jpeg" alt="Failed to pair the Sony ZV-1 over Bluetooth">
+
 I'm unable to control the camera with Imaging Edge Mobile, the Sony IOS camera app.
+
+I'm also unable to get it join my wireless LAN to avoid the inconvenient direct WiFi steps.
 
 ## Can't fit the Peak Design Cuff
 
