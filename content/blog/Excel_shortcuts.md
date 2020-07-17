@@ -76,6 +76,16 @@ what a nightmare! **Google Sheets** is better in this regard.
 
 [Reddit's /r/excel has no real answer to this either](https://www.reddit.com/r/excel/comments/gwvpgc/excel_version_history_appears_unusable_is_there_a/fsyctrx/)..
 
+# Convert Megabyte into Gigabyte
+
+	=CONVERT(65536,"Mibyte","Gibyte")
+
+Credit to this [answer](https://techcommunity.microsoft.com/t5/excel/convert-column-of-mb-to-gb/m-p/1505013/highlight/true#M67749).
+
+# Look up data in another table
+
+Use [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929)!
+
 # Conclusion
 
 My dream is for [Pandas](https://pandas.pydata.org/) and Python notebooks to
