@@ -94,6 +94,8 @@ As many have complained a **wide lens adaptor** is sorely needed. I'm not sure w
 source the Len adaptor mentioned in https://youtu.be/qY8yVDZV70s in Singapore.
 Cathay are of no help. [This lens adaptor doesn't ship to Singapore](https://www.amazon.co.uk/gp/product/B07ZVJ6TDF/ref=as_li_tl?ie=UTF8&tag=christophelan-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=B07ZVJ6TDF&linkId=7ea384a637d8ca5c2e91f204dec1dbfb).
 
+So [I am asking around in Singapore](https://www.clubsnap.com/threads/sony-zv-1-wide-lens-adaptor-wanted.1789396/)
+
 ## Turning on
 
 Some times I put it in my pocket and the camera turns on and lens extends. Why? I am not sure what triggered it!
