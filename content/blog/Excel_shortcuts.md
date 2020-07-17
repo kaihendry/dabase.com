@@ -69,6 +69,8 @@ rather awesome.
 
 # History.. or lack there of
 
+{{< tweet 1280425274669064192 >}}
+
 Like all Microsoft products I've seen, the [history of the
 document](https://s.natalian.org/2020-06-04/diff-excel.mp4) is awful to work
 with. One is left having to manage different files and copies, and oh gosh,
