@@ -100,6 +100,15 @@ So [I am asking around in Singapore](https://www.clubsnap.com/threads/sony-zv-1-
 
 Some times I put it in my pocket and the camera turns on and lens extends. Why? I am not sure what triggered it!
 
+## Shooting grip
+
+I **cannot recommend the VCT-SGR-1 shooting grip** since it's unreliable. I do
+not understand ...  sometimes when plugged in, it simply does not work!!!
+
+## Videos have a JPG thumbnail when importing
+
+Not sure how to turn this feature off.
+
 ## Poor mobile connectivity
 
 <img src="https://s.natalian.org/2020-07-17/pairing.jpeg" alt="Failed to pair the Sony ZV-1 over Bluetooth">
