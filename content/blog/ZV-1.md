@@ -102,6 +102,8 @@ Some times I put it in my pocket and the camera turns on and lens extends. Why? 
 
 ## Shooting grip
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-NcNqtOFIgs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 I **cannot recommend the VCT-SGR-1 shooting grip** since it's unreliable. I do
 not understand ...  sometimes when plugged in, it simply does not work!!!
 
