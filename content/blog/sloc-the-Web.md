@@ -224,10 +224,17 @@ documented upon https://trac.webkit.org/wiki/WebKitGTK/Releasing
 # Conclusion
 
 Firefox has the cleanest git to source mapping.  Firefox has rust / python tool
-chains in the source that bloat it quite a bit.
+chains in the source that bloat it quite a bit. Firefox has the largest amount
+of sloc in git, but Chromium has more in their source distribution because
+Blink's git repo is _not_ a "monorepo" like Firefox's. For e.g. their JS
+runtime is not in the Blink git repo.
 
-Webkit is just a kit/library, and whilst the smallest code base, there a lot of
-associated dependencies that are difficult to sloc.
+Webkit is just a kit/library, and whilst the smallest code base, there [a lot
+of dynamically linked
+dependencies](https://s.natalian.org/2020-07-10/surf-webkit2gtk-ldd.txt) that
+are difficult to sloc / measure.
 
 Blink's source esp when you take in consideration `gclient` et al is
 expansive and firmly under the grip of Google.
+
+Sidenote: I wanted to follow the Webkit source through Webkit, for example `git log --follow -- ./third_party/blink/renderer/core/layout/layout_table_cell.h | tig` but it appears firmly **forked**!
