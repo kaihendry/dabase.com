@@ -104,40 +104,18 @@ deem as source. Tbh, I think every file in a source distribution should be
 considered source. Since pruning non-source files, tests and documentation is a
 slipperly slope!
 
-<img src="https://s.natalian.org/2020-07-11/combined.svg" alt="browser source files/lines count">
+<img src="https://s.natalian.org/2020-07-25/files.svg" alt="major browser files count">
+
+[files.gpt source](https://s.natalian.org/2020-07-25/files.gpt)
+
+<img src="https://s.natalian.org/2020-07-25/lines.svg" alt="major browser lines count">
+
+[lines.gpt source](https://s.natalian.org/2020-07-25/lines.gpt)
 
 I was surprised to see chromium/blink to be more <abbr title="Lines of
 Code">LOC</abbr> than Firefox!
 
-gnuplot source is here:
-
-	$Data <<EOD
-	browser,wcfiles,wclines,clocfiles,cloclines
-	webkitgtk-2.28.2,19472,4710385,18620,3120740
-	firefox-78.0.1,289298,43627834,240137,24371602
-	chromium-83.0.4103.116,420343,100340817,269434,49597826
-	EOD
-
-	set terminal svg
-	set datafile separator ','
-	set title 'sloc the Web'
-
-	set yrange [1000:*]
-	set logscale y
-	set ytics format "%.0s%c"
-
-	set style data histogram
-	set style histogram cluster gap 1
-	set style fill solid border -1
-	set boxwidth 0.9
-
-	plot $Data u 2:xtic(1) ti col,\
-		 '' u 4 ti col,\
-		 '' u 3 ti col,\
-		 '' u 5 ti col
-
-Thank you [Stackoverflow](https://stackoverflow.com/a/62846787/4534)
-
+Thank you to [Stackoverflow](https://stackoverflow.com/a/62846787/4534) for getting tips how to plot the above.
 
 # Git checkout
 
@@ -145,8 +123,8 @@ From which the source distribution (x86 target) is somehow 🤷 derived!
 
 So **with the git history**, the projects weigh in at:
 
-
 Flamegraph via https://github.com/brendangregg/FlameGraph
+
 	hendry@knuckles ~/sloc $ du -sh *
 	11G     WebKit
 	26G     blink
@@ -220,15 +198,16 @@ Can anyone make
 [collect-stats.sh](https://github.com/kaihendry/graphsloc/blob/master/collect-stats.sh)
 faster because these took DAYS to gather the data.
 
-<img src="https://s.natalian.org/2020-07-09/blink-fa66724154f7.svg" alt="blink lines changes from git">
+<img src="https://s.natalian.org/2020-07-25/last10-blink-fa66724154f7.svg" alt="2010-2020 blink lines changes from git">
 
 45M lines of code when I add up all the lines of all the commits. However that falls considerably short of the **100M** of `find chromium-83.0.4103.116 -type f -exec cat {} + | wc -l`. However if you look at cloc's analysis of 49M... it's pretty close to 45M!
 
 ## Gecko
 
-<img src="https://s.natalian.org/2020-07-06/gecko-668686ae0504.csv.svg" alt="gecko lines changes from git">
+<img src="https://s.natalian.org/2020-07-25/last10-gecko-668686ae0504.svg" alt="gecko lines changes from git">
 
-I'm not quite sure why there are horizontal lines. Do please look at the [gecko source CSV](https://s.natalian.org/2020-07-10/gecko-668686ae0504.csv)!
+I'm not quite sure why there are horizontal lines. Do please look at the [gecko
+source CSV](https://s.natalian.org/2020-07-10/gecko-668686ae0504.csv) and [collect-stats.sh](https://github.com/kaihendry/graphsloc/blob/master/collect-stats.sh).
 
 The total is ~130M, but when I look at just the firefox-78.0.1 source
 distribution... it's just 43M or if you just want to look at source files with
@@ -236,7 +215,7 @@ distribution... it's just 43M or if you just want to look at source files with
 
 ## Webkit
 
-<img src="https://s.natalian.org/2020-07-10/WebKit-3a2f99102ac.svg" alt="webkit lines changes from git">
+<img src="https://s.natalian.org/2020-07-25/last10-WebKit-3a2f99102ac.svg" alt="2010-2020 webkit lines changes from git">
 
 40M doesn't come close to the 5-3M of code I got from the https://webkitgtk.org
 sources... that's because a release is **cut** from the git, which is
@@ -244,4 +223,11 @@ documented upon https://trac.webkit.org/wiki/WebKitGTK/Releasing
 
 # Conclusion
 
-I'm still making sense of this.
+Firefox has the cleanest git to source mapping.  Firefox has rust / python tool
+chains in the source that bloat it quite a bit.
+
+Webkit is just a kit/library, and whilst the smallest code base, there a lot of
+associated dependencies that are difficult to sloc.
+
+Blink's source esp when you take in consideration `gclient` et al is
+expansive and firmly under the grip of Google.
