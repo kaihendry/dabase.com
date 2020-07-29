@@ -10,7 +10,8 @@
 <link rel="icon" href="https://hendry.iki.fi/kaihendry.svg" sizes="any" type="image/svg+xml">
 {{ end }}
 <meta name="twitter:creator" content="@kaihendry">
-<link rel="stylesheet" href="/css/dark.standalone.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css">
+ <link rel="stylesheet" href="https://newcss.net/theme/night.css">
 {{ template "_internal/google_analytics_async.html" . }}
 {{ range .AlternativeOutputFormats -}}
 {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

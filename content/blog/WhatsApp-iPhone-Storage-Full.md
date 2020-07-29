@@ -28,9 +28,9 @@ I do have a recent backup:
 <img width="200" src="https://s.natalian.org/2020-07-29/backed-up.png">
 
 But unlike Apple Photos which optimises your local copy with the Cloud... I
-still have the local chats IIUC. Now this is my confusion. Despite having my
-WhatsApp chats in the cloud... am I supposed to delete the chats nonetheless to
-save space!?
+still have the local chats taking space IIUC. Now this is my confusion. Despite
+having my WhatsApp chats in the cloud... am I supposed to delete the chats
+nonetheless to save space!?
 
 <img width="200" src="https://s.natalian.org/2020-07-28/delete.png">
 
