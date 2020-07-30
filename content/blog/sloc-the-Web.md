@@ -13,6 +13,9 @@ img {
 video { width: 100%; }
 </style>
 
+
+{{< youtube nDtfWq_LNmk >}}
+
 Since [my video on measuring the <abbr title="Source Lines of Code">SLOC</abbr>](https://youtu.be/g7jpfAlC-Zg) using
 [ohcount](https://github.com/blackducksoftware/ohcount), I've been wanting to
 tackle the elephant in the room. **The Web!!**
