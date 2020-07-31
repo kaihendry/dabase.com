@@ -35,3 +35,7 @@ nonetheless to save space!?
 <img width="200" src="https://s.natalian.org/2020-07-28/delete.png">
 
 And therefore those chats are deleted from the Cloud backup and lost forever?!
+
+Before anyone suggests I don't have enough iCloud space, have a look at:
+
+<img width="200" src="https://s.natalian.org/2020-07-31/icloud.png" alt="304GB of 2TB used">
