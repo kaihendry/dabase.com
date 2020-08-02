@@ -39,3 +39,11 @@ And therefore those chats are deleted from the Cloud backup and lost forever?!
 Before anyone suggests I don't have enough iCloud space, have a look at:
 
 <img width="200" src="https://s.natalian.org/2020-07-31/icloud.png" alt="304GB of 2TB used">
+
+# Other
+
+<https://www.reddit.com/r/applehelp/comments/i11o55/what_could_be_other_that_is_filling_up_my_local/>
+
+It would appear **Other**, which includes cache/logs is taking a third of my iPhone's storage space. WTH!!
+
+<img width="200" src="https://s.natalian.org/2020-08-02/others.png" alt="20GB of 64GB used">
