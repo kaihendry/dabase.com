@@ -1,5 +1,5 @@
 ---
-title: WhatsApp IPhone Storage Full
+title: Other filling iPhone storage
 date: 2020-07-29T12:04:54+08:00
 description: A third of my iPhone's 64GB is allocated to a mysterious "Other"
 ---
@@ -50,4 +50,6 @@ Before anyone suggests I don't have enough iCloud space, have a look at:
 
 It would appear **Other**, which includes cache/logs is taking a third of my iPhone's storage space. WTH!!
 
-<img width="200" src="https://s.natalian.org/2020-08-02/others.png" alt="20GB of 64GB used">
+After contacting @applesupport over Twitter, only upon direct message they say:
+
+<img src="https://s.natalian.org/2020-08-03/heard-reports.png" alt="heard reports">
