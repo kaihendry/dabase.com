@@ -88,6 +88,10 @@ Is there a workaround??
 
 Not sure how to turn this off!
 
+Can't find a "Silent Shooting" option. Ah, it's under **Audio Signals**!
+
+{{< youtube r3G0-V20uH0 >}}
+
 ## Wide angle
 
 As many have complained a **wide lens adaptor** is sorely needed. I'm not sure where to
@@ -126,3 +130,11 @@ I'm also unable to get it join my wireless LAN to avoid the inconvenient direct 
 ## Digital stabilisation
 
 Sadly not nearly as good as the Canon G7X out the box. **Active stabilization** mode crops like crazy!
+
+## No time lapse movie option
+
+You can only take a series of photos and join them later into a movie on your computer:
+
+<https://support.d-imaging.sony.co.jp/support/tutorial/dc/zv-1/en/08.php>
+
+The UI is just terrible in this regard.
