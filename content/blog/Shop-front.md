@@ -24,7 +24,7 @@ http://shop.example.com or https://example.com/shop
 
 The consumer experience:
 
-1. Finds content about product from Influencer
+1. Finds content about product from (you) the Influencer
 2. Follows link to Influencer's https://example.com/shop
 3. Buys the product
 4. Order confirmation
@@ -47,8 +47,8 @@ When a purchase is made from https://example.com/shop, the order goes through
 Stripe connect. Say the item is for 100 USD, an expected breakdown would be:
 
 1. 5USD going to Stripe (this includes Visa costs)
-2. 5USD going to Influencer
-3. 90USD going to Vendor
+2. 5USD going to you, the Influencer
+3. 90USD going to the product Vendor (who delivers the product)
 
 Sidenote: Where is my cut as the developer of "Shop front"? I do not intend to have one!
 
@@ -83,6 +83,8 @@ what cost? I'm keeping mainstream for my sanity.
 
 ## The product listed is more expensive than the vendor's page
 
-A vendor might have a Website nonetheless, or some account at Amazon, and
-prices are probably not going to aligned. Hopefully consumers can recognise and
-reward who put the effort in.
+A vendor might have a Website nonetheless, or some account at Amazon, or the
+same product listed on another "Shop Front" deployment, where prices are
+probably not going to aligned. 
+
+Hopefully consumers can recognise and reward who put the effort in.
