@@ -44,10 +44,11 @@ Vendor needs to opt in to a [Stripe Connect](https://stripe.com/en-sg/connect)
 account on your deployment.
 
 When a purchase is made from https://example.com/shop, the order goes through
-Stripe connect. Say the item is for 100 USD, an expected breakdown would be:
+Stripe connect. Say the item is for 100 USD (a price you set!), an expected
+breakdown _could_ be:
 
-1. 5USD going to Stripe (this includes Visa costs)
-2. 5USD going to you, the Influencer
+1. 5USD going to Stripe (this includes Visa costs et al)
+2. 5USD going to you, the Influencer (hopefully you can adjust this)
 3. 90USD going to the product Vendor (who delivers the product)
 
 Sidenote: Where is my cut as the developer of "Shop front"? I do not intend to have one!
@@ -103,3 +104,8 @@ to create content on products they recommend on their own site.
 
 I hope you and myself will deploy the resulting static "Shop Front" product
 pages on your homepage.
+
+## How do you account for delivery costs and estimations?
+
+The version 1 / <abbr title="Minimum Viable Product">MVP</abbr> won't. Perhaps
+later like inventory et al. <abbr title="Keep it simple stupid">KISS</abbr> 😘
