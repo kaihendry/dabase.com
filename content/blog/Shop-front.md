@@ -4,6 +4,8 @@ description: Proposal for a static product page generator aimed at Influencers a
 date: 2020-08-10T08:57:36+08:00
 ---
 
+{{< youtube KtHz5JO7QS4 >}}
+
 Problem: Small businesses (**vendors**) can't be expected to run their own online
 store selling their own products, despite Shopify/Woocommerce being fairly good
 solutions.
