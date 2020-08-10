@@ -89,3 +89,17 @@ same product listed on another "Shop Front" deployment, where prices are
 probably not going to be aligned.
 
 Hopefully consumers can recognise and reward who put the effort in.
+
+## Dude, you have just described a [Drop shipping](https://en.wikipedia.org/wiki/Drop_shipping) solution... are you running a scam?
+
+Stripe connect makes sure the money goes to the vendor. You (the "influencer")
+are not a "middle man", the solution does not hide the vendor.
+
+The vendor must opt-in (via Stripe Connect) to this arrangement.
+
+This opensource software does not intend to get a commission or kick back. My
+motives are to empower small business and reward influencers by allowing them
+to create content on products they recommend on their own site.
+
+I hope you and myself will deploy the resulting static "Shop Front" product
+pages on your homepage.
