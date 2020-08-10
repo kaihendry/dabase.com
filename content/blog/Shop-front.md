@@ -20,7 +20,7 @@ Solution: My opensource software is for _influencers_ to download and make
 / market the product with videos, images and text using a fixed JSON schema,
 and my MIT licensed "Shop front" software generates the product pages as static
 pages.  These static pages can then be uploaded to a domain like
-http://shop.example.com or https://example.com/shop
+https://shop.example.com or https://example.com/shop
 
 The consumer experience:
 
@@ -56,9 +56,9 @@ Sidenote: Where is my cut as the developer of "Shop front"? I do not intend to h
 
 ## Who owns the customer?
 
-This is not black and white. Essentially only the vendor will only have the
-consumer's delivery address for fulfill the order. Though I suspect the
-consumer will turn to the **Influencer for support**.
+This is not black and white. Essentially the vendor will only have the
+consumer's delivery address (maintain privacy) for fulfill the order. Though I
+suspect the consumer will turn to the **Influencer for support**.
 
 ## What about inventory?
 
@@ -73,18 +73,19 @@ The influencer needs to set the price with the above projected (5/5/90) break
 down in price.
 
 If the vendor cannot fulfil the order for the price, the vendor should refuse /
-cancel the order. This could be problematic, but ultimately the problem should
-escalate to the influencer.
+cancel the order. Again, the influencer is ideally involved, to ensure the
+product page is updated.
 
 ## What about crypto?
 
 Shrinking the 5% or so that goes to Stripe (and Visa) would be nice, but at
-what cost? I'm keeping mainstream for my sanity.
+what cost? I'm keeping mainstream for my sanity. Stripe's APIs and dashboard
+offers a lot of value.
 
 ## The product listed is more expensive than the vendor's page
 
 A vendor might have a Website nonetheless, or some account at Amazon, or the
 same product listed on another "Shop Front" deployment, where prices are
-probably not going to aligned. 
+probably not going to be aligned.
 
 Hopefully consumers can recognise and reward who put the effort in.
