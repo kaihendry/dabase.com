@@ -41,7 +41,7 @@ dashboard.
 ## How "Shop Front" works
 
 Vendor needs to opt in to a [Stripe Connect](https://stripe.com/en-sg/connect)
-account on my deployment.
+account on your deployment.
 
 When a purchase is made from https://example.com/shop, the order goes through
 Stripe connect. Say the item is for 100 USD, an expected breakdown would be:
@@ -64,10 +64,25 @@ consumer will turn to the **Influencer for support**.
 
 For version 1, there will be no inventory query.
 
+If the product is not in stock, the vendor needs to ideally cancel the order.
+The influencer is ideally involved, to ensure the product page is updated.
+
 ## What about price?
 
-The influencer needs to set the price with the above break down in price.
+The influencer needs to set the price with the above projected (5/5/90) break
+down in price.
 
 If the vendor cannot fulfil the order for the price, the vendor should refuse /
 cancel the order. This could be problematic, but ultimately the problem should
 escalate to the influencer.
+
+## What about crypto?
+
+Shrinking the 5% or so that goes to Stripe (and Visa) would be nice, but at
+what cost? I'm keeping mainstream for my sanity.
+
+## The product listed is more expensive than the vendor's page
+
+A vendor might have a Website nonetheless, or some account at Amazon, and
+prices are probably not going to aligned. Hopefully consumers can recognise and
+reward who put the effort in.
