@@ -93,16 +93,18 @@ probably not going to be aligned.
 
 Hopefully consumers can recognise and reward who put the effort in.
 
-## Dude, you have just described a [Drop shipping](https://en.wikipedia.org/wiki/Drop_shipping) solution... are you running a scam?
+## Dude, you have just described a [Drop shipping](https://en.wikipedia.org/wiki/Drop_shipping) solution... are you running a [scam](https://www.bbc.com/news/technology-53759932)?
 
-Stripe connect makes sure the money goes to the vendor. You (the "influencer")
-are not a "middle man", the solution does not hide the vendor.
+Stripe connect makes sure the money goes direct to the vendor. You (the
+"influencer") are not a "middle man", the solution does not hide the vendor aka
+"private label shipping".
 
-The vendor must opt-in (via Stripe Connect) to this arrangement.
+The vendor must opt-in (via Stripe Connect) for this arrangement to work. There
+is a direct and transparent relationship.
 
 This opensource software does not intend to get a commission or kick back. My
 motives are to empower small business and reward influencers by allowing them
-to create content on products they recommend on their own site.
+to create content on products they recommend on the **influencer's own site**.
 
 I hope you and myself will deploy the resulting static "Shop Front" product
 pages on your homepage.
