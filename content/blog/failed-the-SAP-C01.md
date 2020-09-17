@@ -54,7 +54,7 @@ Just for the record I failed three times before passing:
 # Failed the AWS Certified Solutions Architect – Professional
 
 Yesterday I took and failed the SAP-C01 exam. You may have noticed I scribbled
-some [preparation notes earlier](https://dabase.com/blog/AWS_Pro_exam_notes/).
+some [preparation notes earlier](/blog/2020/AWS_Pro_exam_notes/).
 
 Candidate score was 730 and I needed 750 to pass. So I was close, but it showed
 at least to me some gaps in my knowledge.
