@@ -25,13 +25,15 @@ There is a danger that if this process is unchecked, it can take well over 10
 minutes. Lets not forget potential cache invalidation issues.
 
 You don't want people to watch for CI/CD to finish. It should be fast, having a
-reproduciable environment isn't enough!
+reproducible environment isn't enough!
 
 ## How long takes it take you to roll back?
 
 Sometimes it's not possible to roll back, because you had to make database /
 data structure changes which make it non-trivial to back out of. In which case
 you need to roll forward. Either way, can you reliably perform this?
+
+You must allow for failure.
 
 ## Can you develop locally?
 
@@ -69,3 +71,5 @@ Do not overlook long build times and no local environment. A slow <abbr
 title="Continuous Integration">CI</abbr>/<abbr title="Continuous
 Deployment">CD</abbr>, without a local fallback, can negate your #devops
 investment in first place.
+
+Fast iterations facilitates value creation.
