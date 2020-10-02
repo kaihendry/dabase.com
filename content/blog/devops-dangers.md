@@ -59,11 +59,16 @@ If you don't deploy regularly you actually don't know if your pipeline is
 resilient.  Dependencies and platforms change all the time, you must be in the
 habit of deploying daily to be confident you have a reliable pipeline.
 
-## Do you check you dependencies?
+## Do you check (in) your dependencies?
 
 If you don't check, update and importantly evaluate your dependencies, you will
-have a fragile and possibly insecure pipeline. To matters worse, Docker usually
-allows to easily express more dependencies, so be wary not to let the bloat in!
+have a fragile and possibly insecure pipeline. To matters worse, Docker allows
+developers to easily express more dependencies, so be wary not to let the bloat
+in!
+
+To prevent dependency fragility, you might want to actually [check in your
+dependencies](https://natalian.org/2019/11/15/Private_modules_with_Go_mod/) for
+piece of mind.
 
 ## Conclusion
 
