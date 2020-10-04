@@ -62,6 +62,9 @@ convenience functionality on Apple IOS to save typing in a password?
 I think my setup is too complex for any trusted member of my family (or friend)
 to recover my data with, in case of an accident.
 
+As for my family's security practices. I think it's pretty bad and tbh I'm
+struggling with my own issues, so I don't want to get too involved.
+
 # Things I think I'm doing well with
 
 I try not to use my Singapore number for anything, but some services esp like
