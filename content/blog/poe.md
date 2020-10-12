@@ -62,6 +62,15 @@ The **US-8-60W** only supports **802.3af which is Active POE and 48V**.
 
 Interestingly upon [Wikipedia Power over Ethernet page](https://en.wikipedia.org/wiki/Power_over_Ethernet), [Passive PoE](https://en.wikipedia.org/wiki/Power_over_Ethernet#Passive) is considered **Non-standard**!!
 
+Actually 802.3af has several enhancements:
+
+1. 802.3af (802.3at Type 1) "PoE"
+2. **802.3at** Type 2 "PoE+"
+3. 802.3bt Type 3 "4PPoE"[24]/"PoE++"
+4. 802.3bt Type 4 "4PPoE"/"PoE++"
+
+See <https://en.wikipedia.org/wiki/Power_over_Ethernet#Standard_implementation> for more details.
+
 # Solutions
 
 ## Use a passive PoE injector
