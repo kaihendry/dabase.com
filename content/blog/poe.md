@@ -1,7 +1,7 @@
 ---
 title: Passive versus Active Power over Ethernet
 date: 2020-10-07T10:22:38+08:00
-description: Passive != Active Power over Ethernet
+description: Non-standard Passive != Standard Active Power over Ethernet
 ---
 
 
@@ -59,6 +59,8 @@ Now if if I connect it to my [UniFi Switch 8 POE-60W](https://www.ui.com/unifi-s
 # Passive != Active <abbr title="Power over Ethernet">PoE</abbr>
 
 The **US-8-60W** only supports **802.3af which is Active POE and 48V**.
+
+Interestingly upon [Wikipedia Power over Ethernet page](https://en.wikipedia.org/wiki/Power_over_Ethernet), [Passive PoE](https://en.wikipedia.org/wiki/Power_over_Ethernet#Passive) is considered **Non-standard**!!
 
 # Solutions
 
