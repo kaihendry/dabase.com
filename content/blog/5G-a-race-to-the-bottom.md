@@ -9,8 +9,10 @@ pushing 5G hard](https://twitter.com/dramocle/status/1316649461364518912).
 
 5G signals a new round of insane investment needed by carriers/operators.
 
-5G is more complex. 5G requires more stations. 5G by most estimations at AT
-LEAST a 2x investment of 4G. Who pays for this?!
+5G is far more
+[complex](https://www.forbes.com/sites/bobodonnell/2020/07/08/look-out-here-comes-5g-phase-2/#7209544e5bae).
+5G requires more stations. 5G by most estimations at AT LEAST a 2x investment
+of 4G. Who pays for this?!
 
 **You do** and you will.
 
