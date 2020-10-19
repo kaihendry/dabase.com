@@ -103,3 +103,5 @@ threshold, 20SGD at time of writing and it will probably go up in reality.
 I expect further consolidation and government involvement. For your own
 **personal freedom**, you probably want to look at other ways of connecting to
 the Internet.
+
+tl;dr 5G is probably the tipping point for mobile operators to suck even harder
