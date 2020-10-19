@@ -42,7 +42,7 @@ all the <abbr title="Know Your Customer">KYC</abbr> process again!
 # Multiple SIMs and one line?
 
 No no no! You cannot expect this with operators. You might be used to VOIP and
-it's convenience of ringing any connected phone, but think of the **security
+its convenience of ringing any connected phone, but think of the **security
 implications**. Criminal gangs would love to log into your account and get your
 SMSes wouldn't they? You would love the convenience of **line portability** and so
 would criminals.
@@ -51,13 +51,15 @@ End result: Operators cannot offer line portability for security / mirror attack
 
 # How do operators make money again?
 
+<a href="https://blog.seedly.sg/singapore-telco-plan-comparison-data-price-best-plan/">
 <img src="https://s.natalian.org/2020-10-19/290720-Cheapest-SIM-Only-Plan.png" alt="Singapore mobile plans">
+</a>
 
 In Singapore no operator wants to go lower than 20SGD per month to support any form of connectivity.
 
 To make extra money, operators appear to:
 
-1. Try create [one off bundles](https://natalian.org/2016/03/11/Prepaid_mobile_plans/), often combined with hardware to lock you in to a long term contract thats not in your favour
+1. Try create [one off bundles](https://natalian.org/2016/03/11/Prepaid_mobile_plans/), often combined with hardware to lock you in to a long term contract that's not in your favour
 1. Break Net neutrality -- accept money from Facebook / Wechat etc in order to zero rate their product's data
 2. Sell network capacity to [MVNOs](https://en.wikipedia.org/wiki/Mobile_virtual_network_operator) so they treat you as the product
 
@@ -75,11 +77,11 @@ manage:
 2. Photos of you
 3. Your utility bills
 4. Your mobile records for law enforcement
-5. **Where you are**
+5. **Where you are** aka your location
 
-This is of course really interesting to governments, criminals and lets not
-forget... MVNOs or Wireless application service providers (WASPs) who usually
-have access to the same location data!
+This is of course really interesting to governments, **criminals** and lets not
+forget... Mobile virtual network operators (MVNOs)  or Wireless application
+service providers (WASPs) who usually have access to the same sensitive data!
 
 For example in South Africa there was a case where [location data was leaked to criminals to kill a police commander](https://mybroadband.co.za/news/cellular/371884-vodacom-and-mtn-data-linked-to-assassination-scandal.html)!
 
@@ -95,5 +97,5 @@ lower than a certain threshold, 20SGD at time of writing and it will probably
 go up in reality.
 
 I expect further consolidation and government involvement. For your own
-personal freedom, you probably want to look at other ways of connecting to the
+**personal freedom**, you probably want to look at other ways of connecting to the
 Internet.
