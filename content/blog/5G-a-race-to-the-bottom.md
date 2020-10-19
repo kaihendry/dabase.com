@@ -18,10 +18,10 @@ LEAST a 2x investment of 4G. Who pays for this?!
 
 Operators across the world have long become shells of just trying to save money
 for these technological shifts and paying governments to licence spectrum.
-And lets add some salt to the wounds with shifting legislation and compliance
+And lets add some salt to the wounds with increasing legislation and compliance
 demands.
 
-They buy off the shelf "managed" software to try **reduce costs and risk**.
+Operators buy off the shelf "managed" software to try **reduce costs and risk**.
 There are hardly any developers in any operator. Operators are just investment
 vehicles.
 
@@ -31,8 +31,8 @@ Want to do something slightly out of ordinary with an operator? Like get
 customer service? Or a second line on your account? Prepare to be disappointed.
 
 But see it from their perspective. Any product or "user journey" other than
-opening a new line with the Operator is going to be too complex for them to
-support across their large user base.
+opening a new line with the Operator is going to be **too complex** for them to
+support across their **large user base**.
 
 Want another line on your contract? Operators won't want to do it! Operators want
 you to open a new line, and go through all the onboarding procedures as if you
@@ -85,17 +85,21 @@ service providers (WASPs) who usually have access to the same sensitive data!
 
 For example in South Africa there was a case where [location data was leaked to criminals to kill a police commander](https://mybroadband.co.za/news/cellular/371884-vodacom-and-mtn-data-linked-to-assassination-scandal.html)!
 
+Lets not forget most operators need to keep several copies of the data and feed
+that data to intelligence services. An unenviable situation with the
+security/privacy risk is untenable.
+
 # Conclusion: Operators are between a rock and hard place
 
 The pressures on operators from 5G, to governments and criminals makes me
 understand how I can expect them to do very little for me in the sense of
-convenience.
+convenience or innovation.
 
 If I ever want to connect another device, I will need to open a new contract
-and that will always be painful for the reasons above. Costs will never be
-lower than a certain threshold, 20SGD at time of writing and it will probably
-go up in reality.
+and that will always be painful for the <abbr title="Know Your
+Customer">KYC</abbr> reasons above. Costs will never be lower than a certain
+threshold, 20SGD at time of writing and it will probably go up in reality.
 
 I expect further consolidation and government involvement. For your own
-**personal freedom**, you probably want to look at other ways of connecting to the
-Internet.
+**personal freedom**, you probably want to look at other ways of connecting to
+the Internet.
