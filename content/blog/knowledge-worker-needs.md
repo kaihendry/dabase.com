@@ -82,3 +82,6 @@ I've written about ideal workings conditions before:
 
 </tbody>
 </table>
+
+
+Some further resources when it comes to collaboration can be found from <https://files.thoughtworks.com/pdfs/Books/Remote_Work_Playbook.pdf>
