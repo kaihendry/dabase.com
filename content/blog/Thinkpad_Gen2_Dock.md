@@ -25,7 +25,8 @@ restart in recent kernels like 5.9.2-arch1-1
 
 Full logs https://s.natalian.org/2020-11-02/dock-restarting.txt
 
-
 # Any ideas how to fix?
+
+Could be fixed in a firmware update! https://github.com/fwupd/fwupd/issues/2540
 
 Please [contact me](https://hendry.iki.fi/)!
