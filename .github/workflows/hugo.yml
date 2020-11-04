@@ -8,7 +8,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    container: peaceiris/hugo:v0.77.0
+    container: peaceiris/hugo:latest
     steps:
       - uses: actions/checkout@v2
       - name: Build and Deploy
