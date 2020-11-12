@@ -36,3 +36,5 @@ When something has gone seriously weird:
 Moving the y-m-d folder down a level fixed it `mv .fcpcache/17-10-20/ .`, but **why** did it happen in the first place?!
 
 For the record, this is how I [backup my FCPX bundle libraries](https://github.com/kaihendry/media-organisation/blob/master/v2/2_sync-mysrctree.sh).
+
+https://gist.github.com/kaihendry/7e52c334c02c7d20a75dd8919c811140
