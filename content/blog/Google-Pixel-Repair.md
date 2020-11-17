@@ -25,3 +25,9 @@ process the repair. So you would need to visit their office in Aperia Mall to
 submit and collect it.
 
 How much is your time worth?
+
+# Ifixit
+
+There is no [screen replacement
+kit](https://www.ifixit.com/Device/Google_Pixel_4a) available upon iFixit as
+yet.
