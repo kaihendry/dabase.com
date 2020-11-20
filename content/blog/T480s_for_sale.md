@@ -18,3 +18,7 @@ Extras:
 <img src="https://s.natalian.org/2020-11-21/T480s.webp" alt="Second hand T480s">
 
 Served me as my [Archlinux daily driver for a little over two years](https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_T480s).
+
+I've listed on the Singapore local [Carousell
+site](https://www.carousell.sg/p/1050397648). I am willing to let it go for a
+lot cheaper to a kid who wants to run and contribute to Archlinux.
