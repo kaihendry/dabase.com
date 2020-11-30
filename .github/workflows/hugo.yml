@@ -8,12 +8,12 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    container: peaceiris/hugo:v0.73.0
+    container: peaceiris/hugo:latest
     steps:
       - uses: actions/checkout@v2
       - name: Build and Deploy
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_ACCESS_KEY_ID: AKIAV5XVAVSZIFHV3MOL
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           hugo

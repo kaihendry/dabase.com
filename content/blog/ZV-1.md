@@ -125,7 +125,9 @@ I'm also unable to get it join my wireless LAN to avoid the inconvenient direct 
 
 ## Can't fit the Peak Design Cuff
 
-<img src="https://s.natalian.org/2020-07-16/cuff-zv1.jpeg" alt="cuff lanyard is too thick for the ZV-1 camera">
+<img src="https://s.natalian.org/2020-08-25/zv1-cuff.jpeg" alt="Peak design has smaller cuffs as well as large">
+
+Peak design sent me [smaller cuffs for free](https://twitter.com/kaihendry/status/1298220112185499648). Whoa, what incredible customer service.
 
 ## Digital stabilisation
 
