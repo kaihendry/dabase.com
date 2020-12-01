@@ -4,6 +4,8 @@ date: 2020-02-27T09:24:00+08:00
 description: Snapshot of COVID19 websites by mainly Governments around the world
 ---
 
+Update: [Better resource for analysing COVID-19 by country](/e/05044/)
+
 Thanks to a prod by the [esteemed
 @cheeaun](https://twitter.com/cheeaun/status/1232658527572774912), I am
 collecting country specific Websites that communicate the ["Wuhan" Coronavirus
