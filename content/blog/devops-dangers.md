@@ -78,3 +78,7 @@ Deployment">CD</abbr>, without a local fallback, can negate your #devops
 investment in first place.
 
 Fast iterations facilitates value creation.
+
+# Webinar
+
+[I conducted a Webinar on this very topic: Dos and Don'ts of DevOps](https://youtu.be/S485rFfHIvg?t=877)
