@@ -3,17 +3,37 @@
 There are {{ len .Site.RegularPages }} pages currently on this tech focus site of <a href="https://hendry.iki.fi/">Kai's</a>. <a href="https://natalian.org/">Kai's personal blog is called Natalian</a>.
 </p>
 <h1>
-    <a href="/tips">{{ len (where .Site.RegularPages "Section" "=" "tips") }} tips</a>,
-	and 
-    <a href="/blog">{{ len (where .Site.RegularPages "Section" "=" "blog") }} blog posts</a>
+<a href="/tips">{{ len (where .Site.RegularPages "Section" "=" "tips") }} tips</a>,
+and 
+<a href="/blog">{{ len (where .Site.RegularPages "Section" "=" "blog") }} blog posts</a>
 </h1>
 
-<h2>Last 5 blogs</h2>
+<style>
+nav.homepage { display: flex; }
+nav.homepage section { flex: 50%; }
+</style>
+
+<nav class="homepage">
+<section class="blogs">
+<h2>Last 10 blogs</h2>
 <ol>
-{{ range (first 5 (where .Site.RegularPages "Section" "=" "blog")) }}
+{{ range (first 10 (where .Site.RegularPages "Section" "=" "blog")) }}
 <li><a href="{{.RelPermalink}}">{{.Title}}</a>{{ if .Description }} &mdash; {{ .Description }}{{ end }}</li>
 {{ end }}
 </ol>
+</section>
+
+<section class="tips">
+<h2>Last 10 tips</h2>
+<ol>
+{{ range (first 10 (where .Site.RegularPages "Section" "=" "tips")) }}
+<li><a href="{{.RelPermalink}}">{{.Title}}</a>{{ if .Description }} &mdash; {{ .Description }}{{ end }}</li>
+{{ end }}
+</ol>
+</section>
+</nav>
+
+
 
 <iframe frameBorder="0" src="https://subscribe.dabase.com/"></iframe>
 {{ end }}
