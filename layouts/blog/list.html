@@ -2,10 +2,34 @@
 
 {{ .Content }}
 
-{{ range (.Data.Pages.GroupByDate "2006") }}
-<h1>{{ .Key }}</h1>
+<style>
+.index li {
+  display: flex;
+}
 
-<ul>
+ol.index { padding-left: 0; }
+
+.index time {
+  flex: 2;
+  text-align: right;
+  margin-right: 3.0rem;
+}
+
+.index a {
+  flex: 5;
+}
+</style>
+
+<aside>
+Non-tech: <a href="https://natalian.org/">Kai's personal blog</a>
+</aside>
+
+<h1>Kai Hendry's techy posts</h1>
+
+{{ range (.Data.Pages.GroupByDate "2006") }}
+<h2>{{ .Key }}</h2>
+
+<ul class="index">
 {{ range .Pages.ByDate.Reverse }}<li><time datetime="{{ .Date.Format "2006-01-02T15:04" }}">
 {{- .Date.Format "Jan 2" }}</time> <a href="{{.RelPermalink}}">
 {{- $alternate_title := replace .File.BaseFileName "_" " " | title }}
