@@ -46,7 +46,7 @@ an underlying compute cluster which you pay hourly for.
 </tr>
 <tr>
 <td>Iteration speed</td>
-<td>~2s</td>
+<td>~2s <img src="https://github.com/kaihendry/count/workflows/Deploy/badge.svg" alt="Deploy"></td>
 <td>~30s</td>
 <td>~2mins</td>
 <td>~2mins</td>
