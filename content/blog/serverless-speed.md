@@ -15,7 +15,7 @@ an underlying compute cluster which you pay hourly for.
 <tr>
 <th>Feature</th>
 <th><a href="https://github.com/kaihendry/count">Apex Up (AWS)</a></th>
-<th><abbr title="Serverless Application Model">SAM</abbr> (AWS)</th>
+<th><a href="https://github.com/kaihendry/count/tree/sam"><abbr title="Serverless Application Model">SAM</abbr> (AWS)</a></th>
 <th><a href="https://github.com/kaihendry/count/tree/gcp-functions">Functions (GCP)</a></th>
 <th><a href="https://github.com/kaihendry/count/tree/gcp-cloudrun">Cloud Run (GCP)</a></th>
 <th><a href="https://github.com/kaihendry/count/tree/azure-functions">Functions (Azure)</a></th>
@@ -39,7 +39,7 @@ an underlying compute cluster which you pay hourly for.
 <tr>
 <td>Demo URL</td>
 <td><a href="https://count.goserverless.sg/">AWS</a></td>
-<td></td>
+<td><a href="https://sam.goserverless.sg/">AWS</a></td>
 <td><a href="https://asia-east2-idiotbox.cloudfunctions.net/Countpage">Function</a></td>
 <td><a href="https://count.dabase.com/">GCP Cloud Run</a></td>
 <td><a href="https://counttesting.azurewebsites.net/">Azure</a></td>
@@ -47,9 +47,13 @@ an underlying compute cluster which you pay hourly for.
 <tr>
 <td>Iteration speed</td>
 <td>~2s <img src="https://github.com/kaihendry/count/workflows/Deploy/badge.svg" alt="Deploy"></td>
-<td>~30s</td>
+<td>~30s
+<img src="https://github.com/kaihendry/count/workflows/Deploy%20SAM/badge.svg" alt="SAM deploy">
+</td>
 <td>~2mins</td>
-<td>~2mins</td>
+<td>~2mins
+<img src="https://github.com/kaihendry/count/workflows/Build%20and%20Deploy%20to%20Cloud%20Run/badge.svg" alt="SAM deploy">
+</td>
 <td>~30s <a href="#immediate">[1]</a></td>
 </tr>
 <tr>
@@ -65,8 +69,8 @@ an underlying compute cluster which you pay hourly for.
 <p><a id="immediate">[1]</a> Not immediate. CLI will say it's done but Cloud is being <strong>eventually consistent</strong>... leading to some confusion!</p>
 <p><a id="no-cli">[2]</a> No <abbr title="Command Line Interface">CLI</abbr> / <abbr title="Infrastructure as Code">IaC</abbr> option <abbr title="As far as I can tell">AFAICT</abbr></p>
 
-Winner is clear to me is [Apex Up](https://github.com/apex/up). It has the
-**fastest iterations** (~2s), a fantastic <abbr title="Developer
-Experience">DX</abbr> <abbr title="Command Line Interface">CLI</abbr> with
-logging that's easy to use. Apex Up also has a <abbr title="Continuous
-Delivery">CD</abbr> [Github workflow](https://github.com/kaihendry/count/blob/master/.github/workflows/up.yml) that I trust works.
+[Apex Up](https://github.com/apex/up) is the clear winner to me. Apex Up has
+the **fastest iterations** to the cloud (~2s), a fantastic <abbr
+title="Developer Experience">DX</abbr> <abbr title="Command Line
+Interface">CLI</abbr> with logging that's easy to use. Apex Up also
+automatically bundles `static/` assets which the others don't do and uses the [standard http request / response API](https://youtu.be/Bj2p6nVt_H4).
