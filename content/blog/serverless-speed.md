@@ -50,21 +50,23 @@ an underlying compute cluster which you pay hourly for.
 <td>~30s</td>
 <td>~2mins</td>
 <td>~2mins</td>
-<td>~30s <a id="immediate">[1]</a></td>
+<td>~30s <a href="#immediate">[1]</a></td>
 </tr>
 <tr>
 <td>Custom domain</td>
 <td>Yes</td>
 <td>Yes</td>
-<td><a href="https://stackoverflow.com/a/58591136/4534">Via Firebase</a></td>
-<td><a href="https://github.com/kaihendry/count/blob/gcp-cloudrun/Makefile#L22">Yes</a> <a id="immediate">[1]</a></td>
-<td><a href="https://azure.dabase.com/">Not working</a></td>
+<td><a href="https://stackoverflow.com/a/58591136/4534">Via Firebase</a><a href="#no-cli">[2]</a></td>
+<td><a href="https://github.com/kaihendry/count/blob/gcp-cloudrun/Makefile#L22">Yes</a> <a href="#immediate">[1]</a></td>
+<td><a href="https://azure.dabase.com/">Yes</a> <a href="#no-cli">[2]</a></td>
 </tr>
 </table>
 
-<p><a id="immediate">[1]</a>Not immediate. CLI will say it's done but cloud is being eventually consistent...</p>
+<p><a id="immediate">[1]</a> Not immediate. CLI will say it's done but Cloud is being <strong>eventually consistent</strong>... leading to some confusion!</p>
+<p><a id="no-cli">[2]</a> No <abbr title="Command Line Interface">CLI</abbr> / <abbr title="Infrastructure as Code">IaC</abbr> option <abbr title="As far as I can tell">AFAICT</abbr></p>
 
 Winner is clear to me is [Apex Up](https://github.com/apex/up). It has the
 **fastest iterations** (~2s), a fantastic <abbr title="Developer
 Experience">DX</abbr> <abbr title="Command Line Interface">CLI</abbr> with
-logging that's easy to use.
+logging that's easy to use. Apex Up also has a <abbr title="Continuous
+Delivery">CD</abbr> [Github workflow](https://github.com/kaihendry/count/blob/master/.github/workflows/up.yml) that I trust works.
