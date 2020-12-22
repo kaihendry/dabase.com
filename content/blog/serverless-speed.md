@@ -29,7 +29,7 @@ an underlying compute cluster which you pay hourly for.
 <td>Yes</td>
 </tr>
 <tr>
-<td><a href="https://serverlesshandbook.dev/serverless-dx/">DX rating</a></td>
+<td>My subjective <a href="https://serverlesshandbook.dev/serverless-dx/">DX rating</a></td>
 <td>Best</td>
 <td>Bad, custom entrypoint</td>
 <td>Bad, custom entrypoint</td>
@@ -38,15 +38,15 @@ an underlying compute cluster which you pay hourly for.
 </tr>
 <tr>
 <td>Demo URL</td>
-<td><a href="https://count.goserverless.sg/">AWS</a></td>
-<td><a href="https://sam.goserverless.sg/">AWS</a></td>
-<td><a href="https://asia-east2-idiotbox.cloudfunctions.net/Countpage">Function</a></td>
-<td><a href="https://count.dabase.com/">GCP Cloud Run</a></td>
-<td><a href="https://counttesting.azurewebsites.net/">Azure</a></td>
+<td><a href="https://count.goserverless.sg/">AWS SG</a></td>
+<td><a href="https://sam.goserverless.sg/">AWS SG</a></td>
+<td><a href="https://asia-east2-idiotbox.cloudfunctions.net/Countpage">GCP HK</a></td>
+<td><a href="https://count.dabase.com/">GCP SG</a></td>
+<td><a href="https://counttesting.azurewebsites.net/">Azure SG</a></td>
 </tr>
 <tr>
 <td>Iteration speed</td>
-<td>~2s <img src="https://github.com/kaihendry/count/workflows/Deploy/badge.svg" alt="Deploy"></td>
+<td>~10s <img src="https://github.com/kaihendry/count/workflows/Deploy/badge.svg" alt="Up"></td>
 <td>~30s
 <img src="https://github.com/kaihendry/count/workflows/Deploy%20SAM/badge.svg" alt="SAM deploy">
 </td>
@@ -82,7 +82,7 @@ automatically bundles `static/` assets which the others don't do and uses the [s
 There are three types of iteration speed:
 
 1. Local development speed, speed of live reloader like [entr](http://eradman.com/entrproject/). Painful with functions that do not use HTTP req/res interface.
-2. Using your serverless tooling to `make deploy` and view changes on the Cloud endpoint
+2. Using your serverless tooling to `time make` and view changes on the Cloud endpoint
 3. Time for your CI/CD pipeline (Github action) to deploy (often much longer since env is setup from scratch)
 
 Iteration speed above is **case 2**.
