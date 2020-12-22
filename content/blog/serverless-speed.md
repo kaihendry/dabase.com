@@ -50,7 +50,9 @@ an underlying compute cluster which you pay hourly for.
 <td>~30s
 <img src="https://github.com/kaihendry/count/workflows/Deploy%20SAM/badge.svg" alt="SAM deploy">
 </td>
-<td>~2mins</td>
+<td>~2mins
+<img src="https://github.com/kaihendry/count/workflows/Build%20and%20Deploy%20to%20Cloud%20Functions/badge.svg" alt="Function deploy">
+</td>
 <td>~2mins
 <img src="https://github.com/kaihendry/count/workflows/Build%20and%20Deploy%20to%20Cloud%20Run/badge.svg" alt="SAM deploy">
 </td>
@@ -60,7 +62,7 @@ an underlying compute cluster which you pay hourly for.
 <td>Custom domain</td>
 <td>Yes</td>
 <td>Yes</td>
-<td><a href="https://stackoverflow.com/a/58591136/4534">Via Firebase</a><a href="#no-cli">[2]</a></td>
+<td><a href="https://stackoverflow.com/a/58591136/4534">Via Firebase</a> <a href="#no-cli">[2]</a></td>
 <td><a href="https://github.com/kaihendry/count/blob/gcp-cloudrun/Makefile#L22">Yes</a> <a href="#immediate">[1]</a></td>
 <td><a href="https://azure.dabase.com/">Yes</a> <a href="#no-cli">[2]</a></td>
 </tr>
@@ -74,3 +76,18 @@ the **fastest iterations** to the cloud (~2s), a fantastic <abbr
 title="Developer Experience">DX</abbr> <abbr title="Command Line
 Interface">CLI</abbr> with logging that's easy to use. Apex Up also
 automatically bundles `static/` assets which the others don't do and uses the [standard http request / response API](https://youtu.be/Bj2p6nVt_H4).
+
+## Note about iteration speed
+
+There are three types of iteration speed:
+
+1. Local development speed, speed of live reloader like [entr](http://eradman.com/entrproject/). Painful with functions that do not use HTTP req/res interface.
+2. Using your serverless tooling to `make deploy` and view changes on the Cloud endpoint
+3. Time for your CI/CD pipeline (Github action) to deploy (often much longer since env is setup from scratch)
+
+Iteration speed above is **case 2**.
+
+## TODO
+
+* Cloudflare workers only appear to [support Javascript](https://developers.cloudflare.com/workers/platform/languages)
+* [Serverless framework](https://github.com/kaihendry/count/issues/3)
