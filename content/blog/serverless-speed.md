@@ -1,7 +1,7 @@
 ---
 title: Serverless Speed Survey
 date: 2020-12-20T18:13:47+08:00
-description: Comparing AWS, Microsoft and GCP managed compute offerings
+description: Comparing AWS, Microsoft and GCP managed compute offerings assuming an HTTP endpoint
 ---
 
 <style>
@@ -12,8 +12,9 @@ I've used https://github.com/kaihendry/count to "experience" various managed
 compute solutions <abbr title="also known as">aka</abbr> [Serverless
 computing](https://aws.amazon.com/serverless/). 
 
-AWS Fargate is excluded because it does **not scale to zero** since it requires
-an underlying compute cluster which you pay hourly for.
+AWS Fargate / Elastic Beanstalk is excluded because it does **not scale to
+zero** since it requires an underlying compute cluster which you pay hourly
+for.
 
 <table>
 <tr>
@@ -107,3 +108,12 @@ Iteration speed above is **case 2**.
 I do not consider the time for the initial setup / <abbr title="Infrastructure
 as Code">IaC</abbr> provisioning which can take quite a bit of waiting,
 especially for the **custom domain**!
+
+# Price?!
+
+Unfortunately it's quite tedious and difficult to compare the price, especially
+when there is a free tier. Just know that I've not noticed an impact on my bill
+when using serverless. It's must cheaper than paying hourly. If it becomes
+expensive, you have options!
+
+Need more reasons to consider "Serverless"? Please checkout https://goserverless.sg/
