@@ -4,6 +4,10 @@ date: 2020-12-20T18:13:47+08:00
 description: Comparing AWS, Microsoft and GCP managed compute offerings
 ---
 
+<style>
+table { word-break: initial }
+</style>
+
 I've used https://github.com/kaihendry/count to "experience" various managed
 compute solutions <abbr title="also known as">aka</abbr> [Serverless
 computing](https://aws.amazon.com/serverless/). 
@@ -14,6 +18,7 @@ an underlying compute cluster which you pay hourly for.
 <table>
 <tr>
 <th>Feature</th>
+<th><a href="https://github.com/kaihendry/count/tree/serverless">Serverless framework (AWS)</a></th>
 <th><a href="https://github.com/kaihendry/count">Apex Up (AWS)</a></th>
 <th><a href="https://github.com/kaihendry/count/tree/sam"><abbr title="Serverless Application Model">SAM</abbr> (AWS)</a></th>
 <th><a href="https://github.com/kaihendry/count/tree/gcp-functions">Functions (GCP)</a></th>
@@ -24,12 +29,14 @@ an underlying compute cluster which you pay hourly for.
 <td>Local to Singapore</td>
 <td>Yes</td>
 <td>Yes</td>
+<td>Yes</td>
 <td>No (Hong Kong)</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>My subjective <a href="https://serverlesshandbook.dev/serverless-dx/">DX rating</a></td>
+<td>OK, custom entrypoint</td>
 <td>Favourite</td>
 <td>Bad, custom entrypoint</td>
 <td>Bad, custom entrypoint</td>
@@ -38,6 +45,7 @@ an underlying compute cluster which you pay hourly for.
 </tr>
 <tr>
 <td>Demo URL</td>
+<td><a href="https://9hh08sdxgj.execute-api.ap-southeast-1.amazonaws.com/dev">AWS SG</a></td>
 <td><a href="https://count.goserverless.sg/">AWS SG</a></td>
 <td><a href="https://sam.goserverless.sg/">AWS SG</a></td>
 <td><a href="https://asia-east2-idiotbox.cloudfunctions.net/Countpage">GCP HK</a></td>
@@ -46,6 +54,7 @@ an underlying compute cluster which you pay hourly for.
 </tr>
 <tr>
 <td>Iteration speed</td>
+<td>~30s <img src="https://github.com/kaihendry/count/workflows/Deploy%20SLS/badge.svg" alt="sls deploy"></td>
 <td>~10s <img src="https://github.com/kaihendry/count/workflows/Deploy/badge.svg" alt="Up"></td>
 <td>~30s
 <img src="https://github.com/kaihendry/count/workflows/Deploy%20SAM/badge.svg" alt="SAM deploy">
@@ -62,6 +71,7 @@ an underlying compute cluster which you pay hourly for.
 </tr>
 <tr>
 <td>Custom domain</td>
+<td>Yes, via a plugin</td>
 <td>Yes</td>
 <td>Yes</td>
 <td><a href="https://stackoverflow.com/a/58591136/4534">Via Firebase</a> <a href="#no-cli">[2]</a></td>
