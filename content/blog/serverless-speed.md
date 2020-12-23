@@ -45,7 +45,7 @@ an underlying compute cluster which you pay hourly for.
 </tr>
 <tr>
 <td>Demo URL</td>
-<td><a href="https://9hh08sdxgj.execute-api.ap-southeast-1.amazonaws.com/dev">AWS SG</a></td>
+<td><a href="https://sls.goserverless.sg">AWS SG</a></td>
 <td><a href="https://count.goserverless.sg/">AWS SG</a></td>
 <td><a href="https://sam.goserverless.sg/">AWS SG</a></td>
 <td><a href="https://asia-east2-idiotbox.cloudfunctions.net/Countpage">GCP HK</a></td>
@@ -87,14 +87,19 @@ an underlying compute cluster which you pay hourly for.
 the **fastest iterations** to the cloud (~2s), a fantastic <abbr
 title="Developer Experience">DX</abbr> <abbr title="Command Line
 Interface">CLI</abbr> with logging that's easy to use. Apex Up also
-automatically bundles `static/` assets which the others don't do and uses the [standard http request / response API](https://youtu.be/Bj2p6nVt_H4).
+automatically bundles `static/` assets which the others don't do and uses the
+[standard http request / response API](https://youtu.be/Bj2p6nVt_H4).
+
+To experiment in further public clouds with managed compute, the [serverless
+framework](https://www.serverless.com/) does seem to have the best starter
+templates with `serverless create -h` to view them.
 
 ## Note about iteration speed
 
 There are three types of iteration speed:
 
 1. Local development speed, speed of live reloader like [entr](http://eradman.com/entrproject/). Painful with functions that do not use HTTP req/res interface.
-2. Using your serverless tooling to `time make deploy` and view changes on the Cloud endpoint
+2. Using your serverless tooling to `time make deploy` and view changes on the Cloud endpoint.
 3. Time for your CI/CD pipeline (Github action) to deploy (often much longer since env is setup from scratch)
 
 Iteration speed above is **case 2**.
@@ -102,8 +107,3 @@ Iteration speed above is **case 2**.
 I do not consider the time for the initial setup / <abbr title="Infrastructure
 as Code">IaC</abbr> provisioning which can take quite a bit of waiting,
 especially for the **custom domain**!
-
-## TODO
-
-* Cloudflare workers only appear to [support Javascript](https://developers.cloudflare.com/workers/platform/languages)
-* [Serverless framework](https://github.com/kaihendry/count/issues/3)
