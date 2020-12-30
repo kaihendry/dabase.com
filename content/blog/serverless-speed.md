@@ -33,7 +33,7 @@ for.
 <td>Yes</td>
 <td>No (Hong Kong)</td>
 <td>Yes</td>
-<td>Yes</td>
+<td>No (Hong Kong)</td>
 </tr>
 <tr>
 <td>My subjective <a href="https://serverlesshandbook.dev/serverless-dx/">DX rating</a></td>
