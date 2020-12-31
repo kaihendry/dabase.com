@@ -70,7 +70,7 @@ pillows, throws ... a bedroom can be pretty good. Hard surfaces suck.
 
 Get a **Laptop Notebook Stand** to get camera at optimal **eye level**.
 
-- <abbr title="Network Device Interface">NDI</abbr> Virtual Input - [use your iPhone](https://youtu.be/cX8fo74m6nc) at a pinch with some latency
+- <abbr title="Network Device Interface">NDI</abbr> [HX Camera](https://apps.apple.com/us/app/ndi-hx-camera/id1477266080) - [use your iPhone](https://youtu.be/cX8fo74m6nc) at a pinch with some latency
 - Super advanced: 1000SGD [Sony ZV-1](https://www.cathayphoto.com.sg/cameras/sony-zv-1-digital-camera) - can tether over USB
 - A virtual background isn't a novelty
 
