@@ -36,6 +36,9 @@ Good options to getting **wired** (single USB-C) for Apple <abbr title="Macbook 
 
 ## Lighting 💡
 
+<img src="https://s.natalian.org/2020-12-31/hivan-arvizu-soyhivan-kdm6BWNuTh0-unsplash.webp" alt="Ring light demo">
+
+
 Entry level suggestions:
 
 - ⭕ 42SGD [Ring light](https://www.carousell.sg/p/zomei-zm128-led-ring-light-3200k-5500k-camera-photo-dimmable-1001158668/) -- best all-in-one for reducing face shadows
@@ -46,6 +49,8 @@ Entry level suggestions:
 You _will_ get used to a bright light in your face.
 
 ## Audio 🎤
+
+<img src="https://s.natalian.org/2020-12-31/andrija-radojevic-fJqikn7FMYs-unsplash.webp" alt="condenser microphone demo">
 
 **Avoid wireless**. I love my Air Pod Pros too, but they are not as good as you might think!
 
@@ -60,6 +65,10 @@ pillows, throws ... a bedroom can be pretty good. Hard surfaces suck.
 👏 [Clap test](https://rslspeakers.com/cheap-way-test-rooms-acoustics/) 👏
 
 ## Video 🎥
+
+<img src="https://s.natalian.org/2020-12-31/Eye-LevelAngle.webp" alt="eye level graphic from signmediasmart.com">
+
+Get a **Laptop Notebook Stand** to get camera at optimal **eye level**.
 
 - <abbr title="Network Device Interface">NDI</abbr> Virtual Input - [use your iPhone](https://youtu.be/cX8fo74m6nc) at a pinch with some latency
 - Super advanced: 1000SGD [Sony ZV-1](https://www.cathayphoto.com.sg/cameras/sony-zv-1-digital-camera) - can tether over USB
@@ -96,3 +105,8 @@ Green screen - less distracting than a virtual background. Pull up and under-the
 3. Lighting
 
 TODO: Watch some Zoom tutorial videos for [understanding some advanced features like Spotlight](https://www.youtube.com/watch?v=rW3U2Fv2CY8&feature=emb_title) and hand gestures
+
+Credits:
+
+* <span>Photo by <a href="https://unsplash.com/@soyhivan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">HIVAN ARVIZU @soyhivan</a> on <a href="https://unsplash.com/s/photos/ring-light?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+* <span>Photo by <a href="https://unsplash.com/@andrija420?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrija Radojevic</a> on <a href="https://unsplash.com/s/photos/condensor-microphone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
