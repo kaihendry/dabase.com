@@ -55,19 +55,19 @@ for.
 </tr>
 <tr>
 <td>Iteration speed</td>
-<td>~30s <img src="https://github.com/kaihendry/count/workflows/Deploy%20SLS/badge.svg" alt="sls deploy"></td>
-<td>~10s <img src="https://github.com/kaihendry/count/workflows/Deploy/badge.svg" alt="Up"></td>
+<td>~30s <img src="https://github.com/kaihendry/count/workflows/Deploy%20SLS/badge.svg?branch=serverless" alt="sls deploy"></td>
+<td>~10s <img src="https://github.com/kaihendry/count/workflows/Deploy%20Apex%20Up/badge.svg" alt="Up"></td>
 <td>~30s
-<img src="https://github.com/kaihendry/count/workflows/Deploy%20SAM/badge.svg" alt="SAM deploy">
+<img src="https://github.com/kaihendry/count/workflows/Deploy%20SAM/badge.svg?branch=sam" alt="SAM deploy">
 </td>
 <td>~2mins
-<img src="https://github.com/kaihendry/count/workflows/Build%20and%20Deploy%20to%20Cloud%20Functions/badge.svg" alt="Function deploy">
+<img src="https://github.com/kaihendry/count/workflows/Build%20and%20Deploy%20to%20Cloud%20Functions/badge.svg?branch=gcp-functions" alt="Function deploy">
 </td>
 <td>~2mins
-<img src="https://github.com/kaihendry/count/workflows/Build%20and%20Deploy%20to%20Cloud%20Run/badge.svg" alt="SAM deploy">
+<img src="https://github.com/kaihendry/count/workflows/Build%20and%20Deploy%20to%20Cloud%20Run/badge.svg?branch=gcp-cloudrun" alt="Cloud run deploy">
 </td>
 <td>~30s <a href="#not-immediate">[1]</a>
-<img src="https://github.com/kaihendry/count/workflows/Deploy%20Azure%20function/badge.svg" alt="Azure func deploy">
+<img src="https://github.com/kaihendry/count/workflows/Deploy%20Azure%20function/badge.svg?branch=azure-functions" alt="Azure func deploy">
 </td>
 </tr>
 <tr>
@@ -83,6 +83,10 @@ for.
 
 <p><a id="immediate">[1]</a> CLI will say it's "done", though I suspect the Cloud is being <strong>eventually consistent</strong>... leading to some confusion when expected changes are not live!</p>
 <p><a id="no-cli">[2]</a> No <abbr title="Command Line Interface">CLI</abbr> / <abbr title="Infrastructure as Code">IaC</abbr> option <abbr title="As far as I can tell">AFAICT</abbr></p>
+
+I've noticed deployment failures can happen when:
+* [gcp-cloudrun when there is the same version](https://s.natalian.org/2021-01-05/same-version.png)
+* [gcp-functions if it's already deploying](https://s.natalian.org/2021-01-05/deployment-failure.png)
 
 [Apex Up](https://github.com/apex/up) is the clear winner to me. Apex Up has
 the **fastest iterations** to the cloud (~2s), a fantastic <abbr
