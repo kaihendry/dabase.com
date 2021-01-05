@@ -4,16 +4,16 @@
 
 {{range .Sections}}
 <ul>
-    <li>{{.Title }}
-        <ul>
-            {{ range .Pages }}
-            <li>{{ .Date.Format "2006" }}
-				<a href="{{.RelPermalink}}">{{ .Title }}</a>
-				{{ if .Description }} &mdash; {{ .Description }}{{ end }}
-            </li>
-            {{ end }}
-        </ul>
-    </li>
+<li>{{.Title }}
+<ul>
+{{ range .Pages }}
+<li>{{ .Date.Format "2006" }}
+<a href="{{.RelPermalink}}">{{ .Title }}</a>
+{{ if .Description }} &mdash; {{ .Description }}{{ end }}
+</li>
+{{ end }}
+</ul>
+</li>
 </ul>
 {{ end }}
 
