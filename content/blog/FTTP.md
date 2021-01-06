@@ -65,13 +65,17 @@ To Singapore from the UK, the picture is the same, but with a higher latency due
 
 <img src="https://s.natalian.org/2021-01-05/singapore.png" alt="UK to Singapore Smoke ping FTTC vs FTTP">
 
+I have a long running [Smoke ping from Singapore to Praze Farm](https://smokeping.dabase.com/?target=Europe.UK.Praze) and it's looking **FANTASTIC** now that they are on Fibre:
+
+<img src="https://s.natalian.org/2021-01-06/fttp-no-smoke.png" alt="FTTC to FTTP">
+
 # Firebrick
 
 <abbr title="Fibre to the Cabinet">FTTC</abbr>:
 
 <img src="https://s.natalian.org/2021-01-05/old.png" alt="Unstable FTTC line">
 
-<abbr title="Fibre to the Premisis">FTTP</abbr>:
+With <abbr title="Fibre to the Premisis">FTTP</abbr>, notice the scale goes to 100M:
 
 <img src="https://s.natalian.org/2021-01-06/firebrick-fttp.png" alt="Stable FTTP line">
 
