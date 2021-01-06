@@ -61,9 +61,19 @@ You can see from a brief smokeping, it goes from an **unstable** ~35ms (FTTC) to
 
 <img src="https://s.natalian.org/2021-01-05/google-dns.png" alt="Google DNS Smoke ping FTTC vs FTTP">
 
-To Singapore from the UK, the picture is the same, but with a higher latency due to long distance:
+To Singapore from the UK, the picture is the same, but with a higher latency due to the long distance:
 
 <img src="https://s.natalian.org/2021-01-05/singapore.png" alt="UK to Singapore Smoke ping FTTC vs FTTP">
+
+# Firebrick
+
+<abbr title="Fibre to the Cabinet">FTTC</abbr>:
+
+<img src="https://s.natalian.org/2021-01-05/old.png" alt="Unstable FTTC line">
+
+<abbr title="Fibre to the Premisis">FTTP</abbr>:
+
+<img src="https://s.natalian.org/2021-01-06/firebrick-fttp.png" alt="Stable FTTP line">
 
 # Sync rate
 
