@@ -75,7 +75,7 @@ I have a long running [Smoke ping from Singapore to Praze Farm](https://smokepin
 
 <img src="https://s.natalian.org/2021-01-05/old.png" alt="Unstable FTTC line">
 
-With <abbr title="Fibre to the Premisis">FTTP</abbr>, notice the scale goes to 100M:
+With <abbr title="Fibre to the Premises">FTTP</abbr>, notice the scale goes to 100M:
 
 <img src="https://s.natalian.org/2021-01-06/firebrick-fttp.png" alt="Stable FTTP line">
 
@@ -92,3 +92,22 @@ Our new FTTP line rate is:
 	download(tx)=79575200 upload(rx)=20000000
 
 Which is 7x better for download and about 26 times better for upload!
+
+# Monthy cost
+
+<abbr title="Fibre to the Cabinet">FTTC</abbr>:
+
+* Line rental 12GBP
+* Home:1 35GBP
+* Home:1 Addon for VDSL 10GBP
+
+So 57GBP for 2TB bandwidth with a very unstable line.
+
+<abbr title="Fibre to the Premises">FTTP</abbr>:
+
+* Home::1 Broadband, 2TB usage allowance 35GBP
+* Home::1 Add-On: Fibre to the premises Non Transition Line 15GBP
+
+Rural fibre is costing us 50GBP for monthly, a saving of 7GBP per month if you
+ignore the [4600GBP](https://natalian.org/2019/10/19/Community_Fibre/) spent on
+the upgrade!
