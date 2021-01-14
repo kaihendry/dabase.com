@@ -4,11 +4,19 @@ date: 2021-01-13T17:29:43+08:00
 description: GNU Make could be replaced by... redo
 ---
 
-<abbr title="D. J. Bernstein">djb</abbr> introduced [redo](https://cr.yp.to/redo.html)'s elegant design in a couple of pages. @apenwarr then created a Python version with [good documentation and fleshed out examples](https://redo.readthedocs.io/en/latest/).
+<abbr title="D. J. Bernstein">djb</abbr> introduced
+[redo](https://cr.yp.to/redo.html)'s elegant design in a couple of pages.
+[@apenwarr](https://twitter.com/apenwarr) then created a Python version with [good documentation and fleshed
+out examples](https://redo.readthedocs.io/en/latest/).
 
-The design of redo unlike GNU make is elegant and can be shown to implemented in [1000LOC of C](https://github.com/leahneukirchen/redo-c) or even in [shell](http://news.dieweltistgarnichtso.net/bin/redo-sh.html)!
+The design of redo unlike [GNU make](https://www.gnu.org/software/make/) is
+elegant and can be shown to implemented in [1000LOC of
+C](https://github.com/leahneukirchen/redo-c) or even in
+[shell](http://news.dieweltistgarnichtso.net/bin/redo-sh.html)!
 
-In Sergey Matveev's own words:
+[redo in Golang introduced by Sergey
+Matveev](https://lists.suckless.org/dev/2012/34100.html), is where I began to
+learn and be persuaded:
 
 > I understand you very good there! I spent several months at home and
 > work converting Makefiles without assurance that it is worth of it and
@@ -31,8 +39,17 @@ In Sergey Matveev's own words:
 >
 > All of that just saves much time and greatly helps to make the job done.
 
-[Why hasn't redo eaten Make' lunch?](https://groups.google.com/g/redo-list/c/-7ksrHEsIYI)
+### [Why hasn't redo eaten Make' lunch?](https://groups.google.com/g/redo-list/c/-7ksrHEsIYI)
 
 > Some combination of multiple fragmented implementations and lack of critical mass?
 
-[Tests collected by Sergey](http://www.git.cypherpunks.ru/?p=goredo.git;a=tree;f=t;) are becoming more comprehensive. Uses the same [test harness as git](https://github.com/chriscool/sharness).
+[Tests collected by
+Sergey](http://www.git.cypherpunks.ru/?p=goredo.git;a=tree;f=t;) are becoming
+more comprehensive. Uses the same [test harness as
+git](https://github.com/chriscool/sharness).
+
+### I want a single file, like a `Makefile` instead of bunch of *.do files?
+
+[Yes you can have one file](https://lists.suckless.org/dev/2101/34125.html),
+but making a modification to this build file has a **huge disadvantage**... **all
+targets will expire**!
