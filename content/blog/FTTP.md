@@ -4,6 +4,8 @@ date: 2021-01-05T20:32:47+08:00
 description: Finally we have Fibre to the Premises aka FTTH
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gMPTtB3LUJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 We have the GEA-FTTP 80/20 product as [defined by BT
 Openreach](https://www.openreach.co.uk/orpg/home/helpandsupport/sins/sins/downloads/SIN506v1p7.pdf):
 
