@@ -53,3 +53,9 @@ git](https://github.com/chriscool/sharness).
 [Yes you can have one file](https://lists.suckless.org/dev/2101/34125.html),
 but making a modification to this build file has a **huge disadvantage**... **all
 targets will expire**!
+
+### Packages?
+
+* [Archlinux](https://aur.archlinux.org/packages/goredo/)
+* [Homebrew](https://formulae.brew.sh/formula/goredo)
+* [Upstream](http://www.goredo.cypherpunks.ru/Install.html)
