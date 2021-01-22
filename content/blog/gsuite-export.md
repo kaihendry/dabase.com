@@ -1,7 +1,7 @@
 ---
 title: Automated Gsuite Export
 date: 2021-01-22T19:49:52+08:00
-description: How to download documents like Google Docs and Sheets programatically
+description: How to download documents like Google Docs and Sheets programmatically
 ---
 
 Automated authentication in order to use [Google Drive API](https://developers.google.com/drive/api/v3/enable-drive-api) is non-trivial.
@@ -9,11 +9,12 @@ Automated authentication in order to use [Google Drive API](https://developers.g
 * First you need to create a <abbr title="Google Cloud Project">GCP</abbr> project
 * Then you need to [enable the API](https://developers.google.com/drive/api/v3/enable-drive-api)
 
-Now there is the types of credentials:
+Now there are [types of credentials for accessing APIs](https://console.cloud.google.com/apis/credentials):
 
 1. Service account aka `credentials.json`
 2. Oauth with **ClientID** et al.
 
+The "API key" has very limited scope, only for checking quota and access, not actually useful for APIs, <abbr title="If I Understand Correctly">IIUC</abbr>.
 
 ## Service account
 
@@ -79,15 +80,19 @@ Via [this notebook](https://github.com/jdsalaro/snippets/blob/main/google_drive_
 
 After setting the API `https://www.googleapis.com/auth/drive` scope, generating/maintaining the token from **Authorization code** seems non-trivial to me. The [Oauth Playground](https://developers.google.com/oauthplayground/?scope=https://www.googleapis.com/auth/drive) (with its own ClientID) does this automatically for you. But to do this yourself from Python appears non-trivial to me.
 
-When you use the "Try this API" aka "google-apis-explorer" Google application <https://developers.google.com/drive/api/v3/reference/files/export>, again the Oauth interchange dance is already done for you:
+When you use the "Try this API" aka "google-apis-explorer" Google application
+<https://developers.google.com/drive/api/v3/reference/files/export>, again the
+complex Oauth interchange refresh dance is already done for you.
 
-<img src="https://s.natalian.org/2021-01-22/credentials.png">
+	[ "access_token", "expiry", "refresh_token", "token_type" ]
 
-However if you want your App to do this, it appears non-trivial as it needs
-some explicit Oauth consent interchange. However once you do have the token, it's straightforward to work with unlike `credentials.json`:
+However if you want your own App from the CLI to do this, it appears
+non-trivial as it needs some explicit Oauth consent interchange. However once
+you do have the **Bearer token**, it's straightforward to work with unlike
+`credentials.json`:
 
 	mimeType=application/pdf
 	curl -H "Authorization: Bearer $token" -o doc.pdf \
 	https://www.googleapis.com/drive/v3/files/${id}/export?mimeType=$mimeType
 
-Here I believe you impersonate yourself via the ClientID, without the scary [Share outside of organization](https://s.natalian.org/2021-01-22/org.png) message.
+Here I believe you **impersonate yourself** via the ClientID, without the scary [Share outside of organization](https://s.natalian.org/2021-01-22/org.png) message.
