@@ -87,12 +87,12 @@ complex Oauth interchange refresh dance is already done for you.
 	[ "access_token", "expiry", "refresh_token", "token_type" ]
 
 However if you want your own App from the CLI to do this, it appears
-non-trivial as it needs some explicit Oauth consent interchange. However once
-you do have the **Bearer token**, it's straightforward to work with unlike
-`credentials.json`:
+non-trivial as it needs some explicit Oauth consent interchange `https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=...`. However once
+you do have the **Bearer token** <abbr title="also known as">aka</abbr> **access_token**, it's straightforward to work with unlike
+`credentials.json`'s `[ "auth_provider_x509_cert_url", "auth_uri", "client_email", "client_id", "client_x509_cert_url", "private_key", "private_key_id", "project_id", "token_uri", "type" ]`.
 
 	mimeType=application/pdf
 	curl -H "Authorization: Bearer $token" -o doc.pdf \
 	https://www.googleapis.com/drive/v3/files/${id}/export?mimeType=$mimeType
 
-Here I believe you **impersonate yourself** via the ClientID, without the scary [Share outside of organization](https://s.natalian.org/2021-01-22/org.png) message.
+Here I believe you **impersonate yourself** via the ClientID, without the scary [Share outside of organization](https://s.natalian.org/2021-01-22/org.png) process needed for the aforementioned `$name@$project.iam.gserviceaccount.com` **service accounts**.
