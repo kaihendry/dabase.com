@@ -100,9 +100,15 @@ Cathay are of no help. [This lens adaptor doesn't ship to Singapore](https://www
 
 So [I am asking around in Singapore](https://www.clubsnap.com/threads/sony-zv-1-wide-lens-adaptor-wanted.1789396/)
 
-## Turning on
+## Major ZV-1 Annoyances
 
-Some times I put it in my pocket and the camera turns on and lens extends. Why? I am not sure what triggered it!
+### Turning on
+
+Some times I put it in my pocket and the **camera turns on** (by itself?!) and lens extends. Why? I am not sure what triggered it!
+
+### Upside down monitor
+
+The flip out screen is often upside down and hard to rectify!
 
 ## Shooting grip
 
@@ -140,3 +146,9 @@ You can only take a series of photos and join them later into a movie on your co
 <https://support.d-imaging.sony.co.jp/support/tutorial/dc/zv-1/en/08.php>
 
 The UI is just terrible in this regard.
+
+# As a Webcam
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jSo6D3DHZ74" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+It's very good as a Webcam!
