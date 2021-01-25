@@ -7,6 +7,8 @@ toc: true
 
 **Record yourself** to **benchmark your setup**.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jSo6D3DHZ74" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Make recordings, **organise media** into YYYY-MM-DD folders and scrutinise the
 A/V quality! You will make mistakes and have learn along the way.
 
