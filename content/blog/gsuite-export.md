@@ -9,10 +9,10 @@ Automated authentication in order to use [Google Drive API](https://developers.g
 * First you need to create a <abbr title="Google Cloud Project">GCP</abbr> project
 * Then you need to [enable the API](https://developers.google.com/drive/api/v3/enable-drive-api)
 
-Now there are [types of credentials for accessing APIs](https://console.cloud.google.com/apis/credentials):
+Now there are [two categories of credentials for accessing APIs](https://console.cloud.google.com/apis/credentials):
 
-1. Service account aka `credentials.json`
-2. Oauth with **ClientID** et al.
+1. Service account aka `credentials.json` (non-interactive) but can't really impersonate you
+2. Oauth with **ClientID** et al. (interactive) but can impersonate you
 
 The "API key" has very limited scope, only for checking quota and access, not actually useful for APIs, <abbr title="If I Understand Correctly">IIUC</abbr>.
 
