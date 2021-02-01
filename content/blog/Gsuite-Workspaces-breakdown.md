@@ -36,8 +36,8 @@ It looks like https://groups.google.com/a/${COMPANY}/g/${FRIENDLY_NAME}, which i
 
 # tl;dr
 
-Having business discussions in Google Chat Rooms aka https://chat.google.com/room/ has serious limitation for search, let almost basic chat functionality. For example you can't even [search across rooms](https://s.natalian.org/2021-02-01/searching-chat.png).
+Having business discussions in Google Chat Rooms aka https://chat.google.com/room/ has serious limitations for search, let almost basic chat functionality. For example you can't even [search across rooms](https://s.natalian.org/2021-02-01/searching-chat.png).
 
 The workaround is to bookmark
 https://chat.google.com/search/room/${RANDOM_11_CHARS} and **remember to search
-there specifically** if you are looking for a message from that Chat room.
+there specifically** if you are looking for a message from that specific Chat room.
