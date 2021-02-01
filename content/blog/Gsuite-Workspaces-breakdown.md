@@ -28,3 +28,10 @@ It looks like https://groups.google.com/a/${COMPANY}/g/${FRIENDLY_NAME}, which i
 2. People tend to use chat instead
 3. If you [search with chat](https://s.natalian.org/2021-02-01/search-messages.png) you will not get Group results
 4. If you [search Groups messages](https://s.natalian.org/2021-02-01/search-groups-conversations.png) you will not get chat results
+
+# tl;dr
+
+[Cloud search](https://s.natalian.org/2021-02-01/cloud-search.png) is of no help when it comes to searching in Chat rooms.
+
+The chat product basically breaks communication since it's impossible to search
+and reference what was said.
