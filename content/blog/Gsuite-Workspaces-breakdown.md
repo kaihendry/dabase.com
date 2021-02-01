@@ -1,15 +1,15 @@
 ---
-title: Gsuite Workspaces Breakdown
+title: Google Workspaces Chat Rooms suck
 date: 2021-02-01T10:48:55+08:00
-description: Platform dissonance comes for free in the Google Workspaces product
+description: Want to search across various mediums offered by Workspaces? You can't with chat rooms
 ---
 
-Typically on a Gsuite enabled company you have
+Typically on a "Gsuite" enabled company you have
 
 1. A chat room
 2. A mailing list
 
-# Problem with the chat room
+# Problem with the chat room <img src="https://s.natalian.org/2021-02-01/chat.png">
 
 You will have a room that looks like: https://chat.google.com/room/${RANDOM_11_CHARS}
 
@@ -20,7 +20,12 @@ Issues:
 3. No way to link to a conversation
 4. No way to reference a message in a reply
 
-# Problems with the mailing list
+[Cloud search](https://s.natalian.org/2021-02-01/cloud-search.png) is of no
+help when it comes to searching in Chat rooms. However [Gmail
+search](https://s.natalian.org/2021-02-01/gmail.png) can search "direct
+messages", 1:1 conversations, but **NOT ROOMS**.
+
+# Problems with the mailing list <img src="https://s.natalian.org/2021-02-01/groups.png">
 
 It looks like https://groups.google.com/a/${COMPANY}/g/${FRIENDLY_NAME}, which is good, but:
 
@@ -31,7 +36,8 @@ It looks like https://groups.google.com/a/${COMPANY}/g/${FRIENDLY_NAME}, which i
 
 # tl;dr
 
-[Cloud search](https://s.natalian.org/2021-02-01/cloud-search.png) is of no help when it comes to searching in Chat rooms.
+Having business discussions in Google Chat Rooms aka https://chat.google.com/room/ has serious limitation for search, let almost basic chat functionality. For example you can't even [search across rooms](https://s.natalian.org/2021-02-01/searching-chat.png).
 
-The chat product basically breaks communication since it's impossible to search
-and reference what was said.
+The workaround is to bookmark
+https://chat.google.com/search/room/${RANDOM_11_CHARS} and **remember to search
+there specifically** if you are looking for a message from that Chat room.
