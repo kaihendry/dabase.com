@@ -4,6 +4,8 @@ date: 2021-01-22T19:49:52+08:00
 description: How to download documents like Google Docs and Sheets programmatically
 ---
 
+Update: [Rclone is the best DX CLI to get retrieve content from G Suite/Workspaces](https://github.com/kaihendry/signupshow/blob/main/export.xlsx.do)
+
 Automated authentication in order to use [Google Drive API](https://developers.google.com/drive/api/v3/enable-drive-api) is non-trivial.
 
 * First you need to create a <abbr title="Google Cloud Project">GCP</abbr> project
