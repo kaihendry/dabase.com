@@ -16,9 +16,10 @@ You will have a room that looks like: https://chat.google.com/room/${RANDOM_11_C
 Issues:
 
 1. Opaque room URL
-2. No pin / topic
-3. No way to link to a conversation
-4. No way to reference a message in a reply
+1. Difficult to find/join rooms since you need to go via a **Browse Rooms** dialog
+1. No pin / topic
+1. No way to link to a conversation
+1. No way to reference a message in a reply
 
 [Cloud search](https://s.natalian.org/2021-02-01/cloud-search.png) is of no
 help when it comes to searching in Chat rooms. However [Gmail
