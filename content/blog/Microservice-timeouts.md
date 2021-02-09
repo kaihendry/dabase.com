@@ -10,11 +10,11 @@ nonetheless I see the pattern increasingly.
 
 Microservices are attractive to people familiar with the Unix philosophy:
 
-- do one thing and do it right
-- separation of ownership -- each service can have clear ownership and
+- Do one thing and do it right
+- Separation of ownership -- each service can have clear ownership and
 boundaries, allowing the service owner to operate and make deployments
 independently from each other
-- universal interface between them
+- Universal interface between them
 
 However...
 
@@ -41,12 +41,18 @@ So in the above case we can easily timeout, aka **504 Gateway Timeout**.
 What are the approaches to handle this case?
 
 1. Introduce a queue to retry
-1. Make the purchase API asynchronous
-1. Monitor the APIs are start strictly enforcing low response times
-1. Introduce caching
-1. Make the API idempotent
+2. Make the purchase API asynchronous
+3. Monitor the APIs to start strictly enforcing low response times
+4. Introduce caching
+5. Make the API idempotent
 
-Each of these solutions are actually very hard to implement consistency!
+Each of these solutions are actually very hard to implement!
+
+1. Queues sound trivial, but they are not. You need AWS SQS with support for <abbr title="Deadletter queues">DLQs</abbr>
+2. Asynchronous APIs often require a callback, which require addressable endpoints
+3. Monitoring each API via Prometheus / Grafana is non-trivial .. you will go down a rabbit hole when it comes to distributed tracing
+4. Caching is hard
+5. To make an API idempotent aka "retry-abble", often you need to store state so you know where you left off
 
 Let's imagine the Payment API also has microservice dependencies:
 
@@ -65,7 +71,7 @@ Let's imagine the Payment API also has microservice dependencies:
 	"Provision" --> "Purchase" : 3s
 	@enduml
 
-# Conclusion
+# Distributed systems are really hard
 
-1. Microservices rarely do one thing, they often have **networked dependencies**
+1. Microservices delegate things outside their domain, and introduce inter dependencies
 1. There isn't a Universal interface. REST/HTTP is great for synchronous, but what happens when you need to go asynchronous?
