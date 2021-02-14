@@ -2,9 +2,19 @@
 
 {{ .Content }}
 
+{{ if eq (len .Sections) 0 }}
+<ul>
+{{ range .Pages }}
+<li>{{ .Date.Format "2006" }}
+<a href="{{.RelPermalink}}">{{ .Title }}</a>
+{{ if .Description }} &mdash; {{ .Description }}{{ end }}
+{{ end }}
+</ul>
+{{ end }}
+
 {{range .Sections}}
 <ul>
-<li>{{.Title }}
+<li><a href="{{.Title | lower }}">{{.Title }}</a>
 <ul>
 {{ range .Pages }}
 <li>{{ .Date.Format "2006" }}
@@ -16,5 +26,7 @@
 </li>
 </ul>
 {{ end }}
-
 {{ end }}
+
+
+
