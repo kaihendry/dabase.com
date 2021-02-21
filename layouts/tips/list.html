@@ -14,7 +14,7 @@
 
 {{range .Sections}}
 <ul>
-<li><a href="{{.Title | lower }}">{{.Title }}</a>
+<li><a href="{{ .RelPermalink }}">{{.Title }}</a>
 <ul>
 {{ range .Pages }}
 <li>{{ .Date.Format "2006" }}
