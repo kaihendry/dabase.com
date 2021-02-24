@@ -77,3 +77,22 @@ Let's imagine the Payment API also has microservice dependencies:
 
 1. Microservices delegate things outside their domain, and introduce inter dependencies
 1. There isn't a Universal interface. REST/HTTP is great for synchronous, but what happens when you need to go asynchronous?
+
+# [Rebuttal via a YT comment](https://www.youtube.com/watch?v=clagrT5BC7g&lc=Ugw47ke7wwObvTbduAh4AaABAg)
+
+Luis Santos correctly points out the bad practices here:
+
+1. Using Queues without proper monitoring or a deadletter strategy
+2. Not having proper monitoring
+3. Neglecting performance
+4. Sharing a database between services
+5. Distributed transactions
+6. Incorrect service boundaries (this is cause of the previous 2 bad practices)
+
+> Regarding the idempotence problem. You don't need a cache. You just need to
+> take advantage of your database optimistic locking mechanisms.  You could use
+> something like upsert, insert ignore or a [conditional
+> insert](https://github.com/apex/gh-polls/blob/820156017c1e3de466a6efa5b078c2be9d692f67/internal/poll/poll.go#L155).
+
+I'm not sure "Sharing a database between services" (read-only) is such a bad
+practice. Since duplicate data on several databases can be far worse.
