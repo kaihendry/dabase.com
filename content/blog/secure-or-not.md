@@ -15,10 +15,10 @@ The claim that something is **secure** or not.
 > 6.2.2 The financial institution (FI) should ensure secure coding, source code review and application
 > security testing standards are applied <u>during</u> Agile software development.
 
-A fair reading of this requirement would suggest to me, employing say a
+A fair reading of this _secure coding_ requirement would suggest to me, employing say a
 security linter like [gosec](https://github.com/securego/gosec) via some
 [continuous
-integration](https://github.com/kaihendry/badpath/blob/main/.github/workflows/gosec.yml).
+integration](https://github.com/kaihendry/badpath/blob/main/.github/workflows/gosec.yml) aka <abbr title="Continuous Integration">CI</abbr>.
 
 However there is a couple of problems with this:
 
@@ -32,3 +32,9 @@ How does one address these issues?
    have **continuous delivery** in place, to fix the problem in a timely manner!
 2. Accept there is **no checkbox** for something to termed "secure". It's a **best effort** and some are better at it than others, choose wisely.
 3. This requires specialised tooling especially if you don't do continuous delivery, i.e. run CI every day on your dependencies (e.g. npm audit)
+
+My collegues in China have
+[BuildSecurityIn](https://www.buildsecurityin.net/en/) to explain
+a methodology with security built in your development process. I'm confident the authors of the <abbr title="Technology Risk Management">TRM</abbr> document from <abbr title="Monetary Authority of Singapore">MAS</abbr> want the same thing, though I'm just nitpicking about how to express that.
+
+Don't call it **secure code** or **secure coding** until **continuous delivery** is in place.
