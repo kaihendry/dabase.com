@@ -26,15 +26,19 @@ However there is a couple of problems with this:
 2. There is no such thing as **secure** anything
 3. Security vulnerabilities will be more likely to be found **after** not <u>during</u> development.
 
-How does one address these issues?
+How might one address these issues?
 
 1. Might not be solvable until an incident occurs, you're best chance is to
-   have **continuous delivery** in place, to fix the problem in a timely manner!
-2. Accept there is **no checkbox** for something to termed "secure". It's a **best effort** and some are better at it than others, choose wisely.
-3. This requires specialised tooling especially if you don't do continuous delivery, i.e. run CI every day on your dependencies (e.g. npm audit)
+   have **continuous delivery** in place, to be able fix the problem in a timely manner!
+2. Accept there is **no checkbox** for something to termed "secure". Build security in with the  [shift left approach](https://en.m.wikipedia.org/wiki/Shift-left_testing). Have a security champion in your team.
+3. This requires specialised tooling especially if you do not deploy with CI every day on your dependencies (e.g. npm audit)
 
-My collegues in China have
-[BuildSecurityIn](https://www.buildsecurityin.net/en/) to explain
-a methodology with security built in your development process. I'm confident the authors of the <abbr title="Technology Risk Management">TRM</abbr> document from <abbr title="Monetary Authority of Singapore">MAS</abbr> want the same thing, though I'm just nitpicking about how to express that.
+My colleagues in China have
+[BuildSecurityIn](https://www.buildsecurityin.net/en/) to explain a methodology
+with security built into your development process. I'm confident the authors of
+the <abbr title="Technology Risk Management">TRM</abbr> document from <abbr
+title="Monetary Authority of Singapore">MAS</abbr> want the same thing, though
+I'm just nitpicking about how to express that.
 
-Don't call it **secure code** or **secure coding** until **continuous delivery** is in place.
+
+Retorts: [Roland suggests I am reading the TRM too closely](https://twitter.com/rolandturner/status/1369512342203944964) 🤣
