@@ -16,6 +16,10 @@ From Cathay Photo on the 14th of July 2020 I upgraded from my [Canon G7X mkiii](
 Prices quoted above are GST inclusive and valid till 2 August 2020.
 Warranty is 15 months upon online registration and non-transferable.
 
+# Starts for no reason whatsoever
+
+Just brushing against it is enough to inadvertently turn on the ZV-1 camera!
+
 # Memory card
 
 <img src="https://s.natalian.org/2020-07-16/zv-1-memory.jpeg">
