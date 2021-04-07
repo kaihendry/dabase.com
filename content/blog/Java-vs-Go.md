@@ -70,3 +70,7 @@ Weaknesses:
 {{< tweet 1379620502361137154 >}}
 
 - Scarcity hiring Go developers
+
+## Conclusion
+
+{{< tweet 1379626478875201537 >}}
