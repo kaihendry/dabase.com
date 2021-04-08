@@ -40,7 +40,7 @@ Weaknesses:
 - Verbose
 - Requires an IDE for productivity
 - Reliance on heavyweight tooling
-- Some fragmentation - Scala & Kotlin might offer short term gains, but in the long run support is unknown
+- Some fragmentation - Scala & Kotlin might offer short term productivity gains, but long term support is unknown
 
 ## Go compared to Java
 
