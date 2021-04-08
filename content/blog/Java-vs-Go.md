@@ -14,8 +14,6 @@ filter: drop-shadow(1px 1px 0 gold)
 }
 </style>
 
-WIP: Please email me to contribute
-
 [Modern Java](https://github.com/binkley/modern-java-practices) is a well known
 and massive Ecosystem in the Enterprise.
 
@@ -51,19 +49,17 @@ Weaknesses:
 Strengths:
 
 - Simple BSD licensing
-- [Simple language](https://golang.org/ref/spec)
-- Better design
-- Strong standard library
+- [Simple, well designed language](https://golang.org/ref/spec)
+- Strong standard library for most needs with a strong [third party package ecosystem](https://pkg.go.dev/)
 - Better performance
 - Less moving parts (LOC)
-- Backed by Google
-- Build, packaging & testing is part of the distribution
+- Backed by Google with [several case studies](https://go.dev/solutions#case-studies)
+- Build (no gradle!), packaging & testing is part of the distribution (no tricky choices)
 - Debugger (delve), code formatter (gofmt) & language server (gopls) independent of any IDE so any editor can integrate (including vim!)
 - Near instant build/run times
 - [Better error capture](https://www.youtube.com/watch?v=Fh4AT4SC17U)
 - [Growing libraries](https://pkg.go.dev/)
 - <https://play.golang.org/> makes it simple to share running code by URL
-
 
 Weaknesses:
 
@@ -72,5 +68,9 @@ Weaknesses:
 - Scarcity hiring Go developers
 
 ## Conclusion
+
+Finding a good engineer is a problem with any programming language. Go is [easy
+to learn](https://tour.golang.org/) and productive with "just works" developer
+experience, unlike Java which has many crufty corners.
 
 {{< tweet 1379626478875201537 >}}
