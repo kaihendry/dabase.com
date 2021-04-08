@@ -53,6 +53,7 @@ Strengths:
 - Strong standard library for most needs with a strong [third party package ecosystem](https://pkg.go.dev/)
 - Better performance
 - Less moving parts (LOC)
+- Concurrency is easier to achieve
 - Backed by Google with [several case studies](https://go.dev/solutions#case-studies)
 - Build (no gradle!), packaging & testing is part of the distribution (no tricky choices)
 - Debugger (delve), code formatter (gofmt) & language server (gopls) independent of any IDE so any editor can integrate (including vim!)
