@@ -53,17 +53,19 @@ actively maintained. Great! All I need is to do, is switch the database driver
 from **pq** to [**pgx**](https://github.com/jackc/pgx). Despite making the
 change to the "sql.DB" type compatible github.com/jackc/pgx/v4/stdlib ... the
 same [type of errors](https://github.com/nikitsenka/bank-go/issues/6) occured
-with testing...
+when load testing...
 
 	 read tcp 127.0.0.1:XXXXX->127.0.0.1:5432: read: connection reset by peer #6
 
-Next after some soul searching and tea, perhaps it has something to do with how
-the connections are pooled to the database. Unfortunately it means a [heavy
-refactor from *sql.DB to *pgxpool.Pool where
-context](https://github.com/nikitsenka/bank-go/pull/7/files) needs to added.
+After some soul searching and a cup of tea, perhaps it has something to do with
+how the **connections are pooled to the database**. Unfortunately it means a
+[heavy refactor from *sql.DB to *pgxpool.Pool where
+context](https://github.com/nikitsenka/bank-go/pull/7/files) needs to be added.
+
+<img src="https://s.natalian.org/2021-04-14/moments-later.webp" alt="moments later">
 
 Some moments later, it's up and running. Yes! The errors have gone away. It
-also appears much faster. Whatever **pgxpool** is doing, seems to be working!
+also appears much faster. Whatever **pgxpool** is doing, it seems to be working!
 
 # Time to race!
 
@@ -76,5 +78,5 @@ Using [hey load tester](https://github.com/rakyll/hey) instead of Jmeter:
 <img width="45%" src="https://s.natalian.org/2021-04-14/java-hey.png">
 <img width="45%" src="https://s.natalian.org/2021-04-14/go-hey.png">
 
-Locally I was seeing Go at 7457 requests/sec and Java at 5758 requests/sec once
-it warmed up. We need some neutral compute though.
+Locally I was seeing Go at ~7457 requests/sec and Java at ~5758 requests/sec
+once it warmed up. We need some neutral compute though.
