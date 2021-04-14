@@ -4,6 +4,8 @@ date: 2021-04-14T15:26:24+08:00
 description: Load testing between a Java and Go application against a Postgresql database
 ---
 
+STATUS: DRAFT / WIP
+
 Full disclosure: I'm a Rob Pike / Russ Cox / Go fan boy and I am keen to see it more at my
 workplace, where the Java language rules by a wide margin.
 
