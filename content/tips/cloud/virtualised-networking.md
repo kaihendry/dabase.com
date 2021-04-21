@@ -31,3 +31,9 @@ on-premises incumbents, who can't move to the public Cloud for whatever reason:
 
 * VMware call it a "Virtual network"
 * OpenShift calls it <a href="https://docs.openshift.com/container-platform/4.6/post_installation_configuration/network-configuration.html"><abbr title="Software Defined Networking">SDN</abbr></a>, which leverages Kubernetes (k8s) under the hood
+
+Clients have been known to move from OpenShift on-premises to Openshift PaaS in
+the cloud pretty seamlessly, so it provides an easy cloud migration path.
+OpenShift also allows Enterprises that don't have the skillsets to
+operate/maintain a Kubernetes cluster to still get the benefits of scalability
+and container orchestration.
