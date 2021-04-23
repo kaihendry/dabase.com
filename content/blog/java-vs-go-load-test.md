@@ -75,8 +75,28 @@ Java does take a few seconds to get going...
 
 Using [hey load tester](https://github.com/rakyll/hey) instead of Jmeter:
 
+<a href="https://s.natalian.org/2021-04-14/java-hey.png">
 <img width="45%" src="https://s.natalian.org/2021-04-14/java-hey.png">
+</a>
+
+<a href="https://s.natalian.org/2021-04-14/go-hey.png">
 <img width="45%" src="https://s.natalian.org/2021-04-14/go-hey.png">
+</a>
 
 Locally I was seeing Go at ~7457 requests/sec and Java at ~5758 requests/sec
 once it warmed up. We need some neutral compute though.
+
+# On Amazon
+
+There are three potential bottlenecks:
+
+1. The client benchmarking tool (as well as the network)
+2. The app
+3. The database
+
+And lets not forget the T type instances are **Burstable Performance
+Instances** and might too variable for benchmarking.
+
+# Futher thoughts
+
+Instrument /metrics end point
