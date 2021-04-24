@@ -2,9 +2,8 @@
 title: Is Java really faster than Go?
 date: 2021-04-14T15:26:24+08:00
 description: Load testing between a Java and Go application against a Postgresql database
+toc: true
 ---
-
-STATUS: DRAFT / WIP
 
 Full disclosure: I'm a Rob Pike / Russ Cox / Go fan boy and I am keen to see it more at my
 workplace, where the Java language rules by a wide margin.
@@ -17,7 +16,7 @@ to find an article by Ivan Nikitsenka at the top of results:
 
 <img src="https://s.natalian.org/2021-04-14/java-vs-go.png">
 
-Which concluded that [Java can serve twice as many simultaneous users as the Go
+Which concluded that [**Java can serve twice as many simultaneous users** as the Go
 application](https://dzone.com/articles/java-vs-go-multiple-users-load-test-1).
 
 WHAT? 🤯
@@ -71,7 +70,9 @@ also appears much faster. Whatever **pgxpool** is doing, it seems to be working!
 
 Java does take a few seconds to get going...
 
+<a href="https://s.natalian.org/2021-04-14/java.png">
 <img src="https://s.natalian.org/2021-04-14/java.png">
+</a>
 
 Using [hey load tester](https://github.com/rakyll/hey) instead of Jmeter:
 
@@ -95,12 +96,12 @@ There are three potential bottlenecks:
 3. The database
 
 And lets not forget the T type instances are **Burstable Performance
-Instances** and might too variable for benchmarking.
+Instances** and might be too variable for benchmarking.
 
 I decided to use m4.large for both bank-{app,db} and run the jmeter benchmark
 upon the app server and update the [Cloudformation to use AWS Linux
 ECS](https://github.com/kaihendry/bank-go/blob/master/aws/cloudformation.yml).
-Not that I hard coded the IP address of the database, so you need to change
+Note that I hard coded the IP address of the database, so you need to change
 that if you are reproducing results yourself.
 
 I setup my ssh public key like so:
@@ -114,15 +115,28 @@ So my AWS benchmarking workflow was something like:
 3. Wait especially long for the [Java version](https://s.natalian.org/2021-04-24/cloudformation.yml)
 4. [benchmark.sh](https://github.com/kaihendry/bank-test/blob/master/benchmark.sh) "test-name"
 
-Go [Test 1](https://s.natalian.org/2021-04-24/go1/index.html) [Test 2](https://s.natalian.org/2021-04-24/go3/index.html) [Test 3](https://s.natalian.org/2021-04-24/go-m5a.large/index.html)
-Java [Test 1](https://s.natalian.org/2021-04-24/java2/index.html) [Test 2](https://s.natalian.org/2021-04-24/java4/index.html) [Test 3](https://s.natalian.org/2021-04-24/java-m5a.large/index.html)
+Go [Benchmark 1](https://s.natalian.org/2021-04-24/go1/index.html) [Benchmark 2](https://s.natalian.org/2021-04-24/go3/index.html) [Benchmark 3](https://s.natalian.org/2021-04-24/go-m5a.large/index.html)
+Java [Benchmark 1](https://s.natalian.org/2021-04-24/java2/index.html) [Benchmark 2](https://s.natalian.org/2021-04-24/java4/index.html) [Benchmark 3](https://s.natalian.org/2021-04-24/java-m5a.large/index.html)
 
 # Conclusions
 
 * Java takes a lot longer to stand up that Go - not a good candidate for serverless!
 * Orchestration like an ALB health check could be incorporated into the stack though I ran out of time. The instances build the Docker image and it's not clear when they are ready...
-* Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, this must be a ECS Docker issue
-* Detailing monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck
+* Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, I _suspect_ this to be a Docker issue
+* Detailing monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck... quite a dissapointing <abbr title="Developer Experience">DX</abbr>
+* Further instrumentation is probably needed to work out where the bottle necks lie
 * Generally Go is faster, and far more stable, with the 99p being far lower ~100ms than Java's >2000ms
 
-Not clear what the [errors](https://s.natalian.org/2021-04-24/errors.png) that Ivan initially saw.
+Not clear what the [errors](https://s.natalian.org/2021-04-24/errors.png) that
+[Ivan initially
+observed](https://dzone.com/articles/java-vs-go-multiple-users-load-test-1),
+since I think this is how Ivan **mistakenly concluded that Java could serve
+twice as many users**. In my testing, I could run the tests without errors on
+either Go/Java stack when I waited patiently for the services to be ready, and
+not run the tests repeatedly as to cause **too many open files**.
+
+The errors with Ivan's Go code appears to be a [database connection pool limit
+issue](https://github.com/nikitsenka/bank-go/issues/2) which goes away when
+[using pgxpool](https://github.com/nikitsenka/bank-go/pull/7). Jmeter results
+indicate Go is faster and far more stable than Java when you examine the 99p
+results.
