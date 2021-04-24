@@ -86,7 +86,7 @@ Using [hey load tester](https://github.com/rakyll/hey) instead of Jmeter:
 Locally I was seeing Go at ~7457 requests/sec and Java at ~5758 requests/sec
 once it warmed up. We need some neutral compute though.
 
-# On Amazon
+# Benchmarking Go/Java on AWS
 
 There are three potential bottlenecks:
 
@@ -97,6 +97,32 @@ There are three potential bottlenecks:
 And lets not forget the T type instances are **Burstable Performance
 Instances** and might too variable for benchmarking.
 
-# Futher thoughts
+I decided to use m4.large for both bank-{app,db} and run the jmeter benchmark
+upon the app server and update the [Cloudformation to use AWS Linux
+ECS](https://github.com/kaihendry/bank-go/blob/master/aws/cloudformation.yml).
+Not that I hard coded the IP address of the database, so you need to change
+that if you are reproducing results yourself.
 
-Instrument /metrics end point
+I setup my ssh public key like so:
+
+	aws --profile dev ec2 import-key-pair --key-name "hendry" --public-key-material fileb://~/.ssh/id_rsa.pub
+
+So my AWS benchmarking workflow was something like:
+
+1. [make](https://github.com/kaihendry/bank-go/blob/master/aws/Makefile) delete
+2. make deploy
+3. Wait especially long for the [Java version](https://s.natalian.org/2021-04-24/cloudformation.yml)
+4. [benchmark.sh](https://github.com/kaihendry/bank-test/blob/master/benchmark.sh) "test-name"
+
+Go [Test 1](https://s.natalian.org/2021-04-24/go1/index.html) [Test 2](https://s.natalian.org/2021-04-24/go3/index.html) [Test 3](https://s.natalian.org/2021-04-24/go-m5a.large/index.html)
+Java [Test 1](https://s.natalian.org/2021-04-24/java2/index.html) [Test 2](https://s.natalian.org/2021-04-24/java4/index.html) [Test 3](https://s.natalian.org/2021-04-24/java-m5a.large/index.html)
+
+# Conclusions
+
+* Java takes a lot longer to stand up that Go - not a good candidate for serverless!
+* Orchestration like an ALB health check could be incorporated into the stack though I ran out of time. The instances build the Docker image and it's not clear when they are ready...
+* Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, this must be a ECS Docker issue
+* Detailing monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck
+* Generally Go is faster, and far more stable, with the 99p being far lower ~100ms than Java's >2000ms
+
+Not clear what the [errors](https://s.natalian.org/2021-04-24/errors.png) that Ivan initially saw.
