@@ -5,6 +5,8 @@ description: Load testing between a Java and Go application against a Postgresql
 toc: true
 ---
 
+{{< youtube 8lGW2CsYA9o >}}
+
 Full disclosure: I'm a Rob Pike / Russ Cox / Go fan boy and I am keen to see it more at my
 workplace, where the Java language rules by a wide margin.
 
