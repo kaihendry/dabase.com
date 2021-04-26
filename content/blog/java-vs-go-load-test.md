@@ -7,6 +7,8 @@ toc: true
 
 {{< youtube 8lGW2CsYA9o >}}
 
+## Researching earlier Java/Go benchmarks
+
 Full disclosure: I'm a Rob Pike / Russ Cox / Go fan boy and I am keen to see it more at my
 workplace, where the Java language rules by a wide margin.
 
@@ -26,7 +28,7 @@ WHAT? 🤯
 Is that true?! Can Java's lazily just-in-time compiler be faster than a Go static
 binary?! Can I reproduce his results!?
 
-# Reproducing the results
+## Reproducing the results
 
 To Ivan's credit, he publishes the source of his
 [Java](https://github.com/nikitsenka/bank-java) &
@@ -44,7 +46,7 @@ whilst running:
 <img src="https://s.natalian.org/2021-04-14/java-running.png" alt="Java running with docker stats">
 <img src="https://s.natalian.org/2021-04-14/go-running.png" alt="Go running with docker stats">
 
-# Why is Go slower?
+## Why is Go slower?
 
 Instinctly I thought the database connection must be the bottle neck. Ivan's
 [bank-go database
@@ -69,7 +71,7 @@ Yes! The errors have gone away. It also appears much faster. Whatever
 **pgxpool** (limiting connections to the database?) is doing, it seems to be
 working!
 
-# Time to race!
+## Time to race!
 
 Java does take a few seconds to get going to generate the machine code under the hood...
 
@@ -91,7 +93,7 @@ Locally I was seeing Go at ~7457 requests/sec and Java at ~5758 requests/sec
 once it warmed up. Pretty much the same. However we should run the original
 author's jmeter test with a controlled / reproducible environment... enter the Cloud.
 
-# Benchmarking Go/Java on AWS
+## Benchmarking Go/Java on AWS
 
 There are three potential bottlenecks:
 
@@ -106,7 +108,7 @@ I decided to use m4.large for both bank-{app,db} and run [original jmeter benchm
 upon the app server and update the [Cloudformation to use AWS Linux
 ECS](https://github.com/kaihendry/bank-go/blob/master/aws/cloudformation.yml).
 Note that I hard coded the IP address of the database, so you need to change
-that if you are reproducing results yourself.
+that when you are reproducing results yourself.
 
 I setup my ssh public key like so:
 
@@ -122,7 +124,7 @@ So my AWS benchmarking workflow was something like:
 Go [Benchmark 1](https://s.natalian.org/2021-04-24/go1/index.html) [Benchmark 2](https://s.natalian.org/2021-04-24/go3/index.html) [Benchmark 3](https://s.natalian.org/2021-04-24/go-m5a.large/index.html)
 Java [Benchmark 1](https://s.natalian.org/2021-04-24/java2/index.html) [Benchmark 2](https://s.natalian.org/2021-04-24/java4/index.html) [Benchmark 3](https://s.natalian.org/2021-04-24/java-m5a.large/index.html)
 
-# Conclusions
+## Conclusions
 
 * Java takes a lot longer to stand up that Go - not a good candidate for serverless!
 * Orchestration like an ALB health check could be incorporated into the stack though I ran out of time. The instances build the Docker image and it's not clear when they are ready...
