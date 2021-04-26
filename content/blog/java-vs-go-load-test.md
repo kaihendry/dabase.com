@@ -23,8 +23,8 @@ application](https://dzone.com/articles/java-vs-go-multiple-users-load-test-1).
 
 WHAT? 🤯
 
-Is that true?! Can Java bytecode be faster than a Go static binary?! Can I
-reproduce his results!?
+Is that true?! Can Java's lazily just-in-time compiler be faster than a Go static
+binary?! Can I reproduce his results!?
 
 # Reproducing the results
 
@@ -59,18 +59,19 @@ when load testing...
 	 read tcp 127.0.0.1:XXXXX->127.0.0.1:5432: read: connection reset by peer #6
 
 After some soul searching and a cup of tea, perhaps it has something to do with
-how the **connections are pooled to the database**. Unfortunately it means a
-[heavy refactor from *sql.DB to *pgxpool.Pool where
+how the **connections are pooled to the database**. Unfortunately it meant a
+[refactor from *sql.DB to *pgxpool.Pool where
 context](https://github.com/nikitsenka/bank-go/pull/7/files) needs to be added.
 
 <img src="https://s.natalian.org/2021-04-14/moments-later.webp" alt="moments later">
 
-Some moments later, it's up and running. Yes! The errors have gone away. It
-also appears much faster. Whatever **pgxpool** is doing, it seems to be working!
+Yes! The errors have gone away. It also appears much faster. Whatever
+**pgxpool** (limiting connections to the database?) is doing, it seems to be
+working!
 
 # Time to race!
 
-Java does take a few seconds to get going...
+Java does take a few seconds to get going to generate the machine code under the hood...
 
 <a href="https://s.natalian.org/2021-04-14/java.png">
 <img src="https://s.natalian.org/2021-04-14/java.png">
@@ -87,7 +88,8 @@ Using [hey load tester](https://github.com/rakyll/hey) instead of Jmeter:
 </a>
 
 Locally I was seeing Go at ~7457 requests/sec and Java at ~5758 requests/sec
-once it warmed up. We need some neutral compute though.
+once it warmed up. Pretty much the same. However we should run the original
+author's jmeter test with a controlled / reproducible environment... enter the Cloud.
 
 # Benchmarking Go/Java on AWS
 
@@ -100,7 +102,7 @@ There are three potential bottlenecks:
 And lets not forget the T type instances are **Burstable Performance
 Instances** and might be too variable for benchmarking.
 
-I decided to use m4.large for both bank-{app,db} and run the jmeter benchmark
+I decided to use m4.large for both bank-{app,db} and run [original jmeter benchmark](https://github.com/nikitsenka/bank-test)
 upon the app server and update the [Cloudformation to use AWS Linux
 ECS](https://github.com/kaihendry/bank-go/blob/master/aws/cloudformation.yml).
 Note that I hard coded the IP address of the database, so you need to change
@@ -112,9 +114,9 @@ I setup my ssh public key like so:
 
 So my AWS benchmarking workflow was something like:
 
-1. [make](https://github.com/kaihendry/bank-go/blob/master/aws/Makefile) delete
-2. make deploy
-3. Wait especially long for the [Java version](https://s.natalian.org/2021-04-24/cloudformation.yml)
+1. [make](https://github.com/kaihendry/bank-go/blob/master/aws/Makefile) delete - tear down Cloud resources
+2. make deploy - bring up the App and Database on the static IP
+3. Wait especially long for the [Java version](https://s.natalian.org/2021-04-24/cloudformation.yml) - running `mvn` seemed to be where it was mostly
 4. [benchmark.sh](https://github.com/kaihendry/bank-test/blob/master/benchmark.sh) "test-name"
 
 Go [Benchmark 1](https://s.natalian.org/2021-04-24/go1/index.html) [Benchmark 2](https://s.natalian.org/2021-04-24/go3/index.html) [Benchmark 3](https://s.natalian.org/2021-04-24/go-m5a.large/index.html)
@@ -124,21 +126,26 @@ Java [Benchmark 1](https://s.natalian.org/2021-04-24/java2/index.html) [Benchmar
 
 * Java takes a lot longer to stand up that Go - not a good candidate for serverless!
 * Orchestration like an ALB health check could be incorporated into the stack though I ran out of time. The instances build the Docker image and it's not clear when they are ready...
-* Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, I _suspect_ this to be a Docker issue
-* Detailing monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck... quite a dissapointing <abbr title="Developer Experience">DX</abbr>
-* Further instrumentation is probably needed to work out where the bottle necks lie
-* Generally Go is faster, and far more stable, with the 99p being far lower ~100ms than Java's >2000ms
+* Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, I _suspect_ this to be a AWS ECS issue
+* Detailed monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck... quite a disappointing <abbr title="Developer Experience">DX</abbr>. Further instrumentation is probably needed to work out where the bottle necks lie
+* Go appears a little faster, however more stable from a cold start, with the 99p being far lower ~100ms than Java's >2000ms .. However over some runtime I suspect Java will be more stable.
 
 Not clear what the [errors](https://s.natalian.org/2021-04-24/errors.png) that
 [Ivan initially
 observed](https://dzone.com/articles/java-vs-go-multiple-users-load-test-1),
 since I think this is how Ivan **mistakenly concluded that Java could serve
-twice as many users**. In my testing, I could run the tests without errors on
+twice as many users**. In my testing, I could run the tests **without errors in**
 either Go/Java stack when I waited patiently for the services to be ready, and
 not run the tests repeatedly as to cause **too many open files**.
 
-The errors with Ivan's Go code appears to be a [database connection pool limit
+Ivan's Go code appears to have had a [database connection pool limit
 issue](https://github.com/nikitsenka/bank-go/issues/2) which goes away when
-[using pgxpool](https://github.com/nikitsenka/bank-go/pull/7). Jmeter results
-indicate Go is faster and far more stable than Java when you examine the 99p
-results.
+[using pgxpool](https://github.com/nikitsenka/bank-go/pull/7).
+
+As the Reddit
+[/r/java](https://www.reddit.com/r/java/comments/mxzsuc/discussion_is_java_really_faster_than_go/)
+and YouTube comments suggest, <q>For most tasks Java and Go are completely fine
+performance wise.</q> However I did find Java quite unwieldly to work with,
+with proponents mandating **warm up time for Java** and some insider "JVM
+arguments". In comparison Go exhibits developer friendly build and serverless
+friendly execution times with far less cognitive overhead.
