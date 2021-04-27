@@ -148,10 +148,10 @@ issue](https://github.com/nikitsenka/bank-go/issues/2) which goes away when
 As the Reddit
 [/r/java](https://www.reddit.com/r/java/comments/mxzsuc/discussion_is_java_really_faster_than_go/)
 and YouTube comments suggest, <q>For most tasks Java and Go are completely fine
-performance wise.</q> However I did find Java quite unwieldly, with proponents
-mandating **warm up time for Java** (resulting in a problematic Serverless
-**cold start**). In comparison Go has out of the box developer productivity and
-serverless friendly execution times.
+performance wise.</q> However I did find Java quite unwieldy, with proponents
+mandating **warm up time for Java**, which would certainly result in a
+problematic Serverless **cold start**. In comparison Go has out of the box
+developer productivity and serverless friendly execution times.
 
 Nonetheless Java frameworks to their credit are targeting [slow startup
 times](https://www.slideshare.net/VadymKazulkin/adopting-java-for-the-serverless-world-at-aws-user-group-pretoria)
