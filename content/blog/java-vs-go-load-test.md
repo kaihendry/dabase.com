@@ -155,5 +155,6 @@ developer productivity and serverless friendly execution times.
 
 Nonetheless Java frameworks to their credit are targeting [slow startup
 times](https://www.slideshare.net/VadymKazulkin/adopting-java-for-the-serverless-world-at-aws-user-group-pretoria)
-with Ahead of Time Compilation (AoT) with https://www.graalvm.org/ It is great
-to see healthy competition, though currently Java have some catching up to do!
+with Ahead of Time Compilation (AoT) with [GraalVM](https://www.graalvm.org/) &
+[Quarkus](https://quarkus.io/). It is great to see healthy competition, though
+currently Java has some catching up to do!
