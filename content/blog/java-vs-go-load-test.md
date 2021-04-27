@@ -12,7 +12,7 @@ toc: true
 Earlier I [blogged that Go is better than Java](/blog/2021/Java-vs-Go/), but it
 lacked evidence and datapoints. I wanted to start from some earlier work, to
 prove to my colleagues that Go is as fast as Java and quick to start up.
-**Speed is critical for serverless** with the process can be stopped when not
+**Speed is critical for serverless** since the process can be stopped when not
 in use and started again from cold to serve a request!
 
 So after searching https://dzone.com/ for "Java Go" comparisons I was surprised
@@ -71,7 +71,7 @@ Yes! The errors have gone away. It also appears much faster. Whatever
 **pgxpool** (limiting connections to the database?) is doing, it seems to be
 working!
 
-## Time to race!
+## Load testing locally on my T14s
 
 Java does take a few seconds to get going to generate the machine code under
 the hood...
@@ -94,7 +94,7 @@ Locally I was seeing Go at ~7457 requests/sec and Java at ~5758 requests/sec
 once it warmed up. Pretty much the same. However we should run the original
 author's jmeter test with a controlled / reproducible environment... enter the Cloud.
 
-## Benchmarking Go/Java on AWS
+## Load testing Go/Java on AWS
 
 There are three potential bottlenecks:
 
@@ -129,7 +129,7 @@ Java [Benchmark 1](https://s.natalian.org/2021-04-24/java2/index.html) [Benchmar
 
 * Java takes a lot longer to stand up that Go - not a good candidate for serverless!
 * Orchestration like an ALB health check could be incorporated into the stack though I ran out of time. The instances build the Docker image and it's not clear when they are ready...
-* Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, I _suspect_ this to be a AWS ECS issue
+* Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, this [appears to be an AWS ECS issue](https://medium.com/@pahud/ulimit-of-nofile-in-amazon-ecs-optimized-ami-6790aedee582)
 * Detailed monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck... quite a disappointing <abbr title="Developer Experience">DX</abbr>. Further instrumentation is probably needed to work out where the bottle necks lie
 * Go appears a little faster, however more stable from a cold start, with the 99p being far lower ~100ms than Java's >2000ms .. However over some runtime I suspect Java will be more stable.
 
@@ -138,8 +138,8 @@ Not clear what the [errors](https://s.natalian.org/2021-04-24/errors.png) that
 observed](https://dzone.com/articles/java-vs-go-multiple-users-load-test-1),
 since I think this is how Ivan **mistakenly concluded that Java could serve
 twice as many users**. In my testing, I could run the tests **without errors in**
-either Go/Java stack when I waited patiently for the services to be ready, and
-not run the tests repeatedly as to cause **too many open files**.
+either Go/Java stack when I waited patiently for the Java service to be ready, and
+not run the tests repeatedly as to cause [**too many open files**](https://medium.com/@pahud/ulimit-of-nofile-in-amazon-ecs-optimized-ami-6790aedee582).
 
 Ivan's Go code appears to have had a [database connection pool limit
 issue](https://github.com/nikitsenka/bank-go/issues/2) which goes away when
@@ -148,7 +148,12 @@ issue](https://github.com/nikitsenka/bank-go/issues/2) which goes away when
 As the Reddit
 [/r/java](https://www.reddit.com/r/java/comments/mxzsuc/discussion_is_java_really_faster_than_go/)
 and YouTube comments suggest, <q>For most tasks Java and Go are completely fine
-performance wise.</q> However I did find Java quite unwieldly to work with,
-with proponents mandating **warm up time for Java** and some insider "JVM
-arguments". In comparison Go exhibits developer friendly build and serverless
-friendly execution times with far less cognitive overhead.
+performance wise.</q> However I did find Java quite unwieldly, with proponents
+mandating **warm up time for Java** (resulting in a problematic Serverless
+**cold start**). In comparison Go has out of the box developer productivity and
+serverless friendly execution times.
+
+Nonetheless Java frameworks to their credit are targeting [slow startup
+times](https://www.slideshare.net/VadymKazulkin/adopting-java-for-the-serverless-world-at-aws-user-group-pretoria)
+with Ahead of Time Compilation (AoT) with https://www.graalvm.org/ It is great
+to see healthy competition, though currently Java have some catching up to do!
