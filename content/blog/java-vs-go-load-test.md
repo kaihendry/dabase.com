@@ -9,14 +9,14 @@ toc: true
 
 ## Researching earlier Java/Go benchmarks
 
-Full disclosure: I'm a Rob Pike / Russ Cox / Go fan boy and I am keen to see it more at my
-workplace, where the Java language rules by a wide margin.
-
-Earlier I [blogged that Go is better than
-Java](/blog/2021/Java-vs-Go/), but it lacked evidence and datapoints.
+Earlier I [blogged that Go is better than Java](/blog/2021/Java-vs-Go/), but it
+lacked evidence and datapoints. I wanted to start from some earlier work, to
+prove to my colleagues that Go is as fast as Java and quick to start up.
+**Speed is critical for serverless** with the process can be stopped when not
+in use and started again from cold to serve a request!
 
 So after searching https://dzone.com/ for "Java Go" comparisons I was surprised
-to find an article by Ivan Nikitsenka at the top of results:
+to find a benchmark article by Ivan Nikitsenka at the top of results:
 
 <img src="https://s.natalian.org/2021-04-14/java-vs-go.png">
 
@@ -38,24 +38,24 @@ Jmeter](https://github.com/nikitsenka/bank-test/blob/master/jmeter/bank-test.jmx
 his results AND how to run it all on a neutral playing ground of [AWS via
 Cloudformation](https://github.com/nikitsenka/bank-go/blob/master/aws/cloudformation.yml)!
 
-I ran it locally on my T14s Thinkpad and indeed **the Go application was erroring and slower
-than the Java app**. Despite the `bank-go` image weighing in at 10.2MB compared
-to the 991MB image size of `bank-java` and consuming a lot less resources
-whilst running:
+I ran it locally on my T14s Thinkpad and indeed **the Go application was
+erroring compared to the "springboot" Java app**. Despite the `bank-go` image
+weighing in at 10.2MB compared to the 991MB image size of `bank-java` and
+consuming a lot less resources whilst running:
 
 <img src="https://s.natalian.org/2021-04-14/java-running.png" alt="Java running with docker stats">
 <img src="https://s.natalian.org/2021-04-14/go-running.png" alt="Go running with docker stats">
 
 ## Why is Go slower?
 
-Instinctly I thought the database connection must be the bottle neck. Ivan's
+Instinctively I thought the database connection must be the bottle neck. Ivan's
 [bank-go database
 functions](https://github.com/nikitsenka/bank-go/blob/master/bank/postgres.go)
 use https://github.com/lib/pq#status which recommends using pgx which is
 actively maintained. Great! All I need is to do, is switch the database driver
 from **pq** to [**pgx**](https://github.com/jackc/pgx). Despite making the
 change to the "sql.DB" type compatible github.com/jackc/pgx/v4/stdlib ... the
-same [type of errors](https://github.com/nikitsenka/bank-go/issues/6) occured
+same [type of errors](https://github.com/nikitsenka/bank-go/issues/6) occurred
 when load testing...
 
 	 read tcp 127.0.0.1:XXXXX->127.0.0.1:5432: read: connection reset by peer #6
@@ -73,7 +73,8 @@ working!
 
 ## Time to race!
 
-Java does take a few seconds to get going to generate the machine code under the hood...
+Java does take a few seconds to get going to generate the machine code under
+the hood...
 
 <a href="https://s.natalian.org/2021-04-14/java.png">
 <img src="https://s.natalian.org/2021-04-14/java.png">
@@ -101,8 +102,8 @@ There are three potential bottlenecks:
 2. The app
 3. The database
 
-And lets not forget the T type instances are **Burstable Performance
-Instances** and might be too variable for benchmarking.
+And lets not forget that AWS's T type instances (virtual machines) are
+**Burstable Performance Instances** and might be too variable for benchmarking.
 
 I decided to use m4.large for both bank-{app,db} and run [original jmeter benchmark](https://github.com/nikitsenka/bank-test)
 upon the app server and update the [Cloudformation to use AWS Linux
