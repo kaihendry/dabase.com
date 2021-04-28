@@ -14,7 +14,7 @@ prove to my colleagues that Go is as fast as Java and quick to start up.
 in use and started again from cold to serve a request!
 
 So after searching https://dzone.com/ for "Java Go" comparisons I was surprised
-to find a benchmark article by Ivan Nikitsenka at the top of results:
+to find a benchmark article by Ivan Nikitsenka (original author) at the top of results:
 
 <img src="https://s.natalian.org/2021-04-14/java-vs-go.png">
 
@@ -28,7 +28,7 @@ binary?! Can I reproduce his results!?
 
 ## Reproducing the results
 
-To Ivan's credit, he publishes the source of his
+To the original author's credit, he publishes the source of his
 [Java](https://github.com/nikitsenka/bank-java) &
 [Golang](https://github.com/nikitsenka/bank-go) application as well as [how he
 tested with
@@ -46,7 +46,7 @@ consuming a lot less resources whilst running:
 
 ## Why is Go slower?
 
-Instinctively I thought the database connection must be the bottle neck. Ivan's
+Instinctively I thought the database connection must be the bottle neck. The original author's
 [bank-go database
 functions](https://github.com/nikitsenka/bank-go/blob/master/bank/postgres.go)
 use https://github.com/lib/pq#status which recommends using pgx which is
@@ -132,14 +132,14 @@ Java [Benchmark 1](https://s.natalian.org/2021-04-24/java2/index.html) [Benchmar
 * Go appears a little faster, however more stable from a cold start, with the 99p being far lower ~100ms than Java's >2000ms .. However over some runtime I suspect Java will be more stable.
 
 Not clear what the [errors](https://s.natalian.org/2021-04-24/errors.png) that
-[Ivan initially
+the [original author initially
 observed](https://dzone.com/articles/java-vs-go-multiple-users-load-test-1),
-since I think this is how Ivan **mistakenly concluded that Java could serve
+since I think this is how the original author **mistakenly concluded that Java could serve
 twice as many users**. In my testing, I could run the tests **without errors in**
 either Go/Java stack when I waited patiently for the Java service to be ready, and
 not run the tests repeatedly as to cause [**too many open files**](https://medium.com/@pahud/ulimit-of-nofile-in-amazon-ecs-optimized-ami-6790aedee582).
 
-Ivan's Go code appears to have had a [database connection pool limit
+The original authors's Go code appears to have had a [database connection pool limit
 issue](https://github.com/nikitsenka/bank-go/issues/2) which goes away when
 [using pgxpool](https://github.com/nikitsenka/bank-go/pull/7).
 
