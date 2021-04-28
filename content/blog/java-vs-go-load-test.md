@@ -5,8 +5,6 @@ description: Load testing between a Java and Go application against a Postgresql
 toc: true
 ---
 
-{{< youtube 8lGW2CsYA9o >}}
-
 ## Researching earlier Java/Go benchmarks
 
 Earlier I [blogged that Go is better than Java](/blog/2021/Java-vs-Go/), but it
