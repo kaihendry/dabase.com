@@ -125,7 +125,7 @@ Java [Benchmark 1](https://s.natalian.org/2021-04-24/java2/index.html) [Benchmar
 
 ## Conclusions
 
-* Java takes a lot longer to stand up that Go - not a good candidate for serverless!
+* Java takes a lot longer to stand up than Go - not a good candidate for serverless!
 * Orchestration like an ALB health check could be incorporated into the stack though I ran out of time. The instances build the Docker image and it's not clear when they are ready...
 * Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, this [appears to be an AWS ECS issue](https://medium.com/@pahud/ulimit-of-nofile-in-amazon-ecs-optimized-ami-6790aedee582)
 * Detailed monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck... quite a disappointing <abbr title="Developer Experience">DX</abbr>. Further instrumentation is probably needed to work out where the bottle necks lie
