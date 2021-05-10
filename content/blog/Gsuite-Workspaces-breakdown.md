@@ -20,6 +20,11 @@ Issues:
 1. No pin / topic
 1. No way to link to a conversation
 1. No way to reference a message in a reply
+1. Has a Files tab but doesn't summarise what's been shared by URL or screenshot. Forces you to use Google Docs.
+1. When you use Files, of course these Files are not in Drive, so if you expect
+them to be in Drive you will be very confused.
+1. Random collapsing threads: <img src="https://s.natalian.org/2021-04-28/collapse.png">
+1. Not trivial for example to find past images, hint: *.jpg is the search query for photos
 
 [Cloud search](https://s.natalian.org/2021-02-01/cloud-search.png) is of no
 help when it comes to searching in Chat rooms. However [Gmail
