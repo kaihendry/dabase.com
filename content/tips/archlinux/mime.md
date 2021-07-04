@@ -37,6 +37,17 @@ Set it like so:
 
 	$ xdg-settings set default-web-browser firefox-personal.desktop
 
+Ultimately your configuration is stored in `~/.config/mimeapps.list`
+
+	$ xdg-settings set default-web-browser firefox-personal.desktop
+	$ XDG_UTILS_DEBUG_LEVEL=2 xdg-mime query default text/html
+	Checking /home/hendry/.config/mimeapps.list
+	firefox-personal.desktop
+
+Bizarrely there doesn't seem to be a way to easily track down the location of `firefox-personal.desktop`.
+
+I have not figured a way to easily switch profiles on google-chrome-stable yet with `--user-data-dir`.
+
 # More info
 
 * https://wiki.archlinux.org/title/desktop_entries
