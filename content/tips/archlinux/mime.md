@@ -31,7 +31,9 @@ You can create your own .desktop files like so:
 	StartupWMClass=firefox
 	Categories=Network;WebBrowser;
 
-Check it like so `desktop-file-validate ~/.local/share/applications/firefox-personal.desktop`
+My profile name is `hendry`, though it's not clear this is the name from Firefox's `about:support`. You have to parse this out of Profile Directory's [SALT](https://www-archive.mozilla.org/start/1.5/faq/profile.html). In Chrome you can figure out the Profile directory from `chrome://version/`.
+
+I'm unsure of the .desktop format (like what is the difference between %u and %U?), though it can be linted like so `desktop-file-validate ~/.local/share/applications/firefox-personal.desktop`
 
 You might also need to run `update-desktop-database ~/.local/share/applications`
 
@@ -39,7 +41,7 @@ Set it like so:
 
 	$ xdg-settings set default-web-browser firefox-personal.desktop
 
-Ultimately your configuration is stored in `~/.config/mimeapps.list`
+Ultimately your system's application associations are stored in `~/.config/mimeapps.list`
 
 	$ xdg-settings set default-web-browser firefox-personal.desktop
 	$ XDG_UTILS_DEBUG_LEVEL=2 xdg-mime query default text/html
