@@ -52,3 +52,4 @@ I have not figured a way to easily switch profiles on google-chrome-stable yet w
 
 * https://wiki.archlinux.org/title/desktop_entries
 * https://www.reddit.com/r/archlinux/comments/obd301/xdgopen_url_choose_browser_profile/
+* [Mack Criswell on setting default applications video](https://www.youtube.com/watch?v=VOR1sZ58HzY)
