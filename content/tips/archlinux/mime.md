@@ -4,6 +4,8 @@ title: Setting the default browser
 description: How to setup terminal mime association so that xdg-open URL opens the right browser profile
 ---
 
+{{< youtube IiafBlweCbs >}}
+
 	$ xdg-mime query default x-scheme-handler/http
 	firefox.desktop
 	$ xdg-settings get default-web-browser
