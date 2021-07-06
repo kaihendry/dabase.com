@@ -1,7 +1,7 @@
 ---
 date: 2021-07-01
 title: Setting the default browser
-description: How to setup mime so that xdg-open URL opens the browser you want
+description: How to setup terminal mime association so that xdg-open URL opens the right browser profile
 ---
 
 	$ xdg-mime query default x-scheme-handler/http
@@ -46,7 +46,7 @@ Ultimately your configuration is stored in `~/.config/mimeapps.list`
 
 Bizarrely there doesn't seem to be a way to easily track down the location of `firefox-personal.desktop`.
 
-I have not figured a way to easily switch profiles on google-chrome-stable yet with `--user-data-dir`.
+I have not figured a way to easily switch profiles on google-chrome-stable yet with `--user-data-dir`. I [asked in the Google Chrome forum](https://support.google.com/chrome/thread/115710399/how-do-i-choose-a-specific-profile-from-the-cli?hl=en). Perhaps I should file a bug next!
 
 # More info
 
