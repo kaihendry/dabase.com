@@ -33,7 +33,11 @@ You can create your own .desktop files like so:
 
 My profile name is `hendry`, though it's not clear this is the name from Firefox's `about:support`. You have to parse this out of Profile Directory's [SALT](https://www-archive.mozilla.org/start/1.5/faq/profile.html). In Chrome you can figure out the Profile directory from `chrome://version/`.
 
-I'm unsure of the .desktop format (like what is the difference between %u and %U?), though it can be linted like so `desktop-file-validate ~/.local/share/applications/firefox-personal.desktop`
+The .desktop format linted like so `desktop-file-validate ~/.local/share/applications/firefox-personal.desktop`
+
+Thanks to <https://specifications.freedesktop.org/desktop-entry-spec/latest/ar01s07.html> I now know the difference between:
+* `%u` - a single URL
+* `%U` - a list of URLs
 
 You might also need to run `update-desktop-database ~/.local/share/applications`
 
@@ -50,7 +54,7 @@ Ultimately your system's application associations are stored in `~/.config/mimea
 
 Bizarrely there doesn't seem to be a way to easily track down the location of `firefox-personal.desktop`.
 
-I have not figured a way to easily switch profiles on google-chrome-stable yet with `--user-data-dir`. I [asked in the Google Chrome forum](https://support.google.com/chrome/thread/115710399/how-do-i-choose-a-specific-profile-from-the-cli?hl=en). Perhaps I should file a bug next!
+I have not figured a way to easily switch profiles on google-chrome-stable yet with `--user-data-dir`. I [asked in the Google Chrome forum](https://support.google.com/chrome/thread/115710399/how-do-i-choose-a-specific-profile-from-the-cli?hl=en). And I have since [filed a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1226751) via https://crbug.com
 
 # More info
 
