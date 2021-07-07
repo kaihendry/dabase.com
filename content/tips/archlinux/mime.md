@@ -4,6 +4,8 @@ title: Setting the default browser
 description: How to setup terminal mime association so that xdg-open URL opens the right browser profile
 ---
 
+Update: I'm now longer using xdg-utils's xdg-open, I prefer a simpler [dmenu based](https://tools.suckless.org/dmenu/) solution to chooseing brower profiles: https://github.com/kaihendry/dotfiles/blob/master/bin/xdg-open
+
 {{< youtube IiafBlweCbs >}}
 
 	$ xdg-mime query default x-scheme-handler/http
@@ -61,7 +63,6 @@ After [reporting a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=12
 * `google-chrome-stable --profile-directory=Profile\ 1` -- my personal account
 * `google-chrome-stable --profile-directory=Profile\ 2` -- my current client
 * `google-chrome-stable --profile-directory=Default` -- my employer
-
 
 # More info
 
