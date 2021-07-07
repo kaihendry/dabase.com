@@ -54,7 +54,14 @@ Ultimately your system's application associations are stored in `~/.config/mimea
 
 Bizarrely there doesn't seem to be a way to easily track down the location of `firefox-personal.desktop`.
 
-I have not figured a way to easily switch profiles on google-chrome-stable yet with `--user-data-dir`. I [asked in the Google Chrome forum](https://support.google.com/chrome/thread/115710399/how-do-i-choose-a-specific-profile-from-the-cli?hl=en). And I have since [filed a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1226751) via https://crbug.com
+# google-chrome
+
+After [reporting a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1226751#c1), I now know how to switch profiles, e.g. 
+
+* `google-chrome-stable --profile-directory=Profile\ 1` -- my personal account
+* `google-chrome-stable --profile-directory=Profile\ 2` -- my current client
+* `google-chrome-stable --profile-directory=Default` -- my employer
+
 
 # More info
 
