@@ -4,7 +4,7 @@ title: Setting the default browser
 description: How to setup terminal mime association so that xdg-open URL opens the right browser profile
 ---
 
-Update: I'm now longer using xdg-utils's xdg-open, I prefer a simpler [dmenu based](https://tools.suckless.org/dmenu/) solution to chooseing brower profiles: https://github.com/kaihendry/dotfiles/blob/master/bin/xdg-open
+Update: I've written my own [x-www-browser](https://github.com/kaihendry/dotfiles/blob/master/bin/x-www-browser) handler and [x-www-browser.desktop](https://github.com/kaihendry/dotfiles/blob/master/.local/share/applications/x-www-browser.desktop)
 
 {{< youtube IiafBlweCbs >}}
 
