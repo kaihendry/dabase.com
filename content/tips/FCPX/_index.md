@@ -1,3 +1,0 @@
----
-title: Final Cut Pro
----

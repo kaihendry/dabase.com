@@ -1,11 +1,11 @@
 ---
-title: Consolidate the Library
+title: Consolidating the FCPX Library
 date: 2021-05-22
 description: How to ensure all your media is in the Library
 ---
 
 Some people prefer to reference their media, I prefer to keep all the files for
-a particular video idea in one place; the FCPX Library. To do this, [Select the Library in the left-hand pane and over on the right in Library Properties, click Consolidate](https://www.reddit.com/r/fcpx/comments/nhfwem/how_do_i_copy_media_referenced_by_my_library_into/gyxcw1k/).
+a particular video idea in one place; the <abbr title="Final Cut Pro X">FCPX</abbr> Library. To do this, [Select the Library in the left-hand pane and over on the right in Library Properties, click Consolidate](https://www.reddit.com/r/fcpx/comments/nhfwem/how_do_i_copy_media_referenced_by_my_library_into/gyxcw1k/).
 
 <img src="https://s.natalian.org/2021-05-22/consolidate.png">
 
