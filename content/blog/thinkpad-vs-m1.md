@@ -77,7 +77,9 @@ Fans of Apple Silicon are working to port Linux to it: <https://asahilinux.org/>
 Despite the M1's hardware being amazing, I just hate brew over pacman/yay. I hate the MacOS window manager. I hate the xcode nonsense. I hate not being in control of the software.
 
 Would I install Linux if I could? Probably not. I actually like to see what's
-going on in MacOS, and to importantly user Photos and FCPX, which I am sadly
+going on in MacOS, and to importantly use Photos and FCPX, which I am sadly
 reliant upon for my pictures and videos!
 
 So what's your next Linux laptop? idk. Not Apple hardware.
+
+Tbh my idea of late is to [build a quiet team Red PC](https://streacom.com/products/db4-fanless-mini-itx-case/). When I travel, I'll only take the M1 with me.
