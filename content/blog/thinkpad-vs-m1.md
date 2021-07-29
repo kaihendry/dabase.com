@@ -9,6 +9,8 @@ description: M1 boasts breakthrough hardware, with a poor developer experience
 * Bought 20-05-2021 13-inch MacBook Air - 512GB 8GB RAM - 1690SGD (16GB RAM wasn't in stock and I didn't want to wait)
 * Bought 29-08-2020 [Thinkpad T14s](https://www.youtube.com/watch?v=ihFPynCqfzc&list=PLiKgVPlhUNuy_AnTdTxCVGsMgidyGuCcQ) (20UHS01400) - 1662SGD (inc a 135SGD ThinkPad USB-C Dock Gen 2)
 
+<https://wiki.archlinux.org/title/Lenovo_ThinkPad_T14s_(AMD)_Gen_1>
+
 The Lenovo buying experience was awful.
 
 # Keyboard / Mouse
@@ -32,11 +34,16 @@ M1 feels very fast.
 # Battery
 
 * M1 wins - it can easily last all day
-* Thinkpad lasts enough
+* Thinkpad lasts enough ... however
+
+	/etc/udev/rules.d/99-lowbat.rules:
+	SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="[0-5]", RUN+="/usr/bin/systemctl hibernate"
+
+However these "Discharging" events don't get reported to `udevadm monitor`! 
 
 # Screen
 
-* M1 wins 2650x1600
+* M1 wins 2650x1600 and it's awesome
 * Thinkpad has a sad 1920x1080 screen
 
 # Microphone / Camera / Speakers
@@ -52,13 +59,16 @@ remember previous Thinkpads had, but still woeful compared to the MBA M1.
 # Heat
 
 Admittedly the T14s would get hot on challenging workloads, like playing games.
-But under normal browser + terminal workloads, I found it fine. Though it was easy to put it over the edge... perhaps by running Slack. :/
+But under normal browser + terminal workloads, I found it fine. Though it was easy to put it over the edge... _perhaps_ by running Slack or running Firefox/Chrome together. :/
 
 M1 wins. It doesn't even have a fan. You can actually use this laptop **on your lap**.
 
 # Ports
 
 Both have two USB-C ports. T14s has two extra USB-As. Win for Thinkpad!
+
+Tbh if the Thinkpad had a network port and a SD card reader, I would sing the
+heavens of it.
 
 # Software
 
@@ -74,7 +84,10 @@ Fans of Apple Silicon are working to port Linux to it: <https://asahilinux.org/>
 
 {{< youtube c4QpF9EjaGY >}}
 
-Despite the M1's hardware being amazing, I just hate brew over pacman/yay. I hate the MacOS window manager. I hate the xcode nonsense. I hate not being in control of the software.
+Despite the M1's hardware being amazing, I just hate [brew](https://brew.sh/) over pacman/yay. I
+hate the [bewildering](https://dabase.com/tips/Apple/2021/Alt-Tab-behaviour-on-MacOS/) MacOS window manager and the stupid animations I can't turn off. I
+hate the xcode nonsense. I hate not being in control of the software. I hate
+being someone's bitch when it comes to software choices. That said, you can workaround the contempt for developers with a [whole bunch of tweaks](https://www.swyx.io/new-mac-setup-2021/), that would probably take more time for me to apply than install Archlinux on a Thinkpad.
 
 Would I install Linux if I could? Probably not. I actually like to see what's
 going on in MacOS, and to importantly use Photos and FCPX, which I am sadly
@@ -82,4 +95,4 @@ reliant upon for my pictures and videos!
 
 So what's your next Linux laptop? idk. Not Apple hardware.
 
-Tbh my idea of late is to [build a quiet team Red PC](https://streacom.com/products/db4-fanless-mini-itx-case/). When I travel, I'll only take the M1 with me.
+Tbh my idea of late is to [build a quiet team Red PC](https://streacom.com/products/db4-fanless-mini-itx-case/). When I'm out and about, I'll only take the M1 with me.
