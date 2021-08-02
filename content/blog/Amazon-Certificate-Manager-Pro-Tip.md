@@ -4,7 +4,9 @@ date: 2020-12-03T11:11:38+08:00
 description: Avoid email validation and use DNS Validation Method and wildcards for sanity reasons
 ---
 
-Receiving "To approve this request, go to Amazon Certificate Approvals"? You are doing it wrong!
+If you are receiving "To approve this request, go to Amazon Certificate Approvals"? You are doing it wrong!
+
+How to do SSL with <abbr title="Amazon Certificate Manager">ACM</abbr>
 
 # AVOID URGENT Action Required - Your certificate renewal
 

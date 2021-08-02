@@ -72,7 +72,7 @@ heavens of it.
 
 # Software
 
-M1 run MacOS and FCPX / Safari are beautifully optimised for it.
+M1 run MacOS and FCPX / Safari are beautifully optimised for it. But don't forget [Safari sucks for the Web](https://news.ycombinator.com/item?id=27968394)!
 
 T14s can run any OS, and I've chosen Archlinux btw.
 
