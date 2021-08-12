@@ -23,9 +23,11 @@ Engieering">SRE</abbr>, not fire fighting!
 
 Metrics are fed (scraped) back to a central "observability" account for shared analysis.
 
-<a href="https://excalidraw.com/#json=6682998946660352,FzHJccXZegxPIFJ-XOH3lQ">
-<img alt="Standard Prometheus Architecture" src="https://s.natalian.org/2021-08-11/standard.svg">
+<a href="https://excalidraw.com/#json=5529885153951744,mY5yU9vQRE0JFXzcJayJLQ">
+<img alt="Standard Prometheus Architecture" src="https://s.natalian.org/2021-08-12/scraping-arch.svg">
 </a>
+
+Though at any time one can scrape the various target endpoints, without relying on a potential central point of failure.
 
 # The highly scalable Architecture
 
