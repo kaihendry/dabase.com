@@ -1,6 +1,7 @@
 ---
 date: 2021-08-02
 title: Local python packages breakage
+description: Dealing with python packages being all over the place
 ---
 
 You can get into extraordinary twists when you mix local Python packages when system ones.
