@@ -13,18 +13,20 @@ considerations come into play if you have extreme requirements, however most of
 the time you are scraping / collecting metrics via "metric exporters" between
 AWS accounts.
 
-You can architect Proms to be in a hierachy and use [recording
+You can architect Proms to be in a hierarchy and use [recording
 rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/)
 or plain federation to aggregate metrics upstream.
 
 With Prometheus, remember you are sampling, you are not capturing every event.
 You are looking to **observe trends**. My philosophy is that it's not healthy
 to stare at "real time" metrics coming in and try to make real time decisions.
-Quick decisions are triggered off **events** from your Cloud provider!
+If I notice `global:\n  scrape_interval: 1m` has been modified to <10s, I know
+people have misunderstood their metrics pipeline. Quick decisions are triggered
+off **events** from your Cloud provider, not metrics!
 
-Metrics **are not events**, metrics are for observing trends and pre-empt any
+Metrics **are not events**, metrics are for observing trends to pre-empt any
 Site Reliability issues. Good <abbr title="Site Reliablity
-Engieering">SRE</abbr> is knowing in a week you will run out of disk space.
+Engieering">SRE</abbr> is knowing in a week you will run out of disk space (hint: [predict_linear](https://prometheus.io/docs/prometheus/latest/querying/functions/#predict_linear)).
 Not alerting when it happens!
 
 # Normal "observability" Architecture
