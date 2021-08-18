@@ -63,4 +63,6 @@ developer
 guide](https://aws.github.io/aws-sdk-go-v2/docs/code-examples/sts/assumerole/).
 
 I usually think of using aws-sdk-go-v2 because it has better **cfg** structures
-for complex credential handling. Fact is, it's a nightmare. Such a shame since I advocate both AWS & GO.
+for complex credential handling. Fact is, [it's a
+nightmare](https://github.com/aws/aws-sdk-go-v2/issues/831#issuecomment-900821620).
+Such a shame since I advocate both AWS & GO.
