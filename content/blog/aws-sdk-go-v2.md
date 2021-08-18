@@ -4,8 +4,8 @@ date: 2021-08-18T09:11:44+08:00
 description: A very awkward to use SDK by Amazon Web Services
 ---
 
-<img width="40%" src="https://s.natalian.org/2021-08-18/Amazon_Web_Services_Logo.svg" alt="AWS logo">
-<img width="40%" src="https://s.natalian.org/2021-08-18/Go_Logo_Blue.svg" alt="Go logo">
+<img style="width: 40%; vertical-align: top" src="https://s.natalian.org/2021-08-18/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+<img style="width: 40%; vertical-align: top" src="https://s.natalian.org/2021-08-18/Go_Logo_Blue.svg" alt="Go logo">
 
 Yesterday I introduced my collegue to
 [aws-sdk-go-v2](https://aws.github.io/aws-sdk-go-v2/) and I must say it was one
