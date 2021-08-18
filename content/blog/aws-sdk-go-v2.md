@@ -1,13 +1,13 @@
 ---
 title: AWS SDK Go V2
 date: 2021-08-18T09:11:44+08:00
-description: A very awkward to use SDK by Amazon Web Services
+description: A very awkward to use version two SDK by Amazon Web Services
 ---
 
 <img style="width: 40%; vertical-align: top" src="https://s.natalian.org/2021-08-18/Amazon_Web_Services_Logo.svg" alt="AWS logo">
 <img style="width: 40%; vertical-align: top" src="https://s.natalian.org/2021-08-18/Go_Logo_Blue.svg" alt="Go logo">
 
-Yesterday I introduced my collegue to
+Yesterday I introduced my colleague to
 [aws-sdk-go-v2](https://aws.github.io/aws-sdk-go-v2/) and I must say it was one
 of the most frustrating experiences of my life!
 
@@ -15,14 +15,14 @@ tl;dr I don't recommend aws-sdk-go-v2 despite shilling it in http://talks.webcon
 
 # the IDE experience
 
-VScode with Copilot actually is a hindarance because most Golang/AWS code is written for
+VScode with Copilot actually is a hindrance because most Golang/AWS code is written for
 version one of the AWS GO SDK. It keeps suggesting code that will not work with
 github.com/aws/aws-sdk-go-v2/service!
 
 If you are new to an API, you are relying on the IDE discover types and such in
 order to get work done. VScode could not second guess I needed for example
 **github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs/types** to able to roll
-up the log Groups I was pulling down. Incredibly frustrating. Furthemore EVEN
+up the log Groups I was pulling down. Incredibly frustrating. Furthermore EVEN
 IF I KNOW WHAT I AM DOING, VS code is always asking me to manually *go get*
 something? WHY MAKE ME JUMP HOOPS?
 
@@ -38,7 +38,7 @@ looking at the WRONG API docs: https://pkg.go.dev/search?q=cloudwatch, i.e. not 
 I somehow managed to use some weird fork for a while whilst developing.
 
 If you use https://github.com/search as I do, you will find Github's search
-syntax seems to choke on hypens and slashes.
+syntax seems to choke on hyphens and slashes.
 
 # The SDK is non-idiomatic
 
