@@ -18,8 +18,8 @@ Issues:
 1. Opaque room URL
 1. Difficult to find/join rooms since you need to go via a **Browse Rooms** dialog
 1. No pin / topic
-1. No way to link to a conversation
-1. No way to reference a message in a reply
+1. No way to link to a conversation implying -- **no workable history**
+1. No way to reference a message in a reply -- hard to keep on topic or resume conversations
 1. Has a Files tab but doesn't summarise what's been shared by URL or screenshot. Forces you to use Google Docs.
 1. When you use Files, of course these Files are not in Drive, so if you expect them to be in Drive you will be very confused.
 1. Random collapsing threads: <img src="https://s.natalian.org/2021-04-28/collapse.png">
