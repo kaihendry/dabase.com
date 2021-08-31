@@ -18,7 +18,7 @@ shrink wrapped solution like Google Workspaces in a fixed time frame.
 
 Read the <https://agilemanifesto.org/> which is short and up there in quality
 with the [US
-amendments](https://en.wikipedia.org/wiki/List_of_amendments_to_the_United_States_Constitution#Ratified_amendments).
+constitution](https://en.wikipedia.org/wiki/List_of_amendments_to_the_United_States_Constitution#Ratified_amendments).
 
 <img src="https://s.natalian.org/2021-08-31/a.png" alt="TW style agile">
 
