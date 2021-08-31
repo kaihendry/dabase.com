@@ -32,7 +32,7 @@ delivery iterations that can be quite stressful when things go wrong.
 ## Why do things go wrong <abbr title="in my opinion">imo</abbr>?
 
 * Team has to be incredibly strong, cohesive and cross functional (not overly
-  hierarchical). Humans in this pandemic are really difficult.
+  hierarchical).
 
 * Adopting ceremonies (aka meetings / bureaucracy) that might not make sense -
   there is a weird cottage industry around "agile". A lot of "middle managers"
@@ -40,43 +40,44 @@ delivery iterations that can be quite stressful when things go wrong.
   I feel they don't really know why or they don't know of other tooling that
   might have eclipsed it. For example Jira is often used because it what middle
   managers know.  However it's awfully slow and feel like a crutch compared to
-  other tools like Github Issues (which is a better tool at the time of
+  other tools like Github Issues (which is a better tool imo at the time of
   writing)
 
 * Poor prioritisation of the backlog - often this has to do with a poor vision
-  in my experience. It needs an incredible amount of detail to be useful. And
-  then when it goes wrong, you need a constructice culture of accepting failure
-  ideally, otherwise it can breed mistrust and resentment.
+  or product management in my experience. It needs an incredible amount of
+  discipline to be useful. And then when it goes wrong, you need a constructive
+  culture of accepting failure ideally, otherwise it can breed mistrust and
+  resentment.
 
 * The <abbr title="business analyst">BA</abbr> has a lot of responsibility - in
   a team you cannot defer to the business analyst to do the talking. Better
   developers communicate independently. I view the <abbr title="business
-  analyst">BA</abbr> as a facilitator. That person doesn't need to be
-  technical.
+  analyst">BA</abbr> as a facilitator. Ideally taking great notes and making
+  people feel comfortable. That person doesn't need to be technical.
 
 * Good pairing is pretty exhausting remotely with tools like Zoom with bad
   networks / audio
 
 * Failure to revisit some ideas - Acceptance Criteria I feel can be so heavy
-  weight that you don't want to revisit some elements of delivered business
-  process. Though often enough chiseling away at a problem again and again gets
-  that value you want.
+  weight that you don't want to revisit some "Done" cards. Though often enough
+  chiseling away at a problem again and again gets that innovation you want.
 
 * Client requests for a Roadmap - this essentially leads to reluctance to make
-  changes down the road. Client needs to participate better and perhaps learn
-  from the business analyst how to report and convey value creation without the
-  typical Roadmap.
+  changes down the road. Client must participate in the agile process and
+  perhaps learn from the business analyst how to report and convey value
+  creation without the typical Roadmap.
 
 * Launch 🚀 but no "landings" - teams often celebrate launches, or worse they
   just develop in silos without any connection to the real user of the
   software. Real software iterates on real users and often the client is the
   user and I often feel that can go wrong because they are second guessing
-  their users demands.
+  their users demands. Tell tale sign of some disconnect is when there is no
+  clear feedback channel.
 
 # Conclusion
 
 Science is about critical thinking and I want to apply that to Agile Software
-Development. My fear as a consultant is that we are walking this odd tightrope
-between having structure and process, but having the honesty and bravery to
-challenge these structures can be overlooked. I don't want to fool myself, so I
-want to remind myself to be wary.
+Development. My fear as a consultant is walking a tightrope of having structure
+and process, without having the bravery or openness to test these rituals.
+I don't want to fool myself, and deliver [Emperor's New
+Clothes](https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes).
