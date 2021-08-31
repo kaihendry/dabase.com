@@ -12,7 +12,9 @@ The "waterfall" or "mini-waterfall".
 
 Characterised by stressing deadlines and deliverables. I think it makes sense
 in non-creative pursuits. I.e. waterfall makes sense when you are rolling out a
-shrink wrapped solution like Google Workspaces in a fixed time frame.
+shrink wrapped solution like $softwareProduct in a fixed time frame.
+
+Perhaps you should call yourself a system integrator?
 
 # Agile, aka embracing change
 
@@ -83,8 +85,10 @@ delivery iterations that can be quite stressful when things go wrong.
 
 Science is about critical thinking and I want to apply that to Agile Software
 Development. My fear as a consultant is walking a tightrope of having structure
-and process, without having the bravery or openness to test these rituals.  I
+and process, without having the bravery or openness to test the dogma.  I
 don't want to fool myself, and deliver [Emperor's New
-Clothes](https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes). 
+Clothes](https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes).
 
-Agile works when it doesn't go wrong.
+For me, _agile works wonders_ when it doesn't go wrong. If you think of better
+points or points I got wrong or overstated, do please let me know. The blog is
+very much open to change!
