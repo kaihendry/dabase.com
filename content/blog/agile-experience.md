@@ -32,7 +32,8 @@ delivery iterations that can be quite stressful when things go wrong.
 ## When does "agile" go wrong <abbr title="in my opinion">imo</abbr>?
 
 * Team has to be incredibly strong, cohesive and cross functional (not overly
-  hierarchical). When it's not, things go wrong.
+  hierarchical). When it's not, things go wrong because it will be difficult to
+  align and deliver being human and all.
 
 * Adopting ceremonies (aka meetings / bureaucracy) that might not make sense -
   there is a weird cottage industry around "agile". A lot of "middle managers"
@@ -41,7 +42,8 @@ delivery iterations that can be quite stressful when things go wrong.
   might have eclipsed it. For example Jira is often used because it what middle
   managers know.  However it's awfully slow and feel like a crutch compared to
   other tools like Github Issues (which is a better tool imo at the time of
-  writing). Some tools suck.
+  writing). Some ideas, tools and rituals suck, and it can daunting to
+  challenge them, especially when mandated by the client.
 
 * Poor prioritisation and alignment of the backlog - often this has to do with
   a poor vision or product management in my experience. It needs an incredible
@@ -57,7 +59,7 @@ delivery iterations that can be quite stressful when things go wrong.
   should not be gate keepers, otherwise things can go wrong.
 
 * Good pairing is pretty exhausting remotely with tools like Zoom with bad
-  networks / audio. They often go wrong with no initiative to address them.
+  networks / audio. They often go wrong, lacking initiative to address them.
 
 * Failure to revisit some ideas - Acceptance Criteria I feel can be so heavy
   weight that you don't want to revisit some "Done" cards. Though often enough
