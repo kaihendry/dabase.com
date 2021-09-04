@@ -4,6 +4,8 @@ date: 2021-09-04
 description: Two way binding wanted
 ---
 
+Since I'm stuck, I've asked [Stack Overflow](https://stackoverflow.com/questions/69056242/model-url-parameter-in-vuejs) 😬
+
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
