@@ -57,6 +57,10 @@ windows or terminals?
 
 ## Keyboard
 
+Numpad doesn't work in Linux.
+
+https://www.reddit.com/r/logitech/comments/pfnlwt/mx_keys_for_archlinux/
+
 ## Xlayoutdisplay
 
 	(ins)[hendry@t14s dabase.com]$ xlayoutdisplay
@@ -121,3 +125,19 @@ windows or terminals?
 	HandleLidSwitchExternalPower=ignore
 	HandleLidSwitchDocked=ignore
 	LidSwitchIgnoreInhibited=yes
+
+## Barrier
+
+### MacOS the server
+
+Due to MacOS secure keyboard, the [keyboard is not
+shared](https://github.com/debauchee/barrier/issues/393) to my Archlinux
+machine intermittedly. This makes running barrier on MacOS unworkable.
+
+## Archlinux as the barrier server
+
+I can feel the lag from to time.
+
+Copy and paste for images does not work
+
+Clipboard does feel a bit cripped, like I can't see to paste without formatting.
