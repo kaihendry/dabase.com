@@ -28,3 +28,15 @@ to replace the convenient PS4 attached to the TV nor the Ipad.
 
 It feels a little insane to create an Apple ID for my five year old, let alone
 a Microsoft account.
+
+# Family permissions
+
+<img src="https://s.natalian.org/2021-09-18/xbox-family.png">
+
+Setting up a Microsoft account for a child is an ordeal. It get super complex
+because you need to add your childs account to your family and then once they
+are added you need to find the right permission to allow them to play a LAN
+game of Minecraft.
+
+Essentially by allowing them to play local games, AFAICT you are enabling to
+play **any game**, **online**, which as a parent, I really do not want.
