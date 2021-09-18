@@ -40,3 +40,12 @@ game of Minecraft.
 
 Essentially by allowing them to play local games, AFAICT you are enabling to
 play **any game**, **online**, which as a parent, I really do not want.
+
+# Gamertag
+
+<img src="https://s.natalian.org/2021-09-18/gamertag.jpeg">
+
+Assuming you have the Microsoft account's permissions setup, then you need to
+explicitly "Add Friend" between your family members on Minecraft.
+
+What a nightmare.
