@@ -1,7 +1,7 @@
 ---
 title: Kids Authenticate to Microsoft
 date: 2021-09-18T17:24:16+08:00
-description: LAN gaming is corrupt
+description: LAN gaming is corrupt on Minecraft
 ---
 
 LAN gaming with my kids upon Minecraft has been like a death by a thousand
@@ -19,12 +19,12 @@ device."
 
 It's extra painful when each client has further requirements:
 
-* <abbr title="PlayStation 4">PS4</abbr> client requires an account and a **PlayStation Plus** subscription AND me to purchase Minecraft
-* Our other client is the iPad, which of course requires an Apple account and a [purchase of Minecraft](https://apps.apple.com/us/app/minecraft/id479516143) which is shared via my family account from my account to my son's Apple ID
+* <abbr title="PlayStation 4">PS4</abbr> client requires an account and a **PlayStation Plus** subscription AND me to purchase Minecraft (again)
+* Our other client is the iPad, which of course requires an Apple account and a [purchase of Minecraft](https://apps.apple.com/us/app/minecraft/id479516143) (again) which is shared via my Apple family account from my account to my son's Apple ID
 
-I wonder if it's the same nonsense on the Java client. Though I doubt we
-realistically switch since I don't know how to replace the PS4 attached to the
-TV nor the Ipad.
+I wonder if it's the same nonsense on the Minecraft Java client (which I've
+also paid for). Though I doubt we realistically switch since I don't know how
+to replace the convenient PS4 attached to the TV nor the Ipad.
 
 It feels a little insane to create an Apple ID for my five year old, let alone
 a Microsoft account.
