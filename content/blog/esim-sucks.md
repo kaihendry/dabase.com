@@ -7,8 +7,8 @@ description: eSIM appears to make life more difficult
 On the morning of 26 August I found my phone inoperable. A black brick. Would
 not respond. Could not reset.
 
-I quickly arranged for a **Genius Bar Work Confirmation** at Apple Jewel Changi
-Airport, later in the day.
+I quickly arranged for the soonest **Genius Bar Work Confirmation** at Apple
+Jewel Changi Airport, about five hours later from discovering my dead phone.
 
 Not having a working phone is pretty disorientating, especially when I am
 reliant on [Authy](https://apps.apple.com/us/app/twilio-authy/id494168017)
