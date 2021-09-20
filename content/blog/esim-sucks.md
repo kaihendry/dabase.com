@@ -26,7 +26,10 @@ case.
 
 # Apple repair
 
-I'm always surprised how it takes them so long to debug the phone is dead.
+I'm always surprised how long the repair process takes at Apple. You would
+think it would be smoother, right?  Having no phone (or token) at the Airport
+meant that I couldn't lunch or do anything practically. I basically sat and
+stared at the Rain Vortex for three hours.
 
 ## Problem Description/Diagnosis
 
