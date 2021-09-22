@@ -72,6 +72,17 @@ And now the worst part. Despite having my phone "repaired", I had two issues:
 1. It would take an entire day to conduct the restore process from iCloud
 2. I had no mobile connectivity
 
+## Digital tokens lost
+
+I always find it curious which apps do not transfer well across the iCloud
+backup. For example these apps had to be re-setup from scratch:
+
+* wallet
+* dbs
+* ibkr
+
+Why?
+
 # Reprovisioing eSIM to a bricked device
 
 Neither Apple staff, nor M1 Singapore seemed to know how to get my repaired
