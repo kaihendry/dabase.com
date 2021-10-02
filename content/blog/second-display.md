@@ -114,8 +114,10 @@ https://www.reddit.com/r/logitech/comments/pfnlwt/mx_keys_for_archlinux/
 
 ## Tearing
 
+Not sure why I have to run `xrandr --output DisplayPort-0 --set TearFree on`,
+but it seems to help.
 
-## whatever
+## SystemD interface for controlling Power options
 
 	(ins)[hendry@t14s ~]$ grep -v "#" /etc/systemd/logind.conf
 
