@@ -14,9 +14,9 @@ description: A way of working
 
 # Showcase
 
-Record a **one minute screencast** to demonstrate the "Done" card. Make sure it
-is [encoded as an MP4 with
-ffmpeg](https://s.natalian.org/2021-10-05/htmlvideo.txt) and at a well known
+[Record a **one minute screencast**](https://support.apple.com/en-us/HT208721)
+to demonstrate the "Done" card. Make sure it is [encoded as an MP4 with
+ffmpeg](https://s.natalian.org/2021-10-05/htmlvideo.txt) upon a well known
 location for sharing.
 
 Showcase **live** to ensure a fluid interation with stakeholders, and only
