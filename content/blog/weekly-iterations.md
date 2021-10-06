@@ -16,18 +16,18 @@ description: A way of working
 
 > FYI: Sometimes, you might combine a Monday session (Planning / Estimation) into
 > a Showcase session to minimize the number of meetings.  Showcase first then
-> talked about Planning after, .. did it because our PO was very busy.
+> talked about Planning after, .. because our PO was very busy.
 
-Be concious of everyone's time and energy. Be concious of [bike
-shedding](https://en.wikipedia.org/wiki/Law_of_triviality) and the value of
-time.  1+hr meetings are HARD! The chairperson, typically the person wearing
-the <abbr title="Business Analyst">BA</abbr> hat, needs to carefully allocate
-time to each ceremony.  Ideally **all participants are prepared in advance**,
-i.e. read through the cards at play **in advance**. Demos prepared **in
-advance**.  Questions asked **in advance**.
+**Respect everyone's time and energy during a synchronous meeting**. Be aware
+of [bike shedding](https://en.wikipedia.org/wiki/Law_of_triviality) and the
+value of time.  1+hr meetings are HARD! The chairperson, typically the person
+wearing the <abbr title="Business Analyst">BA</abbr> hat, needs to carefully
+allocate time to each ceremony.  Ideally **all participants are prepared in
+advance**, i.e. read through the cards at play **in advance**.  Demos prepared
+**in advance**.  Questions asked **in advance**.
 
 For a remote meeting, ensure you have [wired internet and a good
-microphone](https://dabase.com/blog/2020/av-tips/).
+microphone](https://dabase.com/blog/2020/av-tips/) like the https://www.rode.com/microphones/lavaliergo.
 
 # Showcase
 
