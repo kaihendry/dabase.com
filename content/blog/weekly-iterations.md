@@ -12,6 +12,23 @@ description: A way of working
 	* Morning: Backlog refinement - talk about backlog priority and add any missing item if needed
 	* Afternoon: Showcase, Retrospective
 
+## Meetings can be merged
+
+> FYI: Sometimes, you might combine a Monday session (Planning / Estimation) into
+> a Showcase session to minimize the number of meetings.  Showcase first then
+> talked about Planning after, .. did it because our PO was very busy.
+
+Be concious of everyone's time and energy. Be concious of [bike
+shedding](https://en.wikipedia.org/wiki/Law_of_triviality) and the value of
+time.  1+hr meetings are HARD! The chairperson, typically the person wearing
+the <abbr title="Business Analyst">BA</abbr> hat, needs to carefully allocate
+time to each ceremony.  Ideally **all participants are prepared in advance**,
+i.e. read through the cards at play **in advance**. Demos prepared **in
+advance**.  Questions asked **in advance**.
+
+For a remote meeting, ensure you have [wired internet and a good
+microphone](https://dabase.com/blog/2020/av-tips/).
+
 # Showcase
 
 [Record a **one minute screencast**](https://support.apple.com/en-us/HT208721)
@@ -19,13 +36,13 @@ to demonstrate the "Done" card. Make sure it is [encoded as an MP4 with
 ffmpeg](https://s.natalian.org/2021-10-05/htmlvideo.txt) upon a well known
 location for sharing.
 
-Showcase **live** to ensure a fluid interation with stakeholders, and only
+Showcase **live** to ensure interaction with stakeholders, and only
 fallback to the screencast if something goes wrong or you want to **share
 wider** with people who did not attend.
 
 # Retrospective
 
-Read out:
+Read out **the Prime Directive**:
 
 >	Regardless of what we discover, we must understand and truly believe that
 >	everyone did the best job they could, given what they knew at the time,
@@ -33,5 +50,5 @@ Read out:
 >	hand.
 
 * Ensure team members are comfortable sharing - consider private time
-* Objective: honest feedback to drive improvements
+* Objective: honest positive feedback to drive improvements
 * Ideally <abbr title="Product Owner">PO</abbr> participates

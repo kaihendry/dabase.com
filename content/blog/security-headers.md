@@ -10,10 +10,26 @@ description: Bug bounty scams
 
 Dubious sites like "securityheaders.com" will give you a big fat F without a whole bunch of headers.
 
+# Plot twist
+
+## Assuming API endpoint of native app
+
+> My favourite thing is when penetration testers or security scanners complain
+> about missing headers like CSP on backend API endpoints that are never called
+> a browser.
+
+https://twitter.com/ineffyble
+
+* Strict-Transport-Security - not relevant; https hard coded
+* Content-Security-Policy - not relevant, **client not a browser**
+* X-Frame-Options - not relevant, **client not a browser**
+* X-Content-Type-Options - not relevant, **client not a browser**
+* Referrer-Policy - not relevant, **client not a browser**
+* Permissions-Policy - not relevant, **client not a browser**
+
 # Adding headers on AWS
 
-tl;dr a PITA
-
+tl;dr a PITA -- from AWS Support
 
 Addition of custom response headers is not a native feature built into
 CloudFront at this time, which means that you need to rely on a feature or
@@ -31,10 +47,7 @@ accepted function signature[2], please review the documentation links and
 examples[3] for more information. Pricing information is available on the main
 pricing page[4].
 
-Please let me know if you have any further questions and I'll be happy to
-assist you.
-
-[1] https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/functions-event-structure.html 
-[2] https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/writing-function-code.html 
-[3] https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/functions-example-code.html 
-[4] https://aws.amazon.com/cloudfront/pricing/#CloudFront_Functions_Pricing_Details
+1. https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/functions-event-structure.html
+2. https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/writing-function-code.html
+3. https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/functions-example-code.html
+4. https://aws.amazon.com/cloudfront/pricing/#CloudFront_Functions_Pricing_Details
