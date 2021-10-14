@@ -6,7 +6,7 @@ description: What is the best way to manage node JS security issues?
 
 I'm new to supporting a complex production nodejs project.
 
-My gut feeling was to employ packages management tools like:
+My gut feeling was to employ package management tools like:
 
 * npm audit
 * npx depcheck
@@ -19,4 +19,9 @@ Most of the time they feel like false alerts.
 
 So now what?
 
-Ensure every package is updated to keep a better security posture?
+Ensure every package is updated to keep a better security posture? That's an
+endless treadmill.
+
+There are [plenty of
+tools](https://github.com/lirantal/awesome-nodejs-security), though I am
+missing a good **conservative philosophy**.
