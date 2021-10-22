@@ -1,7 +1,7 @@
 ---
 title: Identifiers
 date: 2021-10-22T13:50:30+08:00
-description: There are alternatives UUID
+description: There are alternatives to UUID
 ---
 
 A modern computer has the ability to express a 64bit number natively.
@@ -17,10 +17,9 @@ range to uniquely identify all the items you are dealing with.
 Though how do you express a very large number compactly and in a way a
 human can understand?
 
-For example Youtube uses 11 characters of base64:
-
-	$ python -c "print (64**11)"
-	73786976294838206464
+For example Youtube uses 11 characters of base64. How many base64 characters
+would it require to express a 2^64 number? 2^6^x = 2^64 .. so x = 64/6 =
+10.666666666 ... i.e. eleven rounded up.
 
 	$ for i in {1..3}; do head -c9 /dev/urandom | base64 | tr '+/' '_-'; done
 	fFwtamv4YJXP
@@ -29,10 +28,11 @@ For example Youtube uses 11 characters of base64:
 
 https://youtu.be/gocwRvLhDf8?t=85
 
-[UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) is **128 bit**,
-i.e. 2^128-1 and whilst the probability that a UUID will be duplicated is not
-zero, it is close enough to zero to be negligible.
-
+[UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) is **128
+bit**, i.e. 2^128-1 and whilst the probability that a UUID will be duplicated
+is not zero, it is close enough to zero to be negligible. However it's opaque,
+generic and 64 bit is more than enough. For better identfiers look at
+https://github.com/ulid/spec
 
 {{< tweet 1450302244134420482 >}}
 
@@ -40,4 +40,3 @@ zero, it is close enough to zero to be negligible.
 
 {{< tweet 1450850328610365446 >}}
 
-https://github.com/ulid/spec
