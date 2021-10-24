@@ -139,18 +139,18 @@ that person pays, in which case it becomes active and moves to
 	mailpost();
 	?>
 
-After looking at 10+ year old code (still in use), I must say I write
+After looking this ten year old code (still in use), I must say I write
 professional code pretty much the same way my whole career:
 
 1. [Always be logging](https://youtu.be/YlrwDN7_vHw)
 2. Use a case / switch statement to explain the actions you are taking (or not)
 
-My first payment integration was less than ~150 LOC.
+My first payment integration was less than ~150 <abbr title="Lines of Code">LOC</abbr>.
 
 # Conclusion
 
 As I mention in my [2015 Payment methods
-comparison](https://youtu.be/uJI0WxXTvTw?t=62), Paypal was my favourite and
+comparison](https://youtu.be/uJI0WxXTvTw?t=62), Paypal **was my favourite** and
 first "payments integration". That said, Paypal did make this this "IPN" style
 really hard / confusing in ~2010+. For example I could swear there was a
 **period of years** where the <abbr title="Instant Payment
@@ -160,4 +160,4 @@ site as they were pushing their Braintree acquisition (I assume).
 Fast forward to 2021 and for new Payment integrations I would reach for Stripe
 with https://useshoppingcart.com/ as I did with
 https://github.com/kaihendry/shopfront. You can see I [much prefer
-static](https://youtu.be/9TkttbV0Ydg) checkout flows instead of dynamic ones.
+simple static](https://youtu.be/9TkttbV0Ydg) checkout flows instead of dynamic ones.
