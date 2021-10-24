@@ -8,7 +8,7 @@ After watching @[coolaj86](https://twitter.com/coolaj86)'s
 [streams](https://youtu.be/2JjHmUSjuB0) for learning Javascript (again) AND
 entertainment, I can't help recall my fairly painless Paypal experience.
 
-Taking [people's money in 2007](https://webconverger.org/acknowledgements/) seemed painless to what AJ is experiencing. 🤣
+Allow me to show you how I took [people's money in 2007](https://webconverger.org/acknowledgements/).
 
 # How a payment is made
 
@@ -37,10 +37,10 @@ It's just HTML!
 In my checkout page I include some PHP where I am careful to set amount / order
 number. When that **form is submitted** the customer is then on the Paypal site
 entering their credit card or rather Paypal is forcing them to open a Paypal
-account.
+account (they changed their flows and UI over the years).
 
-Anyway from my perspective, I had to now wait for a HTTP request (Web hook) from
-Paypal to know whether the payment has gone through.
+Anyway from my perspective, I had to now **wait for a HTTP request** (Web hook)
+from Paypal to know whether the payment had gone through.
 
 # How the Web hook works
 
@@ -48,8 +48,10 @@ Paypal called this the
 [IPN](https://developer.paypal.com/docs/api-basics/notifications/ipn/) and this
 is my PHP implementation, notice it simply uses **files instead of a database**.
 
-For example when a user signs up, the configuration is in "tmp", until that
-person pays, in which case it becomes active and moves to "install-config".
+For example when a user signs up [on my
+site](https://config.webconverger.com/), the configuration is in "tmp", until
+that person pays, in which case it becomes active and moves to
+"install-config".
 
 	<?php
 	include 'email.php';
@@ -137,11 +139,13 @@ person pays, in which case it becomes active and moves to "install-config".
 	mailpost();
 	?>
 
-After looking at 10+ year old code (still in use), I must say I wrote code
-pretty much the same way my whole career:
+After looking at 10+ year old code (still in use), I must say I write
+professional code pretty much the same way my whole career:
 
-1. Always be logging
+1. [Always be logging](https://youtu.be/YlrwDN7_vHw)
 2. Use a case / switch statement to explain the actions you are taking (or not)
+
+My first payment integration was less than ~150 LOC.
 
 # Conclusion
 
@@ -150,8 +154,8 @@ comparison](https://youtu.be/uJI0WxXTvTw?t=62), Paypal was my favourite and
 first "payments integration". That said, Paypal did make this this "IPN" style
 really hard / confusing in ~2010+. For example I could swear there was a
 **period of years** where the <abbr title="Instant Payment
-Notification">IPN</abbr> documentation could not be found on the Paypal site as
-they were pushing their Braintree acquisition (I assume).
+Notification">IPN</abbr> documentation could not be found at all on the Paypal
+site as they were pushing their Braintree acquisition (I assume).
 
 Fast forward to 2021 and for new Payment integrations I would reach for Stripe
 with https://useshoppingcart.com/ as I did with
