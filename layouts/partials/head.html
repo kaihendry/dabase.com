@@ -12,6 +12,21 @@
 <meta name="twitter:creator" content="@kaihendry">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
 <link rel="stylesheet" href="https://newcss.net/theme/night.css">
+<style>
+/* https://www.youtube.com/shorts/_1vEGYWaaQY */
+a {
+  text-decoration: none;
+  background-image: linear-gradient(red, red);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 500ms ease-in-out;
+}
+
+a:hover {
+  background-size: 100% 3px;
+}
+</style>
 {{ template "_internal/google_analytics_async.html" . }}
 {{ range .AlternativeOutputFormats -}}
 {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
