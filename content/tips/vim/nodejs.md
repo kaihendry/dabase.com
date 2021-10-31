@@ -116,6 +116,7 @@ But it doesn't seem to work on <abbr title="Cloud Development Kit">CDK</abbr>. N
 
 * Doesn't show runtime is missing
 * No auto imports
+* Don't actually understand how I should get format on save working. Do I need a eslintrc in https://github.com/kaihendry/sam-cdk-app-demo ??
 
 😩
 
