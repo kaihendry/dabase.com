@@ -1,7 +1,7 @@
 ---
 date: 2021-10-31
 title: Editing Javascript in vim in Docker
-description: Can vim + myriad of plugins actually functionally beat code?
+description: Can neovim + plugins actually functionally beat Visual Studio code?
 ---
 
 I'm spoilt by [vim-go](https://github.com/fatih/vim-go), goformat, goimports, a
@@ -24,7 +24,7 @@ Add a poorly formatted console.log, will it get reformatted on save?
 ## Intellisense
 
 Remove **runtime:** from the `lambda.Function` constructor. Is the editor (or
-integrated language server) smart enough to auto complete / suggest that
+integrated language server) [smart enough to auto complete](https://s.natalian.org/2021-10-28/link-to-doc.mp4) / suggest that
 **runtime** is mandatory and needs to put back?
 
 Next test: Setup a dynamodb table. Can the editor automatically import
@@ -68,11 +68,11 @@ Now adding:
 
 I give it 2/5 rating. It's probably coc-tsserver mostly at fault or probably me.
 
-# [iimuz/nvim-code](https://github.com/iimuz/dockerfile/blob/master/nvim-node/Dockerfile)
+## [iimuz/nvim-code](https://github.com/iimuz/dockerfile/blob/master/nvim-node/Dockerfile)
 
 Seems to be hinged on neovim 0.4x. Moving on..
 
-# [jcirizar/vim](https://github.com/jcirizar/vim)
+## [jcirizar/vim](https://github.com/jcirizar/vim)
 
 First to warn me:
 
@@ -90,12 +90,37 @@ Fails to build:
 
 <img src="https://s.natalian.org/2021-10-31/1635649547_1918x1047.png" alt="/bin/sh: pip3: not found">
 
-# [thled/docker-vim-ts](https://github.com/thled/docker-vim-ts)
+## [thled/docker-vim-ts](https://github.com/thled/docker-vim-ts)
 
 A different sort of python build error!
 
 <img src="https://s.natalian.org/2021-10-31/1635649757_1918x1047.png" alt="gcc: fatal error: cannot execute 'cc1plus': execvp: No such file or directory">
 
-# [protometa/editor](https://github.com/protometa/editor)
+## [protometa/editor](https://github.com/protometa/editor)
 
 Could not get it to open `lib/aws-sam-cli-cdk-hello-world-stack.js`
+
+## [hendry/js-nvim](https://github.com/kaihendry/js-nvim)
+
+This is my project for my own sanity checking with <abbr title="Conquer of Completion">CoC</abbr>!
+
+Auto complete on `console.` is sensible:
+
+<img src="https://s.natalian.org/2021-10-31/1635659600_1918x1047.png">
+
+Docs are OK
+
+<img src="https://s.natalian.org/2021-10-31/docs.png">
+
+But it doesn't seem to work on <abbr title="Cloud Development Kit">CDK</abbr>. No docs.
+
+* Doesn't show runtime is missing
+* No auto imports
+
+😩
+
+# Conclusion
+
+I hear mentions of "nvim-compe", but [no Docker images with it](https://github.com/search?q=%22nvim-compe%22+filename%3ADockerfile&ref=simplesearch). I'm curious about not using coc-tsserver, but again I don't see any good examples of [neovim/nvim-lspconfig](https://github.com/search?q=neovim%2Fnvim-lspconfig+filename%3ADockerfile&ref=simplesearch) with javascript/typescript. Bizaare.
+
+https://github.com/neoclide/coc-tsserver appears the critical component and I fear I need a coc-settings.json to get the most out of it, since it doesn't show properties I'm missing on my constructors or seemingly able to do imports automatically.
