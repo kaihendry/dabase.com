@@ -114,8 +114,8 @@ Docs are OK
 
 But it doesn't seem to work on <abbr title="Cloud Development Kit">CDK</abbr>. No docs.
 
-* Doesn't show runtime is missing
-* No auto imports
+* Doesn't show runtime: is missing, if I [remove it from `new lambda.Function`](https://github.com/kaihendry/sam-cdk-app-demo/blob/8f27ea12a30c0a8b13f7eedd49b065b8c8478a58/lib/aws-sam-cli-cdk-hello-world-stack.js#L12)
+* No auto imports -- do I need a [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig) ??
 * Don't actually understand how I should get format on save working. Do I need a eslintrc in https://github.com/kaihendry/sam-cdk-app-demo ??
 
 😩
