@@ -124,4 +124,7 @@ But it doesn't seem to work on <abbr title="Cloud Development Kit">CDK</abbr>. N
 
 I hear mentions of "nvim-compe", but [no Docker images with it](https://github.com/search?q=%22nvim-compe%22+filename%3ADockerfile&ref=simplesearch). I'm curious about not using coc-tsserver, but again I don't see any good examples of [neovim/nvim-lspconfig](https://github.com/search?q=neovim%2Fnvim-lspconfig+filename%3ADockerfile&ref=simplesearch) with javascript/typescript. Bizaare.
 
-https://github.com/neoclide/coc-tsserver appears the critical component and I fear I need a coc-settings.json to get the most out of it, since it doesn't show properties I'm missing on my constructors or seemingly able to do imports automatically.
+https://github.com/neoclide/coc-tsserver appears the critical component and I
+fear I need a coc-settings.json or jsconfig.json or .eslintrc to get the most
+out of it, since it doesn't show properties I'm missing on my constructors or
+seemingly able to do imports automatically.
