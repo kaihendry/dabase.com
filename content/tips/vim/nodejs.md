@@ -13,6 +13,8 @@ Development Kit](https://youtu.be/Du0l6z3dMVc) I want the same features in vim!
 
 # The test
 
+UPDATE: This test assumes Javascript, and for proper completion [typescript types](https://github.com/kaihendry/dabase.com/commit/7173d4ece54a6cfc76b30cfb8b8db8945d45cbaa#commitcomment-58991530) is more pragmatic.
+
 	git clone https://github.com/kaihendry/sam-cdk-app-demo.git
 
 Open lib/aws-sam-cli-cdk-hello-world-stack.js
@@ -100,6 +102,14 @@ A different sort of python build error!
 
 Could not get it to open `lib/aws-sam-cli-cdk-hello-world-stack.js`
 
+## [quay.io/nvim-lsp/try.nvim:nightly-typescript](https://github.com/kaihendry/dabase.com/commit/7173d4ece54a6cfc76b30cfb8b8db8945d45cbaa#commitcomment-58995093)
+
+[mjlbach](https://github.com/mjlbach) put me onto his LUA based neovim configuration: <https://github.com/nvim-lsp/try.nvim/blob/master/typescript/init.lua>
+
+I will probably switch to using https://github.com/nvim-lua/kickstart.nvim without a Docker image.
+
+**hrsh7th/nvim-cmp** is the Autocompletion plugin, not "nvim-compe" which is deprecated.
+
 ## [hendry/js-nvim](https://github.com/kaihendry/js-nvim)
 
 This is my project for my own sanity checking with <abbr title="Conquer of Completion">CoC</abbr>!
@@ -122,9 +132,19 @@ But it doesn't seem to work on <abbr title="Cloud Development Kit">CDK</abbr>. N
 
 # Conclusion
 
-I hear mentions of "nvim-compe", but [no Docker images with it](https://github.com/search?q=%22nvim-compe%22+filename%3ADockerfile&ref=simplesearch). I'm curious about not using coc-tsserver, but again I don't see any good examples of [neovim/nvim-lspconfig](https://github.com/search?q=neovim%2Fnvim-lspconfig+filename%3ADockerfile&ref=simplesearch) with javascript/typescript. Bizaare.
+I learned two things about editing Javascript with vim.
 
-https://github.com/neoclide/coc-tsserver appears the critical component and I
-fear I need a coc-settings.json or jsconfig.json or .eslintrc to get the most
-out of it, since it doesn't show properties I'm missing on my constructors or
-seemingly able to do imports automatically.
+First, for a experience comparable to the exemplary
+[vim-go](https://github.com/fatih/vim-go) you need to ensure you're actually
+working with **TypeScript Types**. This is actually non-trivial for smaller
+packages where [type definitions are
+contributed](https://github.com/DefinitelyTyped/DefinitelyTyped) by the community.
+
+Neovim departs from vim with its LUA language integration and its inbuilt
+language server `:LspInfo`. I think I will give it a try. I encourage you to
+try too:
+
+	docker run --rm -it --entrypoint=sh -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript
+
+That said, don't get <abbr title="Fear of missing out">FOMO</abbr>. Editing vim
+without this crazy configuration is actually the better place to be!
