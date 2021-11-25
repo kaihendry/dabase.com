@@ -112,6 +112,8 @@ I will probably switch to using https://github.com/nvim-lua/kickstart.nvim witho
 
 ## [hendry/js-nvim](https://github.com/kaihendry/js-nvim)
 
+UPDATE: Complete rewrite in https://github.com/kaihendry/nvim
+
 This is my project for my own sanity checking with <abbr title="Conquer of Completion">CoC</abbr>!
 
 Auto complete on `console.` is sensible:
