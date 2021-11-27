@@ -21,7 +21,7 @@ Open lib/aws-sam-cli-cdk-hello-world-stack.js
 
 ## Formatting
 
-Add a poorly formatted console.log, will it get reformatted on save?
+Add an incorrectly formatted console.log, will it get reformatted on save?
 
 ## Intellisense
 
@@ -34,8 +34,8 @@ Next test: Setup a dynamodb table. Can the editor automatically import
 
 # Dockerized neovim
 
-In order to reproduce issues with my own setup and others, I'm going to
-evaluate different neovim configurations with the help of Docker containers.
+To reproduce issues with my own setup and others, I'm going to try different
+neovim configurations with the help of Docker containers.
 
 I wouldn't realistically edit using Docker because it's far too slow to startup!!
 
@@ -68,11 +68,11 @@ Now adding:
 <img src="https://s.natalian.org/2021-10-31/chokes.png">
 <img src="https://s.natalian.org/2021-10-31/chokes2.png">
 
-I give it 2/5 rating. It's probably coc-tsserver mostly at fault or probably me.
+I give it 2/5 rating. It's probably coc-tsserver at fault or probably me.
 
 ## [iimuz/nvim-code](https://github.com/iimuz/dockerfile/blob/master/nvim-node/Dockerfile)
 
-Seems to be hinged on neovim 0.4x. Moving on..
+Seems hinged on neovim 0.4x. Moving on..
 
 ## [jcirizar/vim](https://github.com/jcirizar/vim)
 
