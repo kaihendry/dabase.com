@@ -1,19 +1,18 @@
 ---
-title: Multi Cloud Serverless
+title: Multi Cloud Serverless Cold starts
 date: 2021-11-28T12:53:06+08:00
-description: Measuring cold starts on AWS, GCP and Azure
+description: Measuring cold starts on AWS, GCP and Azure with Prometheus
 ---
 
 Continuing from [Serverless speed survey](/blog/2020/serverless-speed/), there
 is now a [new arm64 branch](https://github.com/kaihendry/count/tree/sam-arm64).
 
-Since AWS claim Arm64 (Graviton) is [cheaper and faster
-too](https://aws.amazon.com/blogs/aws/aws-lambda-functions-powered-by-aws-graviton2-processor-run-your-functions-on-arm-and-get-up-to-34-better-price-performance/),
+Since AWS claim arm64 (Graviton) is [cheaper and **faster**](https://aws.amazon.com/blogs/aws/aws-lambda-functions-powered-by-aws-graviton2-processor-run-your-functions-on-arm-and-get-up-to-34-better-price-performance/) than amd64,
 I was thinking how to test this objectively. My previous "speed survey" was
 more focused on <abbr title="Developer Exeperience">DX</abbr>, which is not
 measurable!
 
-I thought it might be fun to track cold starts using my [prometheus setup at home](https://github.com/kaihendry/pingprom).
+I thought it might be fun to test cold starts using my [prometheus setup at home](https://github.com/kaihendry/pingprom).
 
 # Measuring cold starts
 
@@ -56,7 +55,7 @@ My [home Prometheus monitor](https://github.com/kaihendry/pingprom) is configure
 			labels:
 			  cloud: azure
 
-The query to see cold starts is:
+The query to plot the cold starts is:
 
 	probe_duration_seconds{job="sls"} and probe_success{job="sls"}
 
@@ -65,9 +64,8 @@ we ignore those.
 
 # Preliminary results
 
-https://counttesting.azurewebsites.net/ is unsurprisingly slow since it's
-hosted in Hong Kong, and my <abbr title="Black box exporter">BBE</abbr> is in
-my home in Singapore.
+Azure is unsurprisingly slow since it's hosted in Hong Kong, and my <abbr
+title="Black box exporter">BBE</abbr> is in my home in Singapore.
 
 Is arm64 faster than x86_64? ... it would appear so!
 
