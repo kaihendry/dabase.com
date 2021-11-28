@@ -1,7 +1,7 @@
 ---
 title: Where is the source of AWS services?
 date: 2021-11-27
-description: What is the source from which APIs and language bindings?
+description: What is the source from which AWS APIs and language bindings are generated from?
 ---
 
 When boto updates:
@@ -15,4 +15,6 @@ Where are the original **models**?
 
 Is it the [CloudFormation resource provider schemas](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-type-schemas.html)?
 
+After a [frantic search it would appear to be an XML based **Coral** is how AWS sources a service](https://news.ycombinator.com/item?id=25238216).
 
+With the future to be https://awslabs.github.io/smithy/ ?

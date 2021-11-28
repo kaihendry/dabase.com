@@ -8,9 +8,11 @@ description: Comparing AWS, Microsoft and GCP managed compute offerings assuming
 table { word-break: initial }
 </style>
 
-I've used https://github.com/kaihendry/count to "experience" various managed
+¡[UPDATE 2021 November: Measuring serverless cold starts](/blog/2021/multi-cloud-serverless/)!
+
+I've used https://github.com/kaihendry/count to "experience" managed
 compute solutions <abbr title="also known as">aka</abbr> [Serverless
-computing](https://aws.amazon.com/serverless/). 
+computing](https://aws.amazon.com/serverless/).
 
 AWS Fargate / Elastic Beanstalk is excluded because it does **not scale to
 zero** since it requires an underlying compute cluster which you pay hourly
@@ -51,7 +53,7 @@ for.
 <td><a href="https://sam.goserverless.sg/">AWS SG</a></td>
 <td><a href="https://asia-east2-idiotbox.cloudfunctions.net/Countpage">GCP HK</a></td>
 <td><a href="https://count.dabase.com/">GCP SG</a></td>
-<td><a href="https://counttesting.azurewebsites.net/">Azure SG</a></td>
+<td><a href="https://counttesting.azurewebsites.net/">Azure HK</a></td>
 </tr>
 <tr>
 <td>Iteration speed</td>
