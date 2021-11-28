@@ -1,5 +1,5 @@
 ---
-title: Serverless Speed Survey
+title: Serverless "Iteration Speed" Survey
 date: 2020-12-20T18:13:47+08:00
 description: Comparing AWS, Microsoft and GCP managed compute offerings assuming an HTTP endpoint
 ---
@@ -10,7 +10,7 @@ table { word-break: initial }
 
 ¡[UPDATE 2021 November: Measuring serverless cold starts](/blog/2021/multi-cloud-serverless/)!
 
-I've used https://github.com/kaihendry/count to "experience" managed
+I've used https://github.com/kaihendry/count to <abbr title="Developer Experience">SX</abbr> managed
 compute solutions <abbr title="also known as">aka</abbr> [Serverless
 computing](https://aws.amazon.com/serverless/).
 
