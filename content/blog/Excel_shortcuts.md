@@ -30,16 +30,16 @@ kbd:hover {
 
 Inspired by [@edent's blog](https://shkspr.mobi/blog/2020/05/better-keyboard-buttons-in-html/) and ... a [Tiktok series by @acouplecents](https://www.tiktok.com/@acouplecents)'s [1](https://www.tiktok.com/@acouplecents/video/6819380884333006086) [2](https://www.tiktok.com/@acouplecents/video/6821158756852813062) [3](https://www.tiktok.com/@acouplecents/video/6827655218629463301) [4](https://www.tiktok.com/@acouplecents/video/6827903955343887622) short videos.
 
-* <kbd>Ctrl</kbd>+<kbd>&larr;</kbd>/<kbd>&rarr;</kbd> move around a spread sheet quickly
-* <kbd>Esc</kbd> / <kbd>F2</kbd> -- Toggle between editing, like <kbd>Esc</kbd> works in [vim](https://www.vim.org/)
-* <kbd>⇪</kbd>+<kbd>Space</kbd> -- Highlight row
-* <kbd>Ctrl</kbd>+<kbd>Space</kbd> -- Highlight column
-* <kbd>Ctrl</kbd>+<kbd>⇪</kbd>+<kbd>+</kbd> -- Inserts row or column depending on context
-* <kbd>Ctrl</kbd>+<kbd>-</kbd> -- Deletes row or column
-* <kbd>Ctrl</kbd>+<kbd>PgUp</kbd>/ <kbd>PgDn</kbd> -- Move between sheets
-* <kbd>Ctrl</kbd>+<kbd>r</kbd> -- when highlighting cells to right, copy to right
-* <kbd>Ctrl</kbd>+<kbd>d</kbd> -- copy down
-* <kbd>Alt</kbd>+<kbd>=</kbd> -- Sum up something
+- <kbd>Ctrl</kbd>+<kbd>&larr;</kbd>/<kbd>&rarr;</kbd> move around a spread sheet quickly
+- <kbd>Esc</kbd> / <kbd>F2</kbd> -- Toggle between editing, like <kbd>Esc</kbd> works in [vim](https://www.vim.org/)
+- <kbd>⇪</kbd>+<kbd>Space</kbd> -- Highlight row
+- <kbd>Ctrl</kbd>+<kbd>Space</kbd> -- Highlight column
+- <kbd>Ctrl</kbd>+<kbd>⇪</kbd>+<kbd>+</kbd> -- Inserts row or column depending on context
+- <kbd>Ctrl</kbd>+<kbd>-</kbd> -- Deletes row or column
+- <kbd>Ctrl</kbd>+<kbd>PgUp</kbd>/ <kbd>PgDn</kbd> -- Move between sheets
+- <kbd>Ctrl</kbd>+<kbd>r</kbd> -- when highlighting cells to right, copy to right
+- <kbd>Ctrl</kbd>+<kbd>d</kbd> -- copy down
+- <kbd>Alt</kbd>+<kbd>=</kbd> -- Sum up something
 
 Here is the authoritative [list of shortcuts for Microsoft Excel](https://support.office.com/en-us/article/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f), but they don't highlight the productive ones.
 
@@ -69,18 +69,18 @@ rather awesome.
 
 # History.. or lack there of
 
-{{< tweet 1280425274669064192 >}}
+{{< tweet user="kaihendry" id="1280425274669064192" >}}
 
 Like all Microsoft products I've seen, the [history of the
 document](https://s.natalian.org/2020-06-04/diff-excel.mp4) is awful to work
-with. One is left having to manage different files and copies, and oh gosh,
-what a nightmare! **Google Sheets** is better in this regard.
+with. Managing different files and copies is a nightmare! **Google Sheets**
+is fantastic to track changes.
 
 [Reddit's /r/excel has no real answer to this either](https://www.reddit.com/r/excel/comments/gwvpgc/excel_version_history_appears_unusable_is_there_a/fsyctrx/)..
 
 # Convert Megabyte into Gigabyte
 
-	=CONVERT(65536,"Mibyte","Gibyte")
+    =CONVERT(65536,"Mibyte","Gibyte")
 
 Credit to this [answer](https://techcommunity.microsoft.com/t5/excel/convert-column-of-mb-to-gb/m-p/1505013/highlight/true#M67749).
 

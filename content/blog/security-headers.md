@@ -6,7 +6,7 @@ description: Bug bounty scams
 
 <img src="https://s.natalian.org/2021-10-05/fail.png" alt="failed at pollution">
 
-{{< tweet "1445240044491476996" >}}
+{{< tweet user="kaihendry" id="1445240044491476996" >}}
 
 Dubious sites like "securityheaders.com" will give you a big fat F without a whole bunch of headers.
 
@@ -20,21 +20,21 @@ Dubious sites like "securityheaders.com" will give you a big fat F without a who
 
 https://twitter.com/ineffyble
 
-* Strict-Transport-Security - not relevant; https hard coded
-* Content-Security-Policy - not relevant, **client not a browser**
-* X-Frame-Options - not relevant, **client not a browser**
-* X-Content-Type-Options - not relevant, **client not a browser**
-* Referrer-Policy - not relevant, **client not a browser**
-* Permissions-Policy - not relevant, **client not a browser**
+- Strict-Transport-Security - not relevant; https hard coded
+- Content-Security-Policy - not relevant, **client not a browser**
+- X-Frame-Options - not relevant, **client not a browser**
+- X-Content-Type-Options - not relevant, **client not a browser**
+- Referrer-Policy - not relevant, **client not a browser**
+- Permissions-Policy - not relevant, **client not a browser**
 
 # Adding headers on AWS
 
 tl;dr a PITA -- from AWS Support
 
-Addition of custom response headers is not a native feature built into
-CloudFront at this time, which means that you need to rely on a feature or
-service that allows arbitrary modifications to responses. Currently, this is
-only allowed by Lambda@edge or CloudFront functions.
+Custom response headers is not a native feature built into CloudFront at the
+time writing, which means that you need to rely on a feature or service that
+allows arbitrary modifications to responses. Currently, this is only allowed by
+Lambda@edge or CloudFront functions.
 
 The latter is a recently introduced alternative to Lambda@edge with lower
 pricing that allows basic transformations to your requests or responses using

@@ -63,7 +63,7 @@ Strengths:
 
 Weaknesses:
 
-{{< tweet 1379620502361137154 >}}
+{{< tweet user="kaihendry" id="1379620502361137154" >}}
 
 - Scarcity hiring Go developers
 - Not as mature as the Java ecosystem
@@ -76,4 +76,4 @@ experience, unlike Java which has many crufty corners and is quite a painful
 developer experience. Furthermore with the Infrastructure trend to go managed
 runtime with Serverless, Go is a better goto candidate to get up and running.
 
-{{< tweet 1379626478875201537 >}}
+{{< tweet user="kaihendry" id="1379626478875201537" >}}

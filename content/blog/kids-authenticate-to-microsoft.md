@@ -15,12 +15,10 @@ appear to work with the Playstation Network:
 
 <img src="https://s.natalian.org/2021-09-18/psn.jpeg" alt="PSN age restrictions">
 
-Despite running my own Bedrock server `docker run -d -it --name bds-survival -e
-EULA=TRUE -e GAMEMODE=survival -p 19132:19132/udp
-itzg/minecraft-bedrock-server`, each Minecraft "bedrock" client now **needs to
+Despite running my own Bedrock server `docker run -d -it --name bds-survival -e EULA=TRUE -e GAMEMODE=survival -p 19132:19132/udp itzg/minecraft-bedrock-server`, each Minecraft "bedrock" client now **needs to
 sign into a Microsoft account** in order to play.
 
-{{< tweet 1438797861836132354 >}}
+{{< tweet user="kaihendry" id="1438797861836132354" >}}
 
 You can't share a Microsoft account, you'll get a "Cannot join world. The
 account you are signed in to is currently playing in this world on a different
@@ -30,8 +28,8 @@ device."
 
 It's extra painful when each client has further requirements:
 
-* <abbr title="PlayStation 4">PS4</abbr> client requires an account and a **PlayStation Plus** subscription AND me to purchase Minecraft (again)
-* Our other client is the iPad, which of course requires an Apple account and a [purchase of Minecraft](https://apps.apple.com/us/app/minecraft/id479516143) (again) which is shared via my Apple family account from my account to my son's Apple ID
+- <abbr title="PlayStation 4">PS4</abbr> client requires an account and a **PlayStation Plus** subscription AND me to purchase Minecraft (again)
+- Our other client is the iPad, which of course requires an Apple account and a [purchase of Minecraft](https://apps.apple.com/us/app/minecraft/id479516143) (again) which is shared via my Apple family account from my account to my son's Apple ID
 
 I wonder if it's the same nonsense on the Minecraft "non-Bedrock compatible"
 Java client (which I've also paid for). Though I doubt we realistically switch

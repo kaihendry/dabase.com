@@ -8,12 +8,12 @@ description: Notes whilst preparing for a certification
 
 Acronyms:
 
-* <abbr title="Direct Connect">DX</abbr>
-* <abbr title="Virtual Interfaces">VIFs</abbr>
+- <abbr title="Direct Connect">DX</abbr>
+- <abbr title="Virtual Interfaces">VIFs</abbr>
 
 ## Sub-domain: cross-account authentication and access strategies
 
-###  Active directory options
+### Active directory options
 
 <img src="https://s.natalian.org/2020-02-26/ad-options.jpg">
 
@@ -31,7 +31,7 @@ Acronyms:
 
 <img src="https://s.natalian.org/2020-02-26/multi-account-strategy.jpg">
 
-* <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html"><abbr title="Serice Control Policies">SCPs</abbr></a>
+- <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html"><abbr title="Serice Control Policies">SCPs</abbr></a>
 
 <img src="https://s.natalian.org/2020-02-26/root-account-no-cloudtrail.jpg">
 
@@ -63,37 +63,37 @@ Acronyms:
 
 # Migration planning
 
-* Plan
-	* Discover
-		* Assessment and profiling
-		* Data requirements and classification
-		* Prioritization
-		* Business logic and infrastructure dependencies
-	* Design
-		* Detailed migration plan
-		* Estimate effort
-		* Security and risk assessment
-* Build
-	* Transform
-		* Network topology
-		* Migrate
-		* Deploy
-		* Validate
-	* Transition
-		* Pilot testing
-		* Transition to support
-		* Release management
-		* Cutover and decommission
-* Run
-	* Operate
-		* Staff training
-		* Monitoring
-		* Incident management
-		* Provisioning
-	* Optimise
-		* Monitoring-driven optimization
-		* Continuous integration and continuous deployment
-		* Well-Architected Framework
+- Plan
+  - Discover
+    - Assessment and profiling
+    - Data requirements and classification
+    - Prioritization
+    - Business logic and infrastructure dependencies
+  - Design
+    - Detailed migration plan
+    - Estimate effort
+    - Security and risk assessment
+- Build
+  - Transform
+    - Network topology
+    - Migrate
+    - Deploy
+    - Validate
+  - Transition
+    - Pilot testing
+    - Transition to support
+    - Release management
+    - Cutover and decommission
+- Run
+  - Operate
+    - Staff training
+    - Monitoring
+    - Incident management
+    - Provisioning
+  - Optimise
+    - Monitoring-driven optimization
+    - Continuous integration and continuous deployment
+    - Well-Architected Framework
 
 <img src="https://s.natalian.org/2020-02-26/storage-portfolio.jpg">
 
@@ -107,8 +107,8 @@ Acronyms:
 
 Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_watchers/fivmppj/?context=3).
 
-* Termination protection does not work for Auto scaling groups
-* Instance protection does work
+- Termination protection does not work for Auto scaling groups
+- Instance protection does work
 
 # Improving Architectures
 
@@ -120,18 +120,18 @@ Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_
 
 ## Sub-domain: operational excellence
 
-* Two way doors (reversible changes) as opposed to more risky one way doors
-* Implement [CloudFormation](https://www.reddit.com/r/aws/comments/f74b61/after_being_in_the_consultant_biz_for_3_years/fi92oal/) aka <abbr title="Infrastructure as Code">IaC</abbr>
+- Two way doors (reversible changes) as opposed to more risky one way doors
+- Implement [CloudFormation](https://www.reddit.com/r/aws/comments/f74b61/after_being_in_the_consultant_biz_for_3_years/fi92oal/) aka <abbr title="Infrastructure as Code">IaC</abbr>
 
 ## Sub-domain: improve reliability
 
 <img src="https://s.natalian.org/2020-02-28/operational.png" alt="The operational continium">
 
-* [Instance auto recovery](https://aws.amazon.com/about-aws/whats-new/2018/05/amazon-ec2-auto-recovery-is-now-available-for-dedicated-instances/)
-* Use Multi-AZ services: S3/DynamoDB automatically Multi-AZ
-* AWS EBS Snapshots minimize Recovery Point Objective
-* Use RI for critical systems
-* <a href="https://darkbit.io/blog/2020/02/18/simple-dlp-for-amazon-s3"><abbr title="Data Loss Prevention">DLP</abbr> with CloudTrail</a>
+- [Instance auto recovery](https://aws.amazon.com/about-aws/whats-new/2018/05/amazon-ec2-auto-recovery-is-now-available-for-dedicated-instances/)
+- Use Multi-AZ services: S3/DynamoDB automatically Multi-AZ
+- AWS EBS Snapshots minimize Recovery Point Objective
+- Use RI for critical systems
+- <a href="https://darkbit.io/blog/2020/02/18/simple-dlp-for-amazon-s3"><abbr title="Data Loss Prevention">DLP</abbr> with CloudTrail</a>
 
 <img src="https://s.natalian.org/2020-02-28/snapshots.jpg">
 
@@ -141,8 +141,8 @@ Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_
 
 <img src="https://s.natalian.org/2020-02-28/redis-performance.jpg">
 
-* Memcached is single AZ
-* Redis [Lazy loading versus Write through](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Strategies.html)
+- Memcached is single AZ
+- Redis [Lazy loading versus Write through](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Strategies.html)
 
 ## Sub-domain: improving security
 
@@ -152,28 +152,27 @@ Enforce tags with [AWS Config](https://www.reddit.com/r/aws/comments/f9qv97/tag_
 
 <img src="https://s.natalian.org/2020-02-28/perimeter-controls.jpg">
 
-* <abbr title="Network Access Control Layer">NACLs</abbr> are stateless and accomodate **DENY** rules unlike Security groups
+- <abbr title="Network Access Control Layer">NACLs</abbr> are stateless and accomodate **DENY** rules unlike Security groups
 
 ## Sub-domain: improving deployment
 
-* Cloud Formation - consider Deletion policy attribute, be wary of downtime. **Retain** for S3, **Snapshot** (default) for RDS/EBS etc
-* Code deploy - Must remove underlying instances
-* Elastic Beanstalk - can do it all
-* OpsWorks - Chef can handle minimal downtime
-* AWS ECS
+- Cloud Formation - consider Deletion policy attribute, be wary of downtime. **Retain** for S3, **Snapshot** (default) for RDS/EBS etc
+- Code deploy - Must remove underlying instances
+- Elastic Beanstalk - can do it all
+- OpsWorks - Chef can handle minimal downtime
+- AWS ECS
 
 <img src="https://s.natalian.org/2020-02-28/additional-resources.jpg">
 
-{{< tweet 1233291346154098688 >}}
+{{< tweet user="kaihendry" id="1233291346154098688" >}}
 
 [Active-Active versus Active-Passive Failover](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-types.html)
-
 
 <img width=1280 height=720 src="https://s.natalian.org/2020-03-05/1583386029_2560x1440.png" alt="RPO versus RTO">
 
 <img width=1280 height=720 src="https://s.natalian.org/2020-03-05/1583386197_2560x1440.png" alt="Backup/Restore, Pilot light, Warm standby, to Hot standby">
 
-#  The common cloud data migration challenge
+# The common cloud data migration challenge
 
 <blockquote cite="https://aws.amazon.com/cloud-data-migration/">
 Number of days = (Total Bytes)/(Megabits per second * 125 * 1000 * Network Utilization * 60 seconds * 60 minutes * 24 hours)

@@ -56,4 +56,4 @@ Only [one comment](https://news.ycombinator.com/item?id=22279284) alludes to:
 > (Reminds me to figure out how to morph it into iCalendar files (and perhaps
 > back)) 
 
-{{< tweet 1226836687247929345 >}}
+{{< tweet user="kaihendry" id="1226836687247929345" >}}
