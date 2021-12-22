@@ -4,6 +4,8 @@ date: 2021-10-22T13:50:30+08:00
 description: There are alternatives to UUID
 ---
 
+Update: [base62](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/) as introduced by Github seems pretty nice!
+
 A modern computer has the ability to express a 64bit number natively.
 
 How large is a 64 bit number?
@@ -41,15 +43,15 @@ https://github.com/ulid/spec
 {{< tweet user="_beyondcode" id="1450850328610365446" >}}
 
 <abbr title="Universally Unique Lexicographically Sortable
-Identifier">ULID</abbr> aside, I do simply prefer base64 encoded 64 bits
-numbers, aka the "Youtube style Identifier"
+Identifier">ULID</abbr> aside, I do prefer base64 encoded 64 bits numbers, aka
+the "Youtube style Identifier"
 https://stackoverflow.com/questions/69675161/how-to-generate-a-youtube-id-in-go
 
-Although extremely unlikely a duplicate (aka collision) random 64 bit number is
-possible in a large public system, so generated identifiers would ideally need
-to be checked before usage. A timestamp + <abbr title="Youtube">YT</abbr> style
-to play it safe.
+Although unlikely a duplicate (aka collision) random 64 bit number is possible
+in a large public system, so generated identifiers would ideally need to be
+checked before usage. A timestamp + <abbr title="Youtube">YT</abbr> style to
+play it safe.
 
-However I'd argue for private system, 64 bit should be more than enough to
-identify (use a prefix!) everything you need to like so:
-https://github.com/auth0/id-generator
+I'd argue for private system, 64 bit should be more than enough to identify <a
+href="https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/#identifiable-prefixes">(use a prefix!)</a> everything
+you need to like so: https://github.com/auth0/id-generator
