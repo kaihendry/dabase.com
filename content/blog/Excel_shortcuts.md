@@ -5,7 +5,7 @@ date: 2020-06-04T14:12:58+08:00
 icon: https://s.natalian.org/2020-06-04/excel-arch.svg
 ---
 
-As an Archlinux user [I use Excel via
+As a fluffy Archlinux user [I use Excel via
 freeRDP](https://www.youtube.com/watch?v=uXjBdpYj-ZY) from a work PC on my LAN. This is a recent development, I've never used Excel before. Of course I've long been in awe of [Joel Spolsky](https://www.joelonsoftware.com/about-me/) and [Martin Shkreli's](https://www.youtube.com/watch?v=poyf3Cnb-MQ) impressive excel analytical skills.
 
 <img width="50%" src="https://s.natalian.org/2020-06-04/selected-excel.png" alt="Excel's bottom right summary">
