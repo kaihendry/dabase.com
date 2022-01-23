@@ -34,7 +34,7 @@ What are the arguments for and against?
 
 # Cons of Typescript
 
-> TypeScript is a scripting language for C#
+> TypeScript is a scripting language for C# -- https://twitter.com/coolaj86/status/1485166837163642883
 
 1. Tied to the [Microsoft ecosystem](https://en.wikipedia.org/wiki/TypeScript)
 2. Package dependencies are a mess, some have Typescript bindings, some don't. Lots of blind spots.
@@ -48,7 +48,7 @@ What are the arguments for and against?
 
 1. **Simple**, well-designed end to end ecosystem supported by Google
 2. [Better error handling](https://youtu.be/7Q571BSR7wY)
-3. **Faster** performance
+3. **Faster** performance, which can be further enhanced to concurrent execution (not limited to being single threaded)
 4. Far [better package](https://research.swtch.com/npm-colors) design
 5. **Easier to maintain** in the long run
 6. Produces static binaries which are easier to deploy
@@ -59,6 +59,6 @@ What are the arguments for and against?
 
 > The biggest con of Go isn’t that people don’t know it - it’s that they refuse
 > to learn it. They’ll die with a cold, hard grip on their overly-complicated
-> polymorphic inheritance systems and useless utility libraries.
+> polymorphic inheritance systems and useless utility libraries. -- https://twitter.com/coolaj86/status/1485167527814590465
 
 1. Less people know Go than Javascript
