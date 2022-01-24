@@ -30,7 +30,7 @@ What are the arguments for and against?
 
 1. Assumed easier migrate an existing Javascript code base, doesn't require a
    "rewrite". However the process of getting **Javascript 100% migrated** isn't
-   as crystal clear as it might be if you used Go.
+   as clear as it might be if you used Go. Update: Tools like https://github.com/alexcanessa/typescript-coverage-report might help!
 
 # Cons of Typescript
 
@@ -42,7 +42,6 @@ What are the arguments for and against?
 4. Different Javascript styles can make the code base confusing
 5. Slow
 6. Some argue that **Javascript with JSDoc is a better approach**
-7. Constant one-off bugs from unmigrated code
 
 # Pros of Golang
 
@@ -62,3 +61,5 @@ What are the arguments for and against?
 > polymorphic inheritance systems and useless utility libraries. -- https://twitter.com/coolaj86/status/1485167527814590465
 
 1. Less people know Go than Javascript
+2. Assumption that the JS isn't front end code. Of course Go isn't a browser language and hence JS is far better suited for dynamic frontends, e.g. using https://vuejs.org/
+3. Again if you have JS on the frontend, you might argue it's easier to hire or form a cross-functional team that can switch between front and back end.
