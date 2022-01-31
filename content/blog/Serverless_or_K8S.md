@@ -73,8 +73,8 @@ I have observed Kubernetes setups where there is a team to manage the k8s
 cluster, an ops team to manage the running applications and an observability
 team. Nevermind the application developers!
 
-Further the above serverless maintenance (and infrastructure) cost of ~3k is
-also unrealistic, it's closer to single digit dollars in my experience.
+The above serverless maintenance (and infrastructure) cost of ~3k is also
+unrealistic, it's closer to single digit dollars in my experience.
 
 It's not atypical to see three engineers able to develop, run and observe their
 application on the serverless platform, this a dramatic saving to <abbr
@@ -115,7 +115,7 @@ as possible? My personal target is to be below 30ms, not 30 minutes!
 
 ## Cold starts
 
-"Cold starts" are moot if your application is in use. Furthermore [cold
+"Cold starts" are moot if your application is **in use**. Furthermore [cold
 starts are getting faster and
 faster](https://dabase.com/blog/2021/multi-cloud-serverless/) over time... < 0.5s!
 
@@ -126,7 +126,7 @@ infrequently used and you need to save half a second.
 
 ## Limited support
 
-Essentially no language support is needed if there is a clear interface to
+Essentially no "language support" is needed if there is a clear interface to
 running a native binary. This has been shown with AWS's new "provided.al2"
 (Graviton runtime) which didn't support any language initially.
 
