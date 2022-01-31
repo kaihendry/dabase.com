@@ -1,5 +1,5 @@
 ---
-title: Serverless or K8S
+title: Serverless or CNCF Kubernetes?
 date: 2022-01-31T09:56:37+08:00
 description: Reacting to Go serverless or stay on Kubernetes for deploying microservices?
 ---
@@ -43,7 +43,7 @@ like AWS Cloudwatch. No need for an "observability team".
 https://youtu.be/qjTiNTu1A9w?t=1682
 
 Deploying with Serverless is radically simpler compared to different HTTP
-ingress solutions for k8s. Furthermore deploying and _rolling back_ serverless
+ingress / meshing solutions for k8s. Furthermore deploying and _rolling back_ serverless
 functions typically take <5s!
 
 Measure a roll out an Application on a typical k8s cluster. It will not be less
@@ -122,7 +122,7 @@ faster](https://dabase.com/blog/2021/multi-cloud-serverless/) over time... < 0.5
 And as mentioned in the [original
 article](https://m.economictimes.com/tech/technology/thoughtworks-xconf-tech-talk-series-serverless-vs-kubernetes-when-deploying-microservices/amp_articleshow/89085544.cms),
 there are good workarounds like AWS provisioned concurrency if your endpoint is
-infrequently used and you need to save 0.5s.
+infrequently used and you need to save half a second.
 
 ## Limited support
 
@@ -154,9 +154,10 @@ technology](https://firecracker-microvm.github.io/).
 
 # Conclusion
 
-Despite my (overly) enthusiastic comments, I think we are all coming around to the stark
-benefits of "serverless". Yes, we do have to think differently, the mindset of
-**http transactions** and how we structure service teams.
+Despite my (overly) enthusiastic comments, I think we are all coming around to
+the stark benefits of "serverless". Yes, we do have to think differently, the
+mindset of fast booting **http transactions**, how we structure service
+teams and [how we ship code](https://dabase.com/blog/2021/java-vs-go-load-test/).
 
-For monoliths and heavy loads, utilising serverless is a great start on your
-journey.
+For most workloads including monoliths and heavy loads, utilising serverless is
+a great start! [Go build](https://github.com/kaihendry/go-web-dynamo-starter)!
