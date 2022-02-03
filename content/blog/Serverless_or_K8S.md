@@ -8,6 +8,8 @@ description: Reacting to Go serverless or stay on Kubernetes for deploying micro
 
 [tl;dw version](https://m.economictimes.com/tech/technology/thoughtworks-xconf-tech-talk-series-serverless-vs-kubernetes-when-deploying-microservices/amp_articleshow/89085544.cms)
 
+Update: Noticed this also caught the eye of [Off-by-none: Issue #174](https://offbynone.io/issues/174/) and [Charles Chen](https://chrlschn.medium.com/thoughtworks-misses-the-mark-re-serverless-vs-kubernetes-9901d1b0f0c6), who pedantically focus on containers which I personally care less about as a "static binary kindof guy".
+
 My main feedback is that it appears to compare the two platforms in the context
 of **heavy loads** and **microservices**.
 
@@ -29,11 +31,17 @@ much simpler and it scales without thinking about it.
 For example with k8s you typically need some extra nodes to scale. So in your
 cluster you are paying for resources you do not use.
 
+> Lambda can burst to 3000 concurrent requests and then 500 requests per minute
+> (can be increased) thereafter. A k8s cluster can not, unless you
+> over-provision.
+
 ## Observability
 
 https://youtu.be/qjTiNTu1A9w?t=1559
 
-Kubernetes observation is massively complex and the lines are often blurred between App and Ops.
+Kubernetes observation is complex and the lines are often drawn between App and
+Ops. With serverless **one developer** can do both thanks to the shedding of
+k8s complexity.
 
 Serverless applications typically utilise the native cloud native solution
 like AWS Cloudwatch. No need for an "observability team".
