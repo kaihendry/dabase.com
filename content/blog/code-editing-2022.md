@@ -7,7 +7,7 @@ description: Use a linter, formatter, and LSP
 When you code you need at **least two helpers** active on your buffer to assist
 you:
 
-1. **Code Formatter**, e.g. gofmt or [prettier](https://copilot.github.com/) that rewrites your file on save to a "standard" format
+1. **Code Formatter**, e.g. gofmt or [prettier](https://prettier.io/) that rewrites your file on save to a "standard" format
 2. **Code Diagnostics** <abbr title="also known as">aka</abbr> a "code linter", e.g. golint or jshint that warns you of problems in your code like unused variables
 
 Setting up these helpers is non-trivial!
