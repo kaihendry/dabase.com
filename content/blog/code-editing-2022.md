@@ -8,7 +8,7 @@ When you code you need at **least two helpers** active on your buffer to assist
 you:
 
 1. **Code Formatter**, e.g. gofmt or [prettier](https://copilot.github.com/) that rewrites your file on save to a "standard" format
-2. **Code Diagnostics** aka a "code linter", e.g. golint or jshint that warns you of problems in your code like unused variables
+2. **Code Diagnostics** <abbr title="also known as">aka</abbr> a "code linter", e.g. golint or jshint that warns you of problems in your code like unused variables
 
 Setting up these helpers is non-trivial!
 
@@ -19,7 +19,7 @@ Protocol" (LSP) which can do the above and more like **completions** and
 [BUILTINS](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md)
 can give some hints to what helpers you can set up.
 
-## Copilot is really nice to have
+## Copilot is a nice to have
 
 <abbr title="To be honest">Tbh</abbr> I find [Github Copilot](https://copilot.github.com/) useful, to
 the point where I can't live without it. I use [copilot.vim](https://github.com/github/copilot.vim) from the wonderful [tpope](https://github.com/tpope).
@@ -43,9 +43,24 @@ don't know of good one for NodeJS. <abbr title="In my opinion">Imo</abbr> a
 part of the <abbr title="Language Server Protocol">LSP</abbr>. Not some
 security theatre or extra hoop jump.
 
-Further security checks centre around [dependency
-management](/blog/2021/nodejs-project-cd/), but they don't integrate
-well into your editing session aka LSP currently.
+Further security checks centre around <abbr title="Software composition analysis">SCA</abbr> aka [dependency
+management](/blog/2021/nodejs-project-cd/) (<abbr title="Software Bill of Materials">SBOM</abbr>), but they don't integrate
+well into editing sessions.
+
+## "Shift left" from the Code Pipeline (<abbr title="Continuous Integration">CI</abbr>/<abbr title="Continuous Deployment">CD</abbr>)
+
+You might be asking, shouldn't linting be part of the code pipeline? Yes! There
+are typically **three places** for your formatter & linting checks:
+
+1. In your editor
+2. In your pre-commit hook (e.g. `npx mrm@2 lint-staged` with husky / prettier / eslint)
+3. In your Code Pipeline
+
+The idea is to "shift left" and catch potential issues as early as possible,
+yet re-iterate the checks throughout the code lifecycle.
+
+<abbr title="Software composition analysis">SCA</abbr> is probably best automated
+as part of your Code Pipeline, e.g. 'npm audit --audit-level=critical`.
 
 # Conclusion
 
