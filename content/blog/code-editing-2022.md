@@ -1,7 +1,7 @@
 ---
-title: "Code Editing in 2022"
+title: Code Editing in 2022
 date: 2022-03-13T09:12:07+08:00
-description: Tools needed to program in the 21st Century
+description: Use a linter, formatter, and LSP
 ---
 
 When you code you need at **least two helpers** active on your buffer to assist
@@ -30,7 +30,7 @@ Copilot alleviates the need to look up
 by describing what you are trying to achieve in comments, which saves time.
 Boosting productivity.
 
-Copilot effectiveness depends what you code. If do generic integration work
+Copilot effectiveness depends on what you code. If you do generic integration work
 which is probably most use cases, it's great. If you do something a little
 specialised, it can be a hinderance.
 
