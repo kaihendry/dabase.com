@@ -1,7 +1,7 @@
 ---
 title: Code Editing in 2022
 date: 2022-03-13T09:12:07+08:00
-description: Use a linter, formatter, and LSP
+description: Integrate a formatter and linter into your workflow now
 ---
 
 When you code you need at **least two helpers** active on your buffer to assist
@@ -49,6 +49,8 @@ well into editing sessions.
 
 ## "Shift left" from the Code Pipeline (<abbr title="Continuous Integration">CI</abbr>/<abbr title="Continuous Deployment">CD</abbr>)
 
+<img src="https://s.natalian.org/2022-03-17/workflow.png" alt="Code format/linting workflow">
+
 You might be asking, shouldn't linting be part of the code pipeline? Yes! There
 are typically **three places** for your formatter & linting checks:
 
@@ -56,8 +58,8 @@ are typically **three places** for your formatter & linting checks:
 2. In your pre-commit hook (e.g. `npx mrm@2 lint-staged` with husky / prettier / eslint)
 3. In your Code Pipeline
 
-The idea is to "shift left" and catch potential issues as early as possible,
-yet re-iterate the checks throughout the code lifecycle.
+The idea is to "shift left" and catch issues as early as possible, yet
+re-iterate the checks throughout the code lifecycle.
 
 <abbr title="Software composition analysis">SCA</abbr> is probably best automated
 as part of your Code Pipeline, e.g. 'npm audit --audit-level=critical`.
