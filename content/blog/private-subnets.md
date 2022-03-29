@@ -35,7 +35,7 @@ Yes, you can design a "private" Architecture with serverless technologies, which
 2. Lambda in private subnet
 3. S3/DynamoDB connected via a "VPC endpoint"
 
-This private design is offers little benefit in exchange for a lot of
+This private design offers little benefit in exchange for a lot of
 complexity to your Infrastructure.
 
 Lets play devil's advocate.
