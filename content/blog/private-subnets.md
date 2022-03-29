@@ -66,12 +66,17 @@ A private subnet with VPC endpoints should be lower latency, though this is not 
 If you require to communicate with other AWS accounts in some network
 isolation, it makes sense to have your own private subnet.
 
-Private links with private IPs and complex orchestration aside AWS mandate
-secure TLS protocols for communicating between accounts. Furthermore AWSv4
-signing and API resource policies further lock down communication.
+Private links with private IPs and complex orchestration aside, AWS mandate
+secure TLS protocols for communicating between accounts. Private Links often
+result in opaque URLs like
+https://eu2r4q0h43.execute-api.ap-southeast-1.amazonaws.com/stg/store because
+having named URLs becomes much harder in a private subnet.
 
-Ultimately don't forget that most likely the other account will probably be
-using AWS dynamodb and S3 which runs on a public subnet.
+AWS protocols like AWSv4 signing and API resource policies, could be used
+instead of Private Links which are difficult to maintain and setup.
+
+Ultimately don't forget that most likely the other account will be using AWS
+dynamodb and S3 which runs on a public subnet. Was the Private Link worth it?
 
 ## Reduce attack surface area
 
