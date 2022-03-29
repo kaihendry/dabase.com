@@ -1,7 +1,7 @@
 ---
 title: Why Private Subnets?
 date: 2022-03-29T09:23:55+08:00
-description: There is no need for complex network topologies anymore
+description: There is little need for complex network topologies anymore
 ---
 
 Architectures with Private subnets are a relic of [Three tier
@@ -10,14 +10,14 @@ architecture](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-ti
 <img src="https://s.natalian.org/2022-03-29/three-tier-data.png">
 
 The assumption with this architecture and specifically its data layer, is that
-it required network isolation. Why? Because **historically SQL databases have
-simple clear text communication protocols**.
+data required network isolation in a private subnet. Why? Because
+**historically SQL databases have simple clear text communication protocols**.
 
 In my experience Apps were never consistently in a Private or Public subnet.
 
 To meet security shortcomings in the data layer with legacy SQL server
-protocols, the databases living in a private non-Internet addressable network
-zone, to limit data breach risks.
+protocols, databases by best practice were deployed in private non-Internet
+addressable network zone, to limit data breach risks.
 
 # Enter serverless
 
@@ -76,7 +76,7 @@ using AWS dynamodb and S3 which runs on a public subnet.
 ## Reduce attack surface area
 
 The surface area to address and attack the application as well as the data
-layer should be approximately the same in both public (assuming API gateway /
+layer should be the same in both public (assuming API gateway /
 lambda / S3 or DynamoDB) / private designs.
 
 # Why stop using a Private subnet?
@@ -88,8 +88,8 @@ suffice**?
 
 # Conclusion
 
-Unless you are required to use DNS firewall and don't trust the public Internet
-for communicating between accounts, you probably need a Private subnet
+Unless you need DNS firewall and don't trust the public Internet for
+communicating between accounts, you probably need a Private subnet
 architecture.
 
 The complexity of supporting a Private architecture will **hurt your
