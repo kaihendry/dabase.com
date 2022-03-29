@@ -57,9 +57,21 @@ architecture.
 To add a DNS firewall, you need a [private hosted
 zone.](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-dns-firewall.html)
 
+## No need to access the public internet
+
+When your application doesn't need access to the Internet, you might argue it
+should be in a private subnet. However it is far easier to provision a lambda
+public subnet without any (API gateway) input events. Lambdas in a private
+subnet would need to be explicitly onboarded for every service, which impedes
+innovation.
+
+There is no real benefit to provision even a lambda that "doesn't use the
+Internet" on a private subnet. AWS event controls are capable!
+
 ## Latency
 
-A private subnet with VPC endpoints should be lower latency, though this is not proved.
+A private subnet with VPC endpoints should be lower latency, though might be
+only relevant when downloading / uploading large files.
 
 ## Private links
 
@@ -70,13 +82,13 @@ Private links with private IPs and complex orchestration aside, AWS mandate
 secure TLS protocols for communicating between accounts. Private Links often
 result in opaque URLs like
 https://eu2r4q0h43.execute-api.ap-southeast-1.amazonaws.com/stg/store because
-having named URLs becomes much harder in a private subnet.
+having **named URL hostnames becomes much harder in a private subnet**.
 
 AWS protocols like AWSv4 signing and API resource policies, could be used
 instead of Private Links which are difficult to maintain and setup.
 
 Ultimately don't forget that most likely the other account will be using AWS
-dynamodb and S3 which runs on a public subnet. Was the Private Link worth it?
+Dynamodb and S3 which runs on a public subnet. Was the Private Link worth it?
 
 ## Reduce attack surface area
 
@@ -86,7 +98,8 @@ lambda / S3 or DynamoDB) / private designs.
 
 # Why stop using a Private subnet?
 
-Using a managed data layer like AWS S3/DynamoDB, means using **data that already exists effectively in a public subnet**.
+Using a managed data layer like AWS S3/DynamoDB, means **your data already
+exists in a public subnet**.
 
 Why create a complex public-private-public Architecture when a **simpler one can
 suffice**?
@@ -98,5 +111,5 @@ communicating between accounts, you probably need a Private subnet
 architecture.
 
 The complexity of supporting a Private architecture will **hurt your
-Availability** / reliability as the Confidentiality, Integrity and Availability
+Availability / reliability** as the Confidentiality, Integrity and Availability
 Triad will attest!
