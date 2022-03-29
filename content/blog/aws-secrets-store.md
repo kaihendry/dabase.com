@@ -45,7 +45,7 @@ Despite Secrets Manager being great with RDS, you probably should be using an [R
 1. This is best practice for storing secrets.
 2. It can also keep public values, which is useful operationally.
 3. Encourages granular access.
-4. Use the description field to describe where that secret comes from!
+4. Use the description field to describe where that secret comes from! (Instead of stuffing the secret into a Secrets Manager JSON)
 5. Strings are versioned / auditable.
 6. Secrets cost money, parameters do not. But parameters are throttled.
 
