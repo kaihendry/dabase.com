@@ -16,7 +16,7 @@ protocols**.
 
 To meet security shortcomings in the data layer with legacy SQL server
 protocols, databases are deployed in private non-Internet
-addressable network zone, to limit data breach risks.
+addressable network zones, to limit data breach risks.
 
 # Enter serverless
 
@@ -35,7 +35,7 @@ integrated services, therefore not considered serverless or Cloud native.
 Yes, you can design a "private" Architecture with serverless technologies, which have an:
 
 1. Public facing load balancer - <abbr title="Application Load Balancer">ALB</abbr>
-2. Lambda in private subnet
+2. Lambda(s) in private subnets
 3. S3/DynamoDB connected via a "VPC endpoint"
 
 This private design offers little benefit in exchange for a lot of complexity
@@ -110,6 +110,18 @@ Dynamodb and S3 which runs on a public subnet. Was the Private Link worth it?
 The surface area to address and attack the application as well as the data
 layer should be the same in both public (assuming API gateway /
 lambda / S3 or DynamoDB) / private designs.
+
+## One off cost to setting up Private subnets
+
+Some will argue that setting up the private subnets is a one off cost and
+would be captured as "Instructure as Code", like [CDK](https://bobbyhadz.com/blog/aws-cdk-vpc-example).
+
+In many more cases complex VPCs are setup with
+[Clickops](https://www.lastweekinaws.com/blog/clickops/) making it very
+difficult to reproduce in a new account.
+
+There is no such thing as a one off cost of complexity. Every lambda needs
+private subnets defined and its very easy to make mistakes!
 
 ## Security in depth
 
