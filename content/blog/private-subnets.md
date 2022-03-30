@@ -88,17 +88,19 @@ interpretation.
 
 ## Private links
 
-If you require to communicate with other AWS accounts in some network
-isolation, it makes sense to have your own private subnet.
+If you require to communicate with other AWS accounts without exposing data to
+the Internet, it makes sense to setup a [PrivateLink](https://aws.amazon.com/privatelink).
 
-Private links with private IPs and complex orchestration aside, AWS mandate
-secure TLS protocols for communicating between accounts. Private Links often
-result in opaque URLs like
+The performance benefit is moot, as **VPC peering is faster and cheaper**.
+
+AWS mandate secure TLS protocols for communicating between accounts. Private
+Links often result in opaque URLs like
 https://eu2r4q0h43.execute-api.ap-southeast-1.amazonaws.com/stg/store because
-having **named URL hostnames becomes much harder in a private subnet**.
+having **named URL hostnames becomes much harder in a private subnet** and
+complex routing rules.
 
-AWS protocols like AWSv4 signing and API resource policies, could be used
-instead of Private Links which are difficult to maintain and setup.
+AWS **identity based security protocols like AWSv4 signing and API resource
+policies**, should be used instead of network based Private Links.
 
 Ultimately don't forget that most likely the other account will be using AWS
 Dynamodb and S3 which runs on a public subnet. Was the Private Link worth it?
@@ -115,7 +117,7 @@ lambda / S3 or DynamoDB) / private designs.
 > understood, widely adopted in practice, and almost completely manageable with
 > automation.
 
-https://www.reddit.com/r/aws/comments/tqtl1m/does_your_serverless_architecture_need_private/i2jau6g/
+[Reddit: Does your Serverless Architecture need Private Subnets?](https://www.reddit.com/r/aws/comments/tqtl1m/does_your_serverless_architecture_need_private/i2jau6g/)
 
 Unfortunately this is not true in practice. Issues arise from complex network
 routing. And the benefits are neglibile if you have conducted a threat model.
