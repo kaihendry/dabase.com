@@ -35,8 +35,16 @@ values. This is because **Secrets Manager** is designed for databases!
       "port": 3306
     }
 
-Secrets Manager secrets can be generated upon created (in Cloudformation), hence not
-visible even for the creator. These random strings are typically used for setting up <abbr title="Amazon Relational Database Service">RDS</abbr>.
+**Secrets manager has an automatic history** that not many people realise!
+
+    aws secretsmanager get-secret-value --secret-id secrets-for-func --version-stage AWSPREVIOUS
+
+If you mistakenly put a secret in the **wrong Secret name**, it's painful to fix!!
+
+Secrets Manager has features that set it apart from parameter store, like the
+ability for secrets can be generated upon created (in Cloudformation), hence
+not visible even for the creator. These random strings are typically used for
+setting up <abbr title="Amazon Relational Database Service">RDS</abbr>.
 
 Despite Secrets Manager being great with RDS, you probably should be using an [RDS IAM Role](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAM.html) (if your DB supports it) to access your database nonetheless!
 
