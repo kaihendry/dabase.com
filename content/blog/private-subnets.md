@@ -158,3 +158,7 @@ Access Management">IAM</abbr>, not "network zones" like the past.
 The complexity of **supporting a Private architecture will hurt your
 Availability / reliability** as the Confidentiality, Integrity and Availability
 Triad will attest!
+
+Sidenote: [Zerotrust /
+Beyondcorp](https://www.bastionzero.com/blog/i-read-the-federal-governments-zero-trust-memo-so-you-dont-have-to)
+appears to be where we are headed by government mandate in any case!
