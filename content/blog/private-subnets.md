@@ -100,7 +100,10 @@ having **named URL hostnames becomes much harder in a private subnet** and
 complex routing rules.
 
 AWS **identity based security protocols like AWSv4 signing and API resource
-policies**, should be used instead of network based Private Links.
+policies**[1], should be used instead of network based Private Links.
+
+> [1] resource policies can be used to whitelist **aws:SourceVpce** which is
+> network based, but it should be more account based.
 
 Ultimately don't forget that most likely the other account will be using AWS
 Dynamodb and S3 which runs on a public subnet. Was the Private Link worth it?
