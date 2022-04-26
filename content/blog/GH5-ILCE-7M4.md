@@ -9,6 +9,7 @@ toc: true
 .side-by-side {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .side-by-side img {
