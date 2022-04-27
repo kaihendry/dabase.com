@@ -8,7 +8,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    container: peaceiris/hugo:test
+    container: peaceiris/hugo:latest
     steps:
       - uses: actions/checkout@v3
       - name: Build and Deploy
@@ -16,5 +16,6 @@ jobs:
           AWS_ACCESS_KEY_ID: AKIAV5XVAVSZIFHV3MOL
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
           hugo
           hugo deploy
