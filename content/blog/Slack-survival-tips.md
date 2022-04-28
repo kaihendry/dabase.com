@@ -1,7 +1,7 @@
 ---
 title: Slack Survival Tips
 date: 2022-04-21T17:08:20+08:00
-description: ✨ Slack Tips to 🚀
+description: ✨ Slack Tips to thrive and survive your online workplace 🚀
 toc: true
 ---
 
@@ -9,15 +9,9 @@ Prompted by [Rehan van der Merwe](https://www.linkedin.com/posts/rehan-van-der-m
 
 Proposals to make Slack better at workplaces:
 
-## Tag to the relevant team member
+## Tag @mention the relevant team member
 
 If you don't tag the team member you cannot expect that team member to read it.
-
-## Disable conversation / threads, they often hide content
-
-Practiced notably by [Gophers Slack](https://app.slack.com/client/T029RQSE6/C029RQSEE)
-
-On the other hand... some people love threads and swear by them. 🤷
 
 ## Limit amount of channels
 
@@ -36,8 +30,8 @@ important message or question.
 
 ## Bookmark across teams
 
-Instead of bookmarking, you could Copy link of important messages and DM
-yourself and build up a list of important messsages which you can share on your
+Instead of bookmarking, you could Copy link of important messages and <abbr title="Direct Message">DM</abbr>
+yourself and build up a list of important messages which you can share on your
 team's wiki.
 
 ## Say "bye"
@@ -46,6 +40,8 @@ One gigantic problem with Slack is disconnecting from work. Establish a **Way
 of working** with your team, clock off by saying "bye" at end of the working
 day.
 
+## Focus time
+
 You can set your slack work hours, it will put the 💤 icon next to your name
 if you are offline.
 
@@ -53,7 +49,22 @@ if you are offline.
 
 Frictionless quick conversation and share your screen via huddle.
 
+You don't need Zoom or Google Meet.
+
 ## Record a video clip
 
 If you need to show something, instead of calling for a huddle and a screen
 share, take a short video of the issue!
+
+A video can be worth a 1000 words if you are reporting a bug for example that
+relates to UX.
+
+## Organise channels
+
+Group and organize your channels in the menu by category (called sections), you
+can even place an icon next to each category.
+
+## Foster a positive culture
+
+Some businesses make Friday a half day and make it a point to recognise the
+past week's worth of work with some recognition (shout outs) and fun.
