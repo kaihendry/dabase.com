@@ -1,7 +1,7 @@
 ---
 title: Slack Survival Tips
 date: 2022-04-21T17:08:20+08:00
-description: ✨ Slack Tips to thrive and survive your online workplace 🚀
+description: ✨ Slack tips to thrive and survive online work 🚀
 toc: true
 ---
 
@@ -23,12 +23,12 @@ this hides content.
 If you are working across teams, **star something if I still need to do
 something with it**. That way you'll get a clean side bar.
 
-## Use the reminder function to avoid forgetting to respond
+## Use the reminder function to remind yourself to respond
 
 Typically one can use both the bookmark and reminder function to not miss an
 important message or question.
 
-## Bookmark across teams
+## Bookmark across teams using links
 
 Instead of bookmarking, you could Copy link of important messages and <abbr title="Direct Message">DM</abbr>
 yourself and build up a list of important messages which you can share on your
@@ -67,4 +67,4 @@ can even place an icon next to each category.
 ## Foster a positive culture
 
 Some businesses make Friday a half day and make it a point to recognise the
-past week's worth of work with some recognition (shout outs) and fun.
+past week's worth of work with some "shout outs" and fun.
