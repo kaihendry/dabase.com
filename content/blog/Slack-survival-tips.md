@@ -28,17 +28,15 @@ something with it**. That way you'll get a clean side bar.
 Typically one can use both the bookmark and reminder function to not miss an
 important message or question.
 
-## Bookmark across teams using links
+## Bookmark across teams using Pins
 
-Instead of bookmarking, you could Copy link of important messages and <abbr title="Direct Message">DM</abbr>
-yourself and build up a list of important messages which you can share on your
-team's wiki.
+Instead of bookmarking, you can Pin important messages.
 
 ## Say "bye"
 
 One gigantic problem with Slack is disconnecting from work. Establish a **Way
-of working** with your team, clock off by saying "bye" at end of the working
-day.
+of working** with your team. For example a simple gesture of saying "bye" at
+end of the working day can help.
 
 ## Focus time
 
@@ -59,7 +57,8 @@ If you need to show something, instead of calling for a huddle and a screen
 share, take a short video of the issue!
 
 A video can be worth a 1000 words if you are reporting a bug for example that
-relates to UX.
+relates to UX. It also avoids wasting time, since you can retake the video to
+make sure it communicates your intent.
 
 ## Organise channels
 
@@ -68,5 +67,7 @@ can even place an icon next to each category.
 
 ## Foster a positive culture
 
-Some businesses make Friday a half day and make it a point to recognise the
+Inspired by https://www.heytaco.chat/ for driving team building.
+
+Some workspaces make Friday a half day and make it a point to recognise the
 past week's worth of work with some "shout outs" and fun.
