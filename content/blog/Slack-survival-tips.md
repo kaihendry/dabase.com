@@ -45,6 +45,8 @@ day.
 You can set your slack work hours, it will put the 💤 icon next to your name
 if you are offline.
 
+<img src="https://s.natalian.org/2022-04-28/slack-notifications.png" alt="Notification schedule">
+
 ## Use huddles
 
 Frictionless quick conversation and share your screen via huddle.
