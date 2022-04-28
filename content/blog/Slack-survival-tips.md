@@ -15,12 +15,12 @@ If you don't tag the team member you cannot expect that team member to read it.
 
 ## Limit amount of channels
 
-More channels is more difficult to navigate to between and as a consequence
-this hides content.
+More channels makes it more difficult to navigate between and as a consequence
+hides content. Keep your team to one channel.
 
 ## Prioritise by Stars
 
-If you are working across teams, **star something if I still need to do
+If you are working across teams, **star something if you need to do
 something with it**. That way you'll get a clean side bar.
 
 ## Use the reminder function to remind yourself to respond
@@ -30,12 +30,13 @@ important message or question.
 
 ## Bookmark across teams using Pins
 
-Instead of bookmarking, you can Pin important messages.
+Instead of bookmarking, you can Pin important messages. Other team members will
+be able to see it.
 
 ## Say "bye"
 
 One gigantic problem with Slack is disconnecting from work. Establish a **Way
-of working** with your team. For example a simple gesture of saying "bye" at
+of working** with your team. For example the simple gesture of saying "bye" at
 end of the working day can help.
 
 ## Focus time
