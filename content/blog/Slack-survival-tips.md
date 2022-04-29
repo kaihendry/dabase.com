@@ -1,7 +1,7 @@
 ---
 title: Slack Survival Tips
 date: 2022-04-21T17:08:20+08:00
-description: ✨ Slack tips to thrive and survive online work 🚀
+description: ✨ Slack tips to survive and thrive online 🚀
 toc: true
 ---
 
@@ -16,7 +16,7 @@ If you don't tag the team member you cannot expect that team member to read it.
 ## Limit amount of channels
 
 More channels makes it more difficult to navigate between and as a consequence
-hides content. Keep your team to one channel.
+hides content. Keep your team to **one channel**.
 
 ## Prioritise by Stars
 
@@ -33,11 +33,13 @@ important message or question.
 Instead of bookmarking, you can Pin important messages. Other team members will
 be able to see it.
 
-## Say "bye"
+<img width="200px" src="https://s.natalian.org/2022-04-29/pinned.jpeg" alt="Pinned messages">
+
+## Say "bye" 👋
 
 One gigantic problem with Slack is disconnecting from work. Establish a **Way
 of working** with your team. For example the simple gesture of saying "bye" at
-end of the working day can help.
+end of the working day might help.
 
 ## Focus time
 
@@ -72,3 +74,13 @@ Inspired by https://www.heytaco.chat/ for driving team building.
 
 Some workspaces make Friday a half day and make it a point to recognise the
 past week's worth of work with some "shout outs" and fun.
+
+## Last, but not least summarise
+
+When there is a finding / decision / conclusion, **make the effort to summarise**. A good structure is the **Alexandrian Pattern** (also used in <a href="https://www.youtube.com/watch?v=MLojBHurMyk">ADRs</a>):
+
+1. Context
+2. Problem
+3. Solution
+
+The summary ideally fits in a 280 character tweet!
