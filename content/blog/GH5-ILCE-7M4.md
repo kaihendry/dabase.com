@@ -60,6 +60,8 @@ is this such a nightmare?
 
 <img style="width: 40%" src="https://s.natalian.org/2022-04-25/wifi.png" alt="struggling to connect">
 
+UPDATE: I think WiFi connections are only use in the [PC Remote functionality](https://www.reddit.com/r/SonyAlpha/comments/udvc3m/can_i_avoid_direct_wifi_it_seems_to_only/i6ne7mr/)
+
 ## 4k 60fps
 
 I can't seem to get this working!
@@ -69,4 +71,8 @@ I can't seem to get this working!
 <img src="https://s.natalian.org/2022-04-22/sdcard.jpeg">
 </div>
 
-Do I need to upgrade the SD card?
+Do I need to upgrade the SD card ...
+
+I'm also dissapointed that S&Q 1fps 4k recording also seems to require a faster SD card!
+
+for 1fps recording!? 🤦 https://www.alphashooters.com/cameras/sony-a7iv/memory-cards/#memory-cards-for-sq-motion-shooting
