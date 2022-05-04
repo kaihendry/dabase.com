@@ -51,6 +51,7 @@ Cons:
 
 - Probably technically not terribly interesting
 - Probably more (tech) sales / support focused
+- Management probably want to outsource you to cut costs
 
 ## "Chinese companies"
 
@@ -96,12 +97,14 @@ If you're thinking of starting a company here, I would say it's not terribly
 wise. Market is small, talent is scarce and costs are high.
 
 Singapore Government's <abbr title="Ministry of Manpower">MOM</abbr> are
-forever changing the system (ratios, points system.. it's opaque) to get
-Employment Passes to work and contribute to the economy. Their philosophy is to
-favour local citizens, and there is a push to reskill (mid-career) Singaporeans
-for tech jobs. This is affecting the tech scene, and there is an increased
-outflow of "Foreign Talent", but new people are quick to replace them, because
-of China.
+forever tweaking the immigration rules (ratios, points system.. it's opaque) to
+get Employment Passes to work and contribute to the economy. Their philosophy
+is to favour local citizens, and there is a push to reskill (mid-career)
+Singaporeans for tech jobs.
+
+This policy is affecting the tech scene, and there is an increased outflow of
+"Foreign Talent", but new people are quick to replace them, because of China.
+As long as inflow > outflow, immigration rules and ratios will not relax.
 
 Talented Singaporeans can work in the states through a Free Trade agreement, so
 do not be surprised that the best Singaporean developers are not in Singapore.
@@ -114,12 +117,16 @@ job. That's how I got started via https://hackerspace.sg/ and such.
 
 ## Remote work is the biggest opportunity
 
-I personally explored Asia as a broke backpacker. COVID19 made remote work
-acceptable, so I **strongly** suggest you try explore Asia as a remote worker.
-Or better still, creating your own online lifestyle business.
+I explored Asia as a backpacker with a tight daily budget. **COVID19 made
+remote work acceptable**, so I **strongly** suggest you explore Asia as a
+remote worker. Or better still, creating your own online lifestyle business.
 
-## Good news
+Singapore is certainly worth checking out, but don't be an idiot with your
+money! Accomodation starts at 100SGD a night. Come to Singapore with a plan,
+ideally for a specific meeting or series of them.
+
+## On a positive note
 
 Despite the reality check above, there is a talent shortage in Singapore.
-Companies are keen to hire you. The current context makes it difficult, I'm
+Companies are keen to hire you. The current context makes it difficult. I'm
 optimistic that conditions will improve.
