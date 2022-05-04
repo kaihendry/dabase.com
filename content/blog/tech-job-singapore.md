@@ -76,7 +76,7 @@ Cons:
 ## Academic connection
 
 If you attend University, try work out if there is some connection between that
-University and a Singaporean one like [NUS](https://www.nus.edu.sg/). There is
+University and a Singaporean one like [NUS](https://www.nus.edu.sg/). There
 could be some scholarship, exchange or research job on offer.
 
 Pros:
