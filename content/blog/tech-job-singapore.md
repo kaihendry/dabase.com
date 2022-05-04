@@ -4,6 +4,8 @@ date: 2022-05-03T17:00:39+08:00
 description: Tips for landing a job in technology in Singapore
 ---
 
+{{< youtube f-I9l1MJxBE >}}
+
 ## Singaporean Startups
 
 - https://cryptojobslist.com
