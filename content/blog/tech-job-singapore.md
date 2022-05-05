@@ -132,3 +132,8 @@ ideally for a specific meeting or series of them.
 Despite the reality check above, there is a talent shortage in Singapore.
 Companies are keen to hire you. The current context makes it difficult. I'm
 optimistic that conditions will improve.
+
+Update: Some people suggest
+[Tech.Pass](https://www.edb.gov.sg/en/how-we-help/incentives-and-schemes/tech-pass.html),
+but the fine print is that your "startup" needs a valuation of >500M (Series B)
+and reserved for founders / high level employees.

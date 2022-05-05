@@ -45,3 +45,5 @@ A **Log insights** query like:
     | sort @timestamp desc
     | filter ispresent(fields.visitor)
     | stats count_distinct(fields.visitor) by bin(1h)
+
+Check the Amazon documentation for more [sample queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-examples.html).
