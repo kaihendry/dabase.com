@@ -4,6 +4,8 @@ date: 2022-05-04
 description: Count how many users you have in your structured logs
 ---
 
+{{< youtube 7805qzOmEuk >}}
+
 First you need to finger print your user, e.g. by [setting a
 cookie](https://youtu.be/YlrwDN7_vHw?t=226) or hashing the UA string.
 
@@ -47,3 +49,5 @@ A **Log insights** query like:
     | stats count_distinct(fields.visitor) by bin(1h)
 
 Check the Amazon documentation for more [sample queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-examples.html).
+
+Also do checkout: https://www.rehanvdm.com/blog/aws-serverless-you-might-not-need-third-party-monitoring
