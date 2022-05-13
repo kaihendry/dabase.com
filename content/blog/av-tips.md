@@ -26,7 +26,7 @@ Go wired! [Get connected 🎶](https://www.youtube.com/watch?v=k3RzQ1b_c9w)
 <img title="wired" src="https://s.natalian.org/2020-12-31/wired.png" alt="wired connection">
 </a>
 
-Be wary of routes with ☠️PACKET LOSS☠️  [Exhibit A](https://smokeping.dabase.com/?target=Malaysia.TM) [Exhibit B](https://smokeping2.dabase.com/?target=Malaysia.TM) ... only really noticed with [monitoring](https://hub.docker.com/r/linuxserver/smokeping).
+Be wary of routes with ☠️PACKET LOSS☠️ [Exhibit A](https://smokeping.dabase.com/?target=Malaysia.TM) [Exhibit B](https://smokeping2.dabase.com/?target=Malaysia.TM) ... only really noticed with [monitoring](https://hub.docker.com/r/linuxserver/smokeping).
 
 Good options to getting **wired** (single USB-C) for Apple <abbr title="Macbook Pros">MBP</abbr>:
 
@@ -39,7 +39,6 @@ Good options to getting **wired** (single USB-C) for Apple <abbr title="Macbook 
 ## Lighting 💡
 
 <img src="https://s.natalian.org/2020-12-31/hivan-arvizu-soyhivan-kdm6BWNuTh0-unsplash.webp" alt="Ring light demo">
-
 
 Entry level suggestions:
 
@@ -56,6 +55,7 @@ You _will_ get used to a bright light in your face.
 
 **Avoid wireless**. I love my Air Pod Pros too, but they are not as good as you might think!
 
+- A [lapel microphone](https://alvinng.dev/posts/this-equipment-changed-my-video-calls/) is the simplest option
 - "Condenser microphone" (reduced pick up pattern) - ~100SGD [Audio-Technica AT2005USB Cardioid Dynamic USB/XLR Microphone](https://amzn.to/37YFNVC)
 - When using <abbr title="Open Broadcaster Software">OBS</abbr> do experiment with the noise gate / noise filters! They work well.
 - Advanced: ~150SGD [Microphone boom](http://www.rode.com/accessories/psa1)
@@ -88,12 +88,12 @@ Practice makes perfect.
 
 The problem of "making eye contact" is quite difficult to solve if your camera isn't mounted on your screen
 
-* Teleprompter / Glidecam is ~200SGD - you can mount a (small) HDMI output screen with Zoom gallery below it
-* Try set you camera a few meters back from your desk, if you have the space
+- Teleprompter / Glidecam is ~200SGD - you can mount a (small) HDMI output screen with Zoom gallery below it
+- Try set you camera a few meters back from your desk, if you have the space
 
 Green screen - less distracting than a virtual background. Pull up and under-the-bed storable indicative prices:
 
-1. 5m x 2m  $189SGD
+1. 5m x 2m $189SGD
 2. 3m x 2m $249SGD
 
 <p style="background: green">Remember you only need to green screen <strong>your outline/silhouette</strong>, not your back wall!</p>
@@ -110,5 +110,5 @@ TODO: Watch some Zoom tutorial videos for [understanding some advanced features 
 
 Credits:
 
-* <span>Photo by <a href="https://unsplash.com/@soyhivan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">HIVAN ARVIZU @soyhivan</a> on <a href="https://unsplash.com/s/photos/ring-light?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-* <span>Photo by <a href="https://unsplash.com/@andrija420?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrija Radojevic</a> on <a href="https://unsplash.com/s/photos/condensor-microphone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+- <span>Photo by <a href="https://unsplash.com/@soyhivan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">HIVAN ARVIZU @soyhivan</a> on <a href="https://unsplash.com/s/photos/ring-light?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+- <span>Photo by <a href="https://unsplash.com/@andrija420?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrija Radojevic</a> on <a href="https://unsplash.com/s/photos/condensor-microphone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
