@@ -47,12 +47,14 @@ Pros:
 - Easy to add Approval stage for <abbr title="Product Owner">PO</abbr> sign-off in the Production account
 - Changes happen via Git API
 - Minimises code duplication (no difference between environments given a commit)
+- Empowers service team
 
 Cons:
 
 - In each Environment a **build is required** and that might be slow or non-reproducible in some languages
 - Without some trivial checks in place (check stg has commit) or approval stages, a `git push prd` could happen
 - Each stack (e.g. Infra, App) typically is a separate Code{Commit,Build,Pipeline} and inevitably some manual co-ordination will be needed. I.e. Infra pushed before App
+- At scale, the pipelines might become unwieldly, with organisational policies difficult to enforce.
 
 # Using Github
 
@@ -62,12 +64,12 @@ environments, **Github needs to assume an Administrator role across your Service
 Pros:
 
 - Workflows have far more mindshare that AWS's basic buildspec.yml
-- Github comes with lot of great developer experiences
+- Github comes with lot of great developer experiences and tooling
 
 Cons:
 
 - Could dissuade teams from using trunk based development
-- Github effectively has a back door to your entire service which is a security risk
+- Third party Github effectively has a back door to your entire service which is a security risk
 
 # Using some CI/CD tool in a dedicated account in your AWS Organisation
 
