@@ -4,6 +4,8 @@ date: 2022-05-21T06:52:21+08:00
 description: The devil in the details in your deployment pipeline
 ---
 
+<img src="https://s.natalian.org/2022-05-23/path-to-production.png" alt="Path to Production">
+
 Assuming a {<abbr title="Development">dev</abbr>,<abbr
 title="Staging">stg</abbr>,<abbr title="Production">prd</abbr>} account (three AWS accounts), **how
 does a cross functional service team deploy to production** in a rigorous manner?
@@ -31,6 +33,7 @@ Pros:
 - Full git history with integrity
 - Easy to add Approval stage for <abbr title="Product Owner">PO</abbr> sign-off in the Production account
 - Changes happen via Git API
+- Minimises code duplication (no difference between environments given a commit)
 
 Cons:
 
