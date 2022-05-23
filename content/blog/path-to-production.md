@@ -6,6 +6,19 @@ description: The devil in the details in your deployment pipeline
 
 <img src="https://s.natalian.org/2022-05-23/path-to-production.png" alt="Path to Production">
 
+> A common pattern is that a single group within the organization is
+> responsible for both: designing the organization, vending accounts and
+> implementing the security control. this group/team could use org-formation to
+> do all of this using git-ops.
+
+> Service teams would get vended a set of accounts (e.g: dev, stg,
+> prd) that contain it-security guardrails (e.g. predefined roles that can be
+> assumed) or other resources that are commonly used within the organization. An
+> example of this could be integration with CI/CD. Service teams would use the
+> accounts (dev, stg, prd) to develop software, typically with a different IaC
+> solution (e.g terraform or cdk). These tools offer better ergonomics for
+> application development. - [Olaf Conijn](https://twitter.com/OConijn)
+
 Assuming a {<abbr title="Development">dev</abbr>,<abbr
 title="Staging">stg</abbr>,<abbr title="Production">prd</abbr>} account (three AWS accounts), **how
 does a cross functional service team deploy to production** in a rigorous manner?
