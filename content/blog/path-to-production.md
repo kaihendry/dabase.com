@@ -48,6 +48,7 @@ Pros:
 - Changes happen via Git API
 - Minimises code duplication (no difference between environments given a commit)
 - Empowers service team
+- CI/CD is managed by AWS, no third party set up or trust required
 
 Cons:
 
@@ -65,7 +66,7 @@ environments, **Github needs to assume an Administrator role across your Service
 
 Pros:
 
-- Workflows have far more mindshare that AWS's basic buildspec.yml
+- Workflows have far more mindshare than AWS's basic buildspec.yml
 - Easy to add a workflow, to enforce some organisational policy
 - Github comes with lot of great developer experiences and tooling
 
