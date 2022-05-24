@@ -19,8 +19,8 @@ description: The devil in the details in your deployment pipeline
 > solution (e.g terraform or cdk). These tools offer better ergonomics for
 > application development. - [Olaf Conijn](https://twitter.com/OConijn)
 
-Assuming a {<abbr title="Development">dev</abbr>,<abbr
-title="Staging">stg</abbr>,<abbr title="Production">prd</abbr>} account (three AWS accounts), **how
+Assuming three accounts {<abbr title="Development">dev</abbr>,<abbr
+title="Staging">stg</abbr>,<abbr title="Production">prd</abbr>} accounts, **how
 does a cross functional service team deploy to production** in a rigorous manner?
 
 1. Develop and commit to dev
@@ -42,7 +42,7 @@ Pros:
 
 - Simple
 - Code is the source of truth
-- Dependencies tracked with a lock file
+- Dependencies tracked with a lock file or "vendored"
 - Full git history with integrity
 - Easy to add Approval stage for <abbr title="Product Owner">PO</abbr> sign-off in the Production account
 - Changes happen via Git API
@@ -52,9 +52,11 @@ Pros:
 Cons:
 
 - In each Environment a **build is required** and that might be slow or non-reproducible in some languages
-- Without some trivial checks in place (check stg has commit) or approval stages, a `git push prd` could happen
+- Without some checks in place (check stg has commit) or approval stages, a `git push prd` could happen
 - Each stack (e.g. Infra, App) typically is a separate Code{Commit,Build,Pipeline} and inevitably some manual co-ordination will be needed. I.e. Infra pushed before App
+- Assumes trunk based development - complex branching strategies might make the flow ... complex
 - At scale, the pipelines might become unwieldly, with organisational policies difficult to enforce.
+- On fresh AWS accounts, AWS Code\* services are typically your only choice to work with
 
 # Using Github
 
@@ -64,6 +66,7 @@ environments, **Github needs to assume an Administrator role across your Service
 Pros:
 
 - Workflows have far more mindshare that AWS's basic buildspec.yml
+- Easy to add a workflow, to enforce some organisational policy
 - Github comes with lot of great developer experiences and tooling
 
 Cons:
@@ -82,13 +85,27 @@ Pros:
 
 - **Focuses on build artefacts** which might be easier to work with than code
 - Should speed up the pipelines, since we are working with artifacts
-- Should allow for more complex workflows with (non-code) dependencies et al
-- Guarantees that every change has been applied to each environment (i.e. less mistakes)
+- Should allow for almost any complex workflow / pipeline with (non-code) dependencies et al
+- More guard rails, e.g. ensuring that every change has been applied to each environment (i.e. less mistakes)
 - Often comes with a nice dashboard and visualisation map
+- It can be simplified, for example when a shared **AWS managed** [Docker Container Registry](https://aws.amazon.com/ecr/) is used in that "dedicated account", and each container image is marked with a commit hash
 
 Cons:
 
 - The fact that it can accommodate more complexity, means that **the CI/CD server will be far more complex**
 - The CI/CD tool becomes over arching and bloated, responsible for co-ordinating the whole path with roles to deploy in their respective environment
 - CI/CD and artefact store is typically **centralised** which can become a bottle neck or security target
-- Source of truth might be less obvious
+- Source of truth might be less obvious in complex, multi-step pipelines
+
+# Summary
+
+A simpler git powered alternative to the top heavy, complex, centralised CI/CD
+pipelines in organisations is to leverage AWS Code\* in each {dev,stg,prd}
+account.
+
+Decentralised, AWS account based CI/CD, coordinated by git pushes, is the path
+to production. The approach is decoupled, stresses reproducible builds and uses
+a git repository's commit hash as the source of truth. The service team is
+empowered since they are essentially responsible for their Continuous
+Integration build rules and deployment. That said, production deployment
+approval and further guard rails can be imposed when required.
