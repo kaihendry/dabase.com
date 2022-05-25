@@ -62,7 +62,7 @@ Cons:
 # Using Github
 
 Workflows are great, but to effectively deploy to your {dev,stg,prd}
-environments, **Github needs to externally trusted**.
+environments, **Github needs to be externally trusted**.
 
 Pros:
 
@@ -74,7 +74,7 @@ Pros:
 Cons:
 
 - Could dissuade teams from using trunk based development
-- Third party Github effectively has a back door to your entire service which is a security risk
+- Third party Github effectively has a back door to your service which is a security risk
 
 Github's access can be limited to say the Container Registry, i.e. builds
 instead of deployment, nonetheless there is a supply chain issue.
