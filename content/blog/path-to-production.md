@@ -62,18 +62,22 @@ Cons:
 # Using Github
 
 Workflows are great, but to effectively deploy to your {dev,stg,prd}
-environments, **Github needs to assume an Administrator role across your Service accounts**!
+environments, **Github needs to externally trusted**.
 
 Pros:
 
 - Workflows have far more mindshare than AWS's basic buildspec.yml
 - Easy to add a workflow, to enforce some organisational policy
+- Managed!
 - Github comes with lot of great developer experiences and tooling
 
 Cons:
 
 - Could dissuade teams from using trunk based development
 - Third party Github effectively has a back door to your entire service which is a security risk
+
+Github's access can be limited to say the Container Registry, i.e. builds
+instead of deployment, nonetheless there is a supply chain issue.
 
 # Using some CI/CD tool in a dedicated account in your AWS Organisation
 
@@ -95,6 +99,7 @@ Cons:
 
 - The fact that it can accommodate more complexity, means that **the CI/CD server will be far more complex**
 - The CI/CD tool becomes over arching and bloated, responsible for co-ordinating the whole path with roles to deploy in their respective environment
+- Your infra team probably has to support it
 - CI/CD and artefact store is typically **centralised** which can become a bottle neck or security target
 - Source of truth might be less obvious in complex, multi-step pipelines
 
@@ -104,7 +109,7 @@ A simpler git powered alternative to the top heavy, complex, centralised CI/CD
 pipelines in organisations is to leverage AWS Code\* in each {dev,stg,prd}
 account.
 
-Decentralised, AWS account based CI/CD, coordinated by git pushes, is the path
+Decentralised, AWS managed CI/CD, coordinated by git pushes, is the path
 to production. The approach is decoupled, stresses reproducible builds and uses
 a git repository's commit hash as the source of truth. The service team is
 empowered since they are essentially responsible for their Continuous
