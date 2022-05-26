@@ -105,13 +105,18 @@ Cons:
 
 # Summary
 
-A simpler git powered alternative to the top heavy, complex, centralised CI/CD
-pipelines in organisations is to leverage AWS Code\* in each {dev,stg,prd}
-account.
+A simpler git powered alternative to the top heavy, high maintenance, complex,
+centralised CI/CD pipelines in organisations is proposed, which defers to AWS
+managed CI/CD aka AWS Code\* in each {dev,stg,prd} account.
 
-Decentralised, AWS managed CI/CD, coordinated by git pushes, is the path
-to production. The approach is decoupled, stresses reproducible builds and uses
-a git repository's commit hash as the source of truth. The service team is
-empowered since they are essentially responsible for their Continuous
+Other _managed_ CI/CD management options like Github are considered, but that
+requires strong external trust and integration.
+
+Decentralised, fault tolerant, source focused, coordinated by git pushes could
+be the path to production.
+
+The AWS managed approach is decoupled, stresses reproducible builds and uses a
+git repository's commit hash as the source of truth. This approach empowers the
+service team since they are essentially responsible for their Continuous
 Integration build rules and deployment. That said, production deployment
-approval and further guard rails can be imposed when required.
+approval and further guard rails can implemented when required.
