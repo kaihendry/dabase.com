@@ -113,7 +113,7 @@ Other _managed_ CI/CD management options like Github are considered, but that
 requires strong external trust and integration.
 
 AWS supplies a decentralised, fault tolerant, auditable path to production
-coordinated by git pushes and [Code\*](https://aws.amazon.com/codestar/features/).
+coordinated by git pushes with [Code\*](https://aws.amazon.com/codestar/features/).
 
 This path stresses reproducible builds and uses a git repository's commit hash
 as the source of truth. Furthermore it empowers the service team since they can
