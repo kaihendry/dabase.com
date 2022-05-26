@@ -105,18 +105,18 @@ Cons:
 
 # Summary
 
-A simpler git powered alternative to the top heavy, high maintenance, complex,
-centralised CI/CD pipelines in organisations is proposed, which defers to AWS
-managed CI/CD aka AWS Code\* in each {dev,stg,prd} account.
+The top heavy, high maintenance, complex, centralised CI/CD pipelines in
+organisations is in stark contrast to the proposed AWS managed CI/CD aka AWS
+Code\* in each {dev,stg,prd} account.
 
 Other _managed_ CI/CD management options like Github are considered, but that
 requires strong external trust and integration.
 
-Decentralised, fault tolerant, source focused, coordinated by git pushes could
-be the path to production.
+AWS supplies a decentralised, fault tolerant, auditable path to production
+coordinated by git pushes and [Code\*](https://aws.amazon.com/codestar/features/).
 
-The AWS managed approach is decoupled, stresses reproducible builds and uses a
-git repository's commit hash as the source of truth. This approach empowers the
-service team since they are essentially responsible for their Continuous
-Integration build rules and deployment. That said, production deployment
-approval and further guard rails can implemented when required.
+This path stresses reproducible builds and uses a git repository's commit hash
+as the source of truth. Furthermore it empowers the service team since they can
+take responsibility for their Continuous Integration build rules and
+deployment. That said, production deployment approval and further guard rails
+can be implemented when required.
