@@ -20,7 +20,7 @@ hides content. Keep your team to **one channel**.
 
 ## Prioritise by Stars
 
-If you are working across teams, **star something if you need to do
+If you are working across teams, **star the channel if you need to do
 something with it**. That way you'll get a clean side bar.
 
 ## Use the reminder function to remind yourself to respond
