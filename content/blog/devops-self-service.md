@@ -67,5 +67,5 @@ by following best practices like dedicated {security,logging,networking}
 accounts.
 
 Legacy infrastructure teams shed responsibilities, move from being ticket based
-to advisory, like notifying teams how to reduce costs or better still, joining
-the Service delivery teams.
+to advisory, like actively working with teams to leverage the Cloud, reduce
+costs or better still, joining the Service delivery teams.
