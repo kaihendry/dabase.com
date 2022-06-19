@@ -21,15 +21,15 @@ Why does this happen?
 
 1. The process reflects the existing **change management** / organisational structure
 2. **Legacy** reasons as this is the process how (on-premises) resources are allocated (aka not Cloud native)
-3. **Lack of trust** between "gate keeper" Infrastructure Administrators and the Service team will potentially consume expensive resources
+3. **Lack of trust** between "gate keeper" Infrastructure Administrators, and the "resource hungry" Service teams
 4. Strict policies that must be **compliant**, for example in a heavily regulated industry with a low risk appetite
-5. Service teams don't have the skills for Infrastructure, aka lack a **Devops skilled** team member
+5. Service teams don't have the skills to provision Infrastructure themselves, aka lack **Devops skilled** team members
 
 # A better approach
 
 Service teams provide all the resources they need in the accounts with AdministratorAccess themselves! They manage their own [Path to Production](/blog/2022/path-to-production/). 🙌
 
-1. **Cross functional teams**, "devops" should be and part of the service delivery team
+1. **Cross functional teams**, "devops" should be part of the service delivery team
 1. External linting (e.g. AWS Config) enforcing policy
 1. External budget alerts
 
