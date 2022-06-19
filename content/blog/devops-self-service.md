@@ -1,7 +1,7 @@
 ---
 title: "Self Service in Infrastructure"
 date: 2022-06-19T21:33:41+08:00
-description: Defining the Devops idea of "self service"
+description: Exploring the Devops idea of "self service" on the modern Cloud
 ---
 
 # The problem: Ticket based systems for provisioning Infrastructure
