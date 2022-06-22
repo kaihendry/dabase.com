@@ -4,7 +4,7 @@ date: 2022-05-21T06:52:21+08:00
 description: The devil in the details in your deployment pipeline
 ---
 
-<img src="https://s.natalian.org/2022-05-23/path-to-production.png" alt="Path to Production">
+{{< youtube DwJlGyZ9bxM >}}
 
 > A common pattern is that a single group within the organization is
 > responsible for both: designing the organization, vending accounts and
@@ -29,6 +29,8 @@ does a cross functional service team deploy to production** in a rigorous manner
 
 # The simplest way to do it
 
+<img src="https://s.natalian.org/2022-05-23/path-to-production.png" alt="Path to Production">
+
 Each {dev,stg,prd} account has an AWS Code{Commit,Build,Pipeline} that triggers
 a build/deployment pipeline once code has been pushed to it.
 
@@ -46,6 +48,7 @@ Pros:
 - Full git history with integrity
 - Easy to add Approval stage for <abbr title="Product Owner">PO</abbr> sign-off in the Production account
 - Changes happen via Git API
+- No cross role setup required, state can be managed in the account
 - Minimises code duplication (no difference between environments given a commit)
 - Empowers service team
 - CI/CD is managed by AWS, no third party set up or trust required
@@ -99,7 +102,8 @@ Cons:
 
 - The fact that it can accommodate more complexity, means that **the CI/CD server will be far more complex**
 - The CI/CD tool becomes over arching and bloated, responsible for co-ordinating the whole path with roles to deploy in their respective environment
-- Your infra team probably has to support it
+- Some team probably has to support it
+- The IAM roles and networking will be non-trivial!
 - CI/CD and artefact store is typically **centralised** which can become a bottle neck or security target
 - Source of truth might be less obvious in complex, multi-step pipelines
 
@@ -119,4 +123,5 @@ This path stresses reproducible builds and uses a git repository's commit hash
 as the source of truth. Furthermore it empowers the service team since they can
 take responsibility for their Continuous Integration build rules and
 deployment. That said, production deployment approval and further guard rails
-can be implemented when required.
+can be introduced with a [self service
+pattern](/blog/2022/devops-self-service/).

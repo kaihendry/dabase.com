@@ -39,6 +39,9 @@ is managed by a different team to the Service team to enforce the concept of
 
 <img src="https://s.natalian.org/2022-06-19/org-formation.png">
 
+In <abbr title="Small and Medium Enterprise">SME</abbr> companies, **Operations
+responsibilties** are often folded into the service team.
+
 # Where things can go horribly wrong
 
 Usual rhetoric is "lack of standards". "AdministratorAccess freedom" given to
@@ -61,11 +64,14 @@ Yes, it's non-ticketed, but it often has problems:
 Cloud native technology can empower Service teams to provision their own
 infrastructure **with guard rails**. ☑
 
-Infrastructure teams instead focus on resources like Accounts (Org Units),
-costs (budgets), applying policies (AWS Config), tags and supporting Operations
-by following best practices like dedicated {security,logging,networking}
-accounts.
+Infrastructure teams instead focus on **Governance**, like Account structure,
+[curating resources](https://aws.amazon.com/servicecatalog), costs (budgets),
+applying policies (AWS Config), offer tags and supporting Operations by
+following best practices like dedicated {security,logging,networking} accounts.
+Typically there is a strong alignment with the ITSec and compliance
+stakeholders.
 
-Legacy infrastructure teams shed responsibilities, move from being ticket based
-to advisory, like actively working with teams to leverage the Cloud, reduce
-costs or better still, joining the Service delivery teams.
+Legacy infrastructure teams shed the "undifferentiated heavy lifting", move
+from being ticket based to committing code, like actively working with teams to
+leverage the Cloud, reduce costs or better still, joining the Service delivery (App)
+teams.
