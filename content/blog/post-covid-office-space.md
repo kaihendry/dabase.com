@@ -39,3 +39,5 @@ for team work. An open office space does not work!
 
 We don’t need offices to become like home; we need offices for face to face
 team work and bonding.
+
+- [Further thoughts on Office Space for high performing teams](https://www.haworth.com/ap/en/spark/articles/2021/q3/07-01_how-to-leverage-space-for-high-performing-teams.html)
