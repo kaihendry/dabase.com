@@ -1,11 +1,11 @@
 ---
 title: Post Pandemic Malaysia
 date: 2022-08-08T08:09:31+08:00
-description: Observations from my August 2022 trip
+description: Observations from a August 2022 trip
 ---
 
 Singapore has been my home during the COVID-19 pandemic and though we are
-almost "back to normal" in August 2022, there are a lingering changes I've
+almost "back to normal" in August 2022, there are lingering changes I've
 observed which are also amplified in my previous home; Malaysia.
 
 # Lack of manpower
@@ -13,8 +13,8 @@ observed which are also amplified in my previous home; Malaysia.
 It's harder to book a Grab taxi. It's almost impossible to go out for a late
 night drink.
 
-For example my Malaysian stomping grounds is the Uptown are of Demansara Utama,
-and it's dead from 9PM now.
+For example my Malaysian stomping grounds is the Uptown area of Demansara
+Utama, and it's dead from 9PM now.
 
 # Everyone in Malaysia wears masks
 
@@ -34,3 +34,9 @@ lived here, typically **rejected COVID19 patients** for two reasons:
 
 This would explain Malaysia's high COVID death rate of ~1140 per million versus
 Singapore's 274.
+
+# Saliva based tests
+
+Malaysian tests are saliva based, not nasal sticks like you find in Singapore.
+
+<img src="https://s.natalian.org/2022-08-08/saliva-test.jpeg" alt="Antigen Rapid Test (Oral Fluid based)">
