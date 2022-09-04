@@ -1,7 +1,7 @@
 ---
 title: Path to Production
 date: 2022-05-21T06:52:21+08:00
-description: The devil in the details in your deployment pipeline
+description: Three seperate git repos for dev, stg & prd
 ---
 
 {{< youtube DwJlGyZ9bxM >}}
@@ -46,6 +46,7 @@ Pros:
 - Code is the source of truth
 - Dependencies tracked with a lock file or "vendored"
 - Full git history with integrity
+- Isolated environments
 - Easy to add Approval stage for <abbr title="Product Owner">PO</abbr> sign-off in the Production account
 - Changes happen via Git API
 - No cross role setup required, state can be managed in the account
@@ -57,10 +58,8 @@ Cons:
 
 - In each Environment a **build is required** and that might be slow or non-reproducible in some languages
 - Without some checks in place (check stg has commit) or approval stages, a `git push prd` could happen
-- Each stack (e.g. Infra, App) typically is a separate Code{Commit,Build,Pipeline} and inevitably some manual co-ordination will be needed. I.e. Infra pushed before App
-- Assumes trunk based development - complex branching strategies might make the flow ... complex
-- At scale, the pipelines might become unwieldly, with organisational policies difficult to enforce.
-- On fresh AWS accounts, AWS Code\* services are typically your only choice to work with
+- Each stack (e.g. Infra, App) typically is a separate Code{Commit,Build,Pipeline} and inevitably some manual co-ordination is needed. I.e. Infra pushed before App
+- Assumes trunk based development - [complex branching strategies might make the flow ... complex](https://codefresh.io/blog/stop-using-branches-deploying-different-gitops-environments/)
 
 # Using Github
 

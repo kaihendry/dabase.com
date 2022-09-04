@@ -7,9 +7,9 @@ description: Why is this so hard?
 Assuming var.gitlab_runner_role_arn has sts.assumerole privileges.
 
     resource "aws_iam_role" "gitlab_runner" {
-    	name = "gitlab_role"
-    	description = "Gitlab role for read only access"
-    	assume_role_policy = data.aws_iam_policy_document.allow_central_access.json
+      name               = "GitlabRunner"
+      description        = "Gitlab role for read only access"
+      assume_role_policy = data.aws_iam_policy_document.allow_central_access.json
     }
 
     resource "aws_iam_role_policy_attachment" "readonly" {
