@@ -30,7 +30,7 @@ I love how you can charge the Sony battery via USB-C.
 
 ## Steady shot
 
-Stabilisation is not as good as the GH5.
+Stabilisation is not as good as the GH5. [Steady shot must be set as Active](https://www.sony.com.sg/electronics/support/software/00255074#SteadyShot) and you can get better results if you stabilise the clip with **Catalyst Browse**. However it takes ~20 minutes easily on a 5 minute clip to render!
 
 Perhaps the lens [SEL20F18G](https://www.sony-asia.com/electronics/camera-lenses/sel20f18g/specifications) is missing stabilisation??
 
