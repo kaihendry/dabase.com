@@ -1,14 +1,25 @@
 ---
-title: Stored Shortcuts
+title: Archlinux / MacOS Shortcuts
 date: 2022-10-08T19:30:25+08:00
-description: Muscle memory shortcuts stored in my memory
-toc: true
+description: My muscle memory shortcuts
 ---
+
+<img src="https://s.natalian.org/2022-10-08/tp-xorg.png" alt="xmodmap keyboard bindings">
+
+Super_L (mod4) should be left of the space bar, if you find Alt_L (mod1) & Super_L (mod4) reversed you need to fix it like so:
+
+    setxkbmap -option altwin:swap_alt_win
+
+You can check the bind using `xev`.
+
+A "Mac" style keyboard like these "MX Keys for Mac" are nice, big and don't have the Function key confusing matters:
+
+<img src="https://s.natalian.org/2022-10-08/mac.png" alt="MX keys for Mac on Arch">
 
 # Terminal
 
-I use https://alacritty.org though since it can freeze on my Arch
-machine, I also use https://st.suckless.org which is more
+I like the cross-platform Terminal https://alacritty.org though since it can freeze on my Xorg Arch
+machine whilst idle 🤷, I also use https://st.suckless.org which is more
 reliable for my on Xorg.
 
 ## Copying text on the Terminal
@@ -26,8 +37,7 @@ I don't use vi bindings for visual selection or tmux etc.
 Historically it's a middle mouse click for pasting, though I'm
 more familar with:
 
-    ⌘ / CMD + v
-    Ctrl + v
+    mod4 + v
 
 ## Scrolling the terminal
 
@@ -52,5 +62,4 @@ Here I do not want copy on selection, but this happens automatically on a Linux 
 
 ## Pasting text on a browser
 
-    ⌘ / CMD + v
-    Ctrl + v
+    mod4 + v - works in google-chrome-stable
