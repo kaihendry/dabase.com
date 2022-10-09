@@ -64,9 +64,11 @@ Here I do not expect the Terminal's copy on selection behaviour. I rely on
 
 ## Pasting text on a browser
 
-    mod4 + v - works in google-chrome-stable
+    mod4 + v - works in google-chrome-stable on the URL bar
 
 And it matches the behaviour of my terminal.
+
+However on Archlinux I have to remember for general pasting to switch to Ctrl+v 🤦
 
 # Clipboard manager
 
