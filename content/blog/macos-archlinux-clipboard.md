@@ -4,6 +4,8 @@ date: 2022-10-08T19:30:25+08:00
 description: My muscle memory shortcuts that wfm between MacOS & Archlinux
 ---
 
+{{< youtube GKoz7mm2tNI >}}
+
 <img src="https://s.natalian.org/2022-10-09/thinkpad.png" alt="xmodmap keyboard bindings">
 
 The "Super" key aka [MacOS command
