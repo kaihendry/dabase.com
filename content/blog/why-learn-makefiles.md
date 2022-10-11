@@ -4,6 +4,8 @@ date: 2022-10-07T16:02:18+08:00
 description: Makefiles are the entry point to software projects
 ---
 
+{{< youtube KS75B1hPwss >}}
+
 <a href="https://en.wikipedia.org/wiki/Make_(software)">Make</a> is a software tool older than myself that new developers might over look, as being old and irrelevant.
 
 The Makefile language **requires tabs** and that alone causes new users to abandon it.
