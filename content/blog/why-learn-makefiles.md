@@ -37,3 +37,7 @@ Try https://github.com/tj/mmake
 
 - https://github.com/search?q=user%3Akaihendry+filename%3AMakefile&ref=simplesearch
 - https://dabase.com/blog/2013/Makefile_based_static_site_generator/
+
+Further argumentation on the need to automate your processes, using a similiar
+`./go` concept, but pretend it says `make` instead, see:
+https://www.thoughtworks.com/en-sg/insights/blog/praise-go-script-part-i
