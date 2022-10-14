@@ -30,16 +30,16 @@ everyone's benefit.
 
 Try [Slack's inbuilt Workflow
 Builder](https://slack.com/help/articles/4412723137683-Set-up-a-daily-stand-up-in-a-channel)
-for collecting updates from your collogues.
+for collecting updates from your colleagues.
 
 ## Use topics
 
-People tend to ignore Topics (maybe Slack will better highlight topics in future..), but it can help with team focus and announcements
+People tend to ignore Topics (maybe Slack will better highlight topics in future..), but it can help with team goals and announcements.
 
-## Bookmark BOOKMARK !
+## Bookmark BOOKMARK ! 🔖
 
 Searching is hard with Slack. Is you see a message that is remotely useful for
-your work, bookmark it! Thank me later.
+your work, **Add to saved items**! Thank me later.
 
 ## Limit amount of channels
 
