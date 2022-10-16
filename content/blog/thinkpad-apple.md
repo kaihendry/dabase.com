@@ -15,7 +15,10 @@ description: Two personal computers
 - OS: <a href="https://wiki.archlinux.org/title/Lenovo_ThinkPad_T14_(AMD)_Gen_3">Archlinux</a>
 - Ports: 2xUSBC 2xUSBA + HDMI + Network port
 
-<img src="https://s.natalian.org/2022-10-16/tpm2.avif" alt="Thinkpad vs Apple">
+<picture>
+<source type="image/avif" src="https://s.natalian.org/2022-10-16/tpm2.avif" alt="Thinkpad vs Apple" />
+<source type="image/webp" src="https://s.natalian.org/2022-10-16/tpm2.webp" />
+</picture>
 
 # Apple Air M2
 
