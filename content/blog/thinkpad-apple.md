@@ -16,8 +16,9 @@ description: Two personal computers
 - Ports: 2xUSBC 2xUSBA + HDMI + Network port
 
 <picture>
-<source type="image/avif" src="https://s.natalian.org/2022-10-16/tpm2.avif" alt="Thinkpad vs Apple" />
-<source type="image/webp" src="https://s.natalian.org/2022-10-16/tpm2.webp" />
+<source type="image/avif" srcset="https://s.natalian.org/2022-10-16/tpm2.avif" />
+<source type="image/webp" srcset="https://s.natalian.org/2022-10-16/tpm2.webp" />
+<img src="https://s.natalian.org/2022-10-16/tpm2.HIF" alt="Thinkpad vs Apple">
 </picture>
 
 # Apple Air M2
