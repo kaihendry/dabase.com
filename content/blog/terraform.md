@@ -17,9 +17,9 @@ The future of <abbr title="Infrastruture as Code">IaC</abbr> looks like using fa
 
 If you rename a stack, you must remember to rename the state file or location else you will have headaches deluxe.
 
-## Blast factor
+## Blast radius
 
-Most organisations split their IaC arbitrarily into different stacks. More stacks, the more difficult to deploy the complete infrastructure or just one service.
+Most organisations split their IaC arbitrarily into different stacks. The more stacks, the more difficult to deploy the complete infrastructure or just one service if someone decided to split it up. Painful.
 
 ## Time outs
 
