@@ -91,4 +91,4 @@ The beauty of using terraform is thought to be re-using existing modules. In pra
 
 Terraform makes it harder to provision, debug and refactor <abbr title="Infrastruture as Code">IaC</abbr> than using native tooling.
 
-Yes the {plan,apply} workflow is familiar, but it's let down by the operational deficiencies.
+Yes the {plan,apply} workflow is familiar, but it's let down by operational deficiencies.
