@@ -1,7 +1,7 @@
 ---
 title: Where Terraform sucks
 date: 2022-11-17T11:34:07+08:00
-description: My complaints about Terraform
+description: My complaints about Terraform in the context of Amazon Web Services
 toc: true
 ---
 
@@ -19,11 +19,11 @@ If you rename a stack, you must remember to rename the state file or location el
 
 ## Blast factor
 
-Most organisations split their IaC arbitrarily into different stacks. More stacks, the more difficult to deploy the complete infrastructure.
+Most organisations split their IaC arbitrarily into different stacks. More stacks, the more difficult to deploy the complete infrastructure or just one service.
 
 ## Time outs
 
-If you're waiting for infrastructure to provision and there is some break in connectivity or operation, your state file will be inconsistent.
+If you're waiting for infrastructure to provision and there is some break in connectivity or operation, **your state file will be inconsistent**.
 
 You then need to do manual [import actions](/tips/cloud/2022/Terraform-Import/) to repair the situation.
 
@@ -41,7 +41,7 @@ Cloudformation has `AWS::Serverless-2016-10-31` and Terraform requires you to ma
 ## Drift
 
 The Terraform AWS provider is not perfect. AWS might change a value and then
-your plan is inconsistent. This is called **drift** and it's hard to manage.
+your plan is inconsistent. This is called **drift** and it's [hard to manage](https://www.youtube.com/watch?v=Jh3pjr0uqWc).
 
 ## Destroy
 
@@ -64,7 +64,7 @@ miss](https://discuss.hashicorp.com/) and good luck on [Github](https://github.c
 
 ## Bootstrapping
 
-It's typical you need to bootstrap each AWS account with [state bucket and
+It's typical you need to bootstrap each AWS account with a [state bucket and
 dynamodb table](https://gist.github.com/4fa171067e0b9ec909afba29a56ede6a).
 
 This manual / "one off" step is difficult to automate.
@@ -85,8 +85,10 @@ Upgrading terraform and the [provider lock files](https://stackoverflow.com/ques
 
 ## Module issues
 
-The beauty of using terraform is thought to be re-using existing modules. In practice it is very difficult to find a module to do even basic things like provision a serverless function or setup a bucket / cloudfront. You will quickly find doing things in [Cloudformation template files](https://github.com/kaihendry/s3-cloudfront-cloudformation/blob/main/template.yml) are much easier and robust!
+The beauty of using terraform is thought to be re-using existing modules. In practice it is very difficult to find a module to do even basic infrastructure like provision a serverless function or setup a bucket / Cloudfront (CDN). You will quickly find doing things in [Cloudformation template files](https://github.com/kaihendry/s3-cloudfront-cloudformation/blob/main/template.yml) are much easier and robust.
 
 ## Conclusion
 
-Terraform makes it harder to provision, debug and refactor code than using native tooling. Yes the {plan,apply} workflow is familiar, but its let down by the operational deficiencies.
+Terraform makes it harder to provision, debug and refactor <abbr title="Infrastruture as Code">IaC</abbr> than using native tooling.
+
+Yes the {plan,apply} workflow is familiar, but it's let down by the operational deficiencies.
