@@ -139,7 +139,7 @@ easy to get right without knowing the details of the underlying Cloud service.
 ## Dumb and Slow
 
 Terraform tries to create a resource and polls until it exists unlike native
-tooling which is aware of the events.
+tooling which is aware of the events and dependencies.
 
 You won't have a good idea of progress and often you will hit timeouts on
 complex Kubernetes stacks. Especially if you do things like manipulate
@@ -153,14 +153,14 @@ files](https://stackoverflow.com/questions/73970738/terraform-does-not-match-any
 are not the same as Node's package-lock.json or go.mod. Watch out!
 
 Terraform is constantly changing and it's difficult to find a stable route to
-upgrade. As a result many organisations use old terraform version that manifest the
+upgrade. As a result many organisations use old terraform versions that manifest the
 problem!
 
 ## Modules misunderstood
 
 The beauty of using terraform modules is thought to be re-using existing
 third-party solutions. In practice, off the shelf
-[modules](https://registry.terraform.io/) is a [leaky
+[modules](https://registry.terraform.io/) are a [leaky
 abstraction](https://en.wikipedia.org/wiki/Leaky_abstraction) and introduce
 dependencies that are difficult to manage (Hint: `.terraform.lock.hcl` won't help!).
 
