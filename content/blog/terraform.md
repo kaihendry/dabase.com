@@ -79,7 +79,9 @@ Two IaC git repos is very common; org-{tf,k8s}. Do not mix k8s declarations with
 The Terraform AWS provider is not perfect. AWS might change a value and then
 your plan is inconsistent. This is called **drift** and it's [hard to manage](https://www.youtube.com/watch?v=Jh3pjr0uqWc) across stacks and environments.
 
-Manual remediation of mismatching state of stacks is unsustainable. Better ideas are Gitops workflows and higher level constructs like Cloudformation, which try to enforce IaC intent.
+Manual remediation of mismatching actual and desired state across stacks is
+unsustainable. Better ideas are Gitops workflows and higher level constructs
+like Cloudformation, which try to enforce IaC intent.
 
 ## Destroy
 
@@ -174,9 +176,6 @@ and won't meet your organisation's (compliance) requirements.
 
 Terraform makes it harder to provision, debug and refactor <abbr
 title="Infrastruture as Code">IaC</abbr> than using native tooling.
-
-Yes the {plan,apply} workflow is familiar, but it's let down by operational
-deficiencies.
 
 The future is probably a mix of something like `aws cloudformation deploy`
 after using [CDK](https://aws.amazon.com/cdk/) to generate the YAML, and
