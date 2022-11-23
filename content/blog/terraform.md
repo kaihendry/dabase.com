@@ -1,7 +1,7 @@
 ---
-title: Where Terraform sucks
+title: My issues with terraform
 date: 2022-11-17T11:34:07+08:00
-description: Complaints about Terraform in the context of Amazon Web Services
+description: Gripes on Terraform in the context of Amazon Web Services
 toc: true
 ---
 
@@ -77,7 +77,14 @@ Two IaC git repos is very common; org-{tf,k8s}. Do not mix k8s declarations with
 ## Drift
 
 The Terraform AWS provider is not perfect. AWS might change a value and then
-your plan is inconsistent. This is called **drift** and it's [hard to manage](https://www.youtube.com/watch?v=Jh3pjr0uqWc) across stacks and environments.
+your plan is inconsistent.
+
+This is called **drift** and it's [hard to
+manage](https://www.youtube.com/watch?v=Jh3pjr0uqWc) across stacks and
+environments.
+
+Drift is also when someone changes something manually and doesn't update the
+code, and it's hard to tell them apart from provider updates.
 
 Manual remediation of mismatching actual and desired state across stacks is
 unsustainable. Better ideas are Gitops workflows and higher level constructs
