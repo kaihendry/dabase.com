@@ -140,7 +140,8 @@ inevitably go wrong.
 When things go wrong, the plan is inconsistent. The typical solution is to
 re-run. It sounds silly, but it actually happens where you need to re-run a
 {plan,apply} 3-4x times for AWS to provision a complex shared networking
-infrastructure!
+infrastructure! Especially for "Pending Acceptance" cases for <abbr title="AWS
+Resource Access Manager">RAM</abbr>.
 
 This might be avoided with `depends_on`, though as mentioned this is really not
 easy to get right without knowing the details of the underlying Cloud service.
@@ -191,3 +192,5 @@ managing your Kubernetes with a Gitops workflow.
 Gone is Terraform's beloved plan and apply, and naive polling to ensure
 resources are there. Infrastructure is no longer some static
 independent resources, which Terraform served well.
+
+💬 [Comments](https://www.reddit.com/r/Terraform/comments/yyiqn6/developers_i_want_to_hear_from_you_have_you/iww8olo/)

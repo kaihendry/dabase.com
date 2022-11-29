@@ -58,7 +58,7 @@ change to the "sql.DB" type compatible github.com/jackc/pgx/v4/stdlib ... the
 same [type of errors](https://github.com/nikitsenka/bank-go/issues/6) occurred
 when load testing...
 
-	 read tcp 127.0.0.1:XXXXX->127.0.0.1:5432: read: connection reset by peer #6
+     read tcp 127.0.0.1:XXXXX->127.0.0.1:5432: read: connection reset by peer #6
 
 After some soul searching and a cup of tea, perhaps it has something to do with
 how the **connections are pooled to the database**. Unfortunately it meant a
@@ -113,7 +113,7 @@ that when you are reproducing results yourself.
 
 I setup my ssh public key like so:
 
-	aws --profile dev ec2 import-key-pair --key-name "hendry" --public-key-material fileb://~/.ssh/id_rsa.pub
+    aws --profile dev ec2 import-key-pair --key-name "hendry" --public-key-material fileb://~/.ssh/id_rsa.pub
 
 So my AWS benchmarking workflow was something like:
 
@@ -127,11 +127,11 @@ Java [Benchmark 1](https://s.natalian.org/2021-04-24/java2/index.html) [Benchmar
 
 ## Conclusions
 
-* Java takes a lot longer to stand up than Go - not a good candidate for serverless!
-* Orchestration like an ALB health check could be incorporated into the stack though I ran out of time. The instances build the Docker image and it's not clear when they are ready...
-* Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, this [appears to be an AWS ECS issue](https://medium.com/@pahud/ulimit-of-nofile-in-amazon-ecs-optimized-ami-6790aedee582)
-* Detailed monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck... quite a disappointing <abbr title="Developer Experience">DX</abbr>. Further instrumentation is probably needed to work out where the bottle necks lie
-* Go appears a little faster, however more stable from a cold start, with the 99p being far lower ~100ms than Java's >2000ms .. However over some runtime I suspect Java will be more stable.
+- Java takes a lot longer to stand up than Go - not a good candidate for serverless! **2022 UPDATE** may have changed with [Lambda SnapStart](https://aws.amazon.com/blogs/aws/new-accelerate-your-lambda-functions-with-lambda-snapstart/)
+- Orchestration like an ALB health check could be incorporated into the stack though I ran out of time. The instances build the Docker image and it's not clear when they are ready...
+- Repeated testing on bank-{go,java} resulted in **No file descriptors available** exhaustion, this [appears to be an AWS ECS issue](https://medium.com/@pahud/ulimit-of-nofile-in-amazon-ecs-optimized-ami-6790aedee582)
+- Detailed monitoring via Cloudwatch of the instance was too course grained to tell if the database was the bottle neck... quite a disappointing <abbr title="Developer Experience">DX</abbr>. Further instrumentation is probably needed to work out where the bottle necks lie
+- Go appears a little faster, however more stable from a cold start, with the 99p being far lower ~100ms than Java's >2000ms .. However over some runtime I suspect Java will be more stable.
 
 Not clear what the [errors](https://s.natalian.org/2021-04-24/errors.png) that
 the [original author initially
