@@ -6,11 +6,6 @@ description: Three seperate git repos for dev, stg & prd
 
 {{< youtube DwJlGyZ9bxM >}}
 
-> A common pattern is that a single group within the organization is
-> responsible for both: designing the organization, vending accounts and
-> implementing the security control. this group/team could use org-formation to
-> do all of this using git-ops.
-
 > Service teams would get vended a set of accounts (e.g: dev, stg,
 > prd) that contain it-security guardrails (e.g. predefined roles that can be
 > assumed) or other resources that are commonly used within the organization. An
@@ -26,6 +21,7 @@ does a cross functional service team deploy to production** in a rigorous manner
 1. Develop and commit to dev
 2. Cut a dev commit to staging
 3. Promote a tested staging commit to production
+4. Rollback when needed
 
 # The simplest way to do it
 
@@ -38,7 +34,10 @@ The workflow is simple:
 
 1. git commit and git push # dev is default
 2. git push stg <commit> # cut a dev commit to staging account
-3. git push prd <commit> # promote same commit to production
+3. git push prd <commit> # promote the tested stg commit to production
+
+Need to rollback? With `git push $env $prev_commit`, you effectively practice
+**gitops** since deployments map to your git code state.
 
 Pros:
 
