@@ -9,14 +9,14 @@ architecture](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-ti
 
 <img src="https://s.natalian.org/2022-03-29/three-tier-data.png">
 
-The assumption with this legacy (non-Cloud) architecture and specifically its
+The assumption with on-premises legacy (non-Cloud) architecture and specifically its
 data layer, is that data required network isolation in a private subnet. Why?
 Because **historically SQL databases have simple clear text communication
 protocols**.
 
 To meet security shortcomings in the data layer with legacy SQL server
-protocols, databases are deployed in private non-Internet
-addressable network zones, to limit data breach risks.
+protocols, databases are deployed in private non-Internet addressable network
+zones (aka "network isolation"), to limit data breach risks.
 
 # Enter serverless
 
@@ -155,8 +155,10 @@ Unless you need DNS firewall, in some legacy compliance environment or don't
 trust the public Internet for communicating between accounts, you probably **do
 not need a Private subnet architecture**.
 
-**Cloud native security is based on identity controls** <abbr title="Identity and
-Access Management">IAM</abbr>, not "network zones" like the past.
+**Cloud native security is based on identity controls** <abbr title="Identity
+and Access Management">IAM</abbr>, not "network zones" like the past. AWS calls
+it the [Zero Trust](https://aws.amazon.com/security/zero-trust/) security
+model.
 
 The complexity of **supporting a Private architecture will hurt your
 Availability / reliability** as the Confidentiality, Integrity and Availability
