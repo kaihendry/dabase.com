@@ -4,7 +4,7 @@ date: 2022-12-05T11:23:49+08:00
 description: AWS security principles
 ---
 
-The most important principles of security:
+The most important security principles:
 
 # Principle of least privilege
 
