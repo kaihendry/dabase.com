@@ -18,3 +18,9 @@ When making a change my workflow is:
 1. Click **Approve** if I can, otherwise goto slack and paste URL for someone to hopefully review
 1. Try merge if I can (after CI is complete, wait ~5mins)
 1. Back to terminal, perhaps delete merged branch
+
+Comments?
+
+- https://forum.gitlab.com/t/how-can-i-improve-my-gitlab-worflow/78634
+- https://twitter.com/kaihendry/status/1600316721155276800
+- https://www.reddit.com/r/gitlab/comments/zepm49/can_anyone_please_suggest_some_optimisations_to/
