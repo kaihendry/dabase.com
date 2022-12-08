@@ -13,3 +13,7 @@ description: Elon Musk's design process
 Elon [admits he made the mistake of going backwards](https://youtu.be/WN90HYiFpAw?t=203).
 
 {{< youtube WN90HYiFpAw >}}
+
+---
+
+See also [Elon Musk's Six Rules for Tesla Employees](/blog/2022/effective-meetings/).
