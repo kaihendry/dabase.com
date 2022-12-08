@@ -43,3 +43,24 @@ Did this work before?
 
 Most <abbr title="Bug Tracking System">BTS</abbr> do not facilitate uploading
 of screenshots or videos, which is makes it not fit for purpose.
+
+# Jira style issue template
+
+    h2. Context
+
+    h2. Story
+
+    * AS A <role>
+    * I WANT  <observable change>
+    * SO THAT <valuable outcome>
+
+     h2. Scope
+
+    * IN
+    * OUT
+
+    h2.  Acceptance Criteria
+
+    * GIVEN
+    * WHEN
+    * THEN
