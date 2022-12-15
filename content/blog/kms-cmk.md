@@ -49,3 +49,22 @@ communication outweigh the surface area of the threat. Especially considering
 there are probably far easier ways for AWS to intercept your data if you didn't
 embrace the [shared security
 model](https://aws.amazon.com/compliance/shared-responsibility-model/).
+
+# ChatGPT: Is there a downside to using AWS CMK over AWS managed keys?
+
+There are a few potential downsides to using AWS Customer Managed Keys (CMKs)
+over AWS managed keys. First, using CMKs requires more work on the part of the
+customer. The customer is responsible for creating, rotating, disabling, and
+deleting the keys, as well as managing the key policies and grants. This can
+require a dedicated team or person to handle these tasks, which can add to the
+cost and complexity of using the service.
+
+Second, using CMKs can also be more expensive than using AWS managed keys.
+While AWS managed keys are provided at no additional cost, customers must pay
+for the use of CMKs based on the number of keys and the number of cryptographic
+operations performed.
+
+Overall, the decision to use AWS CMKs or AWS managed keys depends on the sto
+pecific needs and goals of the organization. AWS CMKs can provide greater
+control and flexibility, but they also require more work and can be more
+expensive.
