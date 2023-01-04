@@ -26,11 +26,11 @@ Since regular linux updates are common, people tend not to update for fear of je
 
 Furthermore applications tend to depend on underlying operating system libraries, so there is a reluctance to update the operating system, for fear it might affect the running application.
 
-Conservative users might choose "Debian stable" and only security updates, and that is fraught with misery as all the packages are old snapshots deemed "stable" not by upstream, but by package developers.
+Conservative users might choose "Debian stable" and only security updates, and that is fraught with misery as all the packages are old snapshots deemed "stable" not by upstream, but by package developers. This often results in frustration by upstream who do not support arbitary snapshots of their software.
 
 # The problem with dist-upgrade
 
-The problem with dist-upgrade is that it's a one-way street. You cannot roll back easily. There is no Quality Assurance pipeline in place, so you don't know if your application will run on the new operating system.
+The problem with dist-upgrade is that it's a one-way street. You cannot roll back easily. There is no Quality Assurance pipeline in place, so you don't know if your application will run on the new underlying operating system.
 
 #  Modern updates
 
@@ -42,7 +42,7 @@ Instead of updating the underlying operating system and hoping the application w
 Data must be split too, resulting in the modern [Three-tier architecture](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/three-tier-architecture-overview.html) paradigm:
 
 1. Client Web browser - typically everygreen on consumer devices
-2. Server - Docker container runtime - updating via [AMI ID](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/)
+2. Server - Docker container runtime - updating the Operating System by ID, e.g. via [AMI ID](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/)
 3. Date - Seperate and managed like AWS RDS / S3
 
 # Cattle, not pets
