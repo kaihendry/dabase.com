@@ -1,7 +1,7 @@
 ---
 title: No dist-upgrade
 date: 2023-01-04T15:37:33+08:00
-description: In-place updating is not best practice
+description: In-place updating is not best practice for production deployments
 ---
 
 For decades of my computing life, my daily routine has been something like:
