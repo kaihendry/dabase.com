@@ -14,17 +14,17 @@ or nowadays on Archlinux:
 
 # Daily package patches
 
-Almost every day behind the computer, I enjoyed the village pump of new opensource package updates. Updates to files and binaries replaced via packages. Historically [Archlinux News](https://archlinux.org/news/) announced when interventions are in complex update scenarios.
+Almost every day behind the computer, I enjoyed the village pump of new opensource package updates. Updates to files & binaries replaced via packages. Historically [Archlinux News](https://archlinux.org/news/) announced **manual interventions** in complex update scenarios.
 
 <img src="https://s.natalian.org/2023-01-04/intervention.png">
 
 # Patching production
 
-When deploying Raspbian or a production release of Red Hat Enterprise, it's unusual for it to be manually updated. Even less so with the automated **unattended-upgrades** package.
+When deploying [Raspbian](https://forums.raspberrypi.com/viewtopic.php?p=2054478) or a production release of Red Hat Enterprise, it's unusual for it to be manually updated frequently. Even less so automated, for example with the **unattended-upgrades** package, since it's deemed fragile.
 
-Since regular linux updates are common, people tend not to update for fear of jeopardising uptime. Since a linux update neccesitates a reboot.
+Since regular Linux updates are common, people tend not to update for fear of jeopardising uptime. Since a Linux update neccesitates a reboot.
 
-Furthermore applications tend to depend on underlying operating system libraries, so there is a reluctance to update the operating system, for fear it might affect the running application.
+Furthermore dynamically linked applications depend on underlying operating system libraries, so there is a reluctance to update the operating system, for fear it might affect the running application.
 
 Conservative users might choose "Debian stable" and only security updates, and that is fraught with misery as all the packages are old snapshots deemed "stable" not by upstream, but by package developers. This often results in frustration by upstream who do not support arbitary snapshots of their software.
 
@@ -32,22 +32,28 @@ Conservative users might choose "Debian stable" and only security updates, and t
 
 The problem with dist-upgrade is that it's a one-way street. You cannot roll back easily. There is no Quality Assurance pipeline in place, so you don't know if your application will run on the new underlying operating system.
 
+Redhat themselves warn that since <abbr title="Redhat Enterprise Linux">RHEL</abbr> is "highly customisable", they do not recommend upgrading between major releases. 
+
+If you are tasked to **in-place upgrade** RHEL 7 to 8 at your workplace, think twice. The best practice is now containerization.
+
 #  Modern updates
 
 1. Docker offers a clear application isolation
-2. CoreOS offers a self-updating Docker container runtime
+2. CoreOS / AWS ECS / Kubernetes offers a minimal Docker container runtime
 
-Instead of updating the underlying operating system and hoping the application will still work like a game of Jenga, the modern system is isolated into an immutable Docker container runtime and the containers it runs.
+In-place updating the underlying operating system and hoping the application will still work is like a game of Jenga. The modern best practice requires an immutable Docker container runtime OS and the Application containers it runs.
 
-Data must be split too, resulting in the modern [Three-tier architecture](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/three-tier-architecture-overview.html) paradigm:
+Your application's **data** must be split out too, resulting in the modern [Three-tier architecture](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/three-tier-architecture-overview.html) paradigm:
 
 1. Client Web browser - typically everygreen on consumer devices
 2. Server - Docker container runtime - updating the Operating System by ID, e.g. via [AMI ID](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/)
-3. Date - Seperate and managed like AWS RDS / S3
+3. Data - Seperate and managed like AWS RDS / S3
 
 # Cattle, not pets
 
-Updating a modern service, ignoring the data layer, is matter of choosing your OS <abbr title="Amazon Linux Image">AMI</abbr> and Application image id or tag.
+Pets are patched and groomed. Cattle can be culled and replaced at any time.
+
+The data tier aside, updating is now a matter of choosing your OS and Application image identifer. Automated by <abbr title="Continuous Delivery">CD</abbr> pipelines.
 
 * No patches
 * Trivial to roll back
@@ -57,6 +63,8 @@ A load balancer with container orchestration needs to be in place to have a cont
 
 # Challenges
 
-Most companies are transitioning to modern deployment practices which requires deprecating the old patching strategy. [OSes should not update themselves!](https://forums.raspberrypi.com/viewtopic.php?p=2054478)
+Most companies are transitioning to modern deployment practices which requires retiring the old patching processes.
 
-For example your Devops team should not be "hardening" (aka patching) images or waiting for "audits" to happen. Frequent updates via CI/CD infrastructure must to be in place to create the artefacts and automate the checks.
+For example your Devops team should not be "hardening" (aka patching) images or waiting for "audits" to happen. Frequent updates via CI/CD infrastructure must to be in place to create the image artefacts and automate / "shift left" the checks. 
+
+Now everything is transparent in a robust reproduciable build pipeline with tests, and not an _after the fact_ ah-hoc patch.
