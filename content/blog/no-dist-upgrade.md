@@ -1,7 +1,7 @@
 ---
 title: No dist-upgrade
 date: 2023-01-04T15:37:33+08:00
-description: Is updating wrong?
+description: In-place updating is not best practice
 ---
 
 For decades of my computing life, my daily routine has been something like:
@@ -61,7 +61,7 @@ The data tier aside, updating is now a matter of choosing your OS and Applicatio
 
 A load balancer with container orchestration needs to be in place to have a container ready to serve requests when a member of the cattle is being replaced.
 
-# Challenges
+# The only constant is change
 
 Most companies are transitioning to modern deployment practices which requires retiring the old patching processes.
 
