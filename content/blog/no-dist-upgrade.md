@@ -38,7 +38,7 @@ If you are tasked to **in-place upgrade** RHEL 7 to 8 at your workplace, think t
 
 #  Modern updates
 
-1. Docker offers a clear application isolation
+1. Docker offers clear application isolation in containers
 2. CoreOS / AWS ECS / Kubernetes offers a minimal Docker container runtime
 
 In-place updating the underlying operating system and hoping the application will still work is like a game of Jenga. The modern best practice requires an immutable Docker container runtime OS and the Application containers it runs.
