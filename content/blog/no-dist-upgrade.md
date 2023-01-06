@@ -61,10 +61,12 @@ The data tier aside, updating is now a matter of choosing your OS and Applicatio
 
 A load balancer with container orchestration needs to be in place to have a container ready to serve requests when a member of the cattle is being replaced.
 
-# The only constant is change
+# An industry shift to produce immutable artefacts
 
 Most companies are transitioning to modern deployment practices which requires retiring the old patching processes.
 
-For example your Devops team should not be "hardening" (aka patching) images or waiting for "audits" to happen. Frequent updates via CI/CD infrastructure must to be in place to create the image artefacts and automate / "shift left" the checks. 
+For example your Devops team should not be "hardening" (aka patching) images or waiting for "audits" to happen. 
 
-Now everything is transparent in a robust reproduciable build pipeline with tests, and not an _after the fact_ ah-hoc patch.
+Instead invest in build CI/CD pipelines to create the required host/image artefacts and automate / "shift left" the checks. 
+
+The goal is continuous delivery, in robust reproduciable build pipeline with tests, and not an _after the fact_ ah-hoc patch.
