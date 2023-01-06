@@ -41,12 +41,14 @@ If you are tasked to **in-place upgrade** RHEL 7 to 8 at your workplace, think t
 1. Docker offers clear application isolation in containers
 2. CoreOS / AWS ECS / Kubernetes offers a minimal Docker container runtime or Host OS
 
-In-place updating the underlying operating system and hoping the application will still work is like a game of Jenga. The modern best practice requires an immutable Docker container runtime OS and the Application containers it runs.
+In-place updating the underlying operating system and hoping the application will still work is like a **game of Jenga**. The modern best practice requires an immutable Docker container runtime OS and the Application containers it runs.
+
+<img src="https://s.natalian.org/2023-01-06/valery-fedotov-CxE1H2_9B9s-unsplash.webp" alt="Jenga" title="Photo by Valery Fedoto https://unsplash.com/photos/CxE1H2_9B9s">
 
 Your application's **data** must be split out too, resulting in the modern [Three-tier architecture](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/three-tier-architecture-overview.html) paradigm:
 
 1. Client Web browser - typically everygreen on consumer devices
-2. Server - Docker container runtime - updating the Operating System by ID, e.g. via [AMI ID](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/)
+2. Server - Docker container runtime - updating the host Operating System by ID, e.g. via [AMI ID](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/)
 3. Data - Seperate and managed like AWS RDS / S3
 
 # Cattle, not pets
