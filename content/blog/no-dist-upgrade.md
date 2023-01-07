@@ -22,19 +22,19 @@ Almost every day behind the computer, I enjoyed the village pump of new opensour
 
 When deploying [Raspbian](https://forums.raspberrypi.com/viewtopic.php?p=2054478) or a production release of Red Hat Enterprise, it's unusual for it to be manually updated frequently. Even less so automated, for example with the **unattended-upgrades** package, since it's deemed fragile.
 
-Since regular Linux updates are common, people tend not to update for fear of jeopardising uptime. Since a Linux update neccesitates a reboot.
+Since regular Linux updates are common, people tend not to update for fear of jeopardizing uptime. Since a Linux update necessitates a reboot.
 
 Furthermore dynamically linked applications depend on underlying operating system libraries, so there is a reluctance to update the operating system, for fear it might affect the running application.
 
-Conservative users might choose "Debian stable" and only security updates, and that is fraught with misery as all the packages are old snapshots deemed "stable" not by upstream, but by package developers. This often results in frustration by upstream who do not support arbitary snapshots of their software.
+Conservative users might choose "Debian stable" and only security updates, and that is fraught with misery as all the packages are old snapshots deemed "stable" not by upstream, but by package developers. This often results in frustration by upstream who do not support arbitrary snapshots of their software.
 
 # The problem with dist-upgrade
 
-The problem with `dist-upgrade` is that it's a one-way street. You cannot roll back easily. There is no Quality Assurance (tests) pipeline in place, so you don't know if your application will run on the new underlying operating system.
+The problem with `dist-upgrade` is that it's a one-way street. You cannot roll back easily. With no Quality Assurance (tests) pipeline in place, you don't know if your application will run on the new underlying operating system.
 
 Redhat themselves warn that since <abbr title="Redhat Enterprise Linux">RHEL</abbr> is "highly customisable", they do not recommend upgrading between major releases. 
 
-If you are tasked to **in-place upgrade** RHEL 7 to 8 at your workplace, think twice. Instead a new host OS image ID should be selected, together with the container image IDs to run on top of it.
+An **in-place upgrade** RHEL 7 to 8 at your workplace, is the legacy patching way. Instead a new host OS image ID should be selected, together with the container image IDs to run on top of it.
 
 #  Modern updates
 
@@ -47,15 +47,15 @@ In-place updating the underlying operating system and hoping the application wil
 
 Your application's **data** must be split out too, resulting in the modern [Three-tier architecture](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/three-tier-architecture-overview.html) paradigm:
 
-1. Client Web browser - typically everygreen on consumer devices
+1. Client Web browser - typically evergreen on consumer devices
 2. Server - Docker container runtime - updating the host Operating System by ID, e.g. via [AMI ID](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/)
-3. Data - Seperate and managed like AWS RDS / S3
+3. Data - Separate and managed like AWS RDS / S3
 
 # Cattle, not pets
 
 Pets are patched and groomed. Cattle can be culled and replaced at any time.
 
-The data tier aside, updating is now a matter of choosing your OS and Application image identifer. Ideally automated by <abbr title="Continuous Delivery">CD</abbr> pipelines.
+The data tier aside, updating is now a matter of choosing your OS and Application image identifier. Ideally automated by <abbr title="Continuous Delivery">CD</abbr> pipelines.
 
 How to get the ID for a typical host image:
 
@@ -69,10 +69,10 @@ How to get the ID for the latest upstream of a Dockerized container using the _l
 Locking to a version means:
 
 * No patching
-* Trivial to roll back, just specify previous ID
+* Trivial to roll back, specify previous ID
 * Immutable
 
-A load balancer with container orchestration is required to dispatch requests to ready containers when a member of the cattle is being replaced.
+When cattle are replaced, a load balancer with container orchestration to dispatch requests to ready containers is needed to avoid any dropped requests.
 
 # An industry shift to immutable artefacts
 
@@ -80,6 +80,6 @@ Most companies are transitioning to modern deployment practices which requires r
 
 For example your Devops team should not be "hardening" (aka patching) images or waiting for "audits" to happen. 
 
-Instead **investments** are required to build/maintain CI/CD pipelines to create the required host/image artefacts and automate / "shift left" the checks. 
+Instead **invest** in CI/CD pipelines to create the required host/image artefacts and automate / "shift left" the checks. 
 
-The **goal is continuous delivery**, in robust reproduciable build pipeline with tests, and not an _after the fact_ ah-hoc patch.
+The **goal is continuous delivery**, in robust reproducible build pipelines with tests, and not an _after the fact_ ah-hoc patch.
