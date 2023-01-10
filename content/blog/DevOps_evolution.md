@@ -4,6 +4,8 @@ date: 2016-07-18 17:11:38 +0800
 description: Explaining how Devops is changing over time
 ---
 
+Related content: [No dist-upgrade](/blog/2023/no-dist-upgrade/)
+
 <img src="https://s.natalian.org/2020-12-03/spectrum.jpeg" alt="The Spectrum of Compute">
 
 Ignoring the complexities surrounding data.

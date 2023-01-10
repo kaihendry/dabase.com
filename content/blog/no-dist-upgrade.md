@@ -83,3 +83,5 @@ For example your Devops team should not be "hardening" (aka patching) images or 
 Instead **invest** in CI/CD pipelines to create the required host/image artefacts and automate / "shift left" the checks. 
 
 The **goal is continuous delivery**, in robust reproducible build pipelines with tests, and not an _after the fact_ ah-hoc patch.
+
+Related content: [Devops evoluion](/blog/2016/DevOps_evolution/)
