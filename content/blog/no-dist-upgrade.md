@@ -30,6 +30,8 @@ Conservative users might choose "Debian stable" and only security updates, and t
 
 # The problem with dist-upgrade
 
+<img src="https://s.natalian.org/2023-01-11/neg-patching.png" alt="apt-get upgrade">
+
 The problem with `dist-upgrade` is that it's a one-way street. You cannot roll back easily. With no Quality Assurance (tests) pipeline in place, you don't know if your application will run on the new underlying operating system.
 
 Redhat themselves warn that since <abbr title="Redhat Enterprise Linux">RHEL</abbr> is "highly customisable", they do not recommend upgrading between major releases. 
@@ -83,5 +85,7 @@ For example your Devops team should not be "hardening" (aka patching) images or 
 Instead **invest** in CI/CD pipelines to create the required host/image artefacts and automate / "shift left" the checks. 
 
 The **goal is continuous delivery**, in robust reproducible build pipelines with tests, and not an _after the fact_ ah-hoc patch.
+
+<img src="https://s.natalian.org/2023-01-11/neg-pipeline.png" alt="build pipeline">
 
 Related content: [Devops evoluion](/blog/2016/DevOps_evolution/)
