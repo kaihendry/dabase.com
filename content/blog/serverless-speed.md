@@ -48,9 +48,9 @@ for.
 </tr>
 <tr>
 <td>Demo URL</td>
-<td><a href="https://sls.goserverless.sg">AWS SG</a></td>
-<td><a href="https://count.goserverless.sg/">AWS SG</a></td>
-<td><a href="https://sam.goserverless.sg/">AWS SG</a></td>
+<td><a href="https://sls.dabase.com">AWS SG</a></td>
+<td><a href="https://count.dabase.com/">AWS SG</a></td>
+<td><a href="https://sam.dabase.com/">AWS SG</a></td>
 <td><a href="https://asia-east2-idiotbox.cloudfunctions.net/Countpage">GCP HK</a></td>
 <td><a href="https://count.dabase.com/">GCP SG</a></td>
 <td><a href="https://counttesting.azurewebsites.net/">Azure HK</a></td>
@@ -87,8 +87,9 @@ for.
 <p><a id="no-cli">[2]</a> No <abbr title="Command Line Interface">CLI</abbr> / <abbr title="Infrastructure as Code">IaC</abbr> option <abbr title="As far as I can tell">AFAICT</abbr></p>
 
 I've noticed deployment failures can happen when:
-* [gcp-cloudrun when there is the same version](https://s.natalian.org/2021-01-05/same-version.png)
-* [gcp-functions if it's already deploying](https://s.natalian.org/2021-01-05/deployment-failure.png)
+
+- [gcp-cloudrun when there is the same version](https://s.natalian.org/2021-01-05/same-version.png)
+- [gcp-functions if it's already deploying](https://s.natalian.org/2021-01-05/deployment-failure.png)
 
 [Apex Up](https://github.com/apex/up) is the clear winner to me. Apex Up has
 the **fastest iterations** to the cloud (~2s), a fantastic <abbr
@@ -112,8 +113,8 @@ There are three types of iteration speed:
 Iteration speed above is **case 2**.
 
 I do not consider the time for the initial setup / <abbr title="Infrastructure
-as Code">IaC</abbr> provisioning which can take quite a bit of waiting,
-especially for the **custom domain**!
+as Code">IaC</abbr> provisioning which can take a bit of waiting, for the
+**custom domain**!
 
 # Price?!
 
@@ -122,4 +123,4 @@ when there is a free tier. Just know that I've not noticed an impact on my bill
 when using serverless. It's must cheaper than paying hourly. If it becomes
 expensive, you have options!
 
-Need more reasons to consider "Serverless"? Please checkout https://goserverless.sg/
+Need more reasons to consider "Serverless"? Please checkout https://gosls.dabase.com/

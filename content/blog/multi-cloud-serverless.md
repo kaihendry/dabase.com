@@ -42,8 +42,8 @@ My [home Prometheus monitor](https://github.com/kaihendry/pingprom) is configure
 		  module: [http_cold]
 		static_configs:
 		  - targets:
-			- https://sam.goserverless.sg/
-			- https://sarm.goserverless.sg/
+			- https://sam.dabase.com/
+			- https://sarm.dabase.com/
 			labels:
 			  cloud: aws
 		  - targets:
