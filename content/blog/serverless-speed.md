@@ -33,7 +33,7 @@ for.
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>No (Hong Kong)</td>
+<td>Yes</td>
 <td>Yes</td>
 <td>No (Hong Kong)</td>
 </tr>
@@ -49,9 +49,9 @@ for.
 <tr>
 <td>Demo URL</td>
 <td><a href="https://sls.dabase.com">AWS SG</a></td>
-<td><a href="https://count.dabase.com/">AWS SG</a></td>
+<td><a href="https://apex.dabase.com/">AWS SG</a></td>
 <td><a href="https://sam.dabase.com/">AWS SG</a></td>
-<td><a href="https://asia-east2-idiotbox.cloudfunctions.net/Countpage">GCP HK</a></td>
+<td><a href="https://asia-southeast1-idiotbox.cloudfunctions.net/Countpage">GCP SG</a></td>
 <td><a href="https://count.dabase.com/">GCP SG</a></td>
 <td><a href="https://counttesting.azurewebsites.net/">Azure HK</a></td>
 </tr>
