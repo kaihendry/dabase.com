@@ -57,8 +57,10 @@ for.
 </tr>
 <tr>
 <td>Iteration speed</td>
-<td>~30s [![Deploy via Serverless framework](https://github.com/kaihendry/count/actions/workflows/serverless.yml/badge.svg?branch=serverless)](https://github.com/kaihendry/count/actions/workflows/serverless.yml)</td>
-<td>~10s [![Deploy via Apex Up](https://github.com/kaihendry/count/actions/workflows/master.yml/badge.svg?branch=master)](https://github.com/kaihendry/count/actions/workflows/master.yml)</td>
+<td>~30s <p><a href="https://github.com/kaihendry/count/actions/workflows/serverless.yml"><img src="https://github.com/kaihendry/count/actions/workflows/serverless.yml/badge.svg?branch=serverless" alt="Deploy via Serverless framework"></a></p>
+</td>
+<td>~10s <p><a href="https://github.com/kaihendry/count/actions/workflows/master.yml"><img src="https://github.com/kaihendry/count/actions/workflows/master.yml/badge.svg?branch=master" alt="Deploy via Apex Up"></a></p>
+</td>
 <td>~30s
 <img src="https://github.com/kaihendry/count/workflows/Deploy%20SAM/badge.svg?branch=sam" alt="SAM deploy">
 </td>
@@ -115,6 +117,13 @@ Iteration speed above is **case 2**.
 I do not consider the time for the initial setup / <abbr title="Infrastructure
 as Code">IaC</abbr> provisioning which can take a bit of waiting, for the
 **custom domain**!
+
+
+## What is Apex Up so fast?
+
+I asked TJ and his reply was:
+
+> ahhh that's just because it uploads straight to Lambda rather than using CloudFormation (or Terraform) for the Lambda ZIP, both of those systems add a bunch of delay :D 
 
 # Price?!
 
