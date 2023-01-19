@@ -1,7 +1,6 @@
 ---
 title: Separation of Duties
 date: 2023-01-19T15:01:04+08:00
-draft: true
 description: Separation of Duties without the manual gatekeeping
 ---
 
@@ -17,7 +16,7 @@ The dogma is:
 
 ## Why?
 
-Separation of duties is a key concept of internal controls, **controls** performed manually by different teams, e.g. "Dev" & "Ops". Today, we have tools that can automate these processes and provide protections from fraud and errors via **controls**.
+Separation of duties is a key concept of internal controls, **controls** performed manually by different teams, e.g. "Dev" & "Ops". Today, we have tools that can automate these **controls** and provide protections from fraud and errors.
 
 ## Rise of DevOps
 
