@@ -10,7 +10,7 @@ table { word-break: initial }
 
 ¡[UPDATE 2021 November: Measuring serverless cold starts](/blog/2021/multi-cloud-serverless/)!
 
-I've used https://github.com/kaihendry/count to <abbr title="Developer Experience">SX</abbr> managed
+I've used https://github.com/kaihendry/count to <abbr title="Developer Experience">DX</abbr> managed
 compute solutions <abbr title="also known as">aka</abbr> [Serverless
 computing](https://aws.amazon.com/serverless/).
 
@@ -57,8 +57,8 @@ for.
 </tr>
 <tr>
 <td>Iteration speed</td>
-<td>~30s <img src="https://github.com/kaihendry/count/workflows/Deploy%20SLS/badge.svg?branch=serverless" alt="sls deploy"></td>
-<td>~10s <img src="https://github.com/kaihendry/count/workflows/Deploy%20Apex%20Up/badge.svg" alt="Up"></td>
+<td>~30s [![Deploy via Serverless framework](https://github.com/kaihendry/count/actions/workflows/serverless.yml/badge.svg?branch=serverless)](https://github.com/kaihendry/count/actions/workflows/serverless.yml)</td>
+<td>~10s [![Deploy via Apex Up](https://github.com/kaihendry/count/actions/workflows/master.yml/badge.svg?branch=master)](https://github.com/kaihendry/count/actions/workflows/master.yml)</td>
 <td>~30s
 <img src="https://github.com/kaihendry/count/workflows/Deploy%20SAM/badge.svg?branch=sam" alt="SAM deploy">
 </td>
