@@ -16,7 +16,7 @@ The dogma is:
 
 ## Why?
 
-Separation of duties is a key concept of internal controls, **controls** performed manually by different teams, e.g. "Dev" & "Ops". Today, we have tools that can automate these **controls** and provide protections from fraud and errors.
+**Separation of duties** (SoD) is a key concept of internal controls, **controls** performed manually by different teams, e.g. "Dev" & "Ops". Today, we have tools that can automate these **controls** and provide protections from fraud and errors.
 
 ## Rise of DevOps
 
@@ -32,19 +32,19 @@ How do we prevent a rogue DevOps team member from deploying risky code or practi
 <img src="https://docs.gitlab.com/ee/user/application_security/img/secure_tools_and_cicd_stages.png">
 </a>
 
-When a new feature is committed as a Merge Request, it is automatically tested by a CI/CD pipeline. The pipeline is configured to run tests, security scans, and other checks. If the pipeline fails, the <abbr title="Merge Request">MR</abbr> is not merged. This prevents risky code from being deployed to production.
+Changes are made via a Merge Request, which is automatically tested by a CI/CD pipeline. The pipeline is configured to run tests, security scans, and other checks. If the pipeline fails, the <abbr title="Merge Request">MR</abbr> is not merged. These checks prevents risky code from accepted.
 
-* **Another team member** approves the <abbr title="Merge Request">MR</abbr> else it is not merged - eliminates rogue actor, though **team must be must be trusted**
-* Ability to **roll back** via the CI/CD pipeline - derisk deployments
-* **Logs** to a central account - accountability / auditability
+* **Another team member** approves the <abbr title="Merge Request">MR</abbr>, complete with automated reports, else it is not merged - eliminates rogue actor
+* Ability to **roll back** (instant with Serverless) - derisk deployments
+* **Logs** to a central account - accountability / auditability opportunities
 * Platform Guardrails, like AWS Account controls such as: [Control tower](https://aws.amazon.com/controltower/), [SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html), [AWS Config](https://aws.amazon.com/config/)
-* Costing - drive efficiency and cost optimisation
+* Costing - drive resource efficiency
 
 <img src="https://s.natalian.org/2023-01-19/cost-usage.png" alt="Costing and usage">
 
 Further automations/checks can triggered from the **logs**, such as [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) and [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html).
 
-## Avoid <abbr title="Separation of Duties">SoD</abbr> smells (lack of automation)
+## Avoid these <abbr title="Separation of Duties">SoD</abbr> smells (lack of automation)
 
 - Gate keeping - teams must be empowered, that looks like having their own AWS account and being able to deploy their own application
 - Network team needs to open a port for you - team with AWS account should conduct their own effective networking
@@ -57,12 +57,12 @@ Further automations/checks can triggered from the **logs**, such as [CloudTrail]
 - The Operations team will run it for you - for DevOps to work, the team needs to be trusted and use managed services like "Serverless" to deploy their application without fuss, "you build it, you run it"
 - Not being allowed to access production data - ideally shouldn't happen, but if it does, it's logged. 
 
-## <abbr title="Separation of Duties">SoD</abbr> pain is alleviated by automation and working closer together
+## Manual <abbr title="Separation of Duties">SoD</abbr>, replaced by automation and working closer together
 
 This is my AWS / 2023 interpretation of the <abbr title="Continuous Delivery">CD</abbr>-Friendly <abbr title="Separation of Duties">SoD</abbr> procedures for Configuration outlined upon https://www.slideshare.net/sriramnrn/segregation-of-duties-and-continuous-delivery from slide 27, by my colleague [Ram](https://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/).
 
 Best practices / tooling will evolve over time, though the idea is to remove **manual gatekeeping checks** via automation. 
 
-1. AWS accounts provide most controls out the box, use it!
+1. AWS accounts provide controls out the box, use them!
 2. CI/CD pipeline providers like Github/Gitlab provide a lot of checking automations to opt in to. 
-3. Communication tools like Slack make it easy for teams to foster open collaboration so that expertise can be shared.
+3. Communication tools like Slack make it easy for teams to foster open collaboration so that expertise can be shared & stakeholders can be kept in the loop.
