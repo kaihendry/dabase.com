@@ -4,6 +4,8 @@ date: 2023-01-04T15:37:33+08:00
 description: In-place updating is not best practice for production deployments
 ---
 
+{{< youtube YS6kE11F-T4 >}}
+
 For decades of my computing life, my routine has been something like:
 
     apt-get update && apt-get upgrade
