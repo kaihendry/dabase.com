@@ -19,7 +19,7 @@ description: First steps with NixOS
 
 The break though came with [nixos-generate-config](https://youtu.be/1HvY1IMIh_M?t=1609)
 
-# Day 2
+# Second stream
 
 {{< youtube nJVFiTQjEjg >}}
 
@@ -42,3 +42,83 @@ I didn't know you could have boot on sda3. https://nixos.org/manual/nixos/stable
 GNU parted actually seems kinda ok from a cli perspective.
 
 tmate!
+
+## extra-experimental-features
+
+    [root@vnixos:~]# nix search rnix-lsp
+    error: experimental Nix feature 'nix-command' is disabled; use '--extra-experimental-features nix-command' to override
+
+Solution:
+
+    cat .config/nix/nix.conf
+    experimental-features = nix-command flakes
+
+
+    [root@vnixos:~]# ping t14g3.local
+    ping: t14g3.local: System error
+
+    [root@vnixos:~]# ping t14g3.local
+    PING t14g3.local (192.168.1.38) 56(84) bytes of data.
+    64 bytes from t14g3.local (192.168.1.38): icmp_seq=1 ttl=64 time=0.135
+    ms
+    64 bytes from t14g3.local (192.168.1.38): icmp_seq=2 ttl=64 time=0.418
+    ms
+    64 bytes from t14g3.local (192.168.1.38): icmp_seq=3 ttl=64 time=0.301
+    ms
+    ^C
+    --- t14g3.local ping statistics ---
+    3 packets transmitted, 3 received, 0% packet loss, time 2103ms
+    rtt min/avg/max/mdev = 0.135/0.284/0.418/0.116 ms
+
+----
+https://search.nixos.org/options doesn't show any options re `system.stateVersion` comment.
+
+
+    nix-shell -p nixpkgs#alejandra
+
+versus new flake API:
+
+    nix shell nixpkgs#alejandra
+
+
+    ----
+    how does `services.smokeping.enable` implemented?
+
+    look at `man configuration.nix`
+
+    How do I find `nixpkgs/nixos/modules/services/networking/smokeping.nix`?
+
+    How do know if your config has drifted?
+
+Tool to explain what the config `nix-shell -p nixos-option` or `manix` does:
+
+    [nix-shell:~]# nixos-option services.avahi.enable
+    Value:
+    true
+
+    Default:
+    false
+
+    Type:
+    "boolean"
+
+    Description:
+    {
+    text = ''
+        Whether to run the Avahi daemon, which allows Avahi clients
+        to use Avahi's service discovery facilities and also allows
+        the local machine to advertise its presence and services
+        (through the mDNS responder implemented by `avahi-daemon').
+    '';
+    }
+
+    Declared by:
+    [ "/nix/var/nix/profiles/per-user/root/channels/nixos/nixos/modules/services/networking/avahi-daemon.nix" ]
+
+    Defined by:
+    [ "/etc/nixos/configuration.nix" ]
+
+
+Try someone else's neovim config:
+
+    nix shell github:kranzes/nix-config#neovim
