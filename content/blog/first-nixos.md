@@ -13,14 +13,32 @@ description: First steps with NixOS
 
 # Confusion
 
-1. Why is there stuff in /nixos/store?
+1. Why is there stuff in /nix/store?
 2. Why does it use dhcpd and not systemd-networkd?
 3. Why is there no /etc/nixos/configuration.nix?
 
 The break though came with [nixos-generate-config](https://youtu.be/1HvY1IMIh_M?t=1609)
 
-# Things I want to figure out
+# Day 2
+
+{{< youtube nJVFiTQjEjg >}}
+
+## Things I want to figure out
 
 1. What is the default? I.e. the final explicit configuration?
-2. How do I get zeroconf working? e.g. rpi3.local
-3. How do I get nix formatter / linter working in vim?
+1. How do I get zeroconf working? e.g. rpi3.local
+1. How do I get nix formatter / linter working in vim?
+1. Why is there stuff in /nix/store?
+1. Faster local VM going
+1. New NixOS, how do you seed your configuration.nix?
+1. How do you handle secrets?
+
+## What did I learn
+
+There doesn't seem to be a cli installer. Even Arch has one!
+
+I didn't know you could have boot on sda3. https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-summary
+
+GNU parted actually seems kinda ok from a cli perspective.
+
+tmate!
