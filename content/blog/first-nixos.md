@@ -32,15 +32,15 @@ Afternoon:
 {{< youtube w5kiN0vO51g >}}
 
 
-## Things I want to figure out
+## More questions
 
-1. What is the default? I.e. the final explicit configuration?
-1. How do I get zeroconf working? e.g. rpi3.local
-1. How do I get nix formatter / linter working in vim?
-1. Why is there stuff in /nix/store?
-1. Faster local VM going
-1. New NixOS, how do you seed your configuration.nix?
-1. How do you handle secrets?
+- [ ] What is the default? I.e. the final explicit configuration?
+- [ ] How do I get zeroconf working? e.g. rpi3.local
+- [x] How do I get nix formatter / linter working in vim? `nix shell github:kranzes/nix-config#neovim`
+- [ ] Why is there stuff in /nix/store?
+- [x] [Faster local VM going](https://github.com/kaihendry/vnixos)
+- [ ] New NixOS, how do you seed your configuration.nix?
+- [ ] How do you handle secrets?
 
 ## What did I learn
 
