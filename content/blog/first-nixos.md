@@ -2,8 +2,10 @@
 title: NixOS at first
 date: 2023-01-22T09:59:32+08:00
 description: First steps with NixOS
+toc: true
 ---
 
+# Day 1
 
 1. unzstd -c nixos-sd-image-22.11.1611.a83ed85c14f-aarch64-linux.img.zst | sudo dd of=/dev/sdb bs=4M
 2. After booting the Raspberry Pi 3, there was [no HDMI output](https://nixos.wiki/wiki/NixOS_on_ARM/Raspberry_Pi_3)
@@ -11,7 +13,7 @@ description: First steps with NixOS
 
 {{< youtube 1HvY1IMIh_M >}}
 
-# Confusion
+## Questions
 
 1. Why is there stuff in /nix/store?
 2. Why does it use dhcpd and not systemd-networkd?
@@ -19,9 +21,16 @@ description: First steps with NixOS
 
 The break though came with [nixos-generate-config](https://youtu.be/1HvY1IMIh_M?t=1609)
 
-# Second stream
+# Day 2
+
+Morning:
 
 {{< youtube nJVFiTQjEjg >}}
+
+Afternoon:
+
+{{< youtube w5kiN0vO51g >}}
+
 
 ## Things I want to figure out
 
@@ -35,15 +44,17 @@ The break though came with [nixos-generate-config](https://youtu.be/1HvY1IMIh_M?
 
 ## What did I learn
 
-There doesn't seem to be a cli installer. Even Arch has one!
+There doesn't seem to be a cli installer. Even Arch has one! My first install failed
 
-I didn't know you could have boot on sda3. https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-summary
+> So umount does take multiple arguments, but if you umount two partitions on the same disk there's a race condition that causes it to say the target is busy! Something I've never discovered before helping you on this stream :D
+
+I didn't know you could have /boot on sda3. https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-summary
 
 GNU parted actually seems kinda ok from a cli perspective.
 
-tmate!
+tmate with [@MatthewCroughan](https://twitter.com/MatthewCroughan) !!
 
-## extra-experimental-features
+### extra-experimental-features
 
     [root@vnixos:~]# nix search rnix-lsp
     error: experimental Nix feature 'nix-command' is disabled; use '--extra-experimental-features nix-command' to override
@@ -53,6 +64,7 @@ Solution:
     cat .config/nix/nix.conf
     experimental-features = nix-command flakes
 
+### Zeroconf / Bonjour doesn't seem to work
 
     [root@vnixos:~]# ping t14g3.local
     ping: t14g3.local: System error
@@ -71,8 +83,9 @@ Solution:
     rtt min/avg/max/mdev = 0.135/0.284/0.418/0.116 ms
 
 ----
-https://search.nixos.org/options doesn't show any options re `system.stateVersion` comment.
+### Different ways of searching
 
+https://search.nixos.org/options doesn't show any options re `system.stateVersion` comment in `configuration.nix`.
 
     nix-shell -p nixpkgs#alejandra
 
@@ -81,18 +94,19 @@ versus new flake API:
     nix shell nixpkgs#alejandra
 
 
-    ----
-    how does `services.smokeping.enable` implemented?
+### Getting to the source
 
-    look at `man configuration.nix`
+Or how things work, oh there is a man page:
 
-    How do I find `nixpkgs/nixos/modules/services/networking/smokeping.nix`?
-
-    How do know if your config has drifted?
+    man configuration.nix
 
 Tool to explain what the config `nix-shell -p nixos-option` or `manix` does:
 
     [nix-shell:~]# nixos-option services.avahi.enable
+
+How does `services.smokeping.enable` implemented?
+
+    [nix-shell:~]# nixos-option services.smokeping.enable
     Value:
     true
 
@@ -102,21 +116,27 @@ Tool to explain what the config `nix-shell -p nixos-option` or `manix` does:
     Type:
     "boolean"
 
+    Example:
+    true
+
     Description:
     {
-    text = ''
-        Whether to run the Avahi daemon, which allows Avahi clients
-        to use Avahi's service discovery facilities and also allows
-        the local machine to advertise its presence and services
-        (through the mDNS responder implemented by `avahi-daemon').
-    '';
+    text = "Whether to enable smokeping service.";
     }
 
     Declared by:
-    [ "/nix/var/nix/profiles/per-user/root/channels/nixos/nixos/modules/services/networking/avahi-daemon.nix" ]
+    [ "/nix/var/nix/profiles/per-user/root/channels/nixos/nixos/modules/services/networking/smokeping.nix" ]
 
     Defined by:
     [ "/etc/nixos/configuration.nix" ]
+
+Which corresponds to:
+
+https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/services/networking/smokeping.nix
+
+(Not sure how you to know the mapping)
+
+### Getting a nix IDE
 
 
 Try someone else's neovim config:
