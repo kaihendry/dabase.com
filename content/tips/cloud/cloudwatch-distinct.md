@@ -7,35 +7,20 @@ description: Count how many users you have in your structured logs
 {{< youtube 7805qzOmEuk >}}
 
 First you need to finger print your user, e.g. by [setting a
-cookie](https://youtu.be/YlrwDN7_vHw?t=226) or hashing the UA string.
+cookie](https://youtu.be/YlrwDN7_vHw?t=226), here I just use milliseconds since epoch:
 
-    func addContextMiddleware(next http.Handler) http.Handler {
-    	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    		cookie, _ := r.Cookie("visitor")
-    		logging := log.WithFields(
-    			log.Fields{
-    				"id":      r.Header.Get("X-Request-Id"),
-    				"country": r.Header.Get("Cloudfront-Viewer-Country"),
-    				"ua":      r.UserAgent(),
-    			})
-    		if cookie != nil {
-    			cvisitor := context.WithValue(r.Context(), visitor, cookie.Value)
-    			logging = logging.WithField("visitor", cookie.Value)
-    			clog := context.WithValue(cvisitor, logger, logging)
-    			next.ServeHTTP(w, r.WithContext(clog))
-    		} else {
-    			visitorID, _ := generateRandomString(24)
-    			// log.Infof("Generating vistor id: %s", visitorID)
-    			expiration := time.Now().Add(365 * 24 * time.Hour)
-    			setCookie := http.Cookie{Name: "visitor", Value: visitorID, Expires: expiration}
-    			http.SetCookie(w, &setCookie)
-    			cvisitor := context.WithValue(r.Context(), visitor, visitorID)
-    			logging = logging.WithField("visitor", visitorID)
-    			clog := context.WithValue(cvisitor, logger, logging)
-    			next.ServeHTTP(w, r.WithContext(clog))
-    		}
-    	})
-    }
+	func uniqueVisitor(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			cookie, _ := r.Cookie("visitor")
+			if cookie != nil {
+				slog.Info("returning visitor", "vistor", cookie.Value)
+			} else {
+				setCookie := http.Cookie{Name: "visitor", Value: fmt.Sprint("visitor-", time.Now().UnixMilli()), Expires: time.Now().Add(365 * 24 * time.Hour)}
+				http.SetCookie(w, &setCookie)
+			}
+			next.ServeHTTP(w, r)
+		})
+	}
 
 Once you are logging a unique **visitor** attribute in your logs, you can count your users!
 
