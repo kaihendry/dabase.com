@@ -1,7 +1,7 @@
 ---
-title: "Oracle"
+title: oracledump
 date: 2023-02-10T16:41:29+08:00
-description: Oracle dump to SQL
+description: Oracle dump to SQL from an oradata folder for a CI/CD pipeline
 ---
 
 As a devops engineer, I work with CI/CD pipelines. Creating, maintaining, fixing
@@ -67,7 +67,7 @@ ORACLE_PASSWORD.  You need to set the role as SYSDBA on their client!
 # prime.sql
 
 Now I have a ~1M bootstrap `/container-entrypoint-initdb.d/prime.sql` down from
-a ~8GB oradata folder. It takes about four minutes to bootstrap currently to a
+a ~8GB oradata folder. It takes about **four minutes** to bootstrap currently to a
 **DATABASE IS READY TO USE!** state.
 
 Do have a look at my [Oracle CLI
