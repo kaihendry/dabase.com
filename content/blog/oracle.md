@@ -53,7 +53,7 @@ The next issue is service name which is omitted in the export. Prepend:
 
 	ALTER SESSION SET CONTAINER=XEPDB1
 
-Then use users were not setup. Usually there is admin/user paradigm, so mine look something like:
+Next issue; my users were not setup. Usually there is admin/user paradigm, so mine look something like:
 
 	CREATE USER eg_development_owner IDENTIFIED BY eg_development_owner QUOTA UNLIMITED ON USERS;
 	GRANT CONNECT, CREATE SYNONYM, RESOURCE TO eg_development_owner;
