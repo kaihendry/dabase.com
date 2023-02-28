@@ -57,6 +57,10 @@ https://github.com/aws/aws-sam-cli/issues/4287
 
 https://github.com/aws/aws-sam-cli/issues/4670
 
+## No static binary
+
+sam cli is non-trivial to install with its Python dependencies. I am not sure how this can be considered a [one click install](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html#install-sam-cli-instructions). A static binary would be so much better.
+
 # Public roadmap
 
 - https://github.com/aws/aws-sam-cli/discussions/4689
