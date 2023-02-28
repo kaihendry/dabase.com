@@ -2,6 +2,8 @@
 title: oracledump
 date: 2023-02-10T16:41:29+08:00
 description: Oracle dump to SQL from an oradata folder for a CI/CD pipeline
+tags:
+  - database
 ---
 
 As a devops engineer, I work with CI/CD pipelines. Creating, maintaining, fixing
@@ -26,9 +28,9 @@ A rediculous amount of time was lost with trial and error on Oracle's frankly
 broken CLI tools upon
 https://github.com/kaihendry/oracle-sql/blob/main/Makefile
 
-* sqlplus - can't export to sqlfile
-* impdp - can't export data to sqlfile
-* sqlcl - can only go table by table
+- sqlplus - can't export to sqlfile
+- impdp - can't export data to sqlfile
+- sqlcl - can only go table by table
 
 [Unloading a table to Insert
 statements](https://github.com/kaihendry/oracle-sql/blob/main/unload.sh) is
@@ -36,8 +38,8 @@ hugely problematic because of foreign key constraints. There is a work around
 to disable the constraints table by table and then put them back once all the
 data is imported. For example:
 
-	ALTER TABLE sales MODIFY CONSTRAINT sales_promo_fk  DISABLE;
-	ALTER TABLE sales MODIFY CONSTRAINT sales_promo_fk  ENABLE;
+    ALTER TABLE sales MODIFY CONSTRAINT sales_promo_fk  DISABLE;
+    ALTER TABLE sales MODIFY CONSTRAINT sales_promo_fk  ENABLE;
 
 # Non-CLI GUI options
 
@@ -51,18 +53,18 @@ had to ensure no table had more than a 1000 rows of test data.
 
 The next issue is service name which is omitted in the export. Prepend:
 
-	ALTER SESSION SET CONTAINER=XEPDB1
+    ALTER SESSION SET CONTAINER=XEPDB1
 
 Next issue; my users were not setup. Usually there is admin/user paradigm, so mine look something like:
 
-	CREATE USER eg_development_owner IDENTIFIED BY eg_development_owner QUOTA UNLIMITED ON USERS;
-	GRANT CONNECT, CREATE SYNONYM, RESOURCE TO eg_development_owner;
-	CREATE USER eg_development IDENTIFIED BY eg_development QUOTA UNLIMITED ON USERS;
-	GRANT CONNECT, RESOURCE TO eg_development;
-	GRANT CREATE SYNONYM to eg_development;
+    CREATE USER eg_development_owner IDENTIFIED BY eg_development_owner QUOTA UNLIMITED ON USERS;
+    GRANT CONNECT, CREATE SYNONYM, RESOURCE TO eg_development_owner;
+    CREATE USER eg_development IDENTIFIED BY eg_development QUOTA UNLIMITED ON USERS;
+    GRANT CONNECT, RESOURCE TO eg_development;
+    GRANT CREATE SYNONYM to eg_development;
 
 My biggest stumbling block was not being able to login with the
-ORACLE_PASSWORD.  You need to set the role as SYSDBA on their client!
+ORACLE_PASSWORD. You need to set the role as SYSDBA on their client!
 
 # prime.sql
 
