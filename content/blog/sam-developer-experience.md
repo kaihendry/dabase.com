@@ -67,6 +67,12 @@ sam cli is non-trivial to install with its Python dependencies. I am not sure ho
 
 https://github.com/aws/aws-sam-cli/issues/4670#issuecomment-1437823765
 
+## Logging experience is awful
+
+Compare [sam logs](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-logs.html) to [up logs](/blog/2023/apex-up-logs/). Also the formatting is terrible:
+
+<img src="https://s.natalian.org/2023-03-01/samlogs.png" alt="sam logs --stack-name helloworld-sam --tail">
+
 # Public roadmap
 
 - https://github.com/aws/aws-sam-cli/discussions/4689
