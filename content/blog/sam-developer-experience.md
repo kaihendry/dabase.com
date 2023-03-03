@@ -77,3 +77,5 @@ Compare [sam logs](https://docs.aws.amazon.com/serverless-application-model/late
 
 - https://github.com/aws/aws-sam-cli/discussions/4689
 - https://github.com/aws/aws-sam-cli/wiki/AWS-SAM-CLI-Roadmap
+
+My [minimal AWS SAM helloworld](https://github.com/kaihendry/helloworld)
