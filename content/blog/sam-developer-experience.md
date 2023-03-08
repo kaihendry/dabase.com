@@ -59,6 +59,11 @@ https://github.com/aws/aws-sam-cli/issues/4287
 
 https://github.com/aws/aws-sam-cli/issues/4670
 
+## Runtime: provided.al2
+
+The developer experience one has to jump to deploy to **arm64** is painful. For
+example you [must name your executable **bootstrap**](https://twitter.com/wolfeidau/status/1633292328285933568).
+
 ## No static binary
 
 sam cli is non-trivial to install with its Python dependencies. I am not sure how this can be considered a [one click install](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html#install-sam-cli-instructions). A static binary would be so much better.
