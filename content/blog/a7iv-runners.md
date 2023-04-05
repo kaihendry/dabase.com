@@ -9,4 +9,6 @@ description: Settings for capturing runners
 * Shutter speed 1/800
 * F5.6
 
-https://github.com/GoogleChromeLabs/squoosh/issues/1360
+[Google Photos Album](https://photos.app.goo.gl/JEadX4KBqViVFXdm9)
+
+https://discourse.gohugo.io/t/shortcode-for-google-photos/43761
