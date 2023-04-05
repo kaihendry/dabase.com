@@ -52,7 +52,12 @@ Currently daily average is very close to 4 hours. Most used apps are:
 
 There doesn't seem a good way to monitor what they watch on YT kids, at least we don't where to see it.
 
-For example when I goto https://www.youtubekids.com/settings [I can clear watch history, but I cannot see the Watch history](https://s.natalian.org/2023-04-05/ava.png)
+For example when I goto https://www.youtubekids.com/settings I can clear watch history, but I cannot see the Watch history.
+
+**Note: You’ll need to use your child’s device to review their watch history.**
+is the advice from https://support.google.com/youtubekids/answer/6172308 but
+often we do not have access to the kids iPad and **Watch it again** often feels
+broken.
 
 ## Two choices from Google
 
