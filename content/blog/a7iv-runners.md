@@ -18,6 +18,10 @@ https://discourse.gohugo.io/t/shortcode-for-google-photos/43761
 
 {{< youtube tjI8zHS4Af0 >}}
 
+I use tags to find the "keepers".
+
+Shift+Command+P in Finder can help preview the image.
+
 ## [Photo mechanic](https://home.camerabits.com/)
 
 {{< tweet user="stshank" id="1643250618252038146" >}}
