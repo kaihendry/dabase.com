@@ -56,3 +56,6 @@ The choice between Terraform and Cloudformation is not a clear cut one. For
 larger teams, Terraform's "shift left", flexibility and "blast radius" is
 industry proven. For smaller perhaps more knowledgable teams, Cloudformation's
 simplicity and declarative nature is a good fit, depending on the use case.
+
+
+* [Terraform vs Cloudformation Discussion on Reddit](https://www.reddit.com/r/Terraform/comments/yxjkks/terraform_vs_cloudformation/)
