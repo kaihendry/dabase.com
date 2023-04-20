@@ -47,8 +47,8 @@ AWS's Cloud Development Kit (CDK) is an imperative language that compiles to
 Cloudformation. However it has teething issues:
 
 {{< tweet user="ibuildthecloud" id="1640919745435402240" >}}
-
 {{< tweet user="ibuildthecloud" id="1641246127126360064" >}}
+{{< tweet user="ibuildthecloud" id="1648893333127811076" >}}
 
 ## Conclusion
 
