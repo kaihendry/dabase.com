@@ -18,9 +18,14 @@ where I essentially promote source code through three (eventually consistent)
 git repos mapped to three AWS accounts mapped to three environments: dev, stg,
 prd.
 
+**Rebuilding everytime is inefficient**, though I did consciously to ensure
+the [workflow was
+simple](https://gitlab.com/kaihendry/p2p-demo/-/blob/main/.gitlab-ci.yml) and
+the consistent across environments.
+
 # What's wrong with re-building?
 
-Rebuilding everytime a pipeline runs, may be:
+Rebuilding every time a pipeline runs, may be:
 * Wasteful
 * Time consuming
 * May produce different results if an underlying dependency changes
@@ -47,7 +52,7 @@ Artifacts must be immutable and their checksum tracked carefully.
 
 What happens if a rebuild is needed on the same $CI_COMMIT_SHA but the checksum changes?
 
-# Your builds aren't reproduciable!
+# Your builds aren't reproducible!
 
 Did you ask yourself:
 
@@ -55,15 +60,18 @@ Did you ask yourself:
 
 > What happens if a rebuild is needed on the same $CI_COMMIT_SHA but the checksum changes?
 
-It's because you don't have [reproduciable builds](https://en.wikipedia.org/wiki/Reproducible_builds).
+It's because you don't have [reproducible builds](https://en.wikipedia.org/wiki/Reproducible_builds).
 
-# How to get Reproduciable builds?!
+# How to get Reproducible builds?!
 
-There are initatives to get you there. The Go language helps.
+There are initiatives to get you there. The Go language helps.
 [NixOS](https://nixos.org/) makes it their goal.
 
-Though ask yourself, which CI/CD pipeline design will get you reproduciable
+Though ask yourself, which CI/CD pipeline design will get you reproducible
 builds faster?
 
 1. Engineering a complex pipeline for <abbr title="Build Once Deploy Anywhere">BODA</abbr>?
 2. Rebuilding your source code at each environment?
+
+Once each environments built artifacts are the same from a $CI_COMMIT_SHA build source,
+you can be confident that your build chain is consistent and uncompromised. Promoting artifacts aka <abbr title="Build Once Deploy Anywhere">BODA</abbr> will not give you that confidence and will make your pipelines brittle.
