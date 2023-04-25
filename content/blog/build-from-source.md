@@ -23,9 +23,9 @@ the [workflow was
 simple](https://gitlab.com/kaihendry/p2p-demo/-/blob/main/.gitlab-ci.yml) and
 the consistent across environments.
 
-# What's wrong with re-building?
+# What's wrong with re-building from source?
 
-Rebuilding every time a pipeline runs, may be:
+Rebuilding every time a pipeline runs can be:
 * Wasteful
 * Time consuming
 * May produce different results if an underlying dependency changes
