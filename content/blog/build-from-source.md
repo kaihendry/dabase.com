@@ -36,19 +36,21 @@ title="Build Once Deploy Anywhere">BODA</abbr> and some consider it part of the
 actually read the 12factor site it will say "One codebase tracked in revision
 control, many deploys".
 
+Rebuilding can be fast if you have a good cache.
+
 # What's wrong with <abbr title="Build Once Deploy Anywhere">BODA</abbr>?
 
 Promoting artifacts makes pipelines complex.
 
 Each language, framework, runtime, packaging format presents challenges. 
 
-Higher environments now need to break isolation to be able to retrieve lower
-environment artifacts.
+Higher environments now need some mechanism to pull artifacts from lower environments, or to pull artifacts from a central repository. Or perhaps lower environment need to push artifacts to higher environments.
 
-Some artifacts can be large and now we need to keep/track copies somewhere since
-someone might need them.
+Some artifacts can be large and now we need to create a lifecycle policy for images that do not get used.
 
-Artifacts must be immutable and their checksum tracked carefully.
+Artifacts must be immutable and their checksum/digest tagged and ideally signed.
+
+The source of truth becomes the artifact and not the source code.
 
 What happens if a rebuild is needed on the same $CI_COMMIT_SHA but the checksum changes?
 
@@ -73,5 +75,7 @@ builds faster?
 1. Engineering a complex pipeline for <abbr title="Build Once Deploy Anywhere">BODA</abbr>?
 2. Rebuilding your source code at each environment?
 
-Once each environments built artifacts are the same from a $CI_COMMIT_SHA build source,
+Once each build environment's output artifacts are the same from a $CI_COMMIT_SHA build source,
 you can be confident that your build chain is consistent and uncompromised. Promoting artifacts aka <abbr title="Build Once Deploy Anywhere">BODA</abbr> will not give you that confidence and will make your pipelines brittle.
+
+Achieving reproducible builds is more difficult than relying on artifacts, though it does have its inherit audit benefits as well as making CI/CD pipelines simpler.
