@@ -21,6 +21,7 @@ What are our requirements?
 [lifecycle rule](https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lp_evaluation_rules):
 `expire | imageCountMoreThan (10) | untagged`
 
+
 <strong>Warning: [Tags can only be removed via crane or the AWS cli on AWS](https://github.com/kaihendry/skopeo-vs-crane)</strong>
 
 <img src="https://s.natalian.org/2023-04-27/lifecycle.svg">
@@ -62,4 +63,4 @@ Pros:
 
 Cons:
 * More ECRs to manage
-* If many images >10 are pushed, but aren't actually deployed, we will expire them and fall risk to CannotPullContainerError
+* Assumes that the image is deployed to the environment, before being expired
