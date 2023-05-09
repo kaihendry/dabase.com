@@ -55,9 +55,9 @@ https://github.com/aws/serverless-application-model/issues/972
 
 https://github.com/aws/aws-sam-cli/issues/4287
 
-## No way to see the CNAME API once deploying
+## ~~No way to see the CNAME API once deploying~~
 
-https://github.com/aws/aws-sam-cli/issues/4670
+Fixed in https://github.com/aws/aws-sam-cli/issues/4670
 
 ## Runtime: provided.al2
 
