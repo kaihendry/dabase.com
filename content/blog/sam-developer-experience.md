@@ -57,7 +57,9 @@ https://github.com/aws/aws-sam-cli/issues/4287
 
 ## ~~No way to see the CNAME API once deploying~~
 
-Fixed in https://github.com/aws/aws-sam-cli/issues/4670
+Without using Route53, once needs to see the DNS name outputted to plug into a third party DNS provider!
+
+Fixed in https://github.com/aws/aws-sam-cli/issues/4670 via https://github.com/aws/serverless-application-model/issues/1386
 
 ## Runtime: provided.al2
 
