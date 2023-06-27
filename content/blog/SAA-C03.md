@@ -33,6 +33,43 @@ https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html
 > Server Message Block (SMB) storage, so you don’t have to modify your
 > applications
 
+# Deny access based on source IP address "NotIpAddress"
+
+Comees under [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html).
+
+> Be careful using negative conditions in the same policy statement as
+> "Effect": "Deny". When you do, the actions specified in the policy statement
+> are explicitly denied in all conditions except for the ones specified.
+
+# Amazon Aurora Global Database
+
+* <abbr title="Recovery Point Objective">RPO</abbr> is < 1 second
+* <abbr title="Recovery Time Objective">RTO</abbr> is one minute
+
+> Amazon Aurora Global Database is designed for globally distributed
+> applications, allowing a single Amazon Aurora database to span multiple AWS
+> Regions. It replicates your data with no impact on database performance,
+> enables fast local reads with low latency in each Region, and provides
+> disaster recovery from Region-wide outages.
+
+https://aws.amazon.com/rds/aurora/global-database/
+
+# Lambda
+
+Offers <a href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html">resource-based policies</a>
+
+> Lambda supports resource-based permissions policies for Lambda functions and
+> layers. Resource-based policies let you grant usage permission to other AWS
+> accounts or organizations on a per-resource basis. You also use a
+> resource-based policy to allow an AWS service to invoke your function on your
+> behalf.
+
+# Amazon FSx for Lustre
+
+* High performance
+* Fast processing
+* Parallel filesystem
+
 # Notes
 
 Security Groups are on the instance level, not the subnet level.
@@ -51,3 +88,21 @@ Backup + Restore strategy is the cheapest backup strategy. Next level is Pilot L
 <abbr title="Amazon Simple Queue Service">SQS</abbr> not guaranteed to preserve order by default. Kinesis preserves ordering.
 
 <abbr title="Web Application Firewall">WAF</abbr> is for Layer 7, AWS Network Firewall provides <a href="https://aws.amazon.com/network-firewall/faqs/#product-faqs#network-firewall-faqs#general">"control and visibility to Layer 3-7 network traffic for your entire VPC"</a>.
+
+Managing cross account resources? You need:
+1. Organisations
+2. AWS <abbr title="Resource Access Manager">RAM</abbr>
+
+AWS Volume Gateway = SCSI
+
+Compliance = [AWS Artifact](https://aws.amazon.com/artifact/)
+
+Cloudwatch Events = Amazon Eventbridge
+
+EC2 Health Check fail should mean a reboot (that also keeps the resources in tact)
+
+EC2 stopped = resources reallocated
+
+[Firewall manager to centrally manage rules](https://aws.amazon.com/firewall-manager/)
+
+AWS Shield (by default), AWS Shield Advanced = Extra
