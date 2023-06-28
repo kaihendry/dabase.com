@@ -4,6 +4,8 @@ date: 2023-06-27T09:58:34+01:00
 description: Learning notes for the AWS Certified Solutions Architect - Associate exam
 ---
 
+{{< youtube Kn3pMXXGLYE >}}
+
 # RDS Proxy
 
 > RDS Proxy establishes and manages the necessary connection
@@ -70,6 +72,24 @@ Offers <a href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-reso
 * Fast processing
 * Parallel filesystem
 
+# AWS S3 Compliance types
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-overview.html
+
+S3 Object Lock provides two retention modes:
+
+1. **Governance mode** - users can't overwrite or delete an object version or alter its lock settings unless they have special permissions; `x-amz-bypass-governance-retention:true` header and **s3:BypassGovernanceRetention**
+2. **Compliance mode**
+
+> In compliance mode, a protected object version can't be overwritten or
+> deleted by any user, including the root user in your AWS account. When an
+> object is locked in compliance mode, its retention mode can't be changed, and
+> its retention period can't be shortened. Compliance mode helps ensure that an
+> object version can't be overwritten or deleted for the duration of the
+> retention period.
+
+
+
 # Notes
 
 Security Groups are on the instance level, not the subnet level.
@@ -83,7 +103,6 @@ Backup + Restore strategy is the cheapest backup strategy. Next level is Pilot L
 <a href="/blog/2020/AWS_Pro_exam_notes/">
 <img alt="Four levels of Disaster Recovery" src="https://s.natalian.org/2020-03-05/1583386197_2560x1440.png">
 </a>
-
 
 <abbr title="Amazon Simple Queue Service">SQS</abbr> not guaranteed to preserve order by default. Kinesis preserves ordering.
 
