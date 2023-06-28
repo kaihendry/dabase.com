@@ -2,11 +2,12 @@
 title: AWS Learning notes
 date: 2023-06-27T09:58:34+01:00
 description: Learning notes for the AWS Certified Solutions Architect - Associate exam
+toc: true
 ---
 
 {{< youtube Kn3pMXXGLYE >}}
 
-# RDS Proxy
+## RDS Proxy
 
 > RDS Proxy establishes and manages the necessary connection
 > pools to your database so that your application creates fewer
@@ -14,14 +15,14 @@ description: Learning notes for the AWS Certified Solutions Architect - Associat
 
 https://aws.amazon.com/blogs/compute/using-amazon-rds-proxy-with-aws-lambda/
 
-# AWS Backup
+## AWS Backup
 
 > In AWS Backup, a backup vault is a container that stores and organizes
 > your backups.
 
 https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html
 
-# AWS DataSync (AMS SSPS)
+## AWS DataSync (AMS SSPS)
 
 > AWS DataSync moves large amounts of data online between on-premises
 > storage and Amazon S3, Amazon Elastic File System (Amazon Elastic File
@@ -35,7 +36,7 @@ https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html
 > Server Message Block (SMB) storage, so you don’t have to modify your
 > applications
 
-# Deny access based on source IP address "NotIpAddress"
+## Deny access based on source IP address "NotIpAddress"
 
 Comees under [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html).
 
@@ -43,7 +44,7 @@ Comees under [AWS global condition context keys](https://docs.aws.amazon.com/IAM
 > "Effect": "Deny". When you do, the actions specified in the policy statement
 > are explicitly denied in all conditions except for the ones specified.
 
-# Amazon Aurora Global Database
+## Amazon Aurora Global Database
 
 * <abbr title="Recovery Point Objective">RPO</abbr> is < 1 second
 * <abbr title="Recovery Time Objective">RTO</abbr> is one minute
@@ -56,7 +57,7 @@ Comees under [AWS global condition context keys](https://docs.aws.amazon.com/IAM
 
 https://aws.amazon.com/rds/aurora/global-database/
 
-# Lambda
+## Lambda
 
 Offers <a href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html">resource-based policies</a>
 
@@ -66,13 +67,13 @@ Offers <a href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-reso
 > resource-based policy to allow an AWS service to invoke your function on your
 > behalf.
 
-# Amazon FSx for Lustre
+## Amazon FSx for Lustre
 
 * High performance
 * Fast processing
 * Parallel filesystem
 
-# AWS S3 Compliance types
+## AWS S3 Compliance types
 
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-overview.html
 
@@ -88,9 +89,24 @@ S3 Object Lock provides two retention modes:
 > object version can't be overwritten or deleted for the duration of the
 > retention period.
 
+## AWS billing sharing discounts
 
+https://aws.amazon.com/blogs/publicsector/controlling-how-your-aws-credits-and-ri-discounts-are-shared-across-your-organization/
 
-# Notes
+## S3 Replication reasons
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html#crr-scenario
+
+## Governance
+
+What do you use to restrict a set of account to certain AWS services or a service with say certain EC2 types?
+
+* Service control policies (SCPs) - no, this disables the entire service, e.g. no usage of EC2 at all
+* https://aws.amazon.com/proton/ - enforce standards, e.g. path to production / deployment aimed at microservice workloads
+* AWS Service Catalog - this is for a superset including how to provision databases and groups of services
+* [IAM policy](https://www.wellarchitectedlabs.com/cost/200_labs/200_2_cost_and_usage_governance/3_ec2_restrict_family/) - yes
+
+## Notes
 
 Security Groups are on the instance level, not the subnet level.
 
