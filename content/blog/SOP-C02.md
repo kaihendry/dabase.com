@@ -4,14 +4,16 @@ date: 2023-06-28T09:46:03+01:00
 description: Studying for AWS Certified DevOps Engineer - Professional
 ---
 
-Three years have passed since I took the rather painful
-[SAP-C01](https://dabase.com/blog/2020/AWS_Pro_exam_notes/) on my second try.
+Three years have passed since certifying the rather painful
+[SAP-C01](https://dabase.com/blog/2020/AWS_Pro_exam_notes/) on my _second try_.
 My certification has since expired and I thought lets challenge myself to <abbr
 title="Certified DevOps Engineer - Professional">DOP-C02</abbr>.
 
-I've given myself a solid week to prepare. Confident by the fact I passed
+I've given myself a solid week to prepare since I'm not assigned to a client
+project. Confident by the fact I re-certified
 [SAA-C03](https://www.credly.com/users/khendry/badges) last week and btw here
-are my notes [SAA-C03 learning notes](/blog/2023/SAA-C03/) that helped me pass first time.
+are my notes [SAA-C03 learning notes](/blog/2023/SAA-C03/) that helped me pass
+first time.
 
 Furthermore:
 
