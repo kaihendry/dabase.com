@@ -30,11 +30,11 @@ Lets checkout what [Reddit has to say](https://www.reddit.com/r/AWSCertification
 * KNOW THE CODE* suite
 * When in doubt, the answer is either Config or EventBridge
 
-Bought the 96USD [@adriancantrill](https://twitter.com/adriancantrill) course https://learn.cantrill.io/, since it came recommended on Reddit:
+Bought the 96USD [@adriancantrill](https://twitter.com/adriancantrill) **learning resource** https://learn.cantrill.io/, since it came recommended on Reddit:
 
 <img src="https://s.natalian.org/2023-06-28/cantrill.png">
 
-And of course I bought <abbr title="Tutorial Dojo">TD</abbr> Jon-Bonso's Practice Exams:
+And of course I bought <abbr title="Tutorial Dojo">TD</abbr> Jon-Bonso's **Practice Exams**:
 <img src="https://s.natalian.org/2023-06-28/bonso.png">
 
 I also have access to https://learn.acloud.guru/search?query=DOP-C02&page=1 which I will use too.
