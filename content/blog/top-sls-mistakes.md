@@ -31,7 +31,7 @@ For Javascript users, use [serverless-http](https://www.npmjs.com/package/server
 
 For Go users, use [Apex Gateway v2](https://github.com/apex/gateway)
 
-And whilst I have your attention, please use structued logs!
+And whilst I have your attention, please use structured logs!
 
 ## Not using a framework
 
