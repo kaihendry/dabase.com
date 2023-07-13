@@ -50,3 +50,26 @@ day to revision.
 I take notes on paper and then write them up on my blog to re-enforce the
 learning / memorisation. I've scheduled this exam for a morning 8AM slot when
 my brain is the freshest, after a good nights sleep.
+
+# Exam day 2023-07-05
+
+I failed, with candidate score of 735, annoyingly I needed 15 points more to reach the passing score of 750! 
+
+This is like my [SAP-C01 experience](/blog/2020/failed-the-SAP-C01/). 💩
+
+Now I want to take the exam ASAP, but I am struggling to book with the AWSRETAKE code. 
+
+{{< tweet user="kaihendry" id="1678368014314397696" >}}
+
+Some areas which I need to improve on:
+
+* AWS S3 replication - need to try this out
+* Cloudformation templates / stacksets
+* Running through a scenario like how to check for untagged resources across regions/accounts
+* Rolling update ASG examples
+* When and where to use Cloudwatch alarms vs Eventbridge
+* How logging works on the ALB, is it done with the target groups?
+* [ForAllValues policy condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html)
+* [AWS EC2 warm pools](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.html)
+* How failure works in an ASG
+* Run through scenario of settings up operations Admins across an organisation's accounts
