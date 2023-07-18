@@ -11,6 +11,8 @@ For measuring the maturity of a DevOps organisation, there are four key metrics:
 3. Mean time to failure
 4. Mean time to recovery
 
+There do not have to be accurate! They are a guide to help your delivery improve.
+
 ## Lead time and frequency of deployment
 
 How fast can you deliver a change? How often do you deploy?
