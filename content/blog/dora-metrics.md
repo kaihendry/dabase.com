@@ -19,13 +19,15 @@ How fast can you deliver a change? How often do you deploy?
 
 Closely related since the smaller the change, the quicker you can deliver.
 
+Low performers can take months to roll out a change! 🤦
+
 # Change failure rate
 
 <img src="https://s.natalian.org/2023-07-18/Comparison-between-different-traditional-and-digital-safety-scoreboards.png" alt="Days since last failure">
 
 This is often misunderstood, what we are looking for is **customer impact**. 
 
-If a <abbr title="Continuous Integration">CI</abbr> pipelines fails, but the customer is not impacted, then this is not a failure.
+When a <abbr title="Continuous Integration">CI</abbr> **pipelines fails**, the customer is not impacted, then this is **not a failure**. Pipeline failures and general slowness should negatively affect your lead time.
 
 If we do a canary deployment which fails, but the customer by & large is not impacted, then this should not be considered a failure.
 
@@ -37,14 +39,16 @@ How quickly can you recover from a failure?
 
 Should be a small as possible, as it would lessen the impact of the failure.
 
+In practice you **roll forward**, therefore <abbr title="mean to to recovery">MTTR</abbr> should be the same as lead time in high performers.
+
 # What good looks like
 
 High performers:
 
-1. Deploy multiple times a day
-2. Lead time is less than an hour
-3. Change fail rate is less than 10%
-4. Mean time to recovery is less than a minute
+1. Lead time is less than an hour - how long does it take to get a change into production?
+2. Deploy multiple times a day - how often do you deploy?
+3. Change fail rate is less than 10% - when a change is deployed, want percentage negatively impacts the customer?
+4. Mean time to recovery is less than a minute - how quickly can we make a fix?
 
 Change fail rate as noted by the book [Accelerate](https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339), might be higher in medium/high performers, since they are more likely to be experimenting than low performers. 😳
 
