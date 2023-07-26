@@ -38,7 +38,7 @@ https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html
 
 ## Deny access based on source IP address "NotIpAddress"
 
-Comees under [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html).
+Comes under [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html).
 
 > Be careful using negative conditions in the same policy statement as
 > "Effect": "Deny". When you do, the actions specified in the policy statement
