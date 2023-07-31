@@ -73,3 +73,14 @@ Some areas which I need to improve on:
 * [AWS EC2 warm pools](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.html)
 * How failure works in an ASG
 * Run through scenario of settings up operations Admins across an organisation's accounts
+
+# Exam day 2023-07-28
+
+Sadly I wasn't able to use the AWSRETAKE code!
+
+> As we can see you scheduled the first exam which was partially paid for with a discount coupon and credit card. As per policy, no other scheme can be combined with this scheme. but you used a discount code, hence free retake scheme is not applicable to you.
+
+
+Nonetheless I booked a retake with an older 50% discount and this time I passed! 🎉
+
+<img src="https://s.natalian.org/2023-07-31/passed.jpeg" alt="782 score">
