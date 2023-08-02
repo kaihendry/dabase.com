@@ -54,3 +54,6 @@ Browsing [cluster info](https://console.cloud.google.com/kubernetes/list/overvie
 ## Getting an overview
 
     gcloud projects get-iam-policy $(gcloud config get-value project)
+
+    gcloud projects get-iam-policy $(gcloud config get-value project) | 
+    grep $(gcloud projects describe $(gcloud config get-value project) --format="value(projectNumber)")
