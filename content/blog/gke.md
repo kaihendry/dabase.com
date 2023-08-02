@@ -50,3 +50,7 @@ Output might look like:
 And it still doesn't work.
 
 Browsing [cluster info](https://console.cloud.google.com/kubernetes/list/overview) or the [workloads](https://console.cloud.google.com/kubernetes/workload/overview) surprisingly gives no hint as to which service account they are using.
+
+## Getting an overview
+
+    gcloud projects get-iam-policy $(gcloud config get-value project)
