@@ -28,7 +28,7 @@ To the service account that is running the pods. But what is it?
 
     gcloud iam service-accounts list
 
-There could be several $SA_EMAIL
+There could be many service account emails. Which is associated with the cluster is unclear.
 
     gcloud projects get-iam-policy $(gcloud config get-value project)  \
     --flatten="bindings[].members" \
@@ -48,3 +48,5 @@ Output might look like:
     roles/storage.admin
 
 And it still doesn't work.
+
+Browsing [cluster info](https://console.cloud.google.com/kubernetes/list/overview) or the [workloads](https://console.cloud.google.com/kubernetes/workload/overview) surprisingly gives no hint as to which service account they are using.
