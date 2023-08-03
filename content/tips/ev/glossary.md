@@ -4,6 +4,8 @@ title: Glossary of Electric Vehicle terminology
 description: With examples of said terminology
 ---
 
+<img src="https://i.imgur.com/OLH4lGD.png" alt="Plug and Charge model by ElaadNL">
+
 <dl>
 {{< abbr short="EV" long="Electric Vehicle" >}}
 {{< abbr short="V2G" long="Vehicle to Grid" >}}
@@ -15,6 +17,7 @@ description: With examples of said terminology
 {{< abbr short="OCPP" long="Open Charge Point Protocol" >}}
 {{< abbr short="CCP" long="Contract certificate pool" >}}
 {{< abbr short="eMSP" long="e-Mobility Service Provider" >}}
+{{< abbr short="EMP" long="e-Mobility Service Provider" >}}
 {{< abbr short="P&C" long="Plug & Charge" >}}
 {{< abbr short="OICP" long="Open Interchange Charge Protocol" >}}
 </dl>
