@@ -1,7 +1,7 @@
 ---
 title: UK Cost to Drive a Mile
 date: 2023-08-07T12:00:20+01:00
-description: Comparing the cost to drive a mile in the UK between gasoline and electric vehicles.
+description: Comparing the cost to drive a mile in the UK between gasoline and electric vehicles
 ---
 
 # If an Electric Vehicle consumes 263 Wh/mi, and the cost of a kw/h is 20 pence, how much does it cost to drive 1 mile?
@@ -39,3 +39,5 @@ Lets not forget the other benefits of electric vehicles, such as:
 * less noise pollution
 * less maintenance
 * cleaner over time as the [electricity grid becomes greener](https://grid.iamkate.com/)
+
+Thanks to [Jujhar Singh](https://linkedin.com/in/jujhar) for pointing out my initial mistake in the calculation and this [Car Fuel Cost Calculator](https://www.fleetnews.co.uk/costs/fuel-cost-calculator/?FuelType=Unleaded&PencePerLitre=143.73&Mileage=1&ManufacturerId=30&Mpg=36)
