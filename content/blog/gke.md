@@ -1,59 +1,39 @@
 ---
 title: Google Kubernetes Engine on GCP
 date: 2023-08-02T11:01:24+01:00
-description: Fixing observability on GKE Autopilot cluster
+description: Fixing observability on a GKE Autopilot cluster when Policy for Disable Automatic IAM Grants for Default Service Accounts is enabled
 ---
 
 On https://console.cloud.google.com/apis/dashboard if you notice errors, well then you have a problem!
 
 <img src="https://i.imgur.com/sAtKS8p.png" alt="100% error rate">
 
-Unfortunately there are no logs as to what is causing the errors, so you have to dig around a bit.
-
-I know from examining the workloads https://console.cloud.google.com/kubernetes/workload/overview that I cannot see:
-* Metrics
-* Logs
-
 <img src="https://i.imgur.com/Obhyavl.png" alt="No data is available for the selected time frame.">
 
 After some searching I found https://cloud.google.com/stackdriver/docs/solutions/gke/troubleshooting#write_permissions
 
-So now I need to add to [IAM](https://console.cloud.google.com/iam-admin/iam):
+We need to roles to the service account via [IAM](https://console.cloud.google.com/iam-admin/iam):
 
 1. Logs Writer aka roles/logging.logWriter
 2. Monitoring Metric Writer aka roles/monitoring.metricWriter
 3. Stackdriver Resource Metadata Writer aka roles/stackdriver.resourceMetadata.writer
 
-To the service account that is running the pods. But what is it?
+How do I find the default service account? 
 
-    gcloud iam service-accounts list
+    gcloud iam service-accounts list | grep "default service"
+    Compute Engine default service account      XXXXXXXXX-compute@developer.gserviceaccount.com False
 
-There could be many service account emails. Which is associated with the cluster is unclear.
+To add permissions:
 
-    gcloud projects get-iam-policy $(gcloud config get-value project)  \
-    --flatten="bindings[].members" \
-    --format='table(bindings.role)' \
-    --filter="bindings.members:$1"
+1. https://console.cloud.google.com/iam-admin/iam
+2. GRANT ACCESS
+3. Use the Principal XXXXXXXXX-compute@developer.gserviceaccount.com aka the **Compute Engine default service account** Principal
+4. Assign the roles/logging.logWriter, roles/monitoring.metricWriter, roles/stackdriver.resourceMetadata.writer roles
 
-Output might look like:
+How to verify the permissions are there:
 
+    gcloud projects get-iam-policy $(gcloud config get-value project)  --flatten="bindings[].members" --format='table(bindings.role)' --filter="bindings.members:XXXXXXXXXX-compute@developer.gserviceaccount.com"
     ROLE
-    roles/artifactregistry.createOnPushWriter
-    roles/artifactregistry.reader
-    roles/container.admin
-    roles/container.clusterViewer
     roles/logging.logWriter
     roles/monitoring.metricWriter
     roles/stackdriver.resourceMetadata.writer
-    roles/storage.admin
-
-And it still doesn't work.
-
-Browsing [cluster info](https://console.cloud.google.com/kubernetes/list/overview) or the [workloads](https://console.cloud.google.com/kubernetes/workload/overview) surprisingly gives no hint as to which service account they are using.
-
-## Getting an overview
-
-    gcloud projects get-iam-policy $(gcloud config get-value project)
-
-    gcloud projects get-iam-policy $(gcloud config get-value project) | 
-    grep $(gcloud projects describe $(gcloud config get-value project) --format="value(projectNumber)")
