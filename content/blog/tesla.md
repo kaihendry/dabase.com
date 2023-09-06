@@ -1,7 +1,7 @@
 ---
 title: What Tesla owners want
 date: 2023-09-06T08:18:03+01:00
-description: When Tesla owners stay the night away from, they need to be catered for
+description: When Tesla owners stay the night away from home, they need to be catered for
 ---
 
 # Covered car park
