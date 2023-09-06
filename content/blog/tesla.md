@@ -25,8 +25,8 @@ drain the battery.
 If you do offer charging, do please build the cost into the rental!
 
 It's so bewildering to go to random destintations for them to tell you it costs
-30GBP for minimum of three hours, and one hour there after. You want us to
-enjoy the holiday when we have to account for that?
+30GBP for minimum of three hours, and for every additional hour 10GBP there
+after. You want us to enjoy the holiday when we have to account for that?!
 
 Then add on complex idle costs?
 
