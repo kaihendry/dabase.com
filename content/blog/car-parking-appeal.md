@@ -26,6 +26,8 @@ Timeline:
 
 > The entrance sign needs improvement, as per the British Parking Association's Approved Operator code of Practice chapter 12. Sorry again it's impossible to paste the link since pasting in seemingly not allowed in this form.
 
+<img src="https://s.natalian.org/2023-09-16/Entrance sign-V1.webp" alt="Entrance sign">
+
 * 13th of September Appeal Outcome: Dismissed
 
 > "It is important that the Appellant understands that the adjudicator is not in a position to give his legal advice. The adjudicator's role is to look at whether the parking charge has a basis in law and was properly issued in the circumstances of each particular case. The adjudicator's decision is not legally binding on the Appellant (it is intended to be a guide) and they are free to obtain independent legal advice if they so wish. However, the adjudicator is legally qualified (a barrister or solicitor) and decides the appeal according to their understanding of the law and legal principles.
@@ -34,8 +36,14 @@ Timeline:
 
 > I am satisfied that the Operator has proven their prima facie case. Whilst having some sympathy with the Appellant's circumstances, once liability has been established, only the Operator has the discretion to vary or cancel the parking charge based on mitigating circumstances. Accordingly this appeal is dismissed.
 
-I am stunned the Adjudicator thought **"that the Operator's signage, which was on display throughout the site.. makes it sufficiently clear"**, when the tariff sign is furthest from the entrance/exit and not readily visible.
+I am stunned the Adjudicator is **"satisfied ...(with) the Operator's signage"**, when the tariff sign is furthest from the entrance/exit and not readily visible. The [BPA Approved Operator Scheme Code of Practice](https://www.britishparking.co.uk/write/Documents/AOS/AOS_Code_of_Practice_January_2020_v8(2).pdf) says:
 
-<img src="https://s.natalian.org/2023-09-16/parking-appeal.png">
+>  parking-terms signage tells drivers what your terms and conditions are, including your parking charges... must place signs containing the specific parking terms throughout the site
 
-16th of September 100GBP fine paid via Worldpay.
+There is only one, practically hidden tariff sign:
+
+<img src="https://s.natalian.org/2023-09-16/tariff.webp" alt="Tariff sign">
+
+<img alt="Location of tariff sign" src="https://s.natalian.org/2023-09-16/parking-appeal.png">
+
+* 16th of September 100GBP fine paid via Worldpay.
