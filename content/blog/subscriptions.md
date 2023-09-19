@@ -16,3 +16,5 @@ description: My ongoing monthly subscriptions
 * disney
 * netflix
 * xbox ultimate
+* tesla premium
+* osmaps

@@ -47,3 +47,13 @@ There is only one, practically hidden tariff sign:
 <img alt="Location of tariff sign" src="https://s.natalian.org/2023-09-16/parking-appeal.png">
 
 * 16th of September 100GBP fine paid via Worldpay.
+
+I complained to https://www.britishparking.co.uk/ about their guidance and they replied:
+
+> I can confirm Premier Parking Solutions are a member of the BPA, however, they are not members of our Approved Operator Scheme.  As they are not Approved Operators of ours, they do not follow our Code of Practice for the management of private land. 
+
+> I believe they are members of the other accredited trade association called the International Parking Community and therefore will be following their Code of Practice.  We suggest you contact the IPC directly for further assistance.  I have provided their contact details below: 
+
+> Website: www.theipc.info 
+
+On the Tesla UK owners group they say I should have used https://www.popla.co.uk/ ... wth?!
