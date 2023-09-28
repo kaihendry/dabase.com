@@ -13,8 +13,9 @@ description: My ongoing monthly subscriptions
 * amazon prime 2GBP
 * github 20GBP
 * ISP A&A 80GBP
-* disney
-* netflix
+* disney 11.98SGD
+* netflix 21.98SGD
+* spotify 11SGD
 * xbox ultimate 12.99GBP
 * [tesla premium](https://www.tesla.com/en_gb/support/connectivity) 9.99GBP
 * [osmaps](https://shop.ordnancesurvey.co.uk/os-maps-12-months-recurring-subscription/)
