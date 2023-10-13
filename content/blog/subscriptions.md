@@ -7,6 +7,7 @@ description: My ongoing monthly subscriptions
 * dental 17.75GBP
 * which 8.99GBP
 * reddit 5.99USD
+* ~~docker desktop 5USD a month~~
 * icloud/apple 8.99GBP
 * youtube premium 20GBP
 * chatgpt 20GBP

@@ -2,12 +2,10 @@ title: dabase
 baseURL: https://dabase.com/
 defaultContentLanguage: en
 disablePathToLower: true
-googleAnalytics: UA-195686-7
 enableGitInfo: true
 permalinks:
   blog: /blog/:year/:filename/
   tips: /:sections/:year/:title/
-rssLimit: 10
 
 markup:
   goldmark:
@@ -19,6 +17,3 @@ deployment:
     name: 'dabase'
     URL: 's3://dabase.com?region=ap-southeast-1'
     cloudFrontDistributionID: E6OVXGA61L6G6
-  matchers:
-    - pattern: "^.+\\.(css)$"
-      cacheControl: "max-age=604800, no-transform, public"
