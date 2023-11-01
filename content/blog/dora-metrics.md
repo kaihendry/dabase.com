@@ -25,7 +25,7 @@ Low performers can take months to roll out a change! 🤦
 
 <img src="https://s.natalian.org/2023-07-18/Comparison-between-different-traditional-and-digital-safety-scoreboards.png" alt="Days since last failure">
 
-This is often misunderstood, what we are looking for is **customer impact**. 
+This is often misunderstood, what we are looking for is **customer impact**.
 
 When a <abbr title="Continuous Integration">CI</abbr> **pipelines fails**, the customer is not impacted, then this is **not a failure**. Pipeline failures and general slowness should negatively affect your lead time.
 
