@@ -4,6 +4,8 @@ date: 2023-11-11T07:23:59Z
 description: WifiWave2 is the new wifi6 implementation from Mikrotik. It has some nasty surprises.
 ---
 
+<img src="https://i.imgur.com/5cyo2Di.jpg">
+
 Problems with wifi6 with Mikrotik.
 
 The new WifiWave2 aka wifi6 implementation in Mikrotik has some nasty surprises.
