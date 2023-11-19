@@ -1,12 +1,12 @@
 ---
 title: Mikrotik Wifi6
 date: 2023-11-11T07:23:59Z
-description: The labour of love for Latvia
+description: WifiWave2 is the new wifi6 implementation from Mikrotik. It has some nasty surprises.
 ---
 
 Problems with wifi6 with Mikrotik.
 
-The new wifiwave aka wifi6 implementation in Mikrotik has some nasty surprises.
+The new WifiWave2 aka wifi6 implementation in Mikrotik has some nasty surprises.
 
 # wifiwave's Capsman is not compatible with the older Capsman.
 
@@ -36,4 +36,7 @@ As explained on the [Mikrotik forum](https://forum.mikrotik.com/viewtopic.php?p=
 
 The thinkpad doesn't have an issue wifi6 from Ubiquiti...
 
+# My two Capsman controller configurations
 
+* [wifiwave2](https://github.com/kaihendry/mikrotik-configs/blob/main/praze.rsc)
+* [older legacy?](https://github.com/kaihendry/mikrotik-configs/blob/main/workshop.rsc)
