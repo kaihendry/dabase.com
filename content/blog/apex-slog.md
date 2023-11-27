@@ -14,7 +14,7 @@ https://go.dev/play/p/mVJyQmYTZVe
 	log.WithError(errors.New("unauthorized")).Error("upload failed")
     slog.Error("upload failed", "err", errors.New("unauthorized"))
 
-Not sure how to 
+Not sure how to do a Fatal
 
 	log.WithError(err).Fatal("error listening")
 
