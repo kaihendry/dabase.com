@@ -33,9 +33,9 @@ If we do a canary deployment which fails, but the customer by & large is not imp
 
 This is not quite the same as a constructions site's X days since failure, since we want to set a period of time, so we can work on improving our processes and deliver!
 
-# Mean to recovery
+# Mean time to recovery from a failure
 
-How quickly can you recover from a failure?
+How quickly can you recover from a failure, in which a customer was impacted.
 
 Should be a small as possible, as it would lessen the impact of the failure.
 
