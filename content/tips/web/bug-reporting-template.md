@@ -44,7 +44,7 @@ Did this work before?
 Most <abbr title="Bug Tracking System">BTS</abbr> do not facilitate uploading
 of screenshots or videos, which is makes it not fit for purpose.
 
-# Jira style issue template
+# Jira style issue template (User story)
 
     h2. Context
 
