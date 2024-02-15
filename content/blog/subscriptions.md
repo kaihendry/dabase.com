@@ -15,6 +15,5 @@ description: My ongoing monthly subscriptions
 * iCloud/apple 8.99GBP
 * [tesla premium](https://www.tesla.com/en_gb/support/connectivity) 9.99GBP
 * Vodafone mobile subscription (voxi) 10GBP
-* Amazon prime 2GBP
-* Reddit 5.99USD
-* [osmaps](https://shop.ordnancesurvey.co.uk/os-maps-12-months-recurring-subscription/)
+* Amazon Prime 2GBP
+* [Osmaps](https://shop.ordnancesurvey.co.uk/os-maps-12-months-recurring-subscription/)
