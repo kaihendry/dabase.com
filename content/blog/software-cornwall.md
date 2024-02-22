@@ -14,7 +14,7 @@ though I want to be pragmatic and document the infrastructure challenges from my
 In the past few months, a major tech employer in Truro (a games company)
 shutdown. The [tech event location
 Heartlands](https://www.heartlandscornwall.com/) went into administration.
-Space port Cornwall has a [failed
+Space port Cornwall had a [failed
 launch](https://www.bbc.co.uk/news/uk-england-cornwall-64253375) and paused
 operations.
 
@@ -46,6 +46,6 @@ On a positive note, fibre broadband is pretty pervasive in Cornwall. During the
 summer people can happily camp in a tent.
 
 The new A30 improvements make it quite easy to drive into Cornwall from Exeter.
-Trouble it the A30 doesn't connect anything on the train line going into
+Trouble is the A30 doesn't connect anything on the train line going into
 Cornwall. Neither infrastructure takes you close to nice parts of the
 coastline.
