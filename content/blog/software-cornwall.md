@@ -1,7 +1,7 @@
 ---
 title: Software Cornwall 2024
 date: 2024-02-22T11:13:39Z
-description: Commenting on the tech scene in Cornwall lack of infrastructure
+description: Commenting on the tech scene in Cornwall infrastructure challenges
 ---
 
 # Context
@@ -35,7 +35,8 @@ For me we need a place where developers can meet, work, socialise and learn
 from each other, and since the typical venue "Heartlands" is gone, I really
 wonder where that will be.
 
-It needs to be close to a University and a train station. Accessible by public transport.
+It needs to be close to a University and a train station. Accessible by public
+transport.
 
 Ideally it's a destination for remote workers, somewhere they can enjoy
 seafood, enjoy the natural beauty and perhaps surf. Ideally it has good, cheap
@@ -43,3 +44,8 @@ local accommodation for people to stay a bit longer.
 
 On a positive note, fibre broadband is pretty pervasive in Cornwall. During the
 summer people can happily camp in a tent.
+
+The new A30 improvements make it quite easy to drive into Cornwall from Exeter.
+Trouble it the A30 doesn't connect anything on the train line going into
+Cornwall. Neither infrastructure takes you close to nice parts of the
+coastline.
