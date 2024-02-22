@@ -1,7 +1,6 @@
 <head>
   <meta charset="utf-8" />
-  {{ $alternate_title := replace .File.BaseFileName "_" " " | title }}
-  <title>{{ .Title | default $alternate_title }}</title>
+  <title>{{ .Title  }}</title>
   <meta
     name="description"
     content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
