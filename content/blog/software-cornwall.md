@@ -4,6 +4,10 @@ date: 2024-02-22T11:13:39Z
 description: Commenting on the tech scene in Cornwall infrastructure challenges
 ---
 
+2024-03-01 Niki Davies replied to me to say: The best way to hear about our upcoming meetups and events is by
+subscribing to our newsletter if you're not already:
+https://share.hsforms.com/1OaUNOGHVRzuUpubCGTwTmg3ddhf?firstname=&lastname=&email=&subscribe=Become+an+In+Touch+Member
+
 # Context
 
 UK is in a recession.  Cornwall is one of the poorest areas in the United
