@@ -9,7 +9,7 @@ For measuring the maturity of a DevOps organisation, there are <abbr title="four
 1. Lead time
 2. Frequency of deployment
 3. Change failure rate aka <abbr title="mean time between failures">MTBF</abbr>
-4. Mean time to recovery
+4. Mean time to recovery (MTTR)
 
 These indicators do not have to be accurate! They are a guide to help your software delivery process improve.
 
