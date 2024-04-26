@@ -47,8 +47,8 @@ before we would be able to step in and take action.
 
 # Possible explanations as to what went wrong
 
-My wife was returning some kitchenware at the same time with the same service,
-though this was to be collected with a pre-printed label.
+My wife was returning some kitchen ware to Glasgow at the same time with the
+same service, though this was to be collected with a pre-printed label.
 
 The kitchenware was not collected, but the microphone kit with the Ebay label
 was. We have tried to contact Bonnypack to ask if they received the misdirected
