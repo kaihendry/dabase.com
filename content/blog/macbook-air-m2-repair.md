@@ -51,4 +51,4 @@ Overall I am satisified with the good service and repair. Hate to think of what 
 However two things bothered me about this repair:
 
 1. The hard drive is soldered onto the motherboard, so if the motherboard fails, you lose all your data. If they needed to replace the motherboard, we would have lost all our data.
-2. The black screen was a cursor issue. The technician said that it didn't work with an external monitor because I didn't set it to mirror mode. However when the screen was fixed, it worked fine with an external monitor.
+2. The "black screen with a cursor issue". The technician said that it didn't work with an external monitor because I didn't set it to mirror mode. However when the screen was fixed, it worked fine with an external monitor.
