@@ -47,6 +47,8 @@ I think a `fwupdmgr upgrade` might have helped, but I'm not sure. I'm on the lat
             Created:          2021-07-13
             Urgency:          High
 
-# Slow
+# Slow with latency
 
 Can never seen to get higher then 50 Mbit/s whilst my Mac M1 Pro can easily get 300 Mbit/s and above.
+
+{{< tweet user="kaihendry" id="1792073731730202653" >}}
