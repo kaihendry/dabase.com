@@ -23,5 +23,4 @@ jobs:
           role-to-assume: arn:aws:iam::407461997746:role/github-actions-Role-56IHHM969DKJ
           aws-region: eu-west-2
       - run: |
-          hugo
           hugo deploy
