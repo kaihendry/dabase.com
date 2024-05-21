@@ -27,6 +27,30 @@ Pairing / mobbing to encourage collaboration.
 2. Showcase: Demonstrate value delivered.
 3. Retrospective: Reflect on the process and improve.
 
+# Story templates
+
+Don't forget to formulate a definition of done, perhaps in a team's **Ways of
+Working** document.
+
+    h2. Context
+
+    h2. Story
+
+    * AS A <role>
+    * I WANT  <observable change>
+    * SO THAT <valuable outcome>
+
+     h2. Scope
+
+    * IN
+    * OUT
+
+    h2.  Acceptance Criteria
+
+    * GIVEN
+    * WHEN
+    * THEN
+
 # Summary
 
 Focus on aging work, before starting any new work. This encourages collaboration
