@@ -40,7 +40,7 @@ Working** document.
     * I WANT  <observable change>
     * SO THAT <valuable outcome>
 
-     h2. Scope
+    h2. Scope
 
     * IN
     * OUT
