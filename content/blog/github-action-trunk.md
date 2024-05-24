@@ -44,3 +44,8 @@ Ensure we deploy the same version that we deployed to dev:
 
           version: ${{ needs.deploy-to-dev.outputs.version }}
 
+# Approval for production
+
+<img src="https://s.natalian.org/2024-05-24/prd.png">
+
+Use Github's environment protection rules to ensure we don't deploy to production without approval.
