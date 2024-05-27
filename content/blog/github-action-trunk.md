@@ -7,30 +7,30 @@ description: A path to production using trunk based development for infrastructu
 We focus on **trunk based development** on **main**, with a re-usuable Github workflow hiding the [details of the deployment](https://github.com/Azure-Samples/terraform-github-actions): 
 
 ```yaml
-    name: CI/CD
+name: CI/CD 
 
-    on:
-      push:
-        branches:
-          - main
-      pull_request:
-        branches:
-          - main
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
-    jobs:
-        deploy-to-dev:
-            name: Deploy to dev
-            uses: ./.github/workflows/test.yml
-            with:
-                environment: dev
+jobs:
+    deploy-to-dev:
+        name: Deploy to dev
+        uses: ./.github/workflows/test.yml
+        with:
+            environment: dev
 
-        deploy-to-stg:
-            name: Deploy to stg
-            needs:
-                - deploy-to-dev
-            uses: ./.github/workflows/test.yml
-            with:
-                environment: stg
+    deploy-to-stg:
+        name: Deploy to stg
+        needs:
+            - deploy-to-dev
+        uses: ./.github/workflows/test.yml
+        with:
+            environment: stg
 ```
 
 Notice dev must succeed before staging (stg) can run. Ideally more tests form a safety net before we deploy to staging and production.
@@ -38,8 +38,6 @@ Notice dev must succeed before staging (stg) can run. Ideally more tests form a 
 test.yml:
 
 ```yaml
-name: Just testing
-
 on:
   workflow_call:
     inputs:
