@@ -23,8 +23,10 @@ low paid jobs, lifting quality of life/infrastructure and in the UK this is
 almost unthinkable. For many "superior" Brits, this is akin to "slavery".
 
 In Singapore if an illegal immigrant is caught, they are deported. In the UK,
-they are given accommodation and benefits, whilst they are processed in a
-system that is failing.
+they are given accommodation, whilst they are put a [costly
+backlog](https://migrationobservatory.ox.ac.uk/resources/briefings/the-uks-asylum-backlog/).
+These benefits are not a deterrent to [small boat
+arrivals](https://www.gov.uk/government/publications/migrants-detected-crossing-the-english-channel-in-small-boats/migrants-detected-crossing-the-english-channel-in-small-boats-last-7-days).
 
 In Singapore if a work permit holder loses their job, they have 30 days to find
 a new job or leave the country (deported).
