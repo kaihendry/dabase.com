@@ -23,7 +23,7 @@ The country will hold an election on the 4th of July with:
 After living in Singapore for more than a decade, one clear difference to me is
 how the UK views human capital. Singapore brings in foreign talent to fill in
 low paid jobs, lifting quality of life/infrastructure and in the UK this is
-almost unthinkable. For many "superior" Brits, this is akin to "slavery".
+almost unthinkable. For many "progressive" Brits, this is akin to "slavery".
 
 In Singapore if an illegal immigrant is caught, they are deported. In the UK,
 they are given accommodation, whilst they are put in a [costly
@@ -31,17 +31,18 @@ backlog](https://migrationobservatory.ox.ac.uk/resources/briefings/the-uks-asylu
 These benefits are not a deterrent to [small boat
 arrivals](https://www.gov.uk/government/publications/migrants-detected-crossing-the-english-channel-in-small-boats/migrants-detected-crossing-the-english-channel-in-small-boats-last-7-days).
 
-In Singapore if a work permit holder loses their job, they have 30 days to find
-a new job or leave the country (deported).
+To simplify Singapore system, there are [two tiers of foreign workers making up the workforce](https://www.mom.gov.sg/foreign-workforce-numbers):
+1. Work permit holders - your domestic helpers, construction workers, childcare assistants, cleaners ~1 million of a ~6 million population
+2. Employment pass holders - your professionals, managers, executives - about 200k 
 
-In Singapore if a work permit holder is caught with drugs, they are deported.
+In Singapore if a work permit holder loses their job, they have 30 days to find
+a new job or leave Singapore.
 
 In Singapore if a work permit holder gets sick, employers are responsible for
-their medical bills. If the employer doesn't support the worker, the worker is
-deported.
+their medical bills. If the employer doesn't support the worker, the worker needs to leave home.
 
 In Singapore if a work permit holder gets pregnant, they fail a health check
-and are deported.
+and they need to leave.
 
 UK readers will be shocked by the above, though this is how a successful
 Singapore has managed.
@@ -62,8 +63,8 @@ sustainable.
 <a href="https://en.wikipedia.org/wiki/Labour_Party_(UK)">The Labour party</a>
 is bound to be elected this year. The UK will get worse since [their
 plan](https://labour.org.uk/change/my-plan-for-change/) doesn't address costly
-fundamental issues. Labour will make things worse by fixing "tax avoidance" and
-increasing taxes.
+fundamental issues. Labour will make matters worse by fixing "tax avoidance" and
+increasing taxes, without checking expenditure.
 
 In four years, the best we can hope for is a straight talking far right leader
 to take power and actually address the issues and deport people. A future of
