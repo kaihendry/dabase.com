@@ -22,7 +22,7 @@ how the UK views human capital. Singapore brings in foreign talent to fill in
 low paid jobs, lifting quality of life/infrastructure and in the UK this is
 almost unthinkable. For many "superior" Brits, this is akin to "slavery".
 
-In Singapore is an illegal immigrant is caught, they are deported. In the UK,
+In Singapore if an illegal immigrant is caught, they are deported. In the UK,
 they are given accommodation and benefits, whilst they are processed in a
 system that is failing.
 
@@ -46,7 +46,7 @@ own people and economy, by not managing human capital.
 
 # Shackled
 
-The UK's fiscal policy is one of ruin. Productive people are [taxed upto
+The UK's fiscal policy is one of ruin. Productive employees are [taxed upto
 60%](https://youtu.be/P5AV-1266zc?si=6j6cWuF3vNhUBJvQ). Brits with less
 opportunities will think it's not worthwhile to work and claim benefits. Taxes
 are spent on the NHS, subsidies and benefits, without vision of how to make it
