@@ -3,6 +3,9 @@ title: The problem with UK Politics
 date: 2024-06-29T06:28:54+01:00
 description: UK Politics is dominated by people with a superiority complex
 ---
+
+<img src="https://s.natalian.org/2024-06-29/uk.png" alt="UK in relation to Europe" />
+
 British history looks like:
 
 * 16-17th century: British Empire, outward looking
