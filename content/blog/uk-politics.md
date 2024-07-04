@@ -44,8 +44,8 @@ their medical bills. If the employer doesn't support the worker, the worker need
 In Singapore if a work permit holder gets pregnant, they fail a health check
 and they need to leave.
 
-UK readers will be shocked by the above, though this is how a successful
-Singapore has managed.
+UK readers will be shocked by the above, though this is how Singapore is
+successful.
 
 Many condescending British people will cry human rights or "slavery!", but the
 UK is enslaving its own people and economy, by not managing human capital. They
