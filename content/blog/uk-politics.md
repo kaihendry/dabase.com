@@ -1,7 +1,7 @@
 ---
 title: The problem with UK Politics
 date: 2024-06-29T06:28:54+01:00
-description: UK Politics is dominated by people with a superiority complex
+description: UK Politics is dominated by condescending attitudes to human capital
 ---
 
 <img src="https://s.natalian.org/2024-06-29/uk.png" alt="UK in relation to Europe" />
@@ -47,8 +47,10 @@ and they need to leave.
 UK readers will be shocked by the above, though this is how a successful
 Singapore has managed.
 
-British people will cry human rights or "slavery!", but the UK is enslaving its
-own people and economy, by not managing human capital.
+Many condescending British people will cry human rights or "slavery!", but the
+UK is enslaving its own people and economy, by not managing human capital. They
+forget that well managed foreign workers can lift the quality of life for
+everyone, themselves included!
 
 # Shackled
 
