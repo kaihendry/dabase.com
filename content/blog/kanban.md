@@ -32,24 +32,7 @@ Pairing / mobbing to encourage collaboration.
 Don't forget to formulate a definition of done, perhaps in a team's **Ways of
 Working** document.
 
-    h2. Context
-
-    h2. Story
-
-    * AS A <role>
-    * I WANT  <observable change>
-    * SO THAT <valuable outcome>
-
-    h2. Scope
-
-    * IN
-    * OUT
-
-    h2.  Acceptance Criteria
-
-    * GIVEN
-    * WHEN
-    * THEN
+Recommended [story templates](/tips/web/2022/Best-bug-reporting-template/) to prime your Jira description field.
 
 # Summary
 

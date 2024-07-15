@@ -46,20 +46,22 @@ of screenshots or videos, which is makes it not fit for purpose.
 
 # Jira style issue template (User story)
 
-    h2. Context
+Since https://jira.atlassian.com/browse/JRACLOUD-72631 using SHIFT+CMD+V to paste:
 
-    h2. Story
+    ## Context
+
+    ## Story
 
     * AS A <role>
     * I WANT  <observable change>
     * SO THAT <valuable outcome>
 
-     h2. Scope
+    ## Scope
 
     * IN
     * OUT
 
-    h2.  Acceptance Criteria
+    ## Acceptance Criteria
 
     * GIVEN
     * WHEN
