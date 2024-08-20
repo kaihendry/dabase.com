@@ -10,7 +10,7 @@ AWS focuses on [underlying system resources](https://docs.aws.amazon.com/prescri
 
 Cloudwatch metrics:
 
-* Response time = Query latency (Milliseconds)
+* Query Response time = Query latency (Milliseconds) aka [SelectLatency](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMonitoring.Metrics.html) (note: Aurora only via AWS Performance Insights)
 * Errors?
 * QPS = Queries (Per second)
 * Threads running = Connection utilization (Connections)
