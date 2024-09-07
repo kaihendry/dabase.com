@@ -33,7 +33,7 @@ charged a whopping 40p for the convenience of using their app.
 
 # 40p SMS charges
 
-The Customer Experience Director at JustPark wrote to me to say:
+The Customer Experience Director at JustPark wrote to me on 2024-09-07:
 
 > Pricing I think this is due to your previous SMS choices. I just tried out
 > the app myself at the same location for 30 mins - it came up as 70p as
@@ -51,11 +51,11 @@ To change (the SMS choice) them you view your account in the app then:
 
 <img src="https://s.natalian.org/2024-09-07/sms-hidden-charge.png" alt="SMS hidden charge">
 
-I seriously have no recollection of opting in to SMS reminders. The fact that
-[Justpark don't show you are paying 40p for SMS
-reminders](https://s.natalian.org/2024-09-06/justpark.png) is a of a scam in my
-opinion. I don't even look at my SMS inbox! I use the phone's native
-notification features. 
+I have no recollection of opting in to SMS reminders. The fact that [Justpark
+don't show you are paying 40p for SMS
+reminders](https://s.natalian.org/2024-09-06/justpark.png) is a breaks trust
+my opinion. I don't even look at my SMS inbox! I use the phone's native
+notification features.
 
 I have completely lost trust in JustPark and will be avoiding them as much as
 possible in the future.
