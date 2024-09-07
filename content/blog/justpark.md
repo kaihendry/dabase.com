@@ -53,9 +53,9 @@ To change (the SMS choice) them you view your account in the app then:
 
 I have no recollection of opting in to SMS reminders. The fact that [Justpark
 don't show you are paying 40p for SMS
-reminders](https://s.natalian.org/2024-09-06/justpark.png) is a breaks trust
-my opinion. I don't even look at my SMS inbox! I use the phone's native
-notification features.
+reminders](https://s.natalian.org/2024-09-06/justpark.png) breaks trust. I
+don't even look at my SMS inbox!! I use the phone's native notification
+features.
 
 I have completely lost trust in JustPark and will be avoiding them as much as
 possible in the future.
