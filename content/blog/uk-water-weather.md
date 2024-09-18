@@ -4,6 +4,8 @@ date: 2024-09-16T20:09:45+01:00
 description: Depending where you are in the United Kingdom, the conditions can be very different.
 ---
 
+[Oops, I've blogged about these UK differences before!](/blog/2024/divided-uk/)
+
 <figure>
 <img src="https://s.natalian.org/2024-09-16/exposure.png" alt="exposure regions">
   <figcaption>
