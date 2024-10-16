@@ -6,10 +6,9 @@ description: Mapping AWS profiles to Chrome profiles
 
 When working on many different AWS accounts with different clients, my strategy is to keep them seperated by Google Chrome profiles.
 
-Unfortunately it's non-trivial to list the actual profile names in the Chrome UI. 
+Unfortunately it's non-trivial to list the actual profile names in the Chrome UI or perhaps I don't know how to do it!
 
     ❯ cd "$HOME/Library/Application Support/Google/Chrome"
-    Application Support/Google/Chrome
     ❯ ls -d1 Prof*
     'Profile 1'
     'Profile 2'
@@ -47,7 +46,7 @@ The configuration is gnarly but it works:
 
 When it's working, you should be able to switch between roles running `assume`, and unlike `aws sso login` it should open the correct browser profile.
 
-> TODO figure out how to make a map between browser profiles and AWS profiles.
+> [TODO figure out how to make a map between browser profiles and AWS profiles.](https://github.com/common-fate/granted/issues/782)
 
 # References
 
