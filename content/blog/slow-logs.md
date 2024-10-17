@@ -44,7 +44,7 @@ There could be pseudo-attributes embedded in queries, such as comments like `-- 
 
 However, it's unlikely that such "source mapping" embedded attributes exist, though it would be helpful if they did! You more than likely will spend some time grepping around the code base, trying to work out where the SQL query is constructed.
 
-SQL queries are often constructed by an Object–Relational Mapping (ORM) tool, which can result in poorly performing queries. Every ORM framework offers an "escape hatch" to run a SQL query directly; this is what you may to leverage to bypass the ORM and deploy your optimized performant SQL query.
+SQL queries are often constructed by an Object–Relational Mapping (ORM) tool, which can result in poorly performing queries. Every ORM framework offers an "escape hatch" to run a SQL query directly; this is what you might leverage to bypass the ORM and deliver your optimized performant SQL query.
 
 Though more often that not, the design of the UI or API is at fault. Asking for too much data, allowing for too many arguments or [not paginating results correctly](https://planetscale.com/blog/mysql-pagination), can result in slow queries that destabilise your platform. APIs are hard to fix, as they are often consumed by many clients & integrations, and changing the API is a breaking change.
 
