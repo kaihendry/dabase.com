@@ -4,7 +4,7 @@ date: 2024-10-17T17:26:20+01:00
 description: Speeding up slow queries in AWS MySQL instances
 ---
 
-Assuming the [slow_query_log parameter](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQL.LogFileSize.html) is enabled, ensure you [publish those logs to CloudWatch](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQLDB.PublishtoCloudWatchLogs.html) for analysis.
+Assuming the [slow_query_log parameter](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQL.LogFileSize.html) is enabled, ensure you [publish those logs to CloudWatch](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQLDB.PublishtoCloudWatchLogs.html) for analysis. Bonus: Enable [RDS Performance insights](https://aws.amazon.com/rds/performance-insights/) and ensure retention is set to something sensible like a month.
 
 <img src="https://s.natalian.org/2024-10-17/log-filter.png" alt="Log insights search">
 
@@ -28,7 +28,7 @@ Using `brew install percona-toolkit`:
 
 This will show you the top poorly performing and most impactful queries. Each query will be normalized and assigned an ID like 0x51C9D7BEAD71E9F03961FF1C7528883D, allowing you to identify and address it.
 
-If the query affects many tenants or databases, you can see that in the details of the query, [for example](https://forums.percona.com/t/pt-query-digest-databases-tenants/34369).
+If the query affects many tenants or databases, you can see that in the details of the query, [for example](https://forums.percona.com/t/pt-query-digest-databases-tenants/34369):
 
     # Databases    foo_d... (42/44%), bar_doc... (26/27%)... 8 more
 
@@ -46,7 +46,7 @@ However, it's unlikely that such "source mapping" embedded attributes exist, tho
 
 SQL queries are often constructed by an Object–Relational Mapping (ORM) tool, which can result in poorly performing queries. Every ORM framework offers an "escape hatch" to run a SQL query directly; this is what you might leverage to bypass the ORM and deliver your optimized performant SQL query.
 
-Though more often that not, the design of the UI or API is at fault. Asking for too much data, allowing for too many arguments or [not paginating results correctly](https://planetscale.com/blog/mysql-pagination), can result in slow queries that destabilise your platform. APIs are hard to fix, as they are often consumed by many clients & integrations, and changing the API is a breaking change.
+Though more often that not, the design of the UI or API is at fault. Asking for too much data, allowing for too many arguments or [not paginating results correctly](https://planetscale.com/blog/mysql-pagination), can result in slow queries that destabilise your platform. APIs are hard to fix, as they are often consumed by existing clients & integrations, and changing the API is a breaking change.
 
 
 
