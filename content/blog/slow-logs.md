@@ -4,7 +4,7 @@ date: 2024-10-17T17:26:20+01:00
 description: Speeding up slow queries in AWS MySQL instances
 ---
 
-Assuming the [slow_query_log parameter](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQL.LogFileSize.html) is enabled, ensure you [publish those logs to CloudWatch](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQLDB.PublishtoCloudWatchLogs.html) for analysis. Bonus: Enable [RDS Performance insights](https://aws.amazon.com/rds/performance-insights/) and ensure retention is set to something sensible like a month.
+Assuming the [slow_query_log parameter](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQL.LogFileSize.html) is enabled, ensure you [publish those logs to CloudWatch](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQLDB.PublishtoCloudWatchLogs.html) for analysis. Bonus: Enable [RDS Performance insights](https://aws.amazon.com/rds/performance-insights/) and ensure retention is set to something sensible like a month, which does come at a [additional cost](https://aws.amazon.com/rds/performance-insights/pricing/).
 
 <img src="https://s.natalian.org/2024-10-17/log-filter.png" alt="Log insights search">
 
@@ -14,17 +14,19 @@ Using Logs Insights, you can retrieve slow logs across multiple RDS instances. W
 
 You can download the individual slow logs with a tool like `aws rds download-db-log-file-portion`, but that typically only a day's worth, hence using log insights is more practical.
 
-You may want to further filter for specific databases of interest. For example, focusing on writers is most impactful, since vertically scaling writers remains challenging in 2024 with AWS Aurora for MySQL. Outages are often unavoidable, hence it makes sense to make sure writes are efficient.
+You might want look at indexes, but that's usually a red herring. There is a handy option called [log_queries_not_using_indexes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQL.LogFileSize.html) you might want to enable, nonetheless.
 
-To analyse them Export results, click "Download table (JSON)"
+You may want to further filter for specific databases of interest. For example, focusing on SQL Data Manipulation Language (DML) can be most impactful if you have a write heavy workload. Vertically scaling writers remains challenging in 2024 with AWS Aurora for MySQL. Outages caused by vertically scaling are often unavoidable, so it makes sense to ensure that writes are efficient.
+
+To analyse them Export results, click "Download table (JSON)" and convert the JSON back to a flat file:
 
     jq -r '.[] | "\(.["@message"])"' logs-insights-results.json > slow.logs
 
-Using `brew install percona-toolkit`:
+Not for the analysis with `brew install percona-toolkit`:
 
     pt-query-digest slow.logs
 
-<img src="https://i.imgur.com/jd5cOVH.png" alt="pt-query-digest output">
+<img src="https://s.natalian.org/2024-10-18/pt-query-digest.png" alt="pt-query-digest output">
 
 This will show you the top poorly performing and most impactful queries. Each query will be normalized and assigned an ID like 0x51C9D7BEAD71E9F03961FF1C7528883D, allowing you to identify and address it.
 
@@ -46,7 +48,13 @@ However, it's unlikely that such "source mapping" embedded attributes exist, tho
 
 SQL queries are often constructed by an Object–Relational Mapping (ORM) tool, which can result in poorly performing queries. Every ORM framework offers an "escape hatch" to run a SQL query directly; this is what you might leverage to bypass the ORM and deliver your optimized performant SQL query.
 
-Though more often that not, the design of the UI or API is at fault. Asking for too much data, allowing for too many arguments or [not paginating results correctly](https://planetscale.com/blog/mysql-pagination), can result in slow queries that destabilise your platform. APIs are hard to fix, as they are often consumed by existing clients & integrations, and changing the API is a breaking change.
+Though more often that not, the design of the UI or API is at fault, depending on their usage. Inadvertedly asking for too much data, passing too many arguments or [not paginating results correctly](https://planetscale.com/blog/mysql-pagination), can result in slow queries that destabilise your platform. APIs are hard to fix, as they are often consumed by existing clients & integrations, and changing the API could well be a breaking change.
 
+So what do we have left if you can't index, scale or even fix the code? Maybe you need to look at something before the request hits the database:
 
+* AWS Cloudfront
+* AWS Web Application Firewall (WAF)
+* RDS proxy https://proxysql.com/documentation/query-rewrite/
+* A Circuit breaker or a Rate limiter
 
+I'll cover that in a later blog post. 
