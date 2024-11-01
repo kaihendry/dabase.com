@@ -4,15 +4,17 @@ date: 2024-10-16T09:56:41+01:00
 description: Mapping AWS profiles to Chrome profiles
 ---
 
-When working on many different AWS accounts with different clients, my strategy is to keep them seperated by Google Chrome profiles.
+When working on different AWS accounts with different clients, my strategy is to keep them **separated with browser profiles**.
 
-Unfortunately it's non-trivial to list the actual profile names in the Chrome UI or perhaps I don't know how to do it!
+It's non-trivial to list profile names in the Chrome UI or perhaps I don't know how to do it!
 
     ❯ cd "$HOME/Library/Application Support/Google/Chrome"
     ❯ ls -d1 Prof*
     'Profile 1'
     'Profile 2'
     'Profile 13'
+
+<img src="https://s.natalian.org/2024-10-31/chrome-profile.png" alt="chrome://version showing profile">
 
 I test each profile to work out the correct client profile like so:
 

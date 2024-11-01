@@ -50,11 +50,12 @@ SQL queries are often constructed by an Object–Relational Mapping (ORM) tool, 
 
 Though more often that not, the design of the UI or API is at fault, depending on their usage. Inadvertedly asking for too much data, passing too many arguments or [not paginating results correctly](https://planetscale.com/blog/mysql-pagination), can result in slow queries that destabilise your platform. APIs are hard to fix, as they are often consumed by existing clients & integrations, and changing the API could well be a breaking change.
 
-So what do we have left if you can't index, scale or even fix the code? Maybe you need to look at something before the request hits the database:
+What do we have left if you can't index, scale or even fix the code? You need to look at something before the request hits the database:
 
 * AWS Cloudfront
 * AWS Web Application Firewall (WAF)
-* RDS proxy https://proxysql.com/documentation/query-rewrite/
+* RDS Proxy - provides connection multi-plexing (making sure it hits a "warm" instance)
+* [ProxySQL - non-RDS proxy](https://proxysql.com/documentation/query-rewrite/), but has features that allow query firewalling/re-writing.
 * A Circuit breaker or a Rate limiter
 
-I'll cover that in a later blog post. 
+I'll cover Circuit breakers & Rate limiters in a later blog post. 
