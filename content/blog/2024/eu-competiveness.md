@@ -8,3 +8,12 @@ https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-co
 
 * Lack of childcare
 * Lack of cheap labour
+
+
+Low pay:
+
+https://www.youtube.com/watch?v=vno7mlIBI0A
+
+Cannot survive on a single income:
+
+https://youtu.be/TnJeXTC3nkU?si=pZOb51wSWTrlTRv_
