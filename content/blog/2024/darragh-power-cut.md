@@ -16,5 +16,8 @@ Hours after getting [power restored](https://powercuts.nationalgrid.co.uk/PL304H
 * Candles have a really nice light, but really impractical
 * [Vodafone's network was down.](https://i.imgur.com/nYeoko9.png). My parents had a weak but effective 5G signal with EE.
 * Tesla was great for charging my phone, but as soon as left the car, the car went to sleep and stopped charging! Annoying. Update: I should have activated camp mode, but that would have drained the battery with the heating on.
+* We were terrified to open the fridge and freezer, so we didn't. Some food was lost, but I'm more concerned about the missed opportunity to cook the food before it went off.
 
-We need a product like the Tesla power wall.
+We need a product like the Tesla power wall, however it's max capacity is
+around 10 kWh, and a large household we can consume 40 kWh in a day... it would
+be non-trivial to restrain our power usage to 10 kWh a day.
