@@ -16,3 +16,5 @@ deployment:
     name: 'dabase'
     URL: 's3://dabase.com?region=ap-southeast-1'
     cloudFrontDistributionID: E6OVXGA61L6G6
+
+ignoreErrors: ["shortcode-twitter-getremote"]
