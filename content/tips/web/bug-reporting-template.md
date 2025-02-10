@@ -63,6 +63,19 @@ Since https://jira.atlassian.com/browse/JRACLOUD-72631 using SHIFT+CMD+V to past
 
     ## Acceptance Criteria
 
-    * GIVEN
-    * WHEN
-    * THEN
+    Scenario:
+
+    * GIVEN $context
+      AND ...
+    * WHEN $event
+      AND ...
+    * THEN $outcome
+      AND ...
+
+More illustrative: https://cucumber.io/docs/gherkin/reference/
+
+# Make sure all cards have a clear acceptance criteria!
+
+Search JQL example:
+
+    project = EXAMPLE and "Project Team[Dropdown]"="My Team" AND "Acceptance Criteria" IS EMPTY and STATUS != CLOSED
