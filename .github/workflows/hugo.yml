@@ -3,7 +3,7 @@ name: Deploy Hugo site to S3/Cloudfront
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   id-token: write
@@ -30,7 +30,7 @@ jobs:
 
       - name: Sync to S3
         run: |
-          aws s3 sync public/ s3://dabase.com --region ap-southeast-1 --delete
+          aws s3 sync public/ s3://dabase.com --region ap-southeast-1 --delete --only-show-errors
 
       - name: Invalidate CloudFront cache
         run: |
