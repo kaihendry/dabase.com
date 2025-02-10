@@ -25,7 +25,7 @@ I was downvoted, and now my post sits at 4 points.
 
 On twitter the conversation went in my favour:
 
-{{< tweet user="ibuildthecloud" id="1638366204514684928" >}}
+{{< x user="ibuildthecloud" id="1638366204514684928" >}}
 
 And the conversation raised points:
 

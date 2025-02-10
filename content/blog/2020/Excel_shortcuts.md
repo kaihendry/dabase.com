@@ -69,7 +69,7 @@ rather awesome.
 
 # History.. or lack there of
 
-{{< tweet user="kaihendry" id="1280425274669064192" >}}
+{{< x user="kaihendry" id="1280425274669064192" >}}
 
 Like all Microsoft products I've seen, the [history of the
 document](https://s.natalian.org/2020-06-04/diff-excel.mp4) is awful to work

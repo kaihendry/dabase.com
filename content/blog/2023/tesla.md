@@ -47,4 +47,4 @@ install an outdoor AP like the [wAP
 ac](https://mikrotik.com/product/wap_ac_be), else you can sometimes extend the
 range temporarily using an Android device:
 
-{{< tweet user="kaihendry" id="1696646323968061755" >}}
+{{< x user="kaihendry" id="1696646323968061755" >}}

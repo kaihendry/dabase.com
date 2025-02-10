@@ -14,6 +14,6 @@ When forming a working group between companies, the basic tools needed in order 
 
 Ok, but what does **all four**?
 
-{{< tweet user="kaihendry" id="1237939442192539648" >}}
+{{< x user="kaihendry" id="1237939442192539648" >}}
 
 **SOLUTION** [Basecamp](https://basecamp.com/how-it-works) appears like it ticks most boxes. How do to get the data out or how to make use of its non-standard markup is another question entirely.

@@ -4,7 +4,7 @@ date: 2022-08-29T20:43:07+08:00
 description: When do you need a Platform team
 ---
 
-{{< tweet user="sidpalas" id="1551936840453820417" >}}
+{{< x user="sidpalas" id="1551936840453820417" >}}
 
 1. Treat the Internal Developer Platform as a product!
 1. Enable self-service!

@@ -73,7 +73,7 @@ applications. In startups I've worked at, the upper threshold was more like
 Although "serverless" won the contest above, in my experience, employing the
 "devops" teams running Kubernetes can be huge.
 
-{{< tweet user="nathankpeck" id="1466617249419051010" >}}
+{{< x user="nathankpeck" id="1466617249419051010" >}}
 
 The k8s maintenance cost per month of ~4k is unrealistic.
 

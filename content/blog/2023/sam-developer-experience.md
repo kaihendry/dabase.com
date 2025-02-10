@@ -5,7 +5,7 @@ description: AWS SAM DX failures
 toc: true
 ---
 
-{{< tweet user="ibuildthecloud" id="1630324949452996608" >}}
+{{< x user="ibuildthecloud" id="1630324949452996608" >}}
 
 ## Unexpected error 🤮
 

@@ -29,7 +29,7 @@ For fast collaboration consider [huddling with Slack](/blog/2022/Slack-survival-
 1. Ditch frequent meetings
 1. Use common sense
 
-{{< tweet user="alex_avoigt" id="1596182210159456256" >}}
+{{< x user="alex_avoigt" id="1596182210159456256" >}}
 
 {{< youtube i4GJnpOZmiM >}}
 

@@ -18,7 +18,7 @@ appear to work with the Playstation Network:
 Despite running my own Bedrock server `docker run -d -it --name bds-survival -e EULA=TRUE -e GAMEMODE=survival -p 19132:19132/udp itzg/minecraft-bedrock-server`, each Minecraft "bedrock" client now **needs to
 sign into a Microsoft account** in order to play.
 
-{{< tweet user="kaihendry" id="1438797861836132354" >}}
+{{< x user="kaihendry" id="1438797861836132354" >}}
 
 You can't share a Microsoft account, you'll get a "Cannot join world. The
 account you are signed in to is currently playing in this world on a different

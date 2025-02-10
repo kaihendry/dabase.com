@@ -36,11 +36,11 @@ is not zero, it is close enough to zero to be negligible. However it's opaque,
 generic and 64 bit is more than enough. For better 128 bit identfiers look at
 https://github.com/ulid/spec
 
-{{< tweet user="kaihendry" id="1450302244134420482" >}}
+{{< x user="kaihendry" id="1450302244134420482" >}}
 
-{{< tweet user="tjholowaychuk" id="760977498507124736" >}}
+{{< x user="tjholowaychuk" id="760977498507124736" >}}
 
-{{< tweet user="_beyondcode" id="1450850328610365446" >}}
+{{< x user="_beyondcode" id="1450850328610365446" >}}
 
 <abbr title="Universally Unique Lexicographically Sortable
 Identifier">ULID</abbr> aside, I do prefer base64 encoded 64 bits numbers, aka

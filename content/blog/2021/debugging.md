@@ -4,7 +4,7 @@ date: 2021-04-11T10:24:37+08:00
 description: Why programmers reach for printf more frequently than debuggers
 ---
 
-{{< tweet user="amasad" id="1380559800598077440" >}}
+{{< x user="amasad" id="1380559800598077440" >}}
 
 # printf
 

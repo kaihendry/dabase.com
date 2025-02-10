@@ -6,7 +6,7 @@ description: Bug bounty scams
 
 <img src="https://s.natalian.org/2021-10-05/fail.png" alt="failed at pollution">
 
-{{< tweet user="kaihendry" id="1445240044491476996" >}}
+{{< x user="kaihendry" id="1445240044491476996" >}}
 
 Dubious sites like "securityheaders.com" will give you a big fat F without a whole bunch of headers.
 

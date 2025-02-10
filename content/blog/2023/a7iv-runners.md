@@ -24,7 +24,7 @@ Shift+Command+P in Finder can help preview the image.
 
 ## [Photo mechanic](https://home.camerabits.com/)
 
-{{< tweet user="stshank" id="1643250618252038146" >}}
+{{< x user="stshank" id="1643250618252038146" >}}
 
 This software seems to be better aware of how photographers take bursts in the
 sense you can sort groups chronologically (date order), but have the groups

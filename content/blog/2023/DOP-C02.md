@@ -59,7 +59,7 @@ This is like my [SAP-C01 experience](/blog/2020/failed-the-SAP-C01/). 💩
 
 Now I want to take the exam ASAP, but I am struggling to book with the AWSRETAKE code. 
 
-{{< tweet user="kaihendry" id="1678368014314397696" >}}
+{{< x user="kaihendry" id="1678368014314397696" >}}
 
 Some areas which I need to improve on:
 

@@ -4,7 +4,7 @@ date: 2024-09-05T13:44:50+01:00
 description: Using an app to pay for parking is almost double the price of cash
 ---
 
-{{< twitter user="kaihendry" id="1828794055645647140" >}}
+{{< x user="kaihendry" id="1828794055645647140" >}}
 
 Bodmin's Dennison Road Short stay car park charges between 09:00 - 16:00 Mon - Sun
 * Up to 30 mins - 60p

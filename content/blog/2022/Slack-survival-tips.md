@@ -19,7 +19,7 @@ If you don't tag the team member you cannot expect that team member to read it.
 
 When a colleague first mentions you, it might not appear in Threads!
 
-{{< tweet user="SlackHQ" id="1566604386402553857" >}}
+{{< x user="SlackHQ" id="1566604386402553857" >}}
 
 ## Direct messages
 

@@ -18,7 +18,7 @@ Then we went multistage:
     ENTRYPOINT ./app
 
 
-{{< tweet user="MattJamesBoyle" id="1689536391087034368" >}}
+{{< x user="MattJamesBoyle" id="1689536391087034368" >}}
 
 Now [distroless](https://github.com/GoogleContainerTools/distroless) is said to be 50% smaller than Alpine, since it doesn't have a shell, [though distroless has](https://blog.baeke.info/2021/03/28/distroless-or-scratch-for-go-apps/):
 
@@ -30,8 +30,5 @@ Now [distroless](https://github.com/GoogleContainerTools/distroless) is said to 
 https://github.com/GoogleContainerTools/distroless/blob/main/examples/go/Dockerfile
 
 https://gist.github.com/MatthewJamesBoyle/598538dd1c8d38f9dc70575b1be5958a
-
-{{< gist MatthewJamesBoyle 598538dd1c8d38f9dc70575b1be5958a >}}
-
 
 Then often you need [curl to run health checks](https://github.com/thoughtworks/maeve-csms/blob/main/manager/Dockerfile).
