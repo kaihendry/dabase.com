@@ -67,3 +67,11 @@ release:
   script:
     - goreleaser release
 ```
+
+# ERROR: Job failed: failed to pull image
+
+> Error response from daemon: pull access denied for registry.gitlab.com/...repository does not exist or may require 'docker login': denied: requested access to the resource is denied (manager.go:251:0s)
+
+<img src="https://s.natalian.org/2025-02-25/gitlab-job-token.png" alt="CICD Job tokens">
+
+To retrieve artifacts one repo to another you need to explicitly allow the repo to pull artifacts from the `/settings/ci_cd#js-token-access`.
