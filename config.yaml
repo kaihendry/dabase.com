@@ -7,6 +7,22 @@ permalinks:
   tips: /:sections/:year/:title/
 
 markup:
+  defaultMarkdownHandler: goldmark
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      table: true
+    renderHooks:
+      link:
+        enableDefault: true
+
+outputs:
+  home:
+    - html
+    - rss
+    - backlinks
+
+module:
+  imports:
+    - path: github.com/jmooring/hugo-module-backlinks

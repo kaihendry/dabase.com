@@ -13,6 +13,8 @@
 
 {{.Content}}
 
+{{- partial "backlinks.html" . -}}
+
 <nav>
 {{ if .PrevInSection }}
 <a href="{{ .PrevInSection.RelPermalink }}" title="{{ .PrevInSection.Title}}">&larr;Previous</a>
