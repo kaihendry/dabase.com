@@ -1,11 +1,11 @@
 ---
 title: "Gitlab Enterprise"
 date: 2025-02-19T11:23:55Z
+description: Tested on GitLab Enterprise Edition 17.9.0-pre
+
 ---
 
-
-Tested on GitLab Enterprise Edition 17.9.0-pre
-
+When you use Gitlab Enterprise, your access control should be around CI_JOB_TOKEN, not Personal Access Tokens!
 
 # Docker
 
