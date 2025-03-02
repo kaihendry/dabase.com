@@ -6,6 +6,8 @@ permalinks:
   blog: /blog/:year/:filename/
   tips: /:sections/:year/:title/
 
+defaultOutputFormat: html
+
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
