@@ -1,5 +1,5 @@
 ---
-title: Tesla Tyres Repair is too costly
+title: Tesla Tyres Repair = Replacement!?
 date: 2025-03-07T14:58:50Z
 description: The expense of Model Y tyres in the UK
 ---
@@ -54,3 +54,5 @@ Furthermore he recommended an alignment... and extra 50GBP. 💸
 # Conclusion
 
 Tesla tyres are incredibly expensive. We need better options & repairability.
+
+{{< youtube Sd9nP9TSNYg >}}
