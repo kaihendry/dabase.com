@@ -4,7 +4,7 @@ date: 2025-03-07T14:58:50Z
 description: The expense of Model Y tyres in the UK
 ---
 
-tl;dr Front left tyre punctured driving to London and to address the issue I ended up replacing both front tyres prematurely. The cost was £588GBP and a lot of time & confusion.
+tl;dr Front left tyre punctured driving to London and to address the issue I ended up replacing both front tyres prematurely. The cost was £558GBP and a lot of time & confusion.
 
 # The puncture
 
@@ -12,9 +12,7 @@ At first I noticed an alert of 38PSI on the front left tyre [via the App](https:
 
 <img src="https://s.natalian.org/2025-03-07/nail-t1.jpeg" alt="Nail in Ventus S1 Evo3 EV" />
 
-I later spotted the nail in the tyre.
-
-https://teslaowners.org.uk/guides/can-my-tyre-be-repaired
+I later spotted the nail in the tyre. 😱
 
 # The fix
 
