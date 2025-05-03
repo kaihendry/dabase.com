@@ -3,7 +3,7 @@ baseURL: https://dabase.com/
 disablePathToLower: true
 enableGitInfo: true
 permalinks:
-  blog: /blog/:year/:filename/
+  blog: /blog/:year/:contentbasename/
   tips: /:sections/:year/:title/
 
 markup:
