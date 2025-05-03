@@ -38,8 +38,6 @@ https://github.com/ulid/spec
 
 {{< x user="kaihendry" id="1450302244134420482" >}}
 
-{{< x user="tjholowaychuk" id="760977498507124736" >}}
-
 {{< x user="_beyondcode" id="1450850328610365446" >}}
 
 <abbr title="Universally Unique Lexicographically Sortable

@@ -28,3 +28,9 @@ outputs:
 module:
   imports:
     - path: github.com/jmooring/hugo-module-backlinks
+
+services:
+  googleAnalytics:
+    id: G-ZSL2H4YN59
+
+ignoreLogs: ['shortcode-x-getremote']
