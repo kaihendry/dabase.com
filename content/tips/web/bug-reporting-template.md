@@ -4,6 +4,16 @@ date: 2022-05-09
 description: Quest to find the best bug reporting template
 ---
 
+# Gemini
+
+https://github.com/google-gemini/gemini-cli/blob/main/.github/ISSUE_TEMPLATE/bug_report.yml
+
+[settings.json](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/configuration.md) has a bugCommand to facilitate feedback.
+
+"bugCommand": {
+  "urlTemplate": "https://bug.example.com/new?title={title}&info={info}"
+}
+
 # Check existing issues
 
 I feel collecting duplicates is actually fine, since it indicates to you issues
