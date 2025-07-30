@@ -22,9 +22,9 @@ The Electroverse app was handy, but it didn't say what the charge was in progres
 
 Tesla should be commended for allowing non-Tesla cars to charge on their infrastructure:
 
-<div style="display: flex; gap: 10px;">
-<img src="https://s.natalian.org/2025-07-30/other-ev.jpeg" alt="Citroen charging at Tesla Supercharger" style="flex: 1;">
-<img src="https://s.natalian.org/2025-07-30/progress.png" alt="Tesla progress" style="flex: 1;">
+<div style="display: flex; gap: 10px; align-items: flex-start;">
+<img src="https://s.natalian.org/2025-07-30/other-ev.jpeg" alt="Citroen charging at Tesla Supercharger" style="width: 50%; height: auto;">
+<img src="https://s.natalian.org/2025-07-30/progress.png" alt="Tesla progress" style="width: 50%; height: auto;">
 </div>
 
 It's cheap. It's reliable and unlike Electroverse app, it allows you see your charge progress!!
