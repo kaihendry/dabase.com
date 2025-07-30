@@ -1,6 +1,7 @@
 ---
 title: 2025 Citroën E-C3
 date: 2025-07-30T09:38:58+01:00
+description: Italian Sixt electric vehicle car rental
 ---
 
 <img src="https://s.natalian.org/2025-07-30/ec3.jpeg" alt="Citroën E-C3 charging in Genova">
@@ -16,3 +17,15 @@ A Subcompact electric car I drove for a week in Italy, which when compared with 
 The Electroverse app was handy, but it didn't say what the charge was in progress!
 
 <img src="https://s.natalian.org/2025-07-30/charging.png" alt="Idle charges fear">
+
+# Tesla saves the day
+
+Tesla should be commended for allowing non-Tesla cars to charge on their infrastructure:
+
+<div style="display: flex; gap: 10px;">
+<img src="https://s.natalian.org/2025-07-30/other-ev.jpeg" alt="Citroen charging at Tesla Supercharger" style="flex: 1;">
+<img src="https://s.natalian.org/2025-07-30/progress.png" alt="Tesla progress" style="flex: 1;">
+</div>
+
+It's cheap. It's reliable and unlike Electroverse app, it allows you see your charge progress!!
+
