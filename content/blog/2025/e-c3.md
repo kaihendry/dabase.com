@@ -29,3 +29,8 @@ Tesla should be commended for allowing non-Tesla cars to charge on their infrast
 
 It's cheap. It's reliable and unlike Electroverse app, it allows you see your charge progress!!
 
+# Prepaid fuel
+
+Since returning the car at 100% of energy is near impossible at the [Milan Bergamo](https://maps.app.goo.gl/FnyCe34FCGoyamnv6), we were encouraged to pay for the 20EUR prepaid fuel:
+
+<img src="https://s.natalian.org/2025-07-31/fuel.png" alt="100% battery cost">
