@@ -20,7 +20,7 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      - uses: aws-actions/configure-aws-credentials@v4
+      - uses: aws-actions/configure-aws-credentials@v5
         with:
           role-to-assume: arn:aws:iam::407461997746:role/github-actions-Role-56IHHM969DKJ
           aws-region: ap-southeast-1
