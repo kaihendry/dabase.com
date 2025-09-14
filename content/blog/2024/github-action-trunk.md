@@ -21,10 +21,6 @@ jobs:
     deploy-to-dev:
         name: Deploy to dev
         uses: ./.github/workflows/deploy.yml
-        permissions:
-            id-token: write
-            contents: read
-            pull-requests: write
         with:
             environment: dev
 
@@ -32,10 +28,6 @@ jobs:
         uses: ./.github/workflows/test.yml
         needs:
             - deploy-to-dev
-        permissions:
-            id-token: write
-            contents: read
-            pull-requests: write
         with:
             environment: dev
 
@@ -44,10 +36,6 @@ jobs:
         needs:
             - test-dev
         uses: ./.github/workflows/deploy.yml
-        permissions:
-            id-token: write
-            contents: read
-            pull-requests: write
         with:
             environment: stg
 
@@ -55,10 +43,6 @@ jobs:
         uses: ./.github/workflows/test.yml
         needs:
             - deploy-to-stg
-        permissions:
-            id-token: write
-            contents: read
-            pull-requests: write
         with:
             environment: stg
 ```
