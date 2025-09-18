@@ -4,7 +4,7 @@ date: 2025-09-18T09:30:50+01:00
 description: Stiff? Can't bend down? Yoga is what you need
 ---
 
-Besides running & the [couch to 5k programme](https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/), Yoga which I learned by attending Ashly Lou's aka "The Bitter Stickgirl" classes at Yoga Inc has been a positive impact in my wellbeing.
+Besides running & the [couch to 5k programme](https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/): Yoga which I learned by attending Ashly Lou's aka "The Bitter Stickgirl" classes at Yoga Inc has been a HUGE +VE impact in my wellbeing.
 
 Now I feel comfortable in my skin. I have no problem bending down and I have the dexterity to play effectively with my kids!
 
@@ -24,6 +24,6 @@ https://www.youtube.com/c/yogawithtim is also great.
 
 # Minutes, every day
 
-Yoga classes can be quite intemediating. Like everything in life, you need a system. What works for me is going a 10/15 minute morning Youtube session, pretty much every day.
+Yoga classes can be quite intemediating. Like everything in life, you need a system. What works for me is doing a 10/15 minute morning Youtube session, pretty much every day.
 
 At a pinch I might do a couple rounds of [Sun salutions](https://en.wikipedia.org/wiki/Sun_Salutation).
