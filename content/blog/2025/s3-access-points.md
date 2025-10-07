@@ -31,16 +31,72 @@ The defence-in-depth pattern we follow looks like this:
 In theory this cleanly separates admin and application traffic. In practice,
 it only works when each access point policy enforces the correct denies.
 
-## What a Compliant Policy Looks Like
+## Choosing a Guardrail Strategy
+
+There is a spectrum:
+
+- **Role-level only.** Keep the access point policy minimal—just block everyone except the
+  intended role—and rely on IAM identity policies for day-to-day control.
+- **Defence in depth.** Layer explicit allows and denies so the access point protects you even
+  if the role’s IAM permissions drift over time.
+
+Both patterns start from the same idea: only the `SensitiveCommercialSupp`-style role should
+reach this access point. The question is whether you trust the IAM policies attached to that
+role to stay perfectly aligned.
+
+### “Role-level only” policy
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Lock access point to one role",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:REGION:ACCOUNT:accesspoint/ACCESS_POINT",
+        "arn:aws:s3:REGION:ACCOUNT:accesspoint/ACCESS_POINT/object/*"
+      ],
+      "Condition": {
+        "StringNotEquals": {
+          "aws:PrincipalArn": "arn:aws:iam::ACCOUNT:role/ROLE_NAME"
+        }
+      }
+    }
+  ]
+}
+```
+
+**Merits**
+
+- Tiny, easy to reason about, hard to misconfigure.
+- Stops every other principal—no cross-account back doors, no anonymous access.
+- Lets IAM identity policies continue doing the heavy lifting; if the role doesn’t have
+  `s3:GetObject`, the access point still blocks the call.
+
+**Drawbacks**
+
+- The access point itself is “hands off”: once the IAM role gains `s3:PutObject`, `s3:Delete*`,
+  or a wider resource ARN, the access point goes along with it.
+- Every read/write/list guardrail lives in identity policies, which are more likely to change
+  quickly (emergency fixes, onboarding contractors, attaching AWS managed policies).
+
+If your trust boundary is “that single IAM role” and you have strong controls on how its
+policies evolve, this can be enough.
+
+### Defence in depth
+
+Want the access point to stay read-only and prefix-scoped even if IAM changes later? Add a
+resource-based allow for the happy path plus three targeted denies for the role.
 
 AWS’ own examples show that the minimal pattern relies on *allow* statements that scope
 both the principal and the resource. Example&nbsp;1 in
 [*Configuring IAM policies for using access points*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-policies.html)
 grants a single IAM user access to a prefixed path through an access point, and example&nbsp;3
 adds a targeted `s3:ListBucket` allow for the same user. We start from that pattern, then
-layer a set of explicit denies as a defence-in-depth backstop. That way, even if the IAM role
-later gains broader S3 permissions, the access point still enforces read-only, prefix-scoped
-behaviour.
+layer a set of explicit denies as the backstop.
 
 ```json
 {
@@ -119,9 +175,9 @@ other principal out, deny write-style APIs, and prevent the intended role from l
 reading outside its prefix. Without them the policy still works, but we lose the extra
 assurance that misconfigured IAM permissions can’t punch through the access point.
 
-## What Can Go Wrong!
+## Defence in depth is not simple
 
-You might find policies that skipped the prefix scoping in their allow
+You might find defence-in-depth policies that skipped the prefix scoping in their allow
 statements. The `Resource` looked like `.../object/*`, so the role could read or write
 anything reachable through the access point. Others granted `s3:*` to `"Principal": "*"`,
 which effectively turned the access point into an open door. The deny backstop would have
