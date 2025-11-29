@@ -4,6 +4,10 @@ date: 2022-05-09
 description: Quest to find the best bug reporting template
 ---
 
+# AI Beads
+
+https://github.com/steveyegge/beads/blob/main/examples/claude-code-skill/references/ISSUE_CREATION.md?plain=1
+
 # Gemini
 
 https://github.com/google-gemini/gemini-cli/blob/main/.github/ISSUE_TEMPLATE/bug_report.yml
