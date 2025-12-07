@@ -17,19 +17,33 @@
 </p>
 
 <style>
+.episode-list {
+  list-style: none;
+  padding: 0;
+}
+
 .episode-list li {
   display: flex;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.episode-list img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.episode-list .episode-info {
+  flex: 1;
 }
 
 .episode-list time {
-  flex: 2;
-  text-align: right;
-  margin-right: 3rem;
-}
-
-.episode-list a {
-  flex: 5;
+  font-size: 0.85rem;
+  color: #666;
 }
 </style>
 
@@ -38,10 +52,15 @@
 <ul class="episode-list">
 {{ range .Pages.ByDate.Reverse }}
 <li>
-  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-  <a href="{{ .RelPermalink }}">
-    {{ with .Params.podcast }}Episode {{ .episode }}: {{ end }}{{ .Title }}
-  </a>
+  {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
+  <div class="episode-info">
+    <a href="{{ .RelPermalink }}">
+      {{ with .Params.podcast }}Episode {{ .episode }}: {{ end }}{{ .Title }}
+    </a>
+    <br>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    {{ with .Params.podcast }} &bull; {{ div .duration 60 }} min{{ end }}
+  </div>
 </li>
 {{ end }}
 </ul>

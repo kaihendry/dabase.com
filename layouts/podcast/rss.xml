@@ -67,6 +67,7 @@
         <itunes:duration>{{ .duration }}</itunes:duration>
         <itunes:explicit>no</itunes:explicit>
         <itunes:summary>{{ $page.Description }}</itunes:summary>
+        {{ with $page.Params.image }}<itunes:image href="{{ . }}" />{{ end }}
 
         {{/* Content with transcript */}}
         {{ if .transcript }}
