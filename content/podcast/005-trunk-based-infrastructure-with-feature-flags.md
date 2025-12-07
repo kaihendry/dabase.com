@@ -12,11 +12,11 @@ description: "https://github.com/vincenthsh & https://github.com/kaihendry/ - tw
 draft: false
 
 podcast:
-  episode: 4
+  episode: 5
   season: 1
   episodeType: "full"
   duration: 4104
-  audioUrl: "https://dabase.com/podcast/audio/004-trunk-based-infrastructure-with-feature-flags.mp3"
+  audioUrl: "https://dabase.com/podcast/audio/005-trunk-based-infrastructure-with-feature-flags.mp3"
   audioSize: 98487404
   youtubeId: "z6V8fgm7xYY"
   youtubeUrl: "https://www.youtube.com/watch?v=z6V8fgm7xYY"

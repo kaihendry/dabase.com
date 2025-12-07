@@ -2,71 +2,16 @@
   {
     "episode": 1,
     "season": 1,
-    "title": "AI Infrastructure addicts",
-    "description": "https://github.com/addyosmani/gemini-cli-tips",
-    "youtubeId": "I4pmTz8EKag",
-    "youtubeUrl": "https://www.youtube.com/watch?v=I4pmTz8EKag",
-    "uploadDate": "20251202",
-    "duration": 2318,
-    "slug": "001-ai-infrastructure-addicts"
+    "title": "Terralith: the Future of Terraform Automation and Collaboration? (Re-Upload)",
+    "description": "Vincent De Smet is working on https://terraconstructs.dev/\n\nOpentaco trailer from https://www.linkedin.com/posts/izalutski_today-i-am-excited-to-announce-diggers-biggest-activity-7376635476264374272-O2Cp/ (without the copyrighted aggressive music)\n\nhttps://github.com/diggerhq/digger/blob/develop/taco/agents_context/opentaco-case.md#how-will-this-thing-make-money",
+    "youtubeId": "UXIJe2moZ-I",
+    "youtubeUrl": "https://www.youtube.com/watch?v=UXIJe2moZ-I",
+    "uploadDate": "20251004",
+    "duration": 2853,
+    "slug": "001-terralith-the-future-of-terraform-automation-and-collaboration-re-upload"
   },
   {
     "episode": 2,
-    "season": 1,
-    "title": "AI acceleration with Anthropic and Beads",
-    "description": "Chatting about @t3dotgg turning onto @anthropic-ai \n\nPhone a farmer https://www.youtube.com/live/nW7-igJA798\n\nhttps://www.youtube.com/live/cMSprbJ95jg for Steve Yegge about an hour in.\n\nBeads skill that Vincent didn't realise was in the context:\nhttps://github.com/kaihendry/dabase.com/blob/main/content/tips/web/bug-reporting-template.md",
-    "youtubeId": "lst5spLZo-U",
-    "youtubeUrl": "https://www.youtube.com/watch?v=lst5spLZo-U",
-    "uploadDate": "20251129",
-    "duration": 3739,
-    "slug": "002-ai-acceleration-with-anthropic-and-beads"
-  },
-  {
-    "episode": 3,
-    "season": 1,
-    "title": "AI for Infrastructure Engineers",
-    "description": "https://youtu.be/cMSprbJ95jg?t=3675\n\nIf you're using an IDE you're a bad engineer!",
-    "youtubeId": "54Z4HlO_sW8",
-    "youtubeUrl": "https://www.youtube.com/watch?v=54Z4HlO_sW8",
-    "uploadDate": "20251121",
-    "duration": 3715,
-    "slug": "003-ai-for-infrastructure-engineers"
-  },
-  {
-    "episode": 4,
-    "season": 1,
-    "title": "Trunk based infrastructure with feature flags",
-    "description": "https://github.com/vincenthsh & https://github.com/kaihendry/ - two infrastructure engineers talking about Instructure sprawl\n\n00:00 AWS Account organisation https://github.com/kaihendry/actions/blob/main/accounts.json\n20:00 System Initiative \n29:00 Cloud abstractions are needed\n30:40 Danger of clickops\n37:31 Labels vs Tags\n40:10 Integration points",
-    "youtubeId": "z6V8fgm7xYY",
-    "youtubeUrl": "https://www.youtube.com/watch?v=z6V8fgm7xYY",
-    "uploadDate": "20251112",
-    "duration": 4104,
-    "slug": "004-trunk-based-infrastructure-with-feature-flags"
-  },
-  {
-    "episode": 5,
-    "season": 1,
-    "title": "Who is Vincent DE Smet & what is Grid?",
-    "description": "00:00 Why move to Vietnam?\n33:34 Spec Kit and https://github.com/steveyegge/beads? \n44:49 Demo of the Grid",
-    "youtubeId": "OacVAuGFSHg",
-    "youtubeUrl": "https://www.youtube.com/watch?v=OacVAuGFSHg",
-    "uploadDate": "20251029",
-    "duration": 3949,
-    "slug": "005-who-is-vincent-de-smet-what-is-grid"
-  },
-  {
-    "episode": 6,
-    "season": 1,
-    "title": "Infrastructure as Code & Platform teams",
-    "description": "https://aws.amazon.com/cloudcontrolapi/\n\nhttps://s.natalian.org/2025-10-19/CommunityDay_Malaysia_2025.pptx",
-    "youtubeId": "gkoxHncYCTk",
-    "youtubeUrl": "https://www.youtube.com/watch?v=gkoxHncYCTk",
-    "uploadDate": "20251019",
-    "duration": 5559,
-    "slug": "006-infrastructure-as-code-platform-teams"
-  },
-  {
-    "episode": 7,
     "season": 1,
     "title": "What is Spec-Driven Development?",
     "description": "https://github.com/github/spec-kit\n\nSpec-kitting an existing project: https://youtu.be/SGHIQTsPzuY?si=19uhEGXQv-leUh9J\n\nhttps://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html\n\nWDYT? Comments below!",
@@ -74,17 +19,72 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=q2KOAAtT-Qw",
     "uploadDate": "20251014",
     "duration": 2398,
-    "slug": "007-what-is-spec-driven-development"
+    "slug": "002-what-is-spec-driven-development"
+  },
+  {
+    "episode": 3,
+    "season": 1,
+    "title": "Infrastructure as Code & Platform teams",
+    "description": "https://aws.amazon.com/cloudcontrolapi/\n\nhttps://s.natalian.org/2025-10-19/CommunityDay_Malaysia_2025.pptx",
+    "youtubeId": "gkoxHncYCTk",
+    "youtubeUrl": "https://www.youtube.com/watch?v=gkoxHncYCTk",
+    "uploadDate": "20251019",
+    "duration": 5559,
+    "slug": "003-infrastructure-as-code-platform-teams"
+  },
+  {
+    "episode": 4,
+    "season": 1,
+    "title": "Who is Vincent DE Smet & what is Grid?",
+    "description": "00:00 Why move to Vietnam?\n33:34 Spec Kit and https://github.com/steveyegge/beads? \n44:49 Demo of the Grid",
+    "youtubeId": "OacVAuGFSHg",
+    "youtubeUrl": "https://www.youtube.com/watch?v=OacVAuGFSHg",
+    "uploadDate": "20251029",
+    "duration": 3949,
+    "slug": "004-who-is-vincent-de-smet-what-is-grid"
+  },
+  {
+    "episode": 5,
+    "season": 1,
+    "title": "Trunk based infrastructure with feature flags",
+    "description": "https://github.com/vincenthsh & https://github.com/kaihendry/ - two infrastructure engineers talking about Instructure sprawl\n\n00:00 AWS Account organisation https://github.com/kaihendry/actions/blob/main/accounts.json\n20:00 System Initiative \n29:00 Cloud abstractions are needed\n30:40 Danger of clickops\n37:31 Labels vs Tags\n40:10 Integration points",
+    "youtubeId": "z6V8fgm7xYY",
+    "youtubeUrl": "https://www.youtube.com/watch?v=z6V8fgm7xYY",
+    "uploadDate": "20251112",
+    "duration": 4104,
+    "slug": "005-trunk-based-infrastructure-with-feature-flags"
+  },
+  {
+    "episode": 6,
+    "season": 1,
+    "title": "AI for Infrastructure Engineers",
+    "description": "https://youtu.be/cMSprbJ95jg?t=3675\n\nIf you're using an IDE you're a bad engineer!",
+    "youtubeId": "54Z4HlO_sW8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=54Z4HlO_sW8",
+    "uploadDate": "20251121",
+    "duration": 3715,
+    "slug": "006-ai-for-infrastructure-engineers"
+  },
+  {
+    "episode": 7,
+    "season": 1,
+    "title": "AI acceleration with Anthropic and Beads",
+    "description": "Chatting about @t3dotgg turning onto @anthropic-ai \n\nPhone a farmer https://www.youtube.com/live/nW7-igJA798\n\nhttps://www.youtube.com/live/cMSprbJ95jg for Steve Yegge about an hour in.\n\nBeads skill that Vincent didn't realise was in the context:\nhttps://github.com/kaihendry/dabase.com/blob/main/content/tips/web/bug-reporting-template.md",
+    "youtubeId": "lst5spLZo-U",
+    "youtubeUrl": "https://www.youtube.com/watch?v=lst5spLZo-U",
+    "uploadDate": "20251129",
+    "duration": 3739,
+    "slug": "007-ai-acceleration-with-anthropic-and-beads"
   },
   {
     "episode": 8,
     "season": 1,
-    "title": "Terralith: the Future of Terraform Automation and Collaboration? (Re-Upload)",
-    "description": "Vincent De Smet is working on https://terraconstructs.dev/\n\nOpentaco trailer from https://www.linkedin.com/posts/izalutski_today-i-am-excited-to-announce-diggers-biggest-activity-7376635476264374272-O2Cp/ (without the copyrighted aggressive music)\n\nhttps://github.com/diggerhq/digger/blob/develop/taco/agents_context/opentaco-case.md#how-will-this-thing-make-money",
-    "youtubeId": "UXIJe2moZ-I",
-    "youtubeUrl": "https://www.youtube.com/watch?v=UXIJe2moZ-I",
-    "uploadDate": "20251004",
-    "duration": 2853,
-    "slug": "008-terralith-the-future-of-terraform-automation-and-collaboration-re-upload"
+    "title": "AI Infrastructure addicts",
+    "description": "https://github.com/addyosmani/gemini-cli-tips",
+    "youtubeId": "I4pmTz8EKag",
+    "youtubeUrl": "https://www.youtube.com/watch?v=I4pmTz8EKag",
+    "uploadDate": "20251202",
+    "duration": 2318,
+    "slug": "008-ai-infrastructure-addicts"
   }
 ]

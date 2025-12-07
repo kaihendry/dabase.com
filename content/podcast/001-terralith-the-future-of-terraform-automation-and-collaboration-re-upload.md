@@ -9,11 +9,11 @@ https://github.com/diggerhq/digger/blob/develop/taco/agents_context/opentaco-cas
 draft: false
 
 podcast:
-  episode: 8
+  episode: 1
   season: 1
   episodeType: "full"
   duration: 2853
-  audioUrl: "https://dabase.com/podcast/audio/008-terralith-the-future-of-terraform-automation-and-collaboration-re-upload.mp3"
+  audioUrl: "https://dabase.com/podcast/audio/001-terralith-the-future-of-terraform-automation-and-collaboration-re-upload.mp3"
   audioSize: 68481836
   youtubeId: "UXIJe2moZ-I"
   youtubeUrl: "https://www.youtube.com/watch?v=UXIJe2moZ-I"

@@ -7,11 +7,11 @@ description: "00:00 Why move to Vietnam?
 draft: false
 
 podcast:
-  episode: 5
+  episode: 4
   season: 1
   episodeType: "full"
   duration: 3949
-  audioUrl: "https://dabase.com/podcast/audio/005-who-is-vincent-de-smet-what-is-grid.mp3"
+  audioUrl: "https://dabase.com/podcast/audio/004-who-is-vincent-de-smet-what-is-grid.mp3"
   audioSize: 94771052
   youtubeId: "OacVAuGFSHg"
   youtubeUrl: "https://www.youtube.com/watch?v=OacVAuGFSHg"

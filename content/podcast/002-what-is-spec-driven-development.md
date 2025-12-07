@@ -11,11 +11,11 @@ WDYT? Comments below!"
 draft: false
 
 podcast:
-  episode: 7
+  episode: 2
   season: 1
   episodeType: "full"
   duration: 2398
-  audioUrl: "https://dabase.com/podcast/audio/007-what-is-spec-driven-development.mp3"
+  audioUrl: "https://dabase.com/podcast/audio/002-what-is-spec-driven-development.mp3"
   audioSize: 57563756
   youtubeId: "q2KOAAtT-Qw"
   youtubeUrl: "https://www.youtube.com/watch?v=q2KOAAtT-Qw"

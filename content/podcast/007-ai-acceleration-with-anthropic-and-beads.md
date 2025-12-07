@@ -12,11 +12,11 @@ https://github.com/kaihendry/dabase.com/blob/main/content/tips/web/bug-reporting
 draft: false
 
 podcast:
-  episode: 2
+  episode: 7
   season: 1
   episodeType: "full"
   duration: 3739
-  audioUrl: "https://dabase.com/podcast/audio/002-ai-acceleration-with-anthropic-and-beads.mp3"
+  audioUrl: "https://dabase.com/podcast/audio/007-ai-acceleration-with-anthropic-and-beads.mp3"
   audioSize: 89728172
   youtubeId: "lst5spLZo-U"
   youtubeUrl: "https://www.youtube.com/watch?v=lst5spLZo-U"
