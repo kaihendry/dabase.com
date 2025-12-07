@@ -6,11 +6,10 @@ PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaH
 
 echo "Fetching playlist metadata..." >&2
 
-# Download playlist metadata (without videos)
+# Download playlist metadata with full video info (needed for upload dates)
 yt-dlp \
     --skip-download \
     --dump-json \
-    --flat-playlist \
     "$PLAYLIST_URL" | jq -s '.' > "$3"
 
 EPISODE_COUNT=$(jq 'length' "$3")
