@@ -27,6 +27,9 @@ UPLOAD_DATE=$(echo "$EPISODE_JSON" | jq -r '.uploadDate')
 AUDIO_FILE="audio/${SLUG}.mp3"
 AUDIO_URL="https://dabase.com/podcast/audio/${SLUG}.mp3"
 
+# YouTube thumbnail (hqdefault is 480x360, always available)
+THUMBNAIL_URL="https://img.youtube.com/vi/${YOUTUBE_ID}/hqdefault.jpg"
+
 # Get audio file size if exists
 if [ -f "$AUDIO_FILE" ]; then
     AUDIO_SIZE=$(stat -f%z "$AUDIO_FILE" 2>/dev/null || stat -c%s "$AUDIO_FILE" 2>/dev/null)
@@ -45,6 +48,7 @@ cat > "$3" <<EOF
 title: "$TITLE"
 date: ${FORMATTED_DATE}T12:00:00Z
 description: "$DESCRIPTION"
+image: "$THUMBNAIL_URL"
 draft: false
 
 podcast:

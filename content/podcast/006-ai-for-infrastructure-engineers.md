@@ -4,6 +4,7 @@ date: 2025-11-21T12:00:00Z
 description: "https://youtu.be/cMSprbJ95jg?t=3675
 
 If you're using an IDE you're a bad engineer!"
+image: "https://img.youtube.com/vi/54Z4HlO_sW8/hqdefault.jpg"
 draft: false
 
 podcast:

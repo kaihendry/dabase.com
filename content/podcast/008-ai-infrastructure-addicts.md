@@ -2,6 +2,7 @@
 title: "AI Infrastructure addicts"
 date: 2025-12-02T12:00:00Z
 description: "https://github.com/addyosmani/gemini-cli-tips"
+image: "https://img.youtube.com/vi/I4pmTz8EKag/hqdefault.jpg"
 draft: false
 
 podcast:

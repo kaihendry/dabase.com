@@ -4,6 +4,7 @@ date: 2025-10-19T12:00:00Z
 description: "https://aws.amazon.com/cloudcontrolapi/
 
 https://s.natalian.org/2025-10-19/CommunityDay_Malaysia_2025.pptx"
+image: "https://img.youtube.com/vi/gkoxHncYCTk/hqdefault.jpg"
 draft: false
 
 podcast:

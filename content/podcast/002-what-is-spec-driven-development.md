@@ -8,6 +8,7 @@ Spec-kitting an existing project: https://youtu.be/SGHIQTsPzuY?si=19uhEGXQv-leUh
 https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html
 
 WDYT? Comments below!"
+image: "https://img.youtube.com/vi/q2KOAAtT-Qw/hqdefault.jpg"
 draft: false
 
 podcast:

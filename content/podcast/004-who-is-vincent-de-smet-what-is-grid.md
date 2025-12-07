@@ -4,6 +4,7 @@ date: 2025-10-29T12:00:00Z
 description: "00:00 Why move to Vietnam?
 33:34 Spec Kit and https://github.com/steveyegge/beads? 
 44:49 Demo of the Grid"
+image: "https://img.youtube.com/vi/OacVAuGFSHg/hqdefault.jpg"
 draft: false
 
 podcast:
