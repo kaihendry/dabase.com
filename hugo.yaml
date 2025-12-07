@@ -51,6 +51,7 @@ params:
     subcategory: "Software How-To"
     explicit: false
     image: "https://dabase.com/podcast/cover.jpg"
+    spotifyId: "3Iotnt60LbMrSm5poycuRz"
     owner:
       name: "Kai Hendry"
       email: "hendry+podcast@iki.fi"
