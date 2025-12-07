@@ -1,1 +1,10 @@
-/.ikiwiki
+public
+
+# Podcast audio files (hosted on S3)
+content/podcast/audio/
+
+# YouTube metadata cache (regenerable)
+content/podcast/metadata/
+
+# Redo build artifacts
+.redo/

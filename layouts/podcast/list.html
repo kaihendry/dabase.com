@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+{{/* Podcast subscribe links */}}
+{{ $rssLink := .OutputFormats.Get "RSS" }}
+<p>
+  <strong>Subscribe:</strong>
+  <a href="{{ $rssLink.Permalink }}">RSS</a>
+  {{ with .Site.Params.podcast.appleId }}
+  | <a href="https://podcasts.apple.com/podcast/id{{ . }}">Apple Podcasts</a>
+  {{ end }}
+  {{ with .Site.Params.podcast.spotifyId }}
+  | <a href="https://open.spotify.com/show/{{ . }}">Spotify</a>
+  {{ end }}
+</p>
+
+<style>
+.episode-list li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.episode-list time {
+  flex: 2;
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.episode-list a {
+  flex: 5;
+}
+</style>
+
+<h2>Episodes</h2>
+
+<ul class="episode-list">
+{{ range .Pages.ByDate.Reverse }}
+<li>
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+  <a href="{{ .RelPermalink }}">
+    {{ with .Params.podcast }}Episode {{ .episode }}: {{ end }}{{ .Title }}
+  </a>
+</li>
+{{ end }}
+</ul>
+
+{{ end }}

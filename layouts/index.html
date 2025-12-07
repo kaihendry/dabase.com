@@ -3,9 +3,8 @@
 There are {{ len .Site.RegularPages }} pages currently on this tech focus site of <a href="https://hendry.iki.fi/">Kai's</a>. <a href="https://natalian.org/">Kai's personal blog is called Natalian</a>.
 </p>
 <h1>
-<a href="/blog">{{ len (where .Site.RegularPages "Section" "=" "blog") }} blog posts</a>
-and
-<a href="/tips">{{ len (where .Site.RegularPages "Section" "=" "tips") }} tips</a>
+<a href="/blog">{{ len (where .Site.RegularPages "Section" "=" "blog") }} blog posts</a>, 
+<a href="/tips">{{ len (where .Site.RegularPages "Section" "=" "tips") }} tips</a> and <a href="/podcast">one AI podcast</a>.
 </h1>
 
 <style>

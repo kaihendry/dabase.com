@@ -1,0 +1,53 @@
+{{ define "main" }}
+<header>
+{{- partial "breadcrumb.html" . -}}
+
+<h1>
+{{ with .Params.podcast }}Episode {{ .episode }}: {{ end }}
+{{ .Title }}
+</h1>
+
+<p>
+  Published: {{ dateFormat "Monday, Jan 2, 2006" .Date }}
+  {{ with .Params.podcast }}
+  &bull; Duration: {{ div .duration 60 }} minutes
+  &bull; Season {{ .season }}
+  {{ end }}
+</p>
+</header>
+
+{{/* Audio player */}}
+{{ with .Params.podcast }}
+<audio controls preload="metadata" style="width: 100%; margin: 2rem 0;">
+  <source src="{{ .audioUrl }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>
+  <a href="{{ .audioUrl }}" download>Download MP3</a> |
+  <a href="{{ .youtubeUrl }}" target="_blank">Watch on YouTube</a>
+</p>
+{{ end }}
+
+{{/* Episode content */}}
+{{ .Content }}
+
+{{/* Transcript */}}
+{{ with .Params.podcast.transcript }}
+<details>
+  <summary><strong>Transcript</strong></summary>
+  <pre style="white-space: pre-wrap; font-size: 0.9rem;">{{ . }}</pre>
+</details>
+{{ end }}
+
+{{/* Navigation */}}
+<nav style="margin-top: 3rem;">
+{{ if .PrevInSection }}
+<a href="{{ .PrevInSection.RelPermalink }}" title="{{ .PrevInSection.Title}}">&larr; Previous Episode</a>
+{{ end }}
+{{ if .NextInSection }}
+<a href="{{ .NextInSection.RelPermalink }}" title="{{ .NextInSection.Title}}">Next Episode &rarr;</a>
+{{ end }}
+</nav>
+
+{{ end }}

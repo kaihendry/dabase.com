@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "hugo serve",
+            "type": "shell",
+            "command": "hugo serve",
+            "group": "build",
+            "isBackground": true
+        }
+    ]
+}

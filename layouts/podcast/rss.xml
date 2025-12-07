@@ -1,0 +1,84 @@
+{{- $pctx := . -}}
+{{- $pages := $pctx.RegularPages -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+    <title>{{ .Site.Params.podcast.title }}</title>
+    <link>{{ .Permalink }}</link>
+    <language>{{ .Site.Params.podcast.language }}</language>
+    <copyright>Copyright {{ now.Year }} {{ .Site.Params.podcast.author }}</copyright>
+    <description>{{ .Site.Params.podcast.description }}</description>
+
+    {{/* iTunes-specific tags */}}
+    <itunes:author>{{ .Site.Params.podcast.author }}</itunes:author>
+    <itunes:summary>{{ .Site.Params.podcast.description }}</itunes:summary>
+    <itunes:subtitle>{{ .Site.Params.podcast.subtitle }}</itunes:subtitle>
+    <itunes:owner>
+        <itunes:name>{{ .Site.Params.podcast.owner.name }}</itunes:name>
+        <itunes:email>{{ .Site.Params.podcast.owner.email }}</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>{{ if .Site.Params.podcast.explicit }}yes{{ else }}no{{ end }}</itunes:explicit>
+    <itunes:image href="{{ .Site.Params.podcast.image }}" />
+    <itunes:category text="{{ .Site.Params.podcast.category }}">
+        {{- with .Site.Params.podcast.subcategory }}
+        <itunes:category text="{{ . }}" />
+        {{- end }}
+    </itunes:category>
+    <itunes:type>episodic</itunes:type>
+
+    {{/* Atom self-reference */}}
+    {{ with .OutputFormats.Get "RSS" }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
+    {{ end }}
+
+    {{/* Episodes */}}
+    {{ range $pages }}
+    {{ $page := . }}
+    <item>
+        <title>{{ .Title }}</title>
+        <link>{{ .Permalink }}</link>
+        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+        <guid isPermaLink="true">{{ .Permalink }}</guid>
+        <description>{{ .Description | html }}</description>
+
+        {{/* Audio enclosure - REQUIRED */}}
+        {{ with .Params.podcast }}
+        {{ $audioUrl := .audioUrl }}
+        {{ if hasPrefix $audioUrl "/" }}
+            {{ $audioUrl = printf "%s%s" $page.Site.BaseURL $audioUrl }}
+        {{ end }}
+        <enclosure
+            url="{{ $audioUrl }}"
+            length="{{ .audioSize }}"
+            type="audio/mpeg" />
+
+        {{/* iTunes episode tags */}}
+        <itunes:title>{{ $page.Title }}</itunes:title>
+        <itunes:episode>{{ .episode }}</itunes:episode>
+        <itunes:season>{{ .season }}</itunes:season>
+        <itunes:episodeType>{{ .episodeType }}</itunes:episodeType>
+        <itunes:duration>{{ .duration }}</itunes:duration>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:summary>{{ $page.Description }}</itunes:summary>
+
+        {{/* Content with transcript */}}
+        {{ if .transcript }}
+        <content:encoded><![CDATA[
+            <p>{{ $page.Description }}</p>
+            <h3>Transcript</h3>
+            <pre>{{ .transcript }}</pre>
+            <p><a href="{{ .youtubeUrl }}">Watch on YouTube</a></p>
+        ]]></content:encoded>
+        {{ end }}
+        {{ end }}
+    </item>
+    {{ end }}
+</channel>
+</rss>
