@@ -2,7 +2,7 @@
 # Process playlist.json into episodes.json
 # Assigns episode numbers, generates slugs, structures data
 
-redo-ifchange metadata/playlist.json
+redo-ifchange playlist.json
 
 echo "Processing playlist metadata..." >&2
 
@@ -23,7 +23,7 @@ jq '[
       (.value.title | ascii_downcase | gsub("[^a-z0-9]+"; "-") | gsub("^-|-$"; ""))
     )
   }
-]' metadata/playlist.json > "$3"
+]' playlist.json > "$3"
 
 EPISODE_COUNT=$(jq 'length' "$3")
 echo "Processed $EPISODE_COUNT episodes" >&2

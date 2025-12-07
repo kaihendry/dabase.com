@@ -3,9 +3,6 @@
 # Dependencies: yt-dlp
 
 PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"
-OUTPUT="metadata/playlist.json"
-
-mkdir -p metadata
 
 echo "Fetching playlist metadata..." >&2
 
