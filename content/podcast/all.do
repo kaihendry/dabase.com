@@ -13,7 +13,7 @@ redo-ifchange metadata/episodes.json
 # Step 3: Generate markdown files for all episodes
 echo "Generating episode markdown files..." >&2
 jq -r '.[].slug' metadata/episodes.json | while read slug; do
-    redo-ifchange "episodes/${slug}.md"
+    redo-ifchange "${slug}.md"
 done
 
 # Step 4: Download audio files for all episodes

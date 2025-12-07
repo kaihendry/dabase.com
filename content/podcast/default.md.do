@@ -1,7 +1,7 @@
 #!/bin/sh
 # Generate markdown file for an episode
-# $1 = target (e.g., episodes/001-episode-title.md)
-# $2 = basename without extension (e.g., episodes/001-episode-title)
+# $1 = target (e.g., 001-episode-title.md)
+# $2 = basename without extension (e.g., 001-episode-title)
 
 SLUG=$(basename "$2")
 redo-ifchange metadata/episodes.json
@@ -25,7 +25,7 @@ UPLOAD_DATE=$(echo "$EPISODE_JSON" | jq -r '.uploadDate')
 
 # Audio file info
 AUDIO_FILE="audio/${SLUG}.mp3"
-AUDIO_URL="https://s.natalian.org/podcast/${SLUG}.mp3"
+AUDIO_URL="https://dabase.com/podcast/${SLUG}.mp3"
 
 # Get audio file size if exists
 if [ -f "$AUDIO_FILE" ]; then
