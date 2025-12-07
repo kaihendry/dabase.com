@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Generate markdown file for an episode
 # $1 = target (e.g., 001-episode-title.md)
 # $2 = basename without extension (e.g., 001-episode-title)
