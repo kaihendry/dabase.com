@@ -11,8 +11,8 @@ podcast:
   season: 1
   episodeType: "full"
   duration: 3949
-  audioUrl: "https://dabase.com/podcast/005-who-is-vincent-de-smet-what-is-grid.mp3"
-  audioSize: 242
+  audioUrl: "https://dabase.com/podcast/audio/005-who-is-vincent-de-smet-what-is-grid.mp3"
+  audioSize: 94771052
   youtubeId: "OacVAuGFSHg"
   youtubeUrl: "https://www.youtube.com/watch?v=OacVAuGFSHg"
 ---

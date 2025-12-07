@@ -25,7 +25,7 @@ UPLOAD_DATE=$(echo "$EPISODE_JSON" | jq -r '.uploadDate')
 
 # Audio file info
 AUDIO_FILE="audio/${SLUG}.mp3"
-AUDIO_URL="https://dabase.com/podcast/${SLUG}.mp3"
+AUDIO_URL="https://dabase.com/podcast/audio/${SLUG}.mp3"
 
 # Get audio file size if exists
 if [ -f "$AUDIO_FILE" ]; then

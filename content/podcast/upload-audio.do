@@ -3,7 +3,7 @@
 # Dependencies: aws cli configured
 
 AUDIO_DIR="audio"
-S3_BUCKET="s3://dabase.com/podcast/"
+S3_BUCKET="s3://dabase.com/podcast/audio/"
 S3_REGION="ap-southeast-1"
 
 if [ ! -d "$AUDIO_DIR" ]; then

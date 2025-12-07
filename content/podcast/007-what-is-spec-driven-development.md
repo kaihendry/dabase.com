@@ -15,8 +15,8 @@ podcast:
   season: 1
   episodeType: "full"
   duration: 2398
-  audioUrl: "https://dabase.com/podcast/007-what-is-spec-driven-development.mp3"
-  audioSize: 242
+  audioUrl: "https://dabase.com/podcast/audio/007-what-is-spec-driven-development.mp3"
+  audioSize: 57563756
   youtubeId: "q2KOAAtT-Qw"
   youtubeUrl: "https://www.youtube.com/watch?v=q2KOAAtT-Qw"
 ---
