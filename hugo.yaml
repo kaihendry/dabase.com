@@ -5,6 +5,7 @@ enableGitInfo: true
 permalinks:
   blog: /blog/:year/:contentbasename/
   tips: /:sections/:year/:title/
+  podcast: /podcast/:contentbasename/
 
 defaultOutputFormat: html
 
@@ -24,6 +25,9 @@ outputs:
     - html
     - rss
     - backlinks
+  section:
+    - html
+    - rss
 
 module:
   imports:
@@ -32,5 +36,23 @@ module:
 services:
   googleAnalytics:
     id: G-ZSL2H4YN59
+  rss:
+    limit: 50
+
+params:
+  podcast:
+    title: "AI Infrastructure"
+    subtitle: "Infrastructure & AI engineering techniques"
+    author: "Kai Hendry"
+    email: "kai@dabase.com"
+    description: "A podcast about Infrastructure & AI engineering techniques"
+    language: "en-us"
+    category: "Technology"
+    subcategory: "Software How-To"
+    explicit: false
+    image: "https://dabase.com/podcast/cover.jpg"
+    owner:
+      name: "Kai Hendry"
+      email: "kai@dabase.com"
 
 ignoreLogs: ['shortcode-x-getremote']
