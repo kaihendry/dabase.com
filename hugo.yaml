@@ -44,7 +44,7 @@ params:
     title: "AI Infrastructure"
     subtitle: "Infrastructure & AI engineering techniques"
     author: "Kai Hendry"
-    email: "kai@dabase.com"
+    email: "hendry+podcast@iki.fi"
     description: "A podcast about Infrastructure & AI engineering techniques"
     language: "en-us"
     category: "Technology"
@@ -53,6 +53,6 @@ params:
     image: "https://dabase.com/podcast/cover.jpg"
     owner:
       name: "Kai Hendry"
-      email: "kai@dabase.com"
+      email: "hendry+podcast@iki.fi"
 
-ignoreLogs: ['shortcode-x-getremote']
+ignoreLogs: ["shortcode-x-getremote"]

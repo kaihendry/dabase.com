@@ -57,3 +57,11 @@ If aws credentials are not available like:
     alias sts='aws sts get-caller-identity'
 
 Prompt the user to run `aws sso login --profile mine`
+
+# Debugging Github workflows
+
+Given for example: 
+    https://github.com/kaihendry/dabase.com/actions/runs/20007003839/job/57370782882
+
+use:
+    gh run view --log --job=57370782882

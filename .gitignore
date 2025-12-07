@@ -3,8 +3,9 @@ public
 # Podcast audio files (hosted on S3)
 content/podcast/audio/
 
-# YouTube metadata cache (regenerable)
-content/podcast/metadata/
+# YouTube metadata cache (regenerable, but keep .do files)
+content/podcast/metadata/*.json
+content/podcast/metadata/.redo/
 
 # Redo build artifacts
 .redo/
