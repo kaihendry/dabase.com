@@ -4,25 +4,22 @@
 
 echo "Starting podcast build..." >&2
 
-# Step 1: Fetch playlist metadata
-redo-ifchange metadata/playlist.json
+# episodes.json is committed directly (yt-dlp without --flat-playlist doesn't work on CI)
+# To add new episodes: run redo locally, commit updated episodes.json
 
-# Step 2: Process into episodes.json
-redo-ifchange metadata/episodes.json
-
-# Step 3: Generate markdown files for all episodes
+# Step 1: Generate markdown files for all episodes
 echo "Generating episode markdown files..." >&2
 jq -r '.[].slug' metadata/episodes.json | while read slug; do
     redo-ifchange "${slug}.md"
 done
 
-# Step 4: Download audio files for all episodes
+# Step 2: Download audio files for all episodes
 echo "Downloading audio files..." >&2
 jq -r '.[].slug' metadata/episodes.json | while read slug; do
     redo-ifchange "audio/${slug}.mp3"
 done
 
-# Step 5: Upload to S3
+# Step 3: Upload to S3
 redo-ifchange upload-audio
 
 echo "Podcast build complete!" >&2
