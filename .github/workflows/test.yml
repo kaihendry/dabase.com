@@ -1,0 +1,82 @@
+name: Test podcast sync
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+          sudo chmod a+rx /usr/local/bin/yt-dlp
+
+      - name: Build Hugo site
+        run: hugo
+
+      - name: Count episodes in Hugo
+        id: hugo
+        run: |
+          HUGO_COUNT=$(find content/podcast -maxdepth 1 -name "*.md" ! -name "_index.md" | wc -l | tr -d ' ')
+          echo "count=$HUGO_COUNT" >> $GITHUB_OUTPUT
+          echo "Hugo episode count: $HUGO_COUNT"
+
+      - name: Count episodes in YouTube playlist
+        id: youtube
+        run: |
+          PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"
+          YT_COUNT=$(yt-dlp --flat-playlist --print "%(id)s" "$PLAYLIST_URL" 2>/dev/null | wc -l | tr -d ' ')
+          echo "count=$YT_COUNT" >> $GITHUB_OUTPUT
+          echo "YouTube episode count: $YT_COUNT"
+
+      - name: Validate episode counts match
+        run: |
+          HUGO_COUNT=${{ steps.hugo.outputs.count }}
+          YT_COUNT=${{ steps.youtube.outputs.count }}
+          echo "Hugo episodes: $HUGO_COUNT"
+          echo "YouTube episodes: $YT_COUNT"
+          if [ "$HUGO_COUNT" != "$YT_COUNT" ]; then
+            echo "::error::Episode count mismatch! Hugo has $HUGO_COUNT, YouTube has $YT_COUNT"
+            exit 1
+          fi
+          echo "Episode counts match!"
+
+      - name: Validate podcast description
+        run: |
+          # Note: & becomes &amp; in HTML
+          if grep -q 'content="A podcast about Infrastructure .* AI engineering techniques"' public/podcast/index.html; then
+            echo "Description is correct!"
+          else
+            echo "::error::Description not found in podcast page"
+            grep -A1 'name="description"' public/podcast/index.html
+            exit 1
+          fi
+
+      - name: Validate RSS feed
+        run: |
+          # Check RSS has all episodes
+          RSS_COUNT=$(grep -c "<item>" public/podcast/index.xml)
+          HUGO_COUNT=${{ steps.hugo.outputs.count }}
+          echo "RSS episode count: $RSS_COUNT"
+          if [ "$RSS_COUNT" != "$HUGO_COUNT" ]; then
+            echo "::error::RSS count mismatch! RSS has $RSS_COUNT, Hugo has $HUGO_COUNT"
+            exit 1
+          fi
+          echo "RSS feed has correct episode count!"

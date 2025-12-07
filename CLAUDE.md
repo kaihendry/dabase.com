@@ -14,6 +14,8 @@ hugo server       # Local dev server with live reload
 hugo server -D    # Include draft posts
 ```
 
+In general we like to use [redo](http://www.goredo.cypherpunks.su/) instead of Make to build. See https://redo.readthedocs.io/en/latest/cookbook/hello/ for a short tutorial.
+
 ## Deployment
 
 Push to `main` branch triggers GitHub Actions workflow that:
