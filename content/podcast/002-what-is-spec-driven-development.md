@@ -5,11 +5,11 @@ description: ""
 draft: false
 
 podcast:
-  episode: 6
+  episode: 2
   season: 1
   episodeType: "full"
   duration: 2399
-  audioUrl: "/podcast/audio/006-what-is-spec-driven-development.mp3"
+  audioUrl: "/podcast/audio/002-what-is-spec-driven-development.mp3"
   audioSize: 57563756
   youtubeId: "q2KOAAtT-Qw"
   youtubeUrl: "https://www.youtube.com/watch?v=q2KOAAtT-Qw"

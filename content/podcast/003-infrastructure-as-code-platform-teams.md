@@ -5,11 +5,11 @@ description: ""
 draft: false
 
 podcast:
-  episode: 5
+  episode: 3
   season: 1
   episodeType: "full"
   duration: 5560
-  audioUrl: "/podcast/audio/005-infrastructure-as-code-platform-teams.mp3"
+  audioUrl: "/podcast/audio/003-infrastructure-as-code-platform-teams.mp3"
   audioSize: 133425836
   youtubeId: "gkoxHncYCTk"
   youtubeUrl: "https://www.youtube.com/watch?v=gkoxHncYCTk"
