@@ -9,3 +9,6 @@ date: 2025-11-30T08:29:52Z
 <img width="1083" height="692" alt="image" src="https://github.com/user-attachments/assets/d0d99c0f-5aa1-482a-819b-2e67a878ad99" />
 
 <img width="1075" height="513" alt="image" src="https://github.com/user-attachments/assets/6e99ee8a-2f0e-4167-b59b-2228345265bd" />
+
+
+{{< youtube -JYi5oOVpZQ >}}
