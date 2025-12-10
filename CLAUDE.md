@@ -1,8 +1,4 @@
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
-## Overview
+**Note**: This project uses [bd (beads)](https://github.com/steveyegge/beads) for issue tracking. Use `bd` commands instead of markdown TODOs.
 
 Hugo-based static blog hosted on AWS S3/CloudFront. Main config: `hugo.yaml`
 
@@ -10,8 +6,7 @@ Hugo-based static blog hosted on AWS S3/CloudFront. Main config: `hugo.yaml`
 
 ```bash
 hugo              # Build site to public/
-hugo server       # Local dev server with live reload
-hugo server -D    # Include draft posts
+hugo server -D      # Local dev server with live reload and include draft posts
 ```
 
 In general we like to use [redo](http://www.goredo.cypherpunks.su/) instead of Make to build. See https://redo.readthedocs.io/en/latest/cookbook/hello/ for a short tutorial.
@@ -32,14 +27,6 @@ Push to `main` branch triggers GitHub Actions workflow that:
 ## Styling Philosophy
 
 Uses minimal [new.css](https://newcss.net/) framework loaded in `layouts/partials/head.html`. If a blog post needs extra CSS, embed styles directly in the markdown.
-
-## Issue Tracking
-
-Uses Beads (`bd` CLI) for AI-native issue tracking stored in `.beads/`. Key commands:
-- `bd create "title"` - Create issue
-- `bd list` - View issues
-- `bd update <id> --status in_progress` - Update status
-- `bd sync` - Sync with git
 
 ## Podcast Episodes
 
