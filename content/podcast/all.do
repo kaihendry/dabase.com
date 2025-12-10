@@ -4,10 +4,10 @@
 
 echo "Starting podcast build..." >&2
 
-# episodes.json is committed directly (yt-dlp without --flat-playlist doesn't work on CI)
-# To add new episodes: run redo locally, commit updated episodes.json
+# Step 1: Fetch latest episodes from YouTube playlist
+redo-ifchange metadata/episodes.json
 
-# Step 1: Generate markdown files for all episodes
+# Step 2: Generate markdown files for all episodes
 echo "Generating episode markdown files..." >&2
 jq -r '.[].slug' metadata/episodes.json | while read slug; do
     redo-ifchange "${slug}.md"

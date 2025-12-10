@@ -8,7 +8,7 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=UXIJe2moZ-I",
     "uploadDate": "20251004",
     "duration": 2853,
-    "slug": "001-terralith-the-future-of-terraform-automation-and-collaboration-re-upload"
+    "slug": "001-terralith-the-future-of-terraform-automation-and-collaborati"
   },
   {
     "episode": 2,
@@ -19,7 +19,7 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=q2KOAAtT-Qw",
     "uploadDate": "20251014",
     "duration": 2398,
-    "slug": "002-what-is-spec-driven-development"
+    "slug": "002-what-is-specdriven-development"
   },
   {
     "episode": 3,
@@ -96,6 +96,6 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=eSEg3wKBs-8",
     "uploadDate": "20251210",
     "duration": 2766,
-    "slug": "009-adopting-ai-with-steveyegge-beads"
+    "slug": "009-adopting-ai-with-steveyeggebeads"
   }
 ]
