@@ -9,7 +9,9 @@ hugo              # Build site to public/
 hugo server -D      # Local dev server with live reload and include draft posts
 ```
 
-In general we like to use [redo](http://www.goredo.cypherpunks.su/) instead of Make to build. See https://redo.readthedocs.io/en/latest/cookbook/hello/ for a short tutorial.
+In general we like to use [redo](http://www.goredo.cypherpunks.su/) instead of
+Make to build. See https://redo.readthedocs.io/en/latest/cookbook/hello/ for a
+short tutorial.
 
 ## Deployment
 
@@ -34,7 +36,7 @@ Episode numbers are chronological (oldest = Episode 1). Episodes stored in `cont
 
 # AWS access
 
-If aws credentials are not available like: 
+If aws credentials are not available like:
 
     dabase.com $ sts
     {
@@ -49,7 +51,7 @@ Prompt the user to run `aws sso login --profile mine`
 
 # Debugging Github workflows
 
-Given for example: 
+Given for example:
     https://github.com/kaihendry/dabase.com/actions/runs/20007003839/job/57370782882
 
 use:

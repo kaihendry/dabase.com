@@ -1,6 +1,6 @@
 ---
 title: "Adopting AI with steveyegge/beads"
-date: 2025-12-10T12:00:00Z
+date: 2025-12-10T00:00:00Z
 description: "https://dabase.com/podcast/
 
 https://github.com/steveyegge/beads/discussions/430
@@ -15,7 +15,7 @@ podcast:
   episodeType: "full"
   duration: 2766
   audioUrl: "https://dabase.com/podcast/audio/009-adopting-ai-with-steveyegge-beads.mp3"
-  audioSize: 0
+  audioSize: 66381164
   youtubeId: "eSEg3wKBs-8"
   youtubeUrl: "https://www.youtube.com/watch?v=eSEg3wKBs-8"
 ---
