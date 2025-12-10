@@ -86,5 +86,16 @@
     "uploadDate": "20251202",
     "duration": 2318,
     "slug": "008-ai-infrastructure-addicts"
+  },
+  {
+    "episode": 9,
+    "season": 1,
+    "title": "Adopting AI with steveyegge/beads",
+    "description": "https://dabase.com/podcast/\n\nhttps://github.com/steveyegge/beads/discussions/430\n\nGoredo: http://www.goredo.cypherpunks.su/",
+    "youtubeId": "eSEg3wKBs-8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=eSEg3wKBs-8",
+    "uploadDate": "20251210",
+    "duration": 2766,
+    "slug": "009-adopting-ai-with-steveyegge-beads"
   }
 ]
