@@ -86,4 +86,4 @@ jobs:
       - name: Check for broken links in podcast pages
         uses: filiph/linkcheck@3.0.0
         with:
-          arguments: public/podcast/ --external-links-are-errors=false
+          arguments: public/podcast/
