@@ -5,6 +5,7 @@ on:
     branches:
       - main
   pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -81,3 +82,8 @@ jobs:
             exit 1
           fi
           echo "RSS feed matches markdown files!"
+
+      - name: Check for broken links in podcast pages
+        uses: filiph/linkcheck@3.0.0
+        with:
+          arguments: public/podcast/ --external-links-are-errors=false
