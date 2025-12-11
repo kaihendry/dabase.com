@@ -31,12 +31,12 @@ jobs:
       - name: Build Hugo site
         run: hugo
 
-      - name: Count episodes in Hugo
+      - name: Count episodes in episodes.json
         id: hugo
         run: |
-          HUGO_COUNT=$(find content/podcast -maxdepth 1 -name "*.md" ! -name "_index.md" | wc -l | tr -d ' ')
+          HUGO_COUNT=$(jq 'length' content/podcast/metadata/episodes.json)
           echo "count=$HUGO_COUNT" >> $GITHUB_OUTPUT
-          echo "Hugo episode count: $HUGO_COUNT"
+          echo "Episodes in episodes.json: $HUGO_COUNT"
 
       - name: Count episodes in YouTube playlist
         id: youtube
@@ -71,12 +71,13 @@ jobs:
 
       - name: Validate RSS feed
         run: |
-          # Check RSS has all episodes
+          # Check RSS has episodes (built from committed markdown files)
           RSS_COUNT=$(grep -c "<item>" public/podcast/index.xml)
-          HUGO_COUNT=${{ steps.hugo.outputs.count }}
+          MD_COUNT=$(find content/podcast -maxdepth 1 -name "*.md" ! -name "_index.md" | wc -l | tr -d ' ')
           echo "RSS episode count: $RSS_COUNT"
-          if [ "$RSS_COUNT" != "$HUGO_COUNT" ]; then
-            echo "::error::RSS count mismatch! RSS has $RSS_COUNT, Hugo has $HUGO_COUNT"
+          echo "Markdown files: $MD_COUNT"
+          if [ "$RSS_COUNT" != "$MD_COUNT" ]; then
+            echo "::error::RSS count mismatch! RSS has $RSS_COUNT, markdown has $MD_COUNT"
             exit 1
           fi
-          echo "RSS feed has correct episode count!"
+          echo "RSS feed matches markdown files!"
