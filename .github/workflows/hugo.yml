@@ -40,6 +40,11 @@ jobs:
           sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
           sudo chmod a+rx /usr/local/bin/yt-dlp
 
+      - name: Download existing audio from S3
+        run: |
+          mkdir -p content/podcast/audio
+          aws s3 sync s3://dabase.com/podcast/audio/ content/podcast/audio/ --region ap-southeast-1
+
       - name: Sync podcast from YouTube playlist
         run: |
           cd content/podcast
