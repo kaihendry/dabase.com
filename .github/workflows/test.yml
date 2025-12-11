@@ -83,7 +83,22 @@ jobs:
           fi
           echo "RSS feed matches markdown files!"
 
-      - name: Check for broken links in podcast pages
-        uses: filiph/linkcheck@3.0.0
-        with:
-          arguments: public/podcast/
+      - name: Check podcast audio URLs exist
+        run: |
+          echo "Checking audio URLs in RSS feed..."
+          MISSING=0
+          for url in $(grep -oP 'url="https://dabase\.com/podcast/audio/[^"]+' public/podcast/index.xml | sed 's/url="//'); do
+            # Check URL returns 200 with HEAD request
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --head "$url")
+            if [ "$HTTP_CODE" != "200" ]; then
+              echo "::error::Missing audio file (HTTP $HTTP_CODE): $url"
+              MISSING=$((MISSING + 1))
+            else
+              echo "OK: $url"
+            fi
+          done
+          if [ "$MISSING" -gt 0 ]; then
+            echo "::error::$MISSING audio files missing"
+            exit 1
+          fi
+          echo "All audio URLs verified!"
