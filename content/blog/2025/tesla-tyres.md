@@ -1,7 +1,7 @@
 ---
 title: Tesla Tyres Repair = Replacement!?
 date: 2025-03-07T14:58:50Z
-description: The expense of Model Y tyres in the UK
+description: The expense of Model Y tyres in the UK 
 ---
 
 tl;dr Front left tyre punctured driving to London and to address the issue I ended up replacing both front tyres prematurely. The cost was £558GBP and a lot of time & confusion.
@@ -32,6 +32,8 @@ After ringing several tyre shops and going online I found two issues:
 
 1. No one was prepared to repair the tyre, contrary to the advice of [Tesla Owners](https://teslaowners.org.uk/guides/can-my-tyre-be-repaired)
 2. No one had the tyre in stock. They could get it in next day, but I could not wait.
+
+> Hankook Ventus S1 Evo 3 EV K127E 255/45 R19 104W XL (T2)
 
 # Tesla Owners UK
 
