@@ -8,11 +8,22 @@ echo "Fetching playlist metadata from YouTube..." >&2
 
 # Fetch playlist with flat mode first to get video IDs
 PLAYLIST_TMP=$(mktemp)
-yt-dlp -J --flat-playlist "$PLAYLIST_URL" > "$PLAYLIST_TMP"
+PLAYLIST_STDERR=$(mktemp)
+yt-dlp -J --flat-playlist "$PLAYLIST_URL" > "$PLAYLIST_TMP" 2>"$PLAYLIST_STDERR"
+cat "$PLAYLIST_STDERR" >&2
 
 # Extract video IDs in playlist order (reversed because playlist shows newest first)
 VIDEO_IDS=$(jq -r '.entries | reverse | .[].id' "$PLAYLIST_TMP")
 TOTAL=$(echo "$VIDEO_IDS" | wc -l | tr -d ' ')
+
+# Check for unavailable videos warning and adjust expected count
+UNAVAILABLE=$(grep -oP '\d+(?= unavailable video)' "$PLAYLIST_STDERR" || echo "0")
+EXPECTED=$((TOTAL - UNAVAILABLE))
+rm -f "$PLAYLIST_STDERR"
+
+if [ "$UNAVAILABLE" -gt 0 ]; then
+    echo "Note: $UNAVAILABLE video(s) are unavailable and will be skipped" >&2
+fi
 
 echo "Found $TOTAL videos in playlist" >&2
 
@@ -70,9 +81,9 @@ rm -f "$PLAYLIST_TMP" "$TEMP_FILE"
 ACTUAL_COUNT=$(jq 'length' "$3")
 echo "Generated episodes.json with $ACTUAL_COUNT episodes" >&2
 
-if [ "$ACTUAL_COUNT" -ne "$TOTAL" ]; then
-    echo "ERROR: Episode count mismatch! Expected $TOTAL videos from playlist, but got $ACTUAL_COUNT episodes in JSON" >&2
+if [ "$ACTUAL_COUNT" -ne "$EXPECTED" ]; then
+    echo "ERROR: Episode count mismatch! Expected $EXPECTED available videos from playlist, but got $ACTUAL_COUNT episodes in JSON" >&2
     exit 1
 fi
 
-echo "✓ Validation passed: All $TOTAL playlist videos were successfully processed" >&2
+echo "✓ Validation passed: All $EXPECTED available playlist videos were successfully processed" >&2

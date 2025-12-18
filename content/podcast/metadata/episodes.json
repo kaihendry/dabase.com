@@ -119,16 +119,5 @@
     "uploadDate": "20251216",
     "duration": 3712,
     "slug": "011-cdk-for-terraform-and-two-pizza-teams"
-  },
-  {
-    "episode": 12,
-    "season": 1,
-    "title": "WHY CDK TF",
-    "description": "",
-    "youtubeId": "eb6HpYx19Rc",
-    "youtubeUrl": "https://www.youtube.com/watch?v=eb6HpYx19Rc",
-    "uploadDate": "20251217",
-    "duration": 4106,
-    "slug": "012-why-cdk-tf"
   }
 ]
