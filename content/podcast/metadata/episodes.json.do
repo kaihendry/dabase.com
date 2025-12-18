@@ -66,8 +66,13 @@ jq '.' "$TEMP_FILE" > "$3"
 
 rm -f "$PLAYLIST_TMP" "$TEMP_FILE"
 
-echo "Generated episodes.json with $(jq 'length' "$3") episodes" >&2
+# Validate that the number of episodes matches the playlist count
+ACTUAL_COUNT=$(jq 'length' "$3")
+echo "Generated episodes.json with $ACTUAL_COUNT episodes" >&2
 
-rm -f "$3.tmp" "$TEMP_FILE"
+if [ "$ACTUAL_COUNT" -ne "$TOTAL" ]; then
+    echo "ERROR: Episode count mismatch! Expected $TOTAL videos from playlist, but got $ACTUAL_COUNT episodes in JSON" >&2
+    exit 1
+fi
 
-echo "Generated episodes.json with $(jq 'length' "$3") episodes" >&2
+echo "✓ Validation passed: All $TOTAL playlist videos were successfully processed" >&2

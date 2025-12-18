@@ -96,7 +96,7 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=eSEg3wKBs-8",
     "uploadDate": "20251210",
     "duration": 2766,
-    "slug": "009-adopting-ai-with-steveyegge-beads"
+    "slug": "009-adopting-ai-with-steveyeggebeads"
   },
   {
     "episode": 10,
@@ -108,5 +108,27 @@
     "uploadDate": "20251211",
     "duration": 2521,
     "slug": "010-beads-speckit-perles-opus-agents-oh-my"
+  },
+  {
+    "episode": 11,
+    "season": 1,
+    "title": "CDK for Terraform and two pizza teams",
+    "description": "https://github.com/hashicorp/terraform-cdk/commit/a0c56138e2b4c7b6c128bd7ba08a8e317df852af\n\nTrying to plot the changing Infrastructure landscape.",
+    "youtubeId": "rM2pj0JKc0g",
+    "youtubeUrl": "https://www.youtube.com/watch?v=rM2pj0JKc0g",
+    "uploadDate": "20251216",
+    "duration": 3712,
+    "slug": "011-cdk-for-terraform-and-two-pizza-teams"
+  },
+  {
+    "episode": 12,
+    "season": 1,
+    "title": "WHY CDK TF",
+    "description": "",
+    "youtubeId": "eb6HpYx19Rc",
+    "youtubeUrl": "https://www.youtube.com/watch?v=eb6HpYx19Rc",
+    "uploadDate": "20251217",
+    "duration": 4106,
+    "slug": "012-why-cdk-tf"
   }
 ]
