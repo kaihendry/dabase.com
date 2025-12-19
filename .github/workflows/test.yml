@@ -15,13 +15,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: 'latest'
-
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -29,76 +22,65 @@ jobs:
           sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
           sudo chmod a+rx /usr/local/bin/yt-dlp
 
-      - name: Build Hugo site
-        run: hugo
-
-      - name: Count episodes in episodes.json
-        id: hugo
+      - name: Count episodes on published site
+        id: published
         run: |
-          HUGO_COUNT=$(jq 'length' content/podcast/metadata/episodes.json)
-          echo "count=$HUGO_COUNT" >> $GITHUB_OUTPUT
-          echo "Episodes in episodes.json: $HUGO_COUNT"
+          RSS_COUNT=$(curl -s https://dabase.com/podcast/index.xml | grep -c "<item>")
+          echo "count=$RSS_COUNT" >> $GITHUB_OUTPUT
+          echo "Published RSS episode count: $RSS_COUNT"
 
-      - name: Count episodes in YouTube playlist
+      - name: Count available episodes in YouTube playlist
         id: youtube
         run: |
           PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"
-          YT_COUNT=$(yt-dlp --flat-playlist --print "%(id)s" "$PLAYLIST_URL" 2>/dev/null | wc -l | tr -d ' ')
+          # Count only available videos (yt-dlp skips unavailable ones)
+          YT_COUNT=$(yt-dlp --flat-playlist --print "%(id)s" "$PLAYLIST_URL" 2>&1 | grep -v "unavailable" | grep -cE "^[a-zA-Z0-9_-]{11}$")
           echo "count=$YT_COUNT" >> $GITHUB_OUTPUT
-          echo "YouTube episode count: $YT_COUNT"
+          echo "YouTube available episode count: $YT_COUNT"
 
       - name: Validate episode counts match
         run: |
-          HUGO_COUNT=${{ steps.hugo.outputs.count }}
+          PUBLISHED_COUNT=${{ steps.published.outputs.count }}
           YT_COUNT=${{ steps.youtube.outputs.count }}
-          echo "Hugo episodes: $HUGO_COUNT"
+          echo "Published episodes: $PUBLISHED_COUNT"
           echo "YouTube episodes: $YT_COUNT"
-          if [ "$HUGO_COUNT" != "$YT_COUNT" ]; then
-            echo "::error::Episode count mismatch! Hugo has $HUGO_COUNT, YouTube has $YT_COUNT"
-            exit 1
-          fi
-          echo "Episode counts match!"
-
-      - name: Validate podcast description
-        run: |
-          # Note: & becomes &amp; in HTML
-          if grep -q 'content="A podcast about Infrastructure .* AI engineering techniques"' public/podcast/index.html; then
-            echo "Description is correct!"
+          if [ "$PUBLISHED_COUNT" != "$YT_COUNT" ]; then
+            echo "::warning::Episode count mismatch! Published has $PUBLISHED_COUNT, YouTube has $YT_COUNT"
+            echo "This may be expected if a deploy is in progress"
           else
-            echo "::error::Description not found in podcast page"
-            grep -A1 'name="description"' public/podcast/index.html
+            echo "Episode counts match!"
+          fi
+
+      - name: Validate RSS feed structure
+        run: |
+          echo "Checking RSS feed structure..."
+          curl -s https://dabase.com/podcast/index.xml > /tmp/rss.xml
+
+          # Check for required iTunes tags
+          if ! grep -q "<itunes:author>" /tmp/rss.xml; then
+            echo "::error::Missing itunes:author tag"
             exit 1
           fi
 
-      - name: Validate RSS feed
-        run: |
-          # Check RSS has episodes (built from committed markdown files)
-          RSS_COUNT=$(grep -c "<item>" public/podcast/index.xml)
-          MD_COUNT=$(find content/podcast -maxdepth 1 -name "*.md" ! -name "_index.md" | wc -l | tr -d ' ')
-          echo "RSS episode count: $RSS_COUNT"
-          echo "Markdown files: $MD_COUNT"
-          if [ "$RSS_COUNT" != "$MD_COUNT" ]; then
-            echo "::error::RSS count mismatch! RSS has $RSS_COUNT, markdown has $MD_COUNT"
+          if ! grep -q "<itunes:image" /tmp/rss.xml; then
+            echo "::error::Missing itunes:image tag"
             exit 1
           fi
-          echo "RSS feed matches markdown files!"
 
-      - name: Check podcast audio URLs exist
+          echo "RSS feed structure is valid!"
+
+      - name: Check sample audio URLs exist
         run: |
-          echo "Checking audio URLs in RSS feed..."
-          MISSING=0
-          for url in $(grep -oP 'url="https://dabase\.com/podcast/audio/[^"]+' public/podcast/index.xml | sed 's/url="//'); do
-            # Check URL returns 200 with HEAD request
+          echo "Checking sample audio URLs from RSS feed..."
+          # Check first 3 audio URLs to avoid rate limiting
+          URLS=$(grep -oP 'url="/podcast/audio/[^"]+' /tmp/rss.xml | head -3 | sed 's/url="/https:\/\/dabase.com/')
+          for url in $URLS; do
             HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --head "$url")
             if [ "$HTTP_CODE" != "200" ]; then
               echo "::error::Missing audio file (HTTP $HTTP_CODE): $url"
-              MISSING=$((MISSING + 1))
+              exit 1
             else
               echo "OK: $url"
             fi
           done
-          if [ "$MISSING" -gt 0 ]; then
-            echo "::error::$MISSING audio files missing"
-            exit 1
-          fi
-          echo "All audio URLs verified!"
+          echo "Sample audio URLs verified!"

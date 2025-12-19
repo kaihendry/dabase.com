@@ -3,10 +3,8 @@ public
 # Podcast audio files (hosted on S3)
 content/podcast/audio/
 
-# Podcast content (regenerated from YouTube in CI)
+# Podcast metadata cache (regenerated locally via redo)
 content/podcast/metadata/playlist.json
-content/podcast/metadata/episodes.json
-content/podcast/[0-9][0-9][0-9]-*.md
 content/podcast/metadata/.redo/
 
 # Redo build artifacts
