@@ -40,7 +40,8 @@ for VIDEO_ID in $VIDEO_IDS; do
 
     # Fetch individual video metadata and transform directly with jq
     VIDEO_TMP=$(mktemp)
-    if yt-dlp -j "https://www.youtube.com/watch?v=$VIDEO_ID" > "$VIDEO_TMP" 2>/dev/null; then
+    VIDEO_ERR=$(mktemp)
+    if yt-dlp -j --no-warnings --skip-download "https://www.youtube.com/watch?v=$VIDEO_ID" > "$VIDEO_TMP" 2>"$VIDEO_ERR"; then
         # Only increment episode number for successfully fetched videos
         EPISODE_NUM=$((EPISODE_NUM + 1))
         echo "    -> Episode $EPISODE_NUM" >&2
@@ -68,8 +69,11 @@ for VIDEO_ID in $VIDEO_IDS; do
                 slug: ($prefix + "-" + (.title | gsub("[^a-zA-Z0-9 ]"; "") | gsub("  +"; " ") | ascii_downcase | gsub(" "; "-"))[0:60])
             }
         ' "$VIDEO_TMP" >> "$TEMP_FILE"
+    else
+        echo "    WARN: Failed to fetch $VIDEO_ID" >&2
+        cat "$VIDEO_ERR" >&2
     fi
-    rm -f "$VIDEO_TMP"
+    rm -f "$VIDEO_TMP" "$VIDEO_ERR"
 done
 
 echo "]" >> "$TEMP_FILE"
