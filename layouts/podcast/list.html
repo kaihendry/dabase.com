@@ -50,7 +50,7 @@
 <h2>Episodes</h2>
 
 <ul class="episode-list">
-{{ range .Pages.ByDate.Reverse }}
+{{ range sort .Pages ".Params.podcast.episode" "desc" }}
 <li>
   {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
   <div class="episode-info">
