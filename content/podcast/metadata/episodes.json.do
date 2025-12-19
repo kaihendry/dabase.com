@@ -36,13 +36,15 @@ echo "[" > "$TEMP_FILE"
 EPISODE_NUM=0
 FIRST=true
 for VIDEO_ID in $VIDEO_IDS; do
-    EPISODE_NUM=$((EPISODE_NUM + 1))
-    
-    echo "  Fetching details for episode $EPISODE_NUM (video $VIDEO_ID)..." >&2
-    
+    echo "  Fetching video $VIDEO_ID..." >&2
+
     # Fetch individual video metadata and transform directly with jq
     VIDEO_TMP=$(mktemp)
     if yt-dlp -j "https://www.youtube.com/watch?v=$VIDEO_ID" > "$VIDEO_TMP" 2>/dev/null; then
+        # Only increment episode number for successfully fetched videos
+        EPISODE_NUM=$((EPISODE_NUM + 1))
+        echo "    -> Episode $EPISODE_NUM" >&2
+
         # Generate slug: 00X-title-slug
         SLUG_PREFIX=$(printf "%03d" "$EPISODE_NUM")
         
