@@ -4,11 +4,11 @@ description: Systemd nspawn configuration with an A&A subnet on a Raspberry Pi w
 date: 2026-01-02T16:13:20Z
 ---
 
-My [ISP A&A](https://www.aa.net.uk/) provides my home with Internet services. This is how I configure my Raspberry Pi 5 with my ISP Andrews & Arnold, whom I highly recommend!
+My [Internet Service Provider Andrews & Arnold](https://www.aa.net.uk/) provides my home with Internet services. This is how I configure my Raspberry Pi 5 to leverage the special "legacy" subnet they provide with [Unifi networking hardware/software](https://uk.store.ui.com/uk/en).
 
 ![control.aa.net.uk](image.png)
 
-My UK ISP A&A has given me some legacy IPv4 addresses:
+My UK ISP A&A has given me some IPv4 addresses:
 
     $ ipcalc -b 81.187.180.129/26
     Address:   81.187.180.129
@@ -21,7 +21,7 @@ My UK ISP A&A has given me some legacy IPv4 addresses:
     Broadcast: 81.187.180.191
     Hosts/Net: 62                    Class A
 
-I've configured my Raspberry PI to be able host virtual machines (VPS = Virtual Private Servers) from that subnet.
+The following is how I have configured my Raspberry PI to be able host virtual machines (VPS = Virtual Private Servers) from that subnet.
 
 # Configuring Ubiquiti (UniFi) Network 10.x
 
@@ -43,7 +43,9 @@ Notice we route incoming traffic to that subnet to the Raspberry Pi's IP address
 
 # Configuring Raspberry Pi host
 
-[I'm now using Debian Trixie.](https://x.com/kaihendry/status/2006027247761731915)
+[I'm now using Debian Trixie](https://x.com/kaihendry/status/2006027247761731915) release of [Raspberry Pi OS](https://www.raspberrypi.com/software/operating-systems/).
+
+Tbh I do have `ipv6.disable=1` in /boot/firmware/cmdline.txt to avoid confusion and drama.
 
 ### `/etc/systemd/network/10-end0.network`
 ```ini
@@ -91,9 +93,7 @@ To use macvlan over network-veth, I needed:
 
 # create-nspawn-vps
 
-This is a helper script to create a new vm
-
-https://gist.github.com/kaihendry/861e5d985217cf457cd31f88c313cb58
+[create-nspawn-vps is a helper script](https://gist.github.com/kaihendry/861e5d985217cf457cd31f88c313cb58) to create a new vm / vps / machine on a publicly addressable IP address.
 
 Sample output:
 
@@ -122,3 +122,5 @@ Sample output:
 # Raspberry Pi VPS hosting
 
 Now whenever I want a little VPS, I can spawn one and have a play. Tbh I don't quite understand how isolation works and my Pi only has 4GB of memory to play with, so it's pretty underpowered. In future I would like to play with Docker and https://kamal-deploy.org/
+
+Do let me know if it can be further improved!
