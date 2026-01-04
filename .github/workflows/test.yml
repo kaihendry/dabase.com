@@ -70,16 +70,18 @@ jobs:
 
           echo "RSS feed structure is valid!"
 
-      - name: Check sample audio URLs exist
+      - name: Check all audio URLs exist
         run: |
-          echo "Checking sample audio URLs from RSS feed..."
-          # Check first 3 audio URLs to avoid rate limiting
-          URLS=$(rg -o 'url="https://dabase\.com[^"]+\.mp3' /tmp/rss.xml | sed 's/url="//' | head -3)
+          echo "Checking all audio URLs from RSS feed..."
+          URLS=$(rg -o 'url="https://dabase\.com[^"]+\.mp3' /tmp/rss.xml | sed 's/url="//')
 
           if [ -z "$URLS" ]; then
             echo "::error::No audio URLs found in RSS feed!"
             exit 1
           fi
+
+          TOTAL=$(echo "$URLS" | wc -l)
+          echo "Found $TOTAL audio files to verify"
 
           for url in $URLS; do
             echo "Checking: $url"
@@ -91,4 +93,4 @@ jobs:
               echo "OK: $url"
             fi
           done
-          echo "Sample audio URLs verified!"
+          echo "All $TOTAL audio URLs verified!"
