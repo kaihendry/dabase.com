@@ -1,5 +1,5 @@
 title: dabase
-baseURL: https://dabase.com/
+baseURL: https://dabase.com
 disablePathToLower: true
 enableGitInfo: true
 permalinks:
