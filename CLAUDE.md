@@ -34,6 +34,31 @@ Uses minimal [new.css](https://newcss.net/) framework loaded in `layouts/partial
 
 Episode numbers are chronological (oldest = Episode 1). Episodes stored in `content/podcast/` with frontmatter containing episode number, audio URL, YouTube link, and duration.
 
+### Adding New Podcast Episodes
+
+**IMPORTANT**: Audio files MUST be uploaded to S3 before pushing to GitHub, since GitHub Actions cannot download from YouTube due to rate limiting.
+
+Workflow for new episodes:
+```bash
+cd content/podcast
+
+# 1. Fetch metadata and build (uses cache, only fetches new episodes)
+redo all
+
+# 2. Upload audio to S3 (CRITICAL - do this before git push!)
+redo upload-audio
+
+# 3. Verify upload
+aws s3 ls s3://dabase.com/podcast/audio/ --human-readable | tail -5
+
+# 4. Commit and push
+git add .
+git commit -m "Add Episode X"
+git push
+```
+
+**Cache system**: Episode metadata is cached in `metadata/cache/{video_id}.json` to speed up builds from ~22min to ~3min. Use `FORCE=1 redo metadata/episodes.json` to bypass cache and refetch all episodes.
+
 # AWS access
 
 If aws credentials are not available like:
