@@ -138,8 +138,19 @@
     "description": "https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/\n\nClip is from https://www.youtube.com/watch?v=CEvIs9y1uog\n\nDon't paste screenshots of terminals, use:\nhttps://tools.simonwillison.net/terminal-to-html\n\nhttps://adrianhall.github.io/posts/2025/2025-12-06-spec-kit.html\nhttps://www.sanity.io/blog/you-should-never-build-a-cms",
     "youtubeId": "gvgK2wp_-UQ",
     "youtubeUrl": "https://www.youtube.com/watch?v=gvgK2wp_-UQ",
-    "uploadDate": "20251219",
+    "uploadDate": "20251223",
     "duration": 3135,
     "slug": "013-spec-kit-vs-conductor"
+  },
+  {
+    "episode": 14,
+    "season": 1,
+    "title": "Scaling AskUserQuestionTool",
+    "description": "Vibe coded Chrome extension to show Amazon UK Data First Available: https://github.com/kaihendry/date-first-available\n\nMy failed thought experiment to get AI to setup my PI https://github.com/kaihendry/ai-pi\n\nMy blog about how I got my Pi setup as a VPS host: https://dabase.com/blog/2026/machinectl-trixie-pi/\n\nMarkdown to Confluence POC https://github.com/kaihendry/md-confluence\n\nhttps://x.com/trq212/status/2005315275026260309 promotes the AskUserQuestionTool idea\n\nKiro seminar (PAID) https://www.eventbrite.com/e/hands-on-spec-driven-development-workshop-tickets-1812679024759?aff=so%E2%80%A6\n\nhttps://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04",
+    "youtubeId": "V5Q8_3BuMcs",
+    "youtubeUrl": "https://www.youtube.com/watch?v=V5Q8_3BuMcs",
+    "uploadDate": "20260103",
+    "duration": 4130,
+    "slug": "014-scaling-askuserquestiontool"
   }
 ]
