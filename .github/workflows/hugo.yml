@@ -35,7 +35,7 @@ jobs:
 
       - name: Sync to S3
         run: |
-          aws s3 sync public/ s3://dabase.com --region ap-southeast-1 --delete --only-show-errors
+          aws s3 sync public/ s3://dabase.com
 
       - name: Invalidate CloudFront cache
         run: |
