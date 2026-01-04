@@ -52,7 +52,7 @@
         {{ with .Params.podcast }}
         {{ $audioUrl := .audioUrl }}
         {{ if hasPrefix $audioUrl "/" }}
-            {{ $audioUrl = printf "%s%s" $page.Site.BaseURL $audioUrl }}
+            {{ $audioUrl = absURL $audioUrl }}
         {{ end }}
         <enclosure
             url="{{ $audioUrl }}"

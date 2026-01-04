@@ -18,14 +18,14 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq
+          sudo apt-get install -y jq ripgrep
           sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
           sudo chmod a+rx /usr/local/bin/yt-dlp
 
       - name: Count episodes on published site
         id: published
         run: |
-          RSS_COUNT=$(curl -s https://dabase.com/podcast/index.xml | grep -c "<item>")
+          RSS_COUNT=$(curl -s https://dabase.com/podcast/index.xml | rg -c "<item>")
           echo "count=$RSS_COUNT" >> $GITHUB_OUTPUT
           echo "Published RSS episode count: $RSS_COUNT"
 
@@ -34,7 +34,7 @@ jobs:
         run: |
           PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"
           # Count only available videos (yt-dlp skips unavailable ones)
-          YT_COUNT=$(yt-dlp --flat-playlist --print "%(id)s" "$PLAYLIST_URL" 2>&1 | grep -v "unavailable" | grep -cE "^[a-zA-Z0-9_-]{11}$")
+          YT_COUNT=$(yt-dlp --flat-playlist --print "%(id)s" "$PLAYLIST_URL" 2>&1 | rg -v "unavailable" | rg -c "^[a-zA-Z0-9_-]{11}$")
           echo "count=$YT_COUNT" >> $GITHUB_OUTPUT
           echo "YouTube available episode count: $YT_COUNT"
 
@@ -57,12 +57,12 @@ jobs:
           curl -s https://dabase.com/podcast/index.xml > /tmp/rss.xml
 
           # Check for required iTunes tags
-          if ! grep -q "<itunes:author>" /tmp/rss.xml; then
+          if ! rg -q "<itunes:author>" /tmp/rss.xml; then
             echo "::error::Missing itunes:author tag"
             exit 1
           fi
 
-          if ! grep -q "<itunes:image" /tmp/rss.xml; then
+          if ! rg -q "<itunes:image" /tmp/rss.xml; then
             echo "::error::Missing itunes:image tag"
             exit 1
           fi
@@ -73,8 +73,15 @@ jobs:
         run: |
           echo "Checking sample audio URLs from RSS feed..."
           # Check first 3 audio URLs to avoid rate limiting
-          URLS=$(grep -oP 'url="/podcast/audio/[^"]+' /tmp/rss.xml | head -3 | sed 's/url="/https:\/\/dabase.com/')
+          URLS=$(rg -o 'url="https://dabase\.com[^"]+\.mp3' /tmp/rss.xml | sed 's/url="//' | head -3)
+
+          if [ -z "$URLS" ]; then
+            echo "::error::No audio URLs found in RSS feed!"
+            exit 1
+          fi
+
           for url in $URLS; do
+            echo "Checking: $url"
             HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --head "$url")
             if [ "$HTTP_CODE" != "200" ]; then
               echo "::error::Missing audio file (HTTP $HTTP_CODE): $url"
