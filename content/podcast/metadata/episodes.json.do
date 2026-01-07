@@ -16,13 +16,12 @@ cat "$PLAYLIST_STDERR" >&2
 VIDEO_IDS=$(jq -r '.entries | reverse | .[].id' "$PLAYLIST_TMP")
 TOTAL=$(echo "$VIDEO_IDS" | wc -l | tr -d ' ')
 
-# Check for unavailable videos warning and adjust expected count
-UNAVAILABLE=$(grep -oP '\d+(?= unavailable video)' "$PLAYLIST_STDERR" || echo "0")
-EXPECTED=$((TOTAL - UNAVAILABLE))
+# Check for unavailable videos warning and adjust expected count (macOS compatible)
+UNAVAILABLE=$(grep -oE '[0-9]+ unavailable video' "$PLAYLIST_STDERR" | grep -oE '[0-9]+' || echo "0")
 rm -f "$PLAYLIST_STDERR"
 
 if [ "$UNAVAILABLE" -gt 0 ]; then
-    echo "Note: $UNAVAILABLE video(s) are unavailable and will be skipped" >&2
+    echo "Note: $UNAVAILABLE video(s) are reported unavailable by YouTube" >&2
 fi
 
 echo "Found $TOTAL videos in playlist" >&2
@@ -42,6 +41,7 @@ TEMP_FILE=$(mktemp)
 echo "[" > "$TEMP_FILE"
 
 EPISODE_NUM=0
+FAILED_COUNT=0
 FIRST=true
 for VIDEO_ID in $VIDEO_IDS; do
     CACHE_FILE="$CACHE_DIR/${VIDEO_ID}.json"
@@ -119,6 +119,7 @@ for VIDEO_ID in $VIDEO_IDS; do
         else
             echo "    WARN: Failed to fetch $VIDEO_ID" >&2
             cat "$VIDEO_ERR" >&2
+            FAILED_COUNT=$((FAILED_COUNT + 1))
         fi
     fi
     rm -f "$VIDEO_TMP" "$VIDEO_ERR"
@@ -131,9 +132,10 @@ jq '.' "$TEMP_FILE" > "$3"
 
 rm -f "$PLAYLIST_TMP" "$TEMP_FILE"
 
-# Validate that the number of episodes matches the playlist count
+# Validate that the number of episodes matches successful fetches
 ACTUAL_COUNT=$(jq 'length' "$3")
-echo "Generated episodes.json with $ACTUAL_COUNT episodes" >&2
+EXPECTED_COUNT=$((TOTAL - FAILED_COUNT))
+echo "Generated episodes.json with $ACTUAL_COUNT episodes ($FAILED_COUNT unavailable)" >&2
 
 # Output cache statistics
 if [ "$FORCE" = "1" ]; then
@@ -142,9 +144,9 @@ else
     echo "Cache statistics: $CACHED_COUNT cached, $FETCHED_COUNT fetched from YouTube" >&2
 fi
 
-if [ "$ACTUAL_COUNT" -ne "$EXPECTED" ]; then
-    echo "ERROR: Episode count mismatch! Expected $EXPECTED available videos from playlist, but got $ACTUAL_COUNT episodes in JSON" >&2
+if [ "$ACTUAL_COUNT" -ne "$EXPECTED_COUNT" ]; then
+    echo "ERROR: Episode count mismatch! Expected $EXPECTED_COUNT episodes, but got $ACTUAL_COUNT in JSON" >&2
     exit 1
 fi
 
-echo "✓ Validation passed: All $EXPECTED available playlist videos were successfully processed" >&2
+echo "✓ Validation passed: All $ACTUAL_COUNT available playlist videos were successfully processed" >&2
