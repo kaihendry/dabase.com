@@ -152,5 +152,16 @@
     "uploadDate": "20260103",
     "duration": 4130,
     "slug": "014-scaling-askuserquestiontool"
+  },
+  {
+    "episode": 15,
+    "season": 1,
+    "title": "Ralph Wiggum, Gas town, Playwright right, Omarchy & Skill issues",
+    "description": "https://x.com/mattpocockuk/status/2008200878633931247\n\nhttps://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c\nhttps://github.com/steveyegge/gastown\n\nhttps://github.com/kaihendry/skills\n\n00:00 Ralph Wiggum\n01:37 Gas town\n13:21 Testing\n16:26 Playwright demo\n33:41 Ralph Wiggum memes\n36:37 Omarchy\n41:11 Skills for AI",
+    "youtubeId": "o-NUs1isBp8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=o-NUs1isBp8",
+    "uploadDate": "20260107",
+    "duration": 3607,
+    "slug": "015-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues"
   }
 ]

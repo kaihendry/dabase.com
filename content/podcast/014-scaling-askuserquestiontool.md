@@ -23,7 +23,7 @@ podcast:
   episodeType: "full"
   duration: 4130
   audioUrl: "/podcast/audio/014-scaling-askuserquestiontool.mp3"
-  audioSize: 0
+  audioSize: 99119162
   youtubeId: "V5Q8_3BuMcs"
   youtubeUrl: "https://www.youtube.com/watch?v=V5Q8_3BuMcs"
 ---

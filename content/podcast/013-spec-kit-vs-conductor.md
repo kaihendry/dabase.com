@@ -1,6 +1,6 @@
 ---
 title: "Spec Kit vs Conductor"
-date: 2025-12-19T12:00:00Z
+date: 2025-12-23T12:00:00Z
 description: "https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/
 
 Clip is from https://www.youtube.com/watch?v=CEvIs9y1uog
