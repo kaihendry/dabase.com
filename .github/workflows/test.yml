@@ -46,8 +46,8 @@ jobs:
           echo "Published episodes: $PUBLISHED_COUNT"
           echo "YouTube episodes: $YT_COUNT"
           if [ "$PUBLISHED_COUNT" != "$YT_COUNT" ]; then
-            echo "::warning::Episode count mismatch! Published has $PUBLISHED_COUNT, YouTube has $YT_COUNT"
-            echo "This may be expected if a deploy is in progress"
+            echo "::error::Episode count mismatch! Published has $PUBLISHED_COUNT, YouTube has $YT_COUNT"
+            exit 1
           else
             echo "Episode counts match!"
           fi
