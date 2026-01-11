@@ -2,6 +2,9 @@
 # Fetch episodes from YouTube playlist and generate episodes.json
 # Usage: redo metadata/episodes.json
 
+# Always rebuild - we depend on external YouTube content that redo can't track
+redo-always
+
 PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"
 
 echo "Fetching playlist metadata from YouTube..." >&2

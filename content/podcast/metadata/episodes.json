@@ -163,5 +163,16 @@
     "uploadDate": "20260107",
     "duration": 3607,
     "slug": "015-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues"
+  },
+  {
+    "episode": 16,
+    "season": 1,
+    "title": "Measuring AI productivity, and will AI have Ads?",
+    "description": "https://x.com/kaihendry/status/2009678360046420110\n\nhttps://docs.astral.sh/uv/llms.txt",
+    "youtubeId": "tKad1dhw5Qs",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tKad1dhw5Qs",
+    "uploadDate": "20260111",
+    "duration": 3230,
+    "slug": "016-measuring-ai-productivity-and-will-ai-have-ads"
   }
 ]

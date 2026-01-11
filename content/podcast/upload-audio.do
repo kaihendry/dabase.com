@@ -15,6 +15,7 @@ echo "Syncing audio files to S3..." >&2
 
 # Upload only changed files
 aws s3 sync "$AUDIO_DIR/" "$S3_BUCKET" \
+    --profile "${AWS_PROFILE:-mine}" \
     --region "$S3_REGION" \
     --exclude ".*" \
     --content-type "audio/mpeg" \
