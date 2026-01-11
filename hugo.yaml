@@ -16,9 +16,6 @@ markup:
       unsafe: true
     extensions:
       table: true
-    renderHooks:
-      link:
-        enableDefault: true
 
 outputs:
   home:
