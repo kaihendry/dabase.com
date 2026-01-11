@@ -59,6 +59,8 @@ git push
 
 **Cache system**: Episode metadata is cached in `metadata/cache/{video_id}.json` to speed up builds from ~22min to ~3min. Use `FORCE=1 redo metadata/episodes.json` to bypass cache and refetch all episodes.
 
+**Future dates**: Hugo doesn't build content with future dates by default. If a new episode isn't appearing, check that its `date:` in frontmatter isn't in the future (dates are in UTC).
+
 # AWS access
 
 If aws credentials are not available like:
