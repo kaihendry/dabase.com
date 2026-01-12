@@ -16,6 +16,9 @@ markup:
       unsafe: true
     extensions:
       table: true
+    renderHooks:
+      link:
+        useEmbedded: always
 
 outputs:
   home:
