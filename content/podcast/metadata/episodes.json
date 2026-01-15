@@ -174,5 +174,16 @@
     "uploadDate": "20260111",
     "duration": 3230,
     "slug": "016-measuring-ai-productivity-and-will-ai-have-ads"
+  },
+  {
+    "episode": 17,
+    "season": 1,
+    "title": "What makes a good AI infrastructure engineer?",
+    "description": "https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing",
+    "youtubeId": "ij20sZmxC7k",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ij20sZmxC7k",
+    "uploadDate": "20260115",
+    "duration": 4427,
+    "slug": "017-what-makes-a-good-ai-infrastructure-engineer"
   }
 ]
