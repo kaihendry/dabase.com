@@ -11,3 +11,12 @@ description: Upgrading Python dependencies in uv based pyproject.toml
 
 
 https://pypi.org/project/uv-upx/
+
+# Not working?
+
+    dependencies = [
+        "aws-cdk-lib==2.000",
+        "constructs>=10.4.4,<11.0.0",
+    ]
+
+Adjust '==' pin to '>='
