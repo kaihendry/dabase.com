@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4427
   audioUrl: "/podcast/audio/017-what-makes-a-good-ai-infrastructure-engineer.mp3"
-  audioSize: 0
+  audioSize: 106237484
   youtubeId: "ij20sZmxC7k"
   youtubeUrl: "https://www.youtube.com/watch?v=ij20sZmxC7k"
 ---

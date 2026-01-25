@@ -185,5 +185,16 @@
     "uploadDate": "20260115",
     "duration": 4427,
     "slug": "017-what-makes-a-good-ai-infrastructure-engineer"
+  },
+  {
+    "episode": 18,
+    "season": 1,
+    "title": "AI Engineer Anti-Patterns + more",
+    "description": "I show https://clawd.bot/ & WhatsApp integration.\n\nWe touch how type checking is not done enough in Python https://docs.astral.sh/ty/\n\nWe speculate what's the \"Next big thing\" in Infrastructure... better state management with https://stategraph.com/?\n\nhttps://handy.computer/ dictation (speech to text) is shown\n\nWe try capture what the the AI lifecycle looks like right now.\n\nShow notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing\n\nKai will be at https://fosdem.org/2026/ & https://cfgmgmtcamp.org/ghent2026/ next week ... say hello if you see me!",
+    "youtubeId": "0lQTnRKHVdM",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0lQTnRKHVdM",
+    "uploadDate": "20260125",
+    "duration": 5343,
+    "slug": "018-ai-engineer-antipatterns-more"
   }
 ]
