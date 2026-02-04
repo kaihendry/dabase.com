@@ -3,6 +3,8 @@
 # Usage: redo metadata/episodes.json
 
 # Always rebuild - we depend on external YouTube content that redo can't track
+# Remove target first to avoid "externally modified" warnings from redo
+rm -f "$3"
 redo-always
 
 PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"

@@ -196,5 +196,16 @@
     "uploadDate": "20260125",
     "duration": 5343,
     "slug": "018-ai-engineer-antipatterns-more"
+  },
+  {
+    "episode": 19,
+    "season": 1,
+    "title": "cfgmgmtcamp 2026 debrief",
+    "description": "Previous 2025 vlog: https://youtu.be/QQB6juzzIZU?si=5mrQi_ox8ds0ENp2\n\nI'll add more links as I find a decent internet connection!\n\nhttps://www.youtube.com/watch?v=yxzghm3Fdj8&t=10718s is Adam Jacob's AI talk\n\nCDK plan we were talking about: https://gist.github.com/kaihendry/ce6574744e161d4ba8ba283b8dada85c",
+    "youtubeId": "tvoTdenufAs",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tvoTdenufAs",
+    "uploadDate": "20260204",
+    "duration": 2892,
+    "slug": "019-cfgmgmtcamp-2026-debrief"
   }
 ]
