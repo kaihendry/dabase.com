@@ -20,3 +20,5 @@ https://pypi.org/project/uv-upx/
     ]
 
 Adjust '==' pin to '>='
+
+Bonus: Use `uvx taplo fmt pyproject.toml` to format the pyproject.toml.
