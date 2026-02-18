@@ -207,5 +207,16 @@
     "uploadDate": "20260204",
     "duration": 2892,
     "slug": "019-cfgmgmtcamp-2026-debrief"
+  },
+  {
+    "episode": 20,
+    "season": 1,
+    "title": "AI Vampire",
+    "description": "Do please Rate and share to keep us rewarded / motivated to share!\n\nShow notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0",
+    "youtubeId": "6SqnMr5W3aU",
+    "youtubeUrl": "https://www.youtube.com/watch?v=6SqnMr5W3aU",
+    "uploadDate": "20260218",
+    "duration": 4196,
+    "slug": "020-ai-vampire"
   }
 ]
