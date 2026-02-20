@@ -7,17 +7,12 @@ echo "Starting podcast build..." >&2
 # Step 1: Fetch latest episodes from YouTube playlist
 redo-ifchange metadata/episodes.json
 
-# Step 2: Generate markdown files for all episodes
+# Step 2: Generate markdown files and download audio for all episodes (parallel)
 echo "Generating episode markdown files..." >&2
-jq -r '.[].slug' metadata/episodes.json | while read slug; do
-    redo-ifchange "${slug}.md"
-done
+redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's/$/.md/')
 
-# Step 2: Download audio files for all episodes
 echo "Downloading audio files..." >&2
-jq -r '.[].slug' metadata/episodes.json | while read slug; do
-    redo-ifchange "audio/${slug}.mp3"
-done
+redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|audio/&.mp3|')
 
 # Step 3: Upload to S3
 redo-ifchange upload-audio
