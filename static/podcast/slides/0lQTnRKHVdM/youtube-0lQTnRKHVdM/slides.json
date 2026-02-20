@@ -1,0 +1,61 @@
+{
+  "sourceUrl": "https://www.youtube.com/watch?v=0lQTnRKHVdM",
+  "sourceKind": "youtube",
+  "sourceId": "youtube-0lQTnRKHVdM",
+  "slidesDir": "/Users/hendry/wikis/dabase.com/static/podcast/slides/0lQTnRKHVdM/youtube-0lQTnRKHVdM",
+  "slidesDirId": "5dd23255",
+  "sceneThreshold": 0.3,
+  "autoTuneThreshold": true,
+  "autoTune": {
+    "enabled": true,
+    "chosenThreshold": 0.05,
+    "confidence": 1,
+    "strategy": "hash"
+  },
+  "maxSlides": 6,
+  "minSlideDuration": 2,
+  "ocrRequested": false,
+  "ocrAvailable": true,
+  "slideCount": 6,
+  "warnings": [
+    "Auto-tuned scene threshold from 0.3 to 0.05"
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "timestamp": 0.24000000000000002,
+      "imagePath": "slide_0001_0.24s.png",
+      "imageVersion": 1771590441616
+    },
+    {
+      "index": 2,
+      "timestamp": 882.5600260666666,
+      "imagePath": "slide_0002_882.56s.png",
+      "imageVersion": 1771590442668
+    },
+    {
+      "index": 3,
+      "timestamp": 1773.0799739333333,
+      "imagePath": "slide_0003_1773.08s.png",
+      "imageVersion": 1771590442666
+    },
+    {
+      "index": 4,
+      "timestamp": 2663.28,
+      "imagePath": "slide_0004_2663.28s.png",
+      "imageVersion": 1771590442711
+    },
+    {
+      "index": 5,
+      "timestamp": 3554.1200260666665,
+      "imagePath": "slide_0005_3554.12s.png",
+      "imageVersion": 1771590442695
+    },
+    {
+      "index": 6,
+      "timestamp": 4444.6399739533335,
+      "imagePath": "slide_0006_4444.64s.png",
+      "imageVersion": 1771590442673
+    }
+  ]
+}
