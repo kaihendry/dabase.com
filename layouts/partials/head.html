@@ -17,6 +17,11 @@
   />
   {{ end }}
   <meta name="twitter:creator" content="@kaihendry" />
+  {{ with .Params.image }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  {{ end }}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
   <link rel="stylesheet" href="https://newcss.net/theme/night.css" />
   <style>
