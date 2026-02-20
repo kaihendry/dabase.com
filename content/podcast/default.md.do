@@ -18,6 +18,8 @@ fi
 EPISODE_NUM=$(echo "$EPISODE_JSON" | jq -r '.episode')
 TITLE=$(echo "$EPISODE_JSON" | jq -r '.title')
 DESCRIPTION=$(echo "$EPISODE_JSON" | jq -r '.description')
+# Escape double quotes for YAML frontmatter (body content uses raw DESCRIPTION)
+DESCRIPTION_YAML=$(echo "$DESCRIPTION" | sed 's/"/\\"/g')
 YOUTUBE_ID=$(echo "$EPISODE_JSON" | jq -r '.youtubeId')
 YOUTUBE_URL=$(echo "$EPISODE_JSON" | jq -r '.youtubeUrl')
 DURATION=$(echo "$EPISODE_JSON" | jq -r '.duration')
@@ -121,7 +123,7 @@ cat > "$3" <<EOF
 ---
 title: "$TITLE"
 date: ${FORMATTED_DATE}T12:00:00Z
-description: "$DESCRIPTION"
+description: "$DESCRIPTION_YAML"
 image: "$THUMBNAIL_URL"
 draft: false
 

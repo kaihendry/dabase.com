@@ -5,7 +5,7 @@ description: "I show https://clawd.bot/ & WhatsApp integration.
 
 We touch how type checking is not done enough in Python https://docs.astral.sh/ty/
 
-We speculate what's the "Next big thing" in Infrastructure... better state management with https://stategraph.com/?
+We speculate what's the \"Next big thing\" in Infrastructure... better state management with https://stategraph.com/?
 
 https://handy.computer/ dictation (speech to text) is shown
 
