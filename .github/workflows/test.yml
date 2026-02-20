@@ -34,8 +34,7 @@ jobs:
         run: |
           PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"
           # Count only available videos (yt-dlp skips unavailable ones)
-          # Exclude re-upload video ID: UXIJe2moZ-I
-          YT_COUNT=$(yt-dlp --flat-playlist --print "%(id)s" "$PLAYLIST_URL" 2>&1 | rg -v "unavailable" | rg "^[a-zA-Z0-9_-]{11}$" | rg -v "UXIJe2moZ-I" | wc -l)
+          YT_COUNT=$(yt-dlp --flat-playlist --print "%(id)s" "$PLAYLIST_URL" 2>&1 | rg -v "unavailable" | rg "^[a-zA-Z0-9_-]{11}$" | wc -l)
           echo "count=$YT_COUNT" >> $GITHUB_OUTPUT
           echo "YouTube available episode count: $YT_COUNT"
 
