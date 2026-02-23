@@ -23,13 +23,31 @@
 }
 
 .episode-list li {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
-.episode-list img {
+.episode-tile {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  /* suppress the global red underline animation */
+  background-image: none !important;
+  outline: 1px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, outline-color 0.15s ease;
+}
+
+.episode-tile:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(128,128,128,0.25);
+  outline-color: rgba(128,128,128,0.35);
+  background-size: 0 !important;
+}
+
+.episode-tile img {
   width: 120px;
   height: 90px;
   object-fit: cover;
@@ -37,11 +55,15 @@
   flex-shrink: 0;
 }
 
-.episode-list .episode-info {
+.episode-tile .episode-info {
   flex: 1;
 }
 
-.episode-list time {
+.episode-tile .episode-title {
+  font-weight: bold;
+}
+
+.episode-tile time {
   font-size: 0.85rem;
   color: #666;
 }
@@ -52,15 +74,14 @@
 <ul class="episode-list">
 {{ range sort .Pages ".Params.podcast.episode" "desc" }}
 <li>
-  {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
-  <div class="episode-info">
-    <a href="{{ .RelPermalink }}">
-      {{ with .Params.podcast }}Episode {{ .episode }}: {{ end }}{{ .Title }}
-    </a>
-    <br>
-    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-    {{ with .Params.podcast }} &bull; {{ div .duration 60 }} min{{ end }}
-  </div>
+  <a class="episode-tile" href="{{ .RelPermalink }}">
+    {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
+    <div class="episode-info">
+      <div class="episode-title">{{ with .Params.podcast }}Episode {{ .episode }}: {{ end }}{{ .Title }}</div>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      {{ with .Params.podcast }} &bull; {{ div .duration 60 }} min{{ end }}
+    </div>
+  </a>
 </li>
 {{ end }}
 </ul>
