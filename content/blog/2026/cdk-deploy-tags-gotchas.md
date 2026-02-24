@@ -95,3 +95,5 @@ Other common surprises:
 
 The `--tags` flag isn't broken for simple cases, but it has enough sharp edges
 that it's worth understanding before leaning on it.
+
+Related: [hardcodeDetector](https://github.com/kaihendry/hardcodeDetector) catches another CDK trap — hardcoding names explicitly in your stack, which causes similar unexpected churn and replacement issues.
