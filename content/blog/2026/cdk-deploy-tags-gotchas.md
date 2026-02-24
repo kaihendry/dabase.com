@@ -34,7 +34,7 @@ But every deployment becomes a tag change, and tag changes are CloudFormation mu
 
 Not every resource handles tags the same way, and `--tags` won't warn you when it hits a service limit or quirk.
 
-**S3 Access Points** are a known example — tags used for attribute-based access control (ABAC) are particularly sensitive. A wrong or missing tag can silently break access policies, and the `CfnAccessPoint` construct doesn't expose tags as a first-class property like L2 constructs do.
+**S3 Access Points** are a concrete example. `CfnAccessPoint` uses a plain `CfnTag[]` array rather than CDK's `TagManager`, so `Tags.of(scope).add(...)` does **not** automatically propagate to it the way it does with L2 constructs — you must set tags explicitly in `CfnAccessPointProps`. The risk here is unexpected tag *absence*, not tag presence: if you're using ABAC and the tag silently never gets applied, access is denied with no configuration error. There's a further subtlety: the `aws:ResourceTag` condition key on an Access Point only covers the access point's own tags, not the underlying bucket's — a scope limitation that's easy to miss.
 
 Other surprises:
 
