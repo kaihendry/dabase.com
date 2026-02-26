@@ -57,16 +57,27 @@
   {
     "episode": 6,
     "season": 1,
+    "title": "How to listen to the AI infrastructure podcast from your car",
+    "description": "Search for \"AI Infrastructure\"",
+    "youtubeId": "X-SEYqhB7Rw",
+    "youtubeUrl": "https://www.youtube.com/watch?v=X-SEYqhB7Rw",
+    "uploadDate": "20251112",
+    "duration": 29,
+    "slug": "006-how-to-listen-to-the-ai-infrastructure-podcast-from-your-car"
+  },
+  {
+    "episode": 7,
+    "season": 1,
     "title": "AI for Infrastructure Engineers",
     "description": "https://youtu.be/cMSprbJ95jg?t=3675\n\nIf you're using an IDE you're a bad engineer!",
     "youtubeId": "54Z4HlO_sW8",
     "youtubeUrl": "https://www.youtube.com/watch?v=54Z4HlO_sW8",
     "uploadDate": "20251121",
     "duration": 3715,
-    "slug": "006-ai-for-infrastructure-engineers"
+    "slug": "007-ai-for-infrastructure-engineers"
   },
   {
-    "episode": 7,
+    "episode": 8,
     "season": 1,
     "title": "AI acceleration with Anthropic and Beads",
     "description": "Chatting about @t3dotgg turning onto @anthropic-ai \n\nPhone a farmer https://www.youtube.com/live/nW7-igJA798\n\nhttps://www.youtube.com/live/cMSprbJ95jg for Steve Yegge about an hour in.\n\nBeads skill that Vincent didn't realise was in the context:\nhttps://github.com/kaihendry/dabase.com/blob/main/content/tips/web/bug-reporting-template.md",
@@ -74,10 +85,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=lst5spLZo-U",
     "uploadDate": "20251129",
     "duration": 3739,
-    "slug": "007-ai-acceleration-with-anthropic-and-beads"
+    "slug": "008-ai-acceleration-with-anthropic-and-beads"
   },
   {
-    "episode": 8,
+    "episode": 9,
     "season": 1,
     "title": "AI Infrastructure addicts",
     "description": "https://github.com/addyosmani/gemini-cli-tips",
@@ -85,10 +96,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=I4pmTz8EKag",
     "uploadDate": "20251202",
     "duration": 2318,
-    "slug": "008-ai-infrastructure-addicts"
+    "slug": "009-ai-infrastructure-addicts"
   },
   {
-    "episode": 9,
+    "episode": 10,
     "season": 1,
     "title": "Adopting AI with steveyegge/beads",
     "description": "https://dabase.com/podcast/\n\nhttps://github.com/steveyegge/beads/discussions/430\n\nGoredo: http://www.goredo.cypherpunks.su/",
@@ -96,10 +107,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=eSEg3wKBs-8",
     "uploadDate": "20251210",
     "duration": 2766,
-    "slug": "009-adopting-ai-with-steveyeggebeads"
+    "slug": "010-adopting-ai-with-steveyeggebeads"
   },
   {
-    "episode": 10,
+    "episode": 11,
     "season": 1,
     "title": "Beads, Speckit, Perles, Opus, Agents, oh my!",
     "description": "https://www.loom.com/share/e2ab7a2dc7354bff88c9f528398e1bbf\n\nDo please comment & Europeans must go to these FREE events:\n\nhttps://fosdem.org/2026/\nhttps://cfgmgmtcamp.org/ghent2026/",
@@ -107,10 +118,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=yokbTRUvxQU",
     "uploadDate": "20251211",
     "duration": 2521,
-    "slug": "010-beads-speckit-perles-opus-agents-oh-my"
+    "slug": "011-beads-speckit-perles-opus-agents-oh-my"
   },
   {
-    "episode": 11,
+    "episode": 12,
     "season": 1,
     "title": "CDK for Terraform and two pizza teams",
     "description": "https://github.com/hashicorp/terraform-cdk/commit/a0c56138e2b4c7b6c128bd7ba08a8e317df852af\n\nTrying to plot the changing Infrastructure landscape.",
@@ -118,10 +129,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=rM2pj0JKc0g",
     "uploadDate": "20251216",
     "duration": 3712,
-    "slug": "011-cdk-for-terraform-and-two-pizza-teams"
+    "slug": "012-cdk-for-terraform-and-two-pizza-teams"
   },
   {
-    "episode": 12,
+    "episode": 13,
     "season": 1,
     "title": "Why do we need the Cloud Development Kit?",
     "description": "The Cloud is too complex, we need a programming language, we need abstractions. Terraform isn't enough for AWS.",
@@ -129,10 +140,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=NfzsrgTmBtY",
     "uploadDate": "20251219",
     "duration": 4216,
-    "slug": "012-why-do-we-need-the-cloud-development-kit"
+    "slug": "013-why-do-we-need-the-cloud-development-kit"
   },
   {
-    "episode": 13,
+    "episode": 14,
     "season": 1,
     "title": "Spec Kit vs Conductor",
     "description": "https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/\n\nClip is from https://www.youtube.com/watch?v=CEvIs9y1uog\n\nDon't paste screenshots of terminals, use:\nhttps://tools.simonwillison.net/terminal-to-html\n\nhttps://adrianhall.github.io/posts/2025/2025-12-06-spec-kit.html\nhttps://www.sanity.io/blog/you-should-never-build-a-cms",
@@ -140,10 +151,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=gvgK2wp_-UQ",
     "uploadDate": "20251223",
     "duration": 3135,
-    "slug": "013-spec-kit-vs-conductor"
+    "slug": "014-spec-kit-vs-conductor"
   },
   {
-    "episode": 14,
+    "episode": 15,
     "season": 1,
     "title": "Scaling AskUserQuestionTool",
     "description": "Vibe coded Chrome extension to show Amazon UK Data First Available: https://github.com/kaihendry/date-first-available\n\nMy failed thought experiment to get AI to setup my PI https://github.com/kaihendry/ai-pi\n\nMy blog about how I got my Pi setup as a VPS host: https://dabase.com/blog/2026/machinectl-trixie-pi/\n\nMarkdown to Confluence POC https://github.com/kaihendry/md-confluence\n\nhttps://x.com/trq212/status/2005315275026260309 promotes the AskUserQuestionTool idea\n\nKiro seminar (PAID) https://www.eventbrite.com/e/hands-on-spec-driven-development-workshop-tickets-1812679024759?aff=so%E2%80%A6\n\nhttps://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04",
@@ -151,10 +162,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=V5Q8_3BuMcs",
     "uploadDate": "20260103",
     "duration": 4130,
-    "slug": "014-scaling-askuserquestiontool"
+    "slug": "015-scaling-askuserquestiontool"
   },
   {
-    "episode": 15,
+    "episode": 16,
     "season": 1,
     "title": "Ralph Wiggum, Gas town, Playwright right, Omarchy & Skill issues",
     "description": "https://x.com/mattpocockuk/status/2008200878633931247\n\nhttps://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c\nhttps://github.com/steveyegge/gastown\n\nhttps://github.com/kaihendry/skills\n\n00:00 Ralph Wiggum\n01:37 Gas town\n13:21 Testing\n16:26 Playwright demo\n33:41 Ralph Wiggum memes\n36:37 Omarchy\n41:11 Skills for AI",
@@ -162,10 +173,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=o-NUs1isBp8",
     "uploadDate": "20260107",
     "duration": 3607,
-    "slug": "015-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues"
+    "slug": "016-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues"
   },
   {
-    "episode": 16,
+    "episode": 17,
     "season": 1,
     "title": "Measuring AI productivity, and will AI have Ads?",
     "description": "https://x.com/kaihendry/status/2009678360046420110\n\nhttps://docs.astral.sh/uv/llms.txt",
@@ -173,10 +184,10 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=tKad1dhw5Qs",
     "uploadDate": "20260111",
     "duration": 3230,
-    "slug": "016-measuring-ai-productivity-and-will-ai-have-ads"
+    "slug": "017-measuring-ai-productivity-and-will-ai-have-ads"
   },
   {
-    "episode": 17,
+    "episode": 18,
     "season": 1,
     "title": "What makes a good AI infrastructure engineer?",
     "description": "https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing",
@@ -184,39 +195,50 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=ij20sZmxC7k",
     "uploadDate": "20260115",
     "duration": 4427,
-    "slug": "017-what-makes-a-good-ai-infrastructure-engineer"
-  },
-  {
-    "episode": 18,
-    "season": 1,
-    "title": "AI Engineer Anti-Patterns + more",
-    "description": "I show https://clawd.bot/ & WhatsApp integration.\n\nWe touch how type checking is not done enough in Python https://docs.astral.sh/ty/\n\nWe speculate what's the \"Next big thing\" in Infrastructure... better state management with https://stategraph.com/?\n\nhttps://handy.computer/ dictation (speech to text) is shown\n\nWe try capture what the the AI lifecycle looks like right now.\n\nShow notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing\n\nKai will be at https://fosdem.org/2026/ & https://cfgmgmtcamp.org/ghent2026/ next week ... say hello if you see me!",
-    "youtubeId": "0lQTnRKHVdM",
-    "youtubeUrl": "https://www.youtube.com/watch?v=0lQTnRKHVdM",
-    "uploadDate": "20260125",
-    "duration": 5343,
-    "slug": "018-ai-engineer-antipatterns-more"
+    "slug": "018-what-makes-a-good-ai-infrastructure-engineer"
   },
   {
     "episode": 19,
     "season": 1,
-    "title": "cfgmgmtcamp 2026 debrief",
-    "description": "Previous 2025 vlog: https://youtu.be/QQB6juzzIZU?si=5mrQi_ox8ds0ENp2\n\nI'll add more links as I find a decent internet connection!\n\nhttps://www.youtube.com/watch?v=yxzghm3Fdj8&t=10718s is Adam Jacob's AI talk\n\nCDK plan we were talking about: https://gist.github.com/kaihendry/ce6574744e161d4ba8ba283b8dada85c",
-    "youtubeId": "tvoTdenufAs",
-    "youtubeUrl": "https://www.youtube.com/watch?v=tvoTdenufAs",
-    "uploadDate": "20260204",
-    "duration": 2892,
-    "slug": "019-cfgmgmtcamp-2026-debrief"
+    "title": "AI Engineer Anti-Patterns + more",
+    "description": "I demonstrate https://clawd.bot/ & WhatsApp integration.\n\nWe touch how type checking is not done enough in Python https://docs.astral.sh/ty/\n\nWe speculate what's the \"Next big thing\" in Infrastructure... better state management with https://stategraph.com/?\n\nhttps://handy.computer/ dictation (speech to text) is shown\n\nWe try capture what the the AI lifecycle looks like right now.\n\nShow notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing\n\nKai will be at https://fosdem.org/2026/ & https://cfgmgmtcamp.org/ghent2026/ next week ... say HELLO if you see me!",
+    "youtubeId": "0lQTnRKHVdM",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0lQTnRKHVdM",
+    "uploadDate": "20260125",
+    "duration": 5343,
+    "slug": "019-ai-engineer-antipatterns-more"
   },
   {
     "episode": 20,
     "season": 1,
-    "title": "AI Vampire",
+    "title": "cfgmgmtcamp 2026 debrief",
+    "description": "Previous 2025 vlog: https://youtu.be/QQB6juzzIZU?si=5mrQi_ox8ds0ENp2\n\nI'll add more links as I find a decent internet connection!\n\nhttps://www.youtube.com/watch?v=yxzghm3Fdj8&t=10718s is Adam Jacob's AI talk\n\nCDK plan we were talking about: https://gist.github.com/kaihendry/ce6574744e161d4ba8ba283b8dada85c\n\nCORRECTION: When talking about the Framework laptop, it was the DESKTOP https://frame.work/gb/en/desktop\nFull talk: https://www.youtube.com/watch?v=oJDGZnTDWJo&t=44m25s",
+    "youtubeId": "tvoTdenufAs",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tvoTdenufAs",
+    "uploadDate": "20260204",
+    "duration": 2892,
+    "slug": "020-cfgmgmtcamp-2026-debrief"
+  },
+  {
+    "episode": 21,
+    "season": 1,
+    "title": "AI is a VAMPIRE",
     "description": "Do please Rate and share to keep us rewarded / motivated to share!\n\nShow notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0",
     "youtubeId": "6SqnMr5W3aU",
     "youtubeUrl": "https://www.youtube.com/watch?v=6SqnMr5W3aU",
     "uploadDate": "20260218",
     "duration": 4196,
-    "slug": "020-ai-vampire"
+    "slug": "021-ai-is-a-vampire"
+  },
+  {
+    "episode": 22,
+    "season": 1,
+    "title": "Jira is the AI adoption challenge",
+    "description": "The elephant in the room is Jira. How can we adopt AI in a structured way in an Enterprise?\n\nhttps://dabase.com/podcast/",
+    "youtubeId": "XGbRVRy4LAs",
+    "youtubeUrl": "https://www.youtube.com/watch?v=XGbRVRy4LAs",
+    "uploadDate": "20260226",
+    "duration": 3881,
+    "slug": "022-jira-is-the-ai-adoption-challenge"
   }
 ]
