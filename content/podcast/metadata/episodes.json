@@ -240,5 +240,16 @@
     "uploadDate": "20260226",
     "duration": 3881,
     "slug": "022-jira-is-the-ai-adoption-challenge"
+  },
+  {
+    "episode": 23,
+    "season": 1,
+    "title": "Validating AI output & Refactoring Infrastructure",
+    "description": "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0\n\nhttps://dabase.com/podcast/ for a summary",
+    "youtubeId": "5CIEYL5HzZI",
+    "youtubeUrl": "https://www.youtube.com/watch?v=5CIEYL5HzZI",
+    "uploadDate": "20260309",
+    "duration": 2126,
+    "slug": "023-validating-ai-output-refactoring-infrastructure"
   }
 ]
