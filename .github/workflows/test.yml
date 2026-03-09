@@ -15,6 +15,16 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+
+      - name: Build Hugo site
+        run: hugo
+
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -22,12 +32,12 @@ jobs:
           sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
           sudo chmod a+rx /usr/local/bin/yt-dlp
 
-      - name: Count episodes on published site
-        id: published
+      - name: Count episodes in built site
+        id: built
         run: |
-          RSS_COUNT=$(curl -s https://dabase.com/podcast/index.xml | rg -c "<item>")
+          RSS_COUNT=$(rg -c "<item>" public/podcast/index.xml)
           echo "count=$RSS_COUNT" >> $GITHUB_OUTPUT
-          echo "Published RSS episode count: $RSS_COUNT"
+          echo "Built RSS episode count: $RSS_COUNT"
 
       - name: Count available episodes in YouTube playlist
         id: youtube
@@ -40,12 +50,12 @@ jobs:
 
       - name: Validate episode counts match
         run: |
-          PUBLISHED_COUNT=${{ steps.published.outputs.count }}
+          BUILT_COUNT=${{ steps.built.outputs.count }}
           YT_COUNT=${{ steps.youtube.outputs.count }}
-          echo "Published episodes: $PUBLISHED_COUNT"
+          echo "Built episodes: $BUILT_COUNT"
           echo "YouTube episodes: $YT_COUNT"
-          if [ "$PUBLISHED_COUNT" != "$YT_COUNT" ]; then
-            echo "::error::Episode count mismatch! Published has $PUBLISHED_COUNT, YouTube has $YT_COUNT"
+          if [ "$BUILT_COUNT" != "$YT_COUNT" ]; then
+            echo "::error::Episode count mismatch! Built site has $BUILT_COUNT, YouTube has $YT_COUNT"
             exit 1
           else
             echo "Episode counts match!"
@@ -54,15 +64,14 @@ jobs:
       - name: Validate RSS feed structure
         run: |
           echo "Checking RSS feed structure..."
-          curl -s https://dabase.com/podcast/index.xml > /tmp/rss.xml
 
           # Check for required iTunes tags
-          if ! rg -q "<itunes:author>" /tmp/rss.xml; then
+          if ! rg -q "<itunes:author>" public/podcast/index.xml; then
             echo "::error::Missing itunes:author tag"
             exit 1
           fi
 
-          if ! rg -q "<itunes:image" /tmp/rss.xml; then
+          if ! rg -q "<itunes:image" public/podcast/index.xml; then
             echo "::error::Missing itunes:image tag"
             exit 1
           fi
@@ -72,7 +81,7 @@ jobs:
       - name: Check all audio URLs exist
         run: |
           echo "Checking all audio URLs from RSS feed..."
-          URLS=$(rg -o 'url="https://dabase\.com[^"]+\.mp3' /tmp/rss.xml | sed 's/url="//')
+          URLS=$(rg -o 'url="https://dabase\.com[^"]+\.mp3' public/podcast/index.xml | sed 's/url="//')
 
           if [ -z "$URLS" ]; then
             echo "::error::No audio URLs found in RSS feed!"
