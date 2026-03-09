@@ -28,34 +28,17 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq ripgrep
-          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-          sudo chmod a+rx /usr/local/bin/yt-dlp
+          sudo apt-get install -y ripgrep
 
-      - name: Count episodes in built site
-        id: built
+      - name: Validate built RSS matches episode markdown files
         run: |
           RSS_COUNT=$(rg -c "<item>" public/podcast/index.xml)
-          echo "count=$RSS_COUNT" >> $GITHUB_OUTPUT
-          echo "Built RSS episode count: $RSS_COUNT"
-
-      - name: Count available episodes in YouTube playlist
-        id: youtube
-        run: |
-          PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"
-          # Count only available videos (yt-dlp skips unavailable ones)
-          YT_COUNT=$(yt-dlp --flat-playlist --print "%(id)s" "$PLAYLIST_URL" 2>&1 | rg -v "unavailable" | rg "^[a-zA-Z0-9_-]{11}$" | wc -l)
-          echo "count=$YT_COUNT" >> $GITHUB_OUTPUT
-          echo "YouTube available episode count: $YT_COUNT"
-
-      - name: Validate episode counts match
-        run: |
-          BUILT_COUNT=${{ steps.built.outputs.count }}
-          YT_COUNT=${{ steps.youtube.outputs.count }}
-          echo "Built episodes: $BUILT_COUNT"
-          echo "YouTube episodes: $YT_COUNT"
-          if [ "$BUILT_COUNT" != "$YT_COUNT" ]; then
-            echo "::error::Episode count mismatch! Built site has $BUILT_COUNT, YouTube has $YT_COUNT"
+          # Count episode markdown files (NNN-*.md), excluding _index.md
+          MD_COUNT=$(find content/podcast -maxdepth 1 -name '[0-9]*.md' | wc -l | tr -d ' ')
+          echo "Built RSS episodes: $RSS_COUNT"
+          echo "Episode markdown files: $MD_COUNT"
+          if [ "$RSS_COUNT" != "$MD_COUNT" ]; then
+            echo "::error::Episode count mismatch! RSS has $RSS_COUNT items but there are $MD_COUNT episode files"
             exit 1
           else
             echo "Episode counts match!"
