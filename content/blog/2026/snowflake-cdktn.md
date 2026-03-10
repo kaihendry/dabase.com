@@ -35,14 +35,15 @@ to keep using the Terraform provider ecosystem.
 
 - **Type checking and IDE support**: autocomplete, compile-time checks, and
   first-class language tooling.
-- **Real refactoring**: rename symbols, extract abstractions, and reorganize IaC
-  like normal software.
+- **Real refactoring**: rename symbols, extract abstractions, and reorganize
+  IaC like normal software.
 - **Testability**: infrastructure can be unit-tested with standard test
   frameworks.
 - **Better abstraction for complex systems**: CDK constructs are reusable,
   composable modules instead of repeating verbose config.
-- **App + infra workflows**: for example with Lambda-style workloads, CDK
-  handles packaging and bundling ergonomics that are painful in raw config.
+- **Level 2 constructs**: CDK is much more flexible to express Organisational
+  patterns and guard rails that would be very difficult to do with Terraform.
+
 
 For complex infrastructure, CDK gives me the software engineering ergonomics I
 want, while Terraform providers still do the provisioning.
