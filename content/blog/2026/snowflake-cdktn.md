@@ -19,17 +19,17 @@ My proof-of-concept repo:
 
 https://github.com/kaihendry/snowflake-cdktn
 
-## Why this matters now
+## Hashicorp drops the Cloud Development Kit
 
-HashiCorp deprecated CDKTF and archived the upstream repository on **December
-10, 2025**:
+HashiCorp deprecated CDKTF and archived the upstream repository the same day, on December 10, 2025
 
 - https://github.com/hashicorp/terraform-cdk/commit/a0c56138e2b4c7b6c128bd7ba08a8e317df852af
 - https://github.com/hashicorp/terraform-cdk
 
-CDK Terrain is the community continuation. In practice, it preserves the CDKTF
-workflow and gives a more CDK-consistent way to keep using the Terraform
-provider ecosystem.
+CDK Terrain is the [community
+continuation](https://github.com/open-constructs/cdk-terrain/commits/main/). In
+practice, it preserves the CDKTF workflow and gives a more CDK-consistent way
+to keep using the Terraform provider ecosystem.
 
 ## Why I still want CDK over plain Terraform
 
@@ -47,5 +47,4 @@ provider ecosystem.
 For complex infrastructure, CDK gives me the software engineering ergonomics I
 want, while Terraform providers still do the provisioning.
 
-If you are evaluating Snowflake IaC options, try CDK Terrain before planning a
-migration to plain Terraform.
+If you need to deploy Snowflake at scale, CDK is still a viable option.
