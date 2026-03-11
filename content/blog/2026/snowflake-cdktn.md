@@ -10,10 +10,8 @@ non-AWS resources.
 Then HashiCorp (now owned by IBM) sunsets CDKTF, and suddenly it feels like you
 must run both CDK and plain Terraform/HCL in the same pipelines.
 
-That is the panic moment. But that is not where things end up.
-
 Using [CDK Terrain](https://cdktn.io/), you can consume the **official**
-Snowflake Terraform provider and stay in a CDK-first workflow.
+Snowflake Terraform provider and stay in a **CDK workflow**.
 
 My proof-of-concept repo:
 
@@ -21,7 +19,7 @@ https://github.com/kaihendry/snowflake-cdktn
 
 ## Hashicorp drops the Cloud Development Kit
 
-HashiCorp deprecated CDKTF and archived the upstream repository the same day, on December 10, 2025
+HashiCorp deprecated CDKTF and archived the upstream repository on the same day, on December 10, 2025
 
 - https://github.com/hashicorp/terraform-cdk/commit/a0c56138e2b4c7b6c128bd7ba08a8e317df852af
 - https://github.com/hashicorp/terraform-cdk
@@ -42,10 +40,11 @@ to keep using the Terraform provider ecosystem.
 - **Better abstraction for complex systems**: CDK constructs are reusable,
   composable modules instead of repeating verbose config.
 - **Level 2 constructs**: CDK is much more flexible to express Organisational
-  patterns and guard rails that would be very difficult to do with Terraform.
+  patterns and guard rails that would be very difficult to do with Terraform modules.
 
 
-For complex infrastructure, CDK gives me the software engineering ergonomics I
-want, while Terraform providers still do the provisioning.
+For complex infrastructure, CDK gives me the software engineering ergonomics
+you want, while Terraform providers still do the provisioning.
 
-If you need to deploy Snowflake at scale, CDK is still a viable option.
+Thanks to community efforts with [CDK Terrain](https://cdktn.io/), CDK is still
+a viable option to deploy non-AWS resources.
