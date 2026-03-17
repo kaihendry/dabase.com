@@ -262,5 +262,16 @@
     "uploadDate": "20260312",
     "duration": 4002,
     "slug": "024-ais-broken-mirror"
+  },
+  {
+    "episode": 25,
+    "season": 1,
+    "title": "How can we trust AI?",
+    "description": "https://news.ycombinator.com/item?id=47408205\n\nShow notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0#heading=h.ulxx2eqh7qsr",
+    "youtubeId": "Mpj-ic1WWE8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Mpj-ic1WWE8",
+    "uploadDate": "20260317",
+    "duration": 3231,
+    "slug": "025-how-can-we-trust-ai"
   }
 ]
