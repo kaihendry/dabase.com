@@ -273,5 +273,16 @@
     "uploadDate": "20260317",
     "duration": 3231,
     "slug": "025-how-can-we-trust-ai"
+  },
+  {
+    "episode": 26,
+    "season": 1,
+    "title": "If it Hurts, do it More Often (with AI)",
+    "description": "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0\n\n\n00:00 - Introduction\n02:00 - Automating AI Agents\n04:20 - Auto Research Role\n07:15 - Building CLI Tools\n09:50 - AI Behavior Control\n13:00 - Voice & AI Transcription\n15:45 - GitHub Security\n18:50 - Multi-cloud Management\n22:50 - Disaster Recovery Testing\n28:30 - Cost Optimization\n33:00 - Terraform vs CDK\n38:45 - AI Evaluations\n44:00 - AI in Enterprise\n50:00 - Ethical Considerations\n55:00 - Kubernetes Strategies\n58:00 - DevOps Myths\n62:00 - Cloud Security Insights\n66:00 - Closing Thoughts",
+    "youtubeId": "nze_Id-PpYM",
+    "youtubeUrl": "https://www.youtube.com/watch?v=nze_Id-PpYM",
+    "uploadDate": "20260325",
+    "duration": 3663,
+    "slug": "026-if-it-hurts-do-it-more-often-with-ai"
   }
 ]
