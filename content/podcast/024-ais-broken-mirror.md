@@ -13,7 +13,7 @@ podcast:
   episodeType: "full"
   duration: 4002
   audioUrl: "/podcast/audio/024-ais-broken-mirror.mp3"
-  audioSize: 0
+  audioSize: 96054956
   youtubeId: "glx4mkYRt7U"
   youtubeUrl: "https://www.youtube.com/watch?v=glx4mkYRt7U"
 ---
