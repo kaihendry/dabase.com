@@ -295,5 +295,16 @@
     "uploadDate": "20260407",
     "duration": 4243,
     "slug": "027-distracted-by-ai"
+  },
+  {
+    "episode": 28,
+    "season": 1,
+    "title": "Adversarial Agents from London",
+    "description": "",
+    "youtubeId": "Z6sGEwXMN0w",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Z6sGEwXMN0w",
+    "uploadDate": "20260409",
+    "duration": 2125,
+    "slug": "028-adversarial-agents-from-london"
   }
 ]
