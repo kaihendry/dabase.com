@@ -12,7 +12,7 @@ I volunteered (associate) at [AI Engineer Europe](https://www.ai.engineer/europe
 
 I arrived early for the Anthropic "How to Build Agents That Run for Hours (Without Losing the Plot)". I assumed we would go through https://github.com/anthropics/claude-quickstarts/tree/main/autonomous-coding and ask questions, but it was more of a presentation on the whole "Adverserial Agent" pattern.
 
-The big idea (as I understood it) was to have a Generator (not good at critique) <-> Evaluator (possible to be critical) aka the "adverserial eval", two agents runnings in tandem.
+The big idea (as I understood it) was to have a Generator (not good at critique) <-> Evaluator (possible to be critical) aka the "adversarial eval", two agents running in tandem.
 
 It was interesting how they mentioned this is "Agile pilled" with:
 * Sprints
@@ -27,7 +27,7 @@ Observability and team collaboration isn't quite figured out and this approach d
 
 ### Pydantic
 
-I drifted into [@samuelcolvin](https://x.com/samuelcolvin)'s workshop and I was glad I did. Tbh I'm big fan of [Pydantic model validation](https://pydantic.dev/docs/validation/latest/concepts/models/), and I had no idea about Logfire and these other AI ventures. This was a proper workshop where we effectively refined a prompt to get achieve better results with a model.
+I drifted into [@samuelcolvin](https://x.com/samuelcolvin)'s workshop and I was glad I did. I'm a big fan of [Pydantic model validation](https://pydantic.dev/docs/validation/latest/concepts/models/), and I had no idea about Logfire and these other AI ventures. This was a proper workshop where we effectively refined a prompt to achieve better results with a model.
 
 I learned about [GEPA - Genetic Pareto](https://pydantic.dev/articles/prompt-optimization-with-gepa) and associated Pydantic AI tooling, though tbh this use case was a bit specialised to me. Since I'm a frontier model junkee so I don't need to optimise the use of existing models.
 
@@ -47,7 +47,7 @@ I recorded a Podcast **from a LONDON BUS** otw to the event:
 
 {{< youtube Z6sGEwXMN0w >}}
 
-I'm glad I volunteered. Shout out to the organiser Natalie for being accomodating with my dress code. Was great to meet other volunteers like [@oalbacha](https://x.com/oalbacha) & [@sergiopesch](https://x.com/sergiopesch).
+I'm glad I volunteered. Shout out to the organiser Natalie for being accommodating with my dress code. Was great to meet other volunteers like [@oalbacha](https://x.com/oalbacha) & [@sergiopesch](https://x.com/sergiopesch).
 
 ### Vercel
 
@@ -94,7 +94,7 @@ I went to join my family at 4PM since I was exhausted by then...
 
 ### Gemma, DeepMind's Family of Open Models
 
-TIL thanks to [@osanseviero](https://x.com/osanseviero) that Google publishes capable open weight models. The only use case I think of using it for is Automatic Number Plate Recognition (ANPR), but an attendee said that probably wouldn't work.
+I learned from [@osanseviero](https://x.com/osanseviero) that Google publishes capable open weight models. The only use case I think of using it for is Automatic Number Plate Recognition (ANPR), but an attendee said that probably wouldn't work.
 
 ### The Future of MCP
 
@@ -102,7 +102,7 @@ TIL thanks to [@osanseviero](https://x.com/osanseviero) that Google publishes ca
 
 ### AgentCraft: Putting the Orc in Agent Orchestration
 
-This was one of the most creative / insane talks I've ever witnessed. Who knew that those countless hours playing Warcraft (now Starcraft 2) as a kid has equipped me to orchestrate Agents? Amazing [Ido Salomon](https://x.com/idosal1) 👏
+This was one of the most creative / insane talks I've ever witnessed. Who knew that those countless hours playing Warcraft (now Starcraft 2) as a kid has equipped me to orchestrate Agents? Amazing [Ido Salomon](https://x.com/idosal1).
 
 ### Building pi in a World of Slop
 
@@ -136,7 +136,7 @@ https://qeiicentre.london/ was in a fantastic location, but it was a little weir
 
 {{< x user="lucasmeijer" id="2042994862555812192" >}}
 
-The wifi held up really well, but some domains were blocked like the TLD .dev bizaarely.
+The wifi held up really well, but some domains were blocked — the TLD .dev, bizarrely.
 
 I noticed the toilets all were missing the hand driers, I presume because of COVID?
 
@@ -154,4 +154,4 @@ https://www.ai.engineer/ by [@swyx](https://x.com/swyx) was amazing. I hope to a
 
 I came to conference with a lot of FOMO and anxiety. Through the various presentations and conversations, I feel a lot more confident about my experience with AI. 
 
-I'm going to endevour to get back to basics, use simpler tools like https://shittycodingagent.ai/ and remind myself to slow down and have fun with this.
+I'm going to endeavour to get back to basics, use simpler tools like https://shittycodingagent.ai/ and remind myself to slow down and have fun with this.
