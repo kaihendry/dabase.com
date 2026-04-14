@@ -70,14 +70,88 @@ The legend [Peter](https://x.com/steipete) seemed a bit exasperated and I feel l
 
 Whilst helping out with crowd control in Rafael Levi's Your Agent's Biggest Lie: "I Searched the Web", I learned about https://brightdata.com/ai/mcp-server which after testing, is able to scrape https://www.screwfix.com/ aka bypass Cloudflare's captchas IIUC! WIN!
 
-## Key Themes
+### Reverse engineering a Viking VOIP phone protocol with Claude Code
 
-## What I'm Taking Away
+Again I was manning the door, but this interested me greatly since I have a couple of VOIP phones I need to maintain! The https://elevenlabs.io/ demo where you needed to answer some questions with an AI with Michael Cain's voice (used with permissions) was VERY impressive. One of the questions was about a Deepmind game, I answered "Baduk", it said wrong answer, the right answer "Go", I protested and the quiz corrected the score. Amazing.
 
+### Why Your AI UX Is Broken (and It's Not the Model's Fault)
+
+[@christensencode](https://x.com/christensencode) showed how to keep sessions alive with [@ablyrealtime](https://x.com/ablyrealtime)'s AI Transport, which is impressive. Atm I use a messy combo of Whatsapp with Openclaw and https://cmd-ctrl.ai/ to keep in contact with my sessions, though this technology seemed awesome for building something that scales to team members and more.
+
+<img src="https://s.natalian.org/2026-04-14/paddy.avif" alt="Paddy and I">
+
+Was great meeting with my ex-boss & Ably CTO. An incredible guy.
+
+### The Production AI Playbook: Deploying Agents at Enterprise Scale
+
+This was long but really well structured presentation, which kept you at the end to get the artefacts: https://drive.google.com/drive/folders/1acC5n1iE_63onW0S6960cYsAdHOMxVQE
+
+Lots of good advice for consultants like myself to deliver successful AI deployments.
+
+I went to join my family at 4PM since I was exhausted by then...
+
+## Talks Friday April 10th 2026
+
+### Gemma, DeepMind's Family of Open Models
+
+TIL thanks to [@osanseviero](https://x.com/osanseviero) that Google publishes capable open weight models. The only use case I think of using it for is Automatic Number Plate Recognition (ANPR), but an attendee said that probably wouldn't work.
+
+### The Future of MCP
+
+[David Soria Parra](https://x.com/dsp_) came out fighting with "it fucking works" MCP and I loved it. He came across an Alpha technologist, super driven and good to see. MCP is very much alive!
+
+### AgentCraft: Putting the Orc in Agent Orchestration
+
+This was one of the most creative / insane talks I've ever witnessed. Who knew that those countless hours playing Warcraft (now Starcraft 2) as a kid has equipped me to orchestrate Agents? Amazing [Ido Salomon](https://x.com/idosal1) 👏
+
+### Building pi in a World of Slop
+
+This was my favourite talk and what I wanted to hear: "Lets slow the fuck down!"
+
+{{< x user="badlogicgames" id="2042683257884467479" >}}
+
+### The Friction Is Your Judgment
+
+This felt like a follow on from Mario's talk. I was loving it.
+
+{{< x user="kaihendry" id="2042532814327828812" >}}
+
+### Every API Is a Tool for Agents
+
+Finally I met [@mattzcarey](https://x.com/mattzcarey) IRL. My take away: Cloudflare are sorting out their confusing CLI. May it compete with the aws cli!
+
+### Expo
+
+Spent time chatting with people for a change! I was impressed by https://arize.com/ observability demoed to me by the legend [Laurie Voss](https://x.com/seldo.)
+
+### Let’s Talk About FOMAT – Fear of Missing Agent Time
+
+<img src="https://s.natalian.org/2026-04-14/cmdctrl.avif">
+
+I met bit.ly founder [Michael](https://x.com/mrwoofster) earler and I supported him by attending his talk. I am now a https://cmd-ctrl.ai/ user and I love it!
 
 ## The venue
 
+https://qeiicentre.london/ was in a fantastic location, but it was a little weird!
+
 {{< x user="lucasmeijer" id="2042994862555812192" >}}
 
-
 The wifi held up really well, but some domains were blocked like the TLD .dev bizaarely.
+
+I noticed the toilets all were missing the hand driers, I presume because of COVID?
+
+<img src="https://s.natalian.org/2026-04-14/drier.avif" alt="case of the missing hand driers">
+
+One of the overflow rooms had a leak. I ended up using the stairs a lot of the time since they were replacing the elevators during the conference!
+
+The navigation of the QE2 venue was quite confusing. I understood where things were on day three.
+
+## AI Engineer conference
+
+https://www.ai.engineer/ by [@swyx](https://x.com/swyx) was amazing. I hope to attend more events in future. Best AI conference by far and I am feeling much better for it.
+
+## My take away
+
+I came to conference with a lot of FOMO and anxiety. Through the various presentations and conversations, I feel a lot more confident about my experience with AI. 
+
+I'm going to endevour to get back to basics, use simpler tools like https://shittycodingagent.ai/ and remind myself to slow down and have fun with this.
