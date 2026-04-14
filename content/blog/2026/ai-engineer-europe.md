@@ -98,7 +98,7 @@ I learned from [@osanseviero](https://x.com/osanseviero) that Google publishes c
 
 ### The Future of MCP
 
-[David Soria Parra](https://x.com/dsp_) came out fighting with "it fucking works" MCP and I loved it. David came across as an "Alpha" technologist, super driven and good to see. MCP is very much alive!
+[David Soria Parra](https://x.com/dsp_) came out fighting with "it fucking works" MCP and I loved it. David comes across as an "Alpha" technologist, super driven and good to see. MCP is very much alive!
 
 ### AgentCraft: Putting the Orc in Agent Orchestration
 
