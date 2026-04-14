@@ -29,7 +29,7 @@ Observability and team collaboration isn't quite figured out and this approach d
 
 I drifted into [@samuelcolvin](https://x.com/samuelcolvin)'s workshop and I was glad I did. I'm a big fan of [Pydantic model validation](https://pydantic.dev/docs/validation/latest/concepts/models/), and I had no idea about Logfire and these other AI ventures. This was a proper workshop where we effectively refined a prompt to achieve better results with a model.
 
-I learned about [GEPA - Genetic Pareto](https://pydantic.dev/articles/prompt-optimization-with-gepa) and associated Pydantic AI tooling, though tbh this use case was a bit specialised to me. Since I'm a frontier model addict so I don't need to optimise the use of existing models.
+I learned about [GEPA - Genetic Pareto](https://pydantic.dev/articles/prompt-optimization-with-gepa) and associated Pydantic AI tooling, though tbh this use case was a bit specialised to me. Since I'm a frontier model addict,  I don't need to optimise the use of existing models. Useful nonetheless to know in case I work with a client who wants to for cost / scale reasons.
 
 Loved how [hands-on](https://github.com/samuelcolvin) Sam was.
 
