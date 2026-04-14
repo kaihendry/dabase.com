@@ -128,7 +128,7 @@ Spent time chatting with people for a change! I was impressed by https://arize.c
 
 <img src="https://s.natalian.org/2026-04-14/cmdctrl.avif">
 
-I met bit.ly founder [Michael](https://x.com/mrwoofster) earlier and I supported him by attending his talk. I am now a https://cmd-ctrl.ai/ user and I love it!
+I met bit.ly veteran [Michael](https://x.com/mrwoofster) earlier and I supported him by attending his talk. I am now a https://cmd-ctrl.ai/ user and I love it!
 
 ## The venue
 
