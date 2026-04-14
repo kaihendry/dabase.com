@@ -1,10 +1,10 @@
 #!/bin/sh
 # Download audio from YouTube (idempotent - checks local, then S3, then downloads)
-# $1 = target (e.g., audio/001-episode-title.mp3)
+# $1 = target (e.g., .audio/001-episode-title.mp3)
 # $2 = basename without extension
 
 SLUG=$(basename "$2")
-LOCAL_PATH="audio/${SLUG}.mp3"
+LOCAL_PATH=".audio/${SLUG}.mp3"
 S3_PATH="s3://dabase.com/podcast/audio/${SLUG}.mp3"
 
 # Check 1: Local copy exists and is larger than 1MB (valid MP3)
@@ -23,7 +23,7 @@ if aws s3 ls "$S3_PATH" >/dev/null 2>&1; then
     # Only use if file is larger than 1MB (valid MP3, not placeholder)
     if [ "$S3_SIZE" -gt 1000000 ] 2>/dev/null; then
         echo "Downloading from S3: $SLUG (${S3_SIZE} bytes)" >&2
-        mkdir -p audio
+        mkdir -p .audio
         aws s3 cp "$S3_PATH" "$3" --only-show-errors
         exit 0
     fi
@@ -43,7 +43,7 @@ fi
 
 echo "Downloading audio for $SLUG from YouTube..." >&2
 
-mkdir -p audio
+mkdir -p .audio
 
 # Download and convert to MP3 192kbps
 OUTPUT_BASE="${3%.mp3}"

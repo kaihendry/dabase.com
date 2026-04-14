@@ -26,8 +26,8 @@ DURATION=$(echo "$EPISODE_JSON" | jq -r '.duration')
 UPLOAD_DATE=$(echo "$EPISODE_JSON" | jq -r '.uploadDate')
 
 # Audio file info
-AUDIO_FILE="audio/${SLUG}.mp3"
-AUDIO_URL="/podcast/audio/${SLUG}.mp3"
+AUDIO_FILE=".audio/${SLUG}.mp3"
+AUDIO_URL="https://dabase.com/podcast/audio/${SLUG}.mp3"
 
 # YouTube thumbnail (hqdefault is 480x360, always available)
 THUMBNAIL_URL="https://img.youtube.com/vi/${YOUTUBE_ID}/hqdefault.jpg"

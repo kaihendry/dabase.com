@@ -12,7 +12,7 @@ echo "Generating episode markdown files..." >&2
 redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's/$/.md/')
 
 echo "Downloading audio files..." >&2
-redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|audio/&.mp3|')
+redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.audio/&.mp3|')
 
 # Step 3: Upload to S3
 redo-ifchange upload-audio

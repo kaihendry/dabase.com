@@ -2,7 +2,7 @@
 # Upload all audio files to S3
 # Dependencies: aws cli configured
 
-AUDIO_DIR="audio"
+AUDIO_DIR=".audio"
 S3_BUCKET="s3://dabase.com/podcast/audio/"
 S3_REGION="ap-southeast-1"
 

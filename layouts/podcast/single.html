@@ -23,13 +23,15 @@
 
 {{/* Audio player */}}
 {{ with .Params.podcast }}
+{{ $audioUrl := .audioUrl }}
+{{ if hasPrefix $audioUrl "/" }}{{ $audioUrl = printf "https://dabase.com%s" $audioUrl }}{{ end }}
 <audio controls preload="metadata" poster="{{ $.Params.image }}" style="width: 100%; margin: 2rem 0;">
-  <source src="{{ .audioUrl }}" type="audio/mpeg">
+  <source src="{{ $audioUrl }}" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
 <p>
-  <a href="{{ .audioUrl }}" download>Download MP3</a> |
+  <a href="{{ $audioUrl }}" download>Download MP3</a> |
   <a href="{{ .youtubeUrl }}" target="_blank">Watch on YouTube</a>
 </p>
 {{ end }}
