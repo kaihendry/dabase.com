@@ -10,7 +10,7 @@ I volunteered (associate) at [AI Engineer Europe](https://www.ai.engineer/europe
 
 ### Anthropic
 
-I arrived early for the Anthropic "How to Build Agents That Run for Hours (Without Losing the Plot)". I assumed we would go through https://github.com/anthropics/claude-quickstarts/tree/main/autonomous-coding and ask questions, but it was more of a presentation on the whole "Adverserial Agent" pattern.
+I arrived early for the Anthropic "How to Build Agents That Run for Hours (Without Losing the Plot)". I assumed we would go through https://github.com/anthropics/claude-quickstarts/tree/main/autonomous-coding and ask questions, but it was more of a presentation on the whole "Adversarial Agent" pattern.
 
 The big idea (as I understood it) was to have a Generator (not good at critique) <-> Evaluator (possible to be critical) aka the "adversarial eval", two agents running in tandem.
 
@@ -23,7 +23,7 @@ Though I couldn't help think this is NOT [Agile as I know it](https://agilemanif
 
 [@AshPrabaker](https://x.com/AshPrabaker) had a curious recommendation of using JSON since the agent (Claude) is less likely to manipulate it over Markdown. He recommended Playwright MCP (I was a little incredulous about this) and reading traces. I noticed the nomenclature Anthropic were using, they use the word **rubric** a lot which I understand as a "prompt".
 
-Observability and team collaboration isn't quite figured out and this approach doesn't make sense on Brown field projects. A lot of food for thought and the whole experience helped my FOMO, since I feel my own AI journey was pretty close to what they and others were doing.
+Observability and team collaboration isn't quite figured out and this approach doesn't make sense on brownfield projects. A lot of food for thought and the whole experience helped my FOMO, since I feel my own AI journey was pretty close to what they and others were doing.
 
 ### Pydantic
 
@@ -31,7 +31,7 @@ I drifted into [@samuelcolvin](https://x.com/samuelcolvin)'s workshop and I was 
 
 I learned about [GEPA - Genetic Pareto](https://pydantic.dev/articles/prompt-optimization-with-gepa) and associated Pydantic AI tooling, though tbh this use case was a bit specialised to me. Since I'm a frontier model addict so I don't need to optimise the use of existing models.
 
-Loved how [hands on](https://github.com/samuelcolvin) Sam was.
+Loved how [hands-on](https://github.com/samuelcolvin) Sam was.
 
 ### Google - Building conversational agents
 
@@ -51,7 +51,7 @@ I'm glad I volunteered. Shout out to the organiser Natalie for being accommodati
 
 ### Vercel
 
-Finally get to see [@cramforce](https://x.com/cramforce) IRL. Love his talk, and his [final slide](https://youtu.be/O_IMsEg91g8?t=2465) about:
+Finally get to see [@cramforce](https://x.com/cramforce) IRL. Loved his talk (and Vercel aesthetics), and his [final slide](https://youtu.be/O_IMsEg91g8?t=2465) about:
 
 1. Future A - the labs win
 2. Future B - we win 
@@ -60,7 +60,7 @@ Finally get to see [@cramforce](https://x.com/cramforce) IRL. Love his talk, and
 
 ### OpenAI
 
-Listening to [Ryan Lopopolo](https://x.com/_lopopolo) felt like I was in the Anthropic workshop again the day before. Harness, get agents to do things et al.
+Listening to [Ryan Lopopolo](https://x.com/_lopopolo) felt like I was in the Anthropic workshop again the day before. Harness, get agents to do things, etc.
 
 ### OpenClaw
 
@@ -72,7 +72,7 @@ Whilst helping out with crowd control in Rafael Levi's Your Agent's Biggest Lie:
 
 ### Reverse engineering a Viking VOIP phone protocol with Claude Code
 
-Again I was manning the door, but this interested me greatly since I have a couple of VOIP phones I need to maintain! The https://elevenlabs.io/ demo where you needed to answer some questions with an AI with Michael Cain's voice (used with permissions) was VERY impressive. One of the questions was about a Deepmind game, I answered "Baduk", it said wrong answer, the right answer "Go", I protested and the quiz corrected the score. Amazing.
+Again I was manning the door, but this interested me greatly since I have a couple of VOIP phones I need to maintain! The https://elevenlabs.io/ demo where you needed to answer some questions with an AI with Michael Caine's voice (used with permissions) was VERY impressive. One of the questions was about a Deepmind game, I answered "Baduk", it said wrong answer, the right answer "Go", I protested and the quiz corrected the score. Amazing.
 
 ### Why Your AI UX Is Broken (and It's Not the Model's Fault)
 
@@ -84,7 +84,7 @@ Was great meeting with my ex-boss & Ably CTO Paddy. An incredible guy.
 
 ### The Production AI Playbook: Deploying Agents at Enterprise Scale
 
-This was long but really well structured presentation, which kept you baited the end (like a raffle) to get the artefacts: https://drive.google.com/drive/folders/1acC5n1iE_63onW0S6960cYsAdHOMxVQE
+This was long but really well structured presentation, which kept you baited to the end (like a raffle) to get the artefacts: https://drive.google.com/drive/folders/1acC5n1iE_63onW0S6960cYsAdHOMxVQE
 
 Lots of good advice for consultants like myself to deliver successful AI deployments.
 
@@ -94,7 +94,7 @@ I went to join my family at 4PM since I was exhausted by then...
 
 ### Gemma, DeepMind's Family of Open Models
 
-I learned from [@osanseviero](https://x.com/osanseviero) that Google publishes capable open weight models. The only use case I think of using it for is Automatic Number Plate Recognition (ANPR), but an attendee said that probably wouldn't work.
+I learned from [@osanseviero](https://x.com/osanseviero) that Google publishes capable open weight models. The only use case I could think of using it for is Automatic Number Plate Recognition (ANPR), but an attendee said that probably wouldn't work.
 
 ### The Future of MCP
 
@@ -128,7 +128,7 @@ Spent time chatting with people for a change! I was impressed by https://arize.c
 
 <img src="https://s.natalian.org/2026-04-14/cmdctrl.avif">
 
-I met bit.ly founder [Michael](https://x.com/mrwoofster) earler and I supported him by attending his talk. I am now a https://cmd-ctrl.ai/ user and I love it!
+I met bit.ly founder [Michael](https://x.com/mrwoofster) earlier and I supported him by attending his talk. I am now a https://cmd-ctrl.ai/ user and I love it!
 
 ## The venue
 
