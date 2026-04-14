@@ -152,6 +152,6 @@ https://www.ai.engineer/ by [@swyx](https://x.com/swyx) & pals was a triumph. Be
 
 ## My take away
 
-I came to this conference with a lot of FOMO and anxiety. After the presentations and conversations, I feel confident about my experience with AI. 
+I came to this conference with a lot of FOMO and imposters syndrome. After the presentations and conversations, I feel confident about my experience with AI. 
 
 I'm going to endeavour to get back to basics, use simpler tools like https://shittycodingagent.ai/ and remind myself to slow down and have fun with this.
