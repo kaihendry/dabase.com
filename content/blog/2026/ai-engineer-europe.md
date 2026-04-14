@@ -64,7 +64,7 @@ Listening to [Ryan Lopopolo](https://x.com/_lopopolo) felt like I was in the Ant
 
 ### OpenClaw
 
-The legend [Peter](https://x.com/steipete) seemed a bit exasperated and I feel like there was nothing new in this presentation. Still moaning about crazy CVEs. I didn't see a path forward except for Peter to take a well earned holiday!
+The legend [Peter](https://x.com/steipete) seemed a bit exasperated and I feel like there was nothing new in this presentation. Maybe AI will finally cut through the CVE noise and surface what actually matters.
 
 ### Scraping the Web
 
