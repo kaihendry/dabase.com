@@ -300,11 +300,22 @@
     "episode": 28,
     "season": 1,
     "title": "Adversarial Agents from London",
-    "description": "",
+    "description": "from a London bus and Vincent in Vietnam!\n\nKai is attending https://www.ai.engineer/europe/schedule",
     "youtubeId": "Z6sGEwXMN0w",
     "youtubeUrl": "https://www.youtube.com/watch?v=Z6sGEwXMN0w",
     "uploadDate": "20260409",
     "duration": 2125,
     "slug": "028-adversarial-agents-from-london"
+  },
+  {
+    "episode": 29,
+    "season": 1,
+    "title": "Spec Driven Discovery",
+    "description": "https://github.com/anthropics/claude-quickstarts/blob/main/autonomous-coding/prompts/app_spec.txt\n\nhttps://dabase.com/blog/2026/ai-engineer-europe/\n\nhttps://cmd-ctrl.ai/\n\n0:00 - Introduction and Camera Setup\n0:11 - Opus 4.7 and Android News\n1:06 - Caching and Performance Issues\n3:09 - Anthropic API Key Concerns\n4:08 - AI Engineer Conference Insights\n6:36 - Claude Code Desktop App Features\n8:07 - Command-Control App Overview\n9:30 - Security and API Key Management\n21:27 - Rust Ecosystem and Left-Pad Incident\n47:42 - Spec-Driven Development Discussion\n78:14 - AI and Project Management",
+    "youtubeId": "8tdxpecX2B8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8tdxpecX2B8",
+    "uploadDate": "20260417",
+    "duration": 5185,
+    "slug": "029-spec-driven-discovery"
   }
 ]

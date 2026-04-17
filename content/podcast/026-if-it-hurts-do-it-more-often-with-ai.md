@@ -30,7 +30,7 @@ podcast:
   season: 1
   episodeType: "full"
   duration: 3663
-  audioUrl: "/podcast/audio/026-if-it-hurts-do-it-more-often-with-ai.mp3"
+  audioUrl: "https://dabase.com/podcast/audio/026-if-it-hurts-do-it-more-often-with-ai.mp3"
   audioSize: 87920109
   youtubeId: "nze_Id-PpYM"
   youtubeUrl: "https://www.youtube.com/watch?v=nze_Id-PpYM"
