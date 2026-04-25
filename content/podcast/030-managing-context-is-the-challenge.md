@@ -1,6 +1,6 @@
 ---
 title: "Managing context is the challenge"
-date: 2026-04-25T12:00:00Z
+date: 2026-04-25T00:00:00Z
 description: "https://dabase.com/podcast/
 
 Chapters
