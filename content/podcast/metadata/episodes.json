@@ -317,5 +317,16 @@
     "uploadDate": "20260417",
     "duration": 5185,
     "slug": "029-spec-driven-discovery"
+  },
+  {
+    "episode": 30,
+    "season": 1,
+    "title": "Managing context is the challenge",
+    "description": "https://dabase.com/podcast/\n\nChapters\n\n00:00 Labor Day and Global Holidays\n19:10 AI and the Future of Work\n22:05 AI's Efficacy and Control\n24:48 AI's Role in Development\n27:25 Community Feedback and Expectations\n30:05 The Impact of AI on Business\n32:33 Maintaining AI-Driven Projects\n35:11 The Evolution of AI Models\n37:57 Navigating AI's Challenges\n40:39 Future of AI and User Experience\n45:37 Enhancing Workflow with Spec Logic\n47:10 The Role of Adversarial Review Agents\n49:46 Balancing Context and Task Management\n52:13 Navigating Team Dynamics and Quality Control\n55:31 The Tension Between Standardization and Autonomy\n59:10 Integrating AI into Development Processes\n01:02:07 The Future of Collaboration in AI-Driven Teams\n01:05:55 Addressing Quality and Security Concerns\n01:11:33 The Challenges of AI Adoption in Enterprises",
+    "youtubeId": "AmmD-826yvE",
+    "youtubeUrl": "https://www.youtube.com/watch?v=AmmD-826yvE",
+    "uploadDate": "20260425",
+    "duration": 4598,
+    "slug": "030-managing-context-is-the-challenge"
   }
 ]
