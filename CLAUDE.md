@@ -59,6 +59,11 @@ git push
 
 **Cache system**: Episode metadata is cached in `metadata/cache/{video_id}.json` to speed up builds from ~22min to ~3min. Use `FORCE=1 redo metadata/episodes.json` to bypass cache and refetch all episodes.
 
+**YouTube bot detection**: If `yt-dlp` is blocked ("Sign in to confirm you're not a bot"), use Chrome cookies:
+- Fetch metadata: `yt-dlp --cookies-from-browser chrome -j --no-warnings --skip-download "URL" > metadata/cache/VIDEO_ID.json`
+- Download audio: `yt-dlp --cookies-from-browser chrome --extract-audio --audio-format mp3 --audio-quality 192K --output ".audio/SLUG" --no-playlist "URL"`
+- Generate summary: `SUMMARIZE_YT_DLP_COOKIES_FROM_BROWSER=chrome summarize "URL" --timestamps --slides ...`
+
 **Future dates**: Hugo doesn't build content with future dates by default. If a new episode isn't appearing, check that its `date:` in frontmatter isn't in the future (dates are in UTC).
 
 # AWS access
