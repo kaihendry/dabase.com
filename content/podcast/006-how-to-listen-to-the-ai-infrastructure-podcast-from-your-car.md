@@ -3,7 +3,7 @@ title: "How to listen to the AI infrastructure podcast from your car"
 date: 2025-11-12T12:00:00Z
 description: "Search for \"AI Infrastructure\""
 image: "https://img.youtube.com/vi/X-SEYqhB7Rw/hqdefault.jpg"
-draft: false
+draft: true
 
 podcast:
   episode: 6

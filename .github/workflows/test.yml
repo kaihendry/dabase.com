@@ -33,8 +33,8 @@ jobs:
       - name: Validate built RSS matches episode markdown files
         run: |
           RSS_COUNT=$(rg -c "<item>" public/podcast/index.xml)
-          # Count episode markdown files (NNN-*.md), excluding _index.md
-          MD_COUNT=$(find content/podcast -maxdepth 1 -name '[0-9]*.md' | wc -l | tr -d ' ')
+          # Count published episode markdown files (NNN-*.md), excluding drafts and _index.md
+          MD_COUNT=$(grep -L "^draft: true" content/podcast/[0-9]*.md | wc -l | tr -d ' ')
           echo "Built RSS episodes: $RSS_COUNT"
           echo "Episode markdown files: $MD_COUNT"
           if [ "$RSS_COUNT" != "$MD_COUNT" ]; then

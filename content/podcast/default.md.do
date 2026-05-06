@@ -42,6 +42,13 @@ fi
 # Format date (YYYYMMDD -> YYYY-MM-DD)
 FORMATTED_DATE="${UPLOAD_DATE:0:4}-${UPLOAD_DATE:4:2}-${UPLOAD_DATE:6:2}"
 
+# Videos in playlist that aren't real episodes — kept in the playlist for
+# numbering continuity but hidden from the published feed via draft: true.
+DRAFT="false"
+case "$YOUTUBE_ID" in
+    X-SEYqhB7Rw) DRAFT="true" ;;
+esac
+
 echo "Generating markdown for episode $EPISODE_NUM: $TITLE" >&2
 
 # Paths for summary cache and slides
@@ -125,7 +132,7 @@ title: "$TITLE"
 date: ${FORMATTED_DATE}T12:00:00Z
 description: "$DESCRIPTION_YAML"
 image: "$THUMBNAIL_URL"
-draft: false
+draft: $DRAFT
 
 podcast:
   episode: $EPISODE_NUM
