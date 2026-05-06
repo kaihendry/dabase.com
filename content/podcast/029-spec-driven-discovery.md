@@ -27,7 +27,7 @@ podcast:
   episodeType: "full"
   duration: 5185
   audioUrl: "https://dabase.com/podcast/audio/029-spec-driven-discovery.mp3"
-  audioSize: 0
+  audioSize: 124444845
   youtubeId: "8tdxpecX2B8"
   youtubeUrl: "https://www.youtube.com/watch?v=8tdxpecX2B8"
 ---

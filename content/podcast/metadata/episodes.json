@@ -328,5 +328,16 @@
     "uploadDate": "20260425",
     "duration": 4598,
     "slug": "030-managing-context-is-the-challenge"
+  },
+  {
+    "episode": 31,
+    "season": 1,
+    "title": "Checking for AI guard rails",
+    "description": "https://dabase.com/podcast/\n\nhttps://link.excalidraw.com/l/cQESkNUilU/9R9YETcpHcG",
+    "youtubeId": "7lHwUBKV9tI",
+    "youtubeUrl": "https://www.youtube.com/watch?v=7lHwUBKV9tI",
+    "uploadDate": "20260506",
+    "duration": 3002,
+    "slug": "031-checking-for-ai-guard-rails"
   }
 ]
