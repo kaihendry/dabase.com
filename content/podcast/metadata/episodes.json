@@ -339,5 +339,16 @@
     "uploadDate": "20260506",
     "duration": 3002,
     "slug": "031-checking-for-ai-guard-rails"
+  },
+  {
+    "episode": 32,
+    "season": 1,
+    "title": "Where does Spec Driven Development fit?",
+    "description": "My first spec kit (SDD) project: https://github.com/kaihendry/ai-check-guardrails\n\nhttps://github.com/github/spec-kit\n\n0:00 - Introduction to Certification Challenges\n0:20 - Experience with Microsoft SQL Server Certification\n0:46 - Discussion on Corporate Certification Requirements\n1:06 - Trust Issues with Certifications\n1:35 - Learning from Exam Questions\n1:59 - Security Events Data Management\n2:26 - Setting Up Kinesis Stream Endpoints\n2:51 - Slack Notification for Unusual Activity\n3:14 - Security Tooling and AWS Organizations\n3:44 - Shared Services Account and Control Tower\n4:45 - Root Account Access and Security\n5:44 - New Role in Security Administration\n6:08 - Spec Driven Development Concerns\n6:40 - Changes in SpecKit and Skills\n7:24 - Commands and Skills in Anthropic\n8:11 - Handoffs in Cloud Code\n9:04 - Onboarding Flow in SpecLedger\n10:06 - Spec Driven Development Workflow\n11:09 - Bug Fixing and Workflow Efficiency\n12:20 - Impact Assessment and Planning\n13:29 - Feature Branch Management\n14:35 - AI Agents and Process Flexibility\n15:51 - Expertise and Process Adaptation\n16:43 - Git Commit Hooks and History\n17:26 - SpecKit Documentation and Maintenance\n18:14 - Spec Drift and Project Principles\n19:25 - Documentation and End-to-End Tests\n20:44 - Quick Start and CLI Testing\n21:15 - Constitution and Process in SpecLedger\n22:21 - Monorepos and Hexagonal Architecture\n23:13 - Alignment Driven Development\n24:22 - Workspaces and Debugging in VS Code\n25:43 - SpecKit Archive Command\n26:24 - Task Management in SpecLedger\n27:32 - GitHub App and Task Visualization\n28:21 - Beats and Task List Management\n29:52 - Multiplayer Development Vision\n30:34 - Shared Group Chat and User Stories\n31:47 - Clarify Command in SpecLedger\n32:15 - Metadata and Comments in SpecLedger\n33:05 - Visualization of Development Phases\n34:10 - Mockup UI and Design in SpecLedger\n35:17 - UI Changes and Future Plans\n36:27 - Comments and Collaboration in SpecLedger\n37:04 - Open Source and SuperBase Architecture\n38:08 - SQLite and Database Management\n39:25 - Distributed SQL Database at the Edge\n40:44 - Security and Package Management\n41:29 - Local Privilege Escalation and Patching\n42:30 - Zero Day Exploits and Remediation\n43:37 - Defense in Depth and Security Tools\n44:41 - AWS Inspector and Wiz.io\n45:42 - Public IPs and Security Risks\n46:27 - Nginx and Web Server Security\n47:13 - Security Chat Groups and Risk Assessment\n48:05 - 10stack Hack and Package Verification\n49:12 - OIDC and Security Posture\n50:11 - Caching Techniques and Security Risks\n51:31 - Poisoned Package and Cache Exploits\n52:07 - AI and Repository Misconfigurations\n53:22 - Dependency Management and Security Scans\n54:18 - Dependabot and Security Vulnerabilities\n\n\nhttps://dabase.com/podcast/",
+    "youtubeId": "osM0n8gxPAI",
+    "youtubeUrl": "https://www.youtube.com/watch?v=osM0n8gxPAI",
+    "uploadDate": "20260516",
+    "duration": 3311,
+    "slug": "032-where-does-spec-driven-development-fit"
   }
 ]
