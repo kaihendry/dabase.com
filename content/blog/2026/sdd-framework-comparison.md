@@ -12,7 +12,8 @@ Notes on three Spec Driven Development (SDD) frameworks I've been comparing:
 - [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)
 - [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done)
 
-It retrospect I wish I generated unique keys for these experiments to get a better understanding of the costs.
+It retrospect I wish I generated unique ANTHROPIC_API_KEY keys for these
+experiments to get a better understanding of the costs.
 
 ## spec-kit
 
