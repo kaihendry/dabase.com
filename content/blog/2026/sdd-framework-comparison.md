@@ -39,6 +39,7 @@ https://github.com/kaihendry/ai-siem-endpoint
 * it's use of multiple agents makes me think this is pretty token heavy
 * seems the most bureaucratic, but that's maybe because my expectations were that it shouldn't be!
 * discord feels dead
+* i am confused by the numbering, e.g. `/gsd-plan-phase 1` and `/gsd-execute-phase 1`
 
 ## Takeaways
 
