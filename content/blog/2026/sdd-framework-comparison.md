@@ -48,3 +48,6 @@ My "own way" of using [beads](https://github.com/gastownhall/beads) and
 _vibing_ doesn't seem eclipsed in my mind by <abbr title="Spec driven
 development">SDD</abbr>. The frameworks may help clarify some large features,
 but normally I've already broken them down already in my mind.
+
+I don't feel any of these frameworks captured the initial prompting very well
+and it feels wrong to manually edit their outputs.
