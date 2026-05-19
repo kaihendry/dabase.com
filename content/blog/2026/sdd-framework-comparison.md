@@ -45,6 +45,7 @@ https://github.com/kaihendry/ai-siem-endpoint
 * seems the most bureaucratic, but that's maybe because my expectations were that it shouldn't be!
 * discord feels dead
 * i am confused by the numbering, e.g. `/gsd-plan-phase 1` and `/gsd-execute-phase 1`
+* seems to care most about clearing context (this is reassuring!)
 
 ## Takeaways
 
