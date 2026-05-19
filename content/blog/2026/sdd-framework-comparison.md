@@ -4,6 +4,10 @@ description: "Notes on the differences between three Spec Driven Development fra
 date: 2026-05-18T15:22:11+01:00
 ---
 
+[SDD is one tool of many, they are quite different from each
+other](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html),
+therefore these are my notes of comparing a few.
+
 I did try https://kiro.dev/ and https://antigravity.google/ but they were so slow as to be unusable.
 
 Notes on three Spec Driven Development (SDD) frameworks I've been comparing:
@@ -51,3 +55,7 @@ but normally I've already broken them down already in my mind.
 
 I don't feel any of these frameworks captured the initial prompting very well
 and it feels wrong to manually edit their outputs.
+
+The worse thing was how slow the iterations because with SDD as oppossed to
+just chatting with AI. The way the SDD frameworks blew through tokens was also
+worrying.
