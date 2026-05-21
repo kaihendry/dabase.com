@@ -350,5 +350,16 @@
     "uploadDate": "20260516",
     "duration": 3311,
     "slug": "032-where-does-spec-driven-development-fit"
+  },
+  {
+    "episode": 33,
+    "season": 1,
+    "title": "BAU is fun with AI",
+    "description": "Chapters\n\n00:00 Coffee and Casual Conversations\n02:53 Automation in Cloud Infrastructure\n06:07 Navigating Complex Repositories\n08:58 The Role of Jira in Development\n11:58 Ad Hoc Workflows and Planning\n15:01 Using Work Trees for Parallel Development\n17:55 Attribution and AI in Development\n21:02 Managing PRs and Workflows\n24:06 Productivity with Cloud Code and AWS Vault\n27:17 Exploring AWS CLI and Vault Integration\n30:51 AI in Workflow Automation\n32:49 The Cost of AI and Token Management\n36:01 Enhancements in Cloud Tools and Features\n39:48 Spec-Driven Development and Code Review Dynamics\n51:25 Reflections on Spec-Driven Development Challenges",
+    "youtubeId": "6RsV8yQuB6I",
+    "youtubeUrl": "https://www.youtube.com/watch?v=6RsV8yQuB6I",
+    "uploadDate": "20260521",
+    "duration": 3152,
+    "slug": "033-bau-is-fun-with-ai"
   }
 ]
