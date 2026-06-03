@@ -361,5 +361,16 @@
     "uploadDate": "20260521",
     "duration": 3152,
     "slug": "033-bau-is-fun-with-ai"
+  },
+  {
+    "episode": 34,
+    "season": 1,
+    "title": "Claude Dynamic Workflows 🤑",
+    "description": "Otw to AI Native devcon, you can view the videos @tessl-ai",
+    "youtubeId": "Zc21l989-9Y",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Zc21l989-9Y",
+    "uploadDate": "20260603",
+    "duration": 1278,
+    "slug": "034-claude-dynamic-workflows-"
   }
 ]
