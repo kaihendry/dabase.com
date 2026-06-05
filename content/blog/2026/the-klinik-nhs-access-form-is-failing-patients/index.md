@@ -2,7 +2,6 @@
 title: "The Klinik NHS Access Form Is Failing Patients"
 date: 2026-06-05T09:13:12+01:00
 description: "Documenting my complaint about the broken UX of the Klinik Access form used by Bosvena Health — opaque closures, broken proxy login, same-day expiry, and feedback that never reaches the practice."
-draft: true
 ---
 
 On 5 May 2026 I tried to book a same-day GP appointment for my sick son using [Klinik Access](https://access.klinik.co.uk/), the online triage form at my surgery [Bosvena Health](https://www.bosvenahealth.co.uk/). Here is what is broken.
