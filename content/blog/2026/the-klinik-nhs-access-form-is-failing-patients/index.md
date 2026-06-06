@@ -42,7 +42,7 @@ Furthermore feedback submitted through their own form produces no visible improv
 
 Bosvena Health do not own this form. Klinik do. When something goes wrong, the practice must relay complaints to a third party, wait for a response, and pass it back. That is the process I went through — and it took a month.
 
-Meanwhile, every piece of patient feedback submitted through the form goes straight to Klinik. Bosvena never sees it. Patients assume they are giving feedback to their GP surgery. They are not. It vanishes into a vendor's inbox.
+Meanwhile, every piece of patient feedback submitted through the form goes straight to Klinik. Bosvena never sees it. Patients assume they are giving feedback to their GP surgery. They are not. It vanishes into a vendor's inbox. Does Bosvena care about the satisfaction of the form?
 
 No single party feels fully responsible. Klinik can say the practice configures the form. The practice can say they do not own it. Patients are left navigating a broken experience with no clear owner and no way to make their voice heard where it might actually change something.
 
