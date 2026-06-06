@@ -138,7 +138,9 @@ The concrete takeaway: write your acceptance criteria as [Given / When / Then](h
 
 The evening party at The Brewery rounded out the day. Good conversations, a drink or two, and the kind of energy that comes from spending a day with people genuinely excited about where this is all going.
 
-The Brewery as a venue was really very good — the food throughout the day was excellent, and they even had phone charging available. A small touch, but a genuinely thoughtful one. Thank you!
+The Brewery as a venue was really very good — the food throughout the day was excellent. I even asked someone at the cloak desk if they could charge my phone and they were happy to oblige. Thank you!
+
+Simon Maple also deserves a mention as MC — he kept the day moving well.
 
 ---
 
