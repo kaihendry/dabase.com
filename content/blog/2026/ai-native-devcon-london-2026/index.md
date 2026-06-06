@@ -2,7 +2,6 @@
 title: "AI Native DevCon London 2026: Sessions I Attended"
 date: 2026-06-06T14:37:21+01:00
 description: "A personal recap of the sessions I attended at AI Native DevCon London on June 1st, 2026 — covering agentic coding, spec-driven development, harness engineering, and vibe coding."
-draft: false
 ---
 
 [AI Native DevCon](https://tessl.io/devcon) ran June 1–2 at The Brewery in London. I attended Day 1. Here's how it went.
