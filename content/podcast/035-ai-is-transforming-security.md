@@ -50,23 +50,23 @@ Embedding models and re-rankers on a local GPU, PG0 (embedded Postgres à la SQL
 
 ## Timestamps
 
-0:00 Intro & banter
-2:00 Supply chain attacks: Red Hat GitHub breach, namesquatting with LLMs
-7:00 VS Code plugin security model; PNPM disabling install hooks by default
-10:00 AWS CodeArtifact: replacing Nexus, IAM/SSO integration
-15:00 CodeArtifact RBAC — read-only devs, GitHub Actions OIDC for publishing
-18:00 CodeArtifact limits vs JFrog/Artifactory enterprise features
-21:00 Security vs pipeline speed tradeoffs; Datadog cost explosion
-24:00 AI reshaping the security profession: checklists → automated tests & guardrails
-28:00 Agentic workflows: dynamic workflows, auto mode, humans on the loop
-33:00 Claude auto mode: model-based classifier for command approval
-37:00 Auto mode stats — 0.4% benign blocked, 17% risky actions got through
-39:00 Running agents in Docker sandboxes
-42:00 Cowork for personal productivity (timesheets, contracts, HAR files)
-46:00 Hermes agent on Discord + local Firecrawl stack
-50:00 Crawling 400 AWS doc pages in 5 minutes
-53:00 Local GPU, embedding models, PG0 embedded Postgres (SQLite-style)
-56:00 Memory systems: mem0, hindsight, semantic knowledge graphs
-58:00 CQ: team-level shared agent memory
-60:00 Hermes PR review automation & release-please simulation
-62:00 OpenClaw, risk assessment wrap-up
+- [0:00](https://youtu.be/W7QcWP8VngI?t=0) Intro & banter
+- [2:00](https://youtu.be/W7QcWP8VngI?t=120) Supply chain attacks: Red Hat GitHub breach, namesquatting with LLMs
+- [7:00](https://youtu.be/W7QcWP8VngI?t=420) VS Code plugin security model; PNPM disabling install hooks by default
+- [10:00](https://youtu.be/W7QcWP8VngI?t=600) AWS CodeArtifact: replacing Nexus, IAM/SSO integration
+- [15:00](https://youtu.be/W7QcWP8VngI?t=900) CodeArtifact RBAC — read-only devs, GitHub Actions OIDC for publishing
+- [18:00](https://youtu.be/W7QcWP8VngI?t=1080) CodeArtifact limits vs JFrog/Artifactory enterprise features
+- [21:00](https://youtu.be/W7QcWP8VngI?t=1260) Security vs pipeline speed tradeoffs; Datadog cost explosion
+- [24:00](https://youtu.be/W7QcWP8VngI?t=1440) AI reshaping the security profession: checklists → automated tests & guardrails
+- [28:00](https://youtu.be/W7QcWP8VngI?t=1680) Agentic workflows: dynamic workflows, auto mode, humans on the loop
+- [33:00](https://youtu.be/W7QcWP8VngI?t=1980) Claude auto mode: model-based classifier for command approval
+- [37:00](https://youtu.be/W7QcWP8VngI?t=2220) Auto mode stats — 0.4% benign blocked, 17% risky actions got through
+- [39:00](https://youtu.be/W7QcWP8VngI?t=2340) Running agents in Docker sandboxes
+- [42:00](https://youtu.be/W7QcWP8VngI?t=2520) Cowork for personal productivity (timesheets, contracts, HAR files)
+- [46:00](https://youtu.be/W7QcWP8VngI?t=2760) Hermes agent on Discord + local Firecrawl stack
+- [50:00](https://youtu.be/W7QcWP8VngI?t=3000) Crawling 400 AWS doc pages in 5 minutes
+- [53:00](https://youtu.be/W7QcWP8VngI?t=3180) Local GPU, embedding models, PG0 embedded Postgres (SQLite-style)
+- [56:00](https://youtu.be/W7QcWP8VngI?t=3360) Memory systems: mem0, hindsight, semantic knowledge graphs
+- [58:00](https://youtu.be/W7QcWP8VngI?t=3480) CQ: team-level shared agent memory
+- [60:00](https://youtu.be/W7QcWP8VngI?t=3600) Hermes PR review automation & release-please simulation
+- [62:00](https://youtu.be/W7QcWP8VngI?t=3720) OpenClaw, risk assessment wrap-up
