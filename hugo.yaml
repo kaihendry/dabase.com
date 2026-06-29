@@ -37,7 +37,7 @@ services:
   googleAnalytics:
     id: G-ZSL2H4YN59
   rss:
-    limit: 50
+    limit: 1000
 
 params:
   podcast:
