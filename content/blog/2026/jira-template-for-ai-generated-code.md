@@ -9,7 +9,7 @@ Two talks worth watching if AI is writing code and tests for you:
 - Dave Farley, [A Harness for Behaviour](https://www.youtube.com/watch?v=libNzUdL9eM) — natural language alone isn't a good enough spec; treat behaviour as versioned, executable examples and verify against inputs the AI never saw.
 - Matteo Vaccari, [Ensuring AI-generated Code Does What We Want](https://www.youtube.com/watch?v=3tdmoj35HG0) — AI-written tests tend to check implementation details rather than behaviour; keep specs as data, assert only observable outcomes, and simulate rather than mock external systems.
 
-Both point at the same failure mode: a green test suite that's lying to you. Here's a ticket template that tries to bake the fix in, rather than relying on remembering to ask for it.
+Both point at the same failure mode: a green test suite that's lying to you. Here's an update to my [Jira style issue template](/tips/web/bug-reporting-template) that tries to bake the fix in, rather than relying on remembering to ask for it.
 
 ## Vaccari's core idea
 
