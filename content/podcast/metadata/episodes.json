@@ -394,5 +394,27 @@
     "uploadDate": "20260617",
     "duration": 3859,
     "slug": "036-agent-loops"
+  },
+  {
+    "episode": 37,
+    "season": 1,
+    "title": "Be nice to your agent",
+    "description": "Join us as we dive into the world of AI agents and their impact on productivity! In this video, we discuss the challenges and innovations surrounding AI tools like Claude and Hermes, and how they can revolutionize your workflow.\n\nKey takeaways:\n\n* Understanding the role of AI agents in modern work environments.\n* The importance of user feedback in AI development.\n* How to effectively integrate AI tools into your daily tasks.\n* The balance between automation and manual processes.\n\nTimestamps:\n00:00 Introduction\n00:30 The evolution of AI agents\n02:15 User feedback and AI improvements\n05:00 Integrating AI into workflows\n08:45 Challenges with automation\n12:00 Conclusion\n\nWhat's your biggest challenge with AI tools? Drop it in the comments!\n\nSubscribe for more insights on AI and productivity!\n\n#AI #Productivity #Automation",
+    "youtubeId": "zgmdFmC-mFo",
+    "youtubeUrl": "https://www.youtube.com/watch?v=zgmdFmC-mFo",
+    "uploadDate": "20260626",
+    "duration": 3227,
+    "slug": "037-be-nice-to-your-agent"
+  },
+  {
+    "episode": 38,
+    "season": 1,
+    "title": "Fable maxxing",
+    "description": "https://github.com/kaihendry/members.cardinhamsports.org/commits/main/ is a demonstration of using https://github.com/kaihendry/sloc-sensor",
+    "youtubeId": "BBxu5L9ywqk",
+    "youtubeUrl": "https://www.youtube.com/watch?v=BBxu5L9ywqk",
+    "uploadDate": "20260704",
+    "duration": 2635,
+    "slug": "038-fable-maxxing"
   }
 ]

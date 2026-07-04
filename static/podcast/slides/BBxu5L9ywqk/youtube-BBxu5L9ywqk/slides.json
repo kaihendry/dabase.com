@@ -1,0 +1,62 @@
+{
+  "sourceUrl": "https://www.youtube.com/watch?v=BBxu5L9ywqk",
+  "sourceKind": "youtube",
+  "sourceId": "youtube-BBxu5L9ywqk",
+  "slidesDir": "/Users/hendry/tmp/dabase.com/static/podcast/slides/BBxu5L9ywqk/youtube-BBxu5L9ywqk",
+  "slidesDirId": "e9705c69",
+  "sceneThreshold": 0.3,
+  "autoTuneThreshold": true,
+  "autoTune": {
+    "enabled": true,
+    "chosenThreshold": 0.05,
+    "confidence": 1,
+    "strategy": "hash"
+  },
+  "maxSlides": 6,
+  "minSlideDuration": 2,
+  "ocrRequested": false,
+  "ocrAvailable": true,
+  "slideCount": 6,
+  "warnings": [
+    "Auto-tuned scene threshold from 0.3 to 0.05",
+    "Trimmed slides to max 6"
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "timestamp": 0.2416667,
+      "imagePath": "slide_0001_0.24s.png",
+      "imageVersion": 1783180215966
+    },
+    {
+      "index": 2,
+      "timestamp": 434.583333625,
+      "imagePath": "slide_0002_434.58s.png",
+      "imageVersion": 1783180216466
+    },
+    {
+      "index": 3,
+      "timestamp": 870.6249638,
+      "imagePath": "slide_0003_870.62s.png",
+      "imageVersion": 1783180216444
+    },
+    {
+      "index": 4,
+      "timestamp": 1307.4166700749997,
+      "imagePath": "slide_0004_1307.42s.png",
+      "imageVersion": 1783180216474
+    },
+    {
+      "index": 5,
+      "timestamp": 1749.6666664250001,
+      "imagePath": "slide_0005_1749.67s.png",
+      "imageVersion": 1783180216489
+    },
+    {
+      "index": 6,
+      "timestamp": 2185.79166625,
+      "imagePath": "slide_0006_2185.79s.png",
+      "imageVersion": 1783180216483
+    }
+  ]
+}
