@@ -21,11 +21,11 @@ https://github.com/kaihendry/members.cardinhamsports.org/commits/main/ is a demo
 
 ## `summarize "https://youtu.be/BBxu5L9ywqk" --timestamps --slides`
 
-A wide-ranging, technical conversation about using agentic LLMs (Fable, Sony 5, Hermes) to drive open-source infra work—especially a CDK-for-Terraform fork—plus a pragmatic debate about Terraform vs CloudFormation validation, PR review pain, and agent limits (availability, memory, noise). The hosts demonstrate a full workflow: set a long-running Goal, let Fable orchestrate smaller models to generate code, run demo plans with a Hermes agent, and collect UX notes; they hit real-world friction (enterprise data rules, session limits, flaky back-and-forth, reviewer trust). *Fabel is back, so that was exciting.* *land this proposal.*
+A wide-ranging, technical conversation about using agentic LLMs (Fable, Sonnet, Hermes) to drive open-source infra work—especially a CDK-for-Terraform fork—plus a pragmatic debate about Terraform vs CloudFormation validation, PR review pain, and agent limits (availability, memory, noise). The hosts demonstrate a full workflow: set a long-running Goal, let Fable orchestrate smaller models to generate code, run demo plans with a Hermes agent, and collect UX notes; they hit real-world friction (enterprise data rules, session limits, flaky back-and-forth, reviewer trust). *Fabel is back, so that was exciting.* *land this proposal.*
 
 [![Slide 1](/podcast/slides/BBxu5L9ywqk/youtube-BBxu5L9ywqk/slide_0001_0.24s.png)](https://youtu.be/BBxu5L9ywqk?t=0)
 ## Fable relaunch and proposal
-They used Fable as an orchestrator to implement a prior one‑page proposal about adding newer Terraform provider features into a TypeScript CDK interface compatible with both Terraform and OpenTofu. The host tried Cloud Code’s slash-goal feature to set “land this proposal” as an automated objective and paired Fable orchestration with Sony 5 for faster, cheaper sub‑work flows.
+They used Fable as an orchestrator to implement a prior one‑page proposal about adding newer Terraform provider features into a TypeScript CDK interface compatible with both Terraform and OpenTofu. The host tried Cloud Code’s slash-goal feature to set “land this proposal” as an automated objective and paired Fable orchestration with Sonnet for faster, cheaper sub‑work flows.
 
 [![Slide 2](/podcast/slides/BBxu5L9ywqk/youtube-BBxu5L9ywqk/slide_0002_434.58s.png)](https://youtu.be/BBxu5L9ywqk?t=434)
 ## CDK Terrain progress and Fable access
