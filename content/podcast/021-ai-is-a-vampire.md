@@ -4,7 +4,7 @@ date: 2026-02-18T12:00:00Z
 description: "Do please Rate and share to keep us rewarded / motivated to share!
 
 Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0"
-image: "https://img.youtube.com/vi/6SqnMr5W3aU/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/021-ai-is-a-vampire.jpg"
 draft: false
 
 podcast:

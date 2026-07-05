@@ -1,4 +1,19 @@
 {{ define "main" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "name": {{ .Site.Params.podcast.title }},
+  "description": {{ .Site.Params.podcast.description }},
+  "url": {{ .Permalink }},
+  "image": {{ .Site.Params.podcast.image }},
+  "webFeed": {{ (.OutputFormats.Get "RSS").Permalink }},
+  "author": {
+    "@type": "Person",
+    "name": {{ .Site.Params.podcast.author }}
+  }
+}
+</script>
 
 <h1>{{ .Title }}</h1>
 {{ .Content }}
@@ -75,7 +90,8 @@
 {{ range sort .Pages ".Params.podcast.episode" "desc" }}
 <li>
   <a class="episode-tile" href="{{ .RelPermalink }}">
-    {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
+    {{ $episodeTitle := .Title }}
+    {{ with .Params.image }}<img src="{{ . }}" alt="{{ $episodeTitle }}" loading="lazy">{{ end }}
     <div class="episode-info">
       <div class="episode-title">{{ with .Params.podcast }}Episode {{ .episode }}: {{ end }}{{ .Title }}</div>
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>

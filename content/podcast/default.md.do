@@ -29,8 +29,9 @@ UPLOAD_DATE=$(echo "$EPISODE_JSON" | jq -r '.uploadDate')
 AUDIO_FILE=".audio/${SLUG}.mp3"
 AUDIO_URL="https://dabase.com/podcast/audio/${SLUG}.mp3"
 
-# YouTube thumbnail (hqdefault is 480x360, always available)
-THUMBNAIL_URL="https://img.youtube.com/vi/${YOUTUBE_ID}/hqdefault.jpg"
+# Self-hosted square artwork (built by default.jpg.do); URL must change for
+# Spotify/Apple to re-fetch, so never point at img.youtube.com here
+THUMBNAIL_URL="https://dabase.com/podcast/images/${SLUG}.jpg"
 
 # Get audio file size if exists
 if [ -f "$AUDIO_FILE" ]; then

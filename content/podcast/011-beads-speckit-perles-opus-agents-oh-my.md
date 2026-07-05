@@ -7,7 +7,7 @@ Do please comment & Europeans must go to these FREE events:
 
 https://fosdem.org/2026/
 https://cfgmgmtcamp.org/ghent2026/"
-image: "https://img.youtube.com/vi/yokbTRUvxQU/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/011-beads-speckit-perles-opus-agents-oh-my.jpg"
 draft: false
 
 podcast:

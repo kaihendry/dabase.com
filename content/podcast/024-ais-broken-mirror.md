@@ -4,7 +4,7 @@ date: 2026-03-12T12:00:00Z
 description: "https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0#heading=h.nimhcz973asx
 
 https://dabase.com/podcast/ for a summary"
-image: "https://img.youtube.com/vi/glx4mkYRt7U/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/024-ais-broken-mirror.jpg"
 draft: false
 
 podcast:

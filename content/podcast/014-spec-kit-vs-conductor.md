@@ -10,7 +10,7 @@ https://tools.simonwillison.net/terminal-to-html
 
 https://adrianhall.github.io/posts/2025/2025-12-06-spec-kit.html
 https://www.sanity.io/blog/you-should-never-build-a-cms"
-image: "https://img.youtube.com/vi/gvgK2wp_-UQ/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/014-spec-kit-vs-conductor.jpg"
 draft: false
 
 podcast:

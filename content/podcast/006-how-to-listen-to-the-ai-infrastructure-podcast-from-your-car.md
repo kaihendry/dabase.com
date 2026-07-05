@@ -2,7 +2,7 @@
 title: "How to listen to the AI infrastructure podcast from your car"
 date: 2025-11-12T12:00:00Z
 description: "Search for \"AI Infrastructure\""
-image: "https://img.youtube.com/vi/X-SEYqhB7Rw/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/006-how-to-listen-to-the-ai-infrastructure-podcast-from-your-car.jpg"
 draft: true
 
 podcast:

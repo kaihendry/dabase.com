@@ -4,7 +4,7 @@ date: 2025-12-16T12:00:00Z
 description: "https://github.com/hashicorp/terraform-cdk/commit/a0c56138e2b4c7b6c128bd7ba08a8e317df852af
 
 Trying to plot the changing Infrastructure landscape."
-image: "https://img.youtube.com/vi/rM2pj0JKc0g/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/012-cdk-for-terraform-and-two-pizza-teams.jpg"
 draft: false
 
 podcast:

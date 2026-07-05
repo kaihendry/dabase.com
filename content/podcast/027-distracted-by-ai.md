@@ -2,7 +2,7 @@
 title: "Distracted by AI"
 date: 2026-04-07T12:00:00Z
 description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing"
-image: "https://img.youtube.com/vi/oyGi8ahf4Og/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/027-distracted-by-ai.jpg"
 draft: false
 
 podcast:

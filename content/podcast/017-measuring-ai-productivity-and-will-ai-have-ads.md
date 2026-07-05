@@ -4,7 +4,7 @@ date: 2026-01-11T12:00:00Z
 description: "https://x.com/kaihendry/status/2009678360046420110
 
 https://docs.astral.sh/uv/llms.txt"
-image: "https://img.youtube.com/vi/tKad1dhw5Qs/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/017-measuring-ai-productivity-and-will-ai-have-ads.jpg"
 draft: false
 
 podcast:

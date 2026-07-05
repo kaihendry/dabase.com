@@ -15,6 +15,7 @@
     <language>{{ .Site.Params.podcast.language }}</language>
     <copyright>Copyright {{ now.Year }} {{ .Site.Params.podcast.author }}</copyright>
     <description>{{ .Site.Params.podcast.description }}</description>
+    {{ with index $pages 0 }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
 
     {{/* iTunes-specific tags */}}
     <itunes:author>{{ .Site.Params.podcast.author }}</itunes:author>

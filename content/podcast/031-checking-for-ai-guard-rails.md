@@ -4,7 +4,7 @@ date: 2026-05-06T12:00:00Z
 description: "https://dabase.com/podcast/
 
 https://link.excalidraw.com/l/cQESkNUilU/9R9YETcpHcG"
-image: "https://img.youtube.com/vi/7lHwUBKV9tI/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/031-checking-for-ai-guard-rails.jpg"
 draft: false
 
 podcast:

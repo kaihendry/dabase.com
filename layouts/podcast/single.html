@@ -1,4 +1,28 @@
 {{ define "main" }}
+{{ with .Params.podcast }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "url": {{ $.Permalink }},
+  "name": {{ $.Title }},
+  "episodeNumber": {{ .episode }},
+  "datePublished": {{ $.Date.Format "2006-01-02" }},
+  "description": {{ $.Description }},
+  "image": {{ $.Params.image }},
+  "timeRequired": "PT{{ .duration }}S",
+  "associatedMedia": {
+    "@type": "AudioObject",
+    "contentUrl": {{ .audioUrl }}
+  },
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": {{ site.Params.podcast.title }},
+    "url": {{ $.Parent.Permalink }}
+  }
+}
+</script>
+{{ end }}
 <header>
 {{- partial "breadcrumb.html" . -}}
 
@@ -25,7 +49,7 @@
 {{ with .Params.podcast }}
 {{ $audioUrl := .audioUrl }}
 {{ if hasPrefix $audioUrl "/" }}{{ $audioUrl = printf "https://dabase.com%s" $audioUrl }}{{ end }}
-<audio controls preload="metadata" poster="{{ $.Params.image }}" style="width: 100%; margin: 2rem 0;">
+<audio controls preload="metadata" style="width: 100%; margin: 2rem 0;">
   <source src="{{ $audioUrl }}" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>

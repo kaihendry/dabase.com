@@ -14,7 +14,7 @@ https://x.com/trq212/status/2005315275026260309 promotes the AskUserQuestionTool
 Kiro seminar (PAID) https://www.eventbrite.com/e/hands-on-spec-driven-development-workshop-tickets-1812679024759?aff=so%E2%80%A6
 
 https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04"
-image: "https://img.youtube.com/vi/V5Q8_3BuMcs/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/015-scaling-askuserquestiontool.jpg"
 draft: false
 
 podcast:

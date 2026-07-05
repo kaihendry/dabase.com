@@ -22,7 +22,7 @@ description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9
 58:00 - DevOps Myths
 62:00 - Cloud Security Insights
 66:00 - Closing Thoughts"
-image: "https://img.youtube.com/vi/nze_Id-PpYM/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/026-if-it-hurts-do-it-more-often-with-ai.jpg"
 draft: false
 
 podcast:

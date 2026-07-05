@@ -6,7 +6,7 @@ description: "Vincent De Smet is working on https://terraconstructs.dev/
 Opentaco trailer from https://www.linkedin.com/posts/izalutski_today-i-am-excited-to-announce-diggers-biggest-activity-7376635476264374272-O2Cp/ (without the copyrighted aggressive music)
 
 https://github.com/diggerhq/digger/blob/develop/taco/agents_context/opentaco-case.md#how-will-this-thing-make-money"
-image: "https://img.youtube.com/vi/UXIJe2moZ-I/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/001-terralith-the-future-of-terraform-automation-and-collaborati.jpg"
 draft: false
 
 podcast:

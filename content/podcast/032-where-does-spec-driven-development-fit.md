@@ -70,7 +70,7 @@ https://github.com/github/spec-kit
 
 
 https://dabase.com/podcast/"
-image: "https://img.youtube.com/vi/osM0n8gxPAI/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/032-where-does-spec-driven-development-fit.jpg"
 draft: false
 
 podcast:

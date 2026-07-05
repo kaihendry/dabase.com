@@ -24,7 +24,7 @@ Chapters
 01:02:07 The Future of Collaboration in AI-Driven Teams
 01:05:55 Addressing Quality and Security Concerns
 01:11:33 The Challenges of AI Adoption in Enterprises"
-image: "https://img.youtube.com/vi/AmmD-826yvE/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/030-managing-context-is-the-challenge.jpg"
 draft: false
 
 podcast:

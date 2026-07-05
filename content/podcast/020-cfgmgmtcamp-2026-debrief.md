@@ -11,7 +11,7 @@ CDK plan we were talking about: https://gist.github.com/kaihendry/ce6574744e161d
 
 CORRECTION: When talking about the Framework laptop, it was the DESKTOP https://frame.work/gb/en/desktop
 Full talk: https://www.youtube.com/watch?v=oJDGZnTDWJo&t=44m25s"
-image: "https://img.youtube.com/vi/tvoTdenufAs/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/020-cfgmgmtcamp-2026-debrief.jpg"
 draft: false
 
 podcast:

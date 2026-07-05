@@ -2,7 +2,7 @@
 title: "Be nice to your agent"
 date: 2026-06-26T12:00:00Z
 description: "AI agents for developer workflows: automated PR review, end-to-end testing, Discord orchestration, security trade-offs, and why being nice to your agent matters."
-image: "https://img.youtube.com/vi/zgmdFmC-mFo/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/037-be-nice-to-your-agent.jpg"
 
 podcast:
   episode: 37

@@ -2,7 +2,7 @@
 title: "What makes a good AI infrastructure engineer?"
 date: 2026-01-15T12:00:00Z
 description: "https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing"
-image: "https://img.youtube.com/vi/ij20sZmxC7k/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/018-what-makes-a-good-ai-infrastructure-engineer.jpg"
 draft: false
 
 podcast:

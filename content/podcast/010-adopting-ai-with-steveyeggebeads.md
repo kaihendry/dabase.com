@@ -6,7 +6,7 @@ description: "https://dabase.com/podcast/
 https://github.com/steveyegge/beads/discussions/430
 
 Goredo: http://www.goredo.cypherpunks.su/"
-image: "https://img.youtube.com/vi/eSEg3wKBs-8/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/010-adopting-ai-with-steveyeggebeads.jpg"
 draft: false
 
 podcast:

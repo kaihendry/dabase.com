@@ -4,7 +4,7 @@ date: 2026-03-09T00:00:00Z
 description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0
 
 https://dabase.com/podcast/ for a summary"
-image: "https://img.youtube.com/vi/5CIEYL5HzZI/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/023-validating-ai-output-refactoring-infrastructure.jpg"
 draft: false
 
 podcast:

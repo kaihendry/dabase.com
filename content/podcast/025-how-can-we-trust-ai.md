@@ -4,7 +4,7 @@ date: 2026-03-17T12:00:00Z
 description: "https://news.ycombinator.com/item?id=47408205
 
 Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0#heading=h.ulxx2eqh7qsr"
-image: "https://img.youtube.com/vi/Mpj-ic1WWE8/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/025-how-can-we-trust-ai.jpg"
 draft: false
 
 podcast:

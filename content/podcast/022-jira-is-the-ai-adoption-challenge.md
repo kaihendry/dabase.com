@@ -4,7 +4,7 @@ date: 2026-02-26T12:00:00Z
 description: "The elephant in the room is Jira. How can we adopt AI in a structured way in an Enterprise?
 
 https://dabase.com/podcast/"
-image: "https://img.youtube.com/vi/XGbRVRy4LAs/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/022-jira-is-the-ai-adoption-challenge.jpg"
 draft: false
 
 podcast:

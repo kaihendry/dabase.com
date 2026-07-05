@@ -1,11 +1,17 @@
 <head>
   <meta charset="utf-8" />
   <title>{{ .Title  }}</title>
-  <meta
-    name="description"
-    content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
-  />
+  {{- $desc := or .Description .Summary .Site.Params.description }}
+  <meta name="description" content="{{ $desc }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="{{ .Permalink }}" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ $desc }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+  {{ with .Params.podcast }}
+  <meta property="og:audio" content="{{ .audioUrl }}" />
+  {{ end }}
   {{ if .Params.icon }}
   <link rel="icon" href="{{ .Params.icon }}" sizes="any" type="image/svg+xml" />
   {{ else }}

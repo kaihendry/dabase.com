@@ -14,7 +14,7 @@ We try capture what the the AI lifecycle looks like right now.
 Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing
 
 Kai will be at https://fosdem.org/2026/ & https://cfgmgmtcamp.org/ghent2026/ next week ... say HELLO if you see me!"
-image: "https://img.youtube.com/vi/0lQTnRKHVdM/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/019-ai-engineer-antipatterns-more.jpg"
 draft: false
 
 podcast:

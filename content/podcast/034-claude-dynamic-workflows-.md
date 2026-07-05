@@ -2,7 +2,7 @@
 title: "Claude Dynamic Workflows 🤑"
 date: 2026-06-03T12:00:00Z
 description: "Otw to AI Native devcon, you can view the videos @tessl-ai"
-image: "https://img.youtube.com/vi/Zc21l989-9Y/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/034-claude-dynamic-workflows-.jpg"
 draft: false
 
 podcast:

@@ -18,7 +18,7 @@ description: "Chapters
 36:01 Enhancements in Cloud Tools and Features
 39:48 Spec-Driven Development and Code Review Dynamics
 51:25 Reflections on Spec-Driven Development Challenges"
-image: "https://img.youtube.com/vi/6RsV8yQuB6I/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/033-bau-is-fun-with-ai.jpg"
 draft: false
 
 podcast:

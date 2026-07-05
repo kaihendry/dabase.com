@@ -9,7 +9,7 @@ description: "https://github.com/vincenthsh & https://github.com/kaihendry/ - tw
 30:40 Danger of clickops
 37:31 Labels vs Tags
 40:10 Integration points"
-image: "https://img.youtube.com/vi/z6V8fgm7xYY/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/005-trunk-based-infrastructure-with-feature-flags.jpg"
 draft: false
 
 podcast:

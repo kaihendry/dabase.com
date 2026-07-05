@@ -2,7 +2,7 @@
 title: "AI is transforming Security"
 date: 2026-06-09T12:00:00Z
 description: "Supply chain attacks, AWS CodeArtifact, agentic workflows, auto mode sandboxing, and local memory systems with Hermes agent."
-image: "https://img.youtube.com/vi/W7QcWP8VngI/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/035-ai-is-transforming-security.jpg"
 draft: false
 
 podcast:

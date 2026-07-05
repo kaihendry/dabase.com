@@ -4,7 +4,7 @@ date: 2026-04-09T12:00:00Z
 description: "from a London bus and Vincent in Vietnam!
 
 Kai is attending https://www.ai.engineer/europe/schedule"
-image: "https://img.youtube.com/vi/Z6sGEwXMN0w/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/028-adversarial-agents-from-london.jpg"
 draft: false
 
 podcast:

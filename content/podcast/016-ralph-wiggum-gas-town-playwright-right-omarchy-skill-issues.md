@@ -15,7 +15,7 @@ https://github.com/kaihendry/skills
 33:41 Ralph Wiggum memes
 36:37 Omarchy
 41:11 Skills for AI"
-image: "https://img.youtube.com/vi/o-NUs1isBp8/hqdefault.jpg"
+image: "https://dabase.com/podcast/images/016-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues.jpg"
 draft: false
 
 podcast:
