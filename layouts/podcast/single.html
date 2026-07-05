@@ -63,12 +63,23 @@
 {{/* Episode content */}}
 {{ .Content }}
 
-{{/* Transcript */}}
+{{/* Transcript: frontmatter if present, else auto-generated from YouTube captions */}}
 {{ with .Params.podcast.transcript }}
 <details>
   <summary><strong>Transcript</strong></summary>
   <pre style="white-space: pre-wrap; font-size: 0.9rem;">{{ . }}</pre>
 </details>
+{{ else }}
+{{ with try (resources.GetRemote (printf "https://dabase.com/podcast/transcripts/%s.txt" .File.BaseFileName)) }}
+{{ with .Value }}
+{{ with .Content }}
+<details>
+  <summary><strong>Transcript</strong> (auto-generated from YouTube captions)</summary>
+  <pre style="white-space: pre-wrap; font-size: 0.9rem;">{{ . }}</pre>
+</details>
+{{ end }}
+{{ end }}
+{{ end }}
 {{ end }}
 
 {{/* Navigation */}}

@@ -59,6 +59,8 @@ git push
 
 **Cache system**: Episode metadata is cached in `metadata/cache/{video_id}.json` to speed up builds from ~22min to ~3min. Use `FORCE=1 redo metadata/episodes.json` to bypass cache and refetch all episodes.
 
+**Transcripts**: Cleaned YouTube auto-captions, built by `default.vtt.do`/`default.txt.do` into `.transcripts/` and synced to `s3://dabase.com/podcast/transcripts/` (referenced by `<podcast:transcript>` in the feed and rendered on episode pages). Recurring caption errors (e.g. "Cloud Code" → "Claude Code") are fixed in `metadata/transcript-corrections.sed`; after editing it, rebuild with `redo .transcripts/*.vtt .transcripts/*.txt && redo upload-transcripts`.
+
 **YouTube bot detection**: If `yt-dlp` is blocked ("Sign in to confirm you're not a bot"), use Chrome cookies:
 - Fetch metadata: `yt-dlp --cookies-from-browser chrome -j --no-warnings --skip-download "URL" > metadata/cache/VIDEO_ID.json`
 - Download audio: `yt-dlp --cookies-from-browser chrome --extract-audio --audio-format mp3 --audio-quality 192K --output ".audio/SLUG" --no-playlist "URL"`

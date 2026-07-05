@@ -8,7 +8,8 @@
 <rss version="2.0"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:atom="http://www.w3.org/2005/Atom"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:podcast="https://podcastindex.org/namespace/1.0">
 <channel>
     <title>{{ .Site.Params.podcast.title }}</title>
     <link>{{ .Permalink }}</link>
@@ -69,6 +70,7 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:summary>{{ $page.Description }}</itunes:summary>
         {{ with $page.Params.image }}<itunes:image href="{{ . }}" />{{ end }}
+        <podcast:transcript url="https://dabase.com/podcast/transcripts/{{ $page.File.BaseFileName }}.vtt" type="text/vtt" />
 
         {{/* Content with transcript */}}
         {{ if .transcript }}

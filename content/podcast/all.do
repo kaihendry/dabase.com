@@ -17,8 +17,11 @@ redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.audio/&.mp3
 echo "Generating episode artwork..." >&2
 redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&.jpg|')
 
+echo "Generating transcripts..." >&2
+redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.transcripts/&.vtt .transcripts/&.txt|')
+
 # Step 3: Upload to S3
-redo-ifchange upload-audio upload-images
+redo-ifchange upload-audio upload-images upload-transcripts
 
 echo "Podcast build complete!" >&2
 
