@@ -52,6 +52,7 @@ params:
     explicit: false
     image: "https://dabase.com/podcast/cover.jpg"
     spotifyId: "3Iotnt60LbMrSm5poycuRz"
+    appleId: "1859440547"
     owner:
       name: "Kai Hendry"
       email: "hendry+podcast@iki.fi"
