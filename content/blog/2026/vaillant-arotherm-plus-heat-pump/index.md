@@ -62,5 +62,5 @@ A few surprises:
 
 I've yet to figure out how to see energy usage from the myVAILLANT app itself. I'm also wondering
 whether there's a cloud API I can use to tie this in with our
-[Octopus Intelligent Go](https://octopus.energy/smart/intelligent-go/) tariff — worth digging
+[Octopus Intelligent Go](https://octopus.energy/smart/intelligent-octopus-go/) tariff — worth digging
 into once we've lived with the system for a while.

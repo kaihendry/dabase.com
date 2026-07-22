@@ -1,0 +1,17 @@
+#!/bin/bash -e
+# Checks links in staged Markdown files before committing.
+# Setup (once per clone): git config core.hooksPath .githooks
+
+files=$(git diff --cached --name-only --diff-filter=ACM -- '*.md')
+
+if [ -z "$files" ]; then
+	exit 0
+fi
+
+if ! hash lychee 2>/dev/null; then
+	echo "lychee not installed (brew install lychee) — skipping link check" >&2
+	exit 0
+fi
+
+echo "Checking links in: $files"
+lychee --no-progress $files

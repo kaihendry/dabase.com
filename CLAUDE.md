@@ -9,9 +9,22 @@ hugo              # Build site to public/
 hugo server -D      # Local dev server with live reload and include draft posts
 ```
 
-In general we like to use [redo](http://www.goredo.cypherpunks.su/) instead of
+In general we like to use [redo](https://goredo.dabase.com/) instead of
 Make to build. See https://redo.readthedocs.io/en/latest/cookbook/hello/ for a
 short tutorial.
+
+## Link Checking
+
+A pre-commit hook checks links in staged Markdown files using
+[lychee](https://lychee.cli.rs/) (`brew install lychee`). Enable it once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Note: this only catches real HTTP errors (404s, timeouts). Some sites (e.g. octopus.energy)
+return HTTP 200 for any path ("soft 404"), so broken links there won't be caught automatically —
+double check those by hand.
 
 ## Deployment
 
