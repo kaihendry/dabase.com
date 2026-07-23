@@ -49,6 +49,28 @@ glance, with the myVAILLANT connect boxes for remote monitoring mounted alongsid
 And the energy display, already logging consumption in Wh. Numbers are tiny so far since it's
 only just gone live — worth revisiting once we've got a full heating season of data.
 
+## Cost
+
+A few people have asked about the price, so here's the breakdown. The full contract with
+[Reco Energy](https://www.recoenergy.co.uk/) — heat pump, hot water cylinder, and every radiator
+in the house — came to **£15,818.31**, zero-rated for VAT (ASHP installs currently qualify for
+0% VAT in the UK as an energy-saving measure).
+
+Our install landed right on the boundary of the government's
+[Boiler Upgrade Scheme](https://www.gov.uk/apply-boiler-upgrade-scheme) uplift on 21 July, when
+the grant rose from £7,500 to £9,000. Reco invoiced the deposit and interim payments against the
+old £7,500 figure, with the extra £1,500 due back as a credit once the uplifted voucher is
+confirmed — so either way, the full £9,000 applies.
+
+| | |
+|---|---|
+| Contract total | £15,818.31 |
+| Boiler Upgrade Scheme grant (uplifted) | −£9,000.00 |
+| **Net cost** | **£6,818.31** |
+
+Paid in three instalments — 25% deposit, 35% interim, 40% final — with the grant applied against
+the interim and final invoices.
+
 ## First impressions
 
 A few surprises:
