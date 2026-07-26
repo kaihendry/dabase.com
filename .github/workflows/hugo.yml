@@ -35,7 +35,9 @@ jobs:
 
       - name: Sync to S3
         run: |
-          aws s3 sync public/ s3://dabase.com
+          # --size-only ignores mtime, which Hugo makes useless: it rebuilds
+          # every file each run, so a plain sync re-uploads the whole 178MB site.
+          aws s3 sync public/ s3://dabase.com --size-only
 
       - name: Invalidate CloudFront cache
         run: |
