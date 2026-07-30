@@ -14,4 +14,6 @@ if ! hash lychee 2>/dev/null; then
 fi
 
 echo "Checking links in: $files"
-lychee --no-progress $files
+# --root-dir resolves root-relative links (e.g. /podcast/slides/...) against
+# static/, which Hugo serves at the web root.
+lychee --no-progress --root-dir "$(git rev-parse --show-toplevel)/static" $files

@@ -416,5 +416,16 @@
     "uploadDate": "20260704",
     "duration": 2635,
     "slug": "038-fable-maxxing"
+  },
+  {
+    "episode": 39,
+    "season": 1,
+    "title": "Decision Records for AI",
+    "description": "https://decisions.dabase.com/\nhttps://github.com/kaihendry/decisions\n\nFor vulnerability management https://www.invicti.com/ previously known as https://kondukto.io/ was what I was referring to!",
+    "youtubeId": "RncFBrvly3w",
+    "youtubeUrl": "https://www.youtube.com/watch?v=RncFBrvly3w",
+    "uploadDate": "20260730",
+    "duration": 2193,
+    "slug": "039-decision-records-for-ai"
   }
 ]
