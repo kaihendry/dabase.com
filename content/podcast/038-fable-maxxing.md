@@ -1,6 +1,6 @@
 ---
 title: "Fable maxxing"
-date: 2026-07-04T12:00:00Z
+date: 2026-07-04T15:04:26Z
 description: "https://github.com/kaihendry/members.cardinhamsports.org/commits/main/ is a demonstration of using https://github.com/kaihendry/sloc-sensor"
 image: "https://dabase.com/podcast/images/038-fable-maxxing.jpg"
 

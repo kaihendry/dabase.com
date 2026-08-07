@@ -1,6 +1,6 @@
 ---
 title: "Ralph Wiggum, Gas town, Playwright right, Omarchy & Skill issues"
-date: 2026-01-07T12:00:00Z
+date: 2026-01-07T19:02:30Z
 description: "https://x.com/mattpocockuk/status/2008200878633931247
 
 https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c
@@ -16,7 +16,6 @@ https://github.com/kaihendry/skills
 36:37 Omarchy
 41:11 Skills for AI"
 image: "https://dabase.com/podcast/images/016-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues.jpg"
-draft: false
 
 podcast:
   episode: 16

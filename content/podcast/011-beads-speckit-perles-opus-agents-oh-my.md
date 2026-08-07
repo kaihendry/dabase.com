@@ -1,6 +1,6 @@
 ---
 title: "Beads, Speckit, Perles, Opus, Agents, oh my!"
-date: 2025-12-11T12:00:00Z
+date: 2025-12-11T10:41:40Z
 description: "https://www.loom.com/share/e2ab7a2dc7354bff88c9f528398e1bbf
 
 Do please comment & Europeans must go to these FREE events:
@@ -8,7 +8,6 @@ Do please comment & Europeans must go to these FREE events:
 https://fosdem.org/2026/
 https://cfgmgmtcamp.org/ghent2026/"
 image: "https://dabase.com/podcast/images/011-beads-speckit-perles-opus-agents-oh-my.jpg"
-draft: false
 
 podcast:
   episode: 11

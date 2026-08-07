@@ -2,8 +2,8 @@
   "sourceUrl": "https://www.youtube.com/watch?v=zgmdFmC-mFo",
   "sourceKind": "youtube",
   "sourceId": "youtube-zgmdFmC-mFo",
-  "slidesDir": "/Users/hendry/tmp/dabase.com/content/podcast/slides/youtube-zgmdFmC-mFo",
-  "slidesDirId": "67904cbe",
+  "slidesDir": "/Users/hendry/tmp/dabase.com/static/podcast/slides/zgmdFmC-mFo/youtube-zgmdFmC-mFo",
+  "slidesDirId": "b2638bba",
   "sceneThreshold": 0.3,
   "autoTuneThreshold": true,
   "autoTune": {
@@ -26,37 +26,37 @@
       "index": 1,
       "timestamp": 0.2833333,
       "imagePath": "slide_0001_0.28s.png",
-      "imageVersion": 1782478281478
+      "imageVersion": 1786101941199
     },
     {
       "index": 2,
       "timestamp": 531.1249742800001,
       "imagePath": "slide_0002_531.12s.png",
-      "imageVersion": 1782478281925
+      "imageVersion": 1786101941641
     },
     {
       "index": 3,
       "timestamp": 1067.5833333333333,
       "imagePath": "slide_0003_1067.58s.png",
-      "imageVersion": 1782478281978
+      "imageVersion": 1786101941694
     },
     {
       "index": 4,
       "timestamp": 1605.375,
       "imagePath": "slide_0004_1605.38s.png",
-      "imageVersion": 1782478281972
+      "imageVersion": 1786101941691
     },
     {
       "index": 5,
       "timestamp": 2149.8333334999998,
       "imagePath": "slide_0005_2149.83s.png",
-      "imageVersion": 1782478281968
+      "imageVersion": 1786101941686
     },
     {
       "index": 6,
       "timestamp": 2680.958333333333,
       "imagePath": "slide_0006_2680.96s.png",
-      "imageVersion": 1782478281968
+      "imageVersion": 1786101941683
     }
   ]
 }

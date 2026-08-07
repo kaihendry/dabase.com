@@ -1,11 +1,10 @@
 ---
 title: "AI is a VAMPIRE"
-date: 2026-02-18T12:00:00Z
+date: 2026-02-18T11:12:00Z
 description: "Do please Rate and share to keep us rewarded / motivated to share!
 
 Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0"
 image: "https://dabase.com/podcast/images/021-ai-is-a-vampire.jpg"
-draft: false
 
 podcast:
   episode: 21
@@ -13,7 +12,7 @@ podcast:
   episodeType: "full"
   duration: 4196
   audioUrl: "https://dabase.com/podcast/audio/021-ai-is-a-vampire.mp3"
-  audioSize: 100698092
+  audioSize: 100698093
   youtubeId: "6SqnMr5W3aU"
   youtubeUrl: "https://www.youtube.com/watch?v=6SqnMr5W3aU"
 ---

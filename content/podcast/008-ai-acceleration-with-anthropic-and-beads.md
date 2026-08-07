@@ -1,6 +1,6 @@
 ---
 title: "AI acceleration with Anthropic and Beads"
-date: 2025-11-29T12:00:00Z
+date: 2025-11-29T15:34:14Z
 description: "Chatting about @t3dotgg turning onto @anthropic-ai 
 
 Phone a farmer https://www.youtube.com/live/nW7-igJA798
@@ -10,7 +10,6 @@ https://www.youtube.com/live/cMSprbJ95jg for Steve Yegge about an hour in.
 Beads skill that Vincent didn't realise was in the context:
 https://github.com/kaihendry/dabase.com/blob/main/content/tips/web/bug-reporting-template.md"
 image: "https://dabase.com/podcast/images/008-ai-acceleration-with-anthropic-and-beads.jpg"
-draft: false
 
 podcast:
   episode: 8

@@ -1,9 +1,8 @@
 ---
 title: "Agent loops"
-date: 2026-06-17T12:00:00Z
-description: "Agent loops, release automation, dry-run simulations, multi-model harnesses, skills vs MCPs, and enterprise permissions for agentic workflows."
+date: 2026-06-17T12:49:40Z
+description: ""
 image: "https://dabase.com/podcast/images/036-agent-loops.jpg"
-draft: false
 
 podcast:
   episode: 36
@@ -16,7 +15,7 @@ podcast:
   youtubeUrl: "https://www.youtube.com/watch?v=bi1FOTAZBkY"
 ---
 
-Agent loops, release automation, dry-run simulations, multi-model harnesses, skills vs MCPs, and enterprise permissions for agentic workflows.
+
 
 [Watch on YouTube](https://www.youtube.com/watch?v=bi1FOTAZBkY)
 

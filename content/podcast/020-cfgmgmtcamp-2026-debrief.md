@@ -1,6 +1,6 @@
 ---
 title: "cfgmgmtcamp 2026 debrief"
-date: 2026-02-04T12:00:00Z
+date: 2026-02-04T11:17:22Z
 description: "Previous 2025 vlog: https://youtu.be/QQB6juzzIZU?si=5mrQi_ox8ds0ENp2
 
 I'll add more links as I find a decent internet connection!
@@ -12,7 +12,6 @@ CDK plan we were talking about: https://gist.github.com/kaihendry/ce6574744e161d
 CORRECTION: When talking about the Framework laptop, it was the DESKTOP https://frame.work/gb/en/desktop
 Full talk: https://www.youtube.com/watch?v=oJDGZnTDWJo&t=44m25s"
 image: "https://dabase.com/podcast/images/020-cfgmgmtcamp-2026-debrief.jpg"
-draft: false
 
 podcast:
   episode: 20

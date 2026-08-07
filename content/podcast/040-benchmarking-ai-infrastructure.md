@@ -1,11 +1,10 @@
 ---
 title: "Benchmarking AI infrastructure"
-date: 2026-08-07T12:00:00Z
+date: 2026-08-07T11:10:57Z
 description: "https://cdktn.io/docs/release
 
 https://aws.amazon.com/about-aws/whats-new/2026/07/aws-bench/"
 image: "https://dabase.com/podcast/images/040-benchmarking-ai-infrastructure.jpg"
-draft: false
 
 podcast:
   episode: 40

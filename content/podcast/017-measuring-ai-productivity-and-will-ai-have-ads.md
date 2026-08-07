@@ -1,11 +1,10 @@
 ---
 title: "Measuring AI productivity, and will AI have Ads?"
-date: 2026-01-11T12:00:00Z
+date: 2026-01-11T10:41:56Z
 description: "https://x.com/kaihendry/status/2009678360046420110
 
 https://docs.astral.sh/uv/llms.txt"
 image: "https://dabase.com/podcast/images/017-measuring-ai-productivity-and-will-ai-have-ads.jpg"
-draft: false
 
 podcast:
   episode: 17

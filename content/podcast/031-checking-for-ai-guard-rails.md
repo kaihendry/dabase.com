@@ -1,11 +1,10 @@
 ---
 title: "Checking for AI guard rails"
-date: 2026-05-06T12:00:00Z
+date: 2026-05-06T12:50:03Z
 description: "https://dabase.com/podcast/
 
 https://link.excalidraw.com/l/cQESkNUilU/9R9YETcpHcG"
 image: "https://dabase.com/podcast/images/031-checking-for-ai-guard-rails.jpg"
-draft: false
 
 podcast:
   episode: 31

@@ -1,6 +1,6 @@
 ---
 title: "Spec Driven Discovery"
-date: 2026-04-17T12:00:00Z
+date: 2026-04-17T11:39:32Z
 description: "https://github.com/anthropics/claude-quickstarts/blob/main/autonomous-coding/prompts/app_spec.txt
 
 https://dabase.com/blog/2026/ai-engineer-europe/
@@ -19,7 +19,6 @@ https://cmd-ctrl.ai/
 47:42 - Spec-Driven Development Discussion
 78:14 - AI and Project Management"
 image: "https://dabase.com/podcast/images/029-spec-driven-discovery.jpg"
-draft: false
 
 podcast:
   episode: 29

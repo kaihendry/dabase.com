@@ -1,6 +1,6 @@
 ---
 title: "If it Hurts, do it More Often (with AI)"
-date: 2026-03-25T12:00:00Z
+date: 2026-03-25T11:35:13Z
 description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0
 
 
@@ -23,7 +23,6 @@ description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9
 62:00 - Cloud Security Insights
 66:00 - Closing Thoughts"
 image: "https://dabase.com/podcast/images/026-if-it-hurts-do-it-more-often-with-ai.jpg"
-draft: false
 
 podcast:
   episode: 26

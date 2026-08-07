@@ -1,6 +1,6 @@
 ---
 title: "Where does Spec Driven Development fit?"
-date: 2026-05-16T12:00:00Z
+date: 2026-05-16T13:52:52Z
 description: "My first spec kit (SDD) project: https://github.com/kaihendry/ai-check-guardrails
 
 https://github.com/github/spec-kit
@@ -71,7 +71,6 @@ https://github.com/github/spec-kit
 
 https://dabase.com/podcast/"
 image: "https://dabase.com/podcast/images/032-where-does-spec-driven-development-fit.jpg"
-draft: false
 
 podcast:
   episode: 32

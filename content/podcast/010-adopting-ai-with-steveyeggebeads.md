@@ -1,13 +1,12 @@
 ---
 title: "Adopting AI with steveyegge/beads"
-date: 2025-12-10T12:00:00Z
+date: 2025-12-10T09:06:45Z
 description: "https://dabase.com/podcast/
 
 https://github.com/steveyegge/beads/discussions/430
 
 Goredo: http://www.goredo.cypherpunks.su/"
 image: "https://dabase.com/podcast/images/010-adopting-ai-with-steveyeggebeads.jpg"
-draft: false
 
 podcast:
   episode: 10

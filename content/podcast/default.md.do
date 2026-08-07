@@ -40,15 +40,18 @@ else
     AUDIO_SIZE=0
 fi
 
-# Format date (YYYYMMDD -> YYYY-MM-DD)
-FORMATTED_DATE="${UPLOAD_DATE:0:4}-${UPLOAD_DATE:4:2}-${UPLOAD_DATE:6:2}"
+# Prefer YouTube's exact publish time. A hardcoded time-of-day (we used to use
+# noon) puts same-day episodes in the future, and Hugo silently drops those.
+PUBLISHED=$(jq -r '.timestamp // empty' "metadata/cache/${YOUTUBE_ID}.json" 2>/dev/null)
+if [ -n "$PUBLISHED" ]; then
+    PUB_DATE=$(date -u -r "$PUBLISHED" "+%Y-%m-%dT%H:%M:%SZ" 2>/dev/null \
+        || date -u -d "@$PUBLISHED" "+%Y-%m-%dT%H:%M:%SZ")
+else
+    PUB_DATE="${UPLOAD_DATE:0:4}-${UPLOAD_DATE:4:2}-${UPLOAD_DATE:6:2}T00:00:00Z"
+fi
 
-# Videos in playlist that aren't real episodes — kept in the playlist for
-# numbering continuity but hidden from the published feed via draft: true.
-DRAFT="false"
-case "$YOUTUBE_ID" in
-    X-SEYqhB7Rw) DRAFT="true" ;;
-esac
+# No draft: key is ever emitted. Videos in the playlist that aren't real
+# episodes (see NON_EPISODES in all.do) simply don't get a markdown file.
 
 echo "Generating markdown for episode $EPISODE_NUM: $TITLE" >&2
 
@@ -130,10 +133,9 @@ fi
 cat > "$3" <<EOF
 ---
 title: "$TITLE"
-date: ${FORMATTED_DATE}T12:00:00Z
+date: $PUB_DATE
 description: "$DESCRIPTION_YAML"
 image: "$THUMBNAIL_URL"
-draft: $DRAFT
 
 podcast:
   episode: $EPISODE_NUM

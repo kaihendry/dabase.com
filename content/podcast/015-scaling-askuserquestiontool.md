@@ -1,6 +1,6 @@
 ---
 title: "Scaling AskUserQuestionTool"
-date: 2026-01-03T12:00:00Z
+date: 2026-01-03T17:32:42Z
 description: "Vibe coded Chrome extension to show Amazon UK Data First Available: https://github.com/kaihendry/date-first-available
 
 My failed thought experiment to get AI to setup my PI https://github.com/kaihendry/ai-pi
@@ -15,7 +15,6 @@ Kiro seminar (PAID) https://www.eventbrite.com/e/hands-on-spec-driven-developmen
 
 https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04"
 image: "https://dabase.com/podcast/images/015-scaling-askuserquestiontool.jpg"
-draft: false
 
 podcast:
   episode: 15

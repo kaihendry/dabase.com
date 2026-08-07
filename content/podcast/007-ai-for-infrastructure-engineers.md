@@ -1,11 +1,10 @@
 ---
 title: "AI for Infrastructure Engineers"
-date: 2025-11-21T12:00:00Z
+date: 2025-11-21T16:02:20Z
 description: "https://youtu.be/cMSprbJ95jg?t=3675
 
 If you're using an IDE you're a bad engineer!"
 image: "https://dabase.com/podcast/images/007-ai-for-infrastructure-engineers.jpg"
-draft: false
 
 podcast:
   episode: 7

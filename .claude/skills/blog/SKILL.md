@@ -42,6 +42,25 @@ You are helping the user create a new blog post for their Hugo-based blog at dab
    - Let them know they can start writing content
    - Suggest running `hugo server` to preview if needed
 
+## Publishing gotchas — check these when a post won't render
+
+Hugo silently drops content instead of erroring, so "it built fine but the page
+isn't there" is nearly always one of these two:
+
+1. **A `date` in the future.** Compare against `date -u`, not local time — BST/SGT
+   local time is ahead of UTC, so a post stamped `T12:00:00Z` at 11:20 UTC is
+   invisible until noon. Never hardcode a time of day; use the real publish
+   instant. This bit the podcast generator (`content/podcast/default.md.do`),
+   which now reads YouTube's `.timestamp` from the metadata cache.
+2. **A `draft:` key.** We don't use Hugo drafts at all — they slow things down.
+   Omit the key entirely; don't write `draft: false`. To keep something out of
+   the feed, don't generate a file for it (see `NON_EPISODES` in
+   `content/podcast/all.do`).
+
+After publishing, verify rather than assume — `hugo --quiet` then confirm the
+page and, for podcasts, that `grep -c '<item>' public/podcast/index.xml` matches
+the number of episode files. CI (`.github/workflows/test.yml`) enforces that.
+
 ## Important Notes
 - Use `date +%Y` to dynamically determine the current year
 - Use Hugo's `hugo new` command to bootstrap the post

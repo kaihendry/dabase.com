@@ -1,12 +1,11 @@
 ---
 title: "Decision Records for AI"
-date: 2026-07-30T12:00:00Z
+date: 2026-07-30T14:10:39Z
 description: "https://decisions.dabase.com/
 https://github.com/kaihendry/decisions
 
 For vulnerability management https://www.invicti.com/ previously known as https://kondukto.io/ was what I was referring to!"
 image: "https://dabase.com/podcast/images/039-decision-records-for-ai.jpg"
-draft: false
 
 podcast:
   episode: 39

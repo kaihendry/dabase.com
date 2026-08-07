@@ -1,6 +1,6 @@
 ---
 title: "Managing context is the challenge"
-date: 2026-04-25T12:00:00Z
+date: 2026-04-25T08:28:00Z
 description: "https://dabase.com/podcast/
 
 Chapters
@@ -25,7 +25,6 @@ Chapters
 01:05:55 Addressing Quality and Security Concerns
 01:11:33 The Challenges of AI Adoption in Enterprises"
 image: "https://dabase.com/podcast/images/030-managing-context-is-the-challenge.jpg"
-draft: false
 
 podcast:
   episode: 30

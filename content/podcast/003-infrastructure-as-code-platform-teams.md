@@ -1,19 +1,18 @@
 ---
 title: "Infrastructure as Code & Platform teams"
-date: 2025-10-19T12:00:00Z
+date: 2025-10-19T12:45:23Z
 description: "https://aws.amazon.com/cloudcontrolapi/
 
 https://s.natalian.org/2025-10-19/CommunityDay_Malaysia_2025.pptx"
 image: "https://dabase.com/podcast/images/003-infrastructure-as-code-platform-teams.jpg"
-draft: false
 
 podcast:
   episode: 3
   season: 1
   episodeType: "full"
   duration: 5559
-  audioUrl: "/podcast/audio/003-infrastructure-as-code-platform-teams.mp3"
-  audioSize: 133425836
+  audioUrl: "https://dabase.com/podcast/audio/003-infrastructure-as-code-platform-teams.mp3"
+  audioSize: 133425837
   youtubeId: "gkoxHncYCTk"
   youtubeUrl: "https://www.youtube.com/watch?v=gkoxHncYCTk"
 ---

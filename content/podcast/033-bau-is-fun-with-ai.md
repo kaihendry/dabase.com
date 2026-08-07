@@ -1,6 +1,6 @@
 ---
 title: "BAU is fun with AI"
-date: 2026-05-21T12:00:00Z
+date: 2026-05-21T16:45:41Z
 description: "Chapters
 
 00:00 Coffee and Casual Conversations
@@ -19,7 +19,6 @@ description: "Chapters
 39:48 Spec-Driven Development and Code Review Dynamics
 51:25 Reflections on Spec-Driven Development Challenges"
 image: "https://dabase.com/podcast/images/033-bau-is-fun-with-ai.jpg"
-draft: false
 
 podcast:
   episode: 33
@@ -27,7 +26,7 @@ podcast:
   episodeType: "full"
   duration: 3152
   audioUrl: "https://dabase.com/podcast/audio/033-bau-is-fun-with-ai.mp3"
-  audioSize: 0
+  audioSize: 75643821
   youtubeId: "6RsV8yQuB6I"
   youtubeUrl: "https://www.youtube.com/watch?v=6RsV8yQuB6I"
 ---
