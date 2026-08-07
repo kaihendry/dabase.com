@@ -427,5 +427,16 @@
     "uploadDate": "20260730",
     "duration": 2193,
     "slug": "039-decision-records-for-ai"
+  },
+  {
+    "episode": 40,
+    "season": 1,
+    "title": "Benchmarking AI infrastructure",
+    "description": "https://cdktn.io/docs/release\n\nhttps://aws.amazon.com/about-aws/whats-new/2026/07/aws-bench/",
+    "youtubeId": "edV02pr9su8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=edV02pr9su8",
+    "uploadDate": "20260807",
+    "duration": 3661,
+    "slug": "040-benchmarking-ai-infrastructure"
   }
 ]
