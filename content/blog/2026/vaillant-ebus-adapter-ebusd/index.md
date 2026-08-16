@@ -30,6 +30,8 @@ bus. Different layer, near-identical name.
 The [eBUS Adapter Stick C6](https://adapter.ebusd.eu/v5-c6/stick) — an ESP32-C6 in a 42×16 mm
 stick with a two-pin connector on one end and USB-C on the other.
 
+<a href="ebus-adapter-unboxing.avif"><img src="ebus-adapter-unboxing.avif" alt="The eBUS Adapter Stick C6 out of its antistatic bag, with the pluggable green two-pin terminal block alongside" style="max-width:50%"></a>
+
 Two properties that matter:
 
 - **Galvanically isolated, class 0.** It draws *nothing* from the bus. Adding it is electrically a
