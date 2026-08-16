@@ -20,7 +20,8 @@ echo "Downloading audio files..." >&2
 redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.audio/&.mp3|')
 
 echo "Generating episode artwork..." >&2
-redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&.jpg|')
+redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&.jpg|') \
+    $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&-wide.jpg|')
 
 echo "Generating transcripts..." >&2
 redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.transcripts/&.vtt .transcripts/&.txt|')

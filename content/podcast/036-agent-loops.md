@@ -3,6 +3,7 @@ title: "Agent loops"
 date: 2026-06-17T12:49:40Z
 description: ""
 image: "https://dabase.com/podcast/images/036-agent-loops.jpg"
+thumbnail: "https://dabase.com/podcast/images/036-agent-loops-wide.jpg"
 
 podcast:
   episode: 36

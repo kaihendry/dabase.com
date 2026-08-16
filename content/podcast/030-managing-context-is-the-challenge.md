@@ -25,6 +25,7 @@ Chapters
 01:05:55 Addressing Quality and Security Concerns
 01:11:33 The Challenges of AI Adoption in Enterprises"
 image: "https://dabase.com/podcast/images/030-managing-context-is-the-challenge.jpg"
+thumbnail: "https://dabase.com/podcast/images/030-managing-context-is-the-challenge-wide.jpg"
 
 podcast:
   episode: 30

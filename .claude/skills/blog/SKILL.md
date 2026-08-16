@@ -56,6 +56,13 @@ isn't there" is nearly always one of these two:
    Omit the key entirely; don't write `draft: false`. To keep something out of
    the feed, don't generate a file for it (see `NON_EPISODES` in
    `content/podcast/all.do`).
+3. **A podcast episode missing from the YouTube playlist.** `redo all` discovers
+   episodes solely by enumerating the "AI Infrastructure" playlist
+   (`PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak`) in `metadata/episodes.json.do`, and
+   episode numbers come from position in it — reversed, so the newest video
+   becomes the highest number. A published-but-unlisted video generates no
+   markdown at all and the build looks like a no-op. Add it to the playlist
+   rather than working around the script.
 
 After publishing, verify rather than assume — `hugo --quiet` then confirm the
 page and, for podcasts, that `grep -c '<item>' public/podcast/index.xml` matches

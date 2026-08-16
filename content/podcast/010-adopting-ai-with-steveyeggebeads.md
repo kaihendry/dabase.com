@@ -7,6 +7,7 @@ https://github.com/steveyegge/beads/discussions/430
 
 Goredo: http://www.goredo.cypherpunks.su/"
 image: "https://dabase.com/podcast/images/010-adopting-ai-with-steveyeggebeads.jpg"
+thumbnail: "https://dabase.com/podcast/images/010-adopting-ai-with-steveyeggebeads-wide.jpg"
 
 podcast:
   episode: 10

@@ -3,6 +3,7 @@ title: "Why do we need the Cloud Development Kit?"
 date: 2025-12-19T16:39:22Z
 description: "The Cloud is too complex, we need a programming language, we need abstractions. Terraform isn't enough for AWS."
 image: "https://dabase.com/podcast/images/013-why-do-we-need-the-cloud-development-kit.jpg"
+thumbnail: "https://dabase.com/podcast/images/013-why-do-we-need-the-cloud-development-kit-wide.jpg"
 
 podcast:
   episode: 13

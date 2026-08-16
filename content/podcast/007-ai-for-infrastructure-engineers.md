@@ -5,6 +5,7 @@ description: "https://youtu.be/cMSprbJ95jg?t=3675
 
 If you're using an IDE you're a bad engineer!"
 image: "https://dabase.com/podcast/images/007-ai-for-infrastructure-engineers.jpg"
+thumbnail: "https://dabase.com/podcast/images/007-ai-for-infrastructure-engineers-wide.jpg"
 
 podcast:
   episode: 7

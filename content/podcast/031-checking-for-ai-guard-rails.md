@@ -5,6 +5,7 @@ description: "https://dabase.com/podcast/
 
 https://link.excalidraw.com/l/cQESkNUilU/9R9YETcpHcG"
 image: "https://dabase.com/podcast/images/031-checking-for-ai-guard-rails.jpg"
+thumbnail: "https://dabase.com/podcast/images/031-checking-for-ai-guard-rails-wide.jpg"
 
 podcast:
   episode: 31

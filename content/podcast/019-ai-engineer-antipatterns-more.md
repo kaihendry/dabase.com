@@ -15,6 +15,7 @@ Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9
 
 Kai will be at https://fosdem.org/2026/ & https://cfgmgmtcamp.org/ghent2026/ next week ... say HELLO if you see me!"
 image: "https://dabase.com/podcast/images/019-ai-engineer-antipatterns-more.jpg"
+thumbnail: "https://dabase.com/podcast/images/019-ai-engineer-antipatterns-more-wide.jpg"
 
 podcast:
   episode: 19

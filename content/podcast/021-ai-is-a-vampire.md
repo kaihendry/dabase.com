@@ -5,6 +5,7 @@ description: "Do please Rate and share to keep us rewarded / motivated to share!
 
 Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0"
 image: "https://dabase.com/podcast/images/021-ai-is-a-vampire.jpg"
+thumbnail: "https://dabase.com/podcast/images/021-ai-is-a-vampire-wide.jpg"
 
 podcast:
   episode: 21

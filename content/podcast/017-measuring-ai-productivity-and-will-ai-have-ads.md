@@ -5,6 +5,7 @@ description: "https://x.com/kaihendry/status/2009678360046420110
 
 https://docs.astral.sh/uv/llms.txt"
 image: "https://dabase.com/podcast/images/017-measuring-ai-productivity-and-will-ai-have-ads.jpg"
+thumbnail: "https://dabase.com/podcast/images/017-measuring-ai-productivity-and-will-ai-have-ads-wide.jpg"
 
 podcast:
   episode: 17

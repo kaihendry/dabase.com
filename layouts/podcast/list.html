@@ -91,7 +91,7 @@
 <li>
   <a class="episode-tile" href="{{ .RelPermalink }}">
     {{ $episodeTitle := .Title }}
-    {{ with .Params.image }}<img src="{{ . }}" alt="{{ $episodeTitle }}" loading="lazy">{{ end }}
+    {{ with or .Params.thumbnail .Params.image }}<img src="{{ . }}" alt="{{ $episodeTitle }}" loading="lazy">{{ end }}
     <div class="episode-info">
       <div class="episode-title">{{ with .Params.podcast }}Episode {{ .episode }}: {{ end }}{{ .Title }}</div>
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>

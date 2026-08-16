@@ -10,6 +10,7 @@ https://www.youtube.com/live/cMSprbJ95jg for Steve Yegge about an hour in.
 Beads skill that Vincent didn't realise was in the context:
 https://github.com/kaihendry/dabase.com/blob/main/content/tips/web/bug-reporting-template.md"
 image: "https://dabase.com/podcast/images/008-ai-acceleration-with-anthropic-and-beads.jpg"
+thumbnail: "https://dabase.com/podcast/images/008-ai-acceleration-with-anthropic-and-beads-wide.jpg"
 
 podcast:
   episode: 8

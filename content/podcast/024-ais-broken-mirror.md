@@ -5,6 +5,7 @@ description: "https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZI
 
 https://dabase.com/podcast/ for a summary"
 image: "https://dabase.com/podcast/images/024-ais-broken-mirror.jpg"
+thumbnail: "https://dabase.com/podcast/images/024-ais-broken-mirror-wide.jpg"
 
 podcast:
   episode: 24

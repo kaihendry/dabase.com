@@ -3,6 +3,7 @@ title: "AI Infrastructure addicts"
 date: 2025-12-02T16:38:31Z
 description: "https://github.com/addyosmani/gemini-cli-tips"
 image: "https://dabase.com/podcast/images/009-ai-infrastructure-addicts.jpg"
+thumbnail: "https://dabase.com/podcast/images/009-ai-infrastructure-addicts-wide.jpg"
 
 podcast:
   episode: 9

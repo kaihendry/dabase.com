@@ -5,6 +5,7 @@ description: "https://aws.amazon.com/cloudcontrolapi/
 
 https://s.natalian.org/2025-10-19/CommunityDay_Malaysia_2025.pptx"
 image: "https://dabase.com/podcast/images/003-infrastructure-as-code-platform-teams.jpg"
+thumbnail: "https://dabase.com/podcast/images/003-infrastructure-as-code-platform-teams-wide.jpg"
 
 podcast:
   episode: 3

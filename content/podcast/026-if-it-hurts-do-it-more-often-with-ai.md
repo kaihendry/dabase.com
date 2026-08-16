@@ -23,6 +23,7 @@ description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9
 62:00 - Cloud Security Insights
 66:00 - Closing Thoughts"
 image: "https://dabase.com/podcast/images/026-if-it-hurts-do-it-more-often-with-ai.jpg"
+thumbnail: "https://dabase.com/podcast/images/026-if-it-hurts-do-it-more-often-with-ai-wide.jpg"
 
 podcast:
   episode: 26

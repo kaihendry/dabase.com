@@ -10,6 +10,7 @@ description: "https://github.com/vincenthsh & https://github.com/kaihendry/ - tw
 37:31 Labels vs Tags
 40:10 Integration points"
 image: "https://dabase.com/podcast/images/005-trunk-based-infrastructure-with-feature-flags.jpg"
+thumbnail: "https://dabase.com/podcast/images/005-trunk-based-infrastructure-with-feature-flags-wide.jpg"
 
 podcast:
   episode: 5

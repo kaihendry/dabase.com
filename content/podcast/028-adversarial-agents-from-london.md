@@ -5,6 +5,7 @@ description: "from a London bus and Vincent in Vietnam!
 
 Kai is attending https://www.ai.engineer/europe/schedule"
 image: "https://dabase.com/podcast/images/028-adversarial-agents-from-london.jpg"
+thumbnail: "https://dabase.com/podcast/images/028-adversarial-agents-from-london-wide.jpg"
 
 podcast:
   episode: 28

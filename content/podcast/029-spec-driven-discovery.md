@@ -19,6 +19,7 @@ https://cmd-ctrl.ai/
 47:42 - Spec-Driven Development Discussion
 78:14 - AI and Project Management"
 image: "https://dabase.com/podcast/images/029-spec-driven-discovery.jpg"
+thumbnail: "https://dabase.com/podcast/images/029-spec-driven-discovery-wide.jpg"
 
 podcast:
   episode: 29

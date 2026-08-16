@@ -5,6 +5,7 @@ description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9
 
 https://dabase.com/podcast/ for a summary"
 image: "https://dabase.com/podcast/images/023-validating-ai-output-refactoring-infrastructure.jpg"
+thumbnail: "https://dabase.com/podcast/images/023-validating-ai-output-refactoring-infrastructure-wide.jpg"
 
 podcast:
   episode: 23

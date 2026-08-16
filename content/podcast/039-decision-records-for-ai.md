@@ -6,6 +6,7 @@ https://github.com/kaihendry/decisions
 
 For vulnerability management https://www.invicti.com/ previously known as https://kondukto.io/ was what I was referring to!"
 image: "https://dabase.com/podcast/images/039-decision-records-for-ai.jpg"
+thumbnail: "https://dabase.com/podcast/images/039-decision-records-for-ai-wide.jpg"
 
 podcast:
   episode: 39

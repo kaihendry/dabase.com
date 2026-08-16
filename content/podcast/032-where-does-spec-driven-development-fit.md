@@ -71,6 +71,7 @@ https://github.com/github/spec-kit
 
 https://dabase.com/podcast/"
 image: "https://dabase.com/podcast/images/032-where-does-spec-driven-development-fit.jpg"
+thumbnail: "https://dabase.com/podcast/images/032-where-does-spec-driven-development-fit-wide.jpg"
 
 podcast:
   episode: 32

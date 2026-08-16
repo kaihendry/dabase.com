@@ -19,6 +19,7 @@ description: "Chapters
 39:48 Spec-Driven Development and Code Review Dynamics
 51:25 Reflections on Spec-Driven Development Challenges"
 image: "https://dabase.com/podcast/images/033-bau-is-fun-with-ai.jpg"
+thumbnail: "https://dabase.com/podcast/images/033-bau-is-fun-with-ai-wide.jpg"
 
 podcast:
   episode: 33

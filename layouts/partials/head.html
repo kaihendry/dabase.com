@@ -23,7 +23,8 @@
   />
   {{ end }}
   <meta name="twitter:creator" content="@kaihendry" />
-  {{ with .Params.image }}
+  {{/* summary_large_image wants a wide card, so prefer the 16:9 variant */}}
+  {{ with or .Params.thumbnail .Params.image }}
   <meta property="og:image" content="{{ . | absURL }}" />
   <meta name="twitter:image" content="{{ . | absURL }}" />
   <meta name="twitter:card" content="summary_large_image" />

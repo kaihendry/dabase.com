@@ -9,6 +9,7 @@ https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html
 
 WDYT? Comments below!"
 image: "https://dabase.com/podcast/images/002-what-is-specdriven-development.jpg"
+thumbnail: "https://dabase.com/podcast/images/002-what-is-specdriven-development-wide.jpg"
 
 podcast:
   episode: 2

@@ -29,9 +29,11 @@ UPLOAD_DATE=$(echo "$EPISODE_JSON" | jq -r '.uploadDate')
 AUDIO_FILE=".audio/${SLUG}.mp3"
 AUDIO_URL="https://dabase.com/podcast/audio/${SLUG}.mp3"
 
-# Self-hosted square artwork (built by default.jpg.do); URL must change for
-# Spotify/Apple to re-fetch, so never point at img.youtube.com here
+# Self-hosted artwork (both built by default.jpg.do); URLs must change for
+# Spotify/Apple to re-fetch, so never point at img.youtube.com here.
+# image: square, for the feed's itunes:image. thumbnail: 16:9, for web + OG.
 THUMBNAIL_URL="https://dabase.com/podcast/images/${SLUG}.jpg"
+WIDE_URL="https://dabase.com/podcast/images/${SLUG}-wide.jpg"
 
 # Get audio file size if exists
 if [ -f "$AUDIO_FILE" ]; then
@@ -129,6 +131,34 @@ PYEOF
     rm -f "$PY_SCRIPT"
 fi
 
+# The description goes into the body verbatim, but Markdown collapses single
+# newlines, so a chapter list renders as one run-together paragraph. Turn
+# "12:34 Title" lines into a list linking into the video; leave the rest alone.
+PY_BODY=$(mktemp /tmp/podcast_body_XXXXXX.py)
+cat > "$PY_BODY" <<'PYEOF'
+import os, re, sys
+
+video_id = os.environ['VIDEO_ID']
+chapter = re.compile(r'^\s*(\d{1,2}:\d{2}(?::\d{2})?)\s+(\S.*?)\s*$')
+
+def to_secs(stamp):
+    p = [int(x) for x in stamp.split(':')]
+    return p[0] * 3600 + p[1] * 60 + p[2] if len(p) == 3 else p[0] * 60 + p[1]
+
+out = []
+for line in sys.stdin.read().split('\n'):
+    m = chapter.match(line)
+    if m:
+        out.append('- [{}](https://youtu.be/{}?t={}) {}'.format(
+            m.group(1), video_id, to_secs(m.group(1)), m.group(2)))
+    else:
+        out.append(line)
+print('\n'.join(out).strip())
+PYEOF
+
+DESCRIPTION_BODY=$(VIDEO_ID="$YOUTUBE_ID" python3 "$PY_BODY" <<< "$DESCRIPTION")
+rm -f "$PY_BODY"
+
 # Generate markdown
 cat > "$3" <<EOF
 ---
@@ -136,6 +166,7 @@ title: "$TITLE"
 date: $PUB_DATE
 description: "$DESCRIPTION_YAML"
 image: "$THUMBNAIL_URL"
+thumbnail: "$WIDE_URL"
 
 podcast:
   episode: $EPISODE_NUM
@@ -148,7 +179,7 @@ podcast:
   youtubeUrl: "$YOUTUBE_URL"
 ---
 
-$DESCRIPTION
+$DESCRIPTION_BODY
 
 [Watch on YouTube]($YOUTUBE_URL)
 

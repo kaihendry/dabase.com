@@ -15,6 +15,7 @@ Kiro seminar (PAID) https://www.eventbrite.com/e/hands-on-spec-driven-developmen
 
 https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04"
 image: "https://dabase.com/podcast/images/015-scaling-askuserquestiontool.jpg"
+thumbnail: "https://dabase.com/podcast/images/015-scaling-askuserquestiontool-wide.jpg"
 
 podcast:
   episode: 15

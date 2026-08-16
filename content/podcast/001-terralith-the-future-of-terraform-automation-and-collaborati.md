@@ -7,6 +7,7 @@ Opentaco trailer from https://www.linkedin.com/posts/izalutski_today-i-am-excite
 
 https://github.com/diggerhq/digger/blob/develop/taco/agents_context/opentaco-case.md#how-will-this-thing-make-money"
 image: "https://dabase.com/podcast/images/001-terralith-the-future-of-terraform-automation-and-collaborati.jpg"
+thumbnail: "https://dabase.com/podcast/images/001-terralith-the-future-of-terraform-automation-and-collaborati-wide.jpg"
 
 podcast:
   episode: 1

@@ -5,6 +5,7 @@ description: "https://github.com/hashicorp/terraform-cdk/commit/a0c56138e2b4c7b6
 
 Trying to plot the changing Infrastructure landscape."
 image: "https://dabase.com/podcast/images/012-cdk-for-terraform-and-two-pizza-teams.jpg"
+thumbnail: "https://dabase.com/podcast/images/012-cdk-for-terraform-and-two-pizza-teams-wide.jpg"
 
 podcast:
   episode: 12

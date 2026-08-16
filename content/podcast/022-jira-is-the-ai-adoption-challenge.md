@@ -5,6 +5,7 @@ description: "The elephant in the room is Jira. How can we adopt AI in a structu
 
 https://dabase.com/podcast/"
 image: "https://dabase.com/podcast/images/022-jira-is-the-ai-adoption-challenge.jpg"
+thumbnail: "https://dabase.com/podcast/images/022-jira-is-the-ai-adoption-challenge-wide.jpg"
 
 podcast:
   episode: 22

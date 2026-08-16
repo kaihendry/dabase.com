@@ -5,6 +5,7 @@ description: "https://cdktn.io/docs/release
 
 https://aws.amazon.com/about-aws/whats-new/2026/07/aws-bench/"
 image: "https://dabase.com/podcast/images/040-benchmarking-ai-infrastructure.jpg"
+thumbnail: "https://dabase.com/podcast/images/040-benchmarking-ai-infrastructure-wide.jpg"
 
 podcast:
   episode: 40

@@ -438,5 +438,16 @@
     "uploadDate": "20260807",
     "duration": 3661,
     "slug": "040-benchmarking-ai-infrastructure"
+  },
+  {
+    "episode": 41,
+    "season": 1,
+    "title": "Agent Client Protocol",
+    "description": "0:00 Holiday, kids, and startup life\n3:58 The pressure to stay relevant with AI\n5:06 Solar farms vs food security\n5:49 Screen share: what is Kiro Crew?\n8:06 Agent Client Protocol is not MCP\n10:23 Where does the gateway actually run?\n11:24 Remote crew: one command to launch on EC2\n15:53 Memory systems: Hermes vs Kiro out of the box\n18:19 What an embedding model actually does\n20:26 Maintaining memories: markdown vs vector DB\n21:53 The multiplayer question\n23:46 The NAT gateway tax and fck-nat\n27:41 Using it for real: diagrams and artifacts\n29:19 Forking Kiro Crew onto a ChatGPT subscription\n31:25 Elicitation and ACP capability mismatches\n33:44 Faking usage reporting with a facade\n35:56 Why a Claude Code ACP gets your account banned\n38:47 Option chips beat AskUserQuestion\n41:05 Local auto-classifier and trust prompts\n42:40 Why AWS rewrote Kiro onto a single harness\n43:43 The artifact reveal and publishing to S3\n45:31 Take a break",
+    "youtubeId": "82R2F0Vz69U",
+    "youtubeUrl": "https://www.youtube.com/watch?v=82R2F0Vz69U",
+    "uploadDate": "20260816",
+    "duration": 2811,
+    "slug": "041-agent-client-protocol"
   }
 ]

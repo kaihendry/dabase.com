@@ -5,6 +5,7 @@ description: "00:00 Why move to Vietnam?
 33:34 Spec Kit and https://github.com/steveyegge/beads? 
 44:49 Demo of the Grid"
 image: "https://dabase.com/podcast/images/004-who-is-vincent-de-smet-what-is-grid.jpg"
+thumbnail: "https://dabase.com/podcast/images/004-who-is-vincent-de-smet-what-is-grid-wide.jpg"
 
 podcast:
   episode: 4
