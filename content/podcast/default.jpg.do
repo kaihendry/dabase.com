@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 # Episode artwork, two variants from one .do (both match default.jpg.do):
 #   NNN-slug.jpg       1400x1400 square, required by Apple/Spotify for the feed
 #   NNN-slug-wide.jpg  1280x720 16:9, for the web pages and social cards

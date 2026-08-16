@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Generate markdown file for an episode
 # $1 = target (e.g., 001-episode-title.md)
 # $2 = basename without extension (e.g., 001-episode-title)
@@ -75,7 +76,7 @@ SLIDES_OUT_DIR="../../static/podcast/slides/${YOUTUBE_ID}"
 SLIDES_JSON="${SLIDES_OUT_DIR}/youtube-${YOUTUBE_ID}/slides.json"
 
 # Use cache if both summary JSON and slides.json exist (unless FORCE=1)
-if [ -f "$SUMMARY_CACHE" ] && [ -f "$SLIDES_JSON" ] && [ "$FORCE" != "1" ]; then
+if [ -f "$SUMMARY_CACHE" ] && [ -f "$SLIDES_JSON" ] && [ "${FORCE:-}" != "1" ]; then
     echo "  Using cached summary + slides for $YOUTUBE_ID..." >&2
     SUMMARY_JSON=$(cat "$SUMMARY_CACHE")
 else

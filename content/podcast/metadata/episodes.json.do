@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Fetch episodes from YouTube playlist and generate episodes.json
 # Usage: redo metadata/episodes.json
 
@@ -56,7 +57,7 @@ for VIDEO_ID in $VIDEO_IDS; do
     VIDEO_ERR=$(mktemp)
 
     # Check if cached metadata exists and use it (unless FORCE=1)
-    if [ -f "$CACHE_FILE" ] && [ "$FORCE" != "1" ]; then
+    if [ -f "$CACHE_FILE" ] && [ "${FORCE:-}" != "1" ]; then
         echo "  Using cached video $VIDEO_ID..." >&2
         cp "$CACHE_FILE" "$VIDEO_TMP"
         CACHED_COUNT=$((CACHED_COUNT + 1))
@@ -143,7 +144,7 @@ EXPECTED_COUNT=$((TOTAL - FAILED_COUNT))
 echo "Generated episodes.json with $ACTUAL_COUNT episodes ($FAILED_COUNT unavailable)" >&2
 
 # Output cache statistics
-if [ "$FORCE" = "1" ]; then
+if [ "${FORCE:-}" = "1" ]; then
     echo "Cache statistics: Force mode - fetched all $FETCHED_COUNT from YouTube (cache bypassed)" >&2
 else
     echo "Cache statistics: $CACHED_COUNT cached, $FETCHED_COUNT fetched from YouTube" >&2

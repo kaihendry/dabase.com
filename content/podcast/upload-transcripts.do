@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 # Upload episode transcripts to S3
 # Dependencies: aws cli configured
 
@@ -9,8 +10,14 @@
 redo-always
 
 redo-ifchange metadata/episodes.json
-redo-ifchange $(jq -r '.[].slug' metadata/episodes.json \
-    | sed 's|.*|.transcripts/&.vtt .transcripts/&.txt|')
+# A read loop rather than mapfile: /bin/bash on macOS is 3.2, no mapfile there
+SLUG_LIST=$(jq -r '.[].slug' metadata/episodes.json)
+TRANSCRIPT_FILES=()
+while IFS= read -r SLUG; do
+    [ -n "$SLUG" ] && TRANSCRIPT_FILES+=(".transcripts/${SLUG}.vtt" ".transcripts/${SLUG}.txt")
+done <<< "$SLUG_LIST"
+
+redo-ifchange "${TRANSCRIPT_FILES[@]}"
 
 TRANSCRIPTS_DIR=".transcripts"
 S3_BUCKET="s3://dabase.com/podcast/transcripts/"

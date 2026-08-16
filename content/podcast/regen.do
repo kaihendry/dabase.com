@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 # Regenerate every derived episode file. Use after changing default.md.do or
 # metadata/episodes.json.do, then review `git diff`.
 #
@@ -23,12 +24,19 @@ redo-always
 # Only the markdown, deliberately: going via `all` would also invalidate every
 # transcript and re-download 41 lots of captions from YouTube for nothing. Use
 # `redo all` for a new episode, or after editing transcript-corrections.sed.
-MD_FILES=$(ls [0-9][0-9][0-9]-*.md 2>/dev/null)
+shopt -s nullglob
+MD_FILES=([0-9][0-9][0-9]-*.md)
+shopt -u nullglob
 
-echo "Removing derived episode files so redo will own them again..." >&2
-rm -f metadata/episodes.json $MD_FILES
+if [ "${#MD_FILES[@]}" -eq 0 ]; then
+    echo "No episode markdown to regenerate — run 'redo all' first" >&2
+    exit 1
+fi
+
+echo "Removing ${#MD_FILES[@]} derived episode files so redo will own them again..." >&2
+rm -f metadata/episodes.json "${MD_FILES[@]}"
 
 redo-ifchange metadata/episodes.json
-redo-ifchange $MD_FILES
+redo-ifchange "${MD_FILES[@]}"
 
 date > "$3"

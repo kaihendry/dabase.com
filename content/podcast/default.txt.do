@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 # Plain-text transcript derived from the WebVTT, for on-page rendering
 # $1 = target (e.g., .transcripts/001-episode-title.txt)
 

@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 # Download audio from YouTube (idempotent - checks local, then S3, then downloads)
 # $1 = target (e.g., .audio/001-episode-title.mp3)
 # $2 = basename without extension
@@ -7,10 +8,30 @@ SLUG=$(basename "$2")
 LOCAL_PATH=".audio/${SLUG}.mp3"
 S3_PATH="s3://dabase.com/podcast/audio/${SLUG}.mp3"
 
-# Check 1: Local copy exists and is larger than 1MB (valid MP3)
+redo-ifchange metadata/episodes.json
+
+# Size sanity check, scaled to the episode. We ask yt-dlp for 192 kbps, so
+# expect ~24 KB/s and accept anything over half that; a truncated download still
+# gets caught, and proportionally better than a flat floor did on long episodes.
+# The old fixed 1 MB rejected the valid 699 KB of the 29-second "how to listen"
+# clip, then deleted it on the way out — so that target could never be built.
+DURATION=$(jq -r --arg slug "$SLUG" \
+    '.[] | select(.slug == $slug) | .duration' metadata/episodes.json)
+
+if [ -z "$DURATION" ] || [ "$DURATION" = "null" ] || [ "$DURATION" -le 0 ] 2>/dev/null; then
+    echo "Error: no duration for $SLUG in metadata/episodes.json" >&2
+    exit 1
+fi
+
+MIN_SIZE=$((DURATION * 12000))
+if [ "$MIN_SIZE" -lt 20000 ]; then
+    MIN_SIZE=20000
+fi
+
+# Check 1: Local copy exists and is a plausible size
 if [ -f "$LOCAL_PATH" ]; then
     LOCAL_SIZE=$(stat -c%s "$LOCAL_PATH" 2>/dev/null || stat -f%z "$LOCAL_PATH" 2>/dev/null)
-    if [ "$LOCAL_SIZE" -gt 1000000 ] 2>/dev/null; then
+    if [ "$LOCAL_SIZE" -gt "$MIN_SIZE" ] 2>/dev/null; then
         echo "Using local copy: $LOCAL_PATH (${LOCAL_SIZE} bytes)" >&2
         cp "$LOCAL_PATH" "$3"
         exit 0
@@ -20,8 +41,8 @@ fi
 # Check 2: Already exists on S3 - download from there
 if aws s3 ls "$S3_PATH" >/dev/null 2>&1; then
     S3_SIZE=$(aws s3 ls "$S3_PATH" | awk '{print $3}')
-    # Only use if file is larger than 1MB (valid MP3, not placeholder)
-    if [ "$S3_SIZE" -gt 1000000 ] 2>/dev/null; then
+    # Only use if it is a plausible size, not a placeholder
+    if [ "$S3_SIZE" -gt "$MIN_SIZE" ] 2>/dev/null; then
         echo "Downloading from S3: $SLUG (${S3_SIZE} bytes)" >&2
         mkdir -p .audio
         aws s3 cp "$S3_PATH" "$3" --only-show-errors
@@ -62,8 +83,8 @@ fi
 
 # Verify download succeeded
 FILE_SIZE=$(stat -c%s "$3" 2>/dev/null || stat -f%z "$3" 2>/dev/null || echo 0)
-if [ "$FILE_SIZE" -lt 1000000 ] 2>/dev/null; then
-    echo "Error: Download failed or file too small ($FILE_SIZE bytes)" >&2
+if [ "$FILE_SIZE" -lt "$MIN_SIZE" ] 2>/dev/null; then
+    echo "Error: $SLUG is ${FILE_SIZE} bytes, expected at least ${MIN_SIZE} for ${DURATION}s" >&2
     rm -f "$3"
     exit 1
 fi

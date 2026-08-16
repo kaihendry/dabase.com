@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 # Episode transcript: YouTube auto-captions -> clean WebVTT
 # Dedupes YouTube's rolling caption cues, strips inline word-timing tags,
 # applies metadata/transcript-corrections.sed

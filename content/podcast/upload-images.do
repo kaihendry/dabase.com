@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 # Upload episode artwork to S3
 # Dependencies: aws cli configured
 
@@ -8,8 +9,14 @@
 redo-always
 
 redo-ifchange metadata/episodes.json
-redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&.jpg|') \
-    $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&-wide.jpg|')
+# A read loop rather than mapfile: /bin/bash on macOS is 3.2, no mapfile there
+SLUG_LIST=$(jq -r '.[].slug' metadata/episodes.json)
+IMAGE_FILES=()
+while IFS= read -r SLUG; do
+    [ -n "$SLUG" ] && IMAGE_FILES+=(".images/${SLUG}.jpg" ".images/${SLUG}-wide.jpg")
+done <<< "$SLUG_LIST"
+
+redo-ifchange "${IMAGE_FILES[@]}"
 
 IMAGES_DIR=".images"
 S3_BUCKET="s3://dabase.com/podcast/images/"

@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 # Upload all audio files to S3
 # Dependencies: aws cli configured
 
@@ -11,7 +12,14 @@ redo-always
 # Depend on what we upload, or redo is free to run this sync *before* building
 # the files — which uploads the previous version and reports success.
 redo-ifchange metadata/episodes.json
-redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.audio/&.mp3|')
+# A read loop rather than mapfile: /bin/bash on macOS is 3.2, no mapfile there
+AUDIO_LIST=$(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.audio/&.mp3|')
+AUDIO_FILES=()
+while IFS= read -r LINE; do
+    [ -n "$LINE" ] && AUDIO_FILES+=("$LINE")
+done <<< "$AUDIO_LIST"
+
+redo-ifchange "${AUDIO_FILES[@]}"
 
 AUDIO_DIR=".audio"
 S3_BUCKET="s3://dabase.com/podcast/audio/"
