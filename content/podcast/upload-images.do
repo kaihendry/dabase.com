@@ -2,6 +2,15 @@
 # Upload episode artwork to S3
 # Dependencies: aws cli configured
 
+# See upload-audio.do: without redo-always the marker file makes this a no-op
+# forever, so new artwork silently never reaches S3, and without depending on
+# the files themselves the sync can run before they are built.
+redo-always
+
+redo-ifchange metadata/episodes.json
+redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&.jpg|') \
+    $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&-wide.jpg|')
+
 IMAGES_DIR=".images"
 S3_BUCKET="s3://dabase.com/podcast/images/"
 S3_REGION="ap-southeast-1"

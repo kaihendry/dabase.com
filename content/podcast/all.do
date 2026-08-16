@@ -16,17 +16,10 @@ echo "Generating episode markdown files..." >&2
 redo-ifchange $(jq -r --argjson skip "$NON_EPISODES" \
     '.[] | select(.youtubeId | IN($skip[]) | not) | .slug' metadata/episodes.json | sed 's/$/.md/')
 
-echo "Downloading audio files..." >&2
-redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.audio/&.mp3|')
-
-echo "Generating episode artwork..." >&2
-redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&.jpg|') \
-    $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.images/&-wide.jpg|')
-
-echo "Generating transcripts..." >&2
-redo-ifchange $(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.transcripts/&.vtt .transcripts/&.txt|')
-
-# Step 3: Upload to S3
+# Step 3: Audio, artwork and transcripts to S3. Each upload target depends on
+# the files it syncs, so building these builds those too — listing them here as
+# well would just be duplication that can drift.
+echo "Building and uploading audio, artwork and transcripts..." >&2
 redo-ifchange upload-audio upload-images upload-transcripts
 
 echo "Podcast build complete!" >&2
