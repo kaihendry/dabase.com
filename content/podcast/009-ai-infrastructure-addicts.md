@@ -1,7 +1,7 @@
 ---
 title: "AI Infrastructure addicts"
 date: 2025-12-02T16:38:31Z
-description: "https://github.com/addyosmani/gemini-cli-tips"
+description: "Two developers discuss the evolving landscape of AI-assisted engineering, focusing on the practicalities of managing multiple high-cost subscriptions and the technical shifts in model behavior."
 image: "https://dabase.com/podcast/images/009-ai-infrastructure-addicts.jpg"
 thumbnail: "https://dabase.com/podcast/images/009-ai-infrastructure-addicts-wide.jpg"
 
@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2318
   audioUrl: "https://dabase.com/podcast/audio/009-ai-infrastructure-addicts.mp3"
-  audioSize: 55637613
+  audioSize: 55637612
   youtubeId: "I4pmTz8EKag"
   youtubeUrl: "https://www.youtube.com/watch?v=I4pmTz8EKag"
 ---

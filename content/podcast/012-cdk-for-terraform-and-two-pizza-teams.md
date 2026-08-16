@@ -1,9 +1,7 @@
 ---
 title: "CDK for Terraform and two pizza teams"
 date: 2025-12-16T17:25:10Z
-description: "https://github.com/hashicorp/terraform-cdk/commit/a0c56138e2b4c7b6c128bd7ba08a8e317df852af
-
-Trying to plot the changing Infrastructure landscape."
+description: "Trying to plot the changing Infrastructure landscape."
 image: "https://dabase.com/podcast/images/012-cdk-for-terraform-and-two-pizza-teams.jpg"
 thumbnail: "https://dabase.com/podcast/images/012-cdk-for-terraform-and-two-pizza-teams-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3712
   audioUrl: "https://dabase.com/podcast/audio/012-cdk-for-terraform-and-two-pizza-teams.mp3"
-  audioSize: 89081901
+  audioSize: 89081900
   youtubeId: "rM2pj0JKc0g"
   youtubeUrl: "https://www.youtube.com/watch?v=rM2pj0JKc0g"
 ---

@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 1278
   audioUrl: "https://dabase.com/podcast/audio/034-claude-dynamic-workflows-.mp3"
-  audioSize: 30661677
+  audioSize: 30661676
   youtubeId: "Zc21l989-9Y"
   youtubeUrl: "https://www.youtube.com/watch?v=Zc21l989-9Y"
 ---

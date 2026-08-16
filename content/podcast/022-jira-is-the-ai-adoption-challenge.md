@@ -1,9 +1,7 @@
 ---
 title: "Jira is the AI adoption challenge"
 date: 2026-02-26T14:10:43Z
-description: "The elephant in the room is Jira. How can we adopt AI in a structured way in an Enterprise?
-
-https://dabase.com/podcast/"
+description: "The elephant in the room is Jira. How can we adopt AI in a structured way in an Enterprise?"
 image: "https://dabase.com/podcast/images/022-jira-is-the-ai-adoption-challenge.jpg"
 thumbnail: "https://dabase.com/podcast/images/022-jira-is-the-ai-adoption-challenge-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3881
   audioUrl: "https://dabase.com/podcast/audio/022-jira-is-the-ai-adoption-challenge.mp3"
-  audioSize: 93142701
+  audioSize: 93142700
   youtubeId: "XGbRVRy4LAs"
   youtubeUrl: "https://www.youtube.com/watch?v=XGbRVRy4LAs"
 ---

@@ -1,75 +1,7 @@
 ---
 title: "Where does Spec Driven Development fit?"
 date: 2026-05-16T13:52:52Z
-description: "My first spec kit (SDD) project: https://github.com/kaihendry/ai-check-guardrails
-
-https://github.com/github/spec-kit
-
-0:00 - Introduction to Certification Challenges
-0:20 - Experience with Microsoft SQL Server Certification
-0:46 - Discussion on Corporate Certification Requirements
-1:06 - Trust Issues with Certifications
-1:35 - Learning from Exam Questions
-1:59 - Security Events Data Management
-2:26 - Setting Up Kinesis Stream Endpoints
-2:51 - Slack Notification for Unusual Activity
-3:14 - Security Tooling and AWS Organizations
-3:44 - Shared Services Account and Control Tower
-4:45 - Root Account Access and Security
-5:44 - New Role in Security Administration
-6:08 - Spec Driven Development Concerns
-6:40 - Changes in SpecKit and Skills
-7:24 - Commands and Skills in Anthropic
-8:11 - Handoffs in Cloud Code
-9:04 - Onboarding Flow in SpecLedger
-10:06 - Spec Driven Development Workflow
-11:09 - Bug Fixing and Workflow Efficiency
-12:20 - Impact Assessment and Planning
-13:29 - Feature Branch Management
-14:35 - AI Agents and Process Flexibility
-15:51 - Expertise and Process Adaptation
-16:43 - Git Commit Hooks and History
-17:26 - SpecKit Documentation and Maintenance
-18:14 - Spec Drift and Project Principles
-19:25 - Documentation and End-to-End Tests
-20:44 - Quick Start and CLI Testing
-21:15 - Constitution and Process in SpecLedger
-22:21 - Monorepos and Hexagonal Architecture
-23:13 - Alignment Driven Development
-24:22 - Workspaces and Debugging in VS Code
-25:43 - SpecKit Archive Command
-26:24 - Task Management in SpecLedger
-27:32 - GitHub App and Task Visualization
-28:21 - Beats and Task List Management
-29:52 - Multiplayer Development Vision
-30:34 - Shared Group Chat and User Stories
-31:47 - Clarify Command in SpecLedger
-32:15 - Metadata and Comments in SpecLedger
-33:05 - Visualization of Development Phases
-34:10 - Mockup UI and Design in SpecLedger
-35:17 - UI Changes and Future Plans
-36:27 - Comments and Collaboration in SpecLedger
-37:04 - Open Source and SuperBase Architecture
-38:08 - SQLite and Database Management
-39:25 - Distributed SQL Database at the Edge
-40:44 - Security and Package Management
-41:29 - Local Privilege Escalation and Patching
-42:30 - Zero Day Exploits and Remediation
-43:37 - Defense in Depth and Security Tools
-44:41 - AWS Inspector and Wiz.io
-45:42 - Public IPs and Security Risks
-46:27 - Nginx and Web Server Security
-47:13 - Security Chat Groups and Risk Assessment
-48:05 - 10stack Hack and Package Verification
-49:12 - OIDC and Security Posture
-50:11 - Caching Techniques and Security Risks
-51:31 - Poisoned Package and Cache Exploits
-52:07 - AI and Repository Misconfigurations
-53:22 - Dependency Management and Security Scans
-54:18 - Dependabot and Security Vulnerabilities
-
-
-https://dabase.com/podcast/"
+description: "My first spec kit (SDD) project: https://github.com/kaihendry/ai-check-guardrails"
 image: "https://dabase.com/podcast/images/032-where-does-spec-driven-development-fit.jpg"
 thumbnail: "https://dabase.com/podcast/images/032-where-does-spec-driven-development-fit-wide.jpg"
 
@@ -79,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3311
   audioUrl: "https://dabase.com/podcast/audio/032-where-does-spec-driven-development-fit.mp3"
-  audioSize: 79465581
+  audioSize: 79465580
   youtubeId: "osM0n8gxPAI"
   youtubeUrl: "https://www.youtube.com/watch?v=osM0n8gxPAI"
 ---
@@ -88,68 +20,68 @@ My first spec kit (SDD) project: https://github.com/kaihendry/ai-check-guardrail
 
 https://github.com/github/spec-kit
 
-0:00 - Introduction to Certification Challenges
-0:20 - Experience with Microsoft SQL Server Certification
-0:46 - Discussion on Corporate Certification Requirements
-1:06 - Trust Issues with Certifications
-1:35 - Learning from Exam Questions
-1:59 - Security Events Data Management
-2:26 - Setting Up Kinesis Stream Endpoints
-2:51 - Slack Notification for Unusual Activity
-3:14 - Security Tooling and AWS Organizations
-3:44 - Shared Services Account and Control Tower
-4:45 - Root Account Access and Security
-5:44 - New Role in Security Administration
-6:08 - Spec Driven Development Concerns
-6:40 - Changes in SpecKit and Skills
-7:24 - Commands and Skills in Anthropic
-8:11 - Handoffs in Cloud Code
-9:04 - Onboarding Flow in SpecLedger
-10:06 - Spec Driven Development Workflow
-11:09 - Bug Fixing and Workflow Efficiency
-12:20 - Impact Assessment and Planning
-13:29 - Feature Branch Management
-14:35 - AI Agents and Process Flexibility
-15:51 - Expertise and Process Adaptation
-16:43 - Git Commit Hooks and History
-17:26 - SpecKit Documentation and Maintenance
-18:14 - Spec Drift and Project Principles
-19:25 - Documentation and End-to-End Tests
-20:44 - Quick Start and CLI Testing
-21:15 - Constitution and Process in SpecLedger
-22:21 - Monorepos and Hexagonal Architecture
-23:13 - Alignment Driven Development
-24:22 - Workspaces and Debugging in VS Code
-25:43 - SpecKit Archive Command
-26:24 - Task Management in SpecLedger
-27:32 - GitHub App and Task Visualization
-28:21 - Beats and Task List Management
-29:52 - Multiplayer Development Vision
-30:34 - Shared Group Chat and User Stories
-31:47 - Clarify Command in SpecLedger
-32:15 - Metadata and Comments in SpecLedger
-33:05 - Visualization of Development Phases
-34:10 - Mockup UI and Design in SpecLedger
-35:17 - UI Changes and Future Plans
-36:27 - Comments and Collaboration in SpecLedger
-37:04 - Open Source and SuperBase Architecture
-38:08 - SQLite and Database Management
-39:25 - Distributed SQL Database at the Edge
-40:44 - Security and Package Management
-41:29 - Local Privilege Escalation and Patching
-42:30 - Zero Day Exploits and Remediation
-43:37 - Defense in Depth and Security Tools
-44:41 - AWS Inspector and Wiz.io
-45:42 - Public IPs and Security Risks
-46:27 - Nginx and Web Server Security
-47:13 - Security Chat Groups and Risk Assessment
-48:05 - 10stack Hack and Package Verification
-49:12 - OIDC and Security Posture
-50:11 - Caching Techniques and Security Risks
-51:31 - Poisoned Package and Cache Exploits
-52:07 - AI and Repository Misconfigurations
-53:22 - Dependency Management and Security Scans
-54:18 - Dependabot and Security Vulnerabilities
+- [0:00](https://youtu.be/osM0n8gxPAI?t=0) - Introduction to Certification Challenges
+- [0:20](https://youtu.be/osM0n8gxPAI?t=20) - Experience with Microsoft SQL Server Certification
+- [0:46](https://youtu.be/osM0n8gxPAI?t=46) - Discussion on Corporate Certification Requirements
+- [1:06](https://youtu.be/osM0n8gxPAI?t=66) - Trust Issues with Certifications
+- [1:35](https://youtu.be/osM0n8gxPAI?t=95) - Learning from Exam Questions
+- [1:59](https://youtu.be/osM0n8gxPAI?t=119) - Security Events Data Management
+- [2:26](https://youtu.be/osM0n8gxPAI?t=146) - Setting Up Kinesis Stream Endpoints
+- [2:51](https://youtu.be/osM0n8gxPAI?t=171) - Slack Notification for Unusual Activity
+- [3:14](https://youtu.be/osM0n8gxPAI?t=194) - Security Tooling and AWS Organizations
+- [3:44](https://youtu.be/osM0n8gxPAI?t=224) - Shared Services Account and Control Tower
+- [4:45](https://youtu.be/osM0n8gxPAI?t=285) - Root Account Access and Security
+- [5:44](https://youtu.be/osM0n8gxPAI?t=344) - New Role in Security Administration
+- [6:08](https://youtu.be/osM0n8gxPAI?t=368) - Spec Driven Development Concerns
+- [6:40](https://youtu.be/osM0n8gxPAI?t=400) - Changes in SpecKit and Skills
+- [7:24](https://youtu.be/osM0n8gxPAI?t=444) - Commands and Skills in Anthropic
+- [8:11](https://youtu.be/osM0n8gxPAI?t=491) - Handoffs in Claude Code
+- [9:04](https://youtu.be/osM0n8gxPAI?t=544) - Onboarding Flow in SpecLedger
+- [10:06](https://youtu.be/osM0n8gxPAI?t=606) - Spec Driven Development Workflow
+- [11:09](https://youtu.be/osM0n8gxPAI?t=669) - Bug Fixing and Workflow Efficiency
+- [12:20](https://youtu.be/osM0n8gxPAI?t=740) - Impact Assessment and Planning
+- [13:29](https://youtu.be/osM0n8gxPAI?t=809) - Feature Branch Management
+- [14:35](https://youtu.be/osM0n8gxPAI?t=875) - AI Agents and Process Flexibility
+- [15:51](https://youtu.be/osM0n8gxPAI?t=951) - Expertise and Process Adaptation
+- [16:43](https://youtu.be/osM0n8gxPAI?t=1003) - Git Commit Hooks and History
+- [17:26](https://youtu.be/osM0n8gxPAI?t=1046) - SpecKit Documentation and Maintenance
+- [18:14](https://youtu.be/osM0n8gxPAI?t=1094) - Spec Drift and Project Principles
+- [19:25](https://youtu.be/osM0n8gxPAI?t=1165) - Documentation and End-to-End Tests
+- [20:44](https://youtu.be/osM0n8gxPAI?t=1244) - Quick Start and CLI Testing
+- [21:15](https://youtu.be/osM0n8gxPAI?t=1275) - Constitution and Process in SpecLedger
+- [22:21](https://youtu.be/osM0n8gxPAI?t=1341) - Monorepos and Hexagonal Architecture
+- [23:13](https://youtu.be/osM0n8gxPAI?t=1393) - Alignment Driven Development
+- [24:22](https://youtu.be/osM0n8gxPAI?t=1462) - Workspaces and Debugging in VS Code
+- [25:43](https://youtu.be/osM0n8gxPAI?t=1543) - SpecKit Archive Command
+- [26:24](https://youtu.be/osM0n8gxPAI?t=1584) - Task Management in SpecLedger
+- [27:32](https://youtu.be/osM0n8gxPAI?t=1652) - GitHub App and Task Visualization
+- [28:21](https://youtu.be/osM0n8gxPAI?t=1701) - Beats and Task List Management
+- [29:52](https://youtu.be/osM0n8gxPAI?t=1792) - Multiplayer Development Vision
+- [30:34](https://youtu.be/osM0n8gxPAI?t=1834) - Shared Group Chat and User Stories
+- [31:47](https://youtu.be/osM0n8gxPAI?t=1907) - Clarify Command in SpecLedger
+- [32:15](https://youtu.be/osM0n8gxPAI?t=1935) - Metadata and Comments in SpecLedger
+- [33:05](https://youtu.be/osM0n8gxPAI?t=1985) - Visualization of Development Phases
+- [34:10](https://youtu.be/osM0n8gxPAI?t=2050) - Mockup UI and Design in SpecLedger
+- [35:17](https://youtu.be/osM0n8gxPAI?t=2117) - UI Changes and Future Plans
+- [36:27](https://youtu.be/osM0n8gxPAI?t=2187) - Comments and Collaboration in SpecLedger
+- [37:04](https://youtu.be/osM0n8gxPAI?t=2224) - Open Source and SuperBase Architecture
+- [38:08](https://youtu.be/osM0n8gxPAI?t=2288) - SQLite and Database Management
+- [39:25](https://youtu.be/osM0n8gxPAI?t=2365) - Distributed SQL Database at the Edge
+- [40:44](https://youtu.be/osM0n8gxPAI?t=2444) - Security and Package Management
+- [41:29](https://youtu.be/osM0n8gxPAI?t=2489) - Local Privilege Escalation and Patching
+- [42:30](https://youtu.be/osM0n8gxPAI?t=2550) - Zero Day Exploits and Remediation
+- [43:37](https://youtu.be/osM0n8gxPAI?t=2617) - Defense in Depth and Security Tools
+- [44:41](https://youtu.be/osM0n8gxPAI?t=2681) - AWS Inspector and Wiz.io
+- [45:42](https://youtu.be/osM0n8gxPAI?t=2742) - Public IPs and Security Risks
+- [46:27](https://youtu.be/osM0n8gxPAI?t=2787) - Nginx and Web Server Security
+- [47:13](https://youtu.be/osM0n8gxPAI?t=2833) - Security Chat Groups and Risk Assessment
+- [48:05](https://youtu.be/osM0n8gxPAI?t=2885) - 10stack Hack and Package Verification
+- [49:12](https://youtu.be/osM0n8gxPAI?t=2952) - OIDC and Security Posture
+- [50:11](https://youtu.be/osM0n8gxPAI?t=3011) - Caching Techniques and Security Risks
+- [51:31](https://youtu.be/osM0n8gxPAI?t=3091) - Poisoned Package and Cache Exploits
+- [52:07](https://youtu.be/osM0n8gxPAI?t=3127) - AI and Repository Misconfigurations
+- [53:22](https://youtu.be/osM0n8gxPAI?t=3202) - Dependency Management and Security Scans
+- [54:18](https://youtu.be/osM0n8gxPAI?t=3258) - Dependabot and Security Vulnerabilities
 
 
 https://dabase.com/podcast/

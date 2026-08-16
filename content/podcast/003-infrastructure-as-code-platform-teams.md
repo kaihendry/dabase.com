@@ -1,9 +1,7 @@
 ---
 title: "Infrastructure as Code & Platform teams"
 date: 2025-10-19T12:45:23Z
-description: "https://aws.amazon.com/cloudcontrolapi/
-
-https://s.natalian.org/2025-10-19/CommunityDay_Malaysia_2025.pptx"
+description: "This detailed conversation between two seasoned infrastructure engineers explores the evolving landscape of Infrastructure as Code (IaC), the technical limitations of Terraform, and the organizational challenges of building effective platform teams."
 image: "https://dabase.com/podcast/images/003-infrastructure-as-code-platform-teams.jpg"
 thumbnail: "https://dabase.com/podcast/images/003-infrastructure-as-code-platform-teams-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 5559
   audioUrl: "https://dabase.com/podcast/audio/003-infrastructure-as-code-platform-teams.mp3"
-  audioSize: 133425837
+  audioSize: 133425836
   youtubeId: "gkoxHncYCTk"
   youtubeUrl: "https://www.youtube.com/watch?v=gkoxHncYCTk"
 ---

@@ -1,28 +1,7 @@
 ---
 title: "Agent Client Protocol"
 date: 2026-08-16T17:37:15Z
-description: "0:00 Holiday, kids, and startup life
-3:58 The pressure to stay relevant with AI
-5:06 Solar farms vs food security
-5:49 Screen share: what is Kiro Crew?
-8:06 Agent Client Protocol is not MCP
-10:23 Where does the gateway actually run?
-11:24 Remote crew: one command to launch on EC2
-15:53 Memory systems: Hermes vs Kiro out of the box
-18:19 What an embedding model actually does
-20:26 Maintaining memories: markdown vs vector DB
-21:53 The multiplayer question
-23:46 The NAT gateway tax and fck-nat
-27:41 Using it for real: diagrams and artifacts
-29:19 Forking Kiro Crew onto a ChatGPT subscription
-31:25 Elicitation and ACP capability mismatches
-33:44 Faking usage reporting with a facade
-35:56 Why a Claude Code ACP gets your account banned
-38:47 Option chips beat AskUserQuestion
-41:05 Local auto-classifier and trust prompts
-42:40 Why AWS rewrote Kiro onto a single harness
-43:43 The artifact reveal and publishing to S3
-45:31 Take a break"
+description: "This episode is a conversational walkthrough of Kiro Crew (an AWS-hosted agent gateway and dashboard), how it uses the agent client protocol (ACP), what running and extending it looks like, and practical lessons about memory, embeddings, deployment and costs."
 image: "https://dabase.com/podcast/images/041-agent-client-protocol.jpg"
 thumbnail: "https://dabase.com/podcast/images/041-agent-client-protocol-wide.jpg"
 
@@ -64,7 +43,7 @@ podcast:
 
 ## `summarize "https://youtu.be/82R2F0Vz69U" --timestamps --slides`
 
-This episode is a conversational walkthrough of Kira Crew (an AWS-hosted agent gateway and dashboard), how it uses the agent client protocol (ACP), what running and extending it looks like, and practical lessons about memory, embeddings, deployment and costs. The hosts weave personal context into technical exploration, then demo a local Mac app that bundles a gateway, remote crew/cloud instances, artifact publishing and developer customizations. *"it uses the agent client protocol to connect everything."* 
+This episode is a conversational walkthrough of Kiro Crew (an AWS-hosted agent gateway and dashboard), how it uses the agent client protocol (ACP), what running and extending it looks like, and practical lessons about memory, embeddings, deployment and costs. The hosts weave personal context into technical exploration, then demo a local Mac app that bundles a gateway, remote crew/cloud instances, artifact publishing and developer customizations. *"it uses the agent client protocol to connect everything."* 
 
 [![Slide 1](/podcast/slides/82R2F0Vz69U/youtube-82R2F0Vz69U/slide_0001_0.87s.png)](https://youtu.be/82R2F0Vz69U?t=0)
 ## Holiday and balance
@@ -75,8 +54,8 @@ Hosts open with casual chatter about family time and taking a short holiday, usi
 Conversation shifts to the ongoing pressure to keep up with AI and investment choices that feel like lifelong work rather than a quick payoff. They touch on making work enjoyable while staying ahead of the pack. A short tangent debates infrastructure trade-offs like solar farms versus food security, illustrating how technical conversations drift into public-policy tradeoffs.
 
 [![Slide 3](/podcast/slides/82R2F0Vz69U/youtube-82R2F0Vz69U/slide_0003_929.08s.png)](https://youtu.be/82R2F0Vz69U?t=929)
-## Kira Crew architecture
-Kira Crew is demonstrated as a local Mac OS app that bundles a Python gateway, a single‑page React UI and connects to a local CLI (Kirro/Kiru) via the agent client protocol. The gateway can run locally or be bootstrapped into the cloud as a separate remote gateway (via a crew cloud subcommand) so the dashboard shows sessions from that instance. The UI supports sessions, scheduled tasks, artifacts and a knowledge/memory layer; remote instances are reachable over SSH/SSM tunnels and can be scaled and stopped via EventBridge.
+## Kiro Crew architecture
+Kiro Crew is demonstrated as a local Mac OS app that bundles a Python gateway, a single‑page React UI and connects to a local CLI (Kiro/Kiro) via the agent client protocol. The gateway can run locally or be bootstrapped into the cloud as a separate remote gateway (via a crew cloud subcommand) so the dashboard shows sessions from that instance. The UI supports sessions, scheduled tasks, artifacts and a knowledge/memory layer; remote instances are reachable over SSH/SSM tunnels and can be scaled and stopped via EventBridge.
 
 [![Slide 4](/podcast/slides/82R2F0Vz69U/youtube-82R2F0Vz69U/slide_0004_1395.79s.png)](https://youtu.be/82R2F0Vz69U?t=1395)
 ## Memories and embeddings
@@ -88,6 +67,6 @@ Running a full cloud instance with local embedding models and memory systems is 
 
 [![Slide 6](/podcast/slides/82R2F0Vz69U/youtube-82R2F0Vz69U/slide_0006_2334.71s.png)](https://youtu.be/82R2F0Vz69U?t=2334)
 ## Extending via forks and ACP gaps
-The presenter explains they forked Kira Crew to swap the default CLI/backend for a different model backend (Codeex/CEX). That exposed protocol mismatches in ACP: some gateways don’t advertise elicitation (ask‑user) capabilities, causing structured UI interactions to fail or return 500 errors. Workarounds include presenting a facade that translates or surfaces usage and elicitation as simple option chips in the gateway, capturing usage as a side channel, and adjusting capability advertising. The fork is public so others can build a custom instance now; if accepted upstream, these changes could be merged into the main project.
+The presenter explains they forked Kiro Crew to swap the default CLI/backend for a different model backend (Codex/CEX). That exposed protocol mismatches in ACP: some gateways don’t advertise elicitation (ask‑user) capabilities, causing structured UI interactions to fail or return 500 errors. Workarounds include presenting a facade that translates or surfaces usage and elicitation as simple option chips in the gateway, capturing usage as a side channel, and adjusting capability advertising. The fork is public so others can build a custom instance now; if accepted upstream, these changes could be merged into the main project.
 
 *Model: openai/gpt-5-mini*

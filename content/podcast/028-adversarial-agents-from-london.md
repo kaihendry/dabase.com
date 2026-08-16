@@ -1,9 +1,7 @@
 ---
 title: "Adversarial Agents from London"
 date: 2026-04-09T20:28:02Z
-description: "from a London bus and Vincent in Vietnam!
-
-Kai is attending https://www.ai.engineer/europe/schedule"
+description: "from a London bus and Vincent in Vietnam! Kai is attending https://www.ai.engineer/europe/schedule"
 image: "https://dabase.com/podcast/images/028-adversarial-agents-from-london.jpg"
 thumbnail: "https://dabase.com/podcast/images/028-adversarial-agents-from-london-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2125
   audioUrl: "https://dabase.com/podcast/audio/028-adversarial-agents-from-london.mp3"
-  audioSize: 50991021
+  audioSize: 50991020
   youtubeId: "Z6sGEwXMN0w"
   youtubeUrl: "https://www.youtube.com/watch?v=Z6sGEwXMN0w"
 ---

@@ -4,7 +4,10 @@
 # $2 = basename without extension (e.g., 001-episode-title)
 
 SLUG=$(basename "$2")
-redo-ifchange metadata/episodes.json
+# The corrections also clean the AI summary, which summarize generates from its
+# own caption fetch — so caption errors ("Kira Crew") reach the page and the
+# meta description, not just the transcripts
+redo-ifchange metadata/episodes.json metadata/transcript-corrections.sed
 
 # Find episode data by slug
 EPISODE_JSON=$(jq --arg slug "$SLUG" '.[] | select(.slug == $slug)' metadata/episodes.json)
@@ -18,8 +21,6 @@ fi
 EPISODE_NUM=$(echo "$EPISODE_JSON" | jq -r '.episode')
 TITLE=$(echo "$EPISODE_JSON" | jq -r '.title')
 DESCRIPTION=$(echo "$EPISODE_JSON" | jq -r '.description')
-# Escape double quotes for YAML frontmatter (body content uses raw DESCRIPTION)
-DESCRIPTION_YAML=$(echo "$DESCRIPTION" | sed 's/"/\\"/g')
 YOUTUBE_ID=$(echo "$EPISODE_JSON" | jq -r '.youtubeId')
 YOUTUBE_URL=$(echo "$EPISODE_JSON" | jq -r '.youtubeUrl')
 DURATION=$(echo "$EPISODE_JSON" | jq -r '.duration')
@@ -35,11 +36,18 @@ AUDIO_URL="https://dabase.com/podcast/audio/${SLUG}.mp3"
 THUMBNAIL_URL="https://dabase.com/podcast/images/${SLUG}.jpg"
 WIDE_URL="https://dabase.com/podcast/images/${SLUG}-wide.jpg"
 
-# Get audio file size if exists
-if [ -f "$AUDIO_FILE" ]; then
-    AUDIO_SIZE=$(stat -f%z "$AUDIO_FILE" 2>/dev/null || stat -c%s "$AUDIO_FILE" 2>/dev/null)
-else
-    AUDIO_SIZE=0
+# Build the audio before reading its size. all.do generates markdown before
+# downloading audio, so without this a new episode's first build wrote
+# audioSize: 0 — a zero-length RSS enclosure that no test catches.
+if ! redo-ifchange "$AUDIO_FILE"; then
+    echo "Error: could not build $AUDIO_FILE" >&2
+    exit 1
+fi
+
+AUDIO_SIZE=$(stat -f%z "$AUDIO_FILE" 2>/dev/null || stat -c%s "$AUDIO_FILE" 2>/dev/null)
+if [ -z "$AUDIO_SIZE" ] || [ "$AUDIO_SIZE" = "0" ]; then
+    echo "Error: $AUDIO_FILE is missing or empty, refusing to write audioSize: 0" >&2
+    exit 1
 fi
 
 # Prefer YouTube's exact publish time. A hardcoded time-of-day (we used to use
@@ -127,8 +135,59 @@ print('{}\n\n{}\n\n*Model: {}*'.format(heading, linked, model))
 PYEOF
 
     SUMMARY_SECTION=$(VIDEO_ID="$YOUTUBE_ID" SLIDES_JSON_PATH="$SLIDES_JSON" \
-        python3 "$PY_SCRIPT" <<< "$SUMMARY_JSON")
+        python3 "$PY_SCRIPT" <<< "$SUMMARY_JSON" \
+        | sed -f metadata/transcript-corrections.sed)
     rm -f "$PY_SCRIPT"
+fi
+
+# Frontmatter description: this is the page's meta description, the Open Graph
+# description and the podcast feed's episode summary. When the YouTube
+# description is nothing but a chapter list ("0:00 Intro", ...) that makes a
+# useless one, so drop the chapter lines and fall back to the AI summary's
+# opening sentences.
+PY_DESC=$(mktemp /tmp/podcast_desc_XXXXXX.py)
+cat > "$PY_DESC" <<'PYEOF'
+import json, os, re, sys
+
+LIMIT = 300
+# Lines that carry no prose: chapter markers, and lines that are a bare URL
+# (some descriptions are nothing but links to what we discussed)
+chapter = re.compile(r'^\s*\d{1,2}:\d{2}(?::\d{2})?\s+\S')
+bare_url = re.compile(r'^\s*<?https?://\S+>?\s*$')
+
+def clean(text):
+    text = re.sub(r'!?\[([^\]]*)\]\([^)]*\)', r'\1', text)   # links/images -> label
+    text = re.sub(r'[*_`#>]', '', text)                      # markdown emphasis
+    return re.sub(r'\s+', ' ', text).strip()
+
+def truncate(text):
+    if len(text) <= LIMIT:
+        return text
+    cut = text[:LIMIT]
+    # Prefer a sentence boundary, else the last whole word
+    end = max(cut.rfind('. '), cut.rfind('! '), cut.rfind('? '))
+    if end > LIMIT // 3:
+        return cut[:end + 1]
+    return cut[:cut.rfind(' ')].rstrip(',;:') + '...'
+
+prose = clean('\n'.join(
+    line for line in os.environ.get('DESCRIPTION', '').split('\n')
+    if line.strip() and not chapter.match(line) and not bare_url.match(line)))
+
+if not prose:
+    raw = sys.stdin.read().strip()
+    if raw:
+        prose = clean(json.loads(raw).get('summary', '').split('\n')[0])
+
+print(truncate(prose))
+PYEOF
+
+DESCRIPTION_YAML=$(DESCRIPTION="$DESCRIPTION" python3 "$PY_DESC" <<< "$SUMMARY_JSON" \
+    | sed -f metadata/transcript-corrections.sed | sed 's/"/\\"/g')
+rm -f "$PY_DESC"
+
+if [ -z "$DESCRIPTION_YAML" ]; then
+    echo "  WARN: no usable description for $SLUG" >&2
 fi
 
 # The description goes into the body verbatim, but Markdown collapses single
@@ -156,7 +215,8 @@ for line in sys.stdin.read().split('\n'):
 print('\n'.join(out).strip())
 PYEOF
 
-DESCRIPTION_BODY=$(VIDEO_ID="$YOUTUBE_ID" python3 "$PY_BODY" <<< "$DESCRIPTION")
+DESCRIPTION_BODY=$(VIDEO_ID="$YOUTUBE_ID" python3 "$PY_BODY" <<< "$DESCRIPTION" \
+    | sed -f metadata/transcript-corrections.sed)
 rm -f "$PY_BODY"
 
 # Generate markdown

@@ -1,7 +1,7 @@
 ---
 title: "What makes a good AI infrastructure engineer?"
 date: 2026-01-15T12:09:28Z
-description: "https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing"
+description: "Kai Hendry and Vincent discuss the evolving landscape of AI infrastructure engineering, focusing on how large language models (LLMs) are shifting the definition of seniority from manual coding to orchestration and strategic thinking."
 image: "https://dabase.com/podcast/images/018-what-makes-a-good-ai-infrastructure-engineer.jpg"
 thumbnail: "https://dabase.com/podcast/images/018-what-makes-a-good-ai-infrastructure-engineer-wide.jpg"
 
@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4427
   audioUrl: "https://dabase.com/podcast/audio/018-what-makes-a-good-ai-infrastructure-engineer.mp3"
-  audioSize: 106237485
+  audioSize: 106237484
   youtubeId: "ij20sZmxC7k"
   youtubeUrl: "https://www.youtube.com/watch?v=ij20sZmxC7k"
 ---

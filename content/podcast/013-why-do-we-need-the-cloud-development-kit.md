@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4216
   audioUrl: "https://dabase.com/podcast/audio/013-why-do-we-need-the-cloud-development-kit.mp3"
-  audioSize: 101196333
+  audioSize: 101196332
   youtubeId: "NfzsrgTmBtY"
   youtubeUrl: "https://www.youtube.com/watch?v=NfzsrgTmBtY"
 ---

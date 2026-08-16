@@ -1,14 +1,7 @@
 ---
 title: "Trunk based infrastructure with feature flags"
 date: 2025-11-12T07:32:19Z
-description: "https://github.com/vincenthsh & https://github.com/kaihendry/ - two infrastructure engineers talking about Instructure sprawl
-
-00:00 AWS Account organisation https://github.com/kaihendry/actions/blob/main/accounts.json
-20:00 System Initiative 
-29:00 Cloud abstractions are needed
-30:40 Danger of clickops
-37:31 Labels vs Tags
-40:10 Integration points"
+description: "https://github.com/vincenthsh & https://github.com/kaihendry/ - two infrastructure engineers talking about Instructure sprawl"
 image: "https://dabase.com/podcast/images/005-trunk-based-infrastructure-with-feature-flags.jpg"
 thumbnail: "https://dabase.com/podcast/images/005-trunk-based-infrastructure-with-feature-flags-wide.jpg"
 
@@ -18,19 +11,19 @@ podcast:
   episodeType: "full"
   duration: 4104
   audioUrl: "https://dabase.com/podcast/audio/005-trunk-based-infrastructure-with-feature-flags.mp3"
-  audioSize: 98487405
+  audioSize: 98487404
   youtubeId: "z6V8fgm7xYY"
   youtubeUrl: "https://www.youtube.com/watch?v=z6V8fgm7xYY"
 ---
 
 https://github.com/vincenthsh & https://github.com/kaihendry/ - two infrastructure engineers talking about Instructure sprawl
 
-00:00 AWS Account organisation https://github.com/kaihendry/actions/blob/main/accounts.json
-20:00 System Initiative 
-29:00 Cloud abstractions are needed
-30:40 Danger of clickops
-37:31 Labels vs Tags
-40:10 Integration points
+- [00:00](https://youtu.be/z6V8fgm7xYY?t=0) AWS Account organisation https://github.com/kaihendry/actions/blob/main/accounts.json
+- [20:00](https://youtu.be/z6V8fgm7xYY?t=1200) System Initiative
+- [29:00](https://youtu.be/z6V8fgm7xYY?t=1740) Cloud abstractions are needed
+- [30:40](https://youtu.be/z6V8fgm7xYY?t=1840) Danger of clickops
+- [37:31](https://youtu.be/z6V8fgm7xYY?t=2251) Labels vs Tags
+- [40:10](https://youtu.be/z6V8fgm7xYY?t=2410) Integration points
 
 [Watch on YouTube](https://www.youtube.com/watch?v=z6V8fgm7xYY)
 

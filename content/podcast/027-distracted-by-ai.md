@@ -1,7 +1,7 @@
 ---
 title: "Distracted by AI"
 date: 2026-04-07T20:15:35Z
-description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing"
+description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fNZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing"
 image: "https://dabase.com/podcast/images/027-distracted-by-ai.jpg"
 thumbnail: "https://dabase.com/podcast/images/027-distracted-by-ai-wide.jpg"
 
@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4243
   audioUrl: "https://dabase.com/podcast/audio/027-distracted-by-ai.mp3"
-  audioSize: 101827053
+  audioSize: 101827052
   youtubeId: "oyGi8ahf4Og"
   youtubeUrl: "https://www.youtube.com/watch?v=oyGi8ahf4Og"
 ---

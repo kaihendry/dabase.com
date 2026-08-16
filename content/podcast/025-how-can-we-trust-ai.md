@@ -1,9 +1,7 @@
 ---
 title: "How can we trust AI?"
 date: 2026-03-17T16:23:26Z
-description: "https://news.ycombinator.com/item?id=47408205
-
-Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0#heading=h.ulxx2eqh7qsr"
+description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fNZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0heading=h.ulxx2eqh7qsr"
 image: "https://dabase.com/podcast/images/025-how-can-we-trust-ai.jpg"
 thumbnail: "https://dabase.com/podcast/images/025-how-can-we-trust-ai-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3231
   audioUrl: "https://dabase.com/podcast/audio/025-how-can-we-trust-ai.mp3"
-  audioSize: 77548653
+  audioSize: 77548652
   youtubeId: "Mpj-ic1WWE8"
   youtubeUrl: "https://www.youtube.com/watch?v=Mpj-ic1WWE8"
 ---

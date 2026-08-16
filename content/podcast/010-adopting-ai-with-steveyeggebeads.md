@@ -1,11 +1,7 @@
 ---
 title: "Adopting AI with steveyegge/beads"
 date: 2025-12-10T09:06:45Z
-description: "https://dabase.com/podcast/
-
-https://github.com/steveyegge/beads/discussions/430
-
-Goredo: http://www.goredo.cypherpunks.su/"
+description: "Goredo: http://www.goredo.cypherpunks.su/"
 image: "https://dabase.com/podcast/images/010-adopting-ai-with-steveyeggebeads.jpg"
 thumbnail: "https://dabase.com/podcast/images/010-adopting-ai-with-steveyeggebeads-wide.jpg"
 
@@ -15,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2766
   audioUrl: "https://dabase.com/podcast/audio/010-adopting-ai-with-steveyeggebeads.mp3"
-  audioSize: 66381165
+  audioSize: 66381164
   youtubeId: "eSEg3wKBs-8"
   youtubeUrl: "https://www.youtube.com/watch?v=eSEg3wKBs-8"
 ---

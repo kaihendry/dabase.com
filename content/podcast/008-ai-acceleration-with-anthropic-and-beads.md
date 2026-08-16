@@ -1,14 +1,7 @@
 ---
 title: "AI acceleration with Anthropic and Beads"
 date: 2025-11-29T15:34:14Z
-description: "Chatting about @t3dotgg turning onto @anthropic-ai 
-
-Phone a farmer https://www.youtube.com/live/nW7-igJA798
-
-https://www.youtube.com/live/cMSprbJ95jg for Steve Yegge about an hour in.
-
-Beads skill that Vincent didn't realise was in the context:
-https://github.com/kaihendry/dabase.com/blob/main/content/tips/web/bug-reporting-template.md"
+description: "Chatting about @t3dotgg turning onto @anthropic-ai Phone a farmer https://www.youtube.com/live/nW7-igJA798 https://www.youtube.com/live/cMSprbJ95jg for Steve Yegge about an hour in. Beads skill that Vincent didn't realise was in the context:"
 image: "https://dabase.com/podcast/images/008-ai-acceleration-with-anthropic-and-beads.jpg"
 thumbnail: "https://dabase.com/podcast/images/008-ai-acceleration-with-anthropic-and-beads-wide.jpg"
 
@@ -18,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3739
   audioUrl: "https://dabase.com/podcast/audio/008-ai-acceleration-with-anthropic-and-beads.mp3"
-  audioSize: 89728173
+  audioSize: 89728172
   youtubeId: "lst5spLZo-U"
   youtubeUrl: "https://www.youtube.com/watch?v=lst5spLZo-U"
 ---
@@ -44,7 +37,7 @@ The conversation begins with the observation that Theo (T3), previously seen as 
 
 [![Slide 2](/podcast/slides/lst5spLZo-U/youtube-lst5spLZo-U/slide_0002_615.11s.png)](https://youtu.be/lst5spLZo-U?t=615)
 ## Model Consistency and Access
-The developers compare "output ceiling"—the best possible result a model can achieve—against consistency. While models like GPT 5.1 Pro or Gemini 3 might occasionally hit higher peaks, Opus and Sonnet are praised for their reliable and consistent output across repeated prompts. Accessing Google's Gemini 3 remains a point of frustration due to fragmented subscription plans across Google Cloud Platform (GCP) and Google Cloud Code Assist. One speaker describes the "anti-gravity" IDE as a rebranded version of Windsurf, noting the industry drama where Google reportedly poached the Windsurf CEO while leaving the original team and intellectual property behind. This has led to a "nerfed" experience for some users where the model is frequently overloaded or unavailable. The speakers also discuss the pricing strategy of Anthropic, noting they slashed the price of Opus to make it more competitive with Sonnet 4.5 after the release of Gemini.
+The developers compare "output ceiling"—the best possible result a model can achieve—against consistency. While models like GPT 5.1 Pro or Gemini 3 might occasionally hit higher peaks, Opus and Sonnet are praised for their reliable and consistent output across repeated prompts. Accessing Google's Gemini 3 remains a point of frustration due to fragmented subscription plans across Google Cloud Platform (GCP) and Google Claude Code Assist. One speaker describes the "anti-gravity" IDE as a rebranded version of Windsurf, noting the industry drama where Google reportedly poached the Windsurf CEO while leaving the original team and intellectual property behind. This has led to a "nerfed" experience for some users where the model is frequently overloaded or unavailable. The speakers also discuss the pricing strategy of Anthropic, noting they slashed the price of Opus to make it more competitive with Sonnet 4.5 after the release of Gemini.
 
 [![Slide 3](/podcast/slides/lst5spLZo-U/youtube-lst5spLZo-U/slide_0003_1242.57s.png)](https://youtu.be/lst5spLZo-U?t=1242)
 ## Automating Workflows with Agents
@@ -53,7 +46,7 @@ One developer shares a success story using a custom GitHub CLI agent to manage D
 
 [![Slide 4](/podcast/slides/lst5spLZo-U/youtube-lst5spLZo-U/slide_0004_1861.32s.png)](https://youtu.be/lst5spLZo-U?t=1861)
 ## Agents Versus Skills
-The discussion clarifies the distinction between agents and skills within the Cloud Code environment. Agents are built-in components of the shell, such as the "explore" agent that uses Haiku to summarize repository structures or the "planning" agent that generates implementation steps. Skills are specialized capabilities or templates that can be assigned to models. The speakers mention Beads, a CLI-focused tool designed for agents to manage tasks without the overhead of a complex UI. They also discuss the "auto-compact" feature in Opus 4.5, which manages context windows more efficiently by progressively searching and exposing only relevant tools to the model. One developer expresses frustration with "polluted" command spaces where too many plugins or Model Context Protocol (MCP) tools make it difficult to find the necessary commands.
+The discussion clarifies the distinction between agents and skills within the Claude Code environment. Agents are built-in components of the shell, such as the "explore" agent that uses Haiku to summarize repository structures or the "planning" agent that generates implementation steps. Skills are specialized capabilities or templates that can be assigned to models. The speakers mention Beads, a CLI-focused tool designed for agents to manage tasks without the overhead of a complex UI. They also discuss the "auto-compact" feature in Opus 4.5, which manages context windows more efficiently by progressively searching and exposing only relevant tools to the model. One developer expresses frustration with "polluted" command spaces where too many plugins or Model Context Protocol (MCP) tools make it difficult to find the necessary commands.
 
 [![Slide 5](/podcast/slides/lst5spLZo-U/youtube-lst5spLZo-U/slide_0005_2484.27s.png)](https://youtu.be/lst5spLZo-U?t=2484)
 ## Comparing Task Generation Quality

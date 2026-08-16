@@ -1,9 +1,7 @@
 ---
 title: "AI for Infrastructure Engineers"
 date: 2025-11-21T16:02:20Z
-description: "https://youtu.be/cMSprbJ95jg?t=3675
-
-If you're using an IDE you're a bad engineer!"
+description: "If you're using an IDE you're a bad engineer!"
 image: "https://dabase.com/podcast/images/007-ai-for-infrastructure-engineers.jpg"
 thumbnail: "https://dabase.com/podcast/images/007-ai-for-infrastructure-engineers-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3715
   audioUrl: "https://dabase.com/podcast/audio/007-ai-for-infrastructure-engineers.mp3"
-  audioSize: 89170605
+  audioSize: 89170604
   youtubeId: "54Z4HlO_sW8"
   youtubeUrl: "https://www.youtube.com/watch?v=54Z4HlO_sW8"
 ---
@@ -30,7 +28,7 @@ Two infrastructure engineers discuss the rapid evolution of Artificial Intellige
 
 [![Slide 1](/podcast/slides/54Z4HlO_sW8/youtube-54Z4HlO_sW8/slide_0001_1.54s.png)](https://youtu.be/54Z4HlO_sW8?t=1)
 ## The end of the IDE era
-The discussion opens with a provocative "hot take" from a recent AI summit suggesting that traditional Integrated Development Environments (IDEs) may soon be obsolete for high-performing engineers. The core argument is that the developer's role is shifting from manual code editing to a high-level review process. Instead of writing every line, engineers are increasingly using tools like anti-gravity and cloud code to review AI-generated diffs and proposals. This "plan mode" allows the AI to ask clarifying questions before executing complex tasks, which significantly improves the accuracy of the output.
+The discussion opens with a provocative "hot take" from a recent AI summit suggesting that traditional Integrated Development Environments (IDEs) may soon be obsolete for high-performing engineers. The core argument is that the developer's role is shifting from manual code editing to a high-level review process. Instead of writing every line, engineers are increasingly using tools like anti-gravity and Claude Code to review AI-generated diffs and proposals. This "plan mode" allows the AI to ask clarifying questions before executing complex tasks, which significantly improves the accuracy of the output.
 *“You're a bad engineer if you use an IDE by the end of the year.”*
 The speakers note that while some developers still prefer the speed and control of the Command Line Interface (CLI), the integration of AI into the development environment is becoming seamless. New features allow for instant file rewrites and PR-style reviews within the editor, making the traditional process of watching an LLM slowly output code feel antiquated. The focus is now on providing feedback to the model's assumptions rather than manual syntax correction.
 

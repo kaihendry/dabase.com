@@ -1,9 +1,7 @@
 ---
 title: "Benchmarking AI infrastructure"
 date: 2026-08-07T11:10:57Z
-description: "https://cdktn.io/docs/release
-
-https://aws.amazon.com/about-aws/whats-new/2026/07/aws-bench/"
+description: "Quick take: a technical conversation about infrastructure-as-code, emerging frameworks, and using AI agents to automate and benchmark cloud operations."
 image: "https://dabase.com/podcast/images/040-benchmarking-ai-infrastructure.jpg"
 thumbnail: "https://dabase.com/podcast/images/040-benchmarking-ai-infrastructure-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3661
   audioUrl: "https://dabase.com/podcast/audio/040-benchmarking-ai-infrastructure.mp3"
-  audioSize: 87858477
+  audioSize: 87858476
   youtubeId: "edV02pr9su8"
   youtubeUrl: "https://www.youtube.com/watch?v=edV02pr9su8"
 ---

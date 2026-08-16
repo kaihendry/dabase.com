@@ -1,23 +1,7 @@
 ---
 title: "Spec Driven Discovery"
 date: 2026-04-17T11:39:32Z
-description: "https://github.com/anthropics/claude-quickstarts/blob/main/autonomous-coding/prompts/app_spec.txt
-
-https://dabase.com/blog/2026/ai-engineer-europe/
-
-https://cmd-ctrl.ai/
-
-0:00 - Introduction and Camera Setup
-0:11 - Opus 4.7 and Android News
-1:06 - Caching and Performance Issues
-3:09 - Anthropic API Key Concerns
-4:08 - AI Engineer Conference Insights
-6:36 - Claude Code Desktop App Features
-8:07 - Command-Control App Overview
-9:30 - Security and API Key Management
-21:27 - Rust Ecosystem and Left-Pad Incident
-47:42 - Spec-Driven Development Discussion
-78:14 - AI and Project Management"
+description: "A long, wide-ranging conversation that rolls through current model-ops pain points (Anthropic/Claude caching, plan limits and account terminations), context and session management tactics, practical agent tooling (desktop apps, remote control, command-control), security and supply-chain trouble..."
 image: "https://dabase.com/podcast/images/029-spec-driven-discovery.jpg"
 thumbnail: "https://dabase.com/podcast/images/029-spec-driven-discovery-wide.jpg"
 
@@ -27,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 5185
   audioUrl: "https://dabase.com/podcast/audio/029-spec-driven-discovery.mp3"
-  audioSize: 124444845
+  audioSize: 124444844
   youtubeId: "8tdxpecX2B8"
   youtubeUrl: "https://www.youtube.com/watch?v=8tdxpecX2B8"
 ---
@@ -38,17 +22,17 @@ https://dabase.com/blog/2026/ai-engineer-europe/
 
 https://cmd-ctrl.ai/
 
-0:00 - Introduction and Camera Setup
-0:11 - Opus 4.7 and Android News
-1:06 - Caching and Performance Issues
-3:09 - Anthropic API Key Concerns
-4:08 - AI Engineer Conference Insights
-6:36 - Claude Code Desktop App Features
-8:07 - Command-Control App Overview
-9:30 - Security and API Key Management
-21:27 - Rust Ecosystem and Left-Pad Incident
-47:42 - Spec-Driven Development Discussion
-78:14 - AI and Project Management
+- [0:00](https://youtu.be/8tdxpecX2B8?t=0) - Introduction and Camera Setup
+- [0:11](https://youtu.be/8tdxpecX2B8?t=11) - Opus 4.7 and Android News
+- [1:06](https://youtu.be/8tdxpecX2B8?t=66) - Caching and Performance Issues
+- [3:09](https://youtu.be/8tdxpecX2B8?t=189) - Anthropic API Key Concerns
+- [4:08](https://youtu.be/8tdxpecX2B8?t=248) - AI Engineer Conference Insights
+- [6:36](https://youtu.be/8tdxpecX2B8?t=396) - Claude Code Desktop App Features
+- [8:07](https://youtu.be/8tdxpecX2B8?t=487) - Command-Control App Overview
+- [9:30](https://youtu.be/8tdxpecX2B8?t=570) - Security and API Key Management
+- [21:27](https://youtu.be/8tdxpecX2B8?t=1287) - Rust Ecosystem and Left-Pad Incident
+- [47:42](https://youtu.be/8tdxpecX2B8?t=2862) - Spec-Driven Development Discussion
+- [78:14](https://youtu.be/8tdxpecX2B8?t=4694) - AI and Project Management
 
 [Watch on YouTube](https://www.youtube.com/watch?v=8tdxpecX2B8)
 

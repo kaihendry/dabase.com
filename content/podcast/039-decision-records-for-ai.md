@@ -1,10 +1,7 @@
 ---
 title: "Decision Records for AI"
 date: 2026-07-30T14:10:39Z
-description: "https://decisions.dabase.com/
-https://github.com/kaihendry/decisions
-
-For vulnerability management https://www.invicti.com/ previously known as https://kondukto.io/ was what I was referring to!"
+description: "For vulnerability management https://www.invicti.com/ previously known as https://kondukto.io/ was what I was referring to!"
 image: "https://dabase.com/podcast/images/039-decision-records-for-ai.jpg"
 thumbnail: "https://dabase.com/podcast/images/039-decision-records-for-ai-wide.jpg"
 
@@ -14,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2193
   audioUrl: "https://dabase.com/podcast/audio/039-decision-records-for-ai.mp3"
-  audioSize: 52632045
+  audioSize: 52632044
   youtubeId: "RncFBrvly3w"
   youtubeUrl: "https://www.youtube.com/watch?v=RncFBrvly3w"
 ---

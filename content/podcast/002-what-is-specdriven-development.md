@@ -1,13 +1,7 @@
 ---
 title: "What is Spec-Driven Development?"
 date: 2025-10-14T08:40:26Z
-description: "https://github.com/github/spec-kit
-
-Spec-kitting an existing project: https://youtu.be/SGHIQTsPzuY?si=19uhEGXQv-leUh9J
-
-https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html
-
-WDYT? Comments below!"
+description: "Spec-kitting an existing project: https://youtu.be/SGHIQTsPzuY?si=19uhEGXQv-leUh9J WDYT? Comments below!"
 image: "https://dabase.com/podcast/images/002-what-is-specdriven-development.jpg"
 thumbnail: "https://dabase.com/podcast/images/002-what-is-specdriven-development-wide.jpg"
 
@@ -17,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2398
   audioUrl: "https://dabase.com/podcast/audio/002-what-is-specdriven-development.mp3"
-  audioSize: 57563757
+  audioSize: 57563756
   youtubeId: "q2KOAAtT-Qw"
   youtubeUrl: "https://www.youtube.com/watch?v=q2KOAAtT-Qw"
 ---

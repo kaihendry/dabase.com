@@ -1,27 +1,7 @@
 ---
 title: "If it Hurts, do it More Often (with AI)"
 date: 2026-03-25T11:35:13Z
-description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0
-
-
-00:00 - Introduction
-02:00 - Automating AI Agents
-04:20 - Auto Research Role
-07:15 - Building CLI Tools
-09:50 - AI Behavior Control
-13:00 - Voice & AI Transcription
-15:45 - GitHub Security
-18:50 - Multi-cloud Management
-22:50 - Disaster Recovery Testing
-28:30 - Cost Optimization
-33:00 - Terraform vs CDK
-38:45 - AI Evaluations
-44:00 - AI in Enterprise
-50:00 - Ethical Considerations
-55:00 - Kubernetes Strategies
-58:00 - DevOps Myths
-62:00 - Cloud Security Insights
-66:00 - Closing Thoughts"
+description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fNZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0"
 image: "https://dabase.com/podcast/images/026-if-it-hurts-do-it-more-often-with-ai.jpg"
 thumbnail: "https://dabase.com/podcast/images/026-if-it-hurts-do-it-more-often-with-ai-wide.jpg"
 
@@ -31,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3663
   audioUrl: "https://dabase.com/podcast/audio/026-if-it-hurts-do-it-more-often-with-ai.mp3"
-  audioSize: 87920109
+  audioSize: 87920108
   youtubeId: "nze_Id-PpYM"
   youtubeUrl: "https://www.youtube.com/watch?v=nze_Id-PpYM"
 ---
@@ -39,24 +19,24 @@ podcast:
 Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0
 
 
-00:00 - Introduction
-02:00 - Automating AI Agents
-04:20 - Auto Research Role
-07:15 - Building CLI Tools
-09:50 - AI Behavior Control
-13:00 - Voice & AI Transcription
-15:45 - GitHub Security
-18:50 - Multi-cloud Management
-22:50 - Disaster Recovery Testing
-28:30 - Cost Optimization
-33:00 - Terraform vs CDK
-38:45 - AI Evaluations
-44:00 - AI in Enterprise
-50:00 - Ethical Considerations
-55:00 - Kubernetes Strategies
-58:00 - DevOps Myths
-62:00 - Cloud Security Insights
-66:00 - Closing Thoughts
+- [00:00](https://youtu.be/nze_Id-PpYM?t=0) - Introduction
+- [02:00](https://youtu.be/nze_Id-PpYM?t=120) - Automating AI Agents
+- [04:20](https://youtu.be/nze_Id-PpYM?t=260) - Auto Research Role
+- [07:15](https://youtu.be/nze_Id-PpYM?t=435) - Building CLI Tools
+- [09:50](https://youtu.be/nze_Id-PpYM?t=590) - AI Behavior Control
+- [13:00](https://youtu.be/nze_Id-PpYM?t=780) - Voice & AI Transcription
+- [15:45](https://youtu.be/nze_Id-PpYM?t=945) - GitHub Security
+- [18:50](https://youtu.be/nze_Id-PpYM?t=1130) - Multi-cloud Management
+- [22:50](https://youtu.be/nze_Id-PpYM?t=1370) - Disaster Recovery Testing
+- [28:30](https://youtu.be/nze_Id-PpYM?t=1710) - Cost Optimization
+- [33:00](https://youtu.be/nze_Id-PpYM?t=1980) - Terraform vs CDK
+- [38:45](https://youtu.be/nze_Id-PpYM?t=2325) - AI Evaluations
+- [44:00](https://youtu.be/nze_Id-PpYM?t=2640) - AI in Enterprise
+- [50:00](https://youtu.be/nze_Id-PpYM?t=3000) - Ethical Considerations
+- [55:00](https://youtu.be/nze_Id-PpYM?t=3300) - Kubernetes Strategies
+- [58:00](https://youtu.be/nze_Id-PpYM?t=3480) - DevOps Myths
+- [62:00](https://youtu.be/nze_Id-PpYM?t=3720) - Cloud Security Insights
+- [66:00](https://youtu.be/nze_Id-PpYM?t=3960) - Closing Thoughts
 
 [Watch on YouTube](https://www.youtube.com/watch?v=nze_Id-PpYM)
 
@@ -70,7 +50,7 @@ They open by describing short, focused sessions: two-hour runs where a developer
 
 [![Slide 2](/podcast/slides/nze_Id-PpYM/youtube-nze_Id-PpYM/slide_0002_604.71s.png)](https://youtu.be/nze_Id-PpYM?t=604)
 ## Building a CLI with an AI agent
-They walk through a concrete example: the speaker needed raw API responses (curl calls hidden behind a web UI) so an agent fetched endpoints and exported many curl commands. He documented the steps in markdown, pointed Spec Ledger at that doc and asked it to write user stories, then asked the agent to scan cloud code sessions to find usage scenarios and edge cases. The agent produced a full spec and a task list (about 40 tasks) including a Go CLI and end-to-end testing using VCR-style HTTP cassette replays. The workflow succeeded at implementing the CLI; the agent “completed the task very quickly, implemented the CLI.” Token and model constraints shaped the session: the speaker used Opus 4.6 with a 1,000,000-token context window, noted the session had consumed ~15% (≈150,000 tokens), and warned that once a context buffer hits ~20% they reset sessions because behavior degrades. The run exposed two types of issues: the agent diverged from the spec (putting code under internal/ so it wasn’t a public library) and it claimed E2E was out of scope despite being requested.
+They walk through a concrete example: the speaker needed raw API responses (curl calls hidden behind a web UI) so an agent fetched endpoints and exported many curl commands. He documented the steps in markdown, pointed Spec Ledger at that doc and asked it to write user stories, then asked the agent to scan Claude Code sessions to find usage scenarios and edge cases. The agent produced a full spec and a task list (about 40 tasks) including a Go CLI and end-to-end testing using VCR-style HTTP cassette replays. The workflow succeeded at implementing the CLI; the agent “completed the task very quickly, implemented the CLI.” Token and model constraints shaped the session: the speaker used Opus 4.6 with a 1,000,000-token context window, noted the session had consumed ~15% (≈150,000 tokens), and warned that once a context buffer hits ~20% they reset sessions because behavior degrades. The run exposed two types of issues: the agent diverged from the spec (putting code under internal/ so it wasn’t a public library) and it claimed E2E was out of scope despite being requested.
 
 [![Slide 3](/podcast/slides/nze_Id-PpYM/youtube-nze_Id-PpYM/slide_0003_1213.67s.png)](https://youtu.be/nze_Id-PpYM?t=1213)
 ## Guardrails, BDD and human input modes

@@ -1,7 +1,7 @@
 ---
 title: "Agent loops"
 date: 2026-06-17T12:49:40Z
-description: ""
+description: "This is a wide-ranging conversation about building, running and governing AI agents for developer workflows: live anecdotes about agent wins and failures, how agents can run deterministic tooling versus exploratory simulations, security and CI/CD implications, choices between skills and managed..."
 image: "https://dabase.com/podcast/images/036-agent-loops.jpg"
 thumbnail: "https://dabase.com/podcast/images/036-agent-loops-wide.jpg"
 
@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3859
   audioUrl: "https://dabase.com/podcast/audio/036-agent-loops.mp3"
-  audioSize: 92620845
+  audioSize: 92620844
   youtubeId: "bi1FOTAZBkY"
   youtubeUrl: "https://www.youtube.com/watch?v=bi1FOTAZBkY"
 ---

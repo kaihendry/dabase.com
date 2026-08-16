@@ -1,9 +1,7 @@
 ---
 title: "Checking for AI guard rails"
 date: 2026-05-06T12:50:03Z
-description: "https://dabase.com/podcast/
-
-https://link.excalidraw.com/l/cQESkNUilU/9R9YETcpHcG"
+description: "This is a recorded conversation about rebuilding Spec Ledger and how teams should integrate AI agents safely into developer workflows: architecture choices (Golang CLI, Vercel/NextJS frontend → monorepo + open backend), skills registries, agent-triggered commits that capture session transcripts..."
 image: "https://dabase.com/podcast/images/031-checking-for-ai-guard-rails.jpg"
 thumbnail: "https://dabase.com/podcast/images/031-checking-for-ai-guard-rails-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3002
   audioUrl: "https://dabase.com/podcast/audio/031-checking-for-ai-guard-rails.mp3"
-  audioSize: 72047853
+  audioSize: 72047852
   youtubeId: "7lHwUBKV9tI"
   youtubeUrl: "https://www.youtube.com/watch?v=7lHwUBKV9tI"
 ---

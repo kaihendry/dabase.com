@@ -1,9 +1,7 @@
 ---
 title: "Validating AI output & Refactoring Infrastructure"
 date: 2026-03-09T11:05:49Z
-description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0
-
-https://dabase.com/podcast/ for a summary"
+description: "Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fNZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0 https://dabase.com/podcast/ for a summary"
 image: "https://dabase.com/podcast/images/023-validating-ai-output-refactoring-infrastructure.jpg"
 thumbnail: "https://dabase.com/podcast/images/023-validating-ai-output-refactoring-infrastructure-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2126
   audioUrl: "https://dabase.com/podcast/audio/023-validating-ai-output-refactoring-infrastructure.mp3"
-  audioSize: 51012333
+  audioSize: 51012332
   youtubeId: "5CIEYL5HzZI"
   youtubeUrl: "https://www.youtube.com/watch?v=5CIEYL5HzZI"
 ---

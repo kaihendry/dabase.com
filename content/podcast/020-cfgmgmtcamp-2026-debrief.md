@@ -1,16 +1,7 @@
 ---
 title: "cfgmgmtcamp 2026 debrief"
 date: 2026-02-04T11:17:22Z
-description: "Previous 2025 vlog: https://youtu.be/QQB6juzzIZU?si=5mrQi_ox8ds0ENp2
-
-I'll add more links as I find a decent internet connection!
-
-https://www.youtube.com/watch?v=yxzghm3Fdj8&t=10718s is Adam Jacob's AI talk
-
-CDK plan we were talking about: https://gist.github.com/kaihendry/ce6574744e161d4ba8ba283b8dada85c
-
-CORRECTION: When talking about the Framework laptop, it was the DESKTOP https://frame.work/gb/en/desktop
-Full talk: https://www.youtube.com/watch?v=oJDGZnTDWJo&t=44m25s"
+description: "Previous 2025 vlog: https://youtu.be/QQB6juzzIZU?si=5mrQiox8ds0ENp2 I'll add more links as I find a decent internet connection!"
 image: "https://dabase.com/podcast/images/020-cfgmgmtcamp-2026-debrief.jpg"
 thumbnail: "https://dabase.com/podcast/images/020-cfgmgmtcamp-2026-debrief-wide.jpg"
 
@@ -20,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2892
   audioUrl: "https://dabase.com/podcast/audio/020-cfgmgmtcamp-2026-debrief.mp3"
-  audioSize: 69418413
+  audioSize: 69418412
   youtubeId: "tvoTdenufAs"
   youtubeUrl: "https://www.youtube.com/watch?v=tvoTdenufAs"
 ---
@@ -65,7 +56,7 @@ Speakers explore higher-level config/DSL approaches: QLang (in the spirit of Goo
 CloudFormation’s transactional, all-or-nothing deploy model is praised for guaranteed rollbacks but criticized for slowness and complex failures (resources left behind blocking destruction). Terraform is faster and more parallel but can leave partial state on failures, pushing rollback responsibility onto engineers. As AI increases code velocity (one talk mentioned outputs on the order of 50k lines of code as an example of the multiplier effect), hosts worry infrastructure becomes the bottleneck. A proposed mitigation is ephemeral, easily provisioned environments for AI to boot from scratch and destroy when “crofty” — essentially disposable AWS accounts that can be nuked and recreated — but teams face account-vending, data replication and masking challenges that complicate ephemeral testing.
 
 [![Slide 6](/podcast/slides/tvoTdenufAs/youtube-tvoTdenufAs/slide_0006_2402.32s.png)](https://youtu.be/tvoTdenufAs?t=2402)
-## Local LLMs, hardware and Cloud Code evolution
-A demo showed a modern laptop (large RAM, local GPU allocation to accelerate on-device models) running local models to triage failing Ansible-style playbooks and upgrade libraries without internet — demonstrating that local models can be practical for maintenance work. The hosts discuss model capabilities, noting Claude/Anthropic variants and comparisons to the GPT series and OSS models. Hardware cost examples included a ~4,000 (Canadian) framework laptop purchase as an alternative to paid API usage. Cloud Code announcements are highlighted: task dependencies, built-in agent/task memory, and tighter templates/spec workflows (Speckit-style templates + validation hooks) that aim to reduce ambiguous agent assumptions. They warn that bundling runtimes, agents and subscription bindings into a single provider can create stickiness or lock-in, so teams are weighing the convenience of integrated toolchains against portability and control. *“I think it's actually the best infrastructure conference on the planet, I dare say.”*
+## Local LLMs, hardware and Claude Code evolution
+A demo showed a modern laptop (large RAM, local GPU allocation to accelerate on-device models) running local models to triage failing Ansible-style playbooks and upgrade libraries without internet — demonstrating that local models can be practical for maintenance work. The hosts discuss model capabilities, noting Claude/Anthropic variants and comparisons to the GPT series and OSS models. Hardware cost examples included a ~4,000 (Canadian) framework laptop purchase as an alternative to paid API usage. Claude Code announcements are highlighted: task dependencies, built-in agent/task memory, and tighter templates/spec workflows (Speckit-style templates + validation hooks) that aim to reduce ambiguous agent assumptions. They warn that bundling runtimes, agents and subscription bindings into a single provider can create stickiness or lock-in, so teams are weighing the convenience of integrated toolchains against portability and control. *“I think it's actually the best infrastructure conference on the planet, I dare say.”*
 
 *Model: openai/gpt-5-mini*

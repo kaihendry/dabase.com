@@ -1,19 +1,7 @@
 ---
 title: "Scaling AskUserQuestionTool"
 date: 2026-01-03T17:32:42Z
-description: "Vibe coded Chrome extension to show Amazon UK Data First Available: https://github.com/kaihendry/date-first-available
-
-My failed thought experiment to get AI to setup my PI https://github.com/kaihendry/ai-pi
-
-My blog about how I got my Pi setup as a VPS host: https://dabase.com/blog/2026/machinectl-trixie-pi/
-
-Markdown to Confluence POC https://github.com/kaihendry/md-confluence
-
-https://x.com/trq212/status/2005315275026260309 promotes the AskUserQuestionTool idea
-
-Kiro seminar (PAID) https://www.eventbrite.com/e/hands-on-spec-driven-development-workshop-tickets-1812679024759?aff=so%E2%80%A6
-
-https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04"
+description: "Vibe coded Chrome extension to show Amazon UK Data First Available: https://github.com/kaihendry/date-first-available My failed thought experiment to get AI to setup my PI https://github.com/kaihendry/ai-pi My blog about how I got my Pi setup as a VPS host..."
 image: "https://dabase.com/podcast/images/015-scaling-askuserquestiontool.jpg"
 thumbnail: "https://dabase.com/podcast/images/015-scaling-askuserquestiontool-wide.jpg"
 
@@ -23,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4130
   audioUrl: "https://dabase.com/podcast/audio/015-scaling-askuserquestiontool.mp3"
-  audioSize: 99115821
+  audioSize: 99115820
   youtubeId: "V5Q8_3BuMcs"
   youtubeUrl: "https://www.youtube.com/watch?v=V5Q8_3BuMcs"
 ---
@@ -49,7 +37,7 @@ https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04
 A long, informal conversation between two engineers about experiments with AI-driven development and lightweight infra. They demo a small Chrome extension and cloud coding workflows, describe a Raspberry Pi used to spin up many tiny VPSes with public IPs, and debate reproducibility, testing and how to fold AI into spec-driven development for teams. Key concrete details: the Pi hosts a subnet of about 64 public IPs (roughly 62 usable), the Pi has ~4 GB of RAM, a guest tool called Gastown can cost ~three subscriptions at about $200 each (~$600/month), and the speakers repeatedly stress the need for integration tests and docs-first validation. Two lines stand out as representative: *"Build reliable infrastructure with confidence."* and *"you don't create mock-ups or you don't come with a design specification with AI. You come with an MVP."*
 [![Slide 1](/podcast/slides/V5Q8_3BuMcs/youtube-V5Q8_3BuMcs/slide_0001_2.38s.png)](https://youtu.be/V5Q8_3BuMcs?t=2)
 ## Chrome extension and local AI tooling
-They built a tiny Chrome extension to scrape Amazon details and experimented with multiple LLM front-ends (Claude, Gemini, Conductor) and "cloud code" sessions. The extension turned into more generated files than expected — roughly dozens of supporting files for a small JS feature — and the speakers note that AI scaffolding can feel bureaucratic compared with the 100 lines of core code. The session stores screenshots and artifacts (cloud code keeps images in the home directory), and they discovered a non-programmatic shortcut: Amazon's on-page AI assistant ("Rufus") can answer product-age questions directly, which reduces the need for the extension for that single task. The speakers also show how AI assistants can hallucinate small CLI aliases (typos like "BD comment ad" vs "BD comment add") and stress that hallucinations are useful design signals when handled cautiously.
+They built a tiny Chrome extension to scrape Amazon details and experimented with multiple LLM front-ends (Claude, Gemini, Conductor) and "Claude Code" sessions. The extension turned into more generated files than expected — roughly dozens of supporting files for a small JS feature — and the speakers note that AI scaffolding can feel bureaucratic compared with the 100 lines of core code. The session stores screenshots and artifacts (Claude Code keeps images in the home directory), and they discovered a non-programmatic shortcut: Amazon's on-page AI assistant ("Rufus") can answer product-age questions directly, which reduces the need for the extension for that single task. The speakers also show how AI assistants can hallucinate small CLI aliases (typos like "BD comment ad" vs "BD comment add") and stress that hallucinations are useful design signals when handled cautiously.
 
 [![Slide 2](/podcast/slides/V5Q8_3BuMcs/youtube-V5Q8_3BuMcs/slide_0002_680.32s.png)](https://youtu.be/V5Q8_3BuMcs?t=680)
 ## Raspberry Pi as a tiny VPS host

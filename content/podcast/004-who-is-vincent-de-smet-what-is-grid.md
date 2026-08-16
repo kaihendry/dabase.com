@@ -1,9 +1,7 @@
 ---
 title: "Who is Vincent DE Smet & what is Grid?"
 date: 2025-10-29T10:16:37Z
-description: "00:00 Why move to Vietnam?
-33:34 Spec Kit and https://github.com/steveyegge/beads? 
-44:49 Demo of the Grid"
+description: "Vincent De Smet discusses his professional journey from implementing ERP systems in Vietnam to becoming a specialist in cloud infrastructure and Kubernetes."
 image: "https://dabase.com/podcast/images/004-who-is-vincent-de-smet-what-is-grid.jpg"
 thumbnail: "https://dabase.com/podcast/images/004-who-is-vincent-de-smet-what-is-grid-wide.jpg"
 
@@ -13,14 +11,14 @@ podcast:
   episodeType: "full"
   duration: 3949
   audioUrl: "https://dabase.com/podcast/audio/004-who-is-vincent-de-smet-what-is-grid.mp3"
-  audioSize: 94771053
+  audioSize: 94771052
   youtubeId: "OacVAuGFSHg"
   youtubeUrl: "https://www.youtube.com/watch?v=OacVAuGFSHg"
 ---
 
-00:00 Why move to Vietnam?
-33:34 Spec Kit and https://github.com/steveyegge/beads? 
-44:49 Demo of the Grid
+- [00:00](https://youtu.be/OacVAuGFSHg?t=0) Why move to Vietnam?
+- [33:34](https://youtu.be/OacVAuGFSHg?t=2014) Spec Kit and https://github.com/steveyegge/beads?
+- [44:49](https://youtu.be/OacVAuGFSHg?t=2689) Demo of the Grid
 
 [Watch on YouTube](https://www.youtube.com/watch?v=OacVAuGFSHg)
 

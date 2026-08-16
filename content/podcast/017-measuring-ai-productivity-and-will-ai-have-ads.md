@@ -1,9 +1,7 @@
 ---
 title: "Measuring AI productivity, and will AI have Ads?"
 date: 2026-01-11T10:41:56Z
-description: "https://x.com/kaihendry/status/2009678360046420110
-
-https://docs.astral.sh/uv/llms.txt"
+description: "This episode is a wide-ranging conversation that starts with a storm anecdote and quickly centers on practical questions about measuring AI-driven productivity, the human friction that accompanies adoption, how teams build trust in LLM-generated code via testing and spec-driven workflows, and the..."
 image: "https://dabase.com/podcast/images/017-measuring-ai-productivity-and-will-ai-have-ads.jpg"
 thumbnail: "https://dabase.com/podcast/images/017-measuring-ai-productivity-and-will-ai-have-ads-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3230
   audioUrl: "https://dabase.com/podcast/audio/017-measuring-ai-productivity-and-will-ai-have-ads.mp3"
-  audioSize: 77529645
+  audioSize: 77529644
   youtubeId: "tKad1dhw5Qs"
   youtubeUrl: "https://www.youtube.com/watch?v=tKad1dhw5Qs"
 ---
@@ -38,7 +36,7 @@ A middle manager describes being asked to quantify AI productivity gains (“how
 Speakers warn about presentation culture and gaming numbers (example: tagging coverage reported jumping from 20% to 60% after manual/retroactive edits), and about comparing adopters to non-adopters (OpenAI/other reports claim big gains but lack transparent methodology); they push back on hype labels like “10x engineer” and cite suspicious self-reports (a tool claiming it “finished it in 10% of the time”) as reasons to insist on verifiable, repeatable measurement and private challenge of fudged results.
 [![Slide 4](/podcast/slides/tKad1dhw5Qs/youtube-tKad1dhw5Qs/slide_0004_1617.12s.png)](https://youtu.be/tKad1dhw5Qs?t=1617)
 ## Spec-driven dev and trustworthy tests for LLM output
-The hosts highlight a spec-driven IDE approach (Kirro) that mixes deterministic logic and formatted user stories to generate structural tests, and they recommend property-based testing (fast-check in Node, Hypothesis in Python) to validate behavior rather than surface syntax. Practical notes: porting CDK to CDKTF revealed test harness value, but also costly CI requirements (examples noted: TypeScript jobs needing ~8 CPUs and 32 GB RAM), so runner costs and caching (turbo cache, monorepo task runners) matter for real-world adoption.
+The hosts highlight a spec-driven IDE approach (Kiro) that mixes deterministic logic and formatted user stories to generate structural tests, and they recommend property-based testing (fast-check in Node, Hypothesis in Python) to validate behavior rather than surface syntax. Practical notes: porting CDK to CDKTF revealed test harness value, but also costly CI requirements (examples noted: TypeScript jobs needing ~8 CPUs and 32 GB RAM), so runner costs and caching (turbo cache, monorepo task runners) matter for real-world adoption.
 [![Slide 5](/podcast/slides/tKad1dhw5Qs/youtube-tKad1dhw5Qs/slide_0005_2145.56s.png)](https://youtu.be/tKad1dhw5Qs?t=2145)
 ## Jevons paradox, access inequality, and session tooling
 They invoke Jevons paradox — *"if things are getting easier to do, we're going to do more of it, not less of it."* — to argue easier AI will expand activity, not shrink it, while flagging access stratification: a handful of heavy users spend hundreds of dollars monthly (example figure cited: people spending ~$600/month) and capture outsized output. To counter siloed learning, they demo transcript/session tooling (a Rust-based indexer and sharing tool) and argue teams need transcript rating, shared prompts, and workflows to upskill people and capture institutional knowledge.

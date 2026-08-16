@@ -1,29 +1,7 @@
 ---
 title: "Managing context is the challenge"
 date: 2026-04-25T08:28:00Z
-description: "https://dabase.com/podcast/
-
-Chapters
-
-00:00 Labor Day and Global Holidays
-19:10 AI and the Future of Work
-22:05 AI's Efficacy and Control
-24:48 AI's Role in Development
-27:25 Community Feedback and Expectations
-30:05 The Impact of AI on Business
-32:33 Maintaining AI-Driven Projects
-35:11 The Evolution of AI Models
-37:57 Navigating AI's Challenges
-40:39 Future of AI and User Experience
-45:37 Enhancing Workflow with Spec Logic
-47:10 The Role of Adversarial Review Agents
-49:46 Balancing Context and Task Management
-52:13 Navigating Team Dynamics and Quality Control
-55:31 The Tension Between Standardization and Autonomy
-59:10 Integrating AI into Development Processes
-01:02:07 The Future of Collaboration in AI-Driven Teams
-01:05:55 Addressing Quality and Security Concerns
-01:11:33 The Challenges of AI Adoption in Enterprises"
+description: "Chapters"
 image: "https://dabase.com/podcast/images/030-managing-context-is-the-challenge.jpg"
 thumbnail: "https://dabase.com/podcast/images/030-managing-context-is-the-challenge-wide.jpg"
 
@@ -33,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4598
   audioUrl: "https://dabase.com/podcast/audio/030-managing-context-is-the-challenge.mp3"
-  audioSize: 110345517
+  audioSize: 110345516
   youtubeId: "AmmD-826yvE"
   youtubeUrl: "https://www.youtube.com/watch?v=AmmD-826yvE"
 ---
@@ -42,25 +20,25 @@ https://dabase.com/podcast/
 
 Chapters
 
-00:00 Labor Day and Global Holidays
-19:10 AI and the Future of Work
-22:05 AI's Efficacy and Control
-24:48 AI's Role in Development
-27:25 Community Feedback and Expectations
-30:05 The Impact of AI on Business
-32:33 Maintaining AI-Driven Projects
-35:11 The Evolution of AI Models
-37:57 Navigating AI's Challenges
-40:39 Future of AI and User Experience
-45:37 Enhancing Workflow with Spec Logic
-47:10 The Role of Adversarial Review Agents
-49:46 Balancing Context and Task Management
-52:13 Navigating Team Dynamics and Quality Control
-55:31 The Tension Between Standardization and Autonomy
-59:10 Integrating AI into Development Processes
-01:02:07 The Future of Collaboration in AI-Driven Teams
-01:05:55 Addressing Quality and Security Concerns
-01:11:33 The Challenges of AI Adoption in Enterprises
+- [00:00](https://youtu.be/AmmD-826yvE?t=0) Labor Day and Global Holidays
+- [19:10](https://youtu.be/AmmD-826yvE?t=1150) AI and the Future of Work
+- [22:05](https://youtu.be/AmmD-826yvE?t=1325) AI's Efficacy and Control
+- [24:48](https://youtu.be/AmmD-826yvE?t=1488) AI's Role in Development
+- [27:25](https://youtu.be/AmmD-826yvE?t=1645) Community Feedback and Expectations
+- [30:05](https://youtu.be/AmmD-826yvE?t=1805) The Impact of AI on Business
+- [32:33](https://youtu.be/AmmD-826yvE?t=1953) Maintaining AI-Driven Projects
+- [35:11](https://youtu.be/AmmD-826yvE?t=2111) The Evolution of AI Models
+- [37:57](https://youtu.be/AmmD-826yvE?t=2277) Navigating AI's Challenges
+- [40:39](https://youtu.be/AmmD-826yvE?t=2439) Future of AI and User Experience
+- [45:37](https://youtu.be/AmmD-826yvE?t=2737) Enhancing Workflow with Spec Logic
+- [47:10](https://youtu.be/AmmD-826yvE?t=2830) The Role of Adversarial Review Agents
+- [49:46](https://youtu.be/AmmD-826yvE?t=2986) Balancing Context and Task Management
+- [52:13](https://youtu.be/AmmD-826yvE?t=3133) Navigating Team Dynamics and Quality Control
+- [55:31](https://youtu.be/AmmD-826yvE?t=3331) The Tension Between Standardization and Autonomy
+- [59:10](https://youtu.be/AmmD-826yvE?t=3550) Integrating AI into Development Processes
+- [01:02:07](https://youtu.be/AmmD-826yvE?t=3727) The Future of Collaboration in AI-Driven Teams
+- [01:05:55](https://youtu.be/AmmD-826yvE?t=3955) Addressing Quality and Security Concerns
+- [01:11:33](https://youtu.be/AmmD-826yvE?t=4293) The Challenges of AI Adoption in Enterprises
 
 [Watch on YouTube](https://www.youtube.com/watch?v=AmmD-826yvE)
 

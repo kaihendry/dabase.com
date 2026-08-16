@@ -1,9 +1,7 @@
 ---
 title: "AI's broken mirror"
 date: 2026-03-12T15:11:12Z
-description: "https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?tab=t.0#heading=h.nimhcz973asx
-
-https://dabase.com/podcast/ for a summary"
+description: "https://dabase.com/podcast/ for a summary"
 image: "https://dabase.com/podcast/images/024-ais-broken-mirror.jpg"
 thumbnail: "https://dabase.com/podcast/images/024-ais-broken-mirror-wide.jpg"
 
@@ -13,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4002
   audioUrl: "https://dabase.com/podcast/audio/024-ais-broken-mirror.mp3"
-  audioSize: 96054957
+  audioSize: 96054956
   youtubeId: "glx4mkYRt7U"
   youtubeUrl: "https://www.youtube.com/watch?v=glx4mkYRt7U"
 ---

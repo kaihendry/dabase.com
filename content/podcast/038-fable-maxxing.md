@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2635
   audioUrl: "https://dabase.com/podcast/audio/038-fable-maxxing.mp3"
-  audioSize: 63246573
+  audioSize: 63246572
   youtubeId: "BBxu5L9ywqk"
   youtubeUrl: "https://www.youtube.com/watch?v=BBxu5L9ywqk"
 ---
@@ -26,7 +26,7 @@ A wide-ranging, technical conversation about using agentic LLMs (Fable, Sonnet, 
 
 [![Slide 1](/podcast/slides/BBxu5L9ywqk/youtube-BBxu5L9ywqk/slide_0001_0.24s.png)](https://youtu.be/BBxu5L9ywqk?t=0)
 ## Fable relaunch and proposal
-They used Fable as an orchestrator to implement a prior one‑page proposal about adding newer Terraform provider features into a TypeScript CDK interface compatible with both Terraform and OpenTofu. The host tried Cloud Code’s slash-goal feature to set “land this proposal” as an automated objective and paired Fable orchestration with Sonnet for faster, cheaper sub‑work flows.
+They used Fable as an orchestrator to implement a prior one‑page proposal about adding newer Terraform provider features into a TypeScript CDK interface compatible with both Terraform and OpenTofu. The host tried Claude Code’s slash-goal feature to set “land this proposal” as an automated objective and paired Fable orchestration with Sonnet for faster, cheaper sub‑work flows.
 
 [![Slide 2](/podcast/slides/BBxu5L9ywqk/youtube-BBxu5L9ywqk/slide_0002_434.58s.png)](https://youtu.be/BBxu5L9ywqk?t=434)
 ## CDK Terrain progress and Fable access
@@ -38,7 +38,7 @@ Discussion of CloudFormation’s validation/rollback vs Terraform’s fast, forw
 
 [![Slide 4](/podcast/slides/BBxu5L9ywqk/youtube-BBxu5L9ywqk/slide_0004_1307.42s.png)](https://youtu.be/BBxu5L9ywqk?t=1307)
 ## Plan mode and spec-driven work
-They contrast Cloud Code “plan” mode (read‑only guardrail) with spec‑driven development and agent workflows. Plan mode helps avoid accidental edits, but long, collaborative specs lost some value once large context windows and agent orchestration let models explore complex tasks. Still, small, reviewable PRs remain critical for multi‑maintainer projects.
+They contrast Claude Code “plan” mode (read‑only guardrail) with spec‑driven development and agent workflows. Plan mode helps avoid accidental edits, but long, collaborative specs lost some value once large context windows and agent orchestration let models explore complex tasks. Still, small, reviewable PRs remain critical for multi‑maintainer projects.
 
 [![Slide 5](/podcast/slides/BBxu5L9ywqk/youtube-BBxu5L9ywqk/slide_0005_1749.67s.png)](https://youtu.be/BBxu5L9ywqk?t=1749)
 ## Agents land RFC and tests

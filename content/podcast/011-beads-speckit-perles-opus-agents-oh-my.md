@@ -1,12 +1,7 @@
 ---
 title: "Beads, Speckit, Perles, Opus, Agents, oh my!"
 date: 2025-12-11T10:41:40Z
-description: "https://www.loom.com/share/e2ab7a2dc7354bff88c9f528398e1bbf
-
-Do please comment & Europeans must go to these FREE events:
-
-https://fosdem.org/2026/
-https://cfgmgmtcamp.org/ghent2026/"
+description: "Do please comment & Europeans must go to these FREE events:"
 image: "https://dabase.com/podcast/images/011-beads-speckit-perles-opus-agents-oh-my.jpg"
 thumbnail: "https://dabase.com/podcast/images/011-beads-speckit-perles-opus-agents-oh-my-wide.jpg"
 
@@ -16,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2521
   audioUrl: "https://dabase.com/podcast/audio/011-beads-speckit-perles-opus-agents-oh-my.mp3"
-  audioSize: 60504237
+  audioSize: 60504236
   youtubeId: "yokbTRUvxQU"
   youtubeUrl: "https://www.youtube.com/watch?v=yokbTRUvxQU"
 ---
@@ -36,7 +31,7 @@ This discussion explores advanced AI-driven development workflows, focusing on t
 
 [![Slide 1](/podcast/slides/yokbTRUvxQU/youtube-yokbTRUvxQU/slide_0001_1.21s.png)](https://youtu.be/yokbTRUvxQU?t=1)
 ## Advanced AI Workflows and The Grid
-The primary project discussed is "The Grid," a Terraform state back end that requires more advanced cloud code usage than typical web traffic applications. The developer explains his workflow using Speckit, a tool he has customized by maintaining a local copy of prompts and merging them with upstream changes from the project's changelog. One significant modification involved improving the branch naming logic; while the original tool generated nonsensical names, the developer updated the scripts to use Large Language Models (LLMs) to create descriptive, context-aware branch names. He views Claude Opus not merely as a coding assistant but as a planning agent capable of structuring the entire development lifecycle. The conversation touches on the importance of contributing these personalizations back to the open-source community, though the developer notes a recent lack of activity in the upstream repository. The workflow is designed to handle non-trivial cloud infrastructure, moving beyond simple automation to manage the intricate state requirements of Terraform.
+The primary project discussed is "The Grid," a Terraform state back end that requires more advanced Claude Code usage than typical web traffic applications. The developer explains his workflow using Speckit, a tool he has customized by maintaining a local copy of prompts and merging them with upstream changes from the project's changelog. One significant modification involved improving the branch naming logic; while the original tool generated nonsensical names, the developer updated the scripts to use Large Language Models (LLMs) to create descriptive, context-aware branch names. He views Claude Opus not merely as a coding assistant but as a planning agent capable of structuring the entire development lifecycle. The conversation touches on the importance of contributing these personalizations back to the open-source community, though the developer notes a recent lack of activity in the upstream repository. The workflow is designed to handle non-trivial cloud infrastructure, moving beyond simple automation to manage the intricate state requirements of Terraform.
 
 [![Slide 2](/podcast/slides/yokbTRUvxQU/youtube-yokbTRUvxQU/slide_0002_412.16s.png)](https://youtu.be/yokbTRUvxQU?t=412)
 ## Planning Inversion and Agile Backtracking

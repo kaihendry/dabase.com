@@ -1,20 +1,7 @@
 ---
 title: "Ralph Wiggum, Gas town, Playwright right, Omarchy & Skill issues"
 date: 2026-01-07T19:02:30Z
-description: "https://x.com/mattpocockuk/status/2008200878633931247
-
-https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c
-https://github.com/steveyegge/gastown
-
-https://github.com/kaihendry/skills
-
-00:00 Ralph Wiggum
-01:37 Gas town
-13:21 Testing
-16:26 Playwright demo
-33:41 Ralph Wiggum memes
-36:37 Omarchy
-41:11 Skills for AI"
+description: "This clip is a technical conversation that jumps between memes, agent orchestration, LLM-driven testing, and developer tooling."
 image: "https://dabase.com/podcast/images/016-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues.jpg"
 thumbnail: "https://dabase.com/podcast/images/016-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues-wide.jpg"
 
@@ -24,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3607
   audioUrl: "https://dabase.com/podcast/audio/016-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues.mp3"
-  audioSize: 86564781
+  audioSize: 86564780
   youtubeId: "o-NUs1isBp8"
   youtubeUrl: "https://www.youtube.com/watch?v=o-NUs1isBp8"
 ---
@@ -36,13 +23,13 @@ https://github.com/steveyegge/gastown
 
 https://github.com/kaihendry/skills
 
-00:00 Ralph Wiggum
-01:37 Gas town
-13:21 Testing
-16:26 Playwright demo
-33:41 Ralph Wiggum memes
-36:37 Omarchy
-41:11 Skills for AI
+- [00:00](https://youtu.be/o-NUs1isBp8?t=0) Ralph Wiggum
+- [01:37](https://youtu.be/o-NUs1isBp8?t=97) Gas town
+- [13:21](https://youtu.be/o-NUs1isBp8?t=801) Testing
+- [16:26](https://youtu.be/o-NUs1isBp8?t=986) Playwright demo
+- [33:41](https://youtu.be/o-NUs1isBp8?t=2021) Ralph Wiggum memes
+- [36:37](https://youtu.be/o-NUs1isBp8?t=2197) Omarchy
+- [41:11](https://youtu.be/o-NUs1isBp8?t=2471) Skills for AI
 
 [Watch on YouTube](https://www.youtube.com/watch?v=o-NUs1isBp8)
 

@@ -1,19 +1,7 @@
 ---
 title: "AI Engineer Anti-Patterns + more"
 date: 2026-01-25T14:20:25Z
-description: "I demonstrate https://clawd.bot/ & WhatsApp integration.
-
-We touch how type checking is not done enough in Python https://docs.astral.sh/ty/
-
-We speculate what's the \"Next big thing\" in Infrastructure... better state management with https://stategraph.com/?
-
-https://handy.computer/ dictation (speech to text) is shown
-
-We try capture what the the AI lifecycle looks like right now.
-
-Show notes: https://docs.google.com/document/d/1zoc-0L1o1Cyxtgatb9fN_ZGBGbshZIb9BTzwEj0C4Gc/edit?usp=sharing
-
-Kai will be at https://fosdem.org/2026/ & https://cfgmgmtcamp.org/ghent2026/ next week ... say HELLO if you see me!"
+description: "I demonstrate https://clawd.bot/ & WhatsApp integration. We touch how type checking is not done enough in Python https://docs.astral.sh/ty/ We speculate what's the \"Next big thing\" in Infrastructure... better state management with https://stategraph.com/?"
 image: "https://dabase.com/podcast/images/019-ai-engineer-antipatterns-more.jpg"
 thumbnail: "https://dabase.com/podcast/images/019-ai-engineer-antipatterns-more-wide.jpg"
 
@@ -23,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 5343
   audioUrl: "https://dabase.com/podcast/audio/019-ai-engineer-antipatterns-more.mp3"
-  audioSize: 128237805
+  audioSize: 128237804
   youtubeId: "0lQTnRKHVdM"
   youtubeUrl: "https://www.youtube.com/watch?v=0lQTnRKHVdM"
 ---
