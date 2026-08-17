@@ -16,7 +16,7 @@
 <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
 <link>{{ .Permalink }}</link>
 <description>Recent content on dabase.com</description>
-<generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+<generator>Hugo -- gohugo.io</generator>{{ with .Site.Language.Locale }}
 <language>{{.}}</language>{{end}}{{ with .Site.Params.podcast.email }}
 <managingEditor>{{.}}{{ with $.Site.Params.podcast.author }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Params.podcast.email }}
 <webMaster>{{.}}{{ with $.Site.Params.podcast.author }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
