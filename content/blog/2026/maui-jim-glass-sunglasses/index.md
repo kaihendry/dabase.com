@@ -1,6 +1,6 @@
 ---
-title: "My Maui Jims Have Outlived Their Nose Pads"
-description: "My first and favourite pair of Maui Jim sunglasses, with glass PolarizedPlus2 lenses, are still perfect optically — but the rubber nose pads have perished, the model number has worn off the temples, and the replacement pads Maui Jim sent don't fit."
+title: "My Maui Jims Have New Nose Pads: NSP252"
+description: "My first and favourite pair of Maui Jim sunglasses, with glass PolarizedPlus2 lenses, lost their nose pads and their model number. The first replacements Maui Jim sent were too chunky. The ones that fit are NSP252, 14.3 x 7 mm."
 date: 2026-08-17T16:47:00+01:00
 ---
 
@@ -33,7 +33,7 @@ This is the ordinary way good sunglasses die. Not the frame, not the hinges, not
 two cheapest components on the whole product, the ones made of a material with a shelf life.
 Everything engineered to last thirty years, mounted on something that was never going to last ten.
 
-## Maui Jim sent the wrong pads
+## The first pads were the wrong ones
 
 To their credit, [Maui Jim will post you nose
 pads](https://support.mauijim.com/hc/en-us/articles/12562117231511-Common-Nose-Pad-Replacement-Instructions)
@@ -41,7 +41,7 @@ free of charge. The problem is that without a model number, nobody can work out 
 NSP15) mapped to named styles: Ho'okipa, Makaha, Banyans, Kanaha and so on. Mine isn't a style
 anyone can name.
 
-They sent a pair anyway. They don't fit.
+They sent a pair anyway. They didn't fit.
 
 <a href="replacement-pads.avif"><img src="replacement-pads.avif" alt="The two replacement nose pads Maui Jim sent, chunky black rectangular blocks, next to a ruler showing roughly 20mm" style="max-width:50%"></a>
 
@@ -54,20 +54,28 @@ and sit on a thin pad arm the slot won't close around.
 You can see the difference in profile: the survivor still on the frame on the right, the pads they
 sent sitting uselessly on the left.
 
-## Where that leaves me
+## The ones that fit: NSP252
 
-So I have a pair of sunglasses whose expensive parts are all fine, whose cheap parts have failed,
-and which cannot be repaired because the label wore out before the product did. There is no
-serial-number lookup, no lens etching that encodes the model, no QR code — nothing on the frame
-that survives normal use and tells you what it is.
+Maui Jim sent a second pair, and these are right. The packing note calls them **NSP252, "MJM Nose
+pads 14.3\*7 black"**, made in Italy — slim ovals a little over 14 mm long and 7 mm wide, on a
+narrow arm. They snapped straight on and the glasses are wearable again.
 
-Next stop is a local optician with a tray of generic pads, because a good one will match by shape
-rather than by part number, which is what should have happened in the first place.
+<a href="nose-pads-fixed.avif"><img src="nose-pads-fixed.avif" alt="The repaired sunglasses folded on the delivery note for part NSP252, MJM nose pads 14.3x7 black, with the new black pads fitted and a steel ruler below" style="max-width:50%"></a>
 
-**If you recognise this frame, I would love to know what it is.** Dark gunmetal full-rim wrap, wire
-saddle bridge with a small oval loop in the centre, thin tapered metal temples, glass lenses. Get
-in touch and I'll update this post.
+So the sunglasses are fine after all, and the whole episode cost Maui Jim two envelopes and me a
+few emails. That is good service, and worth saying out loud after a post that started out grumpy.
 
-A note for anyone buying now: if you're paying Maui Jim money for glass, take a photo of the inside
-of the temple on day one. That printing is the only thing standing between your sunglasses and this
+## What I'd still change
+
+The only reason this took two attempts is that the frame no longer says what it is. There's no
+serial-number lookup, no lens etching that encodes the model, no QR code — nothing that survives
+normal use and tells you, or the person in support, which pads to put in the envelope. Matching by
+shape and a photo worked; it just shouldn't have been the fallback.
+
+**If you recognise this frame, I'd still love to know what it is.** Dark gunmetal full-rim wrap,
+wire saddle bridge with a small oval loop in the centre, thin tapered metal temples, glass lenses.
+Get in touch and I'll update this post.
+
+And if you're buying now: if you're paying Maui Jim money for glass, take a photo of the inside of
+the temple on day one. That printing is the only thing standing between your sunglasses and this
 post.
