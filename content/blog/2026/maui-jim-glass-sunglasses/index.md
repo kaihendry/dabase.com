@@ -8,8 +8,8 @@ These were my first pair of Maui Jims and they are still my favourite. I genuine
 when I bought them. Long enough ago that the answer is "a different decade", and long enough that
 the model number has literally worn off the frame.
 
-Here they are on my face in the Iranian desert in August 2011, so they are at least fifteen years
-old:
+Here they are on my face in the Iranian desert in August 2011, driving the [Mongol Rally with
+Jamie](https://geekout.org.uk/tags/iran/), so they are at least fifteen years old:
 
 <a href="iran-2011.avif"><img src="iran-2011.avif" alt="Me in an I love Iran t-shirt wearing the dark wrap Maui Jims, a camel and scrubby desert behind me" style="max-width:100%"></a>
 
