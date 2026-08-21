@@ -11,13 +11,11 @@ the model number has literally worn off the frame.
 Here they are on my face in the Iranian desert in August 2011, so they are at least fifteen years
 old:
 
-<a href="https://www.flickr.com/photos/jamiekitson/6088311734/"><img
-src="https://live.staticflickr.com/6077/6088311734_374056dc1f_b.jpg" alt="Me in an I love Iran
-t-shirt wearing the dark wrap Maui Jims, a camel and scrubby desert behind me" loading="lazy"
-style="max-width:100%"></a>
+<a href="iran-2011.avif"><img src="iran-2011.avif" alt="Me in an I love Iran t-shirt wearing the dark wrap Maui Jims, a camel and scrubby desert behind me" style="max-width:100%"></a>
 
-<small>Photo: <a href="https://www.flickr.com/photos/jamiekitson/">Jamie Kitson</a>, "Kai Blocking a
-Camel", August 2011.</small>
+<small>Photo: <a href="https://www.flickr.com/photos/jamiekitson/6088311734/">"Kai Blocking a
+Camel"</a> by <a href="https://www.flickr.com/photos/jamiekitson/">Jamie Kitson</a>, August 2011,
+used with permission.</small>
 
 <a href="frame-overview.avif"><img src="frame-overview.avif" alt="Maui Jim wrap sunglasses with dark metal frame photographed from above next to a steel ruler" style="max-width:50%"></a>
 
