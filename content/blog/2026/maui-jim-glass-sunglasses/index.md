@@ -8,6 +8,17 @@ These were my first pair of Maui Jims and they are still my favourite. I genuine
 when I bought them. Long enough ago that the answer is "a different decade", and long enough that
 the model number has literally worn off the frame.
 
+Here they are on my face in the Iranian desert in August 2011, so they are at least fifteen years
+old:
+
+<a href="https://www.flickr.com/photos/jamiekitson/6088311734/"><img
+src="https://live.staticflickr.com/6077/6088311734_374056dc1f_b.jpg" alt="Me in an I love Iran
+t-shirt wearing the dark wrap Maui Jims, a camel and scrubby desert behind me" loading="lazy"
+style="max-width:100%"></a>
+
+<small>Photo: <a href="https://www.flickr.com/photos/jamiekitson/">Jamie Kitson</a>, "Kai Blocking a
+Camel", August 2011.</small>
+
 <a href="frame-overview.avif"><img src="frame-overview.avif" alt="Maui Jim wrap sunglasses with dark metal frame photographed from above next to a steel ruler" style="max-width:50%"></a>
 
 The reason I've kept them this long is the **glass**. Maui Jim's SuperThin Glass is heavier than
@@ -46,11 +57,8 @@ sunglasses were. They snapped straight on.
 <a href="nose-pads-fixed.avif"><img src="nose-pads-fixed.avif" alt="The repaired sunglasses folded on the delivery note for part NSP252, MJM nose pads 14.3x7 black, with the new black pads fitted and a steel ruler below" style="max-width:50%"></a>
 
 Julie, Scott — thank you. That's two envelopes and real effort spent on a customer who bought
-something a decade ago and couldn't even tell you what it was.
+something fifteen years ago and couldn't even tell you what it was.
 
 **If you want sunglasses that are buy-it-for-life, buy Maui Jim.** Glass lenses that outlast
 everything else on your face, and a company that will still fix them for free long after any
 warranty has run out. Nobody else comes close.
-
-One tip: photograph the inside of the temple on day one, so you never have to make Julie and Scott
-do detective work.
