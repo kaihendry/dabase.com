@@ -25,6 +25,14 @@ Round the back: the R290 (propane) refrigerant label and the red electrical isol
 natural refrigerant with a very low global warming potential compared to the older F-gas
 refrigerants, which is part of why it's mildly flammable and gets its own hazard sticker.
 
+<a href="outdoor-sensor.avif"><img src="outdoor-sensor.avif" alt="Vaillant outdoor temperature sensor mounted on a shaded stone wall next to a downpipe" style="max-width:50%"></a>
+
+Easy to miss: the outdoor temperature sensor, a separate little box wired back to the controller.
+This is what the weather compensation curve reads — the 0.6 curve I mention below is a function of
+*this* number — so it wants shade, away from direct sun and from the outdoor unit's own discharge
+air. Ours is tucked beside a downpipe on the stone wall. It's also what feeds the outdoor
+temperature entity in Home Assistant.
+
 <a href="wall-pipe-penetration.avif"><img src="wall-pipe-penetration.avif" alt="Insulated pipes passing through the wall into the plant room, protected by a small metal cage" style="max-width:50%"></a>
 
 The flow and return pipes penetrate the wall here, insulated and boxed in with a little metal
