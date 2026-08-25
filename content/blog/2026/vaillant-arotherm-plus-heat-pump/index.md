@@ -27,7 +27,8 @@ refrigerants, which is part of why it's mildly flammable and gets its own hazard
 
 <a href="outdoor-sensor.avif"><img src="outdoor-sensor.avif" alt="Vaillant outdoor temperature sensor mounted on a shaded stone wall next to a downpipe" style="max-width:50%"></a>
 
-Easy to miss: the outdoor temperature sensor, a separate little box wired back to the controller.
+Easy to miss: the outdoor temperature sensor, a separate little box that talks to the controller
+over a radio link (there's no cable — see [what happens when that link drops]({{< ref "/blog/2026/heat-pump-surprises-standing-loss-and-minus-forty" >}})).
 This is what the weather compensation curve reads — the 0.6 curve I mention below is a function of
 *this* number — so it wants shade, away from direct sun and from the outdoor unit's own discharge
 air. Ours is tucked beside a downpipe on the stone wall. It's also what feeds the outdoor
