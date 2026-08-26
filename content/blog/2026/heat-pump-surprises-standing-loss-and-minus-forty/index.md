@@ -6,7 +6,7 @@ date: 2026-08-25T22:30:51+01:00
 
 A month on from [our heat pump install]({{< ref "/blog/2026/vaillant-arotherm-plus-heat-pump" >}}),
 two things have caught me out. One is boring and expected, and I only noticed it because I was
-staring at graphs. The other cost 3.4 kWh in a single August afternoon and took three emails to
+staring at graphs. The other cost 3.4 kWh in a single August afternoon and took four emails to
 Vaillant to explain.
 
 ## 1. The cylinder cools down faster than I assumed
@@ -92,7 +92,7 @@ would have agreed with −40 just as happily. The genuinely independent evidence
 wrong was the flow temperature and the energy counters: the heat pump was *doing* something
 expensive, and that's much harder to fake than a temperature reading.
 
-### Vaillant support, in three acts
+### Vaillant support, in four acts
 
 I raised issue **CC-294844** with Vaillant's connected app support, since Reco were away for the
 week and I had no idea who else to ask.
@@ -134,6 +134,52 @@ Ours is on a north-facing wall, which is right, but at ground level next to a do
 thick-walled stone cottage — nowhere near two-thirds up the façade, and with a lot of granite
 between it and the controller. I'll check the radio link signal strength next.
 
+### The fourth reply, which answers the real question
+
+I wrote back with the Home Assistant timeline above and four questions. Vaillant answered all four.
+
+**The installer code is 00 by default**, and "in domestic properties we advise installers not to
+change this" — with a warning attached: if it has been changed and you can't produce it, not even
+Vaillant's own technical support can get in. The controller has to be factory reset and the
+installer has to reconfigure it for your system design.
+
+**Nine and a half hours is not expected:**
+
+> After a power cut or disabling the power the controller and the external thermostat should
+> establish a connection to the base station within 5 to 10 minutes. If a signal is weak this could
+> delay the reconnection.
+
+Which points straight back at the siting. There's a manual re-pair if you don't want to wait: a
+paperclip into the small hole in the back of the external sensor, held 3–5 seconds until the light
+flashes, then within 30 seconds hold the button on the front of the wireless receiver for 3–5
+seconds. When its light goes solid, check the outside thermostat signal reception on the
+controller. Failing that, bring the sensor indoors and let it reconnect close to the base station.
+
+**And the question I actually cared about** — should the controller be acting on −40 °C at all?
+
+> If the connection to a wired or wireless thermostat is lost the[n] there is no weather
+> compensation available - so the -40 is used for the heat curve
+
+That's a design statement, not a fault report. I had assumed −40 was a sentinel the controller
+would recognise and discard. It isn't. The sensor is a thermistor — resistance rises as it gets
+colder, 1128 Ω at 20 °C, 2167 Ω at −25 °C — and a dead radio link falls off the bottom of that
+curve. The heat curve then consumes −40 like any other number. There is no setting to hold the
+last valid reading, and no way to suspend weather compensation when the sensor is missing.
+
+**On alerting**, the answer is the one that bothers me most:
+
+> If an external thermostat signal connection is broken/lost code 2 (M2) should appear on the
+> thermostat which sends the code to the app […] I does appear that when the power came back on the
+> controller acted as if there was no external thermostat setup
+
+So there is a fault code for exactly this, and it didn't fire, because after the power cut the
+controller behaved as though no outdoor sensor had ever been configured — while still feeding −40
+into the heat curve. A missing sensor is silent; a phantom −40 °C one is expensive. Vaillant did
+note that a different fault on the same day, 9998 on the heat pump interface, made it to the app
+fine, so the notification path itself works.
+
+They've passed the details to their development teams.
+
 ## Takeaways
 
 - **Measure your own standing loss before asking whether it's normal.** "Is this normal?" gets you
@@ -143,5 +189,9 @@ between it and the controller. I'll check the radio link signal strength next.
 - **A second sensor derived from the first is not a second opinion.** Cross-check against a
   different kind of measurement — energy, runtime, flow temperature — not a different name for the
   same reading.
+- **The heat curve has no sanity check.** Vaillant confirmed it: lose the outdoor sensor and −40 °C
+  goes into the weather compensation curve as a real number. There's no hold-last-value setting, so
+  a dropped radio link is a heating bill.
 - **Work out your escalation path before you need it.** Installer for the hardware, Vaillant's app
-  support for the controls and the app. It took three emails, but the third one was correct.
+  support for the controls and the app. It took four emails: the third one identified the cause,
+  and the fourth admitted the M2 fault code that should have warned me never fired.
