@@ -449,5 +449,16 @@
     "uploadDate": "20260816",
     "duration": 2811,
     "slug": "041-agent-client-protocol"
+  },
+  {
+    "episode": 42,
+    "season": 1,
+    "title": "Agent IDE",
+    "description": "Is the terminal becoming the IDE, or is the IDE becoming an agent?\n\nKai has spent two days living in Orca, a terminal-shaped harness that runs Claude Code,\nCodex and friends side by side, with worktrees, a diff pager you can comment on, and a\nmobile app that talks to your laptop over your own LAN. Vincent pushes back from the other\ndirection: agents that hold their own authority, their own memory and their own dashboard,\nrunning on a box at home while you sleep.\n\nAlong the way: why HTML artifacts are replacing markdown for planning, SSH over 443 to get\nout of a locked-down work laptop, what OpenRouter got right that Bedrock got wrong, and\nVincent's three-week benchmark pitting raw Terraform against AWS CDK against TerraConstructs\n— which produced the opposite result to the one he expected.\n\nChapters below.\n\n## Chapters\n\n0:00 Intro\n0:46 Orca: a terminal-shaped agent IDE\n2:01 Mobile access, Tailscale and the LAN problem\n5:04 Is this the future of the IDE?\n7:30 Multiplayer HTML artifacts instead of markdown\n10:23 SSH over 443 and locked-down work laptops\n13:37 Agents that keep working while you sleep\n14:48 Codex vs Claude: switching models mid-task\n16:53 Memory: what the agent knows outside your repo\n19:55 What a dashboard actually looks like\n21:04 Publishing artifacts, comments and CloudFront costs\n26:45 OpenRouter, LiteLLM and budgeting on Bedrock\n29:51 Orca's recipes and documentation\n31:21 Pilot vs delegate: two levels of autonomy\n33:08 From POC to product: taking back control\n34:42 Benchmarking infrastructure-as-code with AWS Bench\n39:39 Three arms: raw Terraform, AWS CDK, TerraConstructs\n44:06 Surprise: raw Terraform wins greenfield\n47:35 Day one vs day two: where abstractions pay off\n49:13 Multi-step trials and the Lambda redeploy gotcha\n52:25 Mining 225 scenarios from GitHub issues\n\n## Mentioned\n\nOrca · Claude Code · Codex · Kiro Crew · Hermes · OpenClaw · Ghostty · tmux ·\nOpenRouter · LiteLLM · AWS Bedrock · AWS Bench · Harbor · Terraform · AWS CDK ·\nTerraConstructs / CDKTF · OPA · Tailscale · WireGuard",
+    "youtubeId": "yr5un6yvfPY",
+    "youtubeUrl": "https://www.youtube.com/watch?v=yr5un6yvfPY",
+    "uploadDate": "20260826",
+    "duration": 3329,
+    "slug": "042-agent-ide"
   }
 ]
