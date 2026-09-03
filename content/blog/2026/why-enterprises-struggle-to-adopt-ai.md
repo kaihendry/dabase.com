@@ -1,7 +1,7 @@
 ---
 title: "Why Enterprises Struggle to Adopt AI"
 date: 2026-09-03T09:58:42+01:00
-description: "A running list of reasons large organisations get so little out of agentic AI compared to individuals: too many humans in the loop, restricted model access, and guardrails that kill experimentation."
+description: "A running list of reasons the fast feedback loop that makes agentic AI work keeps getting bottlenecked and stalled inside large organisations."
 ---
 
 <!-- Convention: every numbered section below gets a matching visual — an Excalidraw poster
