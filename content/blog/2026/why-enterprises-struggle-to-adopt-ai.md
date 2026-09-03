@@ -151,6 +151,22 @@ Both content flags default to off, redacted otherwise, for good reason — that'
 
 Either way, a large org has no structure for supporting many small, team-owned feedback loops running at once — it has one policy, decided centrally, applied everywhere. The loop that would actually make the enterprise better at this never gets to run.
 
+## 10. Bug to fix, not a toll to pay
+
+![Bug to fix, not a toll to pay: paying the toll means hitting the same block and getting it approved again forever; fixing the bug means capturing the block, fixing the underlying constraint, and never hitting it again](/blog/2026/enterprise-ai-bug-not-toll.png)
+*[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/2OvwpaGjgXT)*
+
+Every block in the loop — an `ask` prompt, a denied MCP, a redacted log — should get captured and fixed, not paid again next time. Capture it, then fix the actual constraint behind it (widen the allowlist, get the MCP risk-accepted, redact the field properly) so the next run doesn't hit the same wall. Auto mode's own "Recently denied" list already works this way: it exists so you fix the environment entry once instead of re-approving the same command forever.
+
+The same discipline works as a retro exercise: pull PR lead time next to the agent's own chat and tool-call logs for that PR, and look at where the wall-clock actually went — waiting on an `ask` prompt, the agent stuck on a false start, code review, CI. Whichever block ate the most time that cycle is the one to fix before the next one. That's the same team-level loop from [point 9](#9-everything-gets-centralised-but-improving-the-loop-is-a-team-level-job): it only works if the team actually has both the PR timestamps and its own chat logs to look at, not just one or neither.
+
+![Two clocks, no shared visibility: Claude Code's own logs see the ask-prompt wait inside a session (agent working, ask prompt waiting on you, agent working); GitHub separately sees the review wait after the PR is opened (waiting for review, review and merge); nothing sees both, so the two have to be joined by PR or branch after the fact](/blog/2026/enterprise-ai-two-clocks.png)
+*[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/72ywfD6URIq)*
+
+That's also why it's two retro data sources, not one: Claude Code's own logs only see the in-session wait, an `ask` prompt sitting there until you reply. Once a PR is opened, that clock stops — review wait lives entirely in GitHub's timestamps, a system the harness has no visibility into at all. There's no single log with both; you join them by PR or branch after the fact.
+
+An enterprise that just re-approves the same block over and over, instead of closing it out, is bleeding the loop's velocity one approval at a time.
+
 ## Closing
 
 Look back at 1, 4, 5, and 9: a diffuse chain of approvers, a security committee that owns the risk but not the team's velocity, a platform team that owns the logs but not the insight. In each case someone can decide, and someone else gets blamed for the outcome — split apart instead of held by one accountable person. That split, not the model or the tooling, is the real ceiling on adoption.
