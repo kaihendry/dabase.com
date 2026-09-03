@@ -69,7 +69,7 @@ Overcautious IT/security policy inside enterprises has the same effect on staff:
 
 ## 5. PII, IP, and GDPR block the tools that matter most
 
-![The iteration loop broken: running product to blocked (PII/GDPR risk) instead of to agent, to fix deployed, back to running product](/blog/2026/enterprise-ai-broken-loop.png)
+![The iteration loop broken: running product to agent access blocked (PII/GDPR risk in logs) instead of to agent, to fix deployed, back to running product](/blog/2026/enterprise-ai-broken-loop.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/7v4faIaUQy5)*
 
 The tool you most want to unleash an agent on is exactly the one an enterprise is most obligated to keep it away from: observability. An agent that can query Datadog directly, correlate a stack trace with a metric spike and a recent deploy, and go fix it, closes the iteration loop between "something's wrong in production" and "it's fixed" without a human relaying logs back and forth.
