@@ -167,6 +167,24 @@ That's also why it's two retro data sources, not one: Claude Code's own logs onl
 
 An enterprise that just re-approves the same block over and over, instead of closing it out, is bleeding the loop's velocity one approval at a time.
 
+## 11. Approve = merge
+
+![Approve = Merge: on the left, merge as the release gate — PR approved, wait for a scheduled merge window, someone clicks Merge manually, deployed; on the right, auto-merge on approve — PR approved, auto-merge fires immediately, main always reflects reviewed code, release timing controlled separately by a flag or deploy gate; a Terraform github_repository resource panel shows allow_auto_merge = true as the setting that enables it](/blog/2026/enterprise-ai-approve-equals-merge.png)
+*[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/6d3sARL0kos)*
+
+Some enterprises don't just want a human to approve a PR — they want to control exactly when it merges, so someone clicks Merge at a scheduled release window instead of the moment it's approved. That's two different decisions wearing one costume: whether the code is correct is a review question, when it should go live is a release question, and holding the branch itself hostage to the second one reintroduces the exact toll [point 10](#10-bug-to-fix-not-a-toll-to-pay) just argued against.
+
+The fix is to decouple them properly: approve should mean merge, immediately, so `main` always reflects what's actually been reviewed. Control *release* timing separately — a feature flag, a deploy gate, a promotion step — rather than parking reviewed code on a branch until a clock strikes. GitHub already has the button for this; in Terraform it's one argument on the repository resource:
+
+```hcl
+resource "github_repository" "repo" {
+  name             = "my-repo"
+  allow_auto_merge = true
+}
+```
+
+Without `allow_auto_merge = true`, "approve" and "merge" stay two separate manual actions no matter how fast your agents write the code — which means the last mile of the loop is still gated by whoever remembers to come back and click the second button.
+
 ## Closing
 
 Look back at 1, 4, 5, and 9: a diffuse chain of approvers, a security committee that owns the risk but not the team's velocity, a platform team that owns the logs but not the insight. In each case someone can decide, and someone else gets blamed for the outcome — split apart instead of held by one accountable person. That split, not the model or the tooling, is the real ceiling on adoption.
