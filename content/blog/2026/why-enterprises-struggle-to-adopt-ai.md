@@ -2,6 +2,7 @@
 title: "Why Enterprises Struggle to Adopt AI"
 date: 2026-09-03T09:58:42+01:00
 description: "A running list of reasons the fast feedback loop that makes agentic AI work keeps getting bottlenecked and stalled inside large organisations."
+toc: true
 ---
 
 <!-- Convention: every numbered section below gets a matching visual — an Excalidraw poster
@@ -187,4 +188,6 @@ Without `allow_auto_merge = true`, "approve" and "merge" stay two separate manua
 
 ## Closing
 
-Look back at 1, 4, 5, and 9: a diffuse chain of approvers, a security committee that owns the risk but not the team's velocity, a platform team that owns the logs but not the insight. In each case someone can decide, and someone else gets blamed for the outcome — split apart instead of held by one accountable person. That split, not the model or the tooling, is the real ceiling on adoption.
+Re-read 1, 4, 5, and 9 and a pattern shows through the specifics: a chain of approvers, a security committee, a platform team — each holds a piece of the decision, none holds the outcome. That's not a model limitation or a tooling gap. It's a missing owner.
+
+Every fix above works the same way: give one person or team both the authority to decide and the consequences of the decision, and the loop closes. Split those two apart, across a diffuse chain of approvers, and no amount of model capability fixes it. Ownership, not capability, is the ceiling on enterprise AI adoption.
