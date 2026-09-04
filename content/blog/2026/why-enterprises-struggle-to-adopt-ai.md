@@ -202,7 +202,7 @@ Agents generate a lot of code — more files, more lines, more comments restatin
 
 I use [sloc-sensor](https://github.com/kaihendry/sloc-sensor): pre-commit hooks capping staged lines added, file length, and commit message length. [Martin Fowler's piece on sensors for coding agents](https://martinfowler.com/articles/sensors-for-coding-agents.html) makes the case — a mechanical limit holds where asking an agent nicely to be concise doesn't.
 
-But it only works team-wide. One disciplined developer capping their own diffs doesn't help if everyone else's agent still ships 100+ line PRs — the hook needs to be in every repo's `.pre-commit-config.yaml`, not just theirs.
+But a pre-commit hook only catches git commits. Claude Desktop wired into Confluence over MCP can dump a wall of text onto a wiki page with nothing watching at all — there's no staging area to block on. A mechanical sensor only works where a checkpoint already exists; everywhere else, "less is more" has to be a value the org holds, not a hook it installed once.
 
 ## Closing
 
