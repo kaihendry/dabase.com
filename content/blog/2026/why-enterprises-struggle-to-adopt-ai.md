@@ -186,8 +186,15 @@ resource "github_repository" "repo" {
 
 Without `allow_auto_merge = true`, "approve" and "merge" stay two separate manual actions no matter how fast your agents write the code — which means the last mile of the loop is still gated by whoever remembers to come back and click the second button.
 
+## 12. Too Waterfall, AI psychosis instead of Agile
+
+![Lead Time for Changes vs. the Intent-to-Test Loop: a timeline from idea captured through first commit, deployed to prod, to feedback observed, with DORA's Lead Time for Changes bracket only covering commit to deploy, a red bracket marking the planning gap before it as invisible to DORA, and an overarching bracket showing intent to test as the loop the Agile Manifesto cares about](/blog/2026/enterprise-ai-lead-time-vs-intent.png)
+*[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/2OIk7zz0VEr)*
+
+`intent.md` gets treated as the artefact to get right up front — reviewed, signed off, revised through committee — when agents make being wrong cheap to recover from. That's Waterfall wearing an AI costume: a phase-gated plan followed by a big-bang implementation, just with an agent doing the typing instead of a dev team. Call it AI psychosis — the belief that a model needs a fully specified plan before it's safe to let loose, when the entire point of agents is that "try it and see" is now nearly free. The [Agile Manifesto](https://agilemanifesto.org/) said it before any of this existed: "Responding to change over following a plan." Capturing intent should stay lightweight — a paragraph, not a document — and the loop from idea to running code to feedback is the thing worth protecting, not the plan that preceded it.
+
 ## Closing
 
-Re-read 1, 4, 5, and 9 and a pattern shows through the specifics: a chain of approvers, a security committee, a platform team — each holds a piece of the decision, none holds the outcome. That's not a model limitation or a tooling gap. It's a missing owner.
+A pattern shows through the specifics above: a chain of approvers, a security committee, a platform team — each holds a piece of the decision, none holds the outcome. That's not a model limitation or a tooling gap. It's a missing owner.
 
 Every fix above works the same way: give one person or team both the authority to decide and the consequences of the decision, and the loop closes. Split those two apart, across a diffuse chain of approvers, and no amount of model capability fixes it. Ownership, not capability, is the ceiling on enterprise AI adoption.
