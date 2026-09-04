@@ -198,11 +198,11 @@ Without `allow_auto_merge = true`, "approve" and "merge" stay two separate manua
 ![Diff size is a cognitive-load knob, not just a shipping-speed knob: two parallel flows compare no commit-size limit (agent proposes 823 lines across 14 files, reviewer skims and approves in two minutes, regression ships to production) against sloc-sensor capping commits at 100 lines added (hook blocks the commit and splits it into ≤100-line pieces, reviewer actually reads each commit, regression caught in review)](/blog/2026/enterprise-ai-diff-cognitive-load.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/1DIFaljHApM)*
 
-Agents generate a lot of code — more files, more lines, more comments restating what a well-named function already says. A reviewer can't hold 900 lines in their head, so they skim and rubber-stamp it, and the one decision that actually mattered goes unchecked.
+Agents generate a lot of code — more files, more lines, more comments restating what a well-named function already says. A reviewer can't hold a 100+ line diff in their head, so they skim and rubber-stamp it, and the one decision that actually mattered goes unchecked.
 
 I use [sloc-sensor](https://github.com/kaihendry/sloc-sensor): pre-commit hooks capping staged lines added, file length, and commit message length. [Martin Fowler's piece on sensors for coding agents](https://martinfowler.com/articles/sensors-for-coding-agents.html) makes the case — a mechanical limit holds where asking an agent nicely to be concise doesn't.
 
-But it only works team-wide. One disciplined developer capping their own diffs doesn't help if everyone else's agent still ships 900-line PRs — the hook needs to be in every repo's `.pre-commit-config.yaml`, not just theirs.
+But it only works team-wide. One disciplined developer capping their own diffs doesn't help if everyone else's agent still ships 100+ line PRs — the hook needs to be in every repo's `.pre-commit-config.yaml`, not just theirs.
 
 ## Closing
 
