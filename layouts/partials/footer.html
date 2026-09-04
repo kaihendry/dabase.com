@@ -15,6 +15,6 @@
   <a href="{{ $commitsURL }}">File history</a>
   {{ end }}
   <small
-    >Last Build time: {{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</small
+    >Last modified: {{ (time.In "Europe/London" .Lastmod).Format "Mon, 02 Jan 2006 15:04:05 MST" }}</small
   >
 </footer>
