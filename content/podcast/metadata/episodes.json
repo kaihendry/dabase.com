@@ -460,5 +460,16 @@
     "uploadDate": "20260826",
     "duration": 3329,
     "slug": "042-agent-ide"
+  },
+  {
+    "episode": 43,
+    "season": 1,
+    "title": "Fast AI. Slow workflow.",
+    "description": "AI agents can write code faster. But what happens when every change still waits for an approval, a merge button or an hour-long CI run?\n\nIn EP43 of the AI Infrastructure podcast, Kai Hendry and Vincent De Smet discuss why faster AI needs better workflows: automated guardrails, less security toil and pull requests that humans can actually review. We also debate what CI really proves—and whether an agent's signed test results could replace rerunning the tests.\n\nCHAPTERS\n00:00 Welcome, transcripts and editing feedback\n01:18 Claude remote control and shared-account surprises\n03:06 Who can read your workplace AI chats?\n05:25 AI model hype and exclusive access\n08:02 Why infrastructure benchmarks can mislead\n11:04 Security toil, patching and immutable deployments\n14:13 Why deterministic security checks still matter\n15:14 AI won't fix your broken workflow\n19:51 PR approvals, merge buttons and Slack nudges\n23:30 If agents run the tests, do we still need CI?\n25:14 What CI actually proves\n29:14 mise: managing tools and testing across versions\n31:03 Using agents to investigate Terraform regressions\n32:27 Cutting CI from five hours to under one\n34:36 When the commit message is bigger than the diff\n\nEPISODE ARCHIVE & SUBSCRIBE\nFind episode summaries, transcripts and links to Apple Podcasts, Spotify and RSS:\nhttps://dabase.com/podcast/\n\nWhat slows your team down most: writing the code, reviewing it or getting it merged? Let us know in the comments.\n\nThis episode keeps the natural pauses and ums. Tell us if you prefer this style or a tighter edit.",
+    "youtubeId": "4AxNs6MyxHU",
+    "youtubeUrl": "https://www.youtube.com/watch?v=4AxNs6MyxHU",
+    "uploadDate": "20260909",
+    "duration": 2223,
+    "slug": "043-fast-ai-slow-workflow"
   }
 ]
