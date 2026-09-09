@@ -5,6 +5,8 @@ Hugo-based static blog hosted on AWS S3/CloudFront. Main config: `hugo.yaml`
 ```bash
 hugo              # Build site to public/
 hugo server -D      # Local dev server with live reload and include draft posts
+npm ci             # Install the pinned Pagefind build dependency
+redo site          # Build Hugo and Pagefind, without refreshing the podcast
 ```
 
 In general we like to use [redo](https://goredo.dabase.com/) instead of
@@ -39,7 +41,10 @@ Push to `main` branch triggers GitHub Actions workflow that:
 
 ## Styling Philosophy
 
-Uses minimal [new.css](https://newcss.net/) framework loaded in `layouts/partials/head.html`. If a blog post needs extra CSS, embed styles directly in the markdown.
+Uses a small local stylesheet in `assets/css/site.css`, minified and fingerprinted
+by `layouts/partials/head.html`. Keep it minimal and readable, with system fonts
+and light/dark colours. If a blog post needs extra CSS, embed styles directly in
+the markdown. Search uses Pagefind after the Hugo build; see README.md for previewing it.
 
 ## Podcast Episodes
 

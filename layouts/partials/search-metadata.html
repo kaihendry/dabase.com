@@ -1,0 +1,6 @@
+{{ $type := index (dict "blog" "Blog" "tips" "Tips archive" "podcast" "Podcast") .Section | default "Page" }}
+<span hidden data-pagefind-ignore data-pagefind-meta="type">{{ $type }}</span>
+<time hidden data-pagefind-ignore data-pagefind-meta="date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+{{ with .Params.podcast.episode }}
+<span hidden data-pagefind-ignore data-pagefind-filter="episode">{{ . }}</span>
+{{ end }}

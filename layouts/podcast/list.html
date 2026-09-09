@@ -31,58 +31,7 @@
   {{ end }}
 </p>
 
-<style>
-.episode-list {
-  list-style: none;
-  padding: 0;
-}
 
-.episode-list li {
-  margin-bottom: 1rem;
-}
-
-.episode-tile {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  padding: 0.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  color: inherit;
-  /* suppress the global red underline animation */
-  background-image: none !important;
-  outline: 1px solid transparent;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, outline-color 0.15s ease;
-}
-
-.episode-tile:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(128,128,128,0.25);
-  outline-color: rgba(128,128,128,0.35);
-  background-size: 0 !important;
-}
-
-.episode-tile img {
-  width: 120px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 4px;
-  flex-shrink: 0;
-}
-
-.episode-tile .episode-info {
-  flex: 1;
-}
-
-.episode-tile .episode-title {
-  font-weight: bold;
-}
-
-.episode-tile time {
-  font-size: 0.85rem;
-  color: #666;
-}
-</style>
 
 <h2>Episodes</h2>
 

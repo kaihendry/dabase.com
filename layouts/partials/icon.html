@@ -1,0 +1,3 @@
+{{- with resources.Get (printf "icons/%s.svg" .) -}}
+  {{- replace .Content "<svg " `<svg class="icon" aria-hidden="true" focusable="false" fill="currentColor" ` | safeHTML -}}
+{{- end -}}

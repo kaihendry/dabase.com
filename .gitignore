@@ -1,4 +1,6 @@
 public
+node_modules/
+/site
 
 # Podcast audio files (hosted on S3)
 content/podcast/audio/

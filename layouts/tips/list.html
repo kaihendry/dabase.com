@@ -1,4 +1,6 @@
 {{ define "main" }}
+<h1>{{ if eq .RelPermalink "/tips/" }}Tips archive{{ else }}{{ .Title }}{{ end }}</h1>
+<p class="lede">Notes collected over the years. Check the date: commands and advice may have changed.</p>
 
 {{ .Content }}
 
@@ -27,6 +29,5 @@
 </ul>
 {{ end }}
 {{ end }}
-
 
 

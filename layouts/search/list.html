@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h1>Search</h1>
+<p class="lede">Find a post, a command, or a conversation.</p>
+<form id="search-form" class="search-form" action="/search/" role="search">
+  <label for="search-query">Search the site</label>
+  <div class="search-input">
+    <input id="search-query" name="q" type="search" placeholder="Try AWS, heat pump, or ep30…" autocomplete="off" aria-describedby="search-note">
+    <button type="submit">Search</button>
+  </div>
+</form>
+<p id="search-note" class="meta">Includes podcast transcripts. Tips are older notes; check their dates before relying on them.</p>
+<noscript><p>Search needs JavaScript. You can also browse the <a href="/blog/">blog</a>, <a href="/podcast/">podcast</a>, and <a href="/tips/">tips archive</a>.</p></noscript>
+<p id="search-status" role="status" aria-live="polite"></p>
+<ol id="search-results" class="post-list search-results"></ol>
+<button id="search-more" type="button" hidden>Show more results</button>
+{{ with resources.Get "js/search.js" | minify | fingerprint }}
+<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+{{ end }}
+{{ end }}

@@ -1,27 +1,32 @@
 {{ define "main" }}
+<article data-pagefind-body>
+{{ partial "search-metadata.html" . }}
 <header>
 {{- partial "breadcrumb.html" . -}}
 
 <h1>{{.Title}}</h1>
-<h3>{{.Description}}</h3>
-<h4>Published: {{ dateFormat "Monday, Jan 2, 2006" .Date }} Last modified: {{ dateFormat "Monday, Jan 2, 2006" .Params.LastMod }}</h4>
+{{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+<p class="meta" data-pagefind-ignore>Published <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>{{ if and (gt .Lastmod .Date) (ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02")) }} · Updated {{ .Lastmod.Format "2 Jan 2006" }}{{ end }}</p>
 </header>
 
 {{ if .Params.toc }}
+  <div data-pagefind-ignore>
   {{ .TableOfContents }}
+  </div>
 {{ end }}
 
 {{.Content}}
 
-{{- partial "backlinks.html" . -}}
+<aside data-pagefind-ignore>{{- partial "backlinks.html" . -}}</aside>
 
-<nav>
+<nav class="page-navigation" aria-label="Adjacent articles">
 {{ if .PrevInSection }}
-<a href="{{ .PrevInSection.RelPermalink }}" title="{{ .PrevInSection.Title}}">&larr;Previous</a>
+<a href="{{ .PrevInSection.RelPermalink }}">&larr; {{ .PrevInSection.Title }}</a>
 {{ end }}
 {{ if .NextInSection }}
-<a href="{{ .NextInSection.RelPermalink }}" title="{{ .NextInSection.Title}}">Next&rarr;</a>
+<a href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.Title }} &rarr;</a>
 {{ end }}
 </nav>
+</article>
 
 {{ end }}

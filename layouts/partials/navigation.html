@@ -1,0 +1,9 @@
+<header class="site-header">
+  <a class="site-name" href="/"{{ if .IsHome }} aria-current="page"{{ end }}>dabase<span>.com</span></a>
+  <nav aria-label="Main navigation">
+    {{ range slice (dict "section" "blog" "label" "Blog") (dict "section" "podcast" "label" "Podcast") (dict "section" "tips" "label" "Tips archive") (dict "section" "search" "label" "Search") }}
+    <a href="/{{ .section }}/"{{ if eq $.Section .section }} aria-current="page"{{ end }}>{{ partial "icon.html" .section }}<span>{{ .label }}</span></a>
+    {{ end }}
+    <a href="https://github.com/kaihendry">{{ partial "icon.html" "github" }}<span>GitHub</span></a>
+  </nav>
+</header>

@@ -1,4 +1,4 @@
-<footer>
+<footer class="site-footer">
   <p>
     Comments?
     <a href="mailto:hendry+dabase@iki.fi?subject={{ .Title }}"
@@ -8,13 +8,13 @@
   </p>
   {{ with .File }} {{ $editURL := printf "%s/edit/main/content/%s"
   "https://github.com/kaihendry/dabase.com" .Path }} {{ $commitsURL := printf
-  "%s/commits/master/content/%s" "https://github.com/kaihendry/dabase.com" .Path
+  "%s/commits/main/content/%s" "https://github.com/kaihendry/dabase.com" .Path
   }}
   <a href="{{ $editURL }}">Edit this</a>
   |
   <a href="{{ $commitsURL }}">File history</a>
   {{ end }}
-  <small
+  {{ if not .Lastmod.IsZero }}<small
     >Last modified: {{ (time.In "Europe/London" .Lastmod).Format "Mon, 02 Jan 2006 15:04:05 MST" }}</small
-  >
+  >{{ end }}
 </footer>

@@ -2,6 +2,44 @@
 
 # An ex-ikiwiki site on Hugo
 
+## Build and preview
+
+The site uses Hugo with a small local stylesheet in `assets/css/site.css`.
+No CSS framework or web fonts are downloaded. Light and dark colours follow
+the reader's system preference.
+Navigation uses five locally stored Octicons as inline SVGs, including the
+GitHub mark. They inherit the text colour and need no JavaScript, icon font,
+or additional network requests; their license is in `static/licenses/octicons.txt`.
+
+Install Node.js (24 LTS recommended), then build the site and its pinned
+[Pagefind](https://pagefind.app/) search index:
+
+```bash
+npm ci
+redo site
+python3 -m http.server 8000 --directory public
+```
+
+Open http://localhost:8000/ to preview, including `/search/?q=aws`.
+`npm run build` is the equivalent build command used in CI. `redo site` does
+not refresh podcast metadata or download audio. The existing `redo` target
+still refreshes the podcast before building the site and search index.
+
+`hugo server -D` remains useful for content and CSS work, but does not build or
+serve the Pagefind bundle. Use the complete build above to test search after
+content changes. The build cleans stale generated pages before indexing.
+
+Search runs entirely in the browser using files deployed to S3. It indexes
+individual articles and rendered podcast transcripts, with content-type
+labels and publication dates. Navigation, backlinks and archive indexes are
+excluded. Search JavaScript loads only on the search page; the homepage uses
+a regular GET form. Tips remain available under the **Tips archive** label.
+Episode lookups such as `ep30`, `ep 30`, and `episode 30` match the podcast's
+episode number directly, rather than mentions of that number in transcripts.
+
+CI builds the index before the S3 sync. The `pagefind/` prefix is synced
+without `--size-only` so same-length metadata changes are deployed too.
+
 https://search.google.com/search-console?resource_id=sc-domain%3Adabase.com&hl=en
 
 https://www.youtube.com/watch?v=PmbVccyFY7U

@@ -1,0 +1,10 @@
+{
+  "name": "dabase.com",
+  "private": true,
+  "scripts": {
+    "build": "hugo --cleanDestinationDir && pagefind --site public"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2"
+  }
+}

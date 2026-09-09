@@ -1,4 +1,6 @@
 {{ define "main" }}
+<article data-pagefind-body>
+{{ partial "search-metadata.html" . }}
 {{ with .Params.podcast }}
 <script type="application/ld+json">
 {
@@ -31,7 +33,7 @@
 {{ .Title }}
 </h1>
 
-<p>
+<p class="meta" data-pagefind-ignore>
   Published: {{ dateFormat "Monday, Jan 2, 2006" .Date }}
   {{ with .Params.podcast }}
   &bull; Duration: {{ div .duration 60 }} minutes
@@ -91,5 +93,5 @@
 <a href="{{ .NextInSection.RelPermalink }}" title="{{ .NextInSection.Title}}">Next Episode &rarr;</a>
 {{ end }}
 </nav>
-
+</article>
 {{ end }}

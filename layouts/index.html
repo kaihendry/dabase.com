@@ -1,36 +1,39 @@
 {{ define "main" }}
-<p>
-There are {{ len .Site.RegularPages }} pages currently on this tech focus site of <a href="https://hendry.iki.fi/">Kai's</a>. <a href="https://natalian.org/">Kai's personal blog is called Natalian</a>.
-</p>
-<h1>
-<a href="/blog">{{ len (where .Site.RegularPages "Section" "=" "blog") }} blog posts</a>, 
-<a href="/tips">{{ len (where .Site.RegularPages "Section" "=" "tips") }} tips</a> and <a href="/podcast">one AI podcast</a>.
-</h1>
-
-<style>
-nav.homepage { display: flex; }
-nav.homepage section { flex: 50%; }
-</style>
-
-<nav class="homepage">
-<section class="blogs">
-<h2>Last 10 blogs</h2>
-<ol>
-{{ range (first 10 (where .Site.RegularPages "Section" "=" "blog")) }}
-<li><a href="{{.RelPermalink}}">{{.Title}}</a>{{ if .Description }} &mdash; {{ .Description }}{{ end }}</li>
-{{ end }}
-</ol>
+<header class="home-intro">
+  <p class="eyebrow">Kai Hendry's technical notebook</p>
+  <h1>Notes on making<br>things work.</h1>
+  <p class="lede">Cloud infrastructure, AI, and the things I learn along the way.</p>
+</header>
+<form class="search-form" action="/search/" role="search">
+  <label for="home-query">Search the blog, podcast &amp; tips archive</label>
+  <div class="search-input">
+    <input id="home-query" name="q" type="search" placeholder="A topic, a command, an error message…">
+    <button type="submit">Search</button>
+  </div>
+</form>
+<section aria-labelledby="latest-posts">
+  <div class="section-heading"><h2 id="latest-posts">Latest writing</h2><a href="/blog/">All posts &rarr;</a></div>
+  <ol class="post-list">
+  {{ range first 10 (where .Site.RegularPages "Section" "blog") }}
+    <li>
+      <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </li>
+  {{ end }}
+  </ol>
 </section>
-
-<section class="tips">
-<h2>Last 10 tips</h2>
-<ol>
-{{ range (first 10 (where .Site.RegularPages "Section" "=" "tips")) }}
-<li><a href="{{.RelPermalink}}">{{.Title}}</a>{{ if .Description }} &mdash; {{ .Description }}{{ end }}</li>
-{{ end }}
-</ol>
+<section class="home-podcast" aria-labelledby="latest-podcast">
+  <div class="section-heading"><h2 id="latest-podcast">AI Infrastructure</h2><a href="/podcast/">All episodes &rarr;</a></div>
+  {{ range first 1 (where .Site.RegularPages "Section" "podcast") }}
+  <p class="meta">Latest podcast · {{ .Date.Format "2 Jan 2006" }}</p>
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  {{ end }}
 </section>
-</nav>
-
+<aside class="archive-note">
+  <h2>From the archive</h2>
+  <p><a href="/tips/">{{ len (where .Site.RegularPages "Section" "tips") }} technical tips</a> collected over the years. Some have aged better than others.</p>
+  <p>About <a href="https://hendry.iki.fi/">Kai Hendry</a> · Personal writing at <a href="https://natalian.org/">Natalian</a></p>
+</aside>
 {{ end }}
-
