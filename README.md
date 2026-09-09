@@ -26,3 +26,41 @@ still have the previous enclosure URL, then invalidate its CloudFront cache.
 Remove the old video metadata, summary cache and slides from the source tree.
 If YouTube has not generated captions yet, clear the old hosted transcript and
 rebuild the replacement transcript once captions are available.
+
+# Podcast feed validation
+
+Run `redo check-podcast` before pushing (Python 3 and FFmpeg required). It builds
+Hugo and validates both the podcast RSS and the site's ordinary news RSS.
+The podcast feed is `https://dabase.com/podcast/index.xml`; the news feed links
+to episode pages and does not contain podcast audio enclosures.
+
+The validator checks episode membership, stable GUIDs and publication dates,
+the current enclosure URL, exact hosted byte length, HTTP MIME types, real
+byte-range seeking, nonempty transcripts within the episode duration, and
+square artwork. Deep checks download and decode the newest episode and pinned
+replacement recordings, comparing duration and SHA-256. For replacements, put
+the verified `audioSha256` and any `legacyAudioUrls` in `episode-overrides.json`
+so the old download URL cannot silently start serving the retired audio again.
+
+The same checks run on pull requests, before deployment and daily. Deployment
+also verifies the live feeds after CloudFront invalidation completes. A failed
+pre-deployment check blocks publishing. XML is synced without `--size-only` so
+same-length feed corrections are still deployed, and the live feeds must match
+the build. To check the live feeds manually:
+
+```bash
+python3 scripts/validate_podcast.py --deep \
+  --feed https://dabase.com/podcast/index.xml \
+  --site-feed https://dabase.com/index.xml
+```
+
+These checks validate our feed and hosting, not directory ingestion or copies
+already downloaded by listeners. Apple and Spotify may take up to 24 hours to
+refresh. Check the existing show's episode in their creator dashboards after
+a replacement; preserve the GUID and use a new enclosure URL rather than
+publishing a duplicate episode. Keep serving edited audio at the old URL too.
+
+References: [Apple RSS requirements](https://podcasters.apple.com/support/823-podcast-requirements),
+[Apple metadata updates](https://podcasters.apple.com/support/832-podcast-metadata),
+[Spotify delivery specification](https://providersupport.spotify.com/article/podcast-delivery-specification-1-9),
+[Spotify update delays](https://support.spotify.com/us/creators/article/new-episodes-or-podcast-updates-not-appearing-on-listening-platforms/).

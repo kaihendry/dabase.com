@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4598
   audioUrl: "https://dabase.com/podcast/audio/030-managing-context-is-the-challenge.mp3"
-  audioSize: 110345516
+  audioSize: 110345517
   youtubeId: "AmmD-826yvE"
   youtubeUrl: "https://www.youtube.com/watch?v=AmmD-826yvE"
 ---

@@ -6,6 +6,8 @@ on:
       - main
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: "23 6 * * *"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -14,75 +16,37 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
 
+      - name: Install media validation tools
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+
+      - name: Test the podcast validator
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+
       - name: Build Hugo site
         run: hugo
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ripgrep
+      - name: Validate RSS and playable media
+        if: github.event_name != 'schedule'
+        run: python3 scripts/validate_podcast.py --deep
 
-      - name: Validate built RSS matches episode markdown files
-        run: |
-          RSS_COUNT=$(rg -c "<item>" public/podcast/index.xml)
-          # Count episode markdown files (NNN-*.md, excludes _index.md). Every one
-          # of them should reach the feed: we publish no drafts and no future dates.
-          MD_COUNT=$(ls content/podcast/[0-9]*.md | wc -l | tr -d ' ')
-          echo "Built RSS episodes: $RSS_COUNT"
-          echo "Episode markdown files: $MD_COUNT"
-          if [ "$RSS_COUNT" != "$MD_COUNT" ]; then
-            echo "::error::Episode count mismatch! RSS has $RSS_COUNT items but there are $MD_COUNT episode files"
-            exit 1
-          else
-            echo "Episode counts match!"
-          fi
-
-      - name: Validate RSS feed structure
-        run: |
-          echo "Checking RSS feed structure..."
-
-          # Check for required iTunes tags
-          if ! rg -q "<itunes:author>" public/podcast/index.xml; then
-            echo "::error::Missing itunes:author tag"
-            exit 1
-          fi
-
-          if ! rg -q "<itunes:image" public/podcast/index.xml; then
-            echo "::error::Missing itunes:image tag"
-            exit 1
-          fi
-
-          echo "RSS feed structure is valid!"
-
-      - name: Check all audio URLs exist
-        run: |
-          echo "Checking all audio URLs from RSS feed..."
-          URLS=$(rg -o 'url="https://dabase\.com[^"]+\.mp3' public/podcast/index.xml | sed 's/url="//')
-
-          if [ -z "$URLS" ]; then
-            echo "::error::No audio URLs found in RSS feed!"
-            exit 1
-          fi
-
-          TOTAL=$(echo "$URLS" | wc -l)
-          echo "Found $TOTAL audio files to verify"
-
-          for url in $URLS; do
-            echo "Checking: $url"
-            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --head "$url")
-            if [ "$HTTP_CODE" != "200" ]; then
-              echo "::error::Missing audio file (HTTP $HTTP_CODE): $url"
-              exit 1
-            else
-              echo "OK: $url"
-            fi
-          done
-          echo "All $TOTAL audio URLs verified!"
+      - name: Check deployed feeds on the daily run
+        if: github.event_name == 'schedule'
+        run: >-
+          python3 scripts/validate_podcast.py --deep
+          --feed https://dabase.com/podcast/index.xml
+          --site-feed https://dabase.com/index.xml

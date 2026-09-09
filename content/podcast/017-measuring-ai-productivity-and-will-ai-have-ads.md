@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3230
   audioUrl: "https://dabase.com/podcast/audio/017-measuring-ai-productivity-and-will-ai-have-ads.mp3"
-  audioSize: 77529644
+  audioSize: 77529645
   youtubeId: "tKad1dhw5Qs"
   youtubeUrl: "https://www.youtube.com/watch?v=tKad1dhw5Qs"
 ---

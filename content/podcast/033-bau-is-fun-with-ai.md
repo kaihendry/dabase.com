@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3152
   audioUrl: "https://dabase.com/podcast/audio/033-bau-is-fun-with-ai.mp3"
-  audioSize: 75643820
+  audioSize: 75643821
   youtubeId: "6RsV8yQuB6I"
   youtubeUrl: "https://www.youtube.com/watch?v=6RsV8yQuB6I"
 ---

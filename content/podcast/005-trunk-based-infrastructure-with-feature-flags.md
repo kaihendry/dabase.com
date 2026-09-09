@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4104
   audioUrl: "https://dabase.com/podcast/audio/005-trunk-based-infrastructure-with-feature-flags.mp3"
-  audioSize: 98487404
+  audioSize: 98487405
   youtubeId: "z6V8fgm7xYY"
   youtubeUrl: "https://www.youtube.com/watch?v=z6V8fgm7xYY"
 ---

@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4130
   audioUrl: "https://dabase.com/podcast/audio/015-scaling-askuserquestiontool.mp3"
-  audioSize: 99115820
+  audioSize: 99115821
   youtubeId: "V5Q8_3BuMcs"
   youtubeUrl: "https://www.youtube.com/watch?v=V5Q8_3BuMcs"
 ---

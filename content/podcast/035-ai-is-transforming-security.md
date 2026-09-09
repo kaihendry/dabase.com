@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3719
   audioUrl: "https://dabase.com/podcast/audio/035-ai-is-transforming-security.mp3"
-  audioSize: 89244908
+  audioSize: 89244909
   youtubeId: "W7QcWP8VngI"
   youtubeUrl: "https://www.youtube.com/watch?v=W7QcWP8VngI"
 ---

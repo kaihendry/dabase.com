@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2126
   audioUrl: "https://dabase.com/podcast/audio/023-validating-ai-output-refactoring-infrastructure.mp3"
-  audioSize: 51012332
+  audioSize: 51012333
   youtubeId: "5CIEYL5HzZI"
   youtubeUrl: "https://www.youtube.com/watch?v=5CIEYL5HzZI"
 ---

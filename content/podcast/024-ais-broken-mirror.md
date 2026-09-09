@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4002
   audioUrl: "https://dabase.com/podcast/audio/024-ais-broken-mirror.mp3"
-  audioSize: 96054956
+  audioSize: 96054957
   youtubeId: "glx4mkYRt7U"
   youtubeUrl: "https://www.youtube.com/watch?v=glx4mkYRt7U"
 ---

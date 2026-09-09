@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 5343
   audioUrl: "https://dabase.com/podcast/audio/019-ai-engineer-antipatterns-more.mp3"
-  audioSize: 128237804
+  audioSize: 128237805
   youtubeId: "0lQTnRKHVdM"
   youtubeUrl: "https://www.youtube.com/watch?v=0lQTnRKHVdM"
 ---

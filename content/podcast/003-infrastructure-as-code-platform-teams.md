@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 5559
   audioUrl: "https://dabase.com/podcast/audio/003-infrastructure-as-code-platform-teams.mp3"
-  audioSize: 133425836
+  audioSize: 133425837
   youtubeId: "gkoxHncYCTk"
   youtubeUrl: "https://www.youtube.com/watch?v=gkoxHncYCTk"
 ---

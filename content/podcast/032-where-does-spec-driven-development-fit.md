@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3311
   audioUrl: "https://dabase.com/podcast/audio/032-where-does-spec-driven-development-fit.mp3"
-  audioSize: 79465580
+  audioSize: 79465581
   youtubeId: "osM0n8gxPAI"
   youtubeUrl: "https://www.youtube.com/watch?v=osM0n8gxPAI"
 ---

@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2125
   audioUrl: "https://dabase.com/podcast/audio/028-adversarial-agents-from-london.mp3"
-  audioSize: 50991020
+  audioSize: 50991021
   youtubeId: "Z6sGEwXMN0w"
   youtubeUrl: "https://www.youtube.com/watch?v=Z6sGEwXMN0w"
 ---

@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2193
   audioUrl: "https://dabase.com/podcast/audio/039-decision-records-for-ai.mp3"
-  audioSize: 52632044
+  audioSize: 52632045
   youtubeId: "RncFBrvly3w"
   youtubeUrl: "https://www.youtube.com/watch?v=RncFBrvly3w"
 ---

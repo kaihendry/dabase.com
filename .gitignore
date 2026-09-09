@@ -10,3 +10,7 @@ content/podcast/metadata/.redo/
 
 # Redo build artifacts
 .redo/
+
+# Podcast validation artifacts
+/check-podcast
+/scripts/__pycache__/

@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3661
   audioUrl: "https://dabase.com/podcast/audio/040-benchmarking-ai-infrastructure.mp3"
-  audioSize: 87858476
+  audioSize: 87858477
   youtubeId: "edV02pr9su8"
   youtubeUrl: "https://www.youtube.com/watch?v=edV02pr9su8"
 ---

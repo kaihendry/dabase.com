@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3607
   audioUrl: "https://dabase.com/podcast/audio/016-ralph-wiggum-gas-town-playwright-right-omarchy-skill-issues.mp3"
-  audioSize: 86564780
+  audioSize: 86564781
   youtubeId: "o-NUs1isBp8"
   youtubeUrl: "https://www.youtube.com/watch?v=o-NUs1isBp8"
 ---

@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4427
   audioUrl: "https://dabase.com/podcast/audio/018-what-makes-a-good-ai-infrastructure-engineer.mp3"
-  audioSize: 106237484
+  audioSize: 106237485
   youtubeId: "ij20sZmxC7k"
   youtubeUrl: "https://www.youtube.com/watch?v=ij20sZmxC7k"
 ---

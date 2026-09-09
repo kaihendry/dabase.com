@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2766
   audioUrl: "https://dabase.com/podcast/audio/010-adopting-ai-with-steveyeggebeads.mp3"
-  audioSize: 66381164
+  audioSize: 66381165
   youtubeId: "eSEg3wKBs-8"
   youtubeUrl: "https://www.youtube.com/watch?v=eSEg3wKBs-8"
 ---

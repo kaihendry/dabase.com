@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4196
   audioUrl: "https://dabase.com/podcast/audio/021-ai-is-a-vampire.mp3"
-  audioSize: 100698092
+  audioSize: 100698093
   youtubeId: "6SqnMr5W3aU"
   youtubeUrl: "https://www.youtube.com/watch?v=6SqnMr5W3aU"
 ---

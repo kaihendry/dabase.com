@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3135
   audioUrl: "https://dabase.com/podcast/audio/014-spec-kit-vs-conductor.mp3"
-  audioSize: 75234860
+  audioSize: 75234861
   youtubeId: "gvgK2wp_-UQ"
   youtubeUrl: "https://www.youtube.com/watch?v=gvgK2wp_-UQ"
 ---

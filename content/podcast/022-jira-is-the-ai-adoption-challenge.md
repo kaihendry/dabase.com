@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3881
   audioUrl: "https://dabase.com/podcast/audio/022-jira-is-the-ai-adoption-challenge.mp3"
-  audioSize: 93142700
+  audioSize: 93142701
   youtubeId: "XGbRVRy4LAs"
   youtubeUrl: "https://www.youtube.com/watch?v=XGbRVRy4LAs"
 ---

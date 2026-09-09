@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2892
   audioUrl: "https://dabase.com/podcast/audio/020-cfgmgmtcamp-2026-debrief.mp3"
-  audioSize: 69418412
+  audioSize: 69418413
   youtubeId: "tvoTdenufAs"
   youtubeUrl: "https://www.youtube.com/watch?v=tvoTdenufAs"
 ---

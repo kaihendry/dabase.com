@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2521
   audioUrl: "https://dabase.com/podcast/audio/011-beads-speckit-perles-opus-agents-oh-my.mp3"
-  audioSize: 60504236
+  audioSize: 60504237
   youtubeId: "yokbTRUvxQU"
   youtubeUrl: "https://www.youtube.com/watch?v=yokbTRUvxQU"
 ---

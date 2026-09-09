@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3227
   audioUrl: "https://dabase.com/podcast/audio/037-be-nice-to-your-agent.mp3"
-  audioSize: 77443820
+  audioSize: 77443821
   youtubeId: "zgmdFmC-mFo"
   youtubeUrl: "https://www.youtube.com/watch?v=zgmdFmC-mFo"
 ---

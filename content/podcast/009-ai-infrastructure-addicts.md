@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2318
   audioUrl: "https://dabase.com/podcast/audio/009-ai-infrastructure-addicts.mp3"
-  audioSize: 55637612
+  audioSize: 55637613
   youtubeId: "I4pmTz8EKag"
   youtubeUrl: "https://www.youtube.com/watch?v=I4pmTz8EKag"
 ---

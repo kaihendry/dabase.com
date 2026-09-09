@@ -17,8 +17,11 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -33,12 +36,35 @@ jobs:
       - name: Build Hugo site
         run: hugo
 
+      - name: Install media validation tools
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+
+      - name: Validate before publishing
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_*.py' -v
+          python3 scripts/validate_podcast.py --deep
+
       - name: Sync to S3
         run: |
           # --size-only ignores mtime, which Hugo makes useless: it rebuilds
           # every file each run, so a plain sync re-uploads the whole 178MB site.
-          aws s3 sync public/ s3://dabase.com --size-only
+          # XML must be refreshed even when a correction has the same byte
+          # length; otherwise size-only silently leaves listeners on stale RSS.
+          aws s3 sync public/ s3://dabase.com --size-only --exclude "*.xml"
+          aws s3 sync public/ s3://dabase.com --exclude "*" --include "*.xml" --content-type application/xml --cache-control "public, max-age=300"
 
       - name: Invalidate CloudFront cache
         run: |
-          aws cloudfront create-invalidation --distribution-id E6OVXGA61L6G6 --paths "/*"
+          INVALIDATION_ID=$(aws cloudfront create-invalidation --distribution-id E6OVXGA61L6G6 --paths "/*" --query Invalidation.Id --output text)
+          aws cloudfront wait invalidation-completed --distribution-id E6OVXGA61L6G6 --id "$INVALIDATION_ID"
+
+      - name: Verify deployed RSS feeds
+        run: >-
+          python3 scripts/validate_podcast.py --skip-media
+          --reference-dir public
+          --feed https://dabase.com/podcast/index.xml
+          --site-feed https://dabase.com/index.xml

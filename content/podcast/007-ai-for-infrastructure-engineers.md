@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3715
   audioUrl: "https://dabase.com/podcast/audio/007-ai-for-infrastructure-engineers.mp3"
-  audioSize: 89170604
+  audioSize: 89170605
   youtubeId: "54Z4HlO_sW8"
   youtubeUrl: "https://www.youtube.com/watch?v=54Z4HlO_sW8"
 ---

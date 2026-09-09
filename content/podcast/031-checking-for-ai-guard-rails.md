@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3002
   audioUrl: "https://dabase.com/podcast/audio/031-checking-for-ai-guard-rails.mp3"
-  audioSize: 72047852
+  audioSize: 72047853
   youtubeId: "7lHwUBKV9tI"
   youtubeUrl: "https://www.youtube.com/watch?v=7lHwUBKV9tI"
 ---

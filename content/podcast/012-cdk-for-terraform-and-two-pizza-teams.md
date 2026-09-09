@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3712
   audioUrl: "https://dabase.com/podcast/audio/012-cdk-for-terraform-and-two-pizza-teams.mp3"
-  audioSize: 89081900
+  audioSize: 89081901
   youtubeId: "rM2pj0JKc0g"
   youtubeUrl: "https://www.youtube.com/watch?v=rM2pj0JKc0g"
 ---

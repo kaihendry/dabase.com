@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3231
   audioUrl: "https://dabase.com/podcast/audio/025-how-can-we-trust-ai.mp3"
-  audioSize: 77548652
+  audioSize: 77548653
   youtubeId: "Mpj-ic1WWE8"
   youtubeUrl: "https://www.youtube.com/watch?v=Mpj-ic1WWE8"
 ---

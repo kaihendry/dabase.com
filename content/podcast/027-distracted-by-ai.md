@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 4243
   audioUrl: "https://dabase.com/podcast/audio/027-distracted-by-ai.mp3"
-  audioSize: 101827052
+  audioSize: 101827053
   youtubeId: "oyGi8ahf4Og"
   youtubeUrl: "https://www.youtube.com/watch?v=oyGi8ahf4Og"
 ---

@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3739
   audioUrl: "https://dabase.com/podcast/audio/008-ai-acceleration-with-anthropic-and-beads.mp3"
-  audioSize: 89728172
+  audioSize: 89728173
   youtubeId: "lst5spLZo-U"
   youtubeUrl: "https://www.youtube.com/watch?v=lst5spLZo-U"
 ---

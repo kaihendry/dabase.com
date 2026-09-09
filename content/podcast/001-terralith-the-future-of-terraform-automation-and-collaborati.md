@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2853
   audioUrl: "https://dabase.com/podcast/audio/001-terralith-the-future-of-terraform-automation-and-collaborati.mp3"
-  audioSize: 68481836
+  audioSize: 68481837
   youtubeId: "UXIJe2moZ-I"
   youtubeUrl: "https://www.youtube.com/watch?v=UXIJe2moZ-I"
 ---

@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 3859
   audioUrl: "https://dabase.com/podcast/audio/036-agent-loops.mp3"
-  audioSize: 92620844
+  audioSize: 92620845
   youtubeId: "bi1FOTAZBkY"
   youtubeUrl: "https://www.youtube.com/watch?v=bi1FOTAZBkY"
 ---

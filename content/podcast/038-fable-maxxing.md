@@ -11,7 +11,7 @@ podcast:
   episodeType: "full"
   duration: 2635
   audioUrl: "https://dabase.com/podcast/audio/038-fable-maxxing.mp3"
-  audioSize: 63246572
+  audioSize: 63246573
   youtubeId: "BBxu5L9ywqk"
   youtubeUrl: "https://www.youtube.com/watch?v=BBxu5L9ywqk"
 ---
