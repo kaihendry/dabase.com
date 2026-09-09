@@ -8,26 +8,14 @@ set -euo pipefail
 # $2 = basename without extension
 
 SLUG=$(basename "$2")
-redo-ifchange metadata/episodes.json
-
-youtube_id_for() {
-    jq -r --arg slug "$1" \
-        '.[] | select(.slug == $slug) | .youtubeId' \
-        metadata/episodes.json
-}
+redo-ifchange "metadata/${SLUG}.json"
 
 # Prefer an exact slug match, so a real episode title ending in "-wide" still
 # resolves to its own square cover rather than being read as the variant suffix
-YOUTUBE_ID=$(youtube_id_for "$SLUG")
+YOUTUBE_ID=$(jq -r '.youtubeId' "metadata/${SLUG}.json")
 VARIANT=square
-
-if [ -z "$YOUTUBE_ID" ] || [ "$YOUTUBE_ID" = "null" ]; then
-    case "$SLUG" in
-    *-wide)
-        YOUTUBE_ID=$(youtube_id_for "${SLUG%-wide}")
-        VARIANT=wide
-        ;;
-    esac
+if [ "$SLUG" != "$(jq -r '.slug' "metadata/${SLUG}.json")" ]; then
+    VARIANT=wide
 fi
 
 if [ -z "$YOUTUBE_ID" ] || [ "$YOUTUBE_ID" = "null" ]; then

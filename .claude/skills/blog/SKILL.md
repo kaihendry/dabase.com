@@ -55,7 +55,7 @@ isn't there" is nearly always one of these two:
 2. **A `draft:` key.** We don't use Hugo drafts at all — they slow things down.
    Omit the key entirely; don't write `draft: false`. To keep something out of
    the feed, don't generate a file for it (see `NON_EPISODES` in
-   `content/podcast/all.do`).
+   `content/podcast/pages.do`).
 3. **A podcast episode missing from the YouTube playlist.** `redo all` discovers
    episodes solely by enumerating the "AI Infrastructure" playlist
    (`PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak`) in `metadata/episodes.json.do`, and

@@ -21,9 +21,7 @@ set -euo pipefail
 
 redo-always
 
-# Only the markdown, deliberately: going via `all` would also invalidate every
-# transcript and re-download 41 lots of captions from YouTube for nothing. Use
-# `redo all` for a new episode, or after editing transcript-corrections.sed.
+# Regenerate pages only; media and uploads belong to `redo all`.
 shopt -s nullglob
 MD_FILES=([0-9][0-9][0-9]-*.md)
 shopt -u nullglob
@@ -36,7 +34,7 @@ fi
 echo "Removing ${#MD_FILES[@]} derived episode files so redo will own them again..." >&2
 rm -f metadata/episodes.json "${MD_FILES[@]}"
 
-redo-ifchange metadata/episodes.json
-redo-ifchange "${MD_FILES[@]}"
+redo metadata/episodes.json
+redo pages
 
 date > "$3"

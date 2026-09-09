@@ -8,15 +8,14 @@ SLUG=$(basename "$2")
 LOCAL_PATH=".audio/${SLUG}.mp3"
 S3_PATH="s3://dabase.com/podcast/audio/${SLUG}.mp3"
 
-redo-ifchange metadata/episodes.json
+redo-ifchange "metadata/${SLUG}.json"
 
 # Size sanity check, scaled to the episode. We ask yt-dlp for 192 kbps, so
 # expect ~24 KB/s and accept anything over half that; a truncated download still
 # gets caught, and proportionally better than a flat floor did on long episodes.
 # The old fixed 1 MB rejected the valid 699 KB of the 29-second "how to listen"
 # clip, then deleted it on the way out — so that target could never be built.
-DURATION=$(jq -r --arg slug "$SLUG" \
-    '.[] | select(.slug == $slug) | .duration' metadata/episodes.json)
+DURATION=$(jq -r '.duration' "metadata/${SLUG}.json")
 
 if [ -z "$DURATION" ] || [ "$DURATION" = "null" ] || [ "$DURATION" -le 0 ] 2>/dev/null; then
     echo "Error: no duration for $SLUG in metadata/episodes.json" >&2
@@ -33,7 +32,7 @@ if [ -f "$LOCAL_PATH" ]; then
     LOCAL_SIZE=$(stat -c%s "$LOCAL_PATH" 2>/dev/null || stat -f%z "$LOCAL_PATH" 2>/dev/null)
     if [ "$LOCAL_SIZE" -gt "$MIN_SIZE" ] 2>/dev/null; then
         echo "Using local copy: $LOCAL_PATH (${LOCAL_SIZE} bytes)" >&2
-        cp "$LOCAL_PATH" "$3"
+        cp -p "$LOCAL_PATH" "$3"
         exit 0
     fi
 fi
@@ -51,11 +50,7 @@ if aws s3 ls "$S3_PATH" >/dev/null 2>&1; then
 fi
 
 # Check 3: Download from YouTube (only if not on S3)
-redo-ifchange metadata/episodes.json
-
-YOUTUBE_URL=$(jq -r --arg slug "$SLUG" \
-    '.[] | select(.slug == $slug) | .youtubeUrl' \
-    metadata/episodes.json)
+YOUTUBE_URL=$(jq -r '.youtubeUrl' "metadata/${SLUG}.json")
 
 if [ -z "$YOUTUBE_URL" ] || [ "$YOUTUBE_URL" = "null" ]; then
     echo "Error: No YouTube URL found for $SLUG" >&2

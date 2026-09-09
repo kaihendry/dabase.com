@@ -8,10 +8,10 @@ SLUG=$(basename "$2")
 # The corrections also clean the AI summary, which summarize generates from its
 # own caption fetch — so caption errors ("Kira Crew") reach the page and the
 # meta description, not just the transcripts
-redo-ifchange metadata/episodes.json metadata/transcript-corrections.sed
+redo-ifchange "metadata/${SLUG}.json" metadata/transcript-corrections.sed
 
 # Find episode data by slug
-EPISODE_JSON=$(jq --arg slug "$SLUG" '.[] | select(.slug == $slug)' metadata/episodes.json)
+EPISODE_JSON=$(cat "metadata/${SLUG}.json")
 
 if [ -z "$EPISODE_JSON" ]; then
     echo "Error: No episode found for slug $SLUG" >&2
@@ -62,7 +62,7 @@ else
 fi
 
 # No draft: key is ever emitted. Videos in the playlist that aren't real
-# episodes (see NON_EPISODES in all.do) simply don't get a markdown file.
+# episodes (see NON_EPISODES in pages.do) simply don't get a markdown file.
 
 echo "Generating markdown for episode $EPISODE_NUM: $TITLE" >&2
 
@@ -81,20 +81,28 @@ if [ -f "$SUMMARY_CACHE" ] && [ -f "$SLIDES_JSON" ] && [ "${FORCE:-}" != "1" ]; 
     SUMMARY_JSON=$(cat "$SUMMARY_CACHE")
 else
     echo "  Fetching AI summary + slides for $YOUTUBE_ID..." >&2
-    if SUMMARY_JSON=$(summarize "https://youtu.be/$YOUTUBE_ID" --timestamps --slides --slides-dir "$SLIDES_OUT_DIR" --json 2>/dev/null); then
+    # We cache summaries ourselves. Keep summarize's cache pruning away from
+    # published slides, and copy only a completed extraction into static/.
+    SLIDES_TMP=$(mktemp -d)
+    trap 'rm -rf "$SLIDES_TMP"' EXIT
+    if SUMMARY_JSON=$(summarize "https://youtu.be/$YOUTUBE_ID" --no-cache --timestamps --slides --slides-dir "$SLIDES_TMP" --json 2>/dev/null); then
+        mkdir -p "$SLIDES_OUT_DIR"
+        cp -R "$SLIDES_TMP/youtube-${YOUTUBE_ID}" "$SLIDES_OUT_DIR/"
         echo "$SUMMARY_JSON" > "$SUMMARY_CACHE"
         echo "  Cached summary + slides for $YOUTUBE_ID" >&2
     else
         echo "  WARN: summarize failed for $YOUTUBE_ID, skipping summary section" >&2
         SUMMARY_JSON=""
     fi
+    rm -rf "$SLIDES_TMP"
+    trap - EXIT
 fi
 
 # Build the summary section using a temp Python script to avoid bash quoting issues
 # (backticks and double-quotes in the heading string conflict with -c "..." syntax)
 SUMMARY_SECTION=""
 if [ -n "$SUMMARY_JSON" ]; then
-    PY_SCRIPT=$(mktemp /tmp/podcast_summary_XXXXXX.py)
+    PY_SCRIPT=$(mktemp /tmp/podcast_summary_XXXXXX)
     cat > "$PY_SCRIPT" <<'PYEOF'
 import json, re, sys, os
 
@@ -146,7 +154,7 @@ fi
 # description is nothing but a chapter list ("0:00 Intro", ...) that makes a
 # useless one, so drop the chapter lines and fall back to the AI summary's
 # opening sentences.
-PY_DESC=$(mktemp /tmp/podcast_desc_XXXXXX.py)
+PY_DESC=$(mktemp /tmp/podcast_desc_XXXXXX)
 cat > "$PY_DESC" <<'PYEOF'
 import json, os, re, sys
 
@@ -194,7 +202,7 @@ fi
 # The description goes into the body verbatim, but Markdown collapses single
 # newlines, so a chapter list renders as one run-together paragraph. Turn
 # "12:34 Title" lines into a list linking into the video; leave the rest alone.
-PY_BODY=$(mktemp /tmp/podcast_body_XXXXXX.py)
+PY_BODY=$(mktemp /tmp/podcast_body_XXXXXX)
 cat > "$PY_BODY" <<'PYEOF'
 import os, re, sys
 

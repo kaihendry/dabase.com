@@ -7,11 +7,9 @@ set -euo pipefail
 # $2 = basename without extension
 
 SLUG=$(basename "$2")
-redo-ifchange metadata/episodes.json metadata/transcript-corrections.sed
+redo-ifchange "metadata/${SLUG}.json" metadata/transcript-corrections.sed
 
-YOUTUBE_URL=$(jq -r --arg slug "$SLUG" \
-    '.[] | select(.slug == $slug) | .youtubeUrl' \
-    metadata/episodes.json)
+YOUTUBE_URL=$(jq -r '.youtubeUrl' "metadata/${SLUG}.json")
 
 if [ -z "$YOUTUBE_URL" ] || [ "$YOUTUBE_URL" = "null" ]; then
     echo "Error: No episode found for slug $SLUG" >&2

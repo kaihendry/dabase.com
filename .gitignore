@@ -5,6 +5,7 @@ content/podcast/audio/
 
 # Podcast metadata cache (regenerated locally via redo)
 content/podcast/metadata/playlist.json
+content/podcast/metadata/[0-9]*.json
 content/podcast/metadata/.redo/
 
 # Redo build artifacts
