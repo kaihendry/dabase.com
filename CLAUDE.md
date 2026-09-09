@@ -1,5 +1,3 @@
-**Note**: This project uses [bd (beads)](https://github.com/steveyegge/beads) for issue tracking. Use `bd` commands instead of markdown TODOs.
-
 Hugo-based static blog hosted on AWS S3/CloudFront. Main config: `hugo.yaml`
 
 ## Build Commands
