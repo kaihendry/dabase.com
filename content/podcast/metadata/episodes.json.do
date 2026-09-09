@@ -7,6 +7,7 @@ set -euo pipefail
 # Remove target first to avoid "externally modified" warnings from redo
 rm -f "$3"
 redo-always
+redo-ifchange episode-overrides.json
 
 PLAYLIST_URL="https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak"
 
@@ -134,7 +135,10 @@ done
 echo "]" >> "$TEMP_FILE"
 
 # Format the final JSON nicely
-jq '.' "$TEMP_FILE" > "$3"
+# Re-uploads retain their existing page URL and RSS identity. A separate audio
+# slug gives podcast clients a fresh enclosure rather than cached original audio.
+jq --slurpfile overrides episode-overrides.json \
+    'map(. + ($overrides[0][.youtubeId] // {}))' "$TEMP_FILE" > "$3"
 
 rm -f "$PLAYLIST_TMP" "$TEMP_FILE"
 

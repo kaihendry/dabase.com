@@ -28,8 +28,9 @@ DURATION=$(echo "$EPISODE_JSON" | jq -r '.duration')
 UPLOAD_DATE=$(echo "$EPISODE_JSON" | jq -r '.uploadDate')
 
 # Audio file info
-AUDIO_FILE=".audio/${SLUG}.mp3"
-AUDIO_URL="https://dabase.com/podcast/audio/${SLUG}.mp3"
+AUDIO_SLUG=$(echo "$EPISODE_JSON" | jq -r '.audioSlug // .slug')
+AUDIO_FILE=".audio/${AUDIO_SLUG}.mp3"
+AUDIO_URL="https://dabase.com/podcast/audio/${AUDIO_SLUG}.mp3"
 
 # Self-hosted artwork (both built by default.jpg.do); URLs must change for
 # Spotify/Apple to re-fetch, so never point at img.youtube.com here.
@@ -54,7 +55,10 @@ fi
 # Prefer YouTube's exact publish time. A hardcoded time-of-day (we used to use
 # noon) puts same-day episodes in the future, and Hugo silently drops those.
 PUBLISHED=$(jq -r '.timestamp // empty' "metadata/cache/${YOUTUBE_ID}.json" 2>/dev/null)
-if [ -n "$PUBLISHED" ]; then
+PUBLISH_DATE=$(echo "$EPISODE_JSON" | jq -r '.publishDate // empty')
+if [ -n "$PUBLISH_DATE" ]; then
+    PUB_DATE="$PUBLISH_DATE"
+elif [ -n "$PUBLISHED" ]; then
     PUB_DATE=$(date -u -r "$PUBLISHED" "+%Y-%m-%dT%H:%M:%SZ" 2>/dev/null \
         || date -u -d "@$PUBLISHED" "+%Y-%m-%dT%H:%M:%SZ")
 else

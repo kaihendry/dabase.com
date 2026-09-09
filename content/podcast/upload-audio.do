@@ -13,10 +13,14 @@ redo-always
 # the files — which uploads the previous version and reports success.
 redo-ifchange metadata/episodes.json
 # A read loop rather than mapfile: /bin/bash on macOS is 3.2, no mapfile there
-AUDIO_LIST=$(jq -r '.[].slug' metadata/episodes.json | sed 's|.*|.audio/&.mp3|')
+AUDIO_LIST=$(jq -r '.[] | .audioSlug // .slug' metadata/episodes.json | sed 's|.*|.audio/&.mp3|')
 AUDIO_FILES=()
+SYNC_FILTERS=(--exclude "*")
 while IFS= read -r LINE; do
-    [ -n "$LINE" ] && AUDIO_FILES+=("$LINE")
+    if [ -n "$LINE" ]; then
+        AUDIO_FILES+=("$LINE")
+        SYNC_FILTERS+=(--include "${LINE#.audio/}")
+    fi
 done <<< "$AUDIO_LIST"
 
 redo-ifchange "${AUDIO_FILES[@]}"
@@ -32,11 +36,12 @@ fi
 
 echo "Syncing audio files to S3..." >&2
 
-# Upload only changed files
+# Upload only current enclosures. A retired local recording must not overwrite
+# the edited recording we placed at its old S3 URL for existing subscribers.
 aws s3 sync "$AUDIO_DIR/" "$S3_BUCKET" \
     --profile "${AWS_PROFILE:-mine}" \
     --region "$S3_REGION" \
-    --exclude ".*" \
+    "${SYNC_FILTERS[@]}" \
     --content-type "audio/mpeg" \
     --metadata-directive REPLACE \
     --cache-control "public, max-age=31536000" \
