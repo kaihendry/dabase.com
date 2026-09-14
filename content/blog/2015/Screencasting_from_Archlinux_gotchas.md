@@ -1,5 +1,6 @@
 ---
 date: 2015-07-15 11:37:22 +0800
+tags: [audio-video]
 ---
 
 ## Update: I now use [obs-studio](https://obsproject.com/) for my [videos](https://www.youtube.com/user/kaihendry)!

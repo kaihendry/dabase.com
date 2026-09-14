@@ -2,6 +2,7 @@
 title: AWS SSO versus Oauth
 date: 2020-06-22T14:38:33+08:00
 description: SSO and Oauth2 are same same... but different
+tags: [security]
 ---
 
 > This is a reproduction of an AWS Support response. I use [AWS support in my

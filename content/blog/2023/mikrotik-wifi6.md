@@ -2,6 +2,7 @@
 title: Mikrotik Wifi6
 date: 2023-11-11T07:23:59Z
 description: WifiWave2 is the new wifi6 implementation from Mikrotik. It has some nasty surprises.
+tags: [networking]
 ---
 
 {{< youtube zVFwqFXQ2pI >}}

@@ -1,5 +1,6 @@
 ---
 date: 2015-09-02 10:52:39 +0800
+tags: [security]
 ---
 
 I like to talk at [local Singaporean tech meetups](http://www.webuild.sg/) to

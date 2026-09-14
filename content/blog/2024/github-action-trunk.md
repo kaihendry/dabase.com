@@ -2,6 +2,7 @@
 title: Github Action Trunk based development IaC
 date: 2024-05-24T13:10:33+01:00
 description: A path to production using trunk based development for infrastructure as code
+tags: [iac, ci-cd]
 ---
 
 We focus on **trunk based development** on **main**, with a re-usuable Github workflow hiding the [details of the deployment](https://github.com/Azure-Samples/terraform-github-actions): 

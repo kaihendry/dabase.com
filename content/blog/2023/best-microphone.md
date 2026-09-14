@@ -2,6 +2,7 @@
 title: "Best Microphone"
 date: 2023-11-06T11:46:15Z
 description: The best microphone is the one you have with you
+tags: [audio-video]
 ---
 
 ![Lavalier grey connector](https://s.natalian.org/2023-11-06/microphone.webp)

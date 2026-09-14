@@ -2,6 +2,7 @@
 title: Does Dockerfile USER prevent Linux container breakouts?
 date: 2023-03-25T18:29:54+08:00
 description: Is adding a USER best practice?
+tags: [security]
 ---
 
 As an Infra Devops Lead, I'm often reviewing Dockerfiles that are unnecessarily

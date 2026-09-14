@@ -2,6 +2,7 @@
 title: "AI Engineer Europe 2026: Takeaways from London"
 date: 2026-04-14T09:54:40+01:00
 description: "My takeaways from volunteering at AI Engineer Europe in London — workshops, talks, and the people who made it worthwhile."
+tags: [ai]
 ---
 
 I volunteered (associate) at [AI Engineer Europe](https://www.ai.engineer/europe) in London last week. Three days: workshops on Wednesday, presentations on Thursday and Friday. I had my family with me, so I didn't go for any drinks / side events.

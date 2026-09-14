@@ -2,6 +2,7 @@
 title: Deploying a Lambda
 date: 2023-10-10T13:11:13+01:00
 description: Breaking down what AWS SAM does
+tags: [iac, ci-cd]
 ---
 
 [AWS SAM](https://aws.amazon.com/serverless/sam/) has a guided deployment mode, which is also triggered by `--resolve-s3`, which abstracts: 

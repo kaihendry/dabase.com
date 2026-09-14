@@ -2,6 +2,7 @@
 title: Connecting to MySQL
 date: 2024-07-26T16:52:17+02:00
 description: Can't connect to local MySQL server through socket
+tags: [database]
 ---
 
 By default the mysql client tries to make a connection via a Unix pipe which might not exist.

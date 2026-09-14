@@ -2,6 +2,7 @@
 title: "Our First Air-to-Water Heat Pump: Vaillant aroTHERM plus"
 description: "Notes, photos and costs from installing a Vaillant aroTHERM plus VWL 35/8.1 A air-to-water heat pump under the UK's Boiler Upgrade Scheme, plus wiring it into Home Assistant to chase cheap Octopus rates."
 date: 2026-07-22T17:34:29+01:00
+tags: [home-energy]
 ---
 
 We've just had our first air-to-water heat pump installed, taking advantage of the UK's

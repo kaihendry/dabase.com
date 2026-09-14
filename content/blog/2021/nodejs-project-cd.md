@@ -2,6 +2,7 @@
 title: Mitigating security risks with NodeJS
 date: 2021-10-13T17:36:57+08:00
 description: What is the best way to manage node JS security issues?
+tags: [security]
 ---
 
 I'm new to supporting a complex production nodejs project.

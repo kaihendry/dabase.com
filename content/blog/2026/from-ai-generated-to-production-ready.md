@@ -2,6 +2,7 @@
 title: "From AI-Generated to Production-Ready: Closing the Gap"
 description: "AI can write code fast, but getting it to production requires the same rigour as any other code — testing, review, observability, and ownership. Here's how to bridge that gap."
 date: 2026-04-16T15:25:19+01:00
+tags: [ai, ci-cd]
 ---
 
 When [creating a green field software project with AI](https://github.com/kaihendry/cream), what makes that code "Production quality"?

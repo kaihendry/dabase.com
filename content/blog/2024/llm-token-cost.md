@@ -2,6 +2,7 @@
 title: LLM token cost
 date: 2024-04-04T10:57:46+01:00
 description: Is asking a LLM for a short answer to a question a cost effective idea?
+tags: [ai]
 ---
 
 # Mistral

@@ -1,5 +1,6 @@
 ---
 date: 2016-07-28 14:06:16 +0800
+tags: [ci-cd]
 ---
 
 Following up after [[ECS_questions]]

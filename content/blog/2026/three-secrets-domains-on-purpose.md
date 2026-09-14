@@ -2,6 +2,7 @@
 title: "Three Secrets Domains on Purpose"
 date: 2026-08-18T13:28:09Z
 description: "Why a large org keeps developer, CI and workload secrets in three separate systems — 1Password, GitHub secrets and AWS — and how short-lived credentials and least privilege hold it together."
+tags: [security, ci-cd]
 ---
 
 <div style="overflow-x:auto;margin:2rem calc(50% - 50vw) 2.5rem;width:100vw;padding:0 1rem;box-sizing:border-box">

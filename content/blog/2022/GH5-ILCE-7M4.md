@@ -3,6 +3,7 @@ title: Lumix GH5 to Sony Alpha A7 IV
 date: 2022-04-17T19:28:07+08:00
 description: Notes on my Pansonic GH5 to Sony ILCE-7M4 upgrade
 toc: true
+tags: [audio-video]
 ---
 
 <style>

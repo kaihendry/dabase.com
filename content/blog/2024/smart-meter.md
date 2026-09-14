@@ -2,6 +2,7 @@
 title: Praze Smart Meter
 date: 2024-11-26T18:00:11Z
 description: Our meter is not in fact, smart
+tags: [home-energy]
 ---
 
 # The meter box (SMETS1)

@@ -2,6 +2,7 @@
 title: "Darragh Power Cut"
 date: 2024-12-09T19:07:04Z
 description: Notes from a 47 hour power cut in Cornwall
+tags: [home-energy]
 ---
 
 Hours after getting [power restored](https://powercuts.nationalgrid.co.uk/PL304HZ) from [Storm Darragh](https://en.wikipedia.org/wiki/Storm_Darragh), I feel like I need to capture some lessons learned.

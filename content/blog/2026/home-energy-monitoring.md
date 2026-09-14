@@ -2,6 +2,7 @@
 title: "How I Monitor My Home Energy Usage"
 description: "A practical walkthrough of my home energy monitoring setup — the tools, dashboards, and insights I use to track and reduce electricity consumption."
 date: 2026-04-14T20:33:05+01:00
+tags: [home-energy]
 ---
 
 Since my UK home's [electricity monitor is not smart](/blog/2024/smart-meter/), I use the

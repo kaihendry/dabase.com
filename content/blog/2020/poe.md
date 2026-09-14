@@ -2,6 +2,7 @@
 title: Passive versus Active Power over Ethernet
 date: 2020-10-07T10:22:38+08:00
 description: Non-standard Passive != Standard Active Power over Ethernet
+tags: [networking]
 ---
 
 

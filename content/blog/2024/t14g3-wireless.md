@@ -2,6 +2,7 @@
 title: T14g3 Wireless woes
 date: 2024-05-19T07:09:17+01:00
 description: 21CFCTO1WW ThinkPad T14 Gen 3 (AMD) - Wireless issues
+tags: [networking]
 ---
 
 The Wireless <a href="https://gist.github.com/kaihendry/8f8a5dc352cb831f93e7ff48234e6117">Network controller: Qualcomm Technologies, Inc QCNFA765 Wireless Network Adapter (rev 01)</a> in my <a href="https://wiki.archlinux.org/title/Lenovo_ThinkPad_T14_(AMD)_Gen_3">t1g3</a> has not been working well for me.

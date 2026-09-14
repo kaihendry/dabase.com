@@ -1,5 +1,6 @@
 ---
 date: 2016-01-03 10:41:05 +0800
+tags: [networking]
 ---
 
 The **Qualcomm Atheros QCA9880 802.11nac** in my [Archer C7

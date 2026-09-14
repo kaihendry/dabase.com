@@ -2,6 +2,7 @@
 title: Security Principles💂
 date: 2022-12-05T11:23:49+08:00
 description: AWS security principles
+tags: [security]
 ---
 
 The most important security principles:

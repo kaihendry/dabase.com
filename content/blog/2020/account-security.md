@@ -2,6 +2,7 @@
 title: Account Security
 date: 2020-10-04T23:17:07+08:00
 description: How I secure my online life
+tags: [security]
 ---
 <table>
 <thead>

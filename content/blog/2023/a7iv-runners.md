@@ -2,6 +2,7 @@
 title: Sony A7IV settings for running subjects
 date: 2023-04-05T10:55:27+08:00
 description: Settings for capturing runners
+tags: [audio-video]
 ---
 
 {{< youtube xNfymG8dKjc >}}

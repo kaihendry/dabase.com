@@ -2,6 +2,7 @@
 title: "Upskilling Your Infrastructure Team with AI"
 description: Bring Claude to the table for making AWS Infrastructure decisions with the best information
 date: 2026-01-07T11:02:08Z
+tags: [ai]
 ---
 
 Setup appropriate MCP servers:

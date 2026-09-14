@@ -2,6 +2,7 @@
 title: No dist-upgrade
 date: 2023-01-04T15:37:33+08:00
 description: In-place updating is not best practice for production deployments
+tags: [ci-cd]
 ---
 
 {{< youtube YS6kE11F-T4 >}}

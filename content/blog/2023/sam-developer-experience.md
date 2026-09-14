@@ -3,6 +3,7 @@ title: AWS SAM Developer Experience
 date: 2023-02-28T19:55:42+08:00
 description: AWS SAM DX failures
 toc: true
+tags: [iac]
 ---
 
 {{< x user="ibuildthecloud" id="1630324949452996608" >}}

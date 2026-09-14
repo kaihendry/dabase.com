@@ -1,5 +1,6 @@
 ---
 date: 2014-03-13 12:12:46 +0800
+tags: [networking]
 ---
 
 From roughly systemd version 210, networking in my Droplet changed.

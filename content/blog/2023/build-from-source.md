@@ -2,6 +2,7 @@
 title: Build From Source
 date: 2023-04-21T09:51:59+08:00
 description: Instead of promoting artifacts, why not build from source?
+tags: [ci-cd]
 ---
 
 A critique of my Gitlab Path to Production video is that it **builds and tests**

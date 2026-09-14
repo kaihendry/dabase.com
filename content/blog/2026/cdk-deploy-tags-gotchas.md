@@ -2,6 +2,7 @@
 title: "Tags are not free in AWS CDK"
 date: 2026-02-24T10:30:58Z
 description: "AWS CDK's --tags CLI flag has subtle gotchas: tags vanish in self-mutating pipelines, frequently-changing tags cause unexpected resource churn, and service-specific tagging quirks can break deployments."
+tags: [iac]
 ---
 
 `cdk deploy --tags key=value` feels like a safe, additive operation. It isn't always.

@@ -2,6 +2,7 @@
 title: "TASCAM DR 40 background Noise"
 date: 2020-04-11T09:33:34+08:00
 description: Portable recorders with XLRs are noisy for me, USB is probably better
+tags: [audio-video]
 ---
 
 Thanks Stephan for borrowing me the device. The following tests are all USB

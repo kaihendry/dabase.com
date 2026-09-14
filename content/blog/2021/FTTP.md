@@ -2,6 +2,7 @@
 title: FTTP in Cornwall
 date: 2021-01-05T20:32:47+08:00
 description: Finally we have Fibre to the Premises aka FTTH
+tags: [networking]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gMPTtB3LUJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

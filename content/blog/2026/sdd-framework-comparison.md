@@ -2,6 +2,7 @@
 title: "Comparing SDD Frameworks: spec-kit vs OpenSpec vs get-shit-done"
 description: "Notes on the differences between three Spec Driven Development frameworks — GitHub's spec-kit, Fission-AI's OpenSpec, and gsd-build's get-shit-done."
 date: 2026-05-18T15:22:11+01:00
+tags: [ai]
 ---
 
 [SDD is one tool of many, they are quite different from each

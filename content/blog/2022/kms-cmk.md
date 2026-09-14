@@ -2,6 +2,7 @@
 title: Why use AWS Customer Managed Keys?
 date: 2022-12-14T21:23:18+08:00
 description: tfsec promotes CMK keys over AWS managed KMS, how come?
+tags: [security]
 ---
 
 [tfsec promotes CMK usage as mentioned in my

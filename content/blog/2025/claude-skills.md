@@ -2,6 +2,7 @@
 title: "Claude Skills"
 date: 2025-11-01T19:48:18Z
 description: How I made a Claude skill for Hugo
+tags: [ai]
 ---
 
 ## Creating a Blogging Skill for Claude Code

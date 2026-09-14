@@ -2,6 +2,7 @@
 title: Secure or not?
 date: 2021-03-08T18:24:19+08:00
 description: It's a trap to think there is a check box for security
+tags: [security]
 ---
 
 After browsing <a

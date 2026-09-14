@@ -2,6 +2,7 @@
 title: Global Protect Man in the Middle
 date: 2021-09-30T09:50:22+08:00
 description: How mobile device management can work from a VPN client
+tags: [security]
 ---
 
 I have `aur/globalprotect-openconnect` installed to access my employer's VPN.

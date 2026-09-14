@@ -1,5 +1,6 @@
 ---
 date: 2016-03-19 15:21:56 +0800
+tags: [networking]
 ---
 
 When resetting an OpenWRT router into failsafe mode, it usually comes up as

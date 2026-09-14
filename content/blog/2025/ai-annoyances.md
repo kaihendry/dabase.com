@@ -2,6 +2,7 @@
 title: "AI annoyances"
 date: 2025-12-06T10:37:51Z
 description: "A running list of frustrations and problems I encounter when using AI tools."
+tags: [ai]
 ---
 
 # Fine grained permissions are a little too annoying

@@ -2,6 +2,7 @@
 title: "A Ticket Template for AI-Generated Code"
 date: 2026-07-02T16:47:06+01:00
 description: "A trimmed JIRA/issue template — story, scope, acceptance criteria, plus an AI verification section — inspired by Dave Farley and Matteo Vaccari's talks on keeping AI-generated code honest."
+tags: [ai]
 ---
 
 Two talks worth watching if AI is writing code and tests for you:

@@ -2,6 +2,7 @@
 title: Least Privilege in Practice
 date: 2022-08-24T11:12:35+08:00
 description: You can't start from the bottom, it wastes time
+tags: [security]
 ---
 
 [The Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) is often

@@ -4,7 +4,7 @@
   <h2 id="related-posts">Related posts</h2>
   <ul>
   {{ range . }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | default (replace .File.BaseFileName "_" " " | title) }}</a></li>
   {{ end }}
   </ul>
 </aside>

@@ -2,6 +2,7 @@
 title: "Snowflake IaC without switching to Terraform"
 date: 2026-03-10T10:00:00Z
 description: "Using CDK Terrain with the official Snowflake Terraform provider"
+tags: [iac, database]
 ---
 
 Scenario: you already use CDK, your team is happy, and you use CDKTF for

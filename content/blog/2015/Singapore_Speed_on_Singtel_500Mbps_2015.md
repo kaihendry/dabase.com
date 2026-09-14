@@ -1,5 +1,6 @@
 ---
 date: 2015-03-07 20:13:02 +0800
+tags: [networking]
 ---
 
 I was curious to know if there was a real difference between the **Network Performance** between AWS ap-southeast-1a m3.xlarge (52.74.16.160) and a ap-southeast-1a t2.micro (52.74.13.219).

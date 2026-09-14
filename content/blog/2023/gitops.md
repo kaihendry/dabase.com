@@ -2,6 +2,7 @@
 title: Gitops
 date: 2023-09-27T10:17:45+01:00
 description: Platform engineering using Gitops
+tags: [iac, ci-cd]
 ---
 
 <img src="https://s.natalian.org/2023-09-27/gitops.png">

@@ -2,6 +2,7 @@
 title: Separation of Duties
 date: 2023-01-19T15:01:04+08:00
 description: Separation of Duties without the manual gatekeeping
+tags: [security, ci-cd]
 ---
 
 In large organisations https://en.wikipedia.org/wiki/Separation_of_duties  **kills productivity**.

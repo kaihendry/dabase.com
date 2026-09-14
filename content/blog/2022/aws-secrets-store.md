@@ -2,6 +2,7 @@
 title: AWS Secrets Manager or AWS Systems Manager Parameter Store?
 date: 2022-03-25T14:22:21+08:00
 description: AWS Secrets Manager is actually for databases
+tags: [security]
 ---
 
 When choosing a secrets manager, AWS offers two products:

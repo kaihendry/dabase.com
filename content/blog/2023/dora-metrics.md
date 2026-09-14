@@ -2,6 +2,7 @@
 title: DORA metrics failure
 date: 2023-07-18T16:24:21+01:00
 description: Failure needs to be treated as a learning opportunity with the four key metrics
+tags: [ci-cd]
 ---
 
 For measuring the maturity of a DevOps organisation, there are <abbr title="four key metrics">4KM</abbr>:

@@ -2,6 +2,7 @@
 title: "Reading the Heat Pump Locally: eBUS Adapter Stick C6 and ebusd"
 description: "Tapping the Vaillant aroTHERM plus eBUS with an eBUS Adapter Stick C6 and ebusd, for 678 local Home Assistant entities instead of a rate-limited cloud API — including the wiring, the MQTT flag that silently breaks discovery, and a heat pump model with no config file."
 date: 2026-08-14T11:20:00+01:00
+tags: [home-energy]
 ---
 
 A follow-up to [our heat pump install](../vaillant-arotherm-plus-heat-pump/). That post ended with

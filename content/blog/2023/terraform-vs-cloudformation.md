@@ -2,6 +2,7 @@
 title: Terraform vs Cloudformation
 date: 2023-04-19T20:09:46+08:00
 description: Terraform or Cloudformation for managing AWS infrastructure?
+tags: [iac]
 ---
 
 I have [issues with Terraform](https://dabase.com/blog/2022/terraform/), but I didn't make clear why I prefer Cloudformation.

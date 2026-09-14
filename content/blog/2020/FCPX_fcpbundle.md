@@ -2,6 +2,7 @@
 title: Understanding FCPX bundles
 date: 2020-11-05T22:43:38+08:00
 description: Final Cut Pro X backups have gone wrong for me
+tags: [audio-video]
 ---
 
 <img width="30%" src="https://s.natalian.org/2020-11-05/fcpx.png">

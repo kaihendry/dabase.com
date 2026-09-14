@@ -2,6 +2,7 @@
 title: "Database Performance"
 date: 2024-08-06T14:32:58+01:00
 description: Key Performance Indicators - Response time, Errors, QPS, Threads running
+tags: [database]
 ---
 
 # AWS RDS

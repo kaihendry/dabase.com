@@ -3,6 +3,7 @@ title: My issues with terraform
 date: 2022-11-17T11:34:07+08:00
 description: Gripes on Terraform in the context of Amazon Web Services
 toc: true
+tags: [iac]
 ---
 
 ## Terraform language (HCL) is painful

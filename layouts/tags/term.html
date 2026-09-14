@@ -4,7 +4,7 @@
 {{ .Content }}
 <ul>
 {{ range .Pages.ByDate.Reverse }}
-  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time></li>
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | default (replace .File.BaseFileName "_" " " | title) }}</a> <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time></li>
 {{ end }}
 </ul>
 {{ end }}

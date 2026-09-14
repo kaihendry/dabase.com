@@ -2,6 +2,7 @@
 title: Container Lifecycle
 date: 2023-04-27T05:27:00+08:00
 description: Container repository tagging for Build Once, Deploy Anywhere
+tags: [ci-cd]
 ---
 
 In a Docker container delivery CI/CD pipeline with <abbr title="Build Once, Deploy Anywhere">BODA</abbr>, we need to promote the container image artifact from one environment to the next, instead of [building from source](/blog/2023/build-from-source/).

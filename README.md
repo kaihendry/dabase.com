@@ -50,6 +50,23 @@ Add one or two reusable topics in a post's frontmatter when useful, for example
 `tags: [audio-video]`. Reuse the tags listed at `/tags/`; introduce a new tag only
 when it connects at least two posts. Untagged posts are fine.
 
+Keep the vocabulary to these eight topics for now:
+
+| Tag | Use for |
+| --- | --- |
+| `ai` | AI tools, coding workflows, costs and adoption |
+| `audio-video` | Cameras, microphones, lighting, recording and editing |
+| `ci-cd` | Building, testing, releasing and deploying software |
+| `database` | Database setup, access, performance and infrastructure |
+| `home-energy` | Home heating, energy monitoring, insulation and power resilience |
+| `iac` | Infrastructure as code with Terraform, CloudFormation, CDK and GitOps |
+| `networking` | WiFi, broadband, routing, DNS and network configuration |
+| `security` | Identity, secrets, permissions and security controls |
+
+Use two tags when both are central to the article, such as
+`tags: [iac, ci-cd]` for an infrastructure deployment pipeline. Tag the main
+subject, not every technology mentioned; leave drafts and unrelated posts untagged.
+
 Tag links lead to an archive of matching posts. Blog articles show up to three
 related posts based only on shared tags, including newer articles so older posts
 can link to follow-ups. Hugo builds these links without additional JavaScript.

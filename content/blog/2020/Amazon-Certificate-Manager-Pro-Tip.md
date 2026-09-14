@@ -2,6 +2,7 @@
 title: Amazon Certificate Manager Pro Tip
 date: 2020-12-03T11:11:38+08:00
 description: Avoid email validation and use DNS Validation Method and wildcards for sanity reasons
+tags: [security]
 ---
 
 If you are receiving "To approve this request, go to Amazon Certificate Approvals"? You are doing it wrong!

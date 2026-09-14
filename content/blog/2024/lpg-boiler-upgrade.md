@@ -2,6 +2,7 @@
 title: LPG boiler upgrade wanted
 date: 2024-03-23T14:28:07Z
 description: Looking to upgrade our LPG boiler to a more efficient model in South West England
+tags: [home-energy]
 ---
 
 <img width="45%" src="https://s.natalian.org/2024-03-23/baxi-428-LPG-combi.webp" alt="Baxi 428 LPG Combi">

@@ -2,8 +2,7 @@
 title: oracledump
 date: 2023-02-10T16:41:29+08:00
 description: Oracle dump to SQL from an oradata folder for a CI/CD pipeline
-tags:
-  - database
+tags: [database, ci-cd]
 ---
 
 As a devops engineer, I work with CI/CD pipelines. Creating, maintaining, fixing

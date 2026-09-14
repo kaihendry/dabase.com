@@ -2,6 +2,7 @@
 title: Sony ZV-1 notes from Singapore
 date: 2020-07-16T16:44:25+08:00
 description: Upgraded from a G7X mk3 to the Sony ZV-1 for my Youtubing ambitions
+tags: [audio-video]
 ---
 
 **tl;dr if you are an image quality nazi, consider this. If you value convenience, get an iPhone 12**

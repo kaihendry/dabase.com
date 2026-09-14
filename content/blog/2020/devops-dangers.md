@@ -3,6 +3,7 @@ title: When DevOps goes bad
 date: 2020-09-18T09:55:20+08:00
 description: Do not waste your investment with long build times and no local environment
 toc: true
+tags: [ci-cd]
 ---
 
 <img src="https://s.natalian.org/2020-09-18/brad-neathery-nPy0X4xew60-unsplash.webp" alt="Development iteration speed is critical">

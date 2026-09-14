@@ -1,5 +1,6 @@
 ---
 date: 2014-12-05 11:28:45 +0800
+tags: [ci-cd]
 ---
 
 I setup [Greptweet](https://github.com/kaihendry/greptweet) a few months ago on

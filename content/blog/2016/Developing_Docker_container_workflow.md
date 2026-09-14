@@ -1,5 +1,6 @@
 ---
 date: 2016-02-11 18:00:19 +0800
+tags: [ci-cd]
 ---
 
 Companion [video on the issues I have with Docker](https://www.youtube.com/watch?v=tQZfCOpXJmE)

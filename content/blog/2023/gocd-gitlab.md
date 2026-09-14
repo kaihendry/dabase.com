@@ -2,6 +2,7 @@
 title: GoCD versus Gitlab
 date: 2023-03-08T14:33:33+08:00
 description: Differences between two delivery pipelines
+tags: [ci-cd]
 ---
 
 <img width=200 src="https://s.natalian.org/2023-03-08/GoCD_White_Logo@4x.png" alt="GoCD">

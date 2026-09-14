@@ -2,6 +2,7 @@
 title: "The Irreplaceable Human: Our Role in an AI-Driven World"
 description: "As AI takes over more tasks, the question isn't whether humans are needed — it's understanding what only humans can provide: judgment, accountability, and meaning."
 date: 2026-03-24T15:27:34Z
+tags: [ai]
 ---
 
 # Paddy

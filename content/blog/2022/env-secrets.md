@@ -2,6 +2,7 @@
 title: Don't put secrets in your ENV
 date: 2022-03-25T13:23:06+08:00
 description: Secrets as environment variables is a bad idea
+tags: [security]
 ---
 
 If you see something like:

@@ -2,6 +2,7 @@
 title: AWS SSO with Google Chrome profiles
 date: 2024-10-16T09:56:41+01:00
 description: Mapping AWS profiles to Chrome profiles
+tags: [security]
 ---
 
 When working on different AWS accounts with different clients, my strategy is to keep them **separated with browser profiles**.

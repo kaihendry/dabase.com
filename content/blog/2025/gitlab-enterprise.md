@@ -2,6 +2,7 @@
 title: "Gitlab Enterprise"
 date: 2025-02-19T11:23:55Z
 description: Tested on GitLab Enterprise Edition 17.9.0-pre
+tags: [security, ci-cd]
 
 ---
 

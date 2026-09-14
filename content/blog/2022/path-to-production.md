@@ -2,6 +2,7 @@
 title: Path to Production
 date: 2022-05-21T06:52:21+08:00
 description: Three seperate git repos for dev, stg & prd
+tags: [ci-cd]
 ---
 
 {{< youtube DwJlGyZ9bxM >}}

@@ -2,6 +2,7 @@
 title: AWS S3 Access Points
 date: 2025-10-07T11:57:43+01:00
 description: Beware of mistakes in Bucket policies
+tags: [security]
 ---
 
 Many AWS infrastructure teams rely on S3 bucket policies to police access. Since Bucket policies can easily become complex, AWS offer Amazon S3

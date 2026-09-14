@@ -2,6 +2,7 @@
 title: Better Hotel Wifi
 date: 2021-06-28T17:26:03+08:00
 description: Working around a hotel's captive portal
+tags: [networking]
 ---
 
 I'm quarantined in a hotel for two weeks in Singapore and I don't want the

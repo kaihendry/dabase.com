@@ -2,6 +2,7 @@
 title: Do not complicate Serverless architectures with Private subnets
 date: 2022-03-29T09:23:55+08:00
 description: Security in the cloud is identity-centric not network-based
+tags: [networking, security]
 ---
 
 Architectures with Private subnets are a relic of on-premises [Three tier

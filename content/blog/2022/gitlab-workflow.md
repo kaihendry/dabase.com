@@ -1,6 +1,7 @@
 ---
 title: Gitlab Workflow
 date: 2022-12-07T09:59:40+08:00
+tags: [ci-cd]
 ---
 
 When making a change my workflow is:

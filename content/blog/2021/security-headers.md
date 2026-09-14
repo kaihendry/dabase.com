@@ -2,6 +2,7 @@
 title: "Security Headers"
 date: 2021-10-05T12:35:34+08:00
 description: Bug bounty scams
+tags: [security]
 ---
 
 <img src="https://s.natalian.org/2021-10-05/fail.png" alt="failed at pollution">

@@ -3,6 +3,7 @@ title: "Why Enterprises Struggle to Adopt AI"
 date: 2026-09-03T09:58:42+01:00
 description: "A running list of reasons the fast feedback loop that makes agentic AI work keeps getting bottlenecked and stalled inside large organisations."
 toc: true
+tags: [ai]
 ---
 
 <!-- Convention: every numbered section below gets a matching visual — an Excalidraw poster

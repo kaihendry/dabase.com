@@ -1,5 +1,6 @@
 ---
 date: 2012-07-10 21:19:43 +0200
+tags: [networking]
 ---
 
 Setting up a Web proxy might be needed to evade censorship and [geo

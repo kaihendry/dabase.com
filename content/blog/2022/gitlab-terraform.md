@@ -2,6 +2,7 @@
 title: "Gitlab Terraform"
 date: 2022-09-09T09:01:39+08:00
 description: CI/CD for Terraform on Gitlab
+tags: [iac, ci-cd]
 ---
 
 There are [few
