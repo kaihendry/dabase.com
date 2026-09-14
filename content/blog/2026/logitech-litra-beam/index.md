@@ -1,6 +1,7 @@
 ---
 title: "My favourite desk lamp: Logitech Litra Beam"
 date: 2026-09-13T12:46:08Z
+description: "The Logitech Litra Beam doubles as a desk lamp and an automatic light for online meetings. A few niggles, and why I'd wait for a £60 deal."
 ---
 
 The [Logitech Litra Beam](https://www.amazon.co.uk/dp/B0CHWR8SNR) is my favourite desk lamp.
