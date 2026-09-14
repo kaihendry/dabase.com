@@ -1,5 +1,8 @@
 ---
 date: 2015-10-28 19:05:40 +0800
+title: "WebKit rendering on a Raspberry Pi 2"
+description: "Historical troubleshooting notes on WebKit2, OpenGL and hardware-accelerated compositing on Arch Linux ARM and Raspbian for the Raspberry Pi 2."
+historical: "These troubleshooting notes depend on the graphics drivers, hardware and Linux software versions available in 2015."
 ---
 
 UPDATE 2017-04-02: <https://twitter.com/anholt/status/840753745721937920> there might be a working driver now...

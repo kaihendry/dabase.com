@@ -2,6 +2,7 @@
 title: National COVID2019 Websites
 date: 2020-02-27T09:24:00+08:00
 description: Snapshot of COVID19 websites by mainly Governments around the world
+historical: "A record of pandemic information websites in 2020. Service availability and public-health information here are historical."
 ---
 
 Update: [Better resource for analysing COVID-19 by country](/e/05044/)

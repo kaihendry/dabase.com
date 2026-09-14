@@ -1,5 +1,7 @@
 ---
 date: 2015-03-13 13:57:21 +0800
+title: "Two expectations for usable web navigation"
+description: "Give each useful destination its own URL and make page content searchable with the browser: two practical expectations for web applications and documentation."
 ---
 
 # Rule 1
@@ -18,7 +20,7 @@ documentation](https://support.google.com/chrome/), which goes on to break
 
 Other times, I have a particular question and I can only find an answer perhaps
 on an outdated forum. The service I am dealing with, should have the canonical
-answer on a [[FAQ that does not suck|How to create a FAQ that does not suck]].
+answer on a [FAQ that does not suck](/blog/2012/How_to_create_a_FAQ_that_does_not_suck/).
 E.g. Does Webconverger support touch screens? Here have a look at:
 <http://webconverger.com/faq/#does-webconverger-support-touch-screens>.
 

@@ -1,5 +1,8 @@
 ---
 date: 2015-05-19 17:11:28 +0800
+title: "Where git-annex fell short for my media workflow"
+description: "A 2015 account of deployment, file naming, replication and transcoding difficulties while experimenting with git-annex and S3."
+historical: "These criticisms describe my git-annex workflow in 2015. They have not been checked against current releases."
 ---
 
 <http://git-annex.branchable.com/> by my definition is a ground breaking addon

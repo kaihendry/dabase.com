@@ -3,6 +3,8 @@ title: "ESP With the Strongest WiFi Signal"
 description: "I compared WiFi RSSI across three ESP boards I had lying around: an ESP8266 with a PCB trace antenna, an ESP32-D0WDQ6 with a folded PCB antenna sticking up off the module, and an ESP32-D0WD-V3 with a flush trace antenna. The one with the antenna folded up off the module won by ~10-20dB."
 date: 2026-09-07T16:59:54+01:00
 tags: [networking]
+thumbnail: preview.jpg
+image_alt: "The ESP boards compared for WiFi signal strength"
 ---
 
 I had three random ESP boards on my desk, so I plugged each into a laptop with `esptool` to

@@ -1,11 +1,14 @@
 ---
 date: 2016-02-11 18:00:19 +0800
 tags: [ci-cd]
+title: "Developing Docker containers: my 2016 workflow"
+description: "The build, run, inspect and publish loop I used for Dockerfiles in 2016, and the unresolved problem of comparing changes inside a running container."
+historical: "This describes an early Docker/CoreOS development environment. The original CoreOS setup and its workflows should not be treated as instructions for current container platforms."
 ---
 
 Companion [video on the issues I have with Docker](https://www.youtube.com/watch?v=tQZfCOpXJmE)
 
-In an attempt to improve my previous [[Docker_container_update_workflow]], I
+In an attempt to improve my previous [Docker container update workflow](/blog/2014/Docker_container_update_workflow/), I
 want to write my notes on how I develop Dockerfiles et al.
 
 First I find the source repository of the Docker image I'm interested in.

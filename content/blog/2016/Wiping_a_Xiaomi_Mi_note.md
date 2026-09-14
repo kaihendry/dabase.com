@@ -1,5 +1,9 @@
 ---
 date: 2016-05-19 09:32:43 +0800
+title: "Resetting a Xiaomi Mi Note with fastboot in 2016"
+description: "A historical device-reset log using fastboot -w on a Xiaomi Mi Note, with incomplete button-sequence notes rather than a general recovery guide."
+historical: "An incomplete, device-specific reset log with uncertain button sequences and a destructive fastboot -w command. It is not a general recovery guide."
+noindex: true
 ---
 
 <img src=http://s.natalian.org/2016-05-19/Data-Wipe-Failed.jpg alt="Data Wipe Failed">

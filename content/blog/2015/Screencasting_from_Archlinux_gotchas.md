@@ -1,6 +1,9 @@
 ---
 date: 2015-07-15 11:37:22 +0800
 tags: [audio-video]
+title: "Screencasting obstacles on Arch Linux in 2015"
+description: "A historical account of microphones, capture devices, Intel video encoding and dropped frames while trying to record an Arch Linux desktop."
+historical: "These troubleshooting notes depend on the graphics drivers, hardware and Linux software versions available in 2015."
 ---
 
 ## Update: I now use [obs-studio](https://obsproject.com/) for my [videos](https://www.youtube.com/user/kaihendry)!
@@ -40,7 +43,7 @@ Intel's hardware acceleration technology is called <abbr title="Video Accelerati
 
 This is my output from [vainfo](http://ix.io/jJO).
 
-The gstreamer implementation at <https://github.com/01org/gstreamer-vaapi/blob/master/gst/vaapi/gstvaapiencode_h264.c> is said to be unstable.
+The [archived 2015 gstreamer implementation](https://github.com/GStreamer/gstreamer-vaapi/blob/8b36e25f477b165a4c1b3c08961d9bf1b51b1e4a/gst/vaapi/gstvaapiencode_h264.c) was said to be unstable.
 
 	The point is that libva for encoding is incredibly annoying to use, which is the reason why no usefull implementations exist.
 

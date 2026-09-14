@@ -1,5 +1,8 @@
 ---
 date: 2009-04-29 13:27:11 +0100
+title: "Working on mobile browser compatibility tests"
+description: "A 2009 progress note on the W3C mobile browser test suite, widget testing and a canvas alpha-blending test."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 Hey guys, [I'm blogging over at the Mobile Web Test Suites Working Group

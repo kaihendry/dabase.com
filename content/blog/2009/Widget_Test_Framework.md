@@ -1,5 +1,8 @@
 ---
 date: 2009-05-11 11:14:12 +0100
+title: "Building a W3C widget test framework"
+description: "Lessons from developing WGTQA and WTF: automating widget conformance tests, reporting errors and making test results reproducible."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 Intro: As part of the [W3C Mobile Web Test Suites Working

@@ -1,11 +1,14 @@
 ---
 date: 2010-03-07 23:25:01 +0000
+title: "Depending on the mobile web with a Nexus One"
+description: "Experiences travelling in France with a Nexus One in 2010, from Android usability and sharing files to mobile operator restrictions."
+historical: "These are 2010 experiences with the Nexus One or Nokia N900 generation of mobile devices. Package repositories, browser limitations and development instructions belong to that period."
 ---
 
 <a href="http://www.flickr.com/photos/hendry/4412963067/" title="Ski scene by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2712/4412963067_411dea438f.jpg" width="500" height="375" alt="Ski scene" /></a>
 
 After spending a week in France completely dependent on my
-[modded](http://www.cyanogenmod.com/home/cyanogenmod-5-0-nexus-one) [[android/Nexus_One]]
+[modded](http://www.cyanogenmod.com/home/cyanogenmod-5-0-nexus-one) Nexus One
 for my Internet use, I have gained some insights into the future of mobile
 computing.
 
@@ -44,7 +47,7 @@ must know how much I am spending.
 
 Acquiring location and policy control is a bit all over the place on Android.
 For example the news & weather widget has it's own little preference for "Use
-my location". I **need** an easy central [[policy_control|Why_policies]].  I
+my location". I **need** an easy central [policy control](/blog/2009/Why_policies/).  I
 also want to control granularity and see transaction logs, since I don't want
 the weather man to know exactly where I am. I want to feel **in control**.
 

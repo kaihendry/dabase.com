@@ -1,5 +1,7 @@
 ---
 date: 2012-04-15 11:40:44 +0800
+title: "Making an FAQ linkable and easy to navigate"
+description: "Giving FAQ questions stable anchors and a table of contents, with a small toc tool and a Makefile-based publishing example."
 ---
 
 What does a FAQ need?

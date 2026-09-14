@@ -1,5 +1,7 @@
 ---
 date: 2013-10-03 13:45:22 +0800
+title: "Cloning a Linux disk: dd, rsync and SSD experiments"
+description: "What went wrong while cloning a running Linux system between SSDs, and why filesystem creation followed by rsync proved easier to manage."
 ---
 
 So I bought a "SanDisk SDSSDHP-128G-G25 128GB Ultra Plus SATA 3.0 6GB/s 7mm

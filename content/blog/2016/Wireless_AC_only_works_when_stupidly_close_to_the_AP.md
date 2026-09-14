@@ -1,6 +1,9 @@
 ---
 date: 2016-01-03 10:41:05 +0800
 tags: [networking]
+title: "Archer C7 wireless range problems on OpenWrt 15.05"
+description: "A 2016 comparison of transfer speeds at different distances from a TP-Link Archer C7, using its QCA9880 radio and OpenWrt 15.05."
+historical: "These router notes describe hardware and OpenWrt firmware used in 2016. Recovery methods and wireless results are specific to that environment."
 ---
 
 The **Qualcomm Atheros QCA9880 802.11nac** in my [Archer C7

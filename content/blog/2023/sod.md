@@ -3,6 +3,8 @@ title: Separation of Duties
 date: 2023-01-19T15:01:04+08:00
 description: Separation of Duties without the manual gatekeeping
 tags: [security, ci-cd]
+thumbnail: https://s.natalian.org/2023-01-19/cost-usage.png
+image_alt: Costing and usage
 ---
 
 In large organisations https://en.wikipedia.org/wiki/Separation_of_duties  **kills productivity**.

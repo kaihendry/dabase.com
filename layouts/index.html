@@ -14,7 +14,9 @@
 <section aria-labelledby="latest-posts">
   <div class="section-heading"><h2 id="latest-posts">Latest writing</h2><a href="/blog/">All posts &rarr;</a></div>
   <ol class="post-list">
-  {{ range first 10 (where .Site.RegularPages "Section" "blog") }}
+  {{ $posts := where .Site.RegularPages "Section" "blog" }}
+  {{ $posts = where $posts "Params.historical" "eq" nil }}
+  {{ range first 10 (where $posts "Params.noindex" "ne" true) }}
     <li>
       <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
       <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>

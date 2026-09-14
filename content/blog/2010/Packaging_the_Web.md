@@ -1,5 +1,8 @@
 ---
 date: 2010-12-05 16:56:01 +0000
+title: "Packaging the web: updates and kill switches"
+description: "A 2010 comparison of mobile widget distribution and Linux packages, asking who controls software updates, revocation and user choice."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 Packaging has interested
@@ -10,7 +13,7 @@ just clone from a [hg URL](http://hg.suckless.org/) that's importantly
 browsable from the Web.
 
 Since I work with
-[widgets](http://dabase.com/blog/Widgets_are_simple_offline_packages/), I'm
+[widgets](/blog/2009/Widgets_are_simple_offline_packages/), I'm
 often left thinking about how they compare to "the mature Debian way" of doing things.
 
 # The kill switch

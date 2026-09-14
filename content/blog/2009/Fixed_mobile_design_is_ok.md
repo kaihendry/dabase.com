@@ -1,5 +1,9 @@
 ---
 date: 2009-02-01 20:27:51 +0000
+title: "Fixed mobile layouts and page zoom: a 2009 opinion"
+description: "An early iPhone-era argument for fixed layouts and browser zoom, preserved as a historical opinion rather than modern responsive-design guidance."
+historical: "This short recommendation relies on 2009 mobile page-zoom behaviour. It is too dated and incomplete to serve as advice for designing a responsive site today."
+noindex: true
 ---
 
 

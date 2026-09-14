@@ -1,5 +1,9 @@
 ---
 date: 2013-09-06 11:23:22 +0800
+title: "Google Groups moderation frustrations in 2013"
+description: "A short account of spam handling, confusing moderation controls and difficulty providing feedback in the Google Groups interface of 2013."
+historical: "A brief complaint about Google Groups in 2013, without a reproducible diagnosis or a working solution."
+noindex: true
 ---
 
 There are plenty of [Google Groups rants](http://ejohn.org/blog/google-groups-is-dead/) out there, here is mine:

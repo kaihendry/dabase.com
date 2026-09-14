@@ -1,5 +1,9 @@
 ---
 date: 2009-12-16 22:44:32 +0000
+title: "My search engine optimisation advice in 2009"
+description: "An early opinion on discoverability and useful website content. Its PageRank and HTML-validation claims are preserved, not offered as current SEO advice."
+historical: "These brief 2009 SEO notes oversimplify ranking and HTML validation. They are retained as an old opinion, not current search optimisation guidance."
+noindex: true
 ---
 
 So you've been told your site needs some <abbr title="Search Engine Optimisation">SEO</abbr>. Why?

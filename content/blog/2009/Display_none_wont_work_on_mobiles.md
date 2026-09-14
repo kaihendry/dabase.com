@@ -1,5 +1,7 @@
 ---
 date: 2009-02-01 20:26:14 +0000
+title: "Why display:none does not prevent image downloads"
+description: "Revisiting an assumption about mobile browsers: hiding an image with CSS does not necessarily stop the browser downloading it."
 ---
 
 For years I have argued incorrectly that mobile browsers should not download images when something like:

@@ -1,5 +1,7 @@
 ---
 date: 2009-02-17 13:25:07 +0000
+title: "Why HTML5 dates are not simply ISO 8601"
+description: "Notes from a 2009 WHATWG discussion about date formats, invalid input and why HTML needs more precise parsing rules than ISO 8601 alone."
 ---
 
 Er, why doesn't HTML5 just use [ISO 8601](http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/date_and_time_format.htm)?

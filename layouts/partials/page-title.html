@@ -1,0 +1,5 @@
+{{- $title := .Title -}}
+{{- if not $title -}}
+  {{- with .File -}}{{ $title = replace .BaseFileName "_" " " | title }}{{- end -}}
+{{- end -}}
+{{- return (or $title .Site.Title) -}}

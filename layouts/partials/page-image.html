@@ -1,0 +1,27 @@
+{{- $image := or .Params.thumbnail .Params.image -}}
+{{- $alt := .Params.image_alt | default "" -}}
+{{/* Use actual article illustrations; text-only posts need no stock image. */}}
+{{- if and (not $image) .IsPage (eq .Section "blog") (not .Params.historical) -}}
+  {{- range findRE `(?is)<img\s[^>]*src=["'][^"']+["'][^>]*>` .Content -}}
+    {{- $src := replaceRE `(?is)^.*?\bsrc=["']([^"']+)["'].*$` "$1" . | htmlUnescape -}}
+    {{- if and (not $image) (findRE `(?i)\.(jpe?g|png|webp|gif)(\?.*)?$` $src) -}}
+      {{- $image = $src -}}
+      {{- if findRE `\balt=["']` . -}}{{ $alt = replaceRE `(?is)^.*?\balt=["']([^"']*)["'].*$` "$1" . | htmlUnescape }}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $image -}}
+  {{- if not (urls.Parse .).IsAbs -}}
+    {{- if strings.HasPrefix . "/" -}}
+      {{- $image = . | absURL -}}
+    {{- else if $.Resources.Get . -}}
+      {{- $image = ($.Resources.Get .).Permalink -}}
+    {{- else -}}
+      {{- $image = printf "%s%s" $.Permalink . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $image -}}
+  {{- $image = (urls.Parse .).String -}}
+{{- end -}}
+{{- return (dict "url" $image "alt" $alt) -}}

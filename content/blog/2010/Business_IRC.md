@@ -1,5 +1,8 @@
 ---
 date: 2010-06-15 18:43:03 +0100
+title: "Running company chat on IRC in 2010"
+description: "A historical guide to private company channels on Freenode, covering NickServ, ChanServ and keeping transcripts of distributed-team discussions."
+historical: "This describes an older IRC setup, including Freenode-era services. Server addresses and account instructions have not been updated for current networks."
 ---
 
 In a modern distributed company in order to communicate, businesses use tools

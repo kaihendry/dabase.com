@@ -84,6 +84,8 @@ main:focus { outline: none; }
 .home-podcast h3 { margin-top: .3rem; }
 .archive-note { margin-top: 3rem; }
 .archive-note p { color: var(--muted); }
+.historical-note { border-left: 3px solid var(--muted); background: var(--soft); padding: 1rem; margin: 1.5rem 0; }
+.historical-note p:last-child { margin-bottom: 0; }
 .page-navigation { display: flex; gap: 1.5rem; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 1.5rem; margin-top: 2rem; font-size: .85rem; }
 .page-navigation a { flex: 1; }
 .page-navigation a + a { text-align: right; }

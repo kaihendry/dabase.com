@@ -1,6 +1,9 @@
 ---
 date: 2012-07-10 21:19:43 +0200
 tags: [networking]
+title: "A minimal Squid 3 proxy configuration"
+description: "A historical Debian and Ubuntu Squid 3 example using digest authentication, a password file and a small explicit access-control configuration."
+historical: "This is a 2012 Squid configuration for the distributions of that time. Package names, paths and access controls need a fresh review before reuse."
 ---
 
 Setting up a Web proxy might be needed to evade censorship and [geo

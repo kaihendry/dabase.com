@@ -72,6 +72,48 @@ related posts based only on shared tags, including newer articles so older posts
 can link to follow-ups. Hugo builds these links without additional JavaScript.
 Tag labels and related lists are excluded from the Pagefind search index.
 
+## Metadata and historical posts
+
+Every published blog post should have a descriptive `title` and an honest
+`description` summarising what the page actually contains. Avoid presenting a
+bookmark or unfinished experiment as a complete guide. Blog URLs use the file
+basename, so editing a blog title does not change its URL. Tips have a different,
+title-based permalink scheme: take care when editing their titles.
+
+Use `historical: "A specific explanation of what is obsolete or incomplete"`
+to show a notice above the preserved article. Historical posts remain in the
+chronological archive and a separate expandable group on tag pages. They are
+excluded from homepage recommendations, related-post suggestions, news feeds
+and Pagefind. Substantive firsthand history can still be indexed by search
+engines. Age alone is not a reason to hide a page.
+
+Add `noindex: true` only for clear dead ends, such as expired offers, unusable
+stubs or misleading configuration examples. Always explain the decision with
+`historical`. The page stays accessible at its original URL, but its robots meta
+tag requests exclusion from search engines and it is omitted from the sitemap.
+Do not block it in robots.txt: crawlers must be able to read the noindex rule.
+See the [content review](docs/content-review.md) for the initial decisions.
+
+Set `lastmod` only after a substantive content update or technical review.
+Git commit dates, tagging and metadata edits do not imply refreshed advice.
+News RSS keeps the original publication date. Indexable blog posts emit
+BlogPosting JSON-LD using the visible title, description and these dates.
+
+Social cards use `thumbnail` (preferred), `image`, or a suitable image already
+in the article. Relative thumbnail paths resolve within a page bundle; root
+paths and absolute URLs also work. Set `image_alt` for an explicit thumbnail.
+Text-only posts use a summary card. Historical posts do not automatically pick
+an image. The recent AVIF photo posts have small JPEG `preview.jpg` copies for
+social cards; the article still uses its original AVIF assets. A few older
+previews live under `static/blog-previews/` because their original hosts send
+the wrong image Content-Type.
+
+Run `redo check-blog` after editing metadata or templates. It builds the site
+and validates all published blog metadata, local blog links, JSON-LD, sitemap,
+news dates and the actual Pagefind fragments. Deployment runs this check before
+publishing. This is separate from the Markdown link hook and the required
+`redo check-podcast` media checks.
+
 # Terraform
 
 See the [terraform](terraform/) directory.

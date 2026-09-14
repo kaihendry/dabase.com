@@ -1,5 +1,7 @@
 ---
 date: 2013-01-19 22:20:55 +0800
+title: "Experiments with simple monitoring and metrics"
+description: "Early notes on collecting and plotting measurements with small tools, after experiments with gnuplot, statsd, Graphite and traditional monitoring systems."
 ---
 
 # Background

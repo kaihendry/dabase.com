@@ -1,6 +1,7 @@
 ---
 title: TODO tracking
 date: 2020-02-10T15:53:53+08:00
+description: "Experiments with dated text files, a shell shortcut, Taskwarrior and the difficulty of combining task notes with calendar reminders."
 ---
 
 Update: Thanks to <https://tech.ingolf-wagner.de/> I am now using [taskwarrior](https://taskwarrior.org/), packaged as [task in Archlinux](https://www.archlinux.org/packages/community/x86_64/task/).

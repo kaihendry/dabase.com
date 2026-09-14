@@ -1,5 +1,8 @@
 ---
 date: 2009-02-17 16:40:52 +0000
+title: "First look at NetFront Widgets Player"
+description: "A 2009 attempt to install and run W3C widget packages in NetFront Widgets Player, with notes on configuration and interoperability failures."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 <a href="http://www.flickr.com/photos/hendry/3288146844/" title="Netfront with http://gwgt.webvm.net/ by Kai Hendry, on Flickr"><img src="http://farm4.static.flickr.com/3557/3288146844_e3652b7179.jpg" width="500" height="375" alt="Netfront with http://gwgt.webvm.net/" /></a>

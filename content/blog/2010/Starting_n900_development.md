@@ -1,5 +1,9 @@
 ---
 date: 2010-01-21 16:05:12 +0000
+title: "Starting Nokia N900 development with Maemo 5"
+description: "Historical setup notes for the Nokia N900: firmware, SSH, package repositories, screenshots and debugging web applications on Maemo 5."
+historical: "These are 2010 experiences with the Nexus One or Nokia N900 generation of mobile devices. Package repositories, browser limitations and development instructions belong to that period."
+aliases: ["/blog/Starting_n900_development/"]
 ---
 
 <a href="http://www.flickr.com/photos/hendry/4292443879/" title="Install maemo-geolocation"><img src="http://farm5.static.flickr.com/4001/4292443879_4cf04f0655.jpg" width="500" height="300" alt="geo.webvm.net on n900" /></a>

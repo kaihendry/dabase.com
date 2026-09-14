@@ -1,5 +1,8 @@
 ---
 date: 2015-10-18 09:48:27 +0800
+title: "Barriers to browser-based use of public APIs"
+description: "A critique of the 2015 Singapore air-quality API, focusing on keys, XML responses and browser access; its access-control claims need historical context."
+historical: "This is a 2015 critique of Singapore’s air-quality API. Its suggestion that CORS or referrer checks replace authentication is incorrect: CORS governs browser access to responses, not who may call an API."
 ---
 
 In Singapore, the <abbr title="National Environment Agency">NEA</abbr>

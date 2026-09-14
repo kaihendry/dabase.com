@@ -1,5 +1,8 @@
 ---
 date: 2009-06-30 16:34:33 +0100
+title: "Contributing tests for W3C Widgets"
+description: "Notes from 2009 on checking out, generating and contributing conformance tests for the W3C Widgets Packaging and Configuration specification."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 In order for a "Working Draft" specification to become a "Candidate

@@ -1,8 +1,9 @@
 ---
 date: 2014-11-08 20:18:58 +0800
+title: "Google Compute Engine: invalid value for project"
+description: "Distinguishing a Google Cloud project ID from its display name when configuring gcloud, with a historical container-VM command example."
+historical: "This troubleshooting example uses the Google Cloud tools and deployment configuration of 2014. Check current tooling before reusing the commands."
 ---
-
-[[!meta title="'invalid value for project' google compute engine"]]
 
 Google wasted my time by having a distinction between PROJECT NAME & PROJECT ID.
 

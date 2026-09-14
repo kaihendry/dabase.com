@@ -1,5 +1,9 @@
 ---
 date: 2015-03-24 15:29:51 +0800
+title: "Archiving iPhone 6 photos with ifuse in 2015"
+description: "A historical Linux photo-backup workflow using ifuse and rsync, including an unsupported Photos database workaround that should not be copied today."
+historical: "This 2015 workaround includes deleting the phone’s Photos.sqlite database. It is not a verified or safe current photo-backup procedure."
+noindex: true
 ---
 
 Using `sudo ifuse /mnt/iphone/` you can mount your Iphone6 as I do and archive

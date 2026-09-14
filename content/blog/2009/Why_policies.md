@@ -1,5 +1,8 @@
 ---
 date: 2009-12-21 15:57:06 +0000
+title: "Why device API policies mattered in 2009"
+description: "An argument from the W3C Device APIs and Policy discussions about consent prompts, operator controls and policy enforcement in browser plugins."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 What's the P in [W3C DAP](http://www.w3.org/2009/dap/) stand for?

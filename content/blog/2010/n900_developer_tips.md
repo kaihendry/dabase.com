@@ -1,9 +1,12 @@
 ---
 date: 2010-01-28 15:33:04 +0000
+title: "Nokia N900 developer tips for Maemo 5"
+description: "Maemo 5 development notes covering bash, debhelper, debugging packages, desktop shortcuts and Android debugging tools on the Nokia N900."
+historical: "These are 2010 experiences with the Nexus One or Nokia N900 generation of mobile devices. Package repositories, browser limitations and development instructions belong to that period."
 ---
 
-* <http://dabase.com/blog/Starting_n900_development>
-* <http://dabase.com/blog/n900_mobile_developer_paradise>
+* </blog/2010/Starting_n900_development/>
+* </blog/2010/n900_mobile_developer_paradise/>
 * <http://wiki.maemo.org/User:Jebba/Package_Building_HOWTO>
 
 ## A shell with less key strokes and human memory needed

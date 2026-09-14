@@ -2,6 +2,8 @@
 title: Macbook Air M2 Repair attempt
 date: 2024-04-26T12:42:12+01:00
 description: Attempt to repair a Macbook Air M2 that shows a cursor on the black screen
+thumbnail: /blog-previews/macbook-air-m2-repair.jpg
+image_alt: "MacBook Air M2 cursor on a black screen"
 ---
 
 My wife's Macbook Air M2, Model A2681, bought on 2022-07-08 for 2149SGD, failed to come out of suspend on the 2024-04-24. When you turn it on,

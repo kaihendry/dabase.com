@@ -1,6 +1,8 @@
 ---
 date: 2015-09-02 10:52:39 +0800
 tags: [security]
+title: "Why I argued for keeping PHP updated"
+description: "Reflections after a 2015 Singapore PHP meetup about patching old runtimes, maintenance responsibility and moving a software ecosystem forward."
 ---
 
 I like to talk at [local Singaporean tech meetups](http://www.webuild.sg/) to
@@ -10,7 +12,7 @@ debate. I am trying to convince myself as much as you.
 
 Case in point with a [talk I gave at the SG PHP meetup
 group](https://www.youtube.com/watch?v=IaLGFfudx5k), based on my troubled
-[[Evergreen_PHP]] post with the [slides by Go
+[Evergreen PHP](/blog/2015/Evergreen_PHP/) post with the [slides by Go
 Present](http://talks.webconverger.com/2015-08-27/) that I never figured out
 how to fullscreen.
 

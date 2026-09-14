@@ -1,6 +1,8 @@
 ---
 date: 2014-04-30 17:52:18 +0800
 tags: [audio-video]
+title: "Joining MP4 files with the FFmpeg concat demuxer"
+description: "Comparing failed attempts to join MP4 files with an FFmpeg concat-demuxer approach that copies compatible audio and video streams."
 ---
 
 # What does not work

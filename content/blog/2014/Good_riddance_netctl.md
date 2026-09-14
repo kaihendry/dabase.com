@@ -1,6 +1,9 @@
 ---
 date: 2014-03-17 14:20:12 +0800
 tags: [networking]
+title: "Moving from netctl to systemd-networkd in 2014"
+description: "An early systemd-networkd migration on Arch Linux, covering DHCP, wireless configuration, resolved and replacing netctl."
+historical: "These network configuration notes describe systemd and DigitalOcean environments in 2014. Interface names, addresses and service behaviour are specific to that setup."
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jCueB33PcTE" frameborder="0" allowfullscreen></iframe>
@@ -18,7 +21,7 @@ Upstream's Jouke Witteveen is
 cries for help.
 
 So on the back of systemd's (>210) **systemd-networkd**, which I [previously blogged about when
-configuring my Droplet](http://dabase.com/blog/Systemd_network_on_a_Droplet/),
+configuring my Droplet](/blog/2014/Systemd_network_on_a_Droplet/),
 I now have:
 
 	$ cat /etc/systemd/network/eth0.network

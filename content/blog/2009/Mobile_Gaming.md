@@ -1,5 +1,8 @@
 ---
 date: 2009-08-02 21:52:50 +0100
+title: "Mobile games at the 2009 Hide & Seek festival"
+description: "Firsthand notes on two location-based games around London, using SMS shortcodes and the mobile web to coordinate players."
+historical: "Notes from a 2009 event, preserved as a record of the mobile games industry at that time."
 ---
 
 Thanks to the [Hide & Seek festival in London](http://hideandseekfest.co.uk/)

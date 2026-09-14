@@ -1,5 +1,8 @@
 ---
 date: 2014-02-10 16:53:02 +0800
+title: "USB 2 versus USB 3 disk tests on a ThinkPad X220"
+description: "A hardware benchmark comparing a Seagate portable drive over USB 2 and USB 3, with the script used to run the measurements."
+historical: "These measurements are a record of the named hardware, providers and test conditions at publication. They do not establish the performance of current products or services."
 ---
 
 So I exchanged [my WD Passport Ultra with a poorly fitting USB

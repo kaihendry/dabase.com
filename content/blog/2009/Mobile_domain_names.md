@@ -1,5 +1,8 @@
 ---
 date: 2009-02-01 20:29:32 +0000
+title: "Mobile domain names, HTTPS and identity in 2009"
+description: "Concerns about mobile redirects, HTTPS, content-transformation proxies and identifying websites on the small mobile browsers of 2009."
+historical: "These observations describe browser behaviour in 2009. The examples have not been retested against current browsers."
 ---
 
 # Maintain URL integrity (including HTTPS!!!)
@@ -129,5 +132,5 @@ google.1998, which shouldn't we use google.2020? :P
 
 Different devices. Different trusted roots. Complete nightmare.
 
-What's worse is that many devices like the Iphone and Android [[G1]] do not
+What's worse is that many devices like the Iphone and Android G1 do not
 allow you to manage certificates. This could well be a super disaster.

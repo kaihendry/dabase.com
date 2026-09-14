@@ -1,6 +1,10 @@
 ---
 date: 2012-12-27 13:34:40 +0800
 tags: [networking]
+title: "A PPTP VPN experiment with an iPhone 5"
+description: "A 2012 Debian pptpd and iOS 6 experiment, preserved as a historical record rather than a current VPN setup recommendation."
+historical: "A 2012 iOS 6 PPTP experiment, preserved as a configuration log. It should not be used to choose or configure a secure VPN today."
+noindex: true
 ---
 
 If you have your own Debian based

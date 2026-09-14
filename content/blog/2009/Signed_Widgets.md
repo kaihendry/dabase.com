@@ -1,5 +1,8 @@
 ---
 date: 2009-09-29 11:58:34 +0100
+title: "Signing W3C Widgets with XML signatures"
+description: "A 2009 walkthrough of widget manifests, XML signatures, certificate chains and runtime signature testing for the W3C Widgets work."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 # Why would you want to sign a widget?
@@ -9,7 +12,7 @@ For the same reasons why you would sign a document or an email if you're
 and as an added bonus to show that the files (contents) have their integrity
 intact (i.e. they have not been tampered with!).
 
-The [[bigger_idea|blog/JIL_versus_BONDI_on_Security]] with signatures is that
+The [bigger idea](/blog/2009/JIL_versus_BONDI_on_Security/) with signatures is that
 they will be used to control trust in the use of [device
 APIs](http://www.w3.org/2009/dap/).
 

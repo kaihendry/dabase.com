@@ -1,5 +1,7 @@
 ---
 date: 2010-10-25 16:17:13 +0100
+title: "Email etiquette for corporate discussions"
+description: "Practical opinions on quoting, reply structure, plain-text email and keeping long workplace discussions understandable and searchable."
 ---
 
 Working in a corporate environment, I am shocked at the ineffective use of email.

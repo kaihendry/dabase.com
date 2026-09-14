@@ -2,6 +2,8 @@
 title: Systemd Journal to Cloudwatch
 date: 2021-10-02T17:05:27+08:00
 description: Uploading your computer's logs to the cloud
+historical: "These are short failure notes and links, without a working journal-to-CloudWatch configuration."
+noindex: true
 ---
 
 https://github.com/advantageous/systemd-cloud-watch five years old,

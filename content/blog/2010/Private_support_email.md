@@ -1,5 +1,7 @@
 ---
 date: 2010-08-10 00:32:28 +0100
+title: "Sharing support email with a small team"
+description: "Using BCC, Reply-To and mutt reply hooks to keep colleagues informed when answering a shared support address, with limitations of the approach."
 ---
 
 Say you handle support emails privately at `support@example.com`.

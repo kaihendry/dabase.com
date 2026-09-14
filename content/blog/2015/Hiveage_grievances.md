@@ -1,11 +1,13 @@
 ---
 date: 2015-06-16 08:56:16 +0100
+title: "My Hiveage grievances in 2015"
+description: "The invoice search, reminders, exports and support problems that preceded my departure from Hiveage in 2015."
 ---
 
 Update: 2015-06-17 Since I blogged this, I have been told I have 7 days to
 leave the service whilst on holiday. A SaaS horror story. :(
 
-I logged my migration anguish over at [[7_days_to_leave_Hiveage]].
+I logged my migration anguish over at [7 days to leave Hiveage](/blog/2015/7_days_to_leave_Hiveage/).
 
 
 First, can I just say that Curdbee/Hiveage service has been good over the

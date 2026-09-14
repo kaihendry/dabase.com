@@ -1,5 +1,8 @@
 ---
 date: 2014-10-20 13:50:34 +0800
+title: "Experiencing CoreOS and Docker in 2014"
+description: "Historical notes on early CoreOS packaging, Docker permissions, logging, systemd services and the friction of moving an application into containers."
+historical: "This describes an early Docker/CoreOS development environment. The original CoreOS setup and its workflows should not be treated as instructions for current container platforms."
 ---
 
 <embed style="width: 30%" type="image/svg+xml" src="http://s.natalian.org/2014-10-20/coreos_logo.svg" />
@@ -22,7 +25,7 @@ hugely controversial init) [systemd](https://en.wikipedia.org/wiki/Systemd),
 CoreOS is also monolithic and **depends on Linux**.
 
 I've attempted to [understand
-CoreOS](http://dabase.com/blog/Understanding_CoreOS/) before, though since I
+CoreOS](/blog/2013/Understanding_CoreOS/) before, though since I
 needed to move [Greptweet](http://greptweet.com/) to a VPS with more disk
 space... quickly... I "deep dived" into CoreOS & Docker and here is my writeup
 of the experience. Tip #1, the default user for CoreOS is "core", e.g. `ssh
@@ -97,7 +100,7 @@ Update: We are suppose to use [systemd timers](https://wiki.archlinux.org/index.
 # Update_engine
 
 As mentioned in my [previous blog on
-CoreOS](http://dabase.com/blog/Understanding_CoreOS/), I was quite excited
+CoreOS](/blog/2013/Understanding_CoreOS/), I was quite excited
 about have "free" updates to my core host system. Sadly after looking at the
 logs, I'm not impressed.
 

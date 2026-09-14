@@ -1,5 +1,7 @@
 ---
 date: 2010-10-12 22:10:30 +0100
+title: "Domains rather than paths for web applications"
+description: "An argument for giving applications their own hostnames to simplify URL design, local development, moving hosts and DNS-based failover."
 ---
 
 I was very dissapointed to see <http://news.bbc.co.uk> start to redirect to

@@ -1,5 +1,8 @@
 ---
 date: 2009-06-08 23:14:23 +0100
+title: "Comparing browser print output in 2009"
+description: "Using CUPS-PDF and image conversion to compare how Safari, other browsers and PrinceXML printed the same web content in 2009."
+historical: "These observations describe browser behaviour in 2009. The examples have not been retested against current browsers."
 ---
 
 After setting up [CUPS-PDF](http://webconverger.org/printing/) for testing

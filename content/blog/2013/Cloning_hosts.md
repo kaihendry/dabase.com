@@ -1,5 +1,8 @@
 ---
 date: 2013-10-27 13:33:20 +0800
+title: "Moving a Debian 7 host with rsync"
+description: "A historical experiment migrating a Debian Wheezy VPS, comparing rebuilding configuration with copying the existing host using rsync."
+historical: "An experiment cloning Debian 7 hosts in 2013. The release, filesystem assumptions and machine-specific configuration are not a current provisioning recipe."
 ---
 
 So, I have unenviable task of moving a VPS from Bitfolk to Linode.
@@ -17,7 +20,7 @@ running Puppet or Ansible and their crazy crazy dependencies.
 
 ## Configuration management for user accounts sounds quite tricky
 
-Previously I've something like [[create-account-with-ssh-pub.sh|e/13036]], a short ~20 line shell script.
+Previously I've something like [create-account-with-ssh-pub.sh](/e/13036/), a short ~20 line shell script.
 
 Followed up for disabling password authentication / only allowing key based
 authentication with `PasswordAuthentication No` in `/etc/ssh/sshd_config`.

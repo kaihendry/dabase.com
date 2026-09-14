@@ -1,8 +1,11 @@
 ---
 date: 2009-09-07 09:20:33 +0100
+title: "JIL versus BONDI: widget security models"
+description: "Comparing widget signatures, trust domains, device API permissions and revocation in the JIL and BONDI proposals of 2009."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
-Part 2 in the series, please see the [[first_part_of_the_JIL_BONDI_comparison|JIL_versus_BONDI]].
+Part 2 in the series, please see the [first part of the JIL BONDI comparison](/blog/2009/JIL_versus_BONDI/).
 
 Widgets need to be signed, because in many cases they take advantage of new
 experimental Device APIs that must be authorised (or checked over, like a MOT),

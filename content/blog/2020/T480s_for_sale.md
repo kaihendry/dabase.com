@@ -2,6 +2,8 @@
 title: Thinkpad T480s for sale
 date: 2020-11-21T00:45:33+08:00
 description: Selling my old Lenovo Thinkpad T480s since I've upgraded to the T14s
+historical: "A laptop sale listing from 2020, retained for its record of the hardware and asking price. This is not a current offer."
+noindex: true
 ---
 
 Bought the Thinkpad model T480s 20L7CTO1WW for 2820SGD on 2018-03-03.

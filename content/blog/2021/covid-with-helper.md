@@ -1,6 +1,9 @@
 ---
 title: Helper with COVID positive
 date: 2021-11-19T10:03:28+08:00
+description: "A personal account of navigating Singapore household isolation and school rules after a positive COVID test in November 2021; not current medical guidance."
+historical: "A personal account of Singapore household isolation rules in November 2021. It is not current medical advice or a guide to today’s public-health rules."
+noindex: true
 ---
 
 My pfizer vaccinated helper has tested positive for COVID via a PCR result

@@ -1,10 +1,13 @@
 ---
 date: 2009-05-19 19:12:46 +0100
+title: "UK pay-as-you-go mobile internet prices in 2009"
+description: "A historical comparison of UK mobile data bundles, daily caps and unclear usage terms from Orange, Vodafone, O2 and Virgin Mobile."
+historical: "A snapshot of UK mobile data prices and network behaviour in 2009. The tariffs, coverage observations and device instructions are not current buying advice."
 ---
 
 PAYG Internet charges are coming down. Though they are not as fast as
 [HSDPA](http://en.wikipedia.org/wiki/HSPDA) dongle products
-[seemingly](http://dabase.com/android/Android_3G_wifi_tethering/), they do
+seemingly (the original Android tethering page is no longer available), they do
 potentially offer great value to get you on the Internet when you're out and
 about.
 

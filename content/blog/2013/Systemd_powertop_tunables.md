@@ -1,5 +1,8 @@
 ---
 date: 2013-01-31 13:35:55 +0800
+title: "Turning PowerTOP tunables into a systemd service"
+description: "Notes on extracting power-saving settings from a PowerTOP report and applying the resulting commands through systemd."
+aliases: ["/blog/Systemd_powertop_tunables/"]
 ---
 
 Putting Powertop tunables in a systemd format will probably be [blogged by

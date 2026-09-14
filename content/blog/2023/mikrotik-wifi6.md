@@ -41,5 +41,5 @@ The thinkpad doesn't have an issue wifi6 from Ubiquiti...
 
 # My two Capsman controller configurations
 
-* [wifiwave2](https://github.com/kaihendry/mikrotik-configs/blob/main/praze.rsc)
+* [wifiwave2 configuration from 2023](https://github.com/kaihendry/mikrotik-configs/blob/a583690dd36c184927640953b209170dfef914fa/praze.rsc)
 * [older legacy?](https://github.com/kaihendry/mikrotik-configs/blob/main/workshop.rsc)

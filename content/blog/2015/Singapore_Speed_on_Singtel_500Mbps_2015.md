@@ -1,6 +1,9 @@
 ---
 date: 2015-03-07 20:13:02 +0800
 tags: [networking]
+title: "Singtel 500 Mbps and Singapore cloud network tests"
+description: "iperf measurements from a wired Singtel connection to AWS and other Singapore hosts in 2015, comparing instance sizes and network routes."
+historical: "These measurements are a record of the named hardware, providers and test conditions at publication. They do not establish the performance of current products or services."
 ---
 
 I was curious to know if there was a real difference between the **Network Performance** between AWS ap-southeast-1a m3.xlarge (52.74.16.160) and a ap-southeast-1a t2.micro (52.74.13.219).

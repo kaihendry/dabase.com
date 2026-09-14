@@ -1,5 +1,8 @@
 ---
 date: 2016-08-27 14:40:59 +0800
+title: "Difficulties using AWS SDK for PHP v3 in 2016"
+description: "Firsthand notes on distinguishing PHP SDK versions, finding working SES examples and understanding the AWS SDK API and documentation in 2016."
+historical: "These are difficulties encountered with AWS SDK for PHP v3 in 2016. The examples and documentation criticisms have not been retested with current releases."
 ---
 
 Whilst "Dockerizing" a really simple [PHP project to send feedback
@@ -32,7 +35,7 @@ It almost brings me to years how we have come a simple 1 line invocation to the
 [mail()](composer require aws/aws-sdk-php) 40 lines of code of
 [sesmail.php](https://github.com/kaihendry/vanilla-php-feedback-form/blob/master/feedback/sesmail.php).
 
-Sidenote: [[ssmtp|Mail_from_a_VPS]] is not an option since it's sadly synchronous and slow.
+Sidenote: [ssmtp](/blog/2015/Mail_from_a_VPS/) is not an option since it's sadly synchronous and slow.
 
 # Problem 3: The AWS PHP SDK documentation sucks
 

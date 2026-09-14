@@ -6,6 +6,9 @@ tags: [audio-video]
 toc: true
 ---
 
+The equipment and Singapore-dollar prices below reflect my setup in 2020. The recording and placement tips remain useful; check current specifications and prices before buying.
+
+
 **Record yourself** to **benchmark your setup**.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jSo6D3DHZ74" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -39,6 +42,8 @@ Good options to getting **wired** (single USB-C) for Apple <abbr title="Macbook 
 
 ## Lighting 💡
 
+For a newer example, see my [2026 notes on the Logitech Litra Beam desk and meeting light](/blog/2026/logitech-litra-beam/).
+
 <img src="https://s.natalian.org/2020-12-31/hivan-arvizu-soyhivan-kdm6BWNuTh0-unsplash.webp" alt="Ring light demo">
 
 Entry level suggestions:
@@ -59,7 +64,7 @@ You _will_ get used to a bright light in your face.
 - A [lapel microphone](https://alvinng.dev/posts/this-equipment-changed-my-video-calls/) is the simplest option
 - "Condenser microphone" (reduced pick up pattern) - ~100SGD [Audio-Technica AT2005USB Cardioid Dynamic USB/XLR Microphone](https://amzn.to/37YFNVC)
 - When using <abbr title="Open Broadcaster Software">OBS</abbr> do experiment with the noise gate / noise filters! They work well.
-- Advanced: ~150SGD [Microphone boom](http://www.rode.com/accessories/psa1)
+- Advanced: ~150SGD [Microphone boom](https://rode.com/en-gb/products/psa1)
 - Advanced: Make a separate recording with for example a lapel microphone ~75SGD and an iPhone
 
 Best **sound treatment** for a room is **soft furnishings**: Curtains, carpet,
@@ -74,7 +79,7 @@ pillows, throws ... a bedroom can be pretty good. Hard surfaces suck.
 Get a **Laptop Notebook Stand** to get camera at optimal **eye level**.
 
 - <abbr title="Network Device Interface">NDI</abbr> [HX Camera](https://apps.apple.com/us/app/ndi-hx-camera/id1477266080) - [use your iPhone](https://youtu.be/cX8fo74m6nc) at a pinch with some latency
-- Super advanced: 1000SGD [Sony ZV-1](https://www.cathayphoto.com.sg/cameras/sony-zv-1-digital-camera) - can tether over USB
+- Super advanced: 1000SGD [Sony ZV-1](https://www.sony.co.uk/presscentre/sony-expands-range-of-vlogging-solutions-with-introduction-of-vlog-camera-zv-1-and-fdr-ax43-compact-4k-handycam) - can tether over USB
 - A virtual background isn't a novelty
 
 ## Test your setup

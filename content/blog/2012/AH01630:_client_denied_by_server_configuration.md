@@ -1,5 +1,7 @@
 ---
 date: 2012-02-23 13:01:02 +0800
+title: "Apache 2.4: AH01630 client denied by server configuration"
+description: "Fixing a virtual-host access error after moving to Apache 2.4 by replacing the default deny rule with an explicit directory access policy."
 ---
 
 After installing [Apache 2.4](http://httpd.apache.org/download.cgi#apache24) in `/usr/local/apache2/`, I struggled to get my

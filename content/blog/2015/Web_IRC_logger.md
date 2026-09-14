@@ -1,5 +1,8 @@
 ---
 date: 2015-11-04 11:20:10 +0800
+title: "Streaming an IRC channel to a web display"
+description: "A small 2015 live-chat display built from the ii IRC client, systemd services and gotail streaming log updates to a browser."
+historical: "This describes an older IRC setup, including Freenode-era services. Server addresses and account instructions have not been updated for current networks."
 ---
 
 Upon <http://irc.dabase.com/> I log the `irc://irc.freenode.net/hackerspacesg`

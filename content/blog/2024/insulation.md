@@ -3,6 +3,8 @@ title: Insulation
 date: 2024-10-02T20:30:27+01:00
 description: Avoid cold bridging
 tags: [home-energy]
+historical: "A video bookmark and a very short checklist. This page does not contain an insulation specification or enough detail to guide building work."
+noindex: true
 ---
 
 https://youtu.be/jYNufQVIFfA?t=626

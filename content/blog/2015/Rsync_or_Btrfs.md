@@ -1,5 +1,7 @@
 ---
 date: 2015-07-30 22:55:09 +0800
+title: "Rsync versus Btrfs for backups and snapshots"
+description: "Comparing file-level copying with filesystem snapshots: portability, consistency, progress reporting, rollback and testing a copied system."
 ---
 
 # Rsync

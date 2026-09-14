@@ -1,6 +1,9 @@
 ---
 date: 2014-12-05 11:28:45 +0800
 tags: [ci-cd]
+title: "Updating a Docker container on early CoreOS"
+description: "A 2014 account of testing and deploying a Greptweet container change, including working-copy files, image builds and restarting services."
+historical: "This describes an early Docker/CoreOS development environment. The original CoreOS setup and its workflows should not be treated as instructions for current container platforms."
 ---
 
 I setup [Greptweet](https://github.com/kaihendry/greptweet) a few months ago on

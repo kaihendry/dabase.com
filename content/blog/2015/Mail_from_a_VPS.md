@@ -1,6 +1,8 @@
 ---
 date: 2015-11-10 15:24:56 +0800
 title: Mail from a VPS using AWS SES from sandbox mode
+description: "A 2015 comparison of ssmtp and msmtp configurations for sending through AWS SES with verified addresses and a restricted sandbox account."
+historical: "A 2015 mail-sending setup. The packages, provider settings and authentication examples have not been reviewed as a current mail configuration."
 ---
 
 Set up <https://aws.amazon.com/ses/> with a [verified

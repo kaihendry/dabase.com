@@ -3,8 +3,19 @@
 <h1>Posts tagged {{ .Title }}</h1>
 {{ .Content }}
 <ul>
-{{ range .Pages.ByDate.Reverse }}
+{{ range where .Pages.ByDate.Reverse "Params.historical" "eq" nil }}
   <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | default (replace .File.BaseFileName "_" " " | title) }}</a> <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time></li>
 {{ end }}
 </ul>
+{{ with where .Pages.ByDate.Reverse "Params.historical" "ne" nil }}
+<details>
+<summary>Historical notes ({{ len . }})</summary>
+<p>Older experiments and superseded guidance, preserved with context on each page.</p>
+<ul>
+{{ range . }}
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time></li>
+{{ end }}
+</ul>
+</details>
+{{ end }}
 {{ end }}

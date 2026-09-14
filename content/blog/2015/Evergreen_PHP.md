@@ -1,5 +1,7 @@
 ---
 date: 2015-08-18 14:34:06 +0800
+title: "Keeping PHP services updated with containers"
+description: "A 2015 discussion of the maintenance burden of PHP on a VPS and whether containers could simplify keeping applications and their runtime updated."
 ---
 
 What seems like years ago now, hosters like Dreamhost would offer **shared
@@ -29,7 +31,7 @@ develop a update system called
 server environments.
 
 However the big issue with CoreOS is that the Docker image itself wasn't
-updated and tbh [[updating_Docker_images_is_a_PITA|Docker_container_update_workflow]].
+updated and tbh [updating Docker images is a PITA](/blog/2014/Docker_container_update_workflow/).
 
 # Proposed solution ... using containers
 

@@ -1,5 +1,8 @@
 ---
 date: 2009-11-18 12:53:12 +0000
+title: "W3C Widget interface mapping quirks"
+description: "Review notes from 2009 on exposing widget configuration through JavaScript, including metadata, localisation, width and height."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 Update: Marcos has replied to all my concerns <http://lists.w3.org/Archives/Public/public-webapps/2009OctDec/0943.html>

@@ -1,0 +1,1 @@
+{{- return (or .Description .Summary .Site.Params.description | plainify | htmlUnescape | strings.TrimSpace) -}}

@@ -1,6 +1,8 @@
 ---
 date: 2015-05-19 17:45:03 +0800
 tags: [audio-video]
+title: "A proposal for a small local video editor"
+description: "A 2015 proposal for a local video-editing tool focused on trimming, arranging clips and replacing audio using open-source components."
 ---
 
 I have used Adobe Premiere, iMovie, Final Cut Pro X and a myriad of other video

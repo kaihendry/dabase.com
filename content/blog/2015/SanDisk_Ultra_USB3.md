@@ -1,5 +1,7 @@
 ---
 date: 2015-08-31 16:12:24 +0800
+title: "SanDisk Ultra USB 3 write-speed measurements"
+description: "A small USB flash-drive benchmark showing how the dd block size affected write throughput on my laptop in 2015."
 ---
 
 SanDisk Ultra USB3 speed from my Broadwell laptop is:

@@ -1,5 +1,9 @@
 ---
 date: 2010-10-07 13:30:32 +0100
+title: "London cycle-hire station data from 2010"
+description: "A preserved 2010 snapshot of London cycle-hire station identifiers, names, coordinates and availability fields; it is not a live station directory."
+historical: "A raw 2010 station-data snapshot with legacy table markup. It is not a usable current directory of London bike stations."
+noindex: true
 ---
 
 [[!table  data="""

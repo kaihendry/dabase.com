@@ -53,6 +53,7 @@ jobs:
 
       - name: Validate before publishing
         run: |
+          python3 scripts/validate_blog.py
           python3 -m unittest discover -s scripts -p 'test_*.py' -v
           python3 scripts/validate_podcast.py --deep
 

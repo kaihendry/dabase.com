@@ -14,7 +14,7 @@
   |
   <a href="{{ $commitsURL }}">File history</a>
   {{ end }}
-  {{ if not .Lastmod.IsZero }}<small
-    >Last modified: {{ (time.In "Europe/London" .Lastmod).Format "Mon, 02 Jan 2006 15:04:05 MST" }}</small
+  {{ if and .IsPage (gt .Lastmod .Date) }}<small
+    >Content updated: {{ (time.In "Europe/London" .Lastmod).Format "Mon, 02 Jan 2006 15:04:05 MST" }}</small
   >{{ end }}
 </footer>

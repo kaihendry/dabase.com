@@ -1,6 +1,8 @@
 ---
 date: 2012-07-17 16:34:44 +0200
 tags: [networking]
+title: "Sharing WiFi over Ethernet with systemd-networkd"
+description: "Notes on forwarding a wireless internet connection to a wired device using systemd-networkd, a DHCP server and masquerading."
 ---
 
 My WIFI is connected to the Internet. I want share Internet with a device that doesn't have wifi via the WIRED ethernet ports.

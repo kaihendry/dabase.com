@@ -1,6 +1,6 @@
 ---
 title: "How I Monitor My Home Energy Usage"
-description: "A practical walkthrough of my home energy monitoring setup — the tools, dashboards, and insights I use to track and reduce electricity consumption."
+description: "A short inventory of the meters and integrations I use to monitor electricity in my house and cottage, and the garage I have yet to monitor."
 date: 2026-04-14T20:33:05+01:00
 tags: [home-energy]
 ---

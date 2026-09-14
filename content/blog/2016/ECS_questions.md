@@ -1,5 +1,9 @@
 ---
 date: 2016-07-19 15:22:41 +0800
+title: "Questions about AWS ECS in 2016"
+description: "Early ECS questions about host updates, task events, instance setup, logging and the ECS CLI on the Amazon Linux images of 2016."
+historical: "This records ECS CLI, AMI and deployment behaviour in 2016. It is not a current ECS setup guide or a list of current service limitations."
+aliases: ["/blog/ECS_questions/"]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Imeb-_g_CtU" frameborder="0" allowfullscreen></iframe>

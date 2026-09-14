@@ -1,5 +1,8 @@
 ---
 date: 2010-03-29 17:24:57 +0100
+title: "What I wanted from the DAP Calendar API"
+description: "A 2010 critique of the proposed device calendar API, arguing for useful reminders and web-service calendars rather than extra device-local complexity."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 To me the [W3C DAP](http://www.w3.org/2009/dap/)

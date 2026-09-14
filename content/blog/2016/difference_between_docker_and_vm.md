@@ -1,6 +1,9 @@
 ---
 date: 2016-07-12 13:32:43 +0800
 title: Whats the difference between a Docker container and a Virtual machine?
+description: "A short 2016 explanation of containers versus virtual machines. Its LXC-based description and blanket performance claims are not a current architecture guide."
+historical: "This brief 2016 explanation describes Docker in terms of LXC and makes blanket performance claims. It is too imprecise to use as a current architecture guide."
+noindex: true
 ---
 
 Docker is much **faster** and more productive to work with than a Virtual

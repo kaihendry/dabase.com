@@ -1,5 +1,9 @@
 ---
 date: 2013-12-02 10:35:34 +0800
+title: "An old YouTube workaround for HTML video without Flash"
+description: "A preserved browser-console workaround for YouTube playback in 2013, using a watch_popup URL before HTML video became the normal path."
+historical: "A 2013 workaround for Flash-era YouTube playback. The old URL trick is not current browser troubleshooting advice."
+noindex: true
 ---
 
 <img src=http://s.natalian.org/2013-12-02/youtube-flash-required.png>

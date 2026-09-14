@@ -1,5 +1,8 @@
 ---
 date: 2009-07-25 17:34:23 +0100
+title: "JIL versus BONDI: organisations and widget standards"
+description: "A 2009 comparison of the mobile operators behind JIL, the BONDI initiative and their approaches to W3C widget standards and participation."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 So [what](http://www.jil.org/jil-forums/posts/list/42.page) are the differences between [BONDI](http://bondi.omtp.org) and [JIL](http://www.jil.org)??

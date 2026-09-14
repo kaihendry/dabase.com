@@ -1,5 +1,8 @@
 ---
 date: 2014-06-21 17:35:19 +0100
+title: "Arch Linux on an early-2014 MacBook Air"
+description: "Hardware-specific notes from installing Arch Linux on a 2014 MacBook Air, including the keyboard, trackpad, suspend and power settings."
+historical: "Installation notes for a particular 2014 MacBook Air and Arch Linux environment. Driver, firmware and installer advice has not been refreshed."
 ---
 
 I upgraded my Mom's old [11 inch Macbook
@@ -86,7 +89,7 @@ my lap without feeling like I am killing my sperm off.
 
 The 1440x900 screen is nicer, but I expected it to a LOT better. I guess I was stupidly expecting Retina.
 
-The battery seems to drain as fast as the old 9 cell in the Thinkpad worryingly. I have [tuned it with PowerTOP](http://dabase.com/blog/Systemd_powertop_tunables/) and still I'm not very confident at all. I suspect the screen on full brightness doesn't help.
+The battery seems to drain as fast as the old 9 cell in the Thinkpad worryingly. I have [tuned it with PowerTOP](/blog/2013/Systemd_powertop_tunables/) and still I'm not very confident at all. I suspect the screen on full brightness doesn't help.
 
 # Webconverger
 

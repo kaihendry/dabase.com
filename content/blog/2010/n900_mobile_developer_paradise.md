@@ -1,5 +1,9 @@
 ---
 date: 2010-01-22 18:47:16 +0000
+title: "Building WebKit for the Nokia N900"
+description: "A 2010 experiment building a web stack for Maemo 5 with the Fremantle SDK, Scratchbox and a Debian build machine."
+historical: "These are 2010 experiences with the Nexus One or Nokia N900 generation of mobile devices. Package repositories, browser limitations and development instructions belong to that period."
+aliases: ["/blog/n900_mobile_developer_paradise/"]
 ---
 
 <a href="http://www.flickr.com/photos/hendry/4295918782/" title="Multiple widgets by Kai Hendry, on Flickr"><img src="http://farm5.static.flickr.com/4055/4295918782_478a271f4a_o.png" width="800" height="480" alt="Multiple widgets" /></a>

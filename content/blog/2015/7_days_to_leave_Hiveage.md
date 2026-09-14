@@ -1,12 +1,14 @@
 ---
 date: 2015-06-24 10:02:42 +0100
+title: "Seven days to leave Hiveage"
+description: "A firsthand account of exporting invoices and contacts from Hiveage under a short deadline, and the practical difficulties of leaving a billing service."
 ---
 
 Update: [Wrote my own billing platform](https://www.youtube.com/watch?v=PPL1C5TmGvY)
 
 I'm on holiday, but I need to leave Hiveage since I'm been told to leave the
 service in this [email exchange](http://s.natalian.org/2015-06-17/7days.pdf),
-after posting [[Hiveage_grievances]]. :(
+after posting [Hiveage grievances](/blog/2015/Hiveage_grievances/). :(
 
 # Day 1 (Tuesday)
 

@@ -1,5 +1,8 @@
 ---
 date: 2016-05-09 15:51:57 +0800
+title: "Running an early Caddy release in Docker"
+description: "A 2016 local-development setup using an abiosoft Caddy container, port mappings and hostnames to resemble the server environment."
+historical: "This uses an early Caddy release and the abiosoft container image in 2016. It is not a configuration guide for current Caddy releases."
 ---
 
 <img src=http://s.natalian.org/2016-05-09/local-caddy.png alt="Caddy running in Docker on Archlinux">

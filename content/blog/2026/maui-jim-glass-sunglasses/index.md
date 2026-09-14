@@ -2,6 +2,8 @@
 title: "My Maui Jims Have New Nose Pads: NSP252"
 description: "The nose pads on my decades-old glass-lens Maui Jims perished and the model number had worn off the frame. Julie and Scott at Maui Jim customer services worked it out anyway: NSP252, 14.3 x 7 mm. Buy it for life."
 date: 2026-08-17T16:47:00+01:00
+thumbnail: preview.jpg
+image_alt: "My Maui Jim sunglasses frame"
 ---
 
 These were my first pair of Maui Jims and they are still my favourite. I genuinely cannot tell you

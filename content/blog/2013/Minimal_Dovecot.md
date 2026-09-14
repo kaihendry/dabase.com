@@ -1,5 +1,9 @@
 ---
 date: 2013-11-28 17:34:32 +0800
+title: "A minimal Dovecot configuration experiment from 2013"
+description: "A historical Dovecot logging and configuration experiment. Its example disables TLS and must not be treated as a secure mail-server configuration."
+historical: "This incomplete mail-server example disables TLS with ssl = no. It is not a secure configuration for a network-accessible mail service."
+noindex: true
 ---
 
 <blockquote class="twitter-tweet" lang="en"><p>There is too much configuration. There is too much state. There are too many options. There are too many dot files. Stuff should just work.</p>&mdash; Rob Pike (@rob_pike) <a href="https://twitter.com/rob_pike/statuses/360557625756229632">July 26, 2013</a></blockquote>

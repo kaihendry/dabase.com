@@ -1,6 +1,8 @@
 ---
 date: 2015-12-04 21:18:57 +0800
 tags: [networking]
+title: "Addressable hostnames with DNS and mDNS"
+description: "Using public DNS names for servers and .local names for nearby devices, with notes on hostname checks and troubleshooting mDNS."
 ---
 
 Consider:

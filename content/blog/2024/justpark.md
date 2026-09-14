@@ -2,6 +2,8 @@
 title: JustPark SMS ripoff 
 date: 2024-09-05T13:44:50+01:00
 description: Using an app to pay for parking is almost double the price of cash
+thumbnail: /blog-previews/justpark.jpg
+image_alt: "JustPark checkout showing a 10p surcharge"
 ---
 
 {{< x user="kaihendry" id="1828794055645647140" >}}

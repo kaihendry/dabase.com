@@ -1,8 +1,8 @@
 ---
 date: 2015-08-09 17:46:51 +0800
+title: "Centralisation and the side effects of censorship"
+description: "A 2015–2016 reflection on independent hosting, large platforms and how blocking an entire service changes the cost of internet censorship."
 ---
-
-[[!meta title="Side effect of centralisation WRT censorship"]]
 
 UPDATE 2016-01-28: Unsurprisingly Sarawak Report moved to
 [Medium](https://medium.com/medium-legal/the-post-stays-up-d222e34cb7e7#.6p7uuhxmo)

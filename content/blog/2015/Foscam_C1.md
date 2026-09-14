@@ -1,6 +1,9 @@
 ---
 date: 2015-09-06 10:34:09 +0800
 tags: [audio-video]
+title: "Foscam C1 camera notes from 2015"
+description: "Firsthand problems with the Foscam C1 camera, including browser plugins, time synchronisation, recording, network behaviour and unclear software support."
+historical: "A 2015 camera review involving browser plugins and firmware from that period. It is not a current camera recommendation or security assessment."
 ---
 
 <blockquote cite="http://lwn.net/Articles/658198/">As a result, we can, unfortunately, expect to continue to be subjected to surveillance and criminal behavior from the devices that we think we own. We can't say we weren't warned.

@@ -1,6 +1,9 @@
 ---
 date: 2014-08-06 22:07:01 +0800
 tags: [networking]
+title: "SIGFOX event and payload notes from 2014"
+description: "Thoughts after a Singapore SIGFOX demonstration about small payloads, infrequent messages and the difference between events and continuous monitoring."
+historical: "Notes from a 2014 SIGFOX event. The product plans and network claims describe that presentation, not the current service."
 ---
 
 <video controls width=640 height=360>

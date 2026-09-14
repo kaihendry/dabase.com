@@ -3,11 +3,12 @@ title: LLM token cost
 date: 2024-04-04T10:57:46+01:00
 description: Is asking a LLM for a short answer to a question a cost effective idea?
 tags: [ai]
+historical: "A snapshot of model prices and token limits in April 2024. The figures below are historical; the linked pricing pages now describe current offerings."
 ---
 
 # Mistral
 
-https://docs.mistral.ai/platform/pricing/
+https://mistral.ai/pricing/
 
 ## Mistral Large	
 * Input: 8$ / 1M tokens	
@@ -23,7 +24,7 @@ Prompt limit: 2048 tokens
 
 https://openai.com/pricing
 
-## [GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)
+## [GPT-4 Turbo](https://developers.openai.com/api/docs/models/gpt-4-turbo)
 
 * Input 		$10.00 / 1M tokens
 * Output  $30.00 / 1M tokens

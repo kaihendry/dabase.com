@@ -1,5 +1,7 @@
 ---
 date: 2014-07-15 17:47:30 +0800
+title: "Returning to bash after trying fish"
+description: "Notes on shell history, translating aliases, command compatibility and the reasons I returned to bash after a trial of fish."
 ---
 
 <img src=http://fishshell.com/assets/img/Terminal_Logo_CRT_Small.png alt="Fish logo">

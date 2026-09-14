@@ -1,5 +1,7 @@
 ---
 date: 2016-06-08 13:42:05 +0800
+title: "Why btrfs device remove does not split a RAID1 mirror"
+description: "Lessons from trying to separate a Btrfs RAID1 array, explaining why removing a device is different from keeping an independent copy of the filesystem."
 ---
 
 Do NOT `btrfs device delete` which is the synonymous with `btrfs device remove`

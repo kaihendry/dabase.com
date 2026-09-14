@@ -1,5 +1,7 @@
 ---
 date: 2013-02-18 16:57:00 +0800
+title: "Highlighting part of a screenshot with scrot and GIMP"
+description: "The tools I used to capture and annotate a screen region on an Arch Linux desktop with dwm, dmenu, scrot and GIMP."
 ---
 
 <video poster=http://s.natalian.org/2013-02-18/region-highlight.png controls width=640 height=360>

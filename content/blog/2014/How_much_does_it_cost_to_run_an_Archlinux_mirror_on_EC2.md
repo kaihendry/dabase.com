@@ -1,5 +1,8 @@
 ---
 date: 2014-08-25 15:44:18 +0800
+title: "The cost of an Arch Linux mirror on EC2 in 2014"
+description: "A historical cost calculation for hosting an Arch Linux package mirror in Singapore, including instance charges and outbound bandwidth."
+historical: "These are the costs of running this mirror in 2014, not a quote for current AWS pricing."
 ---
 
 <abbr title="Amazon Web Services">AWS</abbr> Singapore kindly gifted

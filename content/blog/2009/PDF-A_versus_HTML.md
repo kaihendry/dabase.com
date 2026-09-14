@@ -1,8 +1,9 @@
 ---
 date: 2009-06-24 21:33:40 +0100
+title: "PDF/A versus HTML for document archives: a 2009 debate"
+description: "A historical argument about archiving documents as PDF/A or HTML, shaped by the browser, mobile and proprietary-tool limitations of 2009."
+historical: "A 2009 argument about document preservation. Claims about PDF viewers, browser capabilities and Flash reflect that period; this is not a current format comparison."
 ---
-
-[[!meta title="PDF/A versus HTML" ]]
 
 2016 update: <https://shkspr.mobi/blog/2016/07/pdfs-are-the-cheques-of-the-21st-century/> has a good summary why PDF is a bad format
 
@@ -54,7 +55,7 @@ proprietary tool. Great, what a start!
 * HTML can include "marginalia" like comments and notes.
 * HTML has several ways of adding [metadata support](http://wiki.whatwg.org/wiki/Generic_Metadata_Mechanisms), though Google search generally does not rely on them for best results
 * HTML _can_ convey critical information. It's done so more effectively that PDF has ever done.
-* Need to package some HTML content? (i.e. self-containment) Use a [[widget|blog/Widgets_are_simple_offline_packages]]!
+* Need to package some HTML content? (i.e. self-containment) Use a [widget](/blog/2009/Widgets_are_simple_offline_packages/)!
 * You can generate static snapshots of HTML to formats like [PDF](http://en.wikipedia.org/wiki/PDF/A), with tools like [Prince](http://princexml.com/). You can't do the reverse very easily!
 * HTML is already the primary medium for archival of information! Checkout the [waybackmachine](http://www.archive.org/web/web.php)
 * Worried about data being tampered with? Mandate source control like [git](http://en.wikipedia.org/wiki/Git) where each document can be explicitly tracked since HTML can be treated as plain text for this purpose.
@@ -62,5 +63,5 @@ proprietary tool. Great, what a start!
 # Cons of HTML
 
 * Can't be rendered consistently across devices or mediums -- HTML is not a (static A4 print) presentation format, it's a publishing format
-* [[Printing|blog/Web_browser_printing_comparison]] is particularly tiresome, which is good news for trees
+* [Printing](/blog/2009/Web_browser_printing_comparison/) is particularly tiresome, which is good news for trees
 * [HTML is living markup](http://whatwg.org/html) and it ideally needs to be maintained

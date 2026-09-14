@@ -1,11 +1,12 @@
 ---
 date: 2015-10-25 16:54:40 +0800
+title: "Why API responses need timestamps"
+description: "Two problems that explicit timestamps help solve in an API: clock differences between client and server, and knowing how fresh a payload is."
 ---
 
 I'm a novice API critic after building a [couple](http://bus.dabase.com/)
 [of](http://greptweet.com/) [apps](http://jbsg.dabase.com/) that depend on
-APIs. I've written before about [[poor API design that hinders client side
-Apps|Javascript_API_barriers]] and I've even made a [bad
+APIs. I've written before about [poor API design that hinders client side Apps](/blog/2015/Javascript_API_barriers/) and I've even made a [bad
 video](https://www.youtube.com/watch?v=CaSTJM5UEj8).
 
 <blockquote>All data needs a temporal reference point<br>

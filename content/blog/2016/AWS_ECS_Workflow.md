@@ -1,9 +1,13 @@
 ---
 date: 2016-07-28 14:06:16 +0800
 tags: [ci-cd]
+title: "An AWS ECS development workflow in 2016"
+description: "Notes on an early ECS CLI workflow using Docker Compose, ECR image pushes, manual load balancers and EC2-backed services."
+historical: "This records ECS CLI, AMI and deployment behaviour in 2016. It is not a current ECS setup guide or a list of current service limitations."
+aliases: ["/blog/AWS_ECS_Workflow/"]
 ---
 
-Following up after [[ECS_questions]]
+Following up after [ECS questions](/blog/2016/ECS_questions/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/onTnyvrHggo" frameborder="0" allowfullscreen></iframe>
 

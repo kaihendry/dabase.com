@@ -1,5 +1,9 @@
 ---
 date: 2010-02-14 10:01:39 +0000
+title: "Where to find me at Mobile World Congress 2010"
+description: "An expired event announcement listing my Aplix and LiMo stand appearances and on-device JavaScript demonstrations at MWC 2010."
+historical: "An announcement of where to find me at Mobile World Congress in February 2010. The event has passed."
+noindex: true
 ---
 
 <a href="http://www.flickr.com/photos/hendry/4354245290/" title="Flurry on building activity in Hall8 by Kai Hendry, on Flickr"><img src="http://farm3.static.flickr.com/2678/4354245290_6bed34b0de.jpg" width="500" height="375" alt="Flurry on building activity in Hall8" /></a>

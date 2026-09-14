@@ -1,7 +1,7 @@
 ---
 title: Xbox impressions
 date: 2022-01-29T18:28:20+08:00
-description:
+description: "First impressions of family gaming on Xbox and PlayStation, including subscription requirements, Minecraft and Roblox content permissions."
 ---
 
 As a long life Linux user, I've now dabbled with a <abbr title="Sony

@@ -3,6 +3,8 @@ title: "Two Heat Pump Surprises: Cylinder Standing Loss and a −40 °C Outdoor 
 description: "A month into living with a Vaillant aroTHERM plus: measuring how fast the hot water cylinder cools down, and the day a power cut left the outdoor sensor reading −40 °C and the heat pump heating the house in August."
 date: 2026-08-25T22:30:51+01:00
 tags: [home-energy]
+thumbnail: preview.jpg
+image_alt: "The heat pump display reporting minus forty degrees"
 ---
 
 A month on from [our heat pump install]({{< ref "/blog/2026/vaillant-arotherm-plus-heat-pump" >}}),

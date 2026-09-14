@@ -3,6 +3,8 @@ title: How to fix the most impactful AWS RDS Slow queries 🐢
 date: 2024-10-17T17:26:20+01:00
 description: Speeding up slow queries in AWS MySQL instances
 tags: [database]
+thumbnail: /blog-previews/slow-logs.jpg
+image_alt: "Log Insights search"
 ---
 
 Assuming the [slow_query_log parameter](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQL.LogFileSize.html) is enabled, ensure you [publish those logs to CloudWatch](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MySQLDB.PublishtoCloudWatchLogs.html) for analysis. Bonus: Enable [RDS Performance insights](https://aws.amazon.com/rds/performance-insights/) and ensure retention is set to something sensible like a month, which does come at a [additional cost](https://aws.amazon.com/rds/performance-insights/pricing/).

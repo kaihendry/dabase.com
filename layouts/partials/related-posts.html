@@ -1,4 +1,6 @@
 {{ $posts := where site.RegularPages "Section" "blog" }}
+{{ $posts = where $posts "Params.historical" "eq" nil }}
+{{ $posts = where $posts "Params.noindex" "ne" true }}
 {{ with $posts.Related . | first 3 }}
 <aside aria-labelledby="related-posts" data-pagefind-ignore>
   <h2 id="related-posts">Related posts</h2>

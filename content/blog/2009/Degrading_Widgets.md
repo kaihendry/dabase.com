@@ -1,5 +1,8 @@
 ---
 date: 2009-02-01 20:26:14 +0000
+title: "Graceful degradation in packaged widgets"
+description: "A 2009 discussion of offline widget updates, changing device APIs and the difficulty of preserving graceful degradation outside a live website."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
 ---
 
 I've written before about [key Web features such as degrading

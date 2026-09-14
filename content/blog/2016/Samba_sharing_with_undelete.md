@@ -1,5 +1,9 @@
 ---
 date: 2016-05-02 12:56:53 +0800
+title: "A Samba recycle-bin experiment from 2016"
+description: "A preserved Samba configuration using the recycle module and USB storage. Its forced-root access and permissive modes are not a secure sharing template."
+historical: "This experiment forces access as root and uses permissive 0777 modes. It is not a secure file-sharing template."
+noindex: true
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GwhtoeMx1I8" frameborder="0" allowfullscreen></iframe>

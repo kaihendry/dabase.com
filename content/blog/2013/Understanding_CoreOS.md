@@ -1,5 +1,9 @@
 ---
 date: 2013-11-02 14:17:34 +0800
+title: "Understanding early CoreOS in 2013"
+description: "First impressions of early CoreOS, automatic operating-system updates, Docker, etcd and the trade-offs against a general-purpose Linux distribution."
+historical: "This describes an early Docker/CoreOS development environment. The original CoreOS setup and its workflows should not be treated as instructions for current container platforms."
+aliases: ["/blog/Understanding_CoreOS/"]
 ---
 
 [CoreOS](http://coreos.com/) has come up on my radar a couple of times and I
@@ -137,4 +141,4 @@ So with that preamble, a good summary is given at the bottom of the <http://core
 
 Good luck to the CoreOS team. I will be keeping a very close eye on their developments!
 
-Update: I am now [[experiencing_CoreOS+Docker]] !
+Update: I am now [experiencing CoreOS+Docker](/blog/2014/Experiencing_CoreOS-Docker/) !

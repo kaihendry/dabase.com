@@ -1,6 +1,10 @@
 ---
 date: 2014-03-13 12:12:46 +0800
 tags: [networking]
+title: "Recovering a Droplet network with systemd-networkd"
+description: "A 2014 account of restoring static IP configuration on a DigitalOcean Droplet while migrating from netctl to early systemd-networkd."
+historical: "These network configuration notes describe systemd and DigitalOcean environments in 2014. Interface names, addresses and service behaviour are specific to that setup."
+aliases: ["/blog/Systemd_network_on_a_Droplet/"]
 ---
 
 From roughly systemd version 210, networking in my Droplet changed.

@@ -1,5 +1,8 @@
 ---
 date: 2016-03-04 19:12:53 +0800
+title: "First impressions of Django 1.9 on Python 2"
+description: "Historical development notes on Django 1.9: the project/app structure, development server, admin interface, database choices and missing setup files."
+historical: "These notes concern Django 1.9 and Python 2. They document that development experience rather than a supported setup for a new application."
 ---
 
 	~$ python2 -c "import django; print(django.get_version())"

@@ -177,7 +177,7 @@ References
 * [4] OAuth and Federation Overview https://docs.amplify.aws/lib/auth/social/q/platform/js
 * [5] Introducing AWS Single Sign-On https://aws.amazon.com/blogs/security/introducing-aws-single-sign-on/
 * [6] Deep Dive on AWS Single Sign-On - AWS Online Tech Talks https://www.slideshare.net/AmazonWebServices/deep-dive-on-aws-single-signon-aws-online-tech-talks
-* [7] Understanding Amazon Cognito user pool OAuth 2.0 grants https://aws.amazon.com/blogs/mobile/understanding-amazon-cognito-user-pool-oauth-2-0-grants/
+* [7] Understanding Amazon Cognito user pool OAuth 2.0 grants https://docs.aws.amazon.com/cognito/latest/developerguide/federation-endpoints-oauth-grants.html
 * [8] Amazon Cognito Deep Dive https://www.slideshare.net/AmazonWebServices/amazon-cognito-deep-dive
 * [9] Passport-SAML http://www.passportjs.org/packages/passport-saml/
 * [10] Custom SAML 2.0 Applications https://docs.aws.amazon.com/singlesignon/latest/userguide/samlapps.html

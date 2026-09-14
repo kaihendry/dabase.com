@@ -1,5 +1,9 @@
 ---
 date: 2014-11-09 23:49:33 +0800
+title: "An IRC discussion about Docker virtual hosting"
+description: "A preserved 2014 IRC exchange about hostnames, ports and HTTP virtual hosting around containers, without a complete deployment solution."
+historical: "An unresolved 2014 IRC discussion about container hosting. There is no complete setup or solution to follow."
+noindex: true
 ---
 
 	23:19 <hendry> biggest feature missing for me is dockers lack of vhosting support. hosting off a random port is a bit silly, no?

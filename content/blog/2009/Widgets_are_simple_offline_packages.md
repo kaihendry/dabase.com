@@ -1,5 +1,9 @@
 ---
 date: 2009-02-12 09:59:40 +0000
+title: "Widgets as portable offline web packages"
+description: "A 2009 explanation of packaging HTML, styles and images into portable W3C widgets, and how that differed from a live website or appcache."
+historical: "This records mobile web standards and widget development in 2009–2010. The platforms, proposals and test infrastructure described here are historical, rather than a guide to developing for current browsers."
+aliases: ["/blog/Widgets_are_simple_offline_packages/"]
 ---
 
 # What are widgets?
@@ -113,7 +117,7 @@ and much more!
 
 Widget applications aren't exactly Web applications. They aren't reliant on the
 back ends like Apache & PHP. Widgets are **not inherently connected**. They
-probably [[will_not_update_and_degrade|blog/Degrading_Widgets]] seamlessly like
+probably [will not update and degrade](/blog/2009/Degrading_Widgets/) seamlessly like
 Web applications do at first. Those new [device
 APIs](http://bondi.omtp.org/apis/) aren't mature. And ... what happens if
 widgets are just [SVG](http://en.wikipedia.org/wiki/SVG) files or [canvas

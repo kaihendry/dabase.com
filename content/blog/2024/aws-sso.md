@@ -3,6 +3,8 @@ title: AWS SSO with Google Chrome profiles
 date: 2024-10-16T09:56:41+01:00
 description: Mapping AWS profiles to Chrome profiles
 tags: [security]
+thumbnail: /blog-previews/aws-sso.jpg
+image_alt: "Chrome version page showing the browser profile"
 ---
 
 When working on different AWS accounts with different clients, my strategy is to keep them **separated with browser profiles**.
@@ -49,7 +51,7 @@ The configuration is gnarly but it works:
 
 When it's working, you should be able to switch between roles running `assume`, and unlike `aws sso login` it should open the correct browser profile.
 
-> [TODO figure out how to make a map between browser profiles and AWS profiles.](https://github.com/common-fate/granted/issues/782)
+> [TODO figure out how to make a map between browser profiles and AWS profiles.](https://github.com/fwdcloudsec/granted/issues/782)
 
 # References
 

@@ -1,6 +1,9 @@
 ---
 date: 2016-03-19 15:21:56 +0800
 tags: [networking]
+title: "Recovering an OpenWrt router in failsafe mode"
+description: "A 2016 recovery note about giving a Linux Ethernet interface a static address to reach an OpenWrt router in its old failsafe environment."
+historical: "These router notes describe hardware and OpenWrt firmware used in 2016. Recovery methods and wireless results are specific to that environment."
 ---
 
 When resetting an OpenWRT router into failsafe mode, it usually comes up as

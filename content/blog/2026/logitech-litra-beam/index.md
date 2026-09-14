@@ -3,11 +3,15 @@ title: "My favourite desk lamp: Logitech Litra Beam"
 date: 2026-09-13T12:46:08Z
 description: "The Logitech Litra Beam doubles as a desk lamp and an automatic light for online meetings. A few niggles, and why I'd wait for a £60 deal."
 tags: [audio-video]
+thumbnail: preview.jpg
+image_alt: "My Logitech Litra Beam illuminating the desk"
 ---
 
 The [Logitech Litra Beam](https://www.amazon.co.uk/dp/B0CHWR8SNR) is my favourite desk lamp.
 I like how it can turn on automatically for online meetings to light up my face, then easily be
 adjusted to illuminate my desk.
+
+For the rest of the setup, see my [A/V tips for online calls and presentations](/blog/2020/av-tips/).
 
 ![My Litra Beam angled down to illuminate the desk, with its buttons along the back](desk-lamp.avif)
 

@@ -2,6 +2,7 @@
 title: Gitlab Workflow
 date: 2022-12-07T09:59:40+08:00
 tags: [ci-cd]
+description: "The repeated Git, merge-request and approval steps in my 2022 GitLab workflow, and the friction involved in getting a small change merged."
 ---
 
 When making a change my workflow is:
