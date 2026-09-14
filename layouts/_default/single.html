@@ -7,6 +7,9 @@
 <h1>{{.Title}}</h1>
 {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
 <p class="meta" data-pagefind-ignore>Published <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>{{ if and (gt .Lastmod .Date) (ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02")) }} · Updated {{ .Lastmod.Format "2 Jan 2006" }}{{ end }}</p>
+{{ with .GetTerms "tags" }}
+<p class="meta" data-pagefind-ignore>Tags: {{ range $i, $tag := . }}{{ if $i }}, {{ end }}<a href="{{ .RelPermalink }}" rel="tag">{{ .LinkTitle }}</a>{{ end }}</p>
+{{ end }}
 </header>
 
 {{ if .Params.toc }}
@@ -16,6 +19,8 @@
 {{ end }}
 
 {{.Content}}
+
+{{ if eq .Section "blog" }}{{ partial "related-posts.html" . }}{{ end }}
 
 <aside data-pagefind-ignore>{{- partial "backlinks.html" . -}}</aside>
 

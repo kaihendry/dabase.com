@@ -44,6 +44,17 @@ https://search.google.com/search-console?resource_id=sc-domain%3Adabase.com&hl=e
 
 https://www.youtube.com/watch?v=PmbVccyFY7U
 
+## Blog tags
+
+Add one or two reusable topics in a post's frontmatter when useful, for example
+`tags: [audio-video]`. Reuse the tags listed at `/tags/`; introduce a new tag only
+when it connects at least two posts. Untagged posts are fine.
+
+Tag links lead to an archive of matching posts. Blog articles show up to three
+related posts based only on shared tags, including newer articles so older posts
+can link to follow-ups. Hugo builds these links without additional JavaScript.
+Tag labels and related lists are excluded from the Pagefind search index.
+
 # Terraform
 
 See the [terraform](terraform/) directory.

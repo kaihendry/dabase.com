@@ -9,6 +9,14 @@ permalinks:
 
 defaultOutputFormat: html
 
+related:
+  includeNewer: true
+  threshold: 80
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:

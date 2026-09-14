@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ partial "breadcrumb.html" . }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<ul>
+{{ range .Data.Terms.Alphabetical }}
+  <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> <span class="meta">({{ .Count }})</span></li>
+{{ end }}
+</ul>
+{{ end }}

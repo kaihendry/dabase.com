@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ partial "breadcrumb.html" . }}
+<h1>Posts tagged {{ .Title }}</h1>
+{{ .Content }}
+<ul>
+{{ range .Pages.ByDate.Reverse }}
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time></li>
+{{ end }}
+</ul>
+{{ end }}

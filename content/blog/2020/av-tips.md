@@ -2,6 +2,7 @@
 title: Audio Visual tips for Zoom, OBS, Youtube etc
 date: 2020-12-31T09:07:08+08:00
 description: Practical tips to improve Internet, Lighting, Sound and Video for online calls and presentations
+tags: [audio-video]
 toc: true
 ---
 
