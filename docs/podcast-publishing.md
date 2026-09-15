@@ -3,6 +3,16 @@
 Start with a completed Zoom recording. Finish with a working episode page,
 podcast feed entry, YouTube video and promotional clips.
 
+The agent runs the editing, asset preparation, metadata, S3 uploads and blog/feed
+publishing steps. The user reviews the initial full YouTube cut and handles
+posting to YouTube, LinkedIn and X. This is an agent-led workflow with human
+handoffs; access problems such as expired AWS credentials may still need the user.
+
+The order is: **Zoom recording → initial full cut → user review and approval →
+final assets and teasers → manual YouTube upload → supplied YouTube URL →
+automated blog/feed publication.** Do not make shorts or teasers before the full
+cut is approved.
+
 ## 1. Collect the recording
 
 - [ ] Wait for Zoom to finish converting the recording; play the resulting MP4.
@@ -30,15 +40,25 @@ podcast feed entry, YouTube video and promotional clips.
 - [ ] Keep framing, captions, fades and further video edits in PilotCut so they remain editable.
 - [ ] Review the opening, ending, speaker switches, screen shares and every edited join.
 
-## 3. Export and check the episode
+## 3. Export and check the initial full cut
 
-- [ ] Export the YouTube master as an H.264/AAC MP4, normally 1920×1080 at the recording's frame rate.
-- [ ] Export the podcast MP3 from the same edited timeline. Keep the audio and video aligned.
+- [ ] Export the initial full YouTube cut as an H.264/AAC MP4, normally
+  1920×1080 at the recording's frame rate.
 - [ ] Check duration, dimensions, codecs, sound at both ends and playback through each cut.
-  Decode the complete files to catch damaged or truncated exports.
+  Decode the complete video to catch damaged or truncated exports.
+
+## 4. User review and approval
+
+- [ ] Give the user a playable link or local path to the full review cut and a
+  short description of the edits. Do not substitute teaser clips for this review.
+- [ ] Wait for explicit approval of the full cut before creating any shorts or teasers.
+- [ ] Apply requested revisions in PilotCut, export the revised full cut and
+  obtain approval for that version.
+- [ ] Keep the approved video as the YouTube master. Export the podcast MP3
+  from the same approved timeline and check its complete decode and duration.
 - [ ] Record the MP3's exact byte length and duration for the RSS enclosure.
 
-## 4. Prepare the title, chapters and transcript
+## 5. Prepare the title, chapters and transcript
 
 - [ ] Choose a descriptive title, a short page/feed description and a longer episode summary.
 - [ ] Create chapters from the final edited timeline, beginning at `00:00`.
@@ -48,7 +68,7 @@ podcast feed entry, YouTube video and promotional clips.
 - [ ] Put recurring caption corrections in `content/podcast/metadata/transcript-corrections.sed`.
 - [ ] Keep the title, descriptions, chapters and export paths together in the episode folder.
 
-## 5. Make the thumbnail and teasers
+## 6. Make the thumbnail and teasers after approval
 
 - [ ] Duplicate the previous episode's Excalidraw design rather than changing its original scene.
 - [ ] Reuse the hosts' transparent cutouts, update the episode number and headline,
@@ -57,13 +77,15 @@ podcast feed entry, YouTube video and promotional clips.
 - [ ] Save the editable `.excalidraw` file and a 1280×720 thumbnail.
   Prepare separate square podcast artwork, 1400×1400 or larger, without clipping the design.
 - [ ] Select a few self-contained teaser moments that preserve the speakers' meaning.
+  Use the approved full cut as the source for every teaser.
 - [ ] Make each teaser in PilotCut in both 1080×1920 (YouTube Shorts) and
   1080×1080 (LinkedIn), with readable captions and framing suited to each format.
 - [ ] Review captions, faces, endings and the rendered badge in every export.
 
-## 6. Upload the full video to YouTube
+## 7. User uploads the full video to YouTube
 
-- [ ] Upload the approved MP4 manually in YouTube Studio.
+- [ ] Give the user the approved MP4, thumbnail, title, description and chapters
+  for manual upload in YouTube Studio.
 - [ ] Set the title, description, chapters and approved thumbnail.
 - [ ] Add it at the newest end of the existing
   [AI Infrastructure playlist](https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak).
@@ -71,8 +93,9 @@ podcast feed entry, YouTube video and promotional clips.
 - [ ] Wait for processing, check playback and confirm the intended visibility.
 - [ ] Record the canonical `https://www.youtube.com/watch?v=VIDEO_ID` URL and video ID,
   without the share link's tracking parameter. Do not create the blog page with a placeholder ID.
+- [ ] Wait for the user to supply the YouTube URL before publishing the blog and feed.
 
-## 7. Prepare the website and upload its media
+## 8. Prepare the website and upload its media
 
 - [ ] Work in this repository's `main` checkout, pull with `git pull --ff-only`,
   and preserve unrelated local changes.
@@ -108,7 +131,7 @@ podcast feed entry, YouTube video and promotional clips.
   byte-range seeking, square artwork, and nonempty transcripts with valid timing.
   If replacing a cached object at the same URL, invalidate its CloudFront cache.
 
-## 8. Build, validate and publish the blog/feed
+## 9. Build, validate and publish the blog/feed
 
 - [ ] Install the pinned search dependency with `npm ci` when needed, then run
   `redo site`, `redo check-blog` and `redo check-podcast` from the repository root.
@@ -125,10 +148,12 @@ podcast feed entry, YouTube video and promotional clips.
 - [ ] Wait for GitHub Actions to succeed and verify the live episode page,
   podcast archive and feeds. The deployment checks that the live feeds match the build.
 
-## 9. Promote and finish
+## 10. User posts teasers; verify and archive
 
-- [ ] Upload the vertical teasers to YouTube Shorts and the square versions to LinkedIn,
-  with links to the full episode. Review the post copy before publishing it.
+- [ ] Prepare the teaser files and suggested post copy with links to the full episode.
+- [ ] The user reviews and posts to YouTube Shorts, LinkedIn and X manually.
+  Supply the vertical versions for YouTube Shorts and the square versions for
+  LinkedIn; existing exports can also be used on X.
 - [ ] Check the existing show's listing in Apple Podcasts and Spotify after they refresh.
   A successful site deployment does not prove those directories have ingested the episode.
 - [ ] Record the final page, video and promotional-post URLs; retain the source recording,
