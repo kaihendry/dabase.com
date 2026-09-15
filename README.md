@@ -118,6 +118,12 @@ publishing. This is separate from the Markdown link hook and the required
 
 See the [terraform](terraform/) directory.
 
+# Podcast publishing
+
+Follow the [publishing checklist](docs/podcast-publishing.md) from the Zoom
+recording through PilotCut editing, artwork, YouTube upload, S3 media, blog/feed
+validation and promotional clips.
+
 # Podcast replacement uploads
 
 `content/podcast/metadata/episode-overrides.json` preserves an existing episode's title, page slug and
