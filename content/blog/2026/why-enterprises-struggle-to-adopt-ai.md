@@ -119,20 +119,14 @@ Every entry in `ask` is a synchronous stop that needs a human present to click a
 
 The fix isn't to remove guardrails, it's to size them to the risk: deny what's destructive or leaks secrets, turn on auto mode for everything else, and reserve `ask` for the few actions that are genuinely hard to undo.
 
-## 8. Maturity gets mistaken for maximum autonomy
+## 8. Mature software needs more determinism {#8-maturity-gets-mistaken-for-maximum-autonomy}
 
 ![Three dials, not a ladder: Delegation, Oversight (approve each step to review output to spot-check to none), and Concurrency (1 agent to 5+ agents), each shown as a slider with two example settings — a critical system dialed low and a weekend experiment dialed high](/blog/2026/enterprise-ai-three-dials.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/A2UBrQbos61)*
 
-There isn't a ladder to climb, even though it gets talked about like one. What varies task to task is three dials: how much work you delegate to the agent, how much oversight you retain (approve each step, review the output before it lands, spot-check occasionally, or none at all), and how many agents you run at once. Maturity is the ability to set those three dials for what a given task is worth — not to push all three to maximum and leave them there.
+A mature project that wasn't built for agents probably doesn't need an agent swarm. Its value is in predictable behaviour and preserving existing contracts. More agents working at once can mean more overlapping changes to reconcile and review.
 
-[Feng et al.](https://arxiv.org/abs/2506.12469) give a decent vocabulary for the oversight dial — Operator, Collaborator, Consultant, Approver, Observer, running from "I decide every action" to "I mostly watch." That maps roughly onto the coarser approve-each-step / review-output / spot-check / none most teams use day to day.
-
-[Steve Yegge's Eight Levels of Agentic Adoption](https://newsletter.pragmaticengineer.com/p/steve-yegge-on-ai-agents-and-the) is a good read for what dial settings feel like in practice — watching every diff, then watching the conversation instead of diffs, then abandoning the IDE for a CLI agent, then running several agents in parallel, then building your own orchestrator for a fleet of them. Useful as anecdote for what each configuration feels like to a working developer. Not useful as a scorecard: "level 8" isn't the goal, and treating it as one is the misalignment.
-
-A weekend experiment is a fine place to run all three dials at maximum: delegate almost everything, review only the final output, run several agents in parallel. Nothing depends on it. But pointing that configuration at a critical system is a mismatch, not a promotion. Productionising often means deliberately turning the dials *down* from where you'd run them for an experiment — more oversight, fewer agents, a smaller slice of work delegated per step — even though that looks, from outside, like a regression to an "earlier level."
-
-The enterprises that get this wrong tend to pick one fixed dial setting for everyone and everything, rather than trusting individuals or teams to set the dials per task. That's the same instinct as an org-wide MCP policy [in point 4](#4-guardrails-can-bite): a single position applied uniformly, when the judgment that matters is knowing when to turn it down.
+For stable software, I'd favour fewer agents, narrowly scoped tasks, small diffs, and deterministic checks: tests, types, linters, and repeatable builds. An experiment built around agents can justify more autonomy and concurrency. How much you delegate, how closely you review it, and how many agents you run should follow the needs of the project.
 
 ## 9. Everything gets centralised, but improving the loop is a team-level job
 
@@ -171,12 +165,14 @@ An enterprise that re-approves the same block over and over, instead of closing 
 
 ## 11. Approve = merge
 
-![Approve = Merge: on the left, merge as the release gate — PR approved, wait for a scheduled merge window, someone clicks Merge manually, deployed; on the right, auto-merge on approve — PR approved, auto-merge fires immediately, main always reflects reviewed code, release timing controlled separately by a flag or deploy gate; a Terraform github_repository resource panel shows allow_auto_merge = true as the setting that enables it](/blog/2026/enterprise-ai-approve-equals-merge.png)
+![Approve = Merge should be the default: today, a PR is approved and checks pass, but nobody clicks Merge and the PR stays open; with auto-merge enabled, the same approvals and checks lead automatically to a merged PR](/blog/2026/enterprise-ai-approve-equals-merge.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/6d3sARL0kos)*
 
-Some enterprises don't just want a human to approve a PR — they want to control when it merges, so someone clicks Merge at a scheduled release window instead of the moment it's approved. That's two decisions wearing one costume: whether the code is correct is a review question, when it should go live is a release question, and holding the branch hostage to the second one reintroduces the exact toll [point 10](#10-bug-to-fix-not-a-toll-to-pay) argued against.
+The PR is approved. The checks have passed. But nobody hits Merge, so the code sits there until someone remembers. The decision is already made; the remaining delay is just a forgotten button.
 
-The fix is to decouple them: approve should mean merge, immediately, so `main` always reflects what's been reviewed. Control *release* timing separately — a feature flag, a deploy gate, a promotion step — rather than parking reviewed code on a branch until a clock strikes. GitHub has the button for this; in Terraform it's one argument on the repository resource:
+**Approve = Merge should be the default.** Once all required approvals and checks are satisfied, merge automatically. Nobody should need to come back and perform a second manual action to carry out the decision they already made.
+
+On GitHub, this Terraform setting makes auto-merge available for the repository:
 
 ```hcl
 resource "github_repository" "repo" {
@@ -185,7 +181,7 @@ resource "github_repository" "repo" {
 }
 ```
 
-Without `allow_auto_merge = true`, "approve" and "merge" stay two manual actions no matter how fast your agents write code — which means the last mile of the loop is gated by whoever remembers to come back and click the second button.
+That setting alone doesn't turn it on for every PR: [auto-merge must also be enabled on each PR](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/automatically-merging-a-pull-request). Make that part of the normal workflow, so an approved change doesn't sit waiting for a click.
 
 ## 12. Too Waterfall, AI psychosis instead of Agile
 
@@ -208,8 +204,24 @@ I use [sloc-sensor](https://github.com/kaihendry/sloc-sensor): pre-commit hooks 
 
 But a pre-commit hook only catches git commits. Claude Desktop wired into Confluence over MCP can dump a wall of text onto a wiki page with nothing watching — there's no staging area to block on. A mechanical sensor only works where a checkpoint exists; everywhere else, "less is more" has to be a value the org holds, not a hook it installed once.
 
+## 14. Decisions become the bottleneck
+
+[Clare Liguori describes this inside Amazon, from 18:45 in her talk](https://www.youtube.com/watch?v=pqlWNihgdjI&t=1125s): when a product took nine to twelve months to build, two months deciding to build it and another two approving its launch were less conspicuous. Once implementation takes one or two months, those decisions dominate the timeline.
+
+{{< youtube id="pqlWNihgdjI" start=1125 title="Clare Liguori: decisions become the bottleneck" loading="lazy" >}}
+
+I've seen the same pattern with integrations. The code can be ready while you're still finding the owner, agreeing access, working out credentials, and negotiating which data you can use. Then you repeat it for the next system. Sending everyone to a central team puts another queue in front of the same unanswered questions.
+
+Naming an owner only gets you part of the way. There may be both a technical owner and a business owner: one can approve the connection while the other has to decide about the data and risk. Both need to agree on a path people can use:
+
+- A narrow, read-only default, approved once and documented so the next team can connect without a ticket.
+- A clear escalation path for write access, wider scope, or sensitive data.
+- A maintained list of supported integration options, including credential requirements, performance limits, and who already uses them.
+
+The owners keep that guidance and scope current as APIs and security requirements change. Routine integrations can then proceed without waiting for another decision; exceptions get the attention they need. That's how faster coding becomes faster delivery.
+
 ## Closing
 
 A pattern shows through the specifics: a chain of approvers, a security committee, a platform team — each holds a piece of the decision, none holds the outcome. That's not a model limitation or a tooling gap. It's a missing owner.
 
-Every fix works the same way: give one person or team both the authority to decide and the consequences of the decision, and the loop closes. Split those two apart across a chain of approvers, and no amount of model capability fixes it. Ownership, not capability, is the ceiling on enterprise AI adoption.
+Every fix needs clear ownership: authority to decide, accountability for the outcome, and a supported path others can use without asking again. Where technical and business ownership are separate, agreeing and maintaining that path is a shared responsibility. Split authority from accountability across a chain of approvers, and the faster implementation loop still ends in a queue.
