@@ -6,6 +6,13 @@ toc: true
 tags: [ai]
 ---
 
+<style>
+article > header h1 {
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  text-wrap: balance;
+}
+</style>
+
 <!-- Convention: every numbered section below gets a matching visual — an Excalidraw poster
      (create_scene, build with edit_scene_content/create_diagram, take_screenshot to verify,
      extract the PNG to static/blog/2026/, link "Edit this diagram on Excalidraw" underneath)
