@@ -35,33 +35,24 @@ Later in the same conversation he calls this a classic [innovator's dilemma](htt
 
 > These companies have gotten so good, so established at the old way, and therefore their entire structure, management layers, processes are tuned for a time that no longer exists. But you can't pivot that. These are super tankers.
 
-## 2. Crippled model/harness access
+## 2. API billing and Max/Pro are different products {#2-crippled-modelharness-access}
 
-![Enterprise API: what's switched off — Sonnet on, Opus off, Fable off, /rc and dynamic subagents off, other model providers off](/blog/2026/enterprise-ai-crippled-model-access.png)
+<span id="3-max-vs-api-is-a-different-product-and-shadow-it-isnt-allowed"></span>
+
+![Restrictions in an enterprise setup I've used: Sonnet on, Opus off, Fable off, /rc and dynamic subagents off, other model providers off](/blog/2026/enterprise-ai-crippled-model-access.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/9W1PEuLFZrv)*
 
-From my own experience: enterprise API billing plans quietly turn off most of what makes Claude Code good.
+An enterprise's "API Usage Billing" account can feel worlds apart from [Claude Max](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan) or [OpenAI's ChatGPT Pro](https://learn.chatgpt.com/docs/pricing). Those subscriptions bundle usage within plan limits; API access meters consumption separately, with different feature availability. The same coding agent can become a very different product depending on how you sign in.
 
-- Only access to Sonnet, for cost reasons — no Opus, no Fable, nothing to cross-check against.
-- No `/rc` or dynamic subagent capabilities.
-- No access to models outside Anthropic, even for comparison.
+For enterprises handling sensitive data, a major reason to take the API route is **zero data retention (ZDR)**: keeping prompts and responses out of the provider's retained logs. A promise not to train on your data doesn't provide that guarantee, and API billing alone doesn't enable ZDR.
 
-Individuals paying out of pocket will happily run multiple models against each other to catch mistakes. Enterprises on a fixed budget line strip that down to the cheapest single model — a different product.
+Anthropic's announced [Enterprise Frontier Safeguards](https://www.anthropic.com/news/enterprise-frontier-safeguards) combines ZDR privacy with misuse detection by keeping monitoring data in customer-controlled cloud infrastructure. It's due to roll out in phases later this autumn, across enterprise products as well as the API. OpenAI calls its API control [Zero Data Retention](https://developers.openai.com/api/docs/guides/your-data#zero-data-retention); it requires approval and has model, endpoint, and feature limitations.
 
-Worse: it's not just the model — it's the harness around it. Which features and models are enabled comes down to feature flags on claude.ai or the API console, and which flags are on for a given org isn't transparent. You can't tell, from outside, whether a missing capability is policy, a cost-saving default, or just an org not yet switched to a newer flag.
+Then procurement and policy narrow access further. In enterprise setups I've used, that has meant Sonnet only for cost reasons, no Opus or Fable, no `/rc` or dynamic subagents, and no other provider to cross-check results. Those are the restrictions I've encountered, not inherent limits of every API account; users often can't tell which come from policy, product availability, or account configuration.
 
-## 3. Max vs API is a different product, and "shadow IT" isn't allowed
+That gap pushes people towards a personal Max or Pro subscription. But sending company data through an unapproved personal account is shadow IT and can defeat the controls procurement selected. The enterprise needs an approved route with enough capability to do the work, or the compliant seat stays underused.
 
-![Max vs API: not the same product — Claude Max has the full model lineup, generous usage, and Code features on by default; the company API seat is Sonnet-only with capped usage and features off. An employee is pulled toward Max via shadow IT despite it being against policy, while the sanctioned but crippled API seat sits underused](/blog/2026/enterprise-ai-max-vs-api.png)
-*[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/4X8Ro1EuK4D)*
-
-Claude's Max subscription and API-billed access aren't just different price points — they're different products. Max gets the full model lineup, generous usage, and Claude Code features on by default; API billing is what IT procures, and it's the stripped-down version above.
-
-That gap creates a temptation: use a personal Max subscription for work instead of the company's crippled API seat. That's shadow IT (a more accurate name than "personal choice of tooling") and against policy at most companies — the work ends up flowing through an account IT doesn't control or audit. Never mind doing your best AI-assisted work out of hours on a personal subscription, which raises its own questions about whose time and IP that work belongs to.
-
-So the choice ends up being: use the good product and break policy, or use the compliant product and get a fraction of the value.
-
-## 4. Guardrails can bite
+## 3. Guardrails can bite {#4-guardrails-can-bite}
 
 ![One committee, every team's MCP request: three teams' MCP requests fan into a single org-wide security review that takes months, versus a nonexistent team-scoped risk-acceptance path that would take days](/blog/2026/enterprise-ai-mcp-bottleneck.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/7nzNz0y1Y9s)*
@@ -76,7 +67,7 @@ DHH makes a related point about AI safety guardrails in general, [around the 3h3
 
 Overcautious IT/security policy has the same effect on staff: once a few guardrails clearly exist to cover the org rather than protect anyone, people stop trusting any of them, and stop pushing the tools to their limits.
 
-## 5. PII, IP, and GDPR block the tools that matter most
+## 4. PII, IP, and GDPR block the tools that matter most {#5-pii-ip-and-gdpr-block-the-tools-that-matter-most}
 
 ![The iteration loop broken: running product to agent access blocked (PII/GDPR risk in logs) instead of to agent, to fix deployed, back to running product](/blog/2026/enterprise-ai-broken-loop.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/7v4faIaUQy5)*
@@ -87,7 +78,7 @@ But Datadog logs in a large enterprise are likely to contain PII — a user's em
 
 So the most powerful use case — agents monitoring and fixing the running product — gets killed first, while lower-stakes, lower-value uses (autocomplete, boilerplate generation) sail through because nobody's PII is at risk.
 
-## 6. Requirements capture is not done well
+## 5. Requirements capture is not done well {#6-requirements-capture-is-not-done-well}
 
 Agents removed the implementation bottleneck, which exposes the next one: nobody wrote down what they wanted. There's no `intent.md`, no clear use cases, just a vague prompt and a vibe.
 
@@ -97,7 +88,7 @@ What matters most for accountability: "The product owner no longer writes the sp
 
 Fast implementation on top of an unexamined intent doesn't remove risk — it gets you to the wrong thing faster, with a paper trail that looks like due diligence happened when it didn't.
 
-## 7. Permission prompts break the flow
+## 6. Permission prompts break the flow {#7-permission-prompts-break-the-flow}
 
 There's a second kind of guardrail, applied at the tooling level rather than by policy: not turning on [auto mode](https://code.claude.com/docs/en/auto-mode-config), or a `.claude/settings.json` that routes everyday, reversible actions through an "ask" prompt.
 
@@ -126,7 +117,7 @@ Every entry in `ask` is a synchronous stop that needs a human present to click a
 
 The fix isn't to remove guardrails, it's to size them to the risk: deny what's destructive or leaks secrets, turn on auto mode for everything else, and reserve `ask` for the few actions that are genuinely hard to undo.
 
-## 8. Mature software needs more determinism {#8-maturity-gets-mistaken-for-maximum-autonomy}
+## 7. Mature software needs more determinism {#8-maturity-gets-mistaken-for-maximum-autonomy}
 
 ![Three dials, not a ladder: Delegation, Oversight (approve each step to review output to spot-check to none), and Concurrency (1 agent to 5+ agents), each shown as a slider with two example settings — a critical system dialed low and a weekend experiment dialed high](/blog/2026/enterprise-ai-three-dials.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/A2UBrQbos61)*
@@ -135,12 +126,12 @@ A mature project that wasn't built for agents probably doesn't need an agent swa
 
 For stable software, I'd favour fewer agents, narrowly scoped tasks, small diffs, and deterministic checks: tests, types, linters, and repeatable builds. An experiment built around agents can justify more autonomy and concurrency. How much you delegate, how closely you review it, and how many agents you run should follow the needs of the project.
 
-## 9. Everything gets centralised, but improving the loop is a team-level job
+## 8. Everything gets centralised, but improving the loop is a team-level job {#9-everything-gets-centralised-but-improving-the-loop-is-a-team-level-job}
 
 ![Centralize the policy, lose the team loop: a team's own feedback loop (prompt and tool logs, mine for patterns, refine CLAUDE.md/skills/prompts) contrasted with a centralized enterprise OTEL policy that either disables logging org-wide, leaving nothing to learn from, or centralizes it with security/platform instead of the team — either way the loop never closes](/blog/2026/enterprise-ai-otel-loop.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/27RhcmamKkS)*
 
-We touched on centralisation — MCP risk acceptance in point 4, PII/GDPR in point 5 — but it's worth calling out on its own, because it blocks the thing enterprises say they want: continuously improving their own AI-assisted SDLC.
+We touched on centralisation — MCP risk acceptance in point 3, PII/GDPR in point 4 — but it's worth calling out on its own, because it blocks the thing enterprises say they want: continuously improving their own AI-assisted SDLC.
 
 Doing that well needs a tight, local loop: collect real prompt and tool-call logs for your team, look at what the agent got wrong or right, and use that to refine your `CLAUDE.md`, skills, and prompts. Claude Code has the telemetry for it — `OTEL_LOG_USER_PROMPTS` and `OTEL_LOG_TOOL_DETAILS` log the prompt text, bash commands, and MCP/tool arguments, alongside `OTEL_METRICS_INCLUDE_VERSION` for good measure:
 
@@ -150,18 +141,18 @@ Doing that well needs a tight, local loop: collect real prompt and tool-call log
 "OTEL_METRICS_INCLUDE_VERSION": "true"
 ```
 
-Both content flags default to off, redacted otherwise, for good reason — that's the same PII/IP exposure as point 5, generated by your own developers this time instead of pulled from production logs. So the org sets one policy for everyone: usually disabled outright, so nobody has the raw material to learn from; occasionally enabled but centralised into a security or platform team's backend, so the team that generated the prompts can't query their own data.
+Both content flags default to off, redacted otherwise, for good reason — that's the same PII/IP exposure as point 4, generated by your own developers this time instead of pulled from production logs. So the org sets one policy for everyone: usually disabled outright, so nobody has the raw material to learn from; occasionally enabled but centralised into a security or platform team's backend, so the team that generated the prompts can't query their own data.
 
 Either way, a large org has no structure for supporting many small, team-owned feedback loops running at once — it has one policy, decided centrally, applied everywhere. The loop that would make the enterprise better at this never gets to run.
 
-## 10. Bug to fix, not a toll to pay
+## 9. Bug to fix, not a toll to pay {#10-bug-to-fix-not-a-toll-to-pay}
 
 ![Bug to fix, not a toll to pay: paying the toll means hitting the same block and getting it approved again forever; fixing the bug means capturing the block, fixing the underlying constraint, and never hitting it again](/blog/2026/enterprise-ai-bug-not-toll.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/2OvwpaGjgXT)*
 
 Every block in the loop — an `ask` prompt, a denied MCP, a log that cannot be shared — should get captured and fixed, not paid again next time. Capture it, then fix the actual constraint behind it (widen the allowlist, get the MCP risk-accepted, redact the field properly) so the next run doesn't hit the same wall. Auto mode's own "Recently denied" list already works this way: it exists so you fix the environment entry once instead of re-approving the same command forever.
 
-The same discipline works as a retro exercise: pull PR lead time next to the agent's own chat and tool-call logs for that PR, and see where the wall-clock went — waiting on an `ask` prompt, the agent stuck on a false start, code review, CI. Whichever block ate the most time that cycle is the one to fix before the next. That's the same team-level loop from [point 9](#9-everything-gets-centralised-but-improving-the-loop-is-a-team-level-job): it works only if the team has both the PR timestamps and its own chat logs to look at, not just one or neither.
+The same discipline works as a retro exercise: pull PR lead time next to the agent's own chat and tool-call logs for that PR, and see where the wall-clock went — waiting on an `ask` prompt, the agent stuck on a false start, code review, CI. Whichever block ate the most time that cycle is the one to fix before the next. That's the same team-level loop from [point 8](#9-everything-gets-centralised-but-improving-the-loop-is-a-team-level-job): it works only if the team has both the PR timestamps and its own chat logs to look at, not just one or neither.
 
 ![Two clocks, no shared visibility: Claude Code's own logs see the ask-prompt wait inside a session (agent working, ask prompt waiting on you, agent working); GitHub separately sees the review wait after the PR is opened (waiting for review, review and merge); nothing sees both, so the two have to be joined by PR or branch after the fact](/blog/2026/enterprise-ai-two-clocks.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/72ywfD6URIq)*
@@ -170,7 +161,7 @@ That's why it's two retro data sources, not one: Claude Code's own logs see only
 
 An enterprise that re-approves the same block over and over, instead of closing it out, is bleeding the loop's velocity one approval at a time.
 
-## 11. Approve = merge
+## 10. Approve = merge {#11-approve--merge}
 
 ![Approve = Merge should be the default: today, a PR is approved and checks pass, but nobody clicks Merge and the PR stays open; with auto-merge enabled, the same approvals and checks lead automatically to a merged PR](/blog/2026/enterprise-ai-approve-equals-merge.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/6d3sARL0kos)*
@@ -190,14 +181,14 @@ resource "github_repository" "repo" {
 
 That setting alone doesn't turn it on for every PR: [auto-merge must also be enabled on each PR](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/automatically-merging-a-pull-request). Make that part of the normal workflow, so an approved change doesn't sit waiting for a click.
 
-## 12. Too Waterfall, AI psychosis instead of Agile
+## 11. Too Waterfall, AI psychosis instead of Agile {#12-too-waterfall-ai-psychosis-instead-of-agile}
 
 ![Lead Time for Changes vs. the Intent-to-Test Loop: a timeline from idea captured through first commit, deployed to prod, to feedback observed, with DORA's Lead Time for Changes bracket only covering commit to deploy, a red bracket marking the planning gap before it as invisible to DORA, and an overarching bracket showing intent to test as the loop the Agile Manifesto cares about](/blog/2026/enterprise-ai-lead-time-vs-intent.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/2OIk7zz0VEr)*
 
 `intent.md` gets treated as the artefact to get right up front — reviewed, signed off, revised through committee — when agents make being wrong cheap to recover from. That's Waterfall wearing an AI costume: a phase-gated plan followed by a big-bang implementation, with an agent doing the typing instead of a dev team. Call it AI psychosis — the belief that a model needs a fully specified plan before it's safe to let loose, when the point of agents is that "try it and see" is now nearly free. The [Agile Manifesto](https://agilemanifesto.org/) said it before agents existed: "Responding to change over following a plan." Capturing intent should stay lightweight — a paragraph, not a document — and the loop from idea to running code to feedback is worth protecting, not the plan that preceded it.
 
-## 13. Less is more
+## 12. Less is more {#13-less-is-more}
 
 ![Diff size is a cognitive-load knob, not just a shipping-speed knob: two parallel flows compare no commit-size limit (agent proposes 823 lines across 14 files, reviewer skims and approves in two minutes, regression ships to production) against sloc-sensor capping commits at 100 lines added (hook blocks the commit and splits it into ≤100-line pieces, reviewer actually reads each commit, regression caught in review)](/blog/2026/enterprise-ai-diff-cognitive-load.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/1DIFaljHApM)*
@@ -211,7 +202,7 @@ I use [sloc-sensor](https://github.com/kaihendry/sloc-sensor): pre-commit hooks 
 
 But a pre-commit hook only catches git commits. Claude Desktop wired into Confluence over MCP can dump a wall of text onto a wiki page with nothing watching — there's no staging area to block on. A mechanical sensor only works where a checkpoint exists; everywhere else, "less is more" has to be a value the org holds, not a hook it installed once.
 
-## 14. Decisions become the bottleneck
+## 13. Decisions become the bottleneck {#14-decisions-become-the-bottleneck}
 
 [Clare Liguori describes this inside Amazon, from 18:45 in her talk](https://www.youtube.com/watch?v=pqlWNihgdjI&t=1125s): when a product took nine to twelve months to build, two months deciding to build it and another two approving its launch were less conspicuous. Once implementation takes one or two months, those decisions dominate the timeline.
 
