@@ -1,8 +1,8 @@
 ---
 title: "The Hybrid Meeting Problem"
 date: 2026-09-21T13:28:04Z
-lastmod: 2026-09-21T14:53:20Z
-description: "One computer per person is a starting point for fairer hybrid meetings. Capturing everyone's contributions is the bigger opportunity. Can Granola help?"
+lastmod: 2026-09-21T15:03:15Z
+description: "Hybrid meeting audio and speaker identification already have solutions. The bigger opportunity is keeping the recording alongside approved decisions."
 tags: [audio-video, ai]
 thumbnail: /blog/2026/hybrid-meeting-overview.png
 image_alt: "Eight people share local cues around a table while five remote participants reach them through one shared call connection."
@@ -10,7 +10,7 @@ image_alt: "Eight people share local cues around a table while five remote parti
 
 Eight people in a room. Five dialled in. One agenda, but two different experiences. The room has eye contact, quick asides and its own rhythm. Everyone else has to find a gap in the call.
 
-Three things go wrong:
+Three familiar failure modes:
 
 - **Audio:** several laptops with speakers and microphones active in one room can create echo and feedback. One room audio connection reduces that risk, but can obscure who said what.
 - **Participation:** remote people struggle to enter a conversation whose turns are negotiated in the room.
@@ -25,34 +25,47 @@ Three things go wrong:
 
 It's a clear solution, and often an impractical one. An office may not have eight quiet spaces available. Headsets around one table still pick up neighbouring voices, and people hear each other both directly and through the call. It also gives up some of the reason for gathering in a room.
 
+There is already a useful alternative: [**Google Meet's adaptive audio**](https://support.google.com/meet/answer/14263133?hl=en-GB) coordinates the microphones and speakers of several laptops in the same room to prevent echo. It requires an eligible Workspace subscription and doesn't work alongside Meet hardware devices. One computer per person needn't always mean separate rooms or headsets. However, Meet merges the room's audio and highlights its participants collectively; this isn't a promise of separate recordings or named speaker attribution.
+
 [![One computer per person gives everyone access to a shared call and agenda, but needs quiet spaces and headsets. A hybrid fallback uses one room audio connection, individual laptops without audio, and a remote advocate.](/blog/2026/hybrid-meeting-setups.png)](/blog/2026/hybrid-meeting-setups.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/64nCha7ZB7R)*
 
-If everyone must stay around the table, use one room audio connection and join individual laptops **without audio** for chat and questions. [Zoom warns that muting microphones alone leaves speakers active](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061720). Use a [shared live agenda](https://handbook.gitlab.com/handbook/company/culture/all-remote/live-doc-meetings/) and give someone responsibility for bringing remote contributions into the discussion. Breakouts still need physical space and planning.
+Another arrangement is one room audio connection with individual laptops joining **without audio** for chat and questions. [Zoom warns that muting microphones alone leaves speakers active](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061720). Use a [shared live agenda](https://handbook.gitlab.com/handbook/company/culture/all-remote/live-doc-meetings/) and give someone responsibility for bringing remote contributions into the discussion. Breakouts still need physical space and planning.
 
 ## Separately: record everyone
 
 For me, the bigger opportunity is **capturing everyone's contributions so we can work with them afterwards**. A requirements discussion could become material for an agent to extract constraints, find contradictions, ask follow-up questions and build something. That's much more useful than a summary nobody reads.
 
-The capture needs to include the room, the remote participants and any breakouts, with participants agreeing to it. Ideally, preserve separate audio tracks tied to individuals where the recording setup supports them. One computer per person helps associate speech with a participant, but doesn't automatically produce separate recordings.
+The capture needs to include the room, remote participants and breakouts, with participants agreeing to it. Two requirements are easy to confuse: **identifying who spoke** and **saving separate audio tracks**. A transcript can name people whose voices still share one recording.
 
 [![Two people speak through one microphone. Separating their voices in a transcript is different from identifying their names and confirming action owners.](/blog/2026/hybrid-meeting-speaker-identity.png)](/blog/2026/hybrid-meeting-speaker-identity.png)
 *[Edit this diagram on Excalidraw](https://app.excalidraw.com/s/cQESkNUilU/4JoK3WQeoBW)*
 
-As transcription models improve, we can revisit the same audio and potentially recover words or speaker distinctions an earlier model missed. A summary alone loses that opportunity: it has already selected what mattered and discarded the rest.
+## The capture problem already has solutions
+
+These are documented product features; their accuracy needs testing in the actual room:
+
+| Setup | What it already offers | What needs configuring |
+| --- | --- | --- |
+| [Microsoft Teams speaker recognition](https://learn.microsoft.com/en-us/microsoftteams/rooms/voice-recognition) | Names individual speakers sharing room audio. Microsoft also documents a laptop with a USB speakerphone option. | Voice enrolment, meeting invitations and administrator settings. Teams Rooms needs a Pro licence; the laptop host needs Teams Premium or Copilot. Check the calendar requirements. |
+| [Zoom Rooms smart name tags for voice](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0077409) | Attributes room speech to individuals in captions, transcripts and summaries. | Supported room setup, administrator enablement, and voice enrolment/invitations for automatic names. It doesn't work when the room joins another platform's meeting. |
+| [Ordinary Zoom desktop recording](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0076922) | Saves a separate audio file per connected participant, including on the free plan. | Enable the separate-audio-files option. Several humans sharing one room connection still share that audio stream. |
+| [Otter](https://help.otter.ai/hc/en-us/articles/21665587209367-Speaker-Identification-Overview) | Distinguishes speakers after processing; naming them helps it recognise their voices in future. | Review and correct the names. It also supports [audio export](https://help.otter.ai/hc/en-us/articles/360047733634-Export-conversations), so the transcript needn't be the only surviving record. |
+
+Turn on actual recording as well as transcription: [Teams can retain meeting audio](https://support.microsoft.com/en-us/teams/meetings/start-stop-and-find-meeting-recordings-in-microsoft-teams), and [Zoom cloud recording offers mixed or per-participant audio files](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064676). Check retention settings. Breakouts require extra care: [Zoom cloud recording captures only the main room](https://www.zoom.com/en/blog/using-zoom-breakout-rooms/); recording each breakout needs a participant recording locally in it.
+
+So this doesn't require waiting for future technology. The work is choosing and configuring a setup, then checking that it captured everyone correctly. Better attribution still doesn't make room participants notice a remote colleague trying to interrupt.
+
+## Keep the recording and approve the outputs
+
+As transcription models improve, we can revisit the same audio and potentially recover words or speaker distinctions an earlier model missed. A summary alone loses that opportunity: it has already selected what mattered and discarded the rest. Better models still can't guarantee recovery of speech the microphones never captured clearly.
 
 There is still a reason to synthesise early. People need a concise account of decisions, owners and open questions to review and approve while the meeting is fresh. I'd keep both: **the source recording for reprocessing, and the approved outputs for acting on**. Better transcription can inform a correction; it shouldn't silently change what was agreed.
 
 ## Does Granola solve this?
 
-[Granola](https://www.granola.ai/) was suggested to me. It does more than provide a shared notepad:
+[Granola](https://www.granola.ai/) is more than a shared notepad. It transcribes microphone and computer audio without a meeting bot, combines the transcript with your notes to produce [AI-enhanced notes](https://docs.granola.ai/help-center/taking-notes/ai-enhanced-notes), and makes meeting material available through [MCP](https://docs.granola.ai/help-center/sharing/integrations/mcp).
 
-1. Its desktop app captures **microphone and computer audio** for [live transcription](https://docs.granola.ai/help-center/taking-notes/transcription), without a bot joining the call.
-2. It combines the transcript, your typed notes and calendar context into [**AI-enhanced notes**](https://docs.granola.ai/help-center/taking-notes/ai-enhanced-notes).
-3. You can query the meeting material afterwards, including through its [MCP integration](https://docs.granola.ai/help-center/sharing/integrations/mcp).
+But its desktop [speaker tags cannot distinguish people sharing a meeting-room device](https://docs.granola.ai/help-center/taking-notes/speaker-attribution). Its mobile app can distinguish speakers face-to-face, yet Granola [doesn't save the audio](https://docs.granola.ai/help-center/taking-notes/transcription). There is no recording to replay or re-transcribe.
 
-The catch is directly relevant here: **Granola's speaker tags cannot distinguish people sharing one meeting-room device.** They use the meeting platform's participant names; its [Zoom integration](https://docs.granola.ai/help-center/taking-notes/speaker-attribution-zoom) reads Zoom's active-speaker information. Eight people behind one room account remain a problem. [Speaker-tag limitations](https://docs.granola.ai/help-center/taking-notes/speaker-attribution).
-
-Its mobile app can distinguish speakers in face-to-face meetings, but Granola also says it **doesn't save the audio**. You get a transcript and notes, with no recording to replay or re-transcribe with a better model. [How transcription works](https://docs.granola.ai/help-center/taking-notes/transcription).
-
-So Granola looks useful for capturing and reusing a discussion. Its documented capabilities leave the shared-room identity problem unresolved, and it doesn't preserve the source audio. I'd start with one computer per person where practical, capture everyone's contribution, and approve the meeting outputs without throwing away the material behind them.
+That makes Granola useful for notes, but a poor fit for my requirement to preserve the source. I'd first test the recording and speaker-recognition features in the meeting platform we already use, then check the names, decisions and owners with the people who were there.
