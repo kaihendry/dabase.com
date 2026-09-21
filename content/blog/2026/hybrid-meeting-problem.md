@@ -1,8 +1,8 @@
 ---
 title: "The Hybrid Meeting Problem"
 date: 2026-09-21T13:28:04Z
-lastmod: 2026-09-21T15:03:15Z
-description: "Hybrid meeting audio and speaker identification already have solutions. The bigger opportunity is keeping the recording alongside approved decisions."
+lastmod: 2026-09-21T15:23:02Z
+description: "Hybrid meetings need identifiable speakers, a usable audio mix, preserved recordings and a chair responsible for the conversation and its record."
 tags: [audio-video, ai]
 thumbnail: /blog/2026/hybrid-meeting-overview.png
 image_alt: "Eight people share local cues around a table while five remote participants reach them through one shared call connection."
@@ -56,16 +56,24 @@ Turn on actual recording as well as transcription: [Teams can retain meeting aud
 
 So this doesn't require waiting for future technology. The work is choosing and configuring a setup, then checking that it captured everyone correctly. Better attribution still doesn't make room participants notice a remote colleague trying to interrupt.
 
-## Keep the recording and approve the outputs
-
-As transcription models improve, we can revisit the same audio and potentially recover words or speaker distinctions an earlier model missed. A summary alone loses that opportunity: it has already selected what mattered and discarded the rest. Better models still can't guarantee recovery of speech the microphones never captured clearly.
-
-There is still a reason to synthesise early. People need a concise account of decisions, owners and open questions to review and approve while the meeting is fresh. I'd keep both: **the source recording for reprocessing, and the approved outputs for acting on**. Better transcription can inform a correction; it shouldn't silently change what was agreed.
-
 ## Does Granola solve this?
 
 [Granola](https://www.granola.ai/) is more than a shared notepad. It transcribes microphone and computer audio without a meeting bot, combines the transcript with your notes to produce [AI-enhanced notes](https://docs.granola.ai/help-center/taking-notes/ai-enhanced-notes), and makes meeting material available through [MCP](https://docs.granola.ai/help-center/sharing/integrations/mcp).
 
 But its desktop [speaker tags cannot distinguish people sharing a meeting-room device](https://docs.granola.ai/help-center/taking-notes/speaker-attribution). Its mobile app can distinguish speakers face-to-face, yet Granola [doesn't save the audio](https://docs.granola.ai/help-center/taking-notes/transcription). There is no recording to replay or re-transcribe.
 
-That makes Granola useful for notes, but a poor fit for my requirement to preserve the source. I'd first test the recording and speaker-recognition features in the meeting platform we already use, then check the names, decisions and owners with the people who were there.
+That makes Granola useful for notes, but a poor fit for my requirement to preserve the source. I'd first test the recording and speaker-recognition features in the meeting platform we already use.
+
+## The non-negotiables
+
+A meeting we intend to build on increasingly needs the discipline of a recording studio: check the inputs, listen to the mix and keep the source recordings. My requirements would be:
+
+- **Who said what, when.** Identifiable speakers in a timestamped transcript linked to the recording. Check the names; flag uncertain attribution rather than guessing.
+- **A usable audio mix.** Room and remote voices must both be clearly audible in the call and recording. Monitor what is actually being captured. Keep separate tracks alongside the mix where available.
+- **Sources available afterwards.** Preserve the recordings, transcript and referenced documents in a shared location, with working links and access for the people and tools that need them.
+- **Checked outcomes.** Participants confirm decisions, action owners and open questions while the meeting is fresh. Keep unresolved disagreement visible.
+- **A named chair.** Someone must manage participation and ensure the records are checked, complete and accessible afterwards. Recording and note-taking can be delegated; responsibility for their quality must be explicit.
+
+As transcription models improve, we can revisit the same audio and potentially recover words or speaker distinctions an earlier model missed. A summary alone loses that opportunity: it has already selected what mattered and discarded the rest. Better models still can't guarantee recovery of speech the microphones never captured clearly.
+
+We still need to synthesise early so people can approve a manageable account of what was agreed. Keep both: **the source recording for reprocessing, and the approved outputs for acting on**. Better transcription can inform a correction; it shouldn't silently change what was agreed. The chair's job now extends to the meeting's record.
