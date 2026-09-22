@@ -1,7 +1,7 @@
 ---
 title: "The Hybrid Meeting Problem"
 date: 2026-09-21T13:28:04Z
-lastmod: 2026-09-22T13:42:15Z
+lastmod: 2026-09-22T13:56:56Z
 description: "Have we solved the problem of meetings with both in-person and remote attendees?"
 tags: [audio-video, ai]
 thumbnail: /blog/2026/hybrid-meeting-overview.png
@@ -63,6 +63,21 @@ Without dedicated room hardware, [adaptive audio](https://support.google.com/mee
 Parliament's infrastructure also includes people operating it. Contractor [NEP Bow Tie](https://www.nepbowtie.com/what/uk-parliament) describes over 1,500 microphones across 50 room setups, over 170 broadcast camera channels, staff switching and mixing sound, and teams directing coverage and adding metadata. It also operates Parliament's 20 internet broadcast channels.
 
 During the pandemic, the Commons combined Zoom and large screens with organised speaking lists and expanded staffing. Its [2021 account](https://publications.parliament.uk/pa/cm5801/cmselect/cmproced/1282/128207.htm) explicitly describes the work as labour-intensive and proceedings as more choreographed, with remote interventions restricted. That is a useful qualification: a polished broadcast can depend on substantial staffing and constraints on conversation. It doesn't demonstrate that an informal hybrid workshop has been solved.
+
+### Guidance for a remote-friendly room
+
+These resources offer a starting point for specifying the room, running the meeting and checking that the result works:
+
+| Resource | What it covers |
+| --- | --- |
+| [W3C: Hybrid Group Meetings](https://www.w3.org/guide/meetings/hybrid-meeting.html) | Practical guidance on microphone coverage, camera and screen placement, shared content, a common speaking queue and named local support. |
+| [W3C: Accessibility of Remote Meetings](https://www.w3.org/TR/remote-meetings/) | Guidance from the Accessible Platform Architectures Working Group on accessible platforms, documents, captions and participation. Section 6 covers hybrid meetings. This is a Group Note, not a formal W3C Recommendation. |
+| [Google: Room Design Guide](https://roomdesignguide.withgoogle.com/) | Physical design: seating, cameras, microphone coverage, displays, lighting, acoustics, power and ventilation. Includes [background-noise targets](https://roomdesignguide.withgoogle.com/acoustics/background-noise). |
+| [Microsoft: Meeting room guidance](https://learn.microsoft.com/en-us/microsoftteams/rooms/room-planning-guidance) | Teams-specific layouts, equipment choices, acoustic treatment, lighting and infrastructure for building or improving rooms. |
+| [AVIXA: AV Systems Performance Verification](https://www.avixa.org/resources/standards/av-systems-performance-verification) | A formal framework for agreeing verification criteria, testing the installed system and documenting results. Its separate [videoconferencing lighting standard](https://www.avixa.org/resources/standards/lighting-performance-in-videoconferencing-rooms) provides performance criteria for small-to-medium rooms. |
+| [IETF: Guide to meetings](https://www.ietf.org/meeting/guide-ietf-meetings/) | An operational example: in-room participants use the electronic speaking queue, wait to be called, speak into microphones and identify themselves. |
+
+My minimum acceptance test, drawing on these resources, would be a real remote call with the intended room layout occupied: **can the remote participant hear every seat, see the speaker, access the same content and get a turn to speak?** Someone should own testing and faults as well as the equipment.
 
 ### Give someone responsibility for participation
 
