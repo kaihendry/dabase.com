@@ -1,7 +1,7 @@
 ---
 title: "The Hybrid Meeting Problem"
 date: 2026-09-21T13:28:04Z
-lastmod: 2026-09-22T14:01:05Z
+lastmod: 2026-09-22T14:07:49Z
 description: "Have we solved the problem of meetings with both in-person and remote attendees?"
 tags: [audio-video, ai]
 thumbnail: /blog/2026/hybrid-meeting-overview.png
@@ -36,9 +36,9 @@ Microphones, cameras, screens and room acoustics need to work as a system. Test 
 
 People can also stay together while using their laptops. [Google Meet's Companion mode](https://support.google.com/meet/answer/11295507?hl=en-GB) gives individuals participation controls while room hardware handles audio. Without dedicated room hardware, [adaptive audio](https://support.google.com/meet/answer/14263133?hl=en-GB) coordinates nearby laptops' microphones and speakers. It requires an eligible Workspace subscription and cannot be combined with Meet hardware devices.
 
-### Chair the whole meeting
+### Organise the whole meeting
 
-A named chair should own participation and outcomes. Use a [shared live agenda](https://handbook.gitlab.com/handbook/company/culture/all-remote/live-doc-meetings/), give remote attendees a reliable way to take a turn, and plan their involvement in breakouts. Side conversations and whiteboard work need to reach everyone.
+A named meeting organiser should own participation and outcomes. Use a [shared live agenda](https://handbook.gitlab.com/handbook/company/culture/all-remote/live-doc-meetings/), give remote attendees a reliable way to take a turn, and plan their involvement in breakouts. Side conversations and whiteboard work need to reach everyone.
 
 ### Keep a trustworthy record
 
@@ -61,8 +61,8 @@ These resources cover different parts of the job:
 
 ## Conclusion
 
-The equipment and guidance exist, but I don't think good hybrid meetings are yet a dependable default in ordinary offices. Connecting a room to a call is still too easily mistaken for including everyone.
+In my experience, hybrid meetings are still sorely lacking. Remote attendees too often struggle to hear the room, follow the discussion and get a word in.
 
-For working from home (WFH) to succeed alongside office attendance, remote participation has to work reliably. Leaders calling for a return to office (RTO) should first ask whether they have equipped their rooms and trained their chairs to support it. A badly run hybrid meeting is weak evidence that working from home has failed.
+For working from home (WFH) to succeed alongside office attendance, remote participation has to work reliably. Leaders calling for a return to office (RTO) should first ask whether they have equipped their rooms and trained their meeting organisers to support it. A badly run hybrid meeting is weak evidence that working from home has failed.
 
-**Equal participation should be a basic requirement of the workplace, wherever people join from.**
+Participants also need to make the effort: come prepared, use suitable equipment, test their audio and connection, and contribute. Those joining remotely need a quiet space and a working microphone and camera. Those in the room need to keep their discussion audible to people dialling in.
