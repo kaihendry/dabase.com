@@ -1,7 +1,7 @@
 ---
 title: "The Hybrid Meeting Problem"
 date: 2026-09-21T13:28:04Z
-lastmod: 2026-09-22T13:33:09Z
+lastmod: 2026-09-22T13:42:15Z
 description: "Have we solved the problem of meetings with both in-person and remote attendees?"
 tags: [audio-video, ai]
 thumbnail: /blog/2026/hybrid-meeting-overview.png
@@ -34,7 +34,7 @@ Run the meeting as a remote call, with everyone joining individually through the
 
 The cost now falls on people who came into the office. They have to find a quiet spot or book a booth to dial in, perhaps only metres from their colleagues. They lose much of the benefit of meeting in person, and the office needs enough suitable spaces for them all.
 
-Keeping everyone at the same table with a laptop each doesn't remove that problem. Microphones can still pick up neighbouring voices. **These approaches shift the inconvenience between the two groups; neither gives us everything we want.**
+Simply giving everyone at the same table a laptop doesn't coordinate their audio: microphones still pick up neighbouring voices. Systems such as Google's adaptive audio, discussed below, tackle this directly. **These two approaches expose the trade-off; better room systems try to reduce it.**
 
 ## Potential solutions
 
@@ -45,6 +45,24 @@ I'd look at a combination of better room setup, deliberate facilitation and a ch
 Test the setup from a remote attendee's end: can they hear everyone, see the speaker and follow the material being discussed? Put documents and whiteboard content somewhere everyone can access. Check that the recording captures both the room and remote voices clearly.
 
 Individual microphones and separate tracks can help with recording, but they still pick up neighbouring voices. [Close microphone placement, spacing and room acoustics](https://help.rode.com/hc/en-us/articles/6948902770447-Preventing-Audio-Bleed-in-Multi-Person-Recordings) help reduce that spill. Better equipment needs testing in the actual room; it doesn't settle who gets to speak.
+
+### What do Google, Facebook and Parliament use?
+
+Watching [Parliamentlive.tv](https://www.parliamentlive.tv/Commons), I want to know what equipment and infrastructure make it work. The public documentation gives some concrete answers, though it doesn't provide a complete inventory of these organisations' current systems.
+
+| Example | Documented equipment and infrastructure | What this tells us |
+| --- | --- | --- |
+| Google Meet Series One | Google's [2020 room-kit design](https://workspace.google.com/blog/product-announcements/google-meet-hardware-series-one-help-organizations-plan-for-the-future) includes a Meet Compute System, 4K Smart Camera and Smart Audio Bar with eight beamforming microphones. Larger configurations add mic pods and a touch controller. Components use Power over Ethernet; administrators manage devices centrally. | An integrated room system with audio processing, camera framing and fleet management. This is a published product design, not an inventory of Google's offices. |
+| Facebook / Meta | Integrator [ELB describes designing and installing AV for over 300 conference rooms and five executive briefing centres](https://www.elbeducation.com/elb-enterprise-case-studies/blog-post-title-three-xddwk) at Facebook's Menlo Park headquarters, after helping develop its AV standards. | Evidence of a substantial installation built to company standards. The case study doesn't name the equipment, and I haven't established Meta's current room setup. |
+| House of Commons committee rooms | A [May 2024 disclosure](https://www.parliament.uk/site-information/freedom-of-information/information-we-already-publish/house-of-commons-publication-scheme/chamber-and-committees/committee-room-microphones-2024/) lists Audio-Technica U853R and Bosch DCN-MICS microphones, plus bespoke units from other suppliers. | Specific installed microphones, but this list covers Commons committee rooms, not the Commons Chamber or all of Parliament. |
+
+Google also offers two ways to keep people together around a table. With [Companion mode](https://support.google.com/meet/answer/11295507?hl=en-GB), the room system handles audio while individual laptops provide chat, screen sharing and other participation controls. Room check-in attaches people's names to the room tile; that establishes attendance, not who spoke each sentence.
+
+Without dedicated room hardware, [adaptive audio](https://support.google.com/meet/answer/14263133?hl=en-GB) coordinates nearby laptops' microphones and speakers and selects the microphone closest to the speaker. It requires an eligible Workspace subscription and cannot be combined with Meet hardware devices. Google's [November 2024 engineering account](https://blog.google/products-and-platforms/products/workspace/adaptive-audio-google-meet/) describes ultrasound-based proximity detection, synchronisation and echo control, and reports daily use within Google. This is a concrete alternative to sending everyone off to separate booths.
+
+Parliament's infrastructure also includes people operating it. Contractor [NEP Bow Tie](https://www.nepbowtie.com/what/uk-parliament) describes over 1,500 microphones across 50 room setups, over 170 broadcast camera channels, staff switching and mixing sound, and teams directing coverage and adding metadata. It also operates Parliament's 20 internet broadcast channels.
+
+During the pandemic, the Commons combined Zoom and large screens with organised speaking lists and expanded staffing. Its [2021 account](https://publications.parliament.uk/pa/cm5801/cmselect/cmproced/1282/128207.htm) explicitly describes the work as labour-intensive and proceedings as more choreographed, with remote interventions restricted. That is a useful qualification: a polished broadcast can depend on substantial staffing and constraints on conversation. It doesn't demonstrate that an informal hybrid workshop has been solved.
 
 ### Give someone responsibility for participation
 
