@@ -1,0 +1,331 @@
+{
+  "id": "aymTKw5540A",
+  "title": "We're going to cfgmgmtcamp.org",
+  "description": "We’re going to cfgmgmtcamp.org! Kai Hendry and Vincent De Smet discuss their conference plans, what makes an agent harness useful, and whether AI can reliably review infrastructure changes.\n\nRecorded in two conversations, eight days apart: 23 September and 1 October 2026. The second recording starts at 19:20.\n\nWe compare Mecatl, Pi and the Agent Client Protocol; debate fast System One models and accountability; and explore AI-assisted retrospectives and Terraform plan reviews in Atlantis. Can an AI reviewer measure its own impact—or is it just telling us what we want to hear?\n\nWe also look at Claude Code agents and dynamic workflows, Stategraph and access to infrastructure context, and the trade-offs between Terraform automation tools. We finish with monorepos, security gates, and why better delivery depends on engineering practices as well as tools—then share our cfgmgmtcamp plans and Vincent’s Ignite news.\n\nCHAPTERS\n00:00 23 September: FOSDEM plans and conference culture\n05:21 Opus and prompting frustrations\n08:28 Agent harnesses: Mecatl, Pi and ACP\n19:20 1 October: Google Gemini and model rollouts\n21:10 Jev, System One models and accountability\n27:28 Using AI to make retrospectives useful\n29:35 Atlantis and AI reviews of Terraform plans\n33:24 Can we trust AI to measure its own impact?\n38:53 Security benchmarks and operational tooling\n42:56 Claude Code agents and dynamic workflows\n52:03 Giving infrastructure reviewers enough context\n54:39 Stategraph, secrets and agent permissions\n58:48 Comparing Terraform automation tools\n1:04:38 Platform engineering, culture and delivery speed\n1:06:47 Monorepos, security gates and continuous integration\n1:11:21 We are going to cfgmgmtcamp.org\n\nMENTIONED\ncfgmgmtcamp: https://cfgmgmtcamp.org/\nFOSDEM: https://fosdem.org/\nMecatl: https://mecatl.dev/\nPi: https://pi.dev/\nJev / TypeSafe AI: https://typesafe.ai/\nTerraform automation comparison: https://tacos.guru/\nJames Shore — Continuous Integration on a Dollar a Day:\nhttps://www.jamesshore.com/v2/blog/2006/continuous-integration-on-a-dollar-a-day\n\nEPISODE ARCHIVE & SUBSCRIBE\nhttps://dabase.com/podcast/\n\nWill we see you at cfgmgmtcamp? And what would make you trust an AI infrastructure reviewer? Tell us in the comments.",
+  "upload_date": "20261001",
+  "timestamp": 1790869649,
+  "duration": 4382,
+  "channel": "Kai Hendry",
+  "channel_id": "UCFzGyNKXPAglNq28qWYTDFA",
+  "channel_url": "https://www.youtube.com/channel/UCFzGyNKXPAglNq28qWYTDFA",
+  "uploader": "Kai Hendry",
+  "webpage_url": "https://www.youtube.com/watch?v=aymTKw5540A",
+  "thumbnail": "https://i.ytimg.com/vi/aymTKw5540A/maxresdefault.jpg",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/3.jpg",
+      "preference": -37,
+      "id": "0"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/3.webp",
+      "preference": -36,
+      "id": "1"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/2.jpg",
+      "preference": -35,
+      "id": "2"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/2.webp",
+      "preference": -34,
+      "id": "3"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/1.jpg",
+      "preference": -33,
+      "id": "4"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/1.webp",
+      "preference": -32,
+      "id": "5"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/mq3.jpg",
+      "preference": -31,
+      "id": "6"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/mq3.webp",
+      "preference": -30,
+      "id": "7"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/mq2.jpg",
+      "preference": -29,
+      "id": "8"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/mq2.webp",
+      "preference": -28,
+      "id": "9"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/mq1.jpg",
+      "preference": -27,
+      "id": "10"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/mq1.webp",
+      "preference": -26,
+      "id": "11"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hq3.jpg",
+      "preference": -25,
+      "id": "12"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/hq3.webp",
+      "preference": -24,
+      "id": "13"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hq2.jpg",
+      "preference": -23,
+      "id": "14"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/hq2.webp",
+      "preference": -22,
+      "id": "15"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hq1.jpg",
+      "preference": -21,
+      "id": "16"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/hq1.webp",
+      "preference": -20,
+      "id": "17"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/sd3.jpg",
+      "preference": -19,
+      "id": "18"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/sd3.webp",
+      "preference": -18,
+      "id": "19"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/sd2.jpg",
+      "preference": -17,
+      "id": "20"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/sd2.webp",
+      "preference": -16,
+      "id": "21"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/sd1.jpg",
+      "preference": -15,
+      "id": "22"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/sd1.webp",
+      "preference": -14,
+      "id": "23"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/default.jpg",
+      "preference": -13,
+      "id": "24"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/default.webp",
+      "preference": -12,
+      "id": "25"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/mqdefault.jpg",
+      "height": 180,
+      "width": 320,
+      "preference": -11,
+      "id": "26",
+      "resolution": "320x180"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/mqdefault.webp",
+      "preference": -10,
+      "id": "27"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/0.jpg",
+      "preference": -9,
+      "id": "28"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/0.webp",
+      "preference": -8,
+      "id": "29"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hqdefault.jpg",
+      "preference": -7,
+      "id": "30"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCwtKEsZ0PbJPoC_a1LFsYb7_x-sw",
+      "height": 94,
+      "width": 168,
+      "preference": -7,
+      "id": "31",
+      "resolution": "168x94"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB_9KtynD968RHj1VTHGNKKIdUZqQ",
+      "height": 110,
+      "width": 196,
+      "preference": -7,
+      "id": "32",
+      "resolution": "196x110"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2VU7ba71GAeY7gvlvzy10qDEcmA",
+      "height": 138,
+      "width": 246,
+      "preference": -7,
+      "id": "33",
+      "resolution": "246x138"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3c7Vlt6BaVEYOim-RzKsCLerwqQ",
+      "height": 188,
+      "width": 336,
+      "preference": -7,
+      "id": "34",
+      "resolution": "336x188"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/hqdefault.webp",
+      "preference": -6,
+      "id": "35"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/sddefault.jpg",
+      "preference": -5,
+      "id": "36"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/sddefault.webp",
+      "preference": -4,
+      "id": "37"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/hq720.jpg",
+      "height": 720,
+      "width": 1280,
+      "preference": -3,
+      "id": "38",
+      "resolution": "1280x720"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/hq720.webp",
+      "preference": -2,
+      "id": "39"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/aymTKw5540A/maxresdefault.jpg",
+      "height": 1080,
+      "width": 1920,
+      "preference": -1,
+      "id": "40",
+      "resolution": "1920x1080"
+    },
+    {
+      "url": "https://i.ytimg.com/vi_webp/aymTKw5540A/maxresdefault.webp",
+      "preference": 0,
+      "id": "41"
+    }
+  ],
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "23 September: FOSDEM plans and conference culture",
+      "end_time": 321
+    },
+    {
+      "start_time": 321,
+      "title": "Opus and prompting frustrations",
+      "end_time": 508
+    },
+    {
+      "start_time": 508,
+      "title": "Agent harnesses: Mecatl, Pi and ACP",
+      "end_time": 1160
+    },
+    {
+      "start_time": 1160,
+      "title": "1 October: Google Gemini and model rollouts",
+      "end_time": 1270
+    },
+    {
+      "start_time": 1270,
+      "title": "Jev, System One models and accountability",
+      "end_time": 1648
+    },
+    {
+      "start_time": 1648,
+      "title": "Using AI to make retrospectives useful",
+      "end_time": 1775
+    },
+    {
+      "start_time": 1775,
+      "title": "Atlantis and AI reviews of Terraform plans",
+      "end_time": 2004
+    },
+    {
+      "start_time": 2004,
+      "title": "Can we trust AI to measure its own impact?",
+      "end_time": 2333
+    },
+    {
+      "start_time": 2333,
+      "title": "Security benchmarks and operational tooling",
+      "end_time": 2576
+    },
+    {
+      "start_time": 2576,
+      "title": "Claude Code agents and dynamic workflows",
+      "end_time": 3123
+    },
+    {
+      "start_time": 3123,
+      "title": "Giving infrastructure reviewers enough context",
+      "end_time": 3279
+    },
+    {
+      "start_time": 3279,
+      "title": "Stategraph, secrets and agent permissions",
+      "end_time": 3528
+    },
+    {
+      "start_time": 3528,
+      "title": "Comparing Terraform automation tools",
+      "end_time": 3878
+    },
+    {
+      "start_time": 3878,
+      "title": "Platform engineering, culture and delivery speed",
+      "end_time": 4007
+    },
+    {
+      "start_time": 4007,
+      "title": "Monorepos, security gates and continuous integration",
+      "end_time": 4281
+    },
+    {
+      "start_time": 4281,
+      "title": "We are going to cfgmgmtcamp.org",
+      "end_time": 4382
+    }
+  ],
+  "availability": "unlisted",
+  "playable_in_embed": true
+}

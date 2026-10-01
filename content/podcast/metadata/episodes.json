@@ -489,5 +489,17 @@
     "duration": 4756,
     "slug": "044-always-on-agents-real-world-bottlenecks",
     "publishDate": "2026-09-15T10:39:28Z"
+  },
+  {
+    "episode": 45,
+    "season": 1,
+    "title": "We are going to cfgmgmtcamp.org",
+    "description": "We’re going to cfgmgmtcamp.org! Kai Hendry and Vincent De Smet discuss their conference plans, what makes an agent harness useful, and whether AI can reliably review infrastructure changes.\n\nRecorded in two conversations, eight days apart: 23 September and 1 October 2026. The second recording starts at 19:20.\n\nWe compare Mecatl, Pi and the Agent Client Protocol; debate fast System One models and accountability; and explore AI-assisted retrospectives and Terraform plan reviews in Atlantis. Can an AI reviewer measure its own impact—or is it just telling us what we want to hear?\n\nWe also look at Claude Code agents and dynamic workflows, Stategraph and access to infrastructure context, and the trade-offs between Terraform automation tools. We finish with monorepos, security gates, and why better delivery depends on engineering practices as well as tools—then share our cfgmgmtcamp plans and Vincent’s Ignite news.\n\nCHAPTERS\n00:00 23 September: FOSDEM plans and conference culture\n05:21 Opus and prompting frustrations\n08:28 Agent harnesses: Mecatl, Pi and ACP\n19:20 1 October: Google Gemini and model rollouts\n21:10 Jev, System One models and accountability\n27:28 Using AI to make retrospectives useful\n29:35 Atlantis and AI reviews of Terraform plans\n33:24 Can we trust AI to measure its own impact?\n38:53 Security benchmarks and operational tooling\n42:56 Claude Code agents and dynamic workflows\n52:03 Giving infrastructure reviewers enough context\n54:39 Stategraph, secrets and agent permissions\n58:48 Comparing Terraform automation tools\n1:04:38 Platform engineering, culture and delivery speed\n1:06:47 Monorepos, security gates and continuous integration\n1:11:21 We are going to cfgmgmtcamp.org\n\nMENTIONED\ncfgmgmtcamp: https://cfgmgmtcamp.org/\nFOSDEM: https://fosdem.org/\nMecatl: https://mecatl.dev/\nPi: https://pi.dev/\nJev / TypeSafe AI: https://typesafe.ai/\nTerraform automation comparison: https://tacos.guru/\nJames Shore — Continuous Integration on a Dollar a Day:\nhttps://www.jamesshore.com/v2/blog/2006/continuous-integration-on-a-dollar-a-day\n\nEPISODE ARCHIVE & SUBSCRIBE\nhttps://dabase.com/podcast/\n\nWill we see you at cfgmgmtcamp? And what would make you trust an AI infrastructure reviewer? Tell us in the comments.",
+    "youtubeId": "aymTKw5540A",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aymTKw5540A",
+    "uploadDate": "20261001",
+    "duration": 4382,
+    "slug": "045-we-are-going-to-cfgmgmtcamp-org",
+    "publishDate": "2026-10-01T15:47:29Z"
   }
 ]

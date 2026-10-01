@@ -30,3 +30,12 @@ s/fcknet/fck-nat/g
 s/Postgress/Postgres/g
 s/agent decline protocol/agent client protocol/g
 s|{slash} *|/|g
+s/AWS Trans agent/AWS Strands agent/g
+s/Trance Agent SDK/Strands Agent SDK/g
+s/Cloud Agent SDK/Claude Agent SDK/g
+s/StackLock/Stacklok/g
+s/Mi-Cattle/Mecatl/g
+s/Magic Katal/Mecatl/g
+s/Mech Katal/Mecatl/g
+s/State Graph/Stategraph/g
+s/SolarCloud/SonarCloud/g
