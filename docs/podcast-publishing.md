@@ -105,6 +105,32 @@ cut is approved.
 - [ ] Refresh `metadata/episodes.json` and verify the episode number, video ID,
   title, duration and chronological order. Keep a stable page slug and publication date;
   use `metadata/episode-overrides.json` when they differ from the generated values.
+- [ ] Generate `summarize --timestamps --slides` output for **every podcast blog
+  entry**, including pages prepared manually. Use the supplied YouTube video's
+  real ID in place of `VIDEO_ID`:
+
+  ```bash
+  podcast_summary_dir=$(mktemp -d)
+  summarize "https://youtu.be/VIDEO_ID" --timestamps --slides --no-cache \
+    --slides-dir "$podcast_summary_dir" --json > "$podcast_summary_dir/summary.json"
+  ```
+
+  Generate slides in a temporary directory so summarize's cache cleanup cannot
+  remove published slides. If YouTube blocks access, retry with
+  `SUMMARIZE_YT_DLP_COOKIES_FROM_BROWSER=chrome` before the command.
+- [ ] Review the generated summary against the episode: correct names, check
+  topic timestamps, and match each slide to the discussion it illustrates.
+  Save the validated JSON in `content/podcast/metadata/summaries/VIDEO_ID.json`
+  and copy the completed `youtube-VIDEO_ID/` slide directory into
+  `static/podcast/slides/VIDEO_ID/`.
+- [ ] Include the reviewed output under the heading
+  ``## `summarize "https://youtu.be/VIDEO_ID" --timestamps --slides` ``.
+  Link timestamps and slide images to the corresponding YouTube times, use
+  `/podcast/slides/VIDEO_ID/youtube-VIDEO_ID/` image URLs, and retain the model
+  attribution. `content/podcast/default.md.do` formats this section for generated
+  pages; append it to manually prepared pages while preserving their existing
+  frontmatter, introduction and chapters. Missing or failed summary/slide output
+  means the page is incomplete; resolve it before publishing.
 - [ ] Create or review `content/podcast/NNN-slug.md`, including the audio URL,
   exact `audioSize`, YouTube link, artwork, description and linked chapters.
   The publication date must not be in the future in UTC.
@@ -137,13 +163,16 @@ cut is approved.
   `redo site`, `redo check-blog` and `redo check-podcast` from the repository root.
   `redo site` does not refresh the YouTube playlist.
 - [ ] Preview the new page: title, thumbnail, YouTube link, chapter links,
-  audio player, transcript, archive listing and search result.
+  audio player, transcript, timestamped summarize section, slides, archive listing
+  and search result. Confirm every summary image loads and its timestamp link
+  reaches the intended moment.
 - [ ] Verify that the podcast RSS has exactly one new episode with the correct
   GUID, date, enclosure URL, byte length and duration. The ordinary site RSS
   should link to the episode page.
 - [ ] Enable the link hook with `git config core.hooksPath .githooks`.
-  Review `git diff`, then stage only the intended page, metadata, artwork sources
-  or documentation; do not use `git add .` around local media exports.
+  Review `git diff`, then stage only the intended page, metadata (including the
+  summary cache), slide images and manifest, artwork sources or documentation;
+  do not use `git add .` around local media exports.
 - [ ] Commit and push to `main`. This starts the S3/CloudFront deployment.
 - [ ] Wait for GitHub Actions to succeed and verify the live episode page,
   podcast archive and feeds. The deployment checks that the live feeds match the build.
