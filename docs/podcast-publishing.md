@@ -134,6 +134,9 @@ cut is approved.
 - [ ] Create or review `content/podcast/NNN-slug.md`, including the audio URL,
   exact `audioSize`, YouTube link, artwork, description and linked chapters.
   The publication date must not be in the future in UTC.
+  Set `podcast.youtubeId` to the uploaded video's ID: the episode template uses
+  [Hugo's YouTube shortcode](https://gohugo.io/shortcodes/youtube/) to embed it
+  above the audio player automatically.
 - [ ] Put the approved assets in `.audio/`, `.images/` and `.transcripts/` under
   `content/podcast/`. These media files belong on S3, not in the Git commit.
 - [ ] Upload the MP3, both artwork variants, WebVTT and plain-text transcript **before pushing**.
@@ -162,10 +165,11 @@ cut is approved.
 - [ ] Install the pinned search dependency with `npm ci` when needed, then run
   `redo site`, `redo check-blog` and `redo check-podcast` from the repository root.
   `redo site` does not refresh the YouTube playlist.
-- [ ] Preview the new page: title, thumbnail, YouTube link, chapter links,
+- [ ] Preview the new page: title, YouTube player and direct link, chapter links,
   audio player, transcript, timestamped summarize section, slides, archive listing
   and search result. Confirm every summary image loads and its timestamp link
-  reaches the intended moment.
+  reaches the intended moment. Check the embedded video plays and fits the page
+  on desktop and mobile.
 - [ ] Verify that the podcast RSS has exactly one new episode with the correct
   GUID, date, enclosure URL, byte length and duration. The ordinary site RSS
   should link to the episode page.

@@ -42,9 +42,15 @@
 </p>
 </header>
 
-{{/* Episode thumbnail: 16:9 where we have it, else the square feed cover */}}
+{{/* Use Hugo's built-in YouTube shortcode for every episode with a video. */}}
+{{ with .Params.podcast.youtubeId }}
+<div class="episode-video" data-pagefind-ignore>
+  {{ printf "{{< youtube id=%q title=%q loading=lazy >}}" . $.Title | $.RenderString }}
+</div>
+{{ else }}
 {{ with or .Params.thumbnail .Params.image }}
 <img src="{{ . }}" alt="{{ $.Title }}" style="max-width: 400px; border-radius: 8px; margin: 1rem 0;">
+{{ end }}
 {{ end }}
 
 {{/* Audio player */}}
