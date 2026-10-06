@@ -31,6 +31,7 @@
 
 <aside data-pagefind-ignore>{{- partial "backlinks.html" . -}}</aside>
 
+{{ if or .PrevInSection .NextInSection }}
 <nav class="page-navigation" aria-label="Adjacent articles">
 {{ if .PrevInSection }}
 <a href="{{ .PrevInSection.RelPermalink }}">&larr; {{ partial "page-title.html" .PrevInSection }}</a>
@@ -39,6 +40,7 @@
 <a href="{{ .NextInSection.RelPermalink }}">{{ partial "page-title.html" .NextInSection }} &rarr;</a>
 {{ end }}
 </nav>
+{{ end }}
 </article>
 
 {{ end }}
