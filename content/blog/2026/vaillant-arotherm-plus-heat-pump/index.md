@@ -44,8 +44,8 @@ cage to stop them getting knocked.
 
 <a href="plant-room-cylinder.avif"><img src="plant-room-cylinder.avif" alt="Indoor plant room with hot water cylinder, expansion vessels, and pipework" style="max-width:50%"></a>
 
-Inside, the plant room: a Vaillant hot water cylinder, a couple of expansion vessels, and the
-manifold where the heat pump's low-temperature circuit ties into the existing pipework.
+Inside, the plant room: a 250L Vaillant uniSTOR hot water cylinder, a couple of expansion
+vessels, and the manifold where the heat pump's low-temperature circuit ties into the existing pipework.
 
 <a href="pipe-runs-ceiling.avif"><img src="pipe-runs-ceiling.avif" alt="Insulated pipe runs across the ceiling and down the wall to the manifold" style="max-width:50%"></a>
 
