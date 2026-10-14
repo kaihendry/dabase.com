@@ -501,5 +501,17 @@
     "duration": 4382,
     "slug": "045-we-are-going-to-cfgmgmtcamp-org",
     "publishDate": "2026-10-01T15:47:29Z"
+  },
+  {
+    "episode": 46,
+    "season": 1,
+    "title": "Build versus buy in the age of AI",
+    "description": "Does AI change when companies should build their own software instead of buying it?\n\nKai Hendry and Vincent discuss Anthropic's Scion source-control system and what it suggests about enterprise SaaS, coding agents and the changing role of engineers. We look at infrastructure testing, saying no to over-engineered code, pair programming with agents, release approvals, and the fast-moving Bun, TypeScript and edge-runtime ecosystem.\n\nAI Infrastructure — Episode 46\nRecorded 14 October 2026.\n\nCHAPTERS\n00:00 AI, jobs and keeping up\n03:04 Anthropic's Scion: rethinking source control\n07:29 Agent Client Protocol and Kiro\n10:29 Claude, Codex and agent harnesses\n14:06 Engineers saying no to agents\n17:58 Auditing tests that only test themselves\n19:06 Infrastructure testing with Terraform and Terratest\n27:46 Side agents, Claude Code mods and cmux\n31:19 Rethinking merge queues and smoke tests\n32:28 Build versus buy: is enterprise SaaS in trouble?\n40:02 Pair programming when agents do the coding\n46:49 Bun, Tov and the changing TypeScript toolchain\n50:21 Security checks and enterprise release workflows\n54:49 Separation of duties and agent approvals\n1:03:40 Deno, Cloudflare and edge runtimes\n1:09:17 Agent sandboxes and short-lived execution\n1:14:00 Recap, model costs and closing tangents\n\nLINKS DISCUSSED\nAnthropic: Redesigning source control\nhttps://www.anthropic.com/engineering/redesigning-source-control\n\nTov\nhttps://tov.sh/\n\nDeno is joining Cloudflare\nhttps://deno.com/blog/cloudflare\n\nMore episodes and the podcast feed:\nhttps://dabase.com/podcast/",
+    "youtubeId": "E0Y66BvsbxI",
+    "youtubeUrl": "https://www.youtube.com/watch?v=E0Y66BvsbxI",
+    "uploadDate": "20261014",
+    "duration": 4884,
+    "slug": "046-build-versus-buy-in-the-age-of-ai",
+    "publishDate": "2026-10-14T12:16:59Z"
   }
 ]

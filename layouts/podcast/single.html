@@ -82,7 +82,7 @@
 {{ with .Value }}
 {{ with .Content }}
 <details>
-  <summary><strong>Transcript</strong> (auto-generated from YouTube captions)</summary>
+  <summary><strong>Transcript</strong> ({{ $.Params.podcast.transcriptSource | default "auto-generated from YouTube captions" }})</summary>
   <pre style="white-space: pre-wrap; font-size: 0.9rem;">{{ . }}</pre>
 </details>
 {{ end }}

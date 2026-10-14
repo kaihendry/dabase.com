@@ -1,0 +1,62 @@
+{
+  "extractorVersion": 1,
+  "sourceUrl": "https://youtu.be/E0Y66BvsbxI",
+  "sourceKind": "youtube",
+  "sourceId": "E0Y66BvsbxI",
+  "slidesDir": "static/podcast/slides/E0Y66BvsbxI/youtube-E0Y66BvsbxI",
+  "slidesDirId": "026a55a6",
+  "sceneThreshold": 0.3,
+  "autoTuneThreshold": true,
+  "autoTune": {
+    "enabled": true,
+    "chosenThreshold": 0.05,
+    "confidence": 1,
+    "strategy": "hash"
+  },
+  "maxSlides": 6,
+  "minSlideDuration": 2,
+  "ocrRequested": false,
+  "ocrAvailable": true,
+  "slides": [
+    {
+      "index": 1,
+      "timestamp": 0.2,
+      "imagePath": "slide_0001_0.20s.png",
+      "imageVersion": 1791981131568
+    },
+    {
+      "index": 2,
+      "timestamp": 818.9200000000001,
+      "imagePath": "slide_0002_818.92s.png",
+      "imageVersion": 1791981131669
+    },
+    {
+      "index": 3,
+      "timestamp": 1629.56,
+      "imagePath": "slide_0003_1629.56s.png",
+      "imageVersion": 1791981131667
+    },
+    {
+      "index": 4,
+      "timestamp": 2441.8,
+      "imagePath": "slide_0004_2441.80s.png",
+      "imageVersion": 1791981131613
+    },
+    {
+      "index": 5,
+      "timestamp": 3255.719999666667,
+      "imagePath": "slide_0005_3255.72s.png",
+      "imageVersion": 1791981131646
+    },
+    {
+      "index": 6,
+      "timestamp": 4073,
+      "imagePath": "slide_0006_4073.00s.png",
+      "imageVersion": 1791981131658
+    }
+  ],
+  "warnings": [
+    "Auto-tuned scene threshold from 0.3 to 0.05"
+  ],
+  "extractionSource": "Approved local upload master; YouTube extraction stalled. Frames retain the exact uploaded timeline."
+}

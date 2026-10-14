@@ -39,3 +39,11 @@ s/Magic Katal/Mecatl/g
 s/Mech Katal/Mecatl/g
 s/State Graph/Stategraph/g
 s/SolarCloud/SonarCloud/g
+s/Hashikorp/HashiCorp/g
+s/terra test/Terratest/g
+s/Terra Test/Terratest/g
+s/terror test/Terratest/g
+s/C-Mox/cmux/g
+s/Cloud Flair/Cloudflare/g
+s/Cloud Flare/Cloudflare/g
+s/Kiro Krue/Kiro Crew/g
