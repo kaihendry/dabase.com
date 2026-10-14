@@ -52,6 +52,11 @@ Episode numbers are chronological (oldest = Episode 1). Episodes stored in `cont
 
 ### Adding New Podcast Episodes
 
+Every full YouTube episode must be added to the existing **AI Infrastructure**
+podcast playlist, including uploads whose visibility is **Unlisted**. Keep the
+requested visibility, save the playlist selection, and verify membership before
+reporting the upload complete. See [the publishing checklist](docs/podcast-publishing.md).
+
 **IMPORTANT**: Audio files MUST be uploaded to S3 before pushing to GitHub, since GitHub Actions cannot download from YouTube due to rate limiting.
 
 Workflow for new episodes:

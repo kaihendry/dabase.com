@@ -89,7 +89,12 @@ cut is approved.
 - [ ] Set the title, description, chapters and approved thumbnail.
 - [ ] Add it at the newest end of the existing
   [AI Infrastructure playlist](https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak).
-  Playlist order determines episode numbering during metadata refreshes.
+  **This includes unlisted uploads.** Keep the requested video visibility;
+  unlisted visibility is not a reason to omit playlist membership. Playlist order
+  determines episode numbering during metadata refreshes.
+- [ ] Click **Done** in the playlist picker and **Save** in video details, then
+  verify that **AI Infrastructure** remains selected after reopening the video.
+  Do not report the upload complete until playlist membership is saved and verified.
 - [ ] Wait for processing, check playback and confirm the intended visibility.
 - [ ] Record the canonical `https://www.youtube.com/watch?v=VIDEO_ID` URL and video ID,
   without the share link's tracking parameter. Do not create the blog page with a placeholder ID.
