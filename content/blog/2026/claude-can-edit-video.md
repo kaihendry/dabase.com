@@ -25,6 +25,10 @@ Here's the Codex variant:
 
 {{< youtube 5aa1c_v00iA >}}
 
+I gave Codex an additional prompt after its first edit:
+
+> i feel like you cut my last laugh off after i say "you tell me". furthermore can you put a count down timer like [Peter does it](https://www.youtube.com/watch?v=4zSq57wxcJM&list=PLTZSw2B7F_WfbXC-2026Yvdiy7INX5gh8&index=24)
+
 For Claude's version, no video editor was opened. Everything was done with ffmpeg and Python, which Claude wrote and ran itself. Here's the session partway through, running in a Rex tab on my `restless-marsh` session:
 
 ![Claude Code running in a Rex tab titled "Rex multicam video edit". It shows the prompt, then progress updates: syncing the three recordings, mapping screen actions to speech, verifying word timings, testing stills, and rendering 1652 frames.](/blog/2026/claude-can-edit-video-session.png)
