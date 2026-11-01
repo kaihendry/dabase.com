@@ -1,5 +1,5 @@
 ---
-title: "Claude can edit video"
+title: "AI can edit video"
 date: 2026-11-01T13:25:13Z
 description: "I gave Claude Code three unsynced recordings of me demoing Rex. It cut them into a 55-second multicam edit with graphics, a colour grade, a synthesized score and sound design."
 tags: [ai, audio-video]
@@ -21,11 +21,15 @@ This is what came back:
 
 {{< youtube P3WtGJXLjxc >}}
 
-No video editor was opened. Everything was done with ffmpeg and Python, which Claude wrote and ran itself. Here's the session partway through, running in a Rex tab on my `restless-marsh` session:
+Here's the Codex variant:
+
+{{< youtube 5aa1c_v00iA >}}
+
+For Claude's version, no video editor was opened. Everything was done with ffmpeg and Python, which Claude wrote and ran itself. Here's the session partway through, running in a Rex tab on my `restless-marsh` session:
 
 ![Claude Code running in a Rex tab titled "Rex multicam video edit". It shows the prompt, then progress updates: syncing the three recordings, mapping screen actions to speech, verifying word timings, testing stills, and rendering 1652 frames.](/blog/2026/claude-can-edit-video-session.png)
 
-Below is everything it did, taken from the session.
+Below is everything Claude did, taken from the session.
 
 ## 1. Working out what it had
 
