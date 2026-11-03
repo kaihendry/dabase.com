@@ -4,7 +4,7 @@ date: 2026-11-01T07:42:05Z
 description: "Claude found the receipt in my email, drove my browser to Apple's Report a Problem page and stopped twice to let me take over."
 tags: [ai]
 thumbnail: /blog/2026/claude-apple-refund.png
-image_alt: "Getting a refund today takes eight steps across me, Claude and Apple, with up to two days' wait; ideally, cancelling after a charge would refund automatically."
+image_alt: "Getting a refund today takes eight steps across me, Claude and Apple, and Apple refunded it two days later; ideally, cancelling after a charge would refund automatically."
 ---
 
 This morning Apple charged me **£5.99 for PhotoSync Premium (yearly)**. I'd started a free trial two weeks earlier, forgot to cancel it, and don't use the app.
@@ -36,11 +36,11 @@ Reading email through MCP plus a browser it can drive turns a "life admin" chore
 
 ## Cancelling should mean a refund
 
-I'd already cancelled the subscription, so Apple knew I didn't want it. Getting my £5.99 back still meant a separate claim, a reason picked from a dropdown and up to two days' wait. Claude made that easy, but the process shouldn't be needed at all.
+I'd already cancelled the subscription, so Apple knew I didn't want it. Getting my £5.99 back still meant a separate claim, a reason picked from a dropdown and two days' wait. Claude made that easy, but the process shouldn't be needed at all.
 
 In my ideal world, cancelling after being charged gets you a refund.
 
-![Today: charged, cancel, find receipt, sign in, pick reason and purchase, OK to submit, Apple reviews for 24 to 48 hours, refund maybe. Ideal: charged, cancel, refunded automatically.](/blog/2026/claude-apple-refund.png)
+![Today: charged, cancel, find receipt, sign in, pick reason and purchase, OK to submit, Apple reviews for 24 to 48 hours, refunded two days later. Ideal: charged, cancel, refunded automatically.](/blog/2026/claude-apple-refund.png)
 *[Excalidraw source](/blog/2026/claude-apple-refund.excalidraw)*
 
-*Update: I'll note here whether Apple approves the refund.*
+*Update 3 November: Apple approved it. A credit note arrived this morning refunding the £5.99 to my card.*
