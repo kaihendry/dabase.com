@@ -46,52 +46,23 @@ by `layouts/partials/head.html`. Keep it minimal and readable, with system fonts
 and light/dark colours. If a blog post needs extra CSS, embed styles directly in
 the markdown. Search uses Pagefind after the Hugo build; see README.md for previewing it.
 
+## Agent skills
+
+Skills live in `.agents/skills/`; `.claude/skills` is a symlink to it, so Claude Code
+and Codex share them:
+
+- [blog](.agents/skills/blog/SKILL.md): create a blog post.
+- [podcast-publishing](.agents/skills/podcast-publishing/SKILL.md): produce and publish
+  an AI Infrastructure episode, from the Zoom recording to the YouTube upload
+  (monetization On, AI Infrastructure playlist), S3 media, the page and feeds, and
+  replacements of published audio.
+
 ## Podcast Episodes
 
-Episode numbers are chronological (oldest = Episode 1). Episodes stored in `content/podcast/` with frontmatter containing episode number, audio URL, YouTube link, and duration.
-
-### Adding New Podcast Episodes
-
-For YouTube upload settings and verification, use the
-[podcast upload skill](.agents/skills/podcast-upload/SKILL.md), including Kai's
-standing preference for **Earnings / Monetization: On**.
-
-Every full YouTube episode must be added to the existing **AI Infrastructure**
-podcast playlist, including uploads whose visibility is **Unlisted**. Keep the
-requested visibility, save the playlist selection, and verify membership before
-reporting the upload complete. See [the publishing checklist](docs/podcast-publishing.md).
-
-**IMPORTANT**: Audio files MUST be uploaded to S3 before pushing to GitHub, since GitHub Actions cannot download from YouTube due to rate limiting.
-
-Workflow for new episodes:
-```bash
-cd content/podcast
-
-# 1. Fetch metadata and build (uses cache, only fetches new episodes)
-redo all
-
-# 2. Upload audio to S3 (CRITICAL - do this before git push!)
-redo upload-audio
-
-# 3. Verify upload
-aws s3 ls s3://dabase.com/podcast/audio/ --human-readable | tail -5
-
-# 4. Commit and push
-git add .
-git commit -m "Add Episode X"
-git push
-```
-
-**Cache system**: Episode metadata is cached in `metadata/cache/{video_id}.json` to speed up builds from ~22min to ~3min. Use `FORCE=1 redo metadata/episodes.json` to bypass cache and refetch all episodes.
-
-**Transcripts**: Cleaned YouTube auto-captions, built by `default.vtt.do`/`default.txt.do` into `.transcripts/` and synced to `s3://dabase.com/podcast/transcripts/` (referenced by `<podcast:transcript>` in the feed and rendered on episode pages). Recurring caption errors (e.g. "Cloud Code" → "Claude Code") are fixed in `metadata/transcript-corrections.sed`; after editing it, rebuild with `redo .transcripts/*.vtt .transcripts/*.txt && redo upload-transcripts`.
-
-**YouTube bot detection**: If `yt-dlp` is blocked ("Sign in to confirm you're not a bot"), use Chrome cookies:
-- Fetch metadata: `yt-dlp --cookies-from-browser chrome -j --no-warnings --skip-download "URL" > metadata/cache/VIDEO_ID.json`
-- Download audio: `yt-dlp --cookies-from-browser chrome --extract-audio --audio-format mp3 --audio-quality 192K --output ".audio/SLUG" --no-playlist "URL"`
-- Generate summary: `SUMMARIZE_YT_DLP_COOKIES_FROM_BROWSER=chrome summarize "URL" --timestamps --slides ...`
-
-**Future dates**: Hugo doesn't build content with future dates by default. If a new episode isn't appearing, check that its `date:` in frontmatter isn't in the future (dates are in UTC).
+Episodes are in `content/podcast/`, numbered chronologically (oldest = Episode 1) by
+their position in the AI Infrastructure YouTube playlist. Follow the
+podcast-publishing skill. Audio, artwork and transcripts must be on S3 before pushing,
+because GitHub Actions cannot download from YouTube.
 
 # AWS access
 

@@ -120,9 +120,9 @@ See the [terraform](terraform/) directory.
 
 # Podcast publishing
 
-Follow the [publishing checklist](docs/podcast-publishing.md) from the Zoom
-recording through PilotCut editing, artwork, YouTube upload, S3 media, blog/feed
-validation and promotional clips.
+Follow the [podcast publishing skill](.agents/skills/podcast-publishing/SKILL.md)
+from the Zoom recording through editing, artwork, YouTube upload, S3 media,
+blog/feed validation and promotional clips.
 
 # Podcast replacement uploads
 

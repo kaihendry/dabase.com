@@ -56,31 +56,11 @@ isn't there" is nearly always one of these two:
    Omit the key entirely; don't write `draft: false`. To keep something out of
    the feed, don't generate a file for it (see `NON_EPISODES` in
    `content/podcast/pages.do`).
-3. **A podcast episode missing from the YouTube playlist.** `redo all` discovers
-   episodes solely by enumerating the "AI Infrastructure" playlist
-   (`PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak`) in `metadata/episodes.json.do`, and
-   episode numbers come from position in it — reversed, so the newest video
-   becomes the highest number. A published-but-unlisted video generates no
-   markdown at all and the build looks like a no-op. Add it to the playlist
-   rather than working around the script.
 
-## Changing the podcast generator
+For podcast episodes, including generator and playlist gotchas, use the
+[podcast-publishing skill](../podcast-publishing/SKILL.md).
 
-The episode markdown and `metadata/episodes.json` are committed *and* are redo
-targets, because GitHub Actions can't run `yt-dlp` (YouTube rate-limits it) so
-the site build needs them in the repo. redo won't rebuild a target it has no
-record of building, `.redo/` is gitignored, and `redo -f` respects that too:
-
-    warn 040-benchmarking-ai-infrastructure.md: already existing: not redoing
-
-So editing `default.md.do` appears to work while silently changing only
-brand-new episodes. Run `redo regen` (see `regen.do`) to delete the derived
-files and rebuild the whole back catalogue, then review `git diff`. With no
-pipeline change a regen is a no-op in git, which is the signal it worked.
-
-After publishing, verify rather than assume — `hugo --quiet` then confirm the
-page and, for podcasts, that `grep -c '<item>' public/podcast/index.xml` matches
-the number of episode files. CI (`.github/workflows/test.yml`) enforces that.
+After publishing, verify rather than assume: run `hugo --quiet`, then confirm the page.
 
 ## Important Notes
 - Use `date +%Y` to dynamically determine the current year
