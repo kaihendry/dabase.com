@@ -87,6 +87,12 @@ cut is approved.
 - [ ] Give the user the approved MP4, thumbnail, title, description and chapters
   for manual upload in YouTube Studio.
 - [ ] Set the title, description, chapters and approved thumbnail.
+- [ ] Set **Earn / Monetization → Watch Page ads & YouTube Premium → On**,
+  including for **Unlisted** episodes, unless the user explicitly requests otherwise.
+  Continue with **Next** or **Done** and save. Reopen the video's monetization
+  page and verify **On** persisted. Do not copy **Off** from older episodes or
+  stale upload notes; include **Monetization: On** in episode-specific upload
+  instructions. See the [podcast upload skill](../.agents/skills/podcast-upload/SKILL.md).
 - [ ] Add it at the newest end of the existing
   [AI Infrastructure playlist](https://www.youtube.com/playlist?list=PLiKgVPlhUNuyTXzN03gCB1lqvaHXxPLak).
   **This includes unlisted uploads.** Keep the requested video visibility;

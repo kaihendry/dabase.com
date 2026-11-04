@@ -52,6 +52,10 @@ Episode numbers are chronological (oldest = Episode 1). Episodes stored in `cont
 
 ### Adding New Podcast Episodes
 
+For YouTube upload settings and verification, use the
+[podcast upload skill](.agents/skills/podcast-upload/SKILL.md), including Kai's
+standing preference for **Earnings / Monetization: On**.
+
 Every full YouTube episode must be added to the existing **AI Infrastructure**
 podcast playlist, including uploads whose visibility is **Unlisted**. Keep the
 requested visibility, save the playlist selection, and verify membership before
