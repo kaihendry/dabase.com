@@ -513,5 +513,17 @@
     "duration": 4884,
     "slug": "046-build-versus-buy-in-the-age-of-ai",
     "publishDate": "2026-10-14T12:16:59Z"
+  },
+  {
+    "episode": 47,
+    "season": 1,
+    "title": "Agents talking to agents",
+    "description": "What happens when your coding agents can talk to each other?\n\nKai Hendry and Vincent De Smet try Rex, Superlogical's new terminal, test live whether Claude Code and Codex can message each other, and compare it with Vincent's orchestrator of long-lived Claude Code agents. They then move from Cloudflare API tokens to Tailscale, zero trust and agent identity, and a wild week of security news: Chainguard's PHP embargo break, Brotli, eMudhra, Linux zero-days and the Binance hack.\n\nAI Infrastructure — Episode 47\nRecorded 4 November 2026; a brief microphone dropout has been removed.\n\nCHAPTERS\n00:00 Kuala Lumpur, EVs and Vietnam's tech scene\n02:54 Running tech meetups in Vietnam and beyond\n15:09 GLM 5.3 and other models in Claude Code\n18:53 Harness lock-in: OpenClaw, ACP and T3 Code\n21:32 Rex, Superlogical and Ghostty\n25:35 suckless, st and reinventing the terminal\n30:26 Rex skills: agents launching agents\n37:40 Agents messaging an orchestrator in Claude Code\n42:14 Live demo: Claude and Codex talk through Rex\n46:40 Agent interfaces, Rex on iOS and portable MCPs\n51:34 Cloudflare, API tokens and missing OIDC\n54:21 CI startups chase agent sandboxes\n56:42 Is Cloudflare ready for the enterprise?\n59:46 Egress proxies, Tailscale and zero trust\n1:10:03 sso.tax and Chainguard's PHP embargo break\n1:16:17 A wild week of exploits: Brotli, eMudhra and Go\n1:23:48 Leaky fixes and leaning on managed services\n1:29:34 The Binance hack\n\nLINKS DISCUSSED\nRex by Superlogical\nhttps://www.superlogical.com/\n\nGhostty\nhttps://ghostty.org/\n\ncmux\nhttps://cmux.com/\n\nst, the suckless simple terminal\nhttps://st.suckless.org/\n\nT3 Code\nhttps://t3.codes/\n\nClaude Code: orchestrate teams of sessions\nhttps://code.claude.com/docs/en/agent-teams\n\nThe SSO Wall of Shame\nhttps://sso.tax/\n\nOcto STS\nhttps://github.com/octo-sts/app\n\nxkcd: Random Number\nhttps://xkcd.com/221/\n\nMore episodes and the podcast feed:\nhttps://dabase.com/podcast/",
+    "youtubeId": "HJmAy_V30Mk",
+    "youtubeUrl": "https://www.youtube.com/watch?v=HJmAy_V30Mk",
+    "uploadDate": "20261104",
+    "duration": 5559,
+    "slug": "047-agents-talking-to-agents",
+    "publishDate": "2026-11-04T13:02:04Z"
   }
 ]

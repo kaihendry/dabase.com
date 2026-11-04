@@ -1,0 +1,62 @@
+{
+  "extractorVersion": 1,
+  "sourceUrl": "https://www.youtube.com/watch?v=HJmAy_V30Mk",
+  "sourceKind": "youtube",
+  "sourceId": "youtube-HJmAy_V30Mk",
+  "slidesDir": "/tmp/ep47-summary/youtube-HJmAy_V30Mk",
+  "slidesDirId": "226e33b5",
+  "sceneThreshold": 0.3,
+  "autoTuneThreshold": true,
+  "autoTune": {
+    "enabled": true,
+    "chosenThreshold": 0.05,
+    "confidence": 1,
+    "strategy": "hash"
+  },
+  "maxSlides": 6,
+  "minSlideDuration": 2,
+  "ocrRequested": false,
+  "ocrAvailable": true,
+  "slideCount": 6,
+  "warnings": [
+    "Auto-tuned scene threshold from 0.3 to 0.05"
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "timestamp": 0.2,
+      "imagePath": "slide_0001_0.20s.png",
+      "imageVersion": 1793798513756
+    },
+    {
+      "index": 2,
+      "timestamp": 926.160003,
+      "imagePath": "slide_0002_926.16s.png",
+      "imageVersion": 1793798513837
+    },
+    {
+      "index": 3,
+      "timestamp": 1861.56,
+      "imagePath": "slide_0003_1861.56s.png",
+      "imageVersion": 1793798513789
+    },
+    {
+      "index": 4,
+      "timestamp": 2775.04,
+      "imagePath": "slide_0004_2775.04s.png",
+      "imageVersion": 1793798513789
+    },
+    {
+      "index": 5,
+      "timestamp": 3706.319974333333,
+      "imagePath": "slide_0005_3706.32s.png",
+      "imageVersion": 1793798513796
+    },
+    {
+      "index": 6,
+      "timestamp": 4632.880025666666,
+      "imagePath": "slide_0006_4632.88s.png",
+      "imageVersion": 1793798513841
+    }
+  ]
+}
