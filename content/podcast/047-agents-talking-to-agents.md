@@ -10,7 +10,7 @@ podcast:
   season: 1
   episodeType: "full"
   duration: 5559
-  audioUrl: "https://dabase.com/podcast/audio/047-agents-talking-to-agents.mp3"
+  audioUrl: "https://dabase.com/podcast/audio/047-agents-talking-to-agents-v2.mp3"
   audioSize: 133428261
   youtubeId: "HJmAy_V30Mk"
   youtubeUrl: "https://www.youtube.com/watch?v=HJmAy_V30Mk"

@@ -524,6 +524,11 @@
     "uploadDate": "20261104",
     "duration": 5559,
     "slug": "047-agents-talking-to-agents",
-    "publishDate": "2026-11-04T13:02:04Z"
+    "publishDate": "2026-11-04T13:02:04Z",
+    "audioSlug": "047-agents-talking-to-agents-v2",
+    "audioSha256": "97f8b1b046bf3695b722cbbffe726f007989f5644f0bd7a2849c71340896f66f",
+    "legacyAudioUrls": [
+      "https://dabase.com/podcast/audio/047-agents-talking-to-agents.mp3"
+    ]
   }
 ]
