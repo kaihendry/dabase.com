@@ -435,16 +435,16 @@ account's IAM permissions, reducing who has administrative access, and monitorin
 credential changes. An administrator who can remove those restrictions can still
 undo them. Moving workloads out of the management account is a separate project.
 
-## Restrict GitHub OIDC to protected main branches
+## Allow every repository, but only main
 
-The old trust allowed any branch in any of my repositories. I replaced it with
-an explicit list of repositories, each with a protected `main` branch. Both
-GitHub OIDC roles now require the `sts.amazonaws.com` audience, `refs/heads/main`,
-and matching repository and owner identifiers.
+The old trust allowed any branch in any of my repositories. Both GitHub OIDC
+roles now allow all `kaihendry` repositories, including future ones, but require
+the `sts.amazonaws.com` audience, `refs/heads/main`, and my immutable GitHub owner
+ID. There is no per-repository allowlist to maintain.
 
-Here is the trust policy for a single repository. Replace the example account,
-owner, repository, and numeric GitHub IDs with your own. For multiple
-repositories, put their exact subjects and repository IDs in arrays.
+Here is the policy. Replace the example AWS account ID, GitHub owner name, and
+numeric owner ID with your own. You can find the owner ID with
+`gh api users/kaihendry --jq .id`.
 
 ```json
 {
@@ -458,10 +458,14 @@ repositories, put their exact subjects and repository IDs in arrays.
     "Condition": {
       "StringEquals": {
         "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
-        "token.actions.githubusercontent.com:sub": "repo:OWNER/REPOSITORY:ref:refs/heads/main",
         "token.actions.githubusercontent.com:ref": "refs/heads/main",
-        "token.actions.githubusercontent.com:repository_owner_id": "OWNER_ID",
-        "token.actions.githubusercontent.com:repository_id": "REPOSITORY_ID"
+        "token.actions.githubusercontent.com:repository_owner_id": "765871"
+      },
+      "StringLike": {
+        "token.actions.githubusercontent.com:sub": [
+          "repo:kaihendry/*:ref:refs/heads/main",
+          "repo:kaihendry/*:environment:*"
+        ]
       }
     }
   }]
@@ -478,20 +482,24 @@ aws iam update-assume-role-policy \
 ```
 
 [AWS documents these GitHub claim conditions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#condition-keys-wif).
-The branch-specific subject excludes pull-request, tag, and environment subjects.
-If a workflow uses an environment, design its exact subject and branch condition
-explicitly; do not restore a repository-wide wildcard to make it work.
+The wildcard applies to repository and environment names. The separate `ref`
+condition still requires `main`, including for jobs using GitHub environments.
+A feature branch, tag, or pull-request merge ref cannot pass that condition.
+The owner ID prevents a different account from gaining access by acquiring the
+same username.
 
-Two existing deployments used environments. I allowed their exact environment
-subjects, retained the separate `ref` condition requiring `main`, and configured
-those GitHub environments to accept only protected branches. Their environment
-name alone cannot authorize a deployment from another branch.
+**This AWS policy also permits unprotected `main` branches.** Branch protection
+is managed separately in GitHub; it is not a condition enforced by this trust.
+I accepted that trade-off to keep the AWS configuration simple. Protect `main`
+when setting up a repository, including private repositories whose GitHub plan
+may limit the available protection features.
 
-Branch protection is a separate GitHub control. I enabled protection against
-force pushes and deletion, including for administrators, while retaining direct
-pushes to `main`. This is compatible with my trunk-based workflow; it does not
-require pull requests or reviews. The deployment job also checks the protection
-flag before starting:
+The 21 branches protected during this cleanup retain their protection against
+force pushes and deletion, including for administrators. Direct pushes remain
+allowed, which fits my trunk-based workflow without requiring pull requests or
+reviews. The three existing deployment environments also retain their
+protected-branch restriction. This site's deployment job additionally checks
+the protection flag before starting:
 
 ```yaml
 jobs:
@@ -499,11 +507,10 @@ jobs:
     if: github.ref == 'refs/heads/main' && github.ref_protected
 ```
 
-The AWS policy checks the repository and branch, not GitHub's current protection
-settings. Keep the allowlist and those settings aligned. GitHub rejected my
-attempt to include `ref_protected` in a custom OIDC subject, so I did not use an
-unsupported condition or claim that AWS could enforce it directly. For the role
-managed by CloudFormation, I also updated the stack's stored template.
+GitHub rejected my attempt to include `ref_protected` in a custom OIDC subject,
+so I did not use an unsupported condition or claim that AWS could enforce it
+directly. For the role managed by CloudFormation, I also updated the stack's
+stored template.
 
 ## What this does not finish
 
