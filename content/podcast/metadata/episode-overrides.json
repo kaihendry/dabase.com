@@ -29,5 +29,10 @@
     "audioSlug": "047-agents-talking-to-agents-v2",
     "audioSha256": "97f8b1b046bf3695b722cbbffe726f007989f5644f0bd7a2849c71340896f66f",
     "legacyAudioUrls": ["https://dabase.com/podcast/audio/047-agents-talking-to-agents.mp3"]
+  },
+  "AHl4atOHnKo": {
+    "title": "Agents built the AWS emulator",
+    "slug": "048-agents-built-the-aws-emulator",
+    "publishDate": "2026-11-17T12:15:51Z"
   }
 }

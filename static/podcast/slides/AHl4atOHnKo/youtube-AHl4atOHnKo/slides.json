@@ -1,0 +1,62 @@
+{
+  "extractorVersion": 1,
+  "sourceUrl": "https://www.youtube.com/watch?v=AHl4atOHnKo",
+  "sourceKind": "youtube",
+  "sourceId": "youtube-AHl4atOHnKo",
+  "slidesDir": "/tmp/ep48-sum/yt.a4Vb/youtube-AHl4atOHnKo",
+  "slidesDirId": "b8b1586f",
+  "sceneThreshold": 0.3,
+  "autoTuneThreshold": true,
+  "autoTune": {
+    "enabled": true,
+    "chosenThreshold": 0.05,
+    "confidence": 1,
+    "strategy": "hash"
+  },
+  "maxSlides": 6,
+  "minSlideDuration": 2,
+  "ocrRequested": false,
+  "ocrAvailable": true,
+  "slideCount": 6,
+  "warnings": [
+    "Auto-tuned scene threshold from 0.3 to 0.05"
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "timestamp": 0.2,
+      "imagePath": "slide_0001_0.20s.png",
+      "imageVersion": 1794917941743
+    },
+    {
+      "index": 2,
+      "timestamp": 750.2000380000001,
+      "imagePath": "slide_0002_750.20s.png",
+      "imageVersion": 1794917941855
+    },
+    {
+      "index": 3,
+      "timestamp": 1501.2400030000001,
+      "imagePath": "slide_0003_1501.24s.png",
+      "imageVersion": 1794917941798
+    },
+    {
+      "index": 4,
+      "timestamp": 2257.239991,
+      "imagePath": "slide_0004_2257.24s.png",
+      "imageVersion": 1794917941823
+    },
+    {
+      "index": 5,
+      "timestamp": 3006,
+      "imagePath": "slide_0005_3006.00s.png",
+      "imageVersion": 1794917941852
+    },
+    {
+      "index": 6,
+      "timestamp": 3761.4000000000005,
+      "imagePath": "slide_0006_3761.40s.png",
+      "imageVersion": 1794917941807
+    }
+  ]
+}

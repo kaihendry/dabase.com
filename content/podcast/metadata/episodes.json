@@ -530,5 +530,17 @@
     "legacyAudioUrls": [
       "https://dabase.com/podcast/audio/047-agents-talking-to-agents.mp3"
     ]
+  },
+  {
+    "episode": 48,
+    "season": 1,
+    "title": "Agents built the AWS emulator",
+    "description": "Vincent De Smet built a CDK Terrain workshop that runs entirely on AWS's new, agent-built emulator, and had Fable patch the gaps it found along the way.\n\nKai Hendry and Vincent tour the workshop box, look at an emulator repository that gets a commit every two minutes, and ask what reviewing code means in the agentic era. They compare Google's elephant and goldfish model, Lauren Tan's verification skill and Matt Pocock's grill-me, then turn to stale company skills, page-long prompts, PII in logs and background agents.\n\nAI Infrastructure — Episode 48\nRecorded 17 November 2026.\n\nCHAPTERS\n00:00 A view of Saigon, zoning and Belgium\n03:49 Config Management Camp and the CDK Terrain community\n05:45 A CDK Terrain workshop in Singapore\n08:28 Car-free Ghent and hearing horses\n12:28 Patching and building the AWS emulator with Fable\n18:07 Five gigabytes per workshop attendee\n21:57 Caddy, Traefik and Kong\n23:28 Inside the workshop box\n32:32 Commits every two minutes in the AWS emulator repo\n38:59 Reviewing code in the agentic era\n40:44 How the clouds are adapting to AI\n42:13 Google's elephant and goldfish model\n46:53 Lauren Tan's verification skill and Playwright\n51:18 Formal verification, comments and TODOs\n55:35 Stale skills, gardening and glossaries\n59:55 Rethinking Claude Code best practices\n1:03:21 Does a page-long prompt beat a simple one?\n1:10:10 PII, scoped tokens and break-glass access\n1:13:54 Background agents\n\nMore episodes and the podcast feed:\nhttps://dabase.com/podcast/",
+    "youtubeId": "AHl4atOHnKo",
+    "youtubeUrl": "https://www.youtube.com/watch?v=AHl4atOHnKo",
+    "uploadDate": "20261117",
+    "duration": 4514,
+    "slug": "048-agents-built-the-aws-emulator",
+    "publishDate": "2026-11-17T12:15:51Z"
   }
 ]
