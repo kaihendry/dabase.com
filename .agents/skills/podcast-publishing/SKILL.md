@@ -98,7 +98,11 @@ cut-list renderer (`review/render.py`), aligner, gate and echo canceller.
 - [ ] Select a few self-contained teaser moments that preserve the speakers' meaning.
   Use the approved full cut as the source for every teaser.
 - [ ] Make each teaser in both 1080×1920 (YouTube Shorts) and 1080×1080 (LinkedIn),
-  with readable captions and framing suited to each format.
+  with readable burned-in captions and framing suited to each format.
+  In the vertical version keep all text and key visuals inside X 60–930, Y 180–1440:
+  the Shorts UI covers the top 180 px, the right 150 px (buttons) and, from about y 1450,
+  the channel handle and title. Put captions below the video panel, at about y 1200–1360
+  with lines no wider than about 760 px, so they never cover a face.
 - [ ] Review captions, faces, endings and the rendered badge in every export.
 
 ## 7. Upload the full video to YouTube
