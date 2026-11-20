@@ -9,8 +9,8 @@ Start with a completed Zoom recording. Finish with a working episode page,
 podcast feed entry, YouTube video and promotional clips.
 
 The agent runs the editing, asset preparation, metadata, S3 uploads and blog/feed
-publishing steps. The user reviews the full cut, uploads it to YouTube or
-authorises an agent to, and posts the teasers. Access problems such as expired
+publishing steps. The user reviews the full cut and can authorise an agent to
+upload the episode and schedule the teaser batch. Access problems such as expired
 AWS credentials may still need the user.
 
 The order is: **Zoom recording → full review cut → user approval → final assets
@@ -235,12 +235,23 @@ The user uploads it in YouTube Studio, or authorises an agent to upload it in th
 - [ ] Wait for GitHub Actions to succeed and verify the live episode page,
   podcast archive and feeds. The deployment checks that the live feeds match the build.
 
-## 10. User posts teasers; verify and archive
+## 10. Schedule daily teasers after release
 
-- [ ] Prepare the teaser files and suggested post copy with links to the full episode.
-- [ ] The user reviews and posts to YouTube Shorts, LinkedIn and X manually.
-  Supply the vertical versions for YouTube Shorts and the square versions for
-  LinkedIn; existing exports can also be used on X.
+- [ ] Prepare the clips, post copy and dates together. Plan one distinct teaser
+  per day across YouTube Shorts, LinkedIn and X, starting the day after the full
+  episode goes public. Use the requested timezone, or Europe/London by default.
+- [ ] As part of release, queue the authorised batch in the platforms' native
+  schedulers. If the request covers a single clip, publish or schedule that clip
+  and include the remaining proposed dates in the handoff.
+- [ ] In YouTube Studio, upload the vertical export, set the full episode as the
+  Short's **Related video**, then choose **Visibility → Schedule**. Keep Shorts
+  out of the episode playlist because its order determines episode numbers.
+- [ ] Attach the square video and include the episode link on LinkedIn and X.
+  Use the clock in the LinkedIn composer and the calendar in the X composer.
+- [ ] Reopen each platform's scheduled list and verify the clip, date, time and
+  timezone. Record each platform's status and post URL or ID when available in
+  the episode's `shorts/shorts-publishing.json`. On resuming a partial batch,
+  check existing scheduled and published posts before retrying a missing one.
 - [ ] Check the existing show's listing in Apple Podcasts and Spotify after they refresh.
   A successful site deployment does not prove those directories have ingested the episode.
 - [ ] Record the final page, video and promotional-post URLs; retain the source recording,
